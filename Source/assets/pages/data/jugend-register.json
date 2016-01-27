@@ -1,0 +1,92 @@
+[
+  {
+    "name" : "Désirée",
+    "familyName": "Winter",
+    "register": "Querflöte"
+  },
+  {
+    "name" : "Luisa",
+    "familyName":"Krey",
+    "register": "Klarinette"
+  },
+  {
+    "name" : "Leonie",
+    "familyName":"Gresslin",
+    "register": "Klarinette"
+  },
+  {
+    "name" : "Elena",
+    "familyName":"Sieglin",
+    "register": "Klarinette"
+  },
+  {
+    "name" : "Janika",
+    "familyName":"Böhler",
+    "register": "Klarinette"
+  },
+  {
+    "name" : "Lina",
+    "familyName":"Müller",
+    "register": "Klarinette"
+  },
+  {
+    "name" : "Maria",
+    "familyName":"Krey",
+    "register": "Klarinette"
+  },
+  {
+    "name" : "Niels",
+    "familyName":"Merkert",
+    "register": "Baritonsaxophon"
+  },
+  {
+    "name" : "Helen",
+    "familyName":"Strittmatter",
+    "register": "Altsaxophon"
+  },
+  {
+    "name" : "Moritz",
+    "familyName":"Rathberger",
+    "register": "Trompete"
+  },
+  {
+    "name" : "Moritz",
+    "familyName":"Merkert",
+    "register": "Trompete"
+  },
+  {
+    "name" : "Kai",
+    "familyName":"Bogner",
+    "register": "Trompete"
+  },
+  {
+    "name" : "Sven",
+    "familyName":"Gut",
+    "register": "Posaune"
+  },
+  {
+    "name" : "Timo",
+    "familyName":"Braun",
+    "register": "Posaune"
+  },
+  {
+    "name" : "Anika",
+    "familyName":"Gresslin",
+    "register": "Euphonium"
+  },
+  {
+    "name" : "Noah",
+    "familyName":"Goehlke",
+    "register": "Tuba"
+  },
+  {
+    "name" : "Erik",
+    "familyName":"Sieglin",
+    "register": "Schlagzeug"
+  },
+  {
+    "name" : "Jacob",
+    "familyName":"Dreher",
+    "register": "Schlagzeug"
+  }
+]

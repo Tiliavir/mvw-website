@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{8B75DB16-631B-4E97-A892-008D73897CC1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\pages\data\jugend-register.json" />
+    <Content Include="assets\pages\data\vorstand.json" />
+    <None Include="assets\pages\headers\index.jade" />
+    <Content Include="assets\pages\favicon.jade" />
+    <Content Include="assets\pages\ga.jade" />
+    <Content Include="assets\pages\mixins\formatTimespan.jade" />
+    <None Include="assets\pages\mixins\image.jade" />
+    <None Include="assets\pages\partials\blog_2016-jahreskonzert.jade" />
+    <Content Include="assets\pages\partials\todo_kontaktformular.jade" />
+    <Content Include="assets\pages\mixins\youtube.jade" />
+    <Content Include="assets\pages\partials\todo_jugendorchester.jade" />
+    <Content Include="assets\pages\partials\register.jade" />
+    <Content Include="assets\pages\partials\vorstand.jade" />
+    <Content Include="assets\pages\partials\coach.jade" />
+    <Content Include="assets\pages\partials\bilder.jade" />
+    <Content Include="assets\pages\partials\seiten-uebersicht.jade" />
+    <None Include="assets\pages\template.jade" />
+    <None Include="assets\pages\partials\404.jade" />
+    <None Include="assets\pages\partials\berichte.jade" />
+    <None Include="assets\pages\partials\blog_2015-sauserfahrt.jade" />
+    <None Include="assets\pages\partials\401.jade" />
+    <None Include="assets\pages\partials\ausbildung.jade" />
+    <None Include="assets\pages\partials\vorstufenorchester.jade" />
+    <Content Include="assets\pages\partials\todo_news.jade" />
+    <None Include="assets\pages\partials\termine.jade" />
+    <None Include="assets\pages\partials\dampfmusik.jade" />
+    <None Include="assets\pages\partials\datenschutz.jade" />
+    <None Include="assets\pages\partials\dirigent.jade" />
+    <None Include="assets\pages\partials\vereine-und-links.jade" />
+    <None Include="assets\pages\partials\ueber-uns.jade" />
+    <Content Include="ImageProcessor.js" />
+    <Content Include="package.json" />
+    <Content Include="data\site-structure.json" />
+    <Content Include="data\schema\site-structure-schema.json" />
+    <Content Include="assets\pages\data\register.json" />
+    <Content Include="assets\pages\data\schema\register-schema.json" />
+    <Content Include="data\settings.json" />
+    <Content Include="assets\pages\data\termine.json" />
+    <Content Include="assets\pages\data\schema\termine-schema.json" />
+    <None Include="assets\pages\partials\haftung.jade" />
+    <None Include="assets\pages\partials\impressum.jade" />
+    <None Include="assets\pages\partials\index.jade" />
+    <Content Include="assets\pages\data\berichte.json" />
+    <Content Include="assets\pages\data\schema\berichte-schema.json" />
+    <Content Include="data\site-structure-bck.json" />
+    <None Include="styles\print.scss" />
+    <None Include="styles\app.scss" />
+    <Content Include="gulpfile.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="scripts\responsive.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".bowerrc" />
+    <Content Include="bower.json" />
+    <Content Include="StructureWalker.js" />
+    <Content Include="tsd.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="scripts\main.ts" />
+    <None Include="scripts_tests\tests.ts" />
+    <None Include="tslint.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="scripts\gallery.ts" />
+    <TypeScriptCompile Include="scripts\index.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>MV.Website</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties data_4site-structure_1json__JSONSchema="schema\site-structure-schema.json" assets_4pages_4data_4berichte_1json__JSONSchema="schema\berichte-schema.json" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Optimize>true</Optimize>
+    <PublishDatabases>false</PublishDatabases>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <TypeScriptTarget>ES6</TypeScriptTarget>
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>True</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Optimize>true</Optimize>
+    <PublishDatabases>false</PublishDatabases>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>

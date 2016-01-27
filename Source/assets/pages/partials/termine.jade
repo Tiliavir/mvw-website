@@ -1,0 +1,17 @@
+- var years = Object.keys(termine);
+- for (var i = 0, year = years[i]; i < years.length; i++, year = years[i])
+  h2 #{year}
+  table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
+    tbody
+      - var inYear = termine[year];
+      - for (var j = 0, termin = inYear[j]; j < inYear.length; j++, termin = inYear[j])
+        tr
+         td
+           +formatTimespan(termin.starttime, termin.endtime)
+         td
+           | #{termin.title}
+           if termin.location
+             | &nbsp;(#{termin.location})
+           if termin.description
+             br/
+             != marked(termin.description)

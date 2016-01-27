@@ -1,0 +1,73 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "JSON Schema for the site structure file",
+  "description": "Array of (child) elements in the site structure tree.",
+
+  "type": "array",
+  "items": {
+    "oneOf": [
+      { "$ref": "#/definitions/group" },
+      { "$ref": "#/definitions/entry" }
+    ]
+  },
+  "definitions": {
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "The title of the menu entry and url path."
+        },
+        "showInNavigation": {
+          "$ref": "#/definitions/navigationType"
+        },
+        "children": {
+          "$ref": "#"
+        }
+      },
+      "required": [ "title", "showInNavigation", "children" ]
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "The title of the menu entry and url path."
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "The subtitle of the menu entry and url path."
+        },
+        "showInNavigation": {
+          "$ref": "#/definitions/navigationType"
+        },
+        "referencedFile": {
+          "type": "string",
+          "description": "Name of the partial file."
+        },
+        "isJade": {
+          "type": "boolean"
+        },
+        "hideBreadcrumb": {
+          "type": "boolean"
+        },
+        "hasHeader": {
+          "type": "boolean"
+        },
+        "children": {
+          // these children are considered logical children but will not work in navigation
+          "$ref": "#"
+        }
+      },
+      "required": [ "title", "showInNavigation", "referencedFile" ]
+    },
+    "navigationType": {
+      "enum": [ "top", "footer", "none" ],
+      "description": "Whether the entry is visible in the navigation."
+    }
+  }
+}

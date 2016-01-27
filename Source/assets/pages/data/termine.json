@@ -1,0 +1,30 @@
+﻿{
+  "2016": [
+    {
+      "title": "Jahreskonzert",
+      "description": "['Still Feeling Good'][konzert]\n[konzert]: blog_2016-jahreskonzert.html",
+      "starttime": "2016-01-22T00:00:00Z",
+      "endtime": "2016-01-23T00:00:00Z"
+    },
+    {
+      "title": "Kirchenkonzert mit dem VJO Hochrhein",
+      "starttime": "2016-05-08T17:00:00Z",
+      "location": "ev. Kirche, Kandern"
+    },
+    {
+      "title": "Marschmusiktag in Wollbach",
+      "starttime": "2016-06-04T00:00:00Z",
+      "location": "Wollbach"
+    },
+    {
+      "title": "Konzertreise",
+      "starttime": "2016-07-28T00:00:00Z",
+      "endtime": "2016-07-31T00:00:00Z"
+    },
+    {
+      "title": "Sauserexpress und Herbstfest",
+      "starttime": "2016-10-15T00:00:00Z",
+      "endtime": "2016-10-16T00:00:00Z"
+    }
+  ]
+}

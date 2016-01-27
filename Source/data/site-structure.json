@@ -1,0 +1,138 @@
+﻿[
+  {
+    "title": "Willkommen beim Musikverein Wollbach",
+    "referencedFile": "index",
+    "showInNavigation": "none",
+    "hasHeader": true
+  },
+  {
+    "title": "Termine",
+    "referencedFile": "termine",
+    "showInNavigation": "top"
+  },
+  {
+    "title": "News",
+    "referencedFile": "news",
+    "showInNavigation": "top"
+  },
+  {
+    "title": "Der Verein",
+    "showInNavigation": "top",
+    "children": [
+      {
+        "title": "Wir über uns",
+        "referencedFile": "ueber-uns",
+        "showInNavigation": "top"
+      },
+      {
+        "title": "Unsere Register",
+        "referencedFile": "register",
+        "showInNavigation": "top"
+      },
+      {
+        "title": "Dirigent",
+        "referencedFile": "dirigent",
+        "showInNavigation": "top"
+      },
+      {
+        "title": "Orchester-Coach",
+        "referencedFile": "coach",
+        "showInNavigation": "top"
+      },
+      {
+        "title": "Vorstandschaft",
+        "referencedFile": "vorstand",
+        "showInNavigation": "top"
+      },
+      {
+        "title": "Dampfmusik",
+        "referencedFile": "dampfmusik",
+        "showInNavigation": "top"
+      }
+    ]
+  },
+  {
+    "title": "Jugendarbeit",
+    "showInNavigation": "top",
+    "children": [
+      {
+        "title": "Ausbildung",
+        "referencedFile": "ausbildung",
+        "showInNavigation": "top"
+      },
+	  {
+        "title": "Jugendorchester",
+        "referencedFile": "jugendorchester",
+        "showInNavigation": "top"
+      },
+      {
+        "title": "Vorstufenorchester",
+        "referencedFile": "vorstufenorchester",
+        "showInNavigation": "top"
+      }
+    ]
+  },
+  {
+    "title": "Berichte",
+    "referencedFile": "berichte",
+    "showInNavigation": "top"
+  },
+  {
+    "title": "Bilder",
+    "referencedFile": "bilder",
+    "showInNavigation": "top"
+  },
+  {
+    "title": "Vereine und Links",
+    "referencedFile": "vereine-und-links",
+    "showInNavigation": "top"
+  },
+  {
+    "title": "Impressum",
+    "referencedFile": "impressum",
+    "showInNavigation": "footer",
+    "children": [
+      {
+        "title": "Haftungsausschluss",
+        "referencedFile": "haftung",
+        "showInNavigation": "none"
+      },
+      {
+        "title": "Datenschutz",
+        "referencedFile": "datenschutz",
+        "showInNavigation": "none"
+      },
+      {
+        "title": "Seiten-Übersicht",
+        "referencedFile": "seiten-uebersicht",
+        "showInNavigation": "none"
+      }
+    ]
+  },
+  {
+    "title": "Blog",
+    "showInNavigation": "none",
+    "children": [
+      {
+        "title": "Jahreskonzert 2016",
+        "referencedFile": "blog_2016-jahreskonzert",
+        "showInNavigation": "none"
+      },
+      {
+        "title": "Sauserfahrt mit dem Chanderli 2015",
+        "referencedFile": "blog_2015-sauserfahrt",
+        "showInNavigation": "none"
+      }
+    ]
+  },
+  {
+    "title": "Seite nicht gefunden!",
+    "referencedFile": "404",
+    "showInNavigation": "none"
+  },
+  {
+    "title": "Unautorisierter Zugriff!",
+    "referencedFile": "401",
+    "showInNavigation": "none"
+  }
+]

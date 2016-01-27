@@ -1,0 +1,17 @@
+﻿header#startCarousel.carousel.slide
+  ol.carousel-indicators
+    li.active(data-target="#startCarousel" data-slide-to="0")
+
+  .carousel-inner
+    .item.active
+      img.fill(src="/img/slider/logo.png" alt="Das neue Logo des Musikvereins Wollbach" style="padding:5px;")
+      .carousel-caption
+        h2 Das neue Logo des Musikvereins Wollbach
+
+  a.left.carousel-control(href="#startCarousel" data-slide="prev")
+    span.icon-prev
+  a.right.carousel-control(href="#startCarousel" data-slide="next")
+    span.icon-next
+
+script.
+  $(function() { MVW.Start.initialize(); });
