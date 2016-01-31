@@ -11,18 +11,20 @@ html(lang="de")
     meta(charset="utf-8")
     meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
     meta(name="author" content="Markus Lindenmann")
-    meta(name="description" content="Die Internetpräsenz des Musikverein Wollbach 1866 e.V.")
-    meta(name="keywords" content="Wollbach, Musikverein, Verein, 1866, Musik, Orchester, Blasmusik, Herbstfest, Jahreskonzert, Kandertalhalle, Jugend, Jugendarbeit, Jugendorchester, Marschmusik, Instrument")
+
+    if description
+      meta(name="description" content="#{description}")
+
+    if keywords
+      meta(name="keywords" content="#{keywords}")
+
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
 
-    link(rel="stylesheet" href="/css/libs.css")
     link(rel="stylesheet" href="/css/app.css")
-    link(rel="stylesheet" href="/css/print.css" media="print")
 
     include ./favicon.jade
 
-    script(src="/js/libs.js")
     script(src="/js/app.js")
 
     <!--[if lt IE 9]>

@@ -1,38 +1,40 @@
-﻿html,
-body
-{
-  padding-top: 0;
-  background : none;
-}
-
-header,
-.navbar
-{
-  display : none;
-}
-
-#content-main
-{
-  &:before
+﻿@media print {
+  html,
+  body
   {
-    content: '';
-    display: block;
-    height: 100px;
-    width: 100vw;
-    background: transparent url(/img/logo_color.png) no-repeat top left !important;
+    padding-top: 0;
+    background : none;
   }
-
-  width : 95%;
-  padding-top:10px;
-}
-
-.breadcrumb
-{
-  a:after
+  
+  header,
+  .navbar
   {
-    display: none;
+    display : none;
   }
-
-  font-size : 8pt;
-  color : #000000;
+  
+  #content-main
+  {
+    &:before
+    {
+      content: '';
+      display: block;
+      height: 100px;
+      width: 100vw;
+      background: transparent url(/img/logo_color.png) no-repeat top left !important;
+    }
+  
+    width : 95%;
+    padding-top:10px;
+  }
+  
+  .breadcrumb
+  {
+    a:after
+    {
+      display: none;
+    }
+  
+    font-size : 8pt;
+    color : #000000;
+  }
 }

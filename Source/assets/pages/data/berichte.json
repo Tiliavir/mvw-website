@@ -1,5 +1,59 @@
 ﻿[
   {
+    "date": "2016-01-25T00:00:00.000Z",
+    "title": "Swingender Sound und groovende Rhythmen",
+    "url": "http://www.badische-zeitung.de/kandern/swingender-sound-und-groovende-rhythmen",
+    "hasPicture": true,
+    "hasDescription": true,
+    "srcUrl": "http://www.badische-zeitung.de",
+    "srcTitle": "BZ"
+  },
+  {
+    "date": "2016-01-24T00:00:00.000Z",
+    "title": "Professionell und aufwendig inszenierte Geburtstagsshow",
+    "url": "http://www.verlagshaus-jaumann.de/inhalt.kandern-professionell-und-aufwendig-inszenierte-geburtstagsshow.455ff5a5-caf5-4595-b0ea-93910ba75e2f.html",
+    "hasPicture": true,
+    "hasDescription": true,
+    "srcUrl": "http://www.verlagshaus-jaumann.de",
+    "srcTitle": "VHJ"
+  },
+  {
+    "date": "2016-01-21T00:00:00.000Z",
+    "title": "Was klein begann, lässt heute groß aufhorchen",
+    "url": "http://www.badische-zeitung.de/kandern/was-klein-begann-laesst-heute-gross-aufhorchen",
+    "hasPicture": true,
+    "hasDescription": true,
+    "srcUrl": "http://www.badische-zeitung.de",
+    "srcTitle": "BZ"
+  },
+  {
+    "date": "2016-01-09T00:00:00.000Z",
+    "title": "150 Jahre Musikverein Wollbach",
+    "url": "http://www.verlagshaus-jaumann.de/inhalt.kandern-150-jahre-musikverein-wollbach.01050027-6d9d-4713-a0e7-21cea19a09c8.html",
+    "hasPicture": true,
+    "hasDescription": true,
+    "srcUrl": "http://www.verlagshaus-jaumann.de",
+    "srcTitle": "VHJ"
+  },
+  {
+    "date": "2015-07-08T00:00:00.000Z",
+    "title": "Musik unter den Linden",
+    "url": "http://www.badische-zeitung.de/schopfheim/musik-unter-den-linden",
+    "hasPicture": true,
+    "hasDescription": true,
+    "srcUrl": "http://www.badische-zeitung.de",
+    "srcTitle": "BZ"
+  },
+  {
+    "date": "2015-07-06T00:00:00.000Z",
+    "title": "Da dampfen sogar die Gleise",
+    "url": "http://www.verlagshaus-jaumann.de/inhalt.kandern-da-dampfen-sogar-die-gleise.079bb8d7-dae0-4dc5-a2b4-78af8a133d63.html",
+    "hasPicture": true,
+    "hasDescription": true,
+    "srcUrl": "http://www.verlagshaus-jaumann.de",
+    "srcTitle": "VHJ"
+  },
+  {
     "date": "2016-01-11T00:00:00Z",
     "url": "https://www.badische-zeitung.de/kandern/hochwasserschutz-auch-fuer-wollbach-thema--116049947.html",
     "title": "Hochwasserschutz auch für Wollbach Thema",
@@ -277,203 +331,5 @@
     "hasDescription": true,
     "srcUrl": "http://www.badische-zeitung.de",
     "srcTitle": "BZ"
-  },
-  {
-    "date": "2008-06-21T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/weil/kandertal/34,51-22787724.html",
-    "title": "Requiem - Projektchor",
-    "hasPicture": true,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2008-05-13T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/weil/38,51-21842893.html",
-    "title": "Marschmusik",
-    "hasPicture": true,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2008-02-05T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/weil/kandertal/34,51-19814205.html",
-    "title": "Generalversammlung",
-    "hasPicture": true,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2008-01-22T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/weil/kandertal/34,51-19535241.html",
-    "title": "Jahreskonzert",
-    "hasPicture": true,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2008-01-21T00:00:00Z",
-    "url": "http://www.oberbadischesvolksblatt.de/core.php?dat=Y29tcG9uZW50PW5ld3MmYWN0aW9uPXNob3cmeElEPW5ld3NCeUlEJm5ld3NJRD0zMTUzMTEmcGFyZW50SUQ9Jm5hdmlnYXRpb25JRD0=",
-    "title": "Jahreskonzert",
-    "hasPicture": false,
-    "hasDescription": true,
-    "srcUrl": "http://www.oberbadisches-volksblatt.de/",
-    "srcTitle": "VHJ"
-  },
-  {
-    "date": "2008-01-17T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/weil/38,51-19444099.html",
-    "title": "Konzert Ankündigung",
-    "hasPicture": true,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2007-12-08T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/weil/kandertal/34,51-18720746.html",
-    "title": "Trödelmarkt im Forsthof",
-    "hasPicture": false,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2007-12-06T00:00:00Z",
-    "url": "http://www.oberbadischesvolksblatt.de/core.php?dat=Y29tcG9uZW50PW5ld3MmYWN0aW9uPXNob3cmeElEPW5ld3NCeUlEJm5ld3NJRD0zMDUwNDcmcGFyZW50SUQ9Jm5hdmlnYXRpb25JRD0=",
-    "title": "Wartburgfest",
-    "hasPicture": false,
-    "hasDescription": true,
-    "srcUrl": "http://www.oberbadisches-volksblatt.de/",
-    "srcTitle": "VHJ"
-  },
-  {
-    "date": "2007-10-15T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/weil/kandertal/34,51-17735337.html",
-    "title": "Herbstfest in der Kandertalhalle",
-    "hasPicture": true,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2007-10-14T00:00:00Z",
-    "url": "http://www.oberbadischesvolksblatt.de/core.php?dat=Y29tcG9uZW50PW5ld3MmYWN0aW9uPXNob3cmeElEPW5ld3NCeUlEJm5ld3NJRD0yODk1MzMmcGFyZW50SUQ9Jm5hdmlnYXRpb25JRD0=",
-    "title": "Mit Chanderli zum Herbstfest",
-    "hasPicture": false,
-    "hasDescription": true,
-    "srcUrl": "http://www.oberbadisches-volksblatt.de/",
-    "srcTitle": "VHJ"
-  },
-  {
-    "date": "2007-08-04T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/weil/kandertal/34,51-16406895.html",
-    "title": "Silberprüfung in Staufen",
-    "hasPicture": false,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2007-04-30T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/weil/efringen_kirchen/25,51-14898958.html",
-    "title": "Doppelkonzert in Istein",
-    "hasPicture": true,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2007-04-30T00:00:00Z",
-    "url": "http://www.oberbadischesvolksblatt.de/core.php?dat=Y29tcG9uZW50PW5ld3MmYWN0aW9uPXNob3cmeElEPW5ld3NCeUlEJm5ld3NJRD0yMzk1OTQmcGFyZW50SUQ9Jm5hdmlnYXRpb25JRD0=",
-    "title": "Doppelkonzert in Istein",
-    "hasPicture": false,
-    "hasDescription": true,
-    "srcUrl": "http://www.oberbadisches-volksblatt.de/",
-    "srcTitle": "VHJ"
-  },
-  {
-    "date": "2006-10-06T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/l246rrach/43,51-11629538.html",
-    "title": "Die Patnerstädte Lörrachs und das internationale Orchester",
-    "hasPicture": true,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2006-10-06T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/weil/kandertal/34,51-11666183.html",
-    "title": "Das Doppelkonzert des JO Wollbach und des internationalen Orchesters",
-    "hasPicture": true,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2006-10-06T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/l246rrach/43,51-11687701.html",
-    "title": "Eine Umfrage der BZ bei einigen Musikern",
-    "hasPicture": true,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2006-08-05T00:00:00Z",
-    "url": "http://www.oberbadischesvolksblatt.de/core.php?dat=Y29tcG9uZW50PW5ld3MmYWN0aW9uPXNob3cmeElEPW5ld3NCeUlEJm5ld3NJRD0xNzAwMjUmcGFyZW50SUQ9ODkmbmF2aWdhdGlvbklEPTE1NA==",
-    "title": "Christian Reder",
-    "hasPicture": false,
-    "hasDescription": true,
-    "srcUrl": "http://www.oberbadisches-volksblatt.de/",
-    "srcTitle": "VHJ"
-  },
-  {
-    "date": "2006-08-01T00:00:00Z",
-    "url": "http://www.oberbadischesvolksblatt.de/core.php?dat=Y29tcG9uZW50PW5ld3MmYWN0aW9uPXNob3cmeElEPW5ld3NCeUlEJm5ld3NJRD0xNjk3MDImcGFyZW50SUQ9Jm5hdmlnYXRpb25JRD0=",
-    "title": "Sommerferien Programm - \"In 80 Tönen um die Welt",
-    "hasPicture": false,
-    "hasDescription": true,
-    "srcUrl": "http://www.oberbadisches-volksblatt.de/",
-    "srcTitle": "VHJ"
-  },
-  {
-    "date": "2006-06-21T00:00:00Z",
-    "url": "http://www.oberbadisches-volksblatt.de/core.php?dat=Y29tcG9uZW50PW5ld3MmYWN0aW9uPXNob3cmeElEPW5ld3NCeUlEJm5ld3NJRD0xNjU3NjImcGFyZW50SUQ9Jm5hdmlnYXRpb25JRD0=",
-    "title": "Frühschoppenmusik am Forsthoffest in Wollbach",
-    "hasPicture": false,
-    "hasDescription": true,
-    "srcUrl": "http://www.oberbadisches-volksblatt.de/",
-    "srcTitle": "VHJ"
-  },
-  {
-    "date": "2006-05-22T00:00:00Z",
-    "url": "http://www.badische-zeitung.de/lokales/lokalausgaben/weil/kandertal/34,51-9683965.html",
-    "title": "Konzert des 20.05.2006 - \"Broadway",
-    "hasPicture": true,
-    "hasDescription": true,
-    "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
-  },
-  {
-    "date": "2006-05-22T00:00:00Z",
-    "url": "http://www.oberbadischesvolksblatt.de/core.php?dat=Y29tcG9uZW50PW5ld3MmYWN0aW9uPXNob3cmeElEPW5ld3NCeUlEJm5ld3NJRD0xNjMwMzYmcGFyZW50SUQ9ODkmbmF2aWdhdGlvbklEPTEyMQ==",
-    "title": "Konzert des 20.05.2006 - \"Broadway",
-    "hasPicture": false,
-    "hasDescription": true,
-    "srcUrl": "http://www.oberbadisches-volksblatt.de/",
-    "srcTitle": "VHJ"
-  },
-  {
-    "date": "2006-04-20T00:00:00Z",
-    "url": "http://www.oberbadischesvolksblatt.de/core.php?dat=Y29tcG9uZW50PW5ld3MmYWN0aW9uPXNob3cmeElEPW5ld3NCeUlEJm5ld3NJRD0xNTUwODAmcGFyZW50SUQ9Jm5hdmlnYXRpb25JRD0=",
-    "title": "Leistungsabzeichen",
-    "hasPicture": false,
-    "hasDescription": true,
-    "srcUrl": "http://www.oberbadisches-volksblatt.de/",
-    "srcTitle": "VHJ"
   }
 ]

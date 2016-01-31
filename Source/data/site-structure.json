@@ -1,138 +1,180 @@
 ﻿[
   {
-    "title": "Willkommen beim Musikverein Wollbach",
+    "description": "Die Website des Musikverein Wollbach 1866 e.V.. Alles Rund um unsere Auftritte, Jugendarbeit, Besetzung, Bilder und Einblicke in die Vereinshistorie.",
+    "hasHeader": true,
+    "keywords": "Wollbach, Musikverein, Musikverein Wollbach 1866 e.V., Verein, Musik, Orchester, Blasmusik, Instrument, Jugendarbeit, Konzert",
     "referencedFile": "index",
     "showInNavigation": "none",
-    "hasHeader": true
+    "title": "Willkommen beim Musikverein Wollbach"
   },
   {
-    "title": "Termine",
+    "description": "Eine Übersicht über Termine von Auftritten und Anlässen des Musikverein Wollbach 1866 e.V.",
+    "keywords": "Termine, Events, Daten, Auftritte, Konzerte, Anlässe, Terminplan, Terminkalender, Kalender",
     "referencedFile": "termine",
-    "showInNavigation": "top"
+    "showInNavigation": "top",
+    "title": "Termine"
   },
   {
-    "title": "News",
+    "description": "Vergangene Konzerte, Feste und sonstige Anlässe des Musikverein Wollbachs werden hier kurz zusammengefasst.",
+    "keywords": "Berichte, News, Zusammenfassungen, Vergangene Events, Nachrichten",
     "referencedFile": "news",
-    "showInNavigation": "top"
+    "showInNavigation": "top",
+    "title": "News"
   },
   {
-    "title": "Der Verein",
-    "showInNavigation": "top",
     "children": [
       {
-        "title": "Wir über uns",
+        "description": "Ein kurzer Einblick in die Geschichte des Musikverein Wollbach 1866 e.V.",
+        "keywords": "Historie, Geschichte, Chronik, Passivmitglied, Mitgliedschaft",
         "referencedFile": "ueber-uns",
-        "showInNavigation": "top"
+        "showInNavigation": "top",
+        "title": "Wir über uns"
       },
       {
-        "title": "Unsere Register",
+        "description": "Die aktuelle Besetzung des Musikverein Wollbach nach Registern.",
+        "keywords": "Register, Besetzung, Instrumente, Musiker, Musikerinnen, Personen",
         "referencedFile": "register",
-        "showInNavigation": "top"
+        "showInNavigation": "top",
+        "title": "Unsere Register"
       },
       {
-        "title": "Dirigent",
+        "description": "Der Dirigent des Musikverein Wollbach: Oliver Hauser.",
+        "keywords": "Dirigent, musikalische Leitung, Leitung, Oliver Hauser",
         "referencedFile": "dirigent",
-        "showInNavigation": "top"
+        "showInNavigation": "top",
+        "title": "Dirigent"
       },
       {
-        "title": "Orchester-Coach",
+        "description": "Der Orchester Coach des Musikverein Wollbach: Jhon Hernandez.",
+        "keywords": "Orchester Coach, Coach, Jhon Hernandez",
         "referencedFile": "coach",
-        "showInNavigation": "top"
+        "showInNavigation": "top",
+        "title": "Orchester-Coach"
       },
       {
-        "title": "Vorstandschaft",
+        "description": "Hier finden Sie den richtigen Ansprechpartner des Musikverein Wollbachs.",
+        "keywords": "Vorstand, Vorstandschaft, Ansprechpartner, Kontakt",
         "referencedFile": "vorstand",
-        "showInNavigation": "top"
+        "showInNavigation": "top",
+        "title": "Vorstandschaft"
       },
       {
-        "title": "Dampfmusik",
+        "description": "Alles Rund um die Dampfmusik des Musikverein Wollbach.",
+        "keywords": "Dampfmusik, Sauserbummel, Sauserexpress",
         "referencedFile": "dampfmusik",
-        "showInNavigation": "top"
+        "showInNavigation": "top",
+        "title": "Dampfmusik"
       }
-    ]
+    ],
+    "showInNavigation": "top",
+    "title": "Der Verein"
   },
   {
-    "title": "Jugendarbeit",
-    "showInNavigation": "top",
     "children": [
       {
-        "title": "Ausbildung",
+        "description": "Die Jugendarbeit des Musikverein Wollbach bietet neben einer guten Ausbildung und Talentförderung auch eine tolle Gemeinschaft und viel Spaß am gemeinsamen Musizieren im Vorstufen- und Jugendorchester.",
+        "keywords": "Ausbildung, Schulung, Jungmusiker, Jungmusikerin, Instrument lernen, Jugendorchester, Talentförderung, Vorstufenorchester",
         "referencedFile": "ausbildung",
-        "showInNavigation": "top"
-      },
-	  {
-        "title": "Jugendorchester",
-        "referencedFile": "jugendorchester",
-        "showInNavigation": "top"
+        "showInNavigation": "top",
+        "title": "Ausbildung"
       },
       {
-        "title": "Vorstufenorchester",
+        "description": "Das Vorstufenorchester der Musikverein Wollbach unter der Leitung von Maria Krey.",
+        "keywords": "Vorstufenorchester, Jugendarbeit, Jungmusiker, Jungmusikerin, Instrument lernen, Ausbildung",
         "referencedFile": "vorstufenorchester",
-        "showInNavigation": "top"
+        "showInNavigation": "top",
+        "title": "Vorstufenorchester"
+      },
+      {
+        "description": "Das Jugendorchester des Musikverein Wollbach under der Leitung von Michael Bierwirth.",
+        "keywords": "Jugendorchester, Jugenarbeit, Ausbildung, Jungmusiker, Jungmusikerinnen, Instrument lernen",
+        "referencedFile": "jugendorchester",
+        "showInNavigation": "top",
+        "title": "Jugendorchester"
       }
-    ]
+    ],
+    "showInNavigation": "top",
+    "title": "Jugendarbeit"
   },
   {
-    "title": "Berichte",
+    "description": "Presseberichte rund um den Musikverein Wollbach.",
+    "keywords": "Presse, Presseberichte, Zeitungsartikel, Presseschau, Pressespiegel",
     "referencedFile": "berichte",
-    "showInNavigation": "top"
+    "showInNavigation": "top",
+    "title": "Berichte"
   },
   {
-    "title": "Bilder",
+    "description": "Bildergalerie mit Bildern von dirversen Konzerten, Festen und anderen Anlässen des Musikverein Wollbach.",
+    "keywords": "Bilder, Bildergalerie, Fotos, Photos, Alben, Album, Fotoalbum",
     "referencedFile": "bilder",
-    "showInNavigation": "top"
+    "showInNavigation": "top",
+    "title": "Bilder"
   },
   {
-    "title": "Vereine und Links",
+    "description": "Vereine und Verbände mit denen der Musikverein in langjähriger freundschaftlicher Verbindung steht und eine gute Zusammenarbeit pflegt.",
+    "keywords": "Befreundete Vereine, Befreundete Verbände, Vereine, Partnerschaften, Freundschaften, Verbindungen",
     "referencedFile": "vereine-und-links",
-    "showInNavigation": "top"
+    "showInNavigation": "top",
+    "title": "Vereine und Links"
   },
   {
-    "title": "Impressum",
+    "children": [
+      {
+        "description": "Das Impressum der Webseite des Musikverein Wollbach.",
+        "keywords": "Impressum, Kontakt, Übersicht, Webseiteninformationen,  Informationen zur Webseite, Rechtiliches, Haftung, Haftungsausschluss, Datenschutz",
+        "referencedFile": "haftung",
+        "showInNavigation": "none",
+        "title": "Haftungsausschluss"
+      },
+      {
+        "description": "Das Impressum der Webseite des Musikverein Wollbach.",
+        "keywords": "Impressum, Kontakt, Übersicht, Webseiteninformationen,  Informationen zur Webseite, Rechtiliches, Haftung, Haftungsausschluss, Datenschutz",
+        "referencedFile": "datenschutz",
+        "showInNavigation": "none",
+        "title": "Datenschutz"
+      },
+      {
+        "description": "Eine Übersicht der Inhalte der Webseite des Musikverein Wollbach.",
+        "keywords": "Eine Übersicht der Inhalte der Webseite des Musikverein Wollbach.",
+        "referencedFile": "seiten-uebersicht",
+        "showInNavigation": "none",
+        "title": "Seiten-Übersicht"
+      }
+    ],
+    "description": "Das Impressum der Webseite des Musikverein Wollbach.",
+    "keywords": "Impressum, Kontakt, Übersicht, Webseiteninformationen,  Informationen zur Webseite, Rechtiliches, Haftung, Haftungsausschluss, Datenschutz",
     "referencedFile": "impressum",
     "showInNavigation": "footer",
-    "children": [
-      {
-        "title": "Haftungsausschluss",
-        "referencedFile": "haftung",
-        "showInNavigation": "none"
-      },
-      {
-        "title": "Datenschutz",
-        "referencedFile": "datenschutz",
-        "showInNavigation": "none"
-      },
-      {
-        "title": "Seiten-Übersicht",
-        "referencedFile": "seiten-uebersicht",
-        "showInNavigation": "none"
-      }
-    ]
+    "title": "Impressum"
   },
   {
-    "title": "Blog",
-    "showInNavigation": "none",
     "children": [
       {
-        "title": "Jahreskonzert 2016",
+        "description": "Still Feeling Good - Das Jahreskonzert des Musikverein Wollbach im Jahr 2016 anlässlich des 150 jährigen Jubiläums.",
+        "keywords": "Jahreskonzert, Jubiläum, 150 Jahre, Still Feeling Good, Jahreskonzert 2016, Konzert",
         "referencedFile": "blog_2016-jahreskonzert",
-        "showInNavigation": "none"
+        "showInNavigation": "none",
+        "title": "Jahreskonzert 2016"
       },
       {
-        "title": "Sauserfahrt mit dem Chanderli 2015",
+        "description": "Der Sauserbummel durch das Kandertal mit dem Sauser-Express und der Dampfmusik.",
+        "keywords": "Sauserbummel, Sauser-Express, Weinprobe, Kandertal, Herbstfest, Degustation, Wein, Sauser",
         "referencedFile": "blog_2015-sauserfahrt",
-        "showInNavigation": "none"
+        "showInNavigation": "none",
+        "title": "Sauserfahrt mit dem Chanderli 2015"
       }
-    ]
+    ],
+    "showInNavigation": "none",
+    "title": "Blog"
   },
   {
-    "title": "Seite nicht gefunden!",
     "referencedFile": "404",
-    "showInNavigation": "none"
+    "showInNavigation": "none",
+    "title": "Seite nicht gefunden!"
   },
   {
-    "title": "Unautorisierter Zugriff!",
     "referencedFile": "401",
-    "showInNavigation": "none"
+    "showInNavigation": "none",
+    "title": "Unautorisierter Zugriff!"
   }
 ]

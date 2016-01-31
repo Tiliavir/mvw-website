@@ -1,26 +1,12 @@
 ### MVW custom added
 
-MV.Website.Data/
-MV.Website.Data.Prod/*.png
-MV.Website.Data.Prod/*.ico
-MV.Website.Data.Prod/**/*.gif
-MV.Website.Data.Prod/files/
-MV.Website.Data.Prod/img/
-MV.Website.Data.Prod/gallery/*/
-MV.Website.Data.Prod/css/default-skin.png
-MV.Website.Data.Prod/css/default-skin.svg
-MV.Website.Data.Prod/css/libs.css
-MV.Website.Data.Prod/js/bootstrap.min.js
-MV.Website.Data.Prod/js/libs.js
-MV.Website.Data.Prod/safari-pinned-tab.svg
-
-MV.Website/bower_modules/
-MV.Website/tsd_modules/
-MV.Website/node_modules/
-MV.Website/temp/
-MV.Website/scripts/*.js
-MV.Website/scripts_tests/*.js
-MV.Website/specRunner.html
+Source/bower_modules/
+Source/tsd_modules/
+Source/node_modules/
+Source/temp/
+Source/scripts/*.js
+Source/scripts_tests/*.js
+Source/specRunner.html
 
 ### Source: https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 ## Ignore Visual Studio temporary files, build results, and

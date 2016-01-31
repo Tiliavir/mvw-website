@@ -4,7 +4,6 @@
   "use strict";
 
   var gulp = require("gulp"),
-      args = require("yargs").argv,
       del = require("del"),
       fs = require("fs"),
       lazypipe = require("lazypipe"),
@@ -43,12 +42,7 @@
     "./bower_modules/photoswipe/dist/default-skin/default-skin.css"
   ];
 
-  var isRelease = !!args.release;
-  isRelease = true;
-
   gulp.task("watch", function() {
-    gulp.watch(paths.styles + "**/*.scss", ["styles_sass"]);
-    return gulp.watch(paths.scripts + "**/*.ts", ["scripts_app_compile"]);
   });
 
   gulp.task("scripts_tsd", function (callback) {
@@ -63,7 +57,7 @@
     del.sync(paths.temp);
     del.sync("./bin/");
     del.sync("./obj/");
-    return del.sync([paths.dest + "**/*", "!" + paths.dest + "gallery", "!" + paths.dest + "gallery/**/*"], { force: true });
+    return del.sync([paths.dest + "**/*"], { force: true });
   });
 
   gulp.task("copy_toWebServer", function () {
@@ -85,14 +79,18 @@
 
   gulp.task("styles_sass", function () {
     return gulp.src(paths.styles + "**/*.scss")
-      .pipe($.sass({ outputStyle: "compressed" })
-        .on("error", $.sass.logError))
-      .pipe(gulp.dest(paths.dest + "css/"));
+               .pipe($.sass({ outputStyle: "compressed" })
+                      .on("error", $.sass.logError))
+               .pipe(gulp.dest(paths.temp + "css/"));
   });
 
-  gulp.task("styles_css", ["styles_sass"], function () {
-   return gulp.src(librariesCSS).pipe($.concat("libs.css"))
-      .pipe(gulp.dest(paths.dest + "css/"));
+  gulp.task("styles_compile", ["styles_sass"], function () {
+    var css = librariesCSS.slice();
+    css.push(paths.temp + "css/*.css");
+    return gulp.src(css)
+               .pipe($.concat("app.css"))
+               .pipe($.cssnano({ discardComments: { removeAll: true } }))
+               .pipe(gulp.dest(paths.dest + "css/"));
   });
 
   gulp.task("scripts_tslint", function () {
@@ -109,29 +107,33 @@
           out: filename,
           noImplicitAny: true
         }))
-        .pipe($.if(isRelease, $.uglify()))
+        .pipe($.if(settings.isReleaseBuild, $.uglify()))
         .pipe(gulp.dest(dest));
   };
 
   gulp.task("scripts_app_compile", ["scripts_tslint"], function () {
-    return processTS(paths.scripts + "**/*.ts", paths.dest + "js/", "app.js");
+    return processTS(paths.scripts + "**/*.ts", paths.temp + "js/", "app.js");
   });
 
   gulp.task("scripts_tests_compile", ["scripts_tslint"], function () {
     return processTS(paths.tests + "/**/*.ts", paths.tests, "tests.js");
   });
 
-  gulp.task("scripts_libs_compile", function () {
+  gulp.task("scripts_compile", ["scripts_app_compile"], function () {
     gulp.src(libraryJSBootstrap).pipe(gulp.dest(paths.dest + "js/"));
-    return gulp.src(librariesJS).pipe($.concat("libs.js"))
+
+    var js = librariesJS.slice();
+    js.push(paths.temp + "js/*.js");
+    return gulp.src(js)
+               .pipe($.uglify())
+               .pipe($.concat("app.js"))
                .pipe(gulp.dest(paths.dest + "js/"));
   });
 
-  gulp.task("scripts_tests", ["scripts_libs_compile", "scripts_app_compile", "scripts_tests_compile"], function () {
+  gulp.task("scripts_tests", ["scripts_compile", "scripts_tests_compile"], function () {
     return gulp.src([paths.dest + "js/app.js", paths.tests + "*.js"])
         .pipe($.jasminePhantom({
           integration: true,
-          vendor: paths.dest + "js/libs.js",
           keepRunner: "./"
         }));
   });
@@ -166,19 +168,10 @@
     return gulp.src(paths.assets + "pages/**/*")
       .pipe($.replace("<!--PRE:NUMBEROFMUSICIANS-->", numberOfMusicians))
       .pipe($.replace(/^(\s*#+) /gm, "$1# "))
-      // todo : datums format in e.g. berichte
       .pipe(gulp.dest(paths.temp));
   });
 
-  gulp.task("html_generatePages", ["html_preprocess"], function () {
-    var termine = require(paths.assets + "pages/data/termine.json");
-    var berichte = require(paths.assets + "pages/data/berichte.json");
-    var vorstand = require(paths.assets + "pages/data/vorstand.json");
-    var register = require(paths.assets + "pages/data/register.json");
-    var jugendRegister = require(paths.assets + "pages/data/jugend-register.json");
-    var news = require(paths.assets + "pages/data/news.json");
-    var galleries = require(paths.dest + "gallery/galleries.json");
-
+  gulp.task("html_generatePages", ["html_preprocess"], function() {
     var last;
     structure.performActionOnLeaf(function(entry, breadcrumb) {
       var referencedFile = entry.referencedFile;
@@ -193,24 +186,30 @@
                        moment: moment,
                        marked: marked,
 
-                       isRelease: isRelease,
+                       isRelease: settings.isReleaseBuild,
 
                        siteTitle: (referencedFile === "index" ? "" : entry.title + " | ") + settings.siteTitle,
-                       baseUrl:  isRelease ? settings.baseUrl : "/",
+                       baseUrl: settings.isReleaseBuild ? settings.baseUrl : "/",
+
+                       // todo: refactor, pass entry?
+                       description: entry.description,
+                       keywords: entry.keywords,
                        pageTitle: entry.title,
                        pageSubTitle: entry.subtitle,
                        breadcrumb: !entry.hideBreadcrumb && breadcrumb && breadcrumb.length > 1 ? structure.getBreadcrumbHtml(breadcrumb) : null,
 
-                       termine: termine,
-                       berichte: berichte,
-                       vorstand: vorstand,
-                       register: register,
-                       jugendRegister: jugendRegister,
-                       news: news,
-                       galleries: galleries
+                       scope: {
+                         termine: require(paths.assets + "pages/data/termine.json"),
+                         berichte: require(paths.assets + "pages/data/berichte.json"),
+                         vorstand: require(paths.assets + "pages/data/vorstand.json"),
+                         register: require(paths.assets + "pages/data/register.json"),
+                         jugendRegister: require(paths.assets + "pages/data/jugend-register.json"),
+                         news: require(paths.assets + "pages/data/news.json"),
+                         galleries: require(paths.assets + "gallery/galleries.json")
+                       }
                      },
-                     pretty: !isRelease
-                   }))
+                     pretty: !settings.isReleaseBuild
+                   }).on("error", $.util.log))
                    .pipe(gulp.dest(paths.dest));
       }
     });
@@ -262,18 +261,18 @@
     var images = null;
     var state = null;
     try {
-      images = require(paths.dest + "/gallery/galleries.json");
-      state = require(paths.dest + "/gallery/state.json");
+      images = require(paths.assets + "/gallery/galleries.json");
+      state = require(paths.assets + "/gallery/state.json");
     } catch (e) {
     }
     if (!img.init(images, state)) {
       $.util.log("Could not restore gallery information - will start fom scratch!");
     }
 
-    return gulp.src(settings.paths.gallerySource + "**/*.{png,jpg,jpeg,PNG,JPG,JPEG}",
-                    { base: settings.paths.gallerySource })
+    return gulp.src(paths.assets + "gallery/**/*.{png,jpg,jpeg,PNG,JPG,JPEG}",
+                    { base: paths.assets + "gallery/" })
                .pipe(through.obj(function (chunk, enc, cb) {
-                 img.addInformation(chunk, isRelease);
+                 img.addInformation(chunk, settings.isReleaseBuild);
                  cb(null, chunk);
                }))
                .pipe($.rename(function (path) {
@@ -290,7 +289,7 @@
     img.writeFiles(fs.writeFileSync, paths.dest + "/gallery/");
   });
 
-  gulp.task("default", $.sequence(["styles_css", "scripts_tests", "html_generatePages"], "html_minify", ["html_bootlint", "html_validate", "sitemap"]));
+  gulp.task("default", $.sequence(["styles_compile", "scripts_tests", "html_generatePages"], "html_minify", ["html_bootlint", "html_validate", "sitemap"]));
 
   gulp.task("development", ["scripts_tsd", "watch"]);
 })(require);

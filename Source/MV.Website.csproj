@@ -24,15 +24,16 @@
   <ItemGroup>
     <Content Include="assets\pages\data\jugend-register.json" />
     <Content Include="assets\pages\data\vorstand.json" />
+    <Content Include="assets\pages\data\news.json" />
     <None Include="assets\pages\headers\index.jade" />
     <Content Include="assets\pages\favicon.jade" />
     <Content Include="assets\pages\ga.jade" />
     <Content Include="assets\pages\mixins\formatTimespan.jade" />
     <None Include="assets\pages\mixins\image.jade" />
     <None Include="assets\pages\partials\blog_2016-jahreskonzert.jade" />
-    <Content Include="assets\pages\partials\todo_kontaktformular.jade" />
+    <Content Include="assets\pages\partials\kontaktformular.jade" />
     <Content Include="assets\pages\mixins\youtube.jade" />
-    <Content Include="assets\pages\partials\todo_jugendorchester.jade" />
+    <Content Include="assets\pages\partials\jugendorchester.jade" />
     <Content Include="assets\pages\partials\register.jade" />
     <Content Include="assets\pages\partials\vorstand.jade" />
     <Content Include="assets\pages\partials\coach.jade" />
@@ -45,7 +46,7 @@
     <None Include="assets\pages\partials\401.jade" />
     <None Include="assets\pages\partials\ausbildung.jade" />
     <None Include="assets\pages\partials\vorstufenorchester.jade" />
-    <Content Include="assets\pages\partials\todo_news.jade" />
+    <Content Include="assets\pages\partials\news.jade" />
     <None Include="assets\pages\partials\termine.jade" />
     <None Include="assets\pages\partials\dampfmusik.jade" />
     <None Include="assets\pages\partials\datenschutz.jade" />
@@ -66,7 +67,6 @@
     <None Include="assets\pages\partials\index.jade" />
     <Content Include="assets\pages\data\berichte.json" />
     <Content Include="assets\pages\data\schema\berichte-schema.json" />
-    <Content Include="data\site-structure-bck.json" />
     <None Include="styles\print.scss" />
     <None Include="styles\app.scss" />
     <Content Include="gulpfile.js" />
@@ -104,7 +104,7 @@
           <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties data_4site-structure_1json__JSONSchema="schema\site-structure-schema.json" assets_4pages_4data_4berichte_1json__JSONSchema="schema\berichte-schema.json" />
+      <UserProperties assets_4pages_4data_4berichte_1json__JSONSchema="schema\berichte-schema.json" data_4site-structure_1json__JSONSchema="schema\site-structure-schema.json" />
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">

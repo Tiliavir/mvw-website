@@ -2,4 +2,5 @@
   - if (!title) { title = alt };
   div.img
     img.img-center.img-responsive(title=title, src=url, alt=alt)
-    p.caption= caption
+    if caption
+      p.caption= caption

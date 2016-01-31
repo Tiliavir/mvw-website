@@ -6,7 +6,7 @@ table#vorMainTable.table.table-condensed.table-bordered.table-striped.table-hove
       th Name
       th Kontakt
   tbody
-    each role in vorstand
+    each role in scope.vorstand
       tr
         td
           +image(role.image, role.title)

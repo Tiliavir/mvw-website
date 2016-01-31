@@ -4,7 +4,7 @@ table#berTab.table.table-condensed.table-bordered.table-striped.table-hover.resp
       th Datum
       th Thema
       th Quelle
-    each bericht in berichte
+    each bericht in scope.berichte
       tr
         td
           +formatTimespan(bericht.date)

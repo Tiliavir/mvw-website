@@ -42,6 +42,12 @@
           "type": "string",
           "description": "The subtitle of the menu entry and url path."
         },
+        "keywords": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
         "showInNavigation": {
           "$ref": "#/definitions/navigationType"
         },

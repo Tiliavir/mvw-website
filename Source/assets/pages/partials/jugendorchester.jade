@@ -4,7 +4,7 @@
   # Der Dirigent
   Unser Dirigent ist Michael Bierwirth aus Bad Bellingen. Michael spielt selbst Trompete und leitet auch das Jugendochester des Musikverein Bad Bellingen.
 
-+image("/img/personen/2015_dirigent_jugend.jpg", "Jugendorchester Dirigent")
++image("/img/personen/2015_dirigent_jugend.jpg", "Jugendorchester Dirigent", null, "Der Jugendorchester Dirigent: Michael Bierwirth")
 
 :marked
   # Die Jungmusiker
@@ -23,8 +23,7 @@
     return groups;
   }
 
-  var groupedRegisters = groupBy(jugendRegister, function(person)
-  {
+  var groupedRegisters = groupBy(scope.jugendRegister, function(person) {
     return person.register; // note(ml): can also group by array of properties! => change group name
   });
 
