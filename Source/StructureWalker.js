@@ -56,7 +56,10 @@ module.exports = {
     var html = "ul" + (type !== "allplain" ? ".nav.navbar-nav.navbar-right" : "");
     if (structure && structure.length > 0) {
       for (var i = 0; i < structure.length; i++) {
-        if (structure[i].showInNavigation === type || type === "allplain") {
+        if (structure[i].showInNavigation === type
+            || (type === "allplain"
+                && structure[i].referencedFile != "404"
+                && structure[i].referencedFile != "401")) {
           html += writeNavigationEntry(structure[i], 2, type);
         }
       }
@@ -73,12 +76,23 @@ module.exports = {
   },
 
   getBreadcrumbHtml: function(breadcrumb) {
-    var html = "<ol class=\"breadcrumb\">";
+    var html = "<ol class=\"breadcrumb\" itemscope itemtype=\"http://schema.org/BreadcrumbList\">";
     for (var i = 0; i < breadcrumb.length; i++) {
       if (breadcrumb[i].referencedFile) {
-        html += "<li><a href=\"" + breadcrumb[i].referencedFile + ".html\">" + breadcrumb[i].title + "</a></li>";
+        html += "<li itemprop=\"itemListElement\" itemscope itemtype=\"http://schema.org/ListItem\">"
+             + "<a itemprop=\"item\" href=\"" + breadcrumb[i].referencedFile + ".html\">"
+             + "<span itemprop=\"name\">"
+             + breadcrumb[i].title
+             + "</span>"
+             + "<meta itemprop=\"position\" content=\"" + (i+1) + "\" />"
+             + "</a></li>";
       } else {
-        html += "<li>" + breadcrumb[i].title + "</li>";
+        html += "<li itemprop=\"itemListElement\" itemscope itemtype=\"http://schema.org/ListItem\">"
+          + "<span itemprop=\"name\">"
+          + breadcrumb[i].title
+          + "</span>"
+          + "<meta itemprop=\"position\" content=\"" + (i + 1) + "\" />"
+          + "</li>";
       }
     }
     html += "</ol>";

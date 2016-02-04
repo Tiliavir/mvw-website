@@ -3,6 +3,7 @@ include ./mixins/youtube.jade
 include ./mixins/formatTimespan.jade
 
 doctype html
+//- xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"
 html(lang="de")
   head
     title #{siteTitle}
@@ -10,22 +11,28 @@ html(lang="de")
       base(href=baseUrl)
     meta(charset="utf-8")
     meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
-    meta(name="author" content="Markus Lindenmann")
+    meta(name="author" content="Musikverein Wollbach 1866 e.V.")
 
-    if description
-      meta(name="description" content="#{description}")
+    if page.description
+      meta(name="description" content="#{page.description}")
+    if page.keywords
+      meta(name="keywords" content="#{page.keywords}")
 
-    if keywords
-      meta(name="keywords" content="#{keywords}")
+    meta(property="og:type" content="website")
+    meta(property="og:image" content="#{baseUrl}img/logo_color.png")
+    meta(property="og:locale" content="de_DE")
+    meta(property="og:site_name" content="Musikverein Wollbach 1866 e.V.")
+
+    meta(property="fb:admins" content="100000073380067")/
 
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
 
-    link(rel="stylesheet" href="/css/app.css")
+    link(rel="stylesheet" href="/css/app.css?v=#{buildNumber}")
 
     include ./favicon.jade
 
-    script(src="/js/app.js")
+    script(src="/js/app.js?v=#{buildNumber}")
 
     <!--[if lt IE 9]>
     script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
@@ -51,9 +58,9 @@ html(lang="de")
     #content-main.container
       .row
         .col-lg-12
-          h1.page-header #{pageTitle}
-            if pageSubTitle
-              small #{pageSubTitle}
+          h1.page-header #{page.title}
+            if page.subtitle
+              small #{page.subtitle}
           | !{breadcrumb}
       .row
         .col-lg-12

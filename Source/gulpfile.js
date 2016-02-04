@@ -187,16 +187,13 @@
                        marked: marked,
 
                        isRelease: settings.isReleaseBuild,
+                       buildNumber: parseInt((new Date()).valueOf() / 1000000),
 
                        siteTitle: (referencedFile === "index" ? "" : entry.title + " | ") + settings.siteTitle,
                        baseUrl: settings.isReleaseBuild ? settings.baseUrl : "/",
-
-                       // todo: refactor, pass entry?
-                       description: entry.description,
-                       keywords: entry.keywords,
-                       pageTitle: entry.title,
-                       pageSubTitle: entry.subtitle,
                        breadcrumb: !entry.hideBreadcrumb && breadcrumb && breadcrumb.length > 1 ? structure.getBreadcrumbHtml(breadcrumb) : null,
+
+                       page: entry,
 
                        scope: {
                          termine: require(paths.assets + "pages/data/termine.json"),
@@ -209,7 +206,7 @@
                        }
                      },
                      pretty: !settings.isReleaseBuild
-                   }).on("error", $.util.log))
+                   }))
                    .pipe(gulp.dest(paths.dest));
       }
     });
@@ -218,7 +215,11 @@
 
   gulp.task("html_minify", function () {
     return gulp.src(paths.dest + "**/*.html")
-               .pipe($.minifyHtml({ conditionals: true }))
+               .pipe($.htmlmin({
+                 removeComments: true,
+                 collapseWhitespace: true,
+                 removeTagWhitespace: true
+               }))
                .pipe(gulp.dest(paths.dest));
   });
 
