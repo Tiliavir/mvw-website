@@ -39,7 +39,7 @@ html(lang="de")
     script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
     <![endif]-->
 
-  body
+  body(itemscope itemtype="http://schema.org/#{page.schemaOrg || 'WebPage'}")
     nav#header.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
       .container
         .navbar-header
@@ -55,7 +55,7 @@ html(lang="de")
 
     <!--PRE:HEADER-->
 
-    #content-main.container
+    #content-main.container(itemprop="mainContentOfPage")
       .row
         .col-lg-12
           h1.page-header #{page.title}

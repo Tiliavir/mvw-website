@@ -28,7 +28,8 @@
         "keywords": "Historie, Geschichte, Chronik, Passivmitglied, Mitgliedschaft",
         "referencedFile": "ueber-uns",
         "showInNavigation": "top",
-        "title": "Wir über uns"
+        "title": "Wir über uns",
+        "schemaOrg": "AboutPage"
       },
       {
         "description": "Die aktuelle Besetzung des Musikverein Wollbach nach Registern.",
@@ -108,7 +109,8 @@
     "keywords": "Bilder, Bildergalerie, Fotos, Photos, Alben, Album, Fotoalbum",
     "referencedFile": "bilder",
     "showInNavigation": "top",
-    "title": "Bilder"
+    "title": "Bilder",
+    "schemaOrg": "ImageGallery"
   },
   {
     "description": "Vereine und Verbände mit denen der Musikverein in langjähriger freundschaftlicher Verbindung steht und eine gute Zusammenarbeit pflegt.",

@@ -76,7 +76,7 @@ module.exports = {
   },
 
   getBreadcrumbHtml: function(breadcrumb) {
-    var html = "<ol class=\"breadcrumb\" itemscope itemtype=\"http://schema.org/BreadcrumbList\">";
+    var html = "<ol class=\"breadcrumb\" itemprop=\"breadcrumb\" itemscope itemtype=\"http://schema.org/BreadcrumbList\">";
     for (var i = 0; i < breadcrumb.length; i++) {
       if (breadcrumb[i].referencedFile) {
         html += "<li itemprop=\"itemListElement\" itemscope itemtype=\"http://schema.org/ListItem\">"
