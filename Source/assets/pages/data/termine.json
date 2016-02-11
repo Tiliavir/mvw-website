@@ -1,33 +1,59 @@
 ﻿{
   "2016": [
     {
-      "title": "Kirchenkonzert mit dem VJO Hochrhein",
+      "starttime": "2016-02-14T18:00:00Z",
+      "endtime": "2016-02-14T00:00:00Z",
+      "location": {
+        "name": "Buchhole beim Rebhüsli / Baselblick",
+        "address": "Wollbach"
+      },
+      "title": "Scheibenfeuer",
+      "description": "Bei Einbruch der Dunkelheit wird wieder das große Feuer entzündet. Für euer Wohl ist mit Grillwürsten, Glühwein, Punsch, sonstigen Getränken, sowie Kaffee und Kuchen wieder bestens gesorgt.<br/>Ebenfalls ist für Holz an den Feuerstellen gesorgt und die Scheibenböcke sind gestellt."
+    },
+    {
+      "location": {
+        "name": "ev. Kirche",
+        "address": "Kandern"
+      },
       "starttime": "2016-05-08T17:00:00Z",
-      "location": "ev. Kirche, Kandern"
+      "title": "Kirchenkonzert mit dem VJO Hochrhein"
     },
     {
-      "title": "Marschmusiktag in Wollbach",
+      "location": {
+        "address": "Wollbach"
+      },
       "starttime": "2016-06-04T00:00:00Z",
-      "location": "Wollbach"
+      "title": "Marschmusiktag in Wollbach"
     },
     {
-      "title": "Doppelkonzert des Jugendorchesters mit dem VJO des AMV.",
-      "starttime": "2016-07-09T17:00:00Z"
+      "starttime": "2016-07-09T17:00:00Z",
+      "title": "Doppelkonzert des Jugendorchesters mit dem VJO des AMV."
     },
     {
-      "title": "Konzertreise",
+      "endtime": "2016-07-31T00:00:00Z",
+      "location": {
+        "name": "Fiss",
+        "address": "Tirol, AT"
+      },
       "starttime": "2016-07-28T00:00:00Z",
-      "endtime": "2016-07-31T00:00:00Z"
+      "title": "Konzertreise"
     },
     {
       "endtime": "2016-10-16T00:00:00Z",
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
       "starttime": "2016-10-15T00:00:00Z",
       "title": "Sauserexpress und Herbstfest"
     },
     {
-      "title": "Jugend- und Kammerkonzert",
-      "location": "Kirche, Wollbach",
-      "starttime": "2016-12-04T00:00:00Z"
+      "location": {
+        "name": "Kirche",
+        "address": "Wollbach"
+      },
+      "starttime": "2016-12-04T00:00:00Z",
+      "title": "Jugend- und Kammerkonzert"
     }
   ]
 }

@@ -138,7 +138,7 @@
           <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties data_4site-structure_1json__JSONSchema="schema\site-structure-schema.json" assets_4pages_4data_4berichte_1json__JSONSchema="schema\berichte-schema.json" />
+      <UserProperties assets_4pages_4data_4termine_1json__JSONSchema="schema\termine-schema.json" assets_4pages_4data_4berichte_1json__JSONSchema="schema\berichte-schema.json" data_4site-structure_1json__JSONSchema="schema\site-structure-schema.json" />
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
