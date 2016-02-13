@@ -1,30 +1,39 @@
 ﻿[
   {
-    "date": "2016-01-25T00:00:00.000Z",
-    "title": "Swingender Sound und groovende Rhythmen",
-    "url": "http://www.badische-zeitung.de/kandern/swingender-sound-und-groovende-rhythmen",
-    "hasPicture": true,
+    "date": "2016-02-12T21:56:00.000Z",
     "hasDescription": true,
+    "hasPicture": true,
+    "srcTitle": "VHJ",
+    "srcUrl": "http://www.verlagshaus-jaumann.de",
+    "title": "Erfolgreich dank Einsatzfreude",
+    "url": "http://www.verlagshaus-jaumann.de/inhalt.kandern-erfolgreich-dank-einsatzfreude.c3acca00-33bf-454c-a70a-0bbdc10626cc.html"
+  },
+  {
+    "date": "2016-01-25T00:00:00.000Z",
+    "hasDescription": true,
+    "hasPicture": true,
+    "srcTitle": "BZ",
     "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
+    "title": "Swingender Sound und groovende Rhythmen",
+    "url": "http://www.badische-zeitung.de/kandern/swingender-sound-und-groovende-rhythmen"
   },
   {
     "date": "2016-01-24T00:00:00.000Z",
-    "title": "Professionell und aufwendig inszenierte Geburtstagsshow",
-    "url": "http://www.verlagshaus-jaumann.de/inhalt.kandern-professionell-und-aufwendig-inszenierte-geburtstagsshow.455ff5a5-caf5-4595-b0ea-93910ba75e2f.html",
-    "hasPicture": true,
     "hasDescription": true,
+    "hasPicture": true,
+    "srcTitle": "VHJ",
     "srcUrl": "http://www.verlagshaus-jaumann.de",
-    "srcTitle": "VHJ"
+    "title": "Professionell und aufwendig inszenierte Geburtstagsshow",
+    "url": "http://www.verlagshaus-jaumann.de/inhalt.kandern-professionell-und-aufwendig-inszenierte-geburtstagsshow.455ff5a5-caf5-4595-b0ea-93910ba75e2f.html"
   },
   {
     "date": "2016-01-21T00:00:00.000Z",
-    "title": "Was klein begann, lässt heute groß aufhorchen",
-    "url": "http://www.badische-zeitung.de/kandern/was-klein-begann-laesst-heute-gross-aufhorchen",
-    "hasPicture": true,
     "hasDescription": true,
+    "hasPicture": true,
+    "srcTitle": "BZ",
     "srcUrl": "http://www.badische-zeitung.de",
-    "srcTitle": "BZ"
+    "title": "Was klein begann, lässt heute groß aufhorchen",
+    "url": "http://www.badische-zeitung.de/kandern/was-klein-begann-laesst-heute-gross-aufhorchen"
   },
   {
     "date": "2016-01-09T00:00:00.000Z",

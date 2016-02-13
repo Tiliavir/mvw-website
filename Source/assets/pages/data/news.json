@@ -1,6 +1,10 @@
 ﻿{
   "2016": [
     {
+      "title": "11.02.2016 - Generalversammlung des Musikvereins und der Fördervereine",
+      "content": "Unsere Generalversammlung konnten wir am 11.02. im Stüble abhalten. Bei den Wahlen ergab sich eine Änderung, wobei Erwin Bürgin und Alexander Serazio ihre Posten als Fördervereins-Vorsitzender und Passiv-Beisitzer tauschten. Ausserdem haben wir drei neue Ehrenmitglieder worüber wir uns sehr freuen: Christian Argast, Susanne Schlüchter-Meier und  Sigrid Nickel. Herzlichen Glückwunsch."
+    },
+    {
       "content": "Unter dem Motto ['Still Feeling Good'][konzert] gaben wir unser Jubiläumskonzert am Freitag und Samstag Abend bei toller Atmosphäre und ausverkaufter Halle.\n[konzert]: blog_2016-jahreskonzert.html",
       "title": "Jahreskonzert am 22. und 23. Januar"
     }
@@ -8,11 +12,27 @@
   "2015": [
     {
       "content": "Mit Bravour hat Anfang November unsere Musikerin und Dirigentin des Vorstufenorchesters Maria Krey den C3 Kurs mit Dirigierprüfung in Staufen abgeschlossen. Wir gratulieren herzlich zu diesem tollen Erfolg!",
-      "title": "C3 Prüfung"
+      "title": "C3 Prüfung",
+      "image": {
+        "title": "C3 Prüfung: Maria Krey",
+        "src": "/img/vorstufe/dirigentin_vorstufenorchester.jpg"
+      }
     },
     {
       "content": "Nachdem sie bereits letztes Jahr Gold auf der Klarinette gemacht hat, hat sich unsere Musikerin Luisa Krey nochmals goldene Sporen verdient, denn im Herbst hat sie auf dem Fagott das JMLA in Gold in Staufen abgelegt. Wir gratulieren zu der doppelten tollen Leistung!",
-      "title": "Jungmusikerleistungsabzeichen in Gold"
+      "title": "Jungmusikerleistungsabzeichen in Gold",
+      "image": {
+        "title": "JMLA in Gold 2015: Luisa Krey",
+        "src": "/img/jugend/jmla/2015_jmla_gold_fagott.jpg"
+      }
+    },
+    {
+      "title": "Jungmusikerleistungsabzeichen in Bronze",
+      "content": "Madleina Muchenberger und Josepha Brehm haben erfolgreich ihre Prüfung zum Jungmusikerleistungsabzeichen in Bronze abgelegt. Hierzu gratulieren wir beiden ganz herzlich und wünschen ihnen für ihre weitere Ausbildung viel Erfolg und weiterhin viel Spaß am Musizieren.",
+      "image": {
+        "title": "JMLA in Bronze 2015: Madleina Muchenberger und Josepha Brehm",
+        "src": "/img/jugend/jmla/2015_jmla_bronze.jpg"
+      }
     },
     {
       "title": "Sauserbummel und Herbstfest",
@@ -21,7 +41,7 @@
     {
       "content": "In den Osterferien hat unser Posaunist Sven Gut das Jungmusiker Leistungsabzeichen in Gold absolviert. Zu dieser tollen Leistung gratulieren wir Dir ganz herzlich und wünschen Dir weiterhin viel Freude und Spaß beim Musizieren!",
       "image": {
-        "title": "JMLA in Gold 2015",
+        "title": "JMLA in Gold 2015: Sven Gut",
         "src": "/img/jugend/jmla/2015_jmla_gold.jpg"
       },
       "title": "Jungmusikerleistungsabzeichen in Gold"

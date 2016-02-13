@@ -267,7 +267,7 @@
     } catch (e) {
     }
     if (!img.init(images, state)) {
-      $.util.log("Could not restore gallery information - will start fom scratch!");
+      $.util.log("Could not restore gallery information - will start from scratch!");
     }
 
     return gulp.src(paths.assets + "gallery/**/*.{png,jpg,jpeg,PNG,JPG,JPEG}",

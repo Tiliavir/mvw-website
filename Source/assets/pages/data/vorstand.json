@@ -13,7 +13,7 @@
     "image": "/img/personen/vorstand2.jpg",
     "persons": [ "Frank Reinacher" ],
     "telephone": "07626 973317",
-    "title": "2. Vorstitzender"
+    "title": "2. Vorsitzender"
   },
   {
     "address": "79400 Wollbach",
@@ -55,7 +55,7 @@
   },
   {
     "image": "/img/personen/passivbeisitzer.jpg",
-    "persons": [ "Reinhard Gresslin", "Alexander Serazio" ],
+    "persons": [ "Reinhard Gresslin", "Erwin Bürgin" ],
     "title": "Passivbeisitzer"
   }
 ]
