@@ -50,7 +50,7 @@ module.exports = {
     return true;
   },
 
-  addInformation: function (file, isRelease) {
+  addInformation: function (file) {
     var info = getInfoFromFile(file);
 
     var year = images[info.year] || (images[info.year] = {});

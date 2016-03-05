@@ -1,4 +1,4 @@
-﻿/// <reference path="../tsd_modules/tsd.d.ts" />
+﻿/// <reference path="../../../tsd_modules/tsd.d.ts" />
 
 module MVW.Gallery {
   let galleries : any;
@@ -73,6 +73,9 @@ module MVW.Gallery {
         item.w = item.m.w;
         item.h = item.m.h;
       }
+      if (item.t.indexOf(" ") > 0) {
+        item.title = item.t;
+      }
 
       // it doesn't really matter what will you do here, 
       // as long as item.src, item.w and item.h have valid values.
@@ -109,3 +112,5 @@ module MVW.Gallery {
     });
   }
 }
+
+$(() => { MVW.Gallery.initialize(); });

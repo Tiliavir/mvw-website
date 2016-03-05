@@ -61,6 +61,7 @@
     <Content Include="assets\pages\favicon.jade" />
     <Content Include="assets\pages\ga.jade" />
     <Content Include="assets\pages\mixins\formatTimespan.jade" />
+    <Content Include="assets\pages\mixins\image-amp.jade" />
     <None Include="assets\pages\mixins\image.jade" />
     <None Include="assets\pages\partials\blog_2016-jahreskonzert.jade" />
     <Content Include="assets\pages\partials\kontaktformular.jade" />
@@ -71,6 +72,7 @@
     <Content Include="assets\pages\partials\coach.jade" />
     <Content Include="assets\pages\partials\bilder.jade" />
     <Content Include="assets\pages\partials\seiten-uebersicht.jade" />
+    <Content Include="assets\pages\template-amp.jade" />
     <None Include="assets\pages\template.jade" />
     <None Include="assets\pages\partials\404.jade" />
     <None Include="assets\pages\partials\berichte.jade" />
@@ -115,13 +117,17 @@
     <Content Include="tsd.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="scripts\main.ts" />
-    <None Include="scripts_tests\tests.ts" />
+    <None Include="assets\pages\scripts\vereine-und-links.ts" />
     <None Include="tslint.json" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="scripts\gallery.ts" />
-    <TypeScriptCompile Include="scripts\index.ts" />
+    <None Include="assets\pages\scripts\bilder.ts" />
+    <None Include="assets\pages\scripts\index.ts" />
+    <None Include="scripts\main.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="assets\pages\scripts\news.ts" />
+    <TypeScriptCompile Include="assets\pages\scripts\register.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

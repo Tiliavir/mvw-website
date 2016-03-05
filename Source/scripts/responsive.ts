@@ -1,6 +1,6 @@
 /// <reference path="../tsd_modules/tsd.d.ts" />
 
-module MVW {
+/*module MVW {
   $("table.responsive").each(function () {
     const headers : string[] = [];
     $(this).find("th").each(function() {
@@ -19,4 +19,4 @@ module MVW {
     css += " }</style>";
     $(css).appendTo("head");
   });
-}
+}*/

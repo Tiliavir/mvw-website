@@ -1,4 +1,4 @@
-﻿/// <reference path="../tsd_modules/tsd.d.ts" />
+﻿/// <reference path="../../../tsd_modules/tsd.d.ts" />
 
 module MVW.Start {
   let slides = [
@@ -123,3 +123,5 @@ module MVW.Start {
     $("#startCarousel").carousel({ interval: 6000 });
   }
 }
+
+$(() => { MVW.Start.initialize(); });

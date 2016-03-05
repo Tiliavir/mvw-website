@@ -25,7 +25,7 @@ function writeNavigationEntry(entry, n, type) {
   } else {
     if (type === "allplain" || entry.showInNavigation !== "none") {
       html = indent(n, true)
-               + "li"
+               + "li(class=(page.referencedFile === '" + entry.referencedFile + "' ? 'active' : undefined))"
                + indent(n + 2, true)
                + "a(href=\"" + entry.referencedFile + ".html\") "
                + entry.title;
@@ -70,12 +70,12 @@ module.exports = {
   performActionOnLeaf: function (action) {
     if (structure && structure.length > 0) {
       for (var i = 0; i < structure.length; i++) {
-        performActionOnLeafInternal(structure[i], action, []);
+        performActionOnLeafInternal(structure[i], action, [{referencedFile:"index", title:"Start"}]);
       }
     }
   },
 
-  getBreadcrumbHtml: function(breadcrumb) {
+  getBreadcrumbHtml: function (breadcrumb) {
     var html = "<ol class=\"breadcrumb\" itemprop=\"breadcrumb\" itemscope itemtype=\"http://schema.org/BreadcrumbList\">";
     for (var i = 0; i < breadcrumb.length; i++) {
       if (breadcrumb[i].referencedFile) {

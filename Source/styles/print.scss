@@ -1,40 +1,49 @@
-﻿@media print {
-  html,
-  body
-  {
-    padding-top: 0;
-    background : none;
+﻿html,
+body {
+  padding-top: 0;
+  background : none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12pt;
+}
+
+header,
+.navbar {
+  display : none;
+}
+
+h1 {
+  font-size: 18pt;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+h3 {
+  font-size: 14pt;
+}
+
+.img-responsive {
+  max-height:calc(45vh);
+}
+
+img, tr, td, table {
+  page-break-inside: avoid;
+}
+
+#print-logo {
+  margin: 0 auto;
+}
+
+#content-main {
+  width : 95%;
+}
+
+.breadcrumb {
+  a:after {
+    display: none;
   }
-  
-  header,
-  .navbar
-  {
-    display : none;
-  }
-  
-  #content-main
-  {
-    &:before
-    {
-      content: '';
-      display: block;
-      height: 100px;
-      width: 100vw;
-      background: transparent url(/img/logo_color.png) no-repeat top left !important;
-    }
-  
-    width : 95%;
-    padding-top:10px;
-  }
-  
-  .breadcrumb
-  {
-    a:after
-    {
-      display: none;
-    }
-  
-    font-size : 8pt;
-    color : #000000;
-  }
+
+  font-size : 8pt;
+  color : #000000;
 }

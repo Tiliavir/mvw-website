@@ -1,22 +1,12 @@
 ﻿{
   "2016": [
     {
-      "starttime": "2016-02-14T18:00:00Z",
-      "endtime": "2016-02-14T00:00:00Z",
       "location": {
-        "name": "Buchhole beim Rebhüsli / Baselblick",
-        "address": "Wollbach"
-      },
-      "title": "Scheibenfeuer",
-      "description": "Bei Einbruch der Dunkelheit wird wieder das große Feuer entzündet. Für euer Wohl ist mit Grillwürsten, Glühwein, Punsch, sonstigen Getränken, sowie Kaffee und Kuchen wieder bestens gesorgt.<br/>Ebenfalls ist für Holz an den Feuerstellen gesorgt und die Scheibenböcke sind gestellt."
-    },
-    {
-      "location": {
-        "name": "ev. Kirche",
+        "name": "Evangelische Kirche",
         "address": "Kandern"
       },
       "starttime": "2016-05-08T17:00:00Z",
-      "title": "Kirchenkonzert mit dem VJO Hochrhein"
+      "title": "Kirchenkonzert mit dem Verbandsjugendorchester Hochrhein"
     },
     {
       "location": {
@@ -26,13 +16,17 @@
       "title": "Marschmusiktag in Wollbach"
     },
     {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
       "starttime": "2016-07-09T17:00:00Z",
-      "title": "Doppelkonzert des Jugendorchesters mit dem VJO des AMV."
+      "title": "Doppelkonzert des Jugendorchesters mit dem Verbandsjugendorchester des AMV."
     },
     {
       "endtime": "2016-07-31T00:00:00Z",
       "starttime": "2016-07-28T00:00:00Z",
-      "title": "Konzertreise"
+      "title": "Konzertreise nach Südtirol"
     },
     {
       "endtime": "2016-10-16T00:00:00Z",
@@ -41,7 +35,7 @@
         "address": "Wollbach"
       },
       "starttime": "2016-10-15T00:00:00Z",
-      "title": "Sauserexpress und Herbstfest"
+      "title": "Sauserexpress und Herbstfest mit Jubiläumsgottesdienst"
     },
     {
       "location": {

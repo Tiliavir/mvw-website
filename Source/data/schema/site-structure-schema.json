@@ -64,6 +64,9 @@
         "hasHeader": {
           "type": "boolean"
         },
+        "hasAmp": {
+          "type": "boolean"
+        },
         "children": {
           // these children are considered logical children but will not work in navigation
           "$ref": "#"

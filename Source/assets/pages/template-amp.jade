@@ -1,0 +1,59 @@
+﻿include ./mixins/image-amp.jade
+
+doctype html
+html(amp lang="de")
+  head
+    meta(charset="utf-8")
+    title #{siteTitle}
+    link(rel="canonical" href="#{baseUrl}#{page.referencedFile}.html")
+    meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1")
+    script(type="application/ld+json").
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "#{page.title}",
+        "keywords": "#{page.keywords}",
+        "datePublished": "#{page.publishedDate}",
+        "image": [
+          "#{baseUrl}img/logo_color.png"
+        ]
+      }
+    style(amp-boilerplate).
+      body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    noscript
+      style(amp-boilerplate).
+        body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+    script(async src="https://cdn.ampproject.org/v0.js")
+    style(amp-custom).
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      #header {
+        background-color: #222;
+        border-color: #080808;
+        border-width: 0 0 1px;
+      }
+      #header a {
+        text-align: center;
+        width: 100%;
+        display: block;
+      }
+      #header img {
+        height: 70px;
+      }
+      h1 {
+        color: #d30630;
+      }
+      .caption {
+        font-style: italic;
+        text-align: center;
+      }
+
+  body
+    nav(id="header")
+      a(href=baseUrl class="navbar-brand")
+        +image("/img/logo.svg", scope.settings.siteTitle, scope.settings.siteTitle, null, 131, 70)
+    h1 #{page.title}
+      if page.subtitle
+        small #{page.subtitle}
+    <!--PRE:CONTENT-->

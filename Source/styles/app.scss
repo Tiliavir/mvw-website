@@ -1,4 +1,5 @@
-﻿$highlight-color :#D30630;
+﻿//$highlight-color :#D30630;
+$highlight-color :#07B;
 $secondary-highlight-color: #4A4A4A;
 $navbar-height: 50px;
 
@@ -56,15 +57,17 @@ blockquote {
 
 /* Home Page Carousel */
 
-header.carousel .carousel-caption {
-  display: none;
-  color: $highlight-color;
-}
+header .carousel {
+  .carousel-caption {
+    display: none;
+    color: $highlight-color;
+  }
 
-header.carousel .fill {
-  max-width: 100vw;
-  max-height: 66vh;
-  margin: 0 auto;
+  .fill {
+    max-width: 100vw;
+    max-height: 66vh;
+    margin: 0 auto;
+  }
 }
 
 /* Vorstand */
@@ -157,23 +160,45 @@ header.carousel .fill {
 
 /* Responsive Table */
 
-table.responsive
-{
+table.responsive {
   border-collapse: collapse;
 }
 
-@media only screen and (max-width: 550px), (min-device-width: 768px) and (max-device-width: 1024px)
-{
-  .carousel-indicators {
-    display: none;
+@media not screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  #vorMainTable tr {
+    th:nth-child(2) {
+      display: none;
+    }
+    &:first-child td:nth-child(2) {
+      border-top-width: 0 !important;
+    }
+    td {
+      &:nth-child(2) {
+        border-width: 0 !important;
+        float: left;
+        width: 100%;
+        border-top-width: 1px !important;
+      }
+      &:nth-child(3) {
+        float: left;
+        clear: left;
+        border: 0 solid transparent !important;
+      }
+    }
   }
 }
 
-@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)
-{
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* First column bold and without border bottom */
+  tr td {
+    &:first-child {
+      font-weight: bold;
+    }
+    border-bottom-width: 0 !important;
+  }
+
   /* Hide table headers (but not display: none;, for accessibility) */
-  table.responsive
-  {
+  table.responsive {
     width: 100%;
     min-width: 200px;
 
@@ -181,31 +206,26 @@ table.responsive
     tbody,
     th,
     td,
-    tr
-    {
+    tr {
       /* Force table to not be like tables anymore */
       display: block;
     }
 
-    th
-    {
+    th {
       position: absolute;
       top: -9999px;
       left: -9999px;
     }
 
-    tr
-    {
+    tr {
       border: 1px solid #ccc;
     }
 
-    tr:nth-of-type(even)
-    {
+    tr:nth-of-type(even) {
       background-color: #eee;
     }
 
-    td
-    {
+    td {
       /* Behave  like a "row" */
       border: none;
       border-bottom: 1px solid #eee; 

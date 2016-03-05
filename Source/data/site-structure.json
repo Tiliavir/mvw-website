@@ -5,6 +5,7 @@
     "keywords": "Wollbach, Musikverein, Musikverein Wollbach 1866 e.V., Verein, Musik, Orchester, Blasmusik, Instrument, Jugendarbeit, Konzert",
     "referencedFile": "index",
     "showInNavigation": "none",
+    "hideBreadcrumb": true,
     "title": "Willkommen beim Musikverein Wollbach"
   },
   {
@@ -98,7 +99,7 @@
     "title": "Jugendarbeit"
   },
   {
-    "description": "Presseberichte rund um den Musikverein Wollbach.",
+    "description": "Eine Sammlung von Presseberichten rund um den Musikverein Wollbach.",
     "keywords": "Presse, Presseberichte, Zeitungsartikel, Presseschau, Pressespiegel",
     "referencedFile": "berichte",
     "showInNavigation": "top",
@@ -156,14 +157,18 @@
         "keywords": "Jahreskonzert, Jubiläum, 150 Jahre, Still Feeling Good, Jahreskonzert 2016, Konzert",
         "referencedFile": "blog_2016-jahreskonzert",
         "showInNavigation": "none",
-        "title": "Jahreskonzert 2016"
+        "title": "Jahreskonzert 2016",
+        "hasAmp": true,
+        "publishedDate": "2015-11-01T00:00:00.000Z"
       },
       {
         "description": "Der Sauserbummel durch das Kandertal mit dem Sauser-Express und der Dampfmusik.",
         "keywords": "Sauserbummel, Sauser-Express, Weinprobe, Kandertal, Herbstfest, Degustation, Wein, Sauser",
         "referencedFile": "blog_2015-sauserfahrt",
         "showInNavigation": "none",
-        "title": "Sauserfahrt mit dem Chanderli 2015"
+        "title": "Sauserfahrt mit dem Chanderli 2015",
+        "hasAmp": true,
+        "publishedDate": "2015-05-01T00:00:00.000Z"
       }
     ],
     "showInNavigation": "none",

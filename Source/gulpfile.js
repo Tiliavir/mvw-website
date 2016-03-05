@@ -25,19 +25,25 @@
     styles: "./styles/",
     assets: "./assets/",
     scripts: "./scripts/",
-    tests: "./scripts_tests/"
+    pageScripts: "./assets/pages/scripts/"
   };
 
-  var libraryJSBootstrap = "./bower_modules/bootstrap/dist/js/bootstrap.min.js";
   var librariesJS = [
+    "./bower_modules/bootstrap/dist/js/bootstrap.min.js",
     "./bower_modules/jquery/dist/jquery.min.js",
+  ];
+
+  var photoswipe = [
     "./bower_modules/photoswipe/dist/photoswipe.min.js",
     "./bower_modules/photoswipe/dist/photoswipe-ui-default.min.js"
   ];
 
-  var librariesCSS = [
+  var bootstrapCSS = [
     "./bower_modules/bootstrap/dist/css/bootstrap.min.css",
-    "./bower_modules/bootstrap/dist/css/bootstrap-theme.min.css",
+    //"./bower_modules/bootstrap/dist/css/bootstrap-theme.min.css"
+  ];
+
+  var photoswipeCSS = [
     "./bower_modules/photoswipe/dist/photoswipe.css",
     "./bower_modules/photoswipe/dist/default-skin/default-skin.css"
   ];
@@ -79,67 +85,81 @@
 
   gulp.task("styles_sass", function () {
     return gulp.src(paths.styles + "**/*.scss")
-               .pipe($.sass({ outputStyle: "compressed" })
+               .pipe($.sass({outputStyle: "compressed" })
                       .on("error", $.sass.logError))
                .pipe(gulp.dest(paths.temp + "css/"));
   });
 
   gulp.task("styles_compile", ["styles_sass"], function () {
-    var css = librariesCSS.slice();
-    css.push(paths.temp + "css/*.css");
+    gulp.src(paths.temp + "css/print.css")
+        .pipe($.cssnano({
+          discardComments: { removeAll: true },
+          zindex: false
+        }))
+        .pipe(gulp.dest(paths.dest + "css/"));
+
+    gulp.src(photoswipeCSS)
+        .pipe($.concat("photoswipe.css"))
+        .pipe($.cssnano({
+          discardComments: { removeAll: true },
+          zindex: false
+        }))
+        .pipe(gulp.dest(paths.dest + "css/"));
+
+    var css = bootstrapCSS.slice();
+    css.push(paths.temp + "css/app.css");
     return gulp.src(css)
                .pipe($.concat("app.css"))
-               .pipe($.cssnano({ discardComments: { removeAll: true } }))
-               .pipe(gulp.dest(paths.dest + "css/"));
+               .pipe($.cssnano({
+                 discardComments: { removeAll: true },
+                 zindex: false
+               }))
+               .pipe(gulp.dest(paths.temp + "css/"));
   });
 
   gulp.task("scripts_tslint", function () {
-    return gulp.src([paths.scripts + "**/*.ts", paths.tests + "**/*.ts"])
-        .pipe($.tslint())
-        .pipe($.tslint.report("verbose"));
+    return gulp.src([paths.scripts + "**/*.ts", paths.tests + "**/*.ts", paths.pageScripts + "**/*.ts"])
+               .pipe($.tslint())
+               .pipe($.tslint.report("verbose"));
   });
 
   function processTS(paths, dest, filename) {
+    var options = {
+      removeComments: true,
+      sortOutput: true,
+      noImplicitAny: true
+    };
+
+    if (filename) {
+      options.out = filename;
+    }
+
     return gulp.src(paths)
-        .pipe($.typescript({
-          removeComments: true,
-          sortOutput: true,
-          out: filename,
-          noImplicitAny: true
-        }))
-        .pipe($.if(settings.isReleaseBuild, $.uglify()))
-        .pipe(gulp.dest(dest));
+               .pipe($.typescript(options))
+               .pipe($.if(settings.isReleaseBuild, $.uglify()))
+               .pipe(gulp.dest(dest));
   };
 
   gulp.task("scripts_app_compile", ["scripts_tslint"], function () {
-    return processTS(paths.scripts + "**/*.ts", paths.temp + "js/", "app.js");
-  });
-
-  gulp.task("scripts_tests_compile", ["scripts_tslint"], function () {
-    return processTS(paths.tests + "/**/*.ts", paths.tests, "tests.js");
+    processTS(paths.scripts + "**/*.ts", paths.dest + "js/", "app.js");
+    return processTS(paths.pageScripts + "**/*.ts", paths.dest + "js/");
   });
 
   gulp.task("scripts_compile", ["scripts_app_compile"], function () {
-    gulp.src(libraryJSBootstrap).pipe(gulp.dest(paths.dest + "js/"));
+    gulp.src(librariesJS)
+        .pipe(gulp.dest(paths.dest + "js/"));
 
-    var js = librariesJS.slice();
-    js.push(paths.temp + "js/*.js");
-    return gulp.src(js)
+    var galJs = photoswipe.slice();
+    // todo : copy bilder to temp and work with that
+    galJs.push(paths.dest + "js/bilder.js");
+    return gulp.src(galJs)
+               .pipe($.concat("bilder.js"))
                .pipe($.uglify())
-               .pipe($.concat("app.js"))
                .pipe(gulp.dest(paths.dest + "js/"));
   });
 
-  gulp.task("scripts_tests", ["scripts_compile", "scripts_tests_compile"], function () {
-    return gulp.src([paths.dest + "js/app.js", paths.tests + "*.js"])
-        .pipe($.jasminePhantom({
-          integration: true,
-          keepRunner: "./"
-        }));
-  });
-
   gulp.task("sitemap", function () {
-      return gulp.src(paths.dest + "**/*.html")
+      return gulp.src([paths.dest + "**/*.html", "!**/401.html", "!**/404.html"])
       .pipe($.sitemap({
         siteUrl: settings.baseUrl,
         changefreq: "monthly"
@@ -165,18 +185,47 @@
     fs.writeFileSync(paths.temp + "topnavigation.jade", structure.writeNavigation("top"));
     fs.writeFileSync(paths.temp + "footernavigation.jade", structure.writeNavigation("footer"));
 
-    return gulp.src(paths.assets + "pages/**/*")
-      .pipe($.replace("<!--PRE:NUMBEROFMUSICIANS-->", numberOfMusicians))
-      .pipe($.replace(/^(\s*#+) /gm, "$1# "))
-      .pipe(gulp.dest(paths.temp));
+    return gulp.src(paths.assets + "pages/**/*.jade")
+               .pipe($.replace("<!--PRE:NUMBEROFMUSICIANS-->", numberOfMusicians))
+               .pipe($.replace(/^(\s*#+) /gm, "$1# "))
+               .pipe(gulp.dest(paths.temp));
   });
 
-  gulp.task("html_generatePages", ["html_preprocess"], function() {
+  gulp.task("html_generatePages", ["html_preprocess"], function () {
+    var scope = {
+      termine: require(paths.assets + "pages/data/termine.json"),
+      berichte: require(paths.assets + "pages/data/berichte.json"),
+      vorstand: require(paths.assets + "pages/data/vorstand.json"),
+      register: require(paths.assets + "pages/data/register.json"),
+      jugendRegister: require(paths.assets + "pages/data/jugend-register.json"),
+      news: require(paths.assets + "pages/data/news.json"),
+      galleries: require(paths.assets + "gallery/galleries.json"),
+      settings : settings
+    };
+
+    var buildNumber = parseInt((new Date()).valueOf() / 1000000);
+
     var last;
     structure.performActionOnLeaf(function(entry, breadcrumb) {
       var referencedFile = entry.referencedFile;
       if(referencedFile) {
         $.util.log("- processing:", entry.title + ": " + referencedFile);
+        if (entry.hasAmp) {
+          gulp.src(paths.temp + "template-amp.jade")
+              .pipe($.rename(referencedFile + ".html"))
+              .pipe($.replace("<!--PRE:CONTENT-->", "include ./partials/" + referencedFile + ".jade"))
+              .pipe($.jade({
+                locals: {
+                  marked: marked,
+                  scope: scope,
+                  baseUrl: settings.isReleaseBuild ? settings.baseUrl : "/",
+                  siteTitle: (referencedFile === "index" ? "" : entry.title + " | ") + settings.siteTitle,
+                  page: entry
+                },
+                pretty: !settings.isReleaseBuild
+              }))
+              .pipe(gulp.dest(paths.dest + "amp/"));
+        }
         last = gulp.src(paths.temp + "template.jade")
                    .pipe($.rename(referencedFile + ".html"))
                    .pipe($.replace("<!--PRE:HEADER-->", entry.hasHeader ? "include ./headers/" + referencedFile + ".jade" : ""))
@@ -187,23 +236,23 @@
                        marked: marked,
 
                        isRelease: settings.isReleaseBuild,
-                       buildNumber: parseInt((new Date()).valueOf() / 1000000),
+                       buildNumber: buildNumber,
+                       scope: scope,
 
                        siteTitle: (referencedFile === "index" ? "" : entry.title + " | ") + settings.siteTitle,
                        baseUrl: settings.isReleaseBuild ? settings.baseUrl : "/",
                        breadcrumb: !entry.hideBreadcrumb && breadcrumb && breadcrumb.length > 1 ? structure.getBreadcrumbHtml(breadcrumb) : null,
 
-                       page: entry,
+                       hasScript: function () {
+                         try {
+                           fs.accessSync(paths.pageScripts + referencedFile + ".ts", fs.F_OK);
+                           return true;
+                         } catch (e) {
+                           return false
+                         }
+                       },
 
-                       scope: {
-                         termine: require(paths.assets + "pages/data/termine.json"),
-                         berichte: require(paths.assets + "pages/data/berichte.json"),
-                         vorstand: require(paths.assets + "pages/data/vorstand.json"),
-                         register: require(paths.assets + "pages/data/register.json"),
-                         jugendRegister: require(paths.assets + "pages/data/jugend-register.json"),
-                         news: require(paths.assets + "pages/data/news.json"),
-                         galleries: require(paths.assets + "gallery/galleries.json")
-                       }
+                       page: entry
                      },
                      pretty: !settings.isReleaseBuild
                    }))
@@ -224,7 +273,7 @@
   });
 
   gulp.task("html_validate", function () {
-    return gulp.src(paths.dest + "**/*.html")
+    return gulp.src([paths.dest + "**/*.html", "!" + paths.dest + "amp/**/*.html"])
                .pipe($.w3cjs());
     // todo : verfiy, that there is no unreplaced "<!--PRE:"
   });
@@ -273,7 +322,7 @@
     return gulp.src(paths.assets + "gallery/**/*.{png,jpg,jpeg,PNG,JPG,JPEG}",
                     { base: paths.assets + "gallery/" })
                .pipe(through.obj(function (chunk, enc, cb) {
-                 img.addInformation(chunk, settings.isReleaseBuild);
+                 img.addInformation(chunk);
                  cb(null, chunk);
                }))
                .pipe($.rename(function (path) {
@@ -290,7 +339,7 @@
     img.writeFiles(fs.writeFileSync, paths.dest + "/gallery/");
   });
 
-  gulp.task("default", $.sequence(["styles_compile", "scripts_tests", "html_generatePages"], "html_minify", ["html_bootlint", "html_validate", "sitemap"]));
+  gulp.task("default", $.sequence(["styles_compile", "scripts_compile", "html_generatePages"], "html_minify", ["html_bootlint", "html_validate", "sitemap"]));
 
   gulp.task("development", ["scripts_tsd", "watch"]);
 })(require);
