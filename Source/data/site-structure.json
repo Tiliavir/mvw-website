@@ -151,7 +151,23 @@
     "title": "Impressum"
   },
   {
+    "title": "Kontakt",
+    "description": "Ideen, Wünsche, Kritik oder Anregungen? Nehmen Sie Kontakt auf mit dem Musikverein Wollbach.",
+    "keywords": "Kontakt, Kontaktformular",
+    "referencedFile": "kontaktformular",
+    "showInNavigation": "footer"
+  },
+  {
     "children": [
+      {
+        "description": "Die CD \"Still Feelin' Good\" anlässlich des 150 jährigen Jubiläums des Musikverein Wollbach zu unserem Jahreskonzert 2016.",
+        "keywords": "CD, Aufnahme, Still Feelin' Good, Still Feeling Good, Studio 80, Städele, Musikverein Wollbach, Verkauf",
+        "referencedFile": "blog_2016-still-feeling-good",
+        "showInNavigation": "none",
+        "title": "Still Feelin' Good",
+        "hasAmp": true,
+        "publishedDate": "2016-03-06T00:00:00.000Z"
+      },
       {
         "description": "Still Feeling Good - Das Jahreskonzert des Musikverein Wollbach im Jahr 2016 anlässlich des 150 jährigen Jubiläums.",
         "keywords": "Jahreskonzert, Jubiläum, 150 Jahre, Still Feeling Good, Jahreskonzert 2016, Konzert",

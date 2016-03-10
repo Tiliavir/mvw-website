@@ -216,6 +216,7 @@
               .pipe($.replace("<!--PRE:CONTENT-->", "include ./partials/" + referencedFile + ".jade"))
               .pipe($.jade({
                 locals: {
+                  isAmp: true,
                   marked: marked,
                   scope: scope,
                   baseUrl: settings.isReleaseBuild ? settings.baseUrl : "/",

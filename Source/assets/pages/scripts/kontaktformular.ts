@@ -1,0 +1,100 @@
+/// <reference path="../../../tsd_modules/tsd.d.ts" />
+
+module MVW.Contact {
+  function isValidEmail (email: string) {
+    const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+
+  function clearErrors () {
+    $("#emailAlert").remove();
+    $("#feedbackForm .help-block").hide();
+    $("#feedbackForm .form-group").removeClass("has-error");
+  }
+
+  function clearForm () {
+    $("#feedbackForm .glyphicon").removeClass("glyphicon-check")
+                                 .addClass("glyphicon-unchecked")
+                                 .css({ color: "" });
+    $("#feedbackForm input,textarea").val("");
+    grecaptcha.reset();
+  }
+
+  function addError($input: JQuery) {
+    let parentFormGroup = $input.parents(".form-group");
+    parentFormGroup.children(".help-block").show();
+    parentFormGroup.addClass("has-error");
+  }
+
+  function addAjaxMessage (msg: string, isError: boolean) {
+    $("#feedbackSubmit").after("<div id='emailAlert' class='alert alert-"
+                               + (isError ? "danger'" : "success'")
+                               + " style='margin-top: 5px;'>"
+                               + $("<div/>").text(msg).html()
+                               + "</div>");
+  }
+
+  export function initialize(): void {
+    $("[required]").closest(".form-group")
+                   .find("label")
+                   .append("<span class='text-warning'>*</span>");
+
+    $("#feedbackSubmit").click(function () {
+      let $btn = $(this);
+      $btn.button("Sende ...");
+      clearErrors();
+
+      // do a little client-side validation -- check that each field has a value and e-mail field is in proper format
+      // use bootstrap validator (https://github.com/1000hz/bootstrap-validator) if provided, otherwise a bit of custom
+      // validation
+      let $form = $("#feedbackForm");
+      let hasErrors = false;
+
+      if ($form.validator) {
+        hasErrors = $form.validator("validate").hasErrors;
+      } else {
+        $("#feedbackForm input,#feedbackForm textarea").not(".optional").each(function () {
+          let $this = $(this);
+          if (($this.is(":checkbox") && !$this.is(":checked")) || !$this.val()) {
+            hasErrors = true;
+            addError($(this));
+          }
+        });
+
+        let $email = $("#email");
+
+        if (!isValidEmail($email.val())) {
+          hasErrors = true;
+          addError($email);
+        }
+      }
+
+      // if there are any errors return without sending e-mail
+      if (hasErrors) {
+        $btn.button("Zurücksetzen");
+        return false;
+      }
+
+      // send the feedback e-mail
+      $.ajax({
+        type: "POST",
+        url: "/php/sendmail.php",
+        data: $form.serialize(),
+        success: function (data) {
+          addAjaxMessage(data.message, false);
+          clearForm();
+        },
+        error: function (response) {
+          addAjaxMessage(response.responseJSON.message, true);
+        },
+        complete: function () {
+          $btn.button("Zurücksetzen");
+        }
+      });
+
+      return false;
+    });
+  }
+}
+
+$(() => { MVW.Contact.initialize(); });

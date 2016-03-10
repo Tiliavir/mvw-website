@@ -1,6 +1,7 @@
 ﻿mixin image(url, alt, title, caption)
   - if (!title) { title = alt; }
-  div.img
+  figure.img
     img.img-center.img-responsive(title=title, src=url, alt=alt)
     if caption
-      p.caption= caption
+      figcaption
+        p.caption= caption
