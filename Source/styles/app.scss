@@ -55,12 +55,18 @@ blockquote {
   font-size: 14px;
 }
 
+/* Start */
+
+#mv-logo {
+  padding: 5px 0;
+}
+
 /* Home Page Carousel */
 
-header .carousel {
+.carousel {
   .carousel-caption {
     display: none;
-    color: $highlight-color;
+    // color: $highlight-color;
   }
 
   .fill {
@@ -161,24 +167,6 @@ header .carousel {
 
 table.responsive {
   border-collapse: collapse;
-}
-
-@media only screen and (min-width : 992px){
-  header {
-    margin: 0 auto;
-    .carousel {
-      .carousel-control.left,
-      .carousel-control.right {
-        background-image: none;
-      }
-    }
-    #cd-stillFeelingGood {
-      img {
-        height: 50vh;
-      }
-      height: 50vh;
-    }
-  }
 }
 
 @media not screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {

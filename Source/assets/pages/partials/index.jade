@@ -1,1 +1,14 @@
-+image("/img/jahreskonzerte/konzert_2015.jpg", "Jahreskonzert 2015", "Der Musikverein Wollbach vor dem Jahreskonzert 2015", "Der Musikverein vor dem Jahreskonzert 2015")
+#startCarousel.carousel.slide
+  ol.carousel-indicators.hidden-xs.visible-md
+    li.active(data-target="#startCarousel" data-slide-to="0")
+    
+  .carousel-inner
+    .item.active
+      img.fill(src="/img/jahreskonzerte/konzert_2015.jpg" alt="Der Musikverein vor dem Jahreskonzert 2015")
+      .carousel-caption
+        h2 Das neue Logo des Musikvereins Wollbach
+    
+  a.left.carousel-control(href="#startCarousel" data-slide="prev")
+    span.icon-prev
+  a.right.carousel-control(href="#startCarousel" data-slide="next")
+    span.icon-next

@@ -118,7 +118,7 @@ module MVW.Start {
     shuffle(slides).forEach((si, i) => {
       $(".carousel-inner").append(`<div class='item'><img class='fill' src="/img/slider/${si.url}" alt="`
                                   + `${si.title }" /><div class='carousel-caption'><h2>${si.title}</h2></div></div>`);
-      // $(".carousel-indicators").append(`<li data-target='#startCarousel' data-slide-to='${i + 1}'></li>`);
+      $(".carousel-indicators").append(`<li data-target='#startCarousel' data-slide-to='${i + 1}'></li>`);
     });
     $("#startCarousel").carousel({ interval: 6000 });
   }

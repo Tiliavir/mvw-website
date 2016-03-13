@@ -85,7 +85,7 @@
     $message = constructMessageBody();
   }
 
-  $message = wordwrap($message, 70, "\r\n");
+  $message = wordwrap($message, 70, "\r\n", true);
 
   $headers = array();
   $headers[] = "MIME-Version: 1.0";

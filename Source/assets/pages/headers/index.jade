@@ -1,20 +1,8 @@
 ﻿header.container
   .row
-    #startCarousel.carousel.slide.col-md-8.col-xs-12
-      //- ol.carousel-indicators
-        //- li.active(data-target="#startCarousel" data-slide-to="0")
-    
-      .carousel-inner
-        .item.active
-          img.fill(src="/img/slider/logo.png" alt="Das neue Logo des Musikvereins Wollbach" style="padding:5px;")
-          .carousel-caption
-            h2 Das neue Logo des Musikvereins Wollbach
-    
-      a.left.carousel-control(href="#startCarousel" data-slide="prev")
-        span.icon-prev
-      a.right.carousel-control(href="#startCarousel" data-slide="next")
-        span.icon-next
-
-    #cd-stillFeelingGood.col-md-4.col-xs-12
+    #mv-logo.col-md-6.col-xs-12
+      +image("/img/slider/logo.png", "Das neue Logo des Musikvereins Wollbach")
+    .col-md-1.hidden-xs
+    .col-md-5.col-xs-12
       a(href="blog_2016-still-feeling-good.html")
         +image("/img/events/cd.jpg", "Still Feelin' Good")
