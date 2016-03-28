@@ -166,7 +166,10 @@
         "showInNavigation": "none",
         "title": "Still Feelin' Good",
         "hasAmp": true,
-        "publishedDate": "2016-03-06T00:00:00.000Z"
+        "publishedDate": "2016-03-06T00:00:00.000Z",
+        "ampLogoUrl": "img/events/cd.jpg",
+        "ampLogoWidth": 600,
+        "ampLogoHeight": 380
       },
       {
         "description": "Still Feeling Good - Das Jahreskonzert des Musikverein Wollbach im Jahr 2016 anlässlich des 150 jährigen Jubiläums.",
@@ -175,7 +178,10 @@
         "showInNavigation": "none",
         "title": "Jahreskonzert 2016",
         "hasAmp": true,
-        "publishedDate": "2015-11-01T00:00:00.000Z"
+        "publishedDate": "2015-11-01T00:00:00.000Z",
+        "ampLogoUrl": "files/flyer/16_jahreskonzert.jpg",
+        "ampLogoWidth": 593,
+        "ampLogoHeight": 700
       },
       {
         "description": "Der Sauserbummel durch das Kandertal mit dem Sauser-Express und der Dampfmusik.",
@@ -184,7 +190,10 @@
         "showInNavigation": "none",
         "title": "Sauserfahrt mit dem Chanderli 2015",
         "hasAmp": true,
-        "publishedDate": "2015-05-01T00:00:00.000Z"
+        "publishedDate": "2015-05-01T00:00:00.000Z",
+        "ampLogoUrl": "img/events/chanderli.jpg",
+        "ampLogoWidth": 600,
+        "ampLogoHeight": 380
       }
     ],
     "showInNavigation": "none",
