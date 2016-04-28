@@ -1,0 +1,25 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.renderWhitespace": true,
+  "editor.tabSize": 2,
+
+  "files.exclude": {
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.js.map": true,
+
+    ".bowerrc": true,
+    "*.csproj*": true,
+
+    // folders:
+    "**/*_modules/": true,
+    "**/_book": true,
+
+    "**/temp/": true,
+    "**/tmp": true,
+    "**/build": true,
+    "**/bin": true,
+    "**/obj": true
+  }
+}

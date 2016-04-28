@@ -1,0 +1,28 @@
+﻿mixin formatTimespan(starttime, endtime, printSchemaOrgMeta)
+  -
+    var start = moment.utc(starttime);
+    var end = moment.utc(endtime || starttime);
+    var dateString;
+
+    if (start.isSame(end, "d")) {
+      dateString = start.format("DD.MM.YYYY");
+      if (start.diff(moment().startOf("day")) != 0 && !start.isSame(end)) {
+        dateString += " " + start.format("HH:mm") + " - " + end.format("HH:mm");
+      }
+    } else if (start.clone().add(1, "d").isSame(end, "d")) {
+      dateString = start.format("DD") + " & " + end.format("DD.MM.YYYY");
+    } else {
+      dateString = start.format("DD.MM.") + " - " + end.format ("DD.MM.YYYY");
+    }
+
+  if printSchemaOrgMeta
+    if start.diff(moment().startOf("day")) != 0
+      meta(itemprop="startDate" content=starttime)
+    else
+      meta(itemprop="startDate" content=start.format('YYYY-MM-DD'))
+    if endtime
+      if end.diff(moment().startOf("day")) != 0
+        meta(itemprop="endDate" content=endtime)
+      else
+        meta(itemprop="endDate" content=end.format('YYYY-MM-DD'))
+  = dateString

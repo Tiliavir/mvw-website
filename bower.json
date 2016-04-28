@@ -1,0 +1,8 @@
+{
+  "name": "MVW",
+  "private": true,
+  "dependencies": {
+    "photoswipe": "^4.1.1",
+    "bootstrap": "^3.3.6"
+  }
+}

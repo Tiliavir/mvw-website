@@ -1,9 +1,0 @@
-﻿{
-  "baseUrl": "http://www.mv-wollbach.de/",
-  "isReleaseBuild": true,
-  "siteTitle": "Musikverein Wollbach 1866 e.V.",
-  "paths": {
-    "prodDiff": "E:/Code/MVW.Website/MV.Website.Data.Prod/",
-    "webServerPath": "C:/inetpub/wwwroot/"
-  }
-}

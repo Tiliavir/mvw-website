@@ -1,0 +1,49 @@
+﻿{
+  "2016": [
+    {
+      "location": {
+        "name": "Evangelische Kirche",
+        "address": "Kandern"
+      },
+      "starttime": "2016-05-08T17:00:00Z",
+      "title": "Kirchenkonzert mit dem Verbandsjugendorchester Hochrhein"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2016-06-04T00:00:00Z",
+      "title": "Marschmusiktag in Wollbach"
+    },
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2016-07-09T17:00:00Z",
+      "title": "Doppelkonzert des Jugendorchesters mit dem Verbandsjugendorchester des AMV."
+    },
+    {
+      "endtime": "2016-07-31T00:00:00Z",
+      "starttime": "2016-07-28T00:00:00Z",
+      "title": "Konzertreise nach Südtirol"
+    },
+    {
+      "endtime": "2016-10-16T00:00:00Z",
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2016-10-15T00:00:00Z",
+      "title": "Sauserexpress und Herbstfest mit Jubiläumsgottesdienst"
+    },
+    {
+      "location": {
+        "name": "Kirche",
+        "address": "Wollbach"
+      },
+      "starttime": "2016-12-04T00:00:00Z",
+      "title": "Jugend- und Kammerkonzert"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<?php
+
+  $RECAPTCHA_SECRET_KEY = "6LcuIhoTAAAAAK-qgHStnA9uuLCXGB9bH8G7P0PE";
+
+?>

@@ -1,5 +1,0 @@
-﻿mixin image(url, alt, title, caption, width, height)
-  - if (!title) { title = alt; }
-  amp-img(title=title, src="#{baseUrl.slice(0, -1)}#{url}", alt=alt, width=width, height=height layout="responsive")
-  if caption
-    p= caption

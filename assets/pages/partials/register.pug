@@ -1,0 +1,31 @@
+-
+  function groupBy(array , f)
+  {
+    var groups = {};
+    array.forEach( function( o )
+    {
+      var group = f(o); // note(ml): use to sort by groups of properties: JSON.stringify(f(o));
+      groups[group] = groups[group] || [];
+      groups[group].push( o );
+    });
+    return groups;
+  }
+
+  var groupedRegisters = groupBy(scope.register, function(person) {
+    return person.register; // note(ml): can also group by array of properties! => change group name
+  });
+
+table#mitRegTab.responsive
+  tbody
+    - var registerOrder = ["Querflöte", "Oboe", "Klarinette", "Fagott", "Altsaxophon", "Tenorsaxophon", "Baritonsaxophon", "Trompete", "Horn", "Posaune", "Euphonium", "Tuba", "Klavier", "Gitarre", "Schlagzeug"];
+    - for (var i = 0, registerTitle = registerOrder[i]; i < registerOrder.length; i++, registerTitle = registerOrder[i])
+      - var currentRegister = groupedRegisters[registerTitle];
+      if currentRegister
+        tr
+          td
+            - var imageUrl = "/img/register/" + registerTitle.toLowerCase().replace("ö", "oe") + "_1.jpg";
+            +image(imageUrl, registerTitle)
+          td
+            - var persons = currentRegister.sort(function(a, b) { return a.familyName.localeCompare(b.familyName);});
+            - for (var j = 0, person = persons[j]; j < persons.length; j++, person =  persons [j])
+              p #{person.name} #{person.familyName}

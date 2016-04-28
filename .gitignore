@@ -1,12 +1,9 @@
 ### MVW custom added
 
-Source/bower_modules/
-Source/tsd_modules/
-Source/node_modules/
-Source/temp/
-Source/scripts/*.js
-Source/scripts_tests/*.js
-Source/specRunner.html
+*_modules/
+temp/
+scripts/*.js
+scripts_tests/*.js
 
 ### Source: https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 ## Ignore Visual Studio temporary files, build results, and

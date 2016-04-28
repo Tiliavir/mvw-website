@@ -1,0 +1,46 @@
++image("/img/jugend/jugendorchester.jpg", "Das Jugendorchester im Mai 2015")
+
+:marked
+  # Der Dirigent
+  Unser Dirigent ist Michael Bierwirth aus Bad Bellingen. Michael spielt selbst Trompete und leitet auch das Jugendochester des Musikverein Bad Bellingen.
+
++image("/img/personen/2015_dirigent_jugend.jpg", "Jugendorchester Dirigent", null, "Der Jugendorchester Dirigent: Michael Bierwirth")
+
+:marked
+  # Die Jungmusiker
+  Unser Jugendorchester besteht derzeit aus 18 jungen Musikerinnen und Musikern:
+
+-
+  function groupBy(array , f)
+  {
+    var groups = {};
+    array.forEach(function( o )
+    {
+      var group = f(o); // note(ml): use to sort by groups of properties: JSON.stringify(f(o));
+      groups[group] = groups[group] || [];
+      groups[group].push( o );
+    });
+    return groups;
+  }
+
+  var groupedRegisters = groupBy(scope.jugendRegister, function(person) {
+    return person.register; // note(ml): can also group by array of properties! => change group name
+  });
+
+table#mitRegTab.responsive
+  tbody
+    - var registerOrder = [ "Klarinette", "Altsaxophon_Tenorsaxophon_Baritonsaxophon_Querflöte", "Trompete", "Tuba_Posaune_Euphonium", "Schlagzeug" ];
+    - for (var i = 0, registerTitle = registerOrder[i]; i < registerOrder.length; i++, registerTitle = registerOrder[i])
+      - var currentGroupRegisters = registerOrder[i].split("_");
+      - var currentRegister = [];
+      - for (var k = 0; k < currentGroupRegisters.length; k++)
+        - if (groupedRegisters[currentGroupRegisters[k]])
+          - currentRegister = currentRegister.concat(groupedRegisters[currentGroupRegisters[k]]);
+      tr
+        td
+          - var imageUrl = "/img/jugend/register/" + registerTitle.toLowerCase().replace("ö", "oe") + ".jpg";
+          +image(imageUrl, registerTitle)
+        td
+          - var persons = currentRegister.sort(function(a, b) { return a.familyName.localeCompare(b.familyName);});
+          - for (var j = 0, person = persons[j]; j < persons.length; j++, person =  persons [j])
+            p #{person.name} #{person.familyName}

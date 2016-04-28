@@ -1,0 +1,40 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "JSON Schema for my JSON file format",
+
+  "type": "object",
+
+  " additionalProperties": {
+    "type": "array",
+
+    "items": {
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "location": {
+          "type": "object",
+          "name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "starttime": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endtime": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false,
+      "required": [ "title", "starttime", "location" ]
+    }
+  }
+}
