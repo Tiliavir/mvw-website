@@ -1,4 +1,4 @@
-/// <reference path="../../../tsd_modules/tsd.d.ts" />
+/// <reference path="../../../typings/main.d.ts" />
 
 module MVW.Contact {
   function isValidEmail (email: string) {

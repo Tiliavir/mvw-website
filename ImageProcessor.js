@@ -1,17 +1,13 @@
 ﻿"use strict";
 
+const pad = require("pad");
+
 var images = {};
 var restored = false;
 var galleryTitles = {};
 var galleryCount = {};
 
 var extensionRegex = /(\..{3,4})$/;
-
-function pad(n, width, z) {
-  z = z || "0";
-  n = n + "";
-  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
-}
 
 function getInfoFromFile(file) {
   var info = file.relative.split("\\");
@@ -59,8 +55,8 @@ module.exports = {
     }
 
     var filecount = Object.keys(gallery || []).length;
-    this.filename = pad(filecount, 5) + info.extension.toLowerCase();
-    this.foldername = pad(galleryCount[info.year], 3);
+    this.filename = pad(5, filecount, "0") + info.extension.toLowerCase();
+    this.foldername = pad(3, galleryCount[info.year], "0");
 
     galleryTitles[info.year + "_" + this.foldername] = info.gallery;
 

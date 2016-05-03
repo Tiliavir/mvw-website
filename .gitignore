@@ -1,6 +1,7 @@
 ### MVW custom added
 
 *_modules/
+typings/
 temp/
 scripts/*.js
 scripts_tests/*.js

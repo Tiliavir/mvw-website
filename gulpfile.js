@@ -50,12 +50,9 @@
   let isRelease = args.release || false;
   let baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
 
-  gulp.task("scripts:tsd", function (callback) {
-    return $.tsd({
-      "command": "reinstall",
-      "latest": false,
-      "config": "./tsd.json"
-    }, callback);
+  gulp.task("scripts:typings", function () {
+    return gulp.src("./typings.json")
+               .pipe($.typings()); ;
   });
 
   gulp.task("clean", function () {
@@ -346,5 +343,5 @@
 
   gulp.task("default", $.sequence(["styles:compile", "scripts:compile", "html:generatePages"], "html:minify", ["html:bootlint", "html:validate", "sitemap"]));
 
-  gulp.task("development", ["scripts:tsd"]);
+  gulp.task("development", ["scripts:typings"]);
 })(require);

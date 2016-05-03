@@ -160,6 +160,30 @@
   {
     "children": [
       {
+        "description": "Der Sauserbummel durch das Kandertal mit dem Sauser-Express und der Dampfmusik.",
+        "keywords": "Sauserbummel, Sauser-Express, Weinprobe, Kandertal, Herbstfest, Degustation, Wein, Sauser",
+        "referencedFile": "blog_2016-sauserfahrt",
+        "showInNavigation": "none",
+        "title": "Sauserfahrt mit dem Chanderli 2016",
+        "hasAmp": true,
+        "publishedDate": "2016-05-01T00:00:00.000Z",
+        "ampLogoUrl": "img/events/chanderli.jpg",
+        "ampLogoWidth": 600,
+        "ampLogoHeight": 380
+      },
+      {
+        "description": "Das Kirchenkonzert mit dem Musikverein Wollbach und dem Verbandsjugendorchester Hochrhein in der ev. Kirche in Kandern.",
+        "keywords": "Kirchenkonzert, Kandern, Konzert, Blasmusik, Verbandsjugendorchester Hochrhein",
+        "referencedFile": "blog_2016-kirchenkonzert",
+        "showInNavigation": "none",
+        "title": "Kirchenkonzert 2016",
+        "hasAmp": true,
+        "publishedDate": "2016-05-01T00:00:00.000Z",
+        "ampLogoUrl": "img/events/kirche_kandern.jpg",
+        "ampLogoWidth": 600,
+        "ampLogoHeight": 480
+      },
+      {
         "description": "Die CD \"Still Feelin' Good\" anlässlich des 150 jährigen Jubiläums des Musikverein Wollbach zu unserem Jahreskonzert 2016.",
         "keywords": "CD, Aufnahme, Still Feelin' Good, Still Feeling Good, Studio 80, Städele, Musikverein Wollbach, Verkauf",
         "referencedFile": "blog_2016-still-feeling-good",

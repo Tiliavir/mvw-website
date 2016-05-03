@@ -14,6 +14,7 @@
 
     // folders:
     "**/*_modules/": true,
+    "typings": true,
     "**/_book": true,
 
     "**/temp/": true,

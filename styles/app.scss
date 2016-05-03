@@ -61,6 +61,41 @@ blockquote {
   padding: 5px 0;
 }
 
+.image-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 300px;
+  display: block;
+}
+
+.tile {
+  a:hover {
+    text-decoration: none;
+  }
+  .title,
+  .text {
+    color: #fff;
+  }
+
+  font-weight: lighter;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.blur {
+  height: inherit;
+  padding: 20px;
+  background: rgb(50,50,50); /* for IE */
+  background: rgba(34,34,34,0.55);
+}
+
+.blur:hover {
+  background: rgb(34,34,34); /* for IE */
+  background: rgba(34,34,34,0.75);
+}
+
 /* Home Page Carousel */
 
 .carousel {

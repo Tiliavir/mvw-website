@@ -24,9 +24,26 @@
       "title": "Doppelkonzert des Jugendorchesters mit dem Verbandsjugendorchester des AMV."
     },
     {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2016-07-24T00:00:00Z",
+      "title": "Kirchhofgottesdienst"
+    },
+    {
       "endtime": "2016-07-31T00:00:00Z",
       "starttime": "2016-07-28T00:00:00Z",
       "title": "Konzertreise nach Südtirol"
+    },
+    {
+      "location": {
+        "name": "Bühler Kompost",
+        "address": "Haagen"
+      },
+      "endtime": "2016-09-11T13:30:00Z",
+      "starttime": "2016-09-11T11:30:00Z",
+      "title": "Jubiläum Bühler Kompost"
     },
     {
       "endtime": "2016-10-16T00:00:00Z",
