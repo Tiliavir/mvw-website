@@ -6,7 +6,7 @@ function writeNavigationEntry(entry, n, type) {
   var html = "";
   if (entry
       && entry.children
-      && (entry.children.filter(function (e) { return e.showInNavigation !== "none"; }).length > 0
+      && (entry.children.filter(function (e) { return e.navigation !== "none"; }).length > 0
          || type === "allplain")) {
     html = indent(n, true)
              + "li"
@@ -23,7 +23,7 @@ function writeNavigationEntry(entry, n, type) {
       html += writeNavigationEntry(entry.children[i], n + 4, type);
     }
   } else {
-    if (type === "allplain" || entry.showInNavigation !== "none") {
+    if (type === "allplain" || entry.navigation !== "none") {
       html = indent(n, true)
                + "li(class=(page.referencedFile === '" + entry.referencedFile + "' ? 'active' : undefined))"
                + indent(n + 2, true)
@@ -56,7 +56,7 @@ module.exports = {
     var html = "ul" + (type !== "allplain" ? ".nav.navbar-nav.navbar-right" : "");
     if (structure && structure.length > 0) {
       for (var i = 0; i < structure.length; i++) {
-        if (structure[i].showInNavigation === type
+        if (structure[i].navigation === type
             || (type === "allplain"
                 && structure[i].referencedFile != "404"
                 && structure[i].referencedFile != "401")) {

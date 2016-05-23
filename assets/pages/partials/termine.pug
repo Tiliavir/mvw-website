@@ -1,38 +1,49 @@
-- var years = Object.keys(scope.termine);
-- for (var i = 0, year = years[i]; i < years.length; i++, year = years[i])
-  h2 #{year}
-  table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
-    tbody
-      - var inYear = scope.termine[year];
-      - for (var j = 0, termin = inYear[j]; j < inYear.length; j++, termin = inYear[j])
-        tr(itemscope itemtype="http://schema.org/Event")
-         td
-           +formatTimespan(termin.starttime, termin.endtime, true)
-         td
-           span(itemprop="name")
-             | #{termin.title}
+---
+title: "Termine"
+description: "Eine Übersicht über Termine von Auftritten und Anlässen des Musikverein Wollbach 1866 e.V."
+keywords: "Termine, Events, Daten, Auftritte, Konzerte, Anlässe, Terminplan, Terminkalender, Kalender"
 
-           if termin.location
-             | &nbsp;(
-             span(itemprop="location" itemscope itemtype="http://schema.org/Place")
-               if termin.location.name
-                 span(itemprop="name")
-                   | #{termin.location.name}
-               else
-                 meta(itemprop="name" content="-")
-               if termin.location.address
-                 if termin.location.name
-                   | ,&nbsp;
-                 span(itemprop="address")
-                   | #{termin.location.address}
-               else
-                 meta(itemprop="address" content="-")
-             | )
-           else
-             div(itemprop="location" itemscope itemtype="http://schema.org/Place")
-               meta(itemprop="name" content="-")
-               meta(itemprop="address" content="-")
+navigation: "top"
+---
 
-           if termin.description
-             div(itemprop="description" style="font-style:italic;")
-               != marked(termin.description)
+extends ../template.pug
+
+block content
+  - var years = Object.keys(scope.termine);
+  - for (var i = 0, year = years[i]; i < years.length; i++, year = years[i])
+    h2 #{year}
+    table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
+      tbody
+        - var inYear = scope.termine[year];
+        - for (var j = 0, termin = inYear[j]; j < inYear.length; j++, termin = inYear[j])
+          tr(itemscope itemtype="http://schema.org/Event")
+          td
+            +formatTimespan(termin.starttime, termin.endtime, true)
+          td
+            span(itemprop="name")
+              | #{termin.title}
+
+            if termin.location
+              | &nbsp;(
+              span(itemprop="location" itemscope itemtype="http://schema.org/Place")
+                if termin.location.name
+                  span(itemprop="name")
+                    | #{termin.location.name}
+                else
+                  meta(itemprop="name" content="-")
+                if termin.location.address
+                  if termin.location.name
+                    | ,&nbsp;
+                  span(itemprop="address")
+                    | #{termin.location.address}
+                else
+                  meta(itemprop="address" content="-")
+              | )
+            else
+              div(itemprop="location" itemscope itemtype="http://schema.org/Place")
+                meta(itemprop="name" content="-")
+                meta(itemprop="address" content="-")
+
+            if termin.description
+              div(itemprop="description" style="font-style:italic;")
+                != marked(termin.description)

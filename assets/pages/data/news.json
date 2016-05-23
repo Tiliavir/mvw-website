@@ -2,7 +2,11 @@
   "2016": [
     {
       "title": "08.05.2016 - Kirchenkonzert",
-      "content": "Zusammen mit dem Verbandsjugendorchester Hochrhein gaben wir am 08. Mai unser [Jubiläums-Doppelkonzert](blog_2016-kirchenkonzert.html) in der evangelischen Stadtkirche Kandern."
+      "content": "Zusammen mit dem Verbandsjugendorchester Hochrhein gaben wir am 08. Mai unser [Jubiläums-Doppelkonzert](blog_2016-kirchenkonzert.html) in der evangelischen Stadtkirche Kandern.",
+      "image": {
+        "title": "Das Verbandsjugendorchester Hochrhein mit dem Musikverein Wollbach vor der evangelischen Stadtkirche Kandern",
+        "src": "/img/news/2016_kirchenkonzert.jpg"
+      }
     },
     {
       "title": "14.02.2016 - Scheibenfeuer",

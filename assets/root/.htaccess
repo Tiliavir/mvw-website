@@ -52,14 +52,14 @@ AddType 'image/svg+xml; charset=UTF8' svg
 # expirations
 <ifModule mod_expires.c>
   ExpiresActive On
-  ExpiresDefault "access plus 7 days"
+  ExpiresDefault "access plus 1 days"
   ExpiresByType image/x-icon "access plus 1 year"
   ExpiresByType image/gif "access plus 1 month"
   ExpiresByType image/png "access plus 1 month"
   ExpiresByType image/jpg "access plus 1 month"
   ExpiresByType image/jpeg "access plus 1 month"
   ExpiresByType text/css "access 1 week"
-  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 month"
 </ifModule>
 
 <ifModule mod_headers.c>

@@ -1,53 +1,69 @@
-#overview
-  - var yearTitles = Object.keys(scope.galleries);
-  - for (var i = yearTitles.length - 1, yearTitle = yearTitles[i], year = scope.galleries[yearTitle]; i-- >= 0; yearTitle = yearTitles[i], year = scope.galleries[yearTitle])
-    h2 #{yearTitle}
-    .row
-      - var galleryTitles = Object.keys(year);
-      -  for (var j = galleryTitles.length - 1, galleryTitle = galleryTitles[j], gallery = year[galleryTitle]; j-- >= 0; galleryTitle = galleryTitles[j], gallery = year[galleryTitle])
-        .col-lg-3.col-sm-4.col-xs-6
-          .gallery(onclick="MVW.Gallery.openGallery(this); return false;")
-            - var preview = gallery.filter(function(i) {return i.s.w === 200;})[0] || gallery[0];
-            - var url = "/gallery/" + preview.b + "s/" + preview.f;
-            img.img-responsive.preview(src=url alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
-            span.caption #{galleryTitle}
+---
+title: "Bilder"
+description: "Bildergalerie mit Bildern von dirversen Konzerten, Festen und anderen Anlässen des Musikverein Wollbach."
+keywords: "Bilder, Bildergalerie, Fotos, Photos, Alben, Album, Fotoalbum"
 
-.pswp(tabindex='-1', role='dialog', aria-hidden='true')
-  //-
-    Background of PhotoSwipe.
-    It's a separate element as animating opacity is faster than rgba().
-  .pswp__bg
-  //- Slides wrapper with overflow:hidden.
-  .pswp__scroll-wrap
+navigation: "top"
+schemaOrg: "ImageGallery"
+---
+
+extends ../template.pug
+
+block content
+  #overview
+    - var yearTitles = Object.keys(scope.galleries);
+    - for (var i = yearTitles.length - 1, yearTitle = yearTitles[i], year = scope.galleries[yearTitle]; i-- >= 0; yearTitle = yearTitles[i], year = scope.galleries[yearTitle])
+      h2 #{yearTitle}
+      .row
+        - var galleryTitles = Object.keys(year);
+        -  for (var j = galleryTitles.length - 1, galleryTitle = galleryTitles[j], gallery = year[galleryTitle]; j-- >= 0; galleryTitle = galleryTitles[j], gallery = year[galleryTitle])
+          .col-lg-3.col-sm-4.col-xs-6
+            .gallery(onclick="MVW.Gallery.openGallery(this); return false;")
+              - var preview = gallery.filter(function(i) {return i.s.w === 200;})[0] || gallery[0];
+              - var url = "/gallery/" + preview.b + "s/" + preview.f;
+              img.img-responsive.preview(src=url alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
+              span.caption #{galleryTitle}
+
+  .pswp(tabindex='-1', role='dialog', aria-hidden='true')
     //-
-      Container that holds slides.
-      PhotoSwipe keeps only 3 of them in the DOM to save memory.
-      Don't modify these 3 pswp__item elements, data is added later on.
-    .pswp__container
-      .pswp__item
-      .pswp__item
-      .pswp__item
-    //- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
-    .pswp__ui.pswp__ui--hidden
-      .pswp__top-bar
-        //- Controls are self-explanatory. Order can be changed.
-        .pswp__counter
-        button.pswp__button.pswp__button--close(title='Close (Esc)')
-        button.pswp__button.pswp__button--share(title='Share')
-        button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
-        button.pswp__button.pswp__button--zoom(title='Zoom in/out')
-        //-
-          Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR
-          element will get class pswp__preloader--active when preloader is running
-        .pswp__preloader
-          .pswp__preloader__icn
-            .pswp__preloader__cut
-              .pswp__preloader__donut
-      .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
-        .pswp__share-tooltip
-      button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
-      button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
-      .pswp__caption
-        .pswp__caption__center
+      Background of PhotoSwipe.
+      It's a separate element as animating opacity is faster than rgba().
+    .pswp__bg
+    //- Slides wrapper with overflow:hidden.
+    .pswp__scroll-wrap
+      //-
+        Container that holds slides.
+        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+        Don't modify these 3 pswp__item elements, data is added later on.
+      .pswp__container
+        .pswp__item
+        .pswp__item
+        .pswp__item
+      //- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
+      .pswp__ui.pswp__ui--hidden
+        .pswp__top-bar
+          //- Controls are self-explanatory. Order can be changed.
+          .pswp__counter
+          button.pswp__button.pswp__button--close(title='Close (Esc)')
+          button.pswp__button.pswp__button--share(title='Share')
+          button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+          button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+          //-
+            Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR
+            element will get class pswp__preloader--active when preloader is running
+          .pswp__preloader
+            .pswp__preloader__icn
+              .pswp__preloader__cut
+                .pswp__preloader__donut
+        .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+          .pswp__share-tooltip
+        button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
+        button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+        .pswp__caption
+          .pswp__caption__center
 
-link(rel="stylesheet" href="/css/photoswipe.css" property="stylesheet")
+  link(rel="stylesheet" href="/css/photoswipe.css" property="stylesheet")
+
+block pageScripts
+  script
+    include ./js/bilder.js

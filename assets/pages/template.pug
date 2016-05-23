@@ -6,20 +6,20 @@ doctype html
 //- xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"
 html(lang="de")
   head
-    title=(page.referencedFile === "index" ? "" : page.title + " | ") + scope.siteTitle
+    title=(page.referencedFile === "index" ? "" : title + " | ") + scope.siteTitle
     if isRelease
       base(href=scope.baseUrl)
     meta(charset="utf-8")
     meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
     meta(name="author" content=scope.siteTitle)
 
-    if page.description
-      meta(name="description" content=page.description)
-    if page.keywords
-      meta(name="keywords" content=page.keywords)
+    if description
+      meta(name="description" content=description)
+    if keywords
+      meta(name="keywords" content=keywords)
 
     meta(property="og:type" content="website")
-    meta(property="og:image" content=scope.baseUrl+"img/logo_color.png")
+    meta(property="og:image" content=scope.baseUrl + "img/logo_color.png")
     meta(property="og:locale" content="de_DE")
     meta(property="og:site_name" content=scope.siteTitle)
 
@@ -30,14 +30,14 @@ html(lang="de")
 
     style
       include ./css/app.css
-    link(rel="stylesheet" media="print" href="/css/print.css?v="+buildNumber)
+    link(rel="stylesheet" media="print" href="/css/print.css?v=" + buildNumber)
 
-    if page.hasAmp
-      link(rel="amphtml" href=scope.baseUrl+"amp/"+page.referencedFile+".html")
+    if hasAmp
+      link(rel="amphtml" href=scope.baseUrl + "amp/" + page.referencedFile + ".html")
 
     include ./favicon.pug
 
-  body(itemscope itemtype="http://schema.org/"+(page.schemaOrg || "WebPage"))
+  body(itemscope itemtype="http://schema.org/" + (schemaOrg || "WebPage"))
     nav#header.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
       .container
         .navbar-header
@@ -51,19 +51,20 @@ html(lang="de")
         #mvw-navbar-collapse-1.collapse.navbar-collapse
           include ./topnavigation.pug
 
-    <!--PRE:HEADER-->
+    block header
+
     img#print-logo.visible-print(src="/img/logo_color.png" alt=scope.siteTitle)
 
     #content-main.container(itemprop="mainContentOfPage")
       .row
         .col-lg-12
-          h1.page-header #{page.title}
+          h1.page-header #{title}
             if page.subtitle
-              small #{page.subtitle}
+              small #{subtitle}
           | !{breadcrumb}
       .row
         .col-lg-12
-          <!--PRE:CONTENT-->
+          block content
 
     #footer.navbar.navbar-default
       .container
@@ -72,8 +73,9 @@ html(lang="de")
 
     script(src="/js/jquery.min.js")
     script(src="/js/bootstrap.min.js")
-    script(src="/js/app.js?v="+buildNumber)
-    if hasScript()
-      script(src="/js/"+page.referencedFile+".js?v="+buildNumber)
+    script(src="/js/app.js?v=" + buildNumber)
+
+    block pageScripts
+
     if isRelease
       include ./ga.pug

@@ -1,10 +1,25 @@
-- var years = Object.keys(scope.news).sort(function(a, b) { return b-a; });
-- for (var i = 0, year = years[i]; i < years.length; i++, year = years[i])
-  h2 #{year}
-  - for (j = 0, item = scope.news[year][j]; j < scope.news[year].length; j++, item = scope.news[year][j])
-    h3 #{item.title}
-    if item.image
-      +image(item.image.src, item.image.title, item.image.title, item.image.caption)
-    if item.video
-      +youtube(item.video.src)
-    != marked(item.content || "")
+---
+title: "News"
+description: "Vergangene Konzerte, Feste und sonstige Anlässe des Musikverein Wollbachs werden hier kurz zusammengefasst."
+keywords: "Berichte, News, Zusammenfassungen, Vergangene Events, Nachrichten"
+
+navigation: "top"
+---
+
+extends ../template.pug
+
+block content
+  - var years = Object.keys(scope.news).sort(function(a, b) { return b-a; });
+  - for (var i = 0, year = years[i]; i < years.length; i++, year = years[i])
+    h2 #{year}
+    - for (j = 0, item = scope.news[year][j]; j < scope.news[year].length; j++, item = scope.news[year][j])
+      h3 #{item.title}
+      if item.image
+        +image(item.image.src, item.image.title, item.image.title, item.image.caption)
+      if item.video
+        +youtube(item.video.src)
+      != marked(item.content || "")
+
+block pageScripts
+  script
+    include ./js/news.js

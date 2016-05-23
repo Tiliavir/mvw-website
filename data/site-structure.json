@@ -1,169 +1,126 @@
 ﻿[
   {
-    "description": "Die Website des Musikverein Wollbach 1866 e.V.. Alles Rund um unsere Auftritte, Jugendarbeit, Besetzung, Bilder und Einblicke in die Vereinshistorie.",
-    "hasHeader": true,
-    "keywords": "Wollbach, Musikverein, Musikverein Wollbach 1866 e.V., Verein, Musik, Orchester, Blasmusik, Instrument, Jugendarbeit, Konzert",
     "referencedFile": "index",
-    "showInNavigation": "none",
+    "navigation": "none",
     "hideBreadcrumb": true,
     "title": "Willkommen beim Musikverein Wollbach"
   },
   {
-    "description": "Eine Übersicht über Termine von Auftritten und Anlässen des Musikverein Wollbach 1866 e.V.",
-    "keywords": "Termine, Events, Daten, Auftritte, Konzerte, Anlässe, Terminplan, Terminkalender, Kalender",
     "referencedFile": "termine",
-    "showInNavigation": "top",
+    "navigation": "top",
     "title": "Termine"
   },
   {
-    "description": "Vergangene Konzerte, Feste und sonstige Anlässe des Musikverein Wollbachs werden hier kurz zusammengefasst.",
-    "keywords": "Berichte, News, Zusammenfassungen, Vergangene Events, Nachrichten",
     "referencedFile": "news",
-    "showInNavigation": "top",
+    "navigation": "top",
     "title": "News"
   },
   {
     "children": [
       {
-        "description": "Ein kurzer Einblick in die Geschichte des Musikverein Wollbach 1866 e.V.",
-        "keywords": "Historie, Geschichte, Chronik, Passivmitglied, Mitgliedschaft",
         "referencedFile": "ueber-uns",
-        "showInNavigation": "top",
+        "navigation": "top",
         "title": "Wir über uns",
         "schemaOrg": "AboutPage"
       },
       {
-        "description": "Die aktuelle Besetzung des Musikverein Wollbach nach Registern.",
-        "keywords": "Register, Besetzung, Instrumente, Musiker, Musikerinnen, Personen",
         "referencedFile": "register",
-        "showInNavigation": "top",
+        "navigation": "top",
         "title": "Unsere Register"
       },
       {
-        "description": "Der Dirigent des Musikverein Wollbach: Oliver Hauser.",
-        "keywords": "Dirigent, musikalische Leitung, Leitung, Oliver Hauser",
         "referencedFile": "dirigent",
-        "showInNavigation": "top",
+        "navigation": "top",
         "title": "Dirigent"
       },
       {
-        "description": "Der Orchester Coach des Musikverein Wollbach: Jhon Hernandez.",
-        "keywords": "Orchester Coach, Coach, Jhon Hernandez",
         "referencedFile": "coach",
-        "showInNavigation": "top",
+        "navigation": "top",
         "title": "Orchester-Coach"
       },
       {
-        "description": "Hier finden Sie den richtigen Ansprechpartner des Musikverein Wollbachs.",
-        "keywords": "Vorstand, Vorstandschaft, Ansprechpartner, Kontakt",
         "referencedFile": "vorstand",
-        "showInNavigation": "top",
+        "navigation": "top",
         "title": "Vorstandschaft"
       },
       {
-        "description": "Alles Rund um die Dampfmusik des Musikverein Wollbach.",
-        "keywords": "Dampfmusik, Sauserbummel, Sauserexpress",
         "referencedFile": "dampfmusik",
-        "showInNavigation": "top",
+        "navigation": "top",
         "title": "Dampfmusik"
       }
     ],
-    "showInNavigation": "top",
+    "navigation": "top",
     "title": "Der Verein"
   },
   {
     "children": [
       {
-        "description": "Die Jugendarbeit des Musikverein Wollbach bietet neben einer guten Ausbildung und Talentförderung auch eine tolle Gemeinschaft und viel Spaß am gemeinsamen Musizieren im Vorstufen- und Jugendorchester.",
-        "keywords": "Ausbildung, Schulung, Jungmusiker, Jungmusikerin, Instrument lernen, Jugendorchester, Talentförderung, Vorstufenorchester",
         "referencedFile": "ausbildung",
-        "showInNavigation": "top",
+        "navigation": "top",
         "title": "Ausbildung"
       },
       {
-        "description": "Das Vorstufenorchester der Musikverein Wollbach unter der Leitung von Maria Krey.",
-        "keywords": "Vorstufenorchester, Jugendarbeit, Jungmusiker, Jungmusikerin, Instrument lernen, Ausbildung",
         "referencedFile": "vorstufenorchester",
-        "showInNavigation": "top",
+        "navigation": "top",
         "title": "Vorstufenorchester"
       },
       {
-        "description": "Das Jugendorchester des Musikverein Wollbach under der Leitung von Michael Bierwirth.",
-        "keywords": "Jugendorchester, Jugenarbeit, Ausbildung, Jungmusiker, Jungmusikerinnen, Instrument lernen",
         "referencedFile": "jugendorchester",
-        "showInNavigation": "top",
+        "navigation": "top",
         "title": "Jugendorchester"
       }
     ],
-    "showInNavigation": "top",
+    "navigation": "top",
     "title": "Jugendarbeit"
   },
   {
-    "description": "Eine Sammlung von Presseberichten rund um den Musikverein Wollbach.",
-    "keywords": "Presse, Presseberichte, Zeitungsartikel, Presseschau, Pressespiegel",
     "referencedFile": "berichte",
-    "showInNavigation": "top",
+    "navigation": "top",
     "title": "Berichte"
   },
   {
-    "description": "Bildergalerie mit Bildern von dirversen Konzerten, Festen und anderen Anlässen des Musikverein Wollbach.",
-    "keywords": "Bilder, Bildergalerie, Fotos, Photos, Alben, Album, Fotoalbum",
     "referencedFile": "bilder",
-    "showInNavigation": "top",
+    "navigation": "top",
     "title": "Bilder",
     "schemaOrg": "ImageGallery"
   },
   {
-    "description": "Vereine und Verbände mit denen der Musikverein in langjähriger freundschaftlicher Verbindung steht und eine gute Zusammenarbeit pflegt.",
-    "keywords": "Befreundete Vereine, Befreundete Verbände, Vereine, Partnerschaften, Freundschaften, Verbindungen",
     "referencedFile": "vereine-und-links",
-    "showInNavigation": "top",
+    "navigation": "top",
     "title": "Vereine und Links"
   },
   {
     "children": [
       {
-        "description": "Das Impressum der Webseite des Musikverein Wollbach.",
-        "keywords": "Impressum, Kontakt, Übersicht, Webseiteninformationen,  Informationen zur Webseite, Rechtiliches, Haftung, Haftungsausschluss, Datenschutz",
         "referencedFile": "haftung",
-        "showInNavigation": "none",
+        "navigation": "none",
         "title": "Haftungsausschluss"
       },
       {
-        "description": "Das Impressum der Webseite des Musikverein Wollbach.",
-        "keywords": "Impressum, Kontakt, Übersicht, Webseiteninformationen,  Informationen zur Webseite, Rechtiliches, Haftung, Haftungsausschluss, Datenschutz",
         "referencedFile": "datenschutz",
-        "showInNavigation": "none",
+        "navigation": "none",
         "title": "Datenschutz"
       },
       {
-        "description": "Eine Übersicht der Inhalte der Webseite des Musikverein Wollbach.",
-        "keywords": "Eine Übersicht der Inhalte der Webseite des Musikverein Wollbach.",
         "referencedFile": "seiten-uebersicht",
-        "showInNavigation": "none",
+        "navigation": "none",
         "title": "Seiten-Übersicht"
       }
     ],
-    "description": "Das Impressum der Webseite des Musikverein Wollbach.",
-    "keywords": "Impressum, Kontakt, Übersicht, Webseiteninformationen,  Informationen zur Webseite, Rechtiliches, Haftung, Haftungsausschluss, Datenschutz",
     "referencedFile": "impressum",
-    "showInNavigation": "footer",
+    "navigation": "footer",
     "title": "Impressum"
   },
   {
     "title": "Kontakt",
-    "description": "Ideen, Wünsche, Kritik oder Anregungen? Nehmen Sie Kontakt auf mit dem Musikverein Wollbach.",
-    "keywords": "Kontakt, Kontaktformular",
     "referencedFile": "kontaktformular",
-    "showInNavigation": "footer"
+    "navigation": "footer"
   },
   {
     "children": [
       {
-        "description": "Der Sauserbummel durch das Kandertal mit dem Sauser-Express und der Dampfmusik.",
-        "keywords": "Sauserbummel, Sauser-Express, Weinprobe, Kandertal, Herbstfest, Degustation, Wein, Sauser",
         "referencedFile": "blog_2016-sauserfahrt",
-        "showInNavigation": "none",
+        "navigation": "none",
         "title": "Sauserfahrt mit dem Chanderli 2016",
         "hasAmp": true,
         "publishedDate": "2016-05-01T00:00:00.000Z",
@@ -172,10 +129,8 @@
         "ampLogoHeight": 380
       },
       {
-        "description": "Das Kirchenkonzert mit dem Musikverein Wollbach und dem Verbandsjugendorchester Hochrhein in der ev. Kirche in Kandern.",
-        "keywords": "Kirchenkonzert, Kandern, Konzert, Blasmusik, Verbandsjugendorchester Hochrhein",
         "referencedFile": "blog_2016-kirchenkonzert",
-        "showInNavigation": "none",
+        "navigation": "none",
         "title": "Kirchenkonzert 2016",
         "hasAmp": true,
         "publishedDate": "2016-05-01T00:00:00.000Z",
@@ -184,10 +139,8 @@
         "ampLogoHeight": 480
       },
       {
-        "description": "Die CD \"Still Feelin' Good\" anlässlich des 150 jährigen Jubiläums des Musikverein Wollbach zu unserem Jahreskonzert 2016.",
-        "keywords": "CD, Aufnahme, Still Feelin' Good, Still Feeling Good, Studio 80, Städele, Musikverein Wollbach, Verkauf",
         "referencedFile": "blog_2016-still-feeling-good",
-        "showInNavigation": "none",
+        "navigation": "none",
         "title": "Still Feelin' Good",
         "hasAmp": true,
         "publishedDate": "2016-03-06T00:00:00.000Z",
@@ -196,10 +149,8 @@
         "ampLogoHeight": 380
       },
       {
-        "description": "Still Feeling Good - Das Jahreskonzert des Musikverein Wollbach im Jahr 2016 anlässlich des 150 jährigen Jubiläums.",
-        "keywords": "Jahreskonzert, Jubiläum, 150 Jahre, Still Feeling Good, Jahreskonzert 2016, Konzert",
         "referencedFile": "blog_2016-jahreskonzert",
-        "showInNavigation": "none",
+        "navigation": "none",
         "title": "Jahreskonzert 2016",
         "hasAmp": true,
         "publishedDate": "2015-11-01T00:00:00.000Z",
@@ -208,10 +159,8 @@
         "ampLogoHeight": 700
       },
       {
-        "description": "Der Sauserbummel durch das Kandertal mit dem Sauser-Express und der Dampfmusik.",
-        "keywords": "Sauserbummel, Sauser-Express, Weinprobe, Kandertal, Herbstfest, Degustation, Wein, Sauser",
         "referencedFile": "blog_2015-sauserfahrt",
-        "showInNavigation": "none",
+        "navigation": "none",
         "title": "Sauserfahrt mit dem Chanderli 2015",
         "hasAmp": true,
         "publishedDate": "2015-05-01T00:00:00.000Z",
@@ -220,17 +169,17 @@
         "ampLogoHeight": 380
       }
     ],
-    "showInNavigation": "none",
+    "navigation": "none",
     "title": "Blog"
   },
   {
     "referencedFile": "404",
-    "showInNavigation": "none",
+    "navigation": "none",
     "title": "Seite nicht gefunden!"
   },
   {
     "referencedFile": "401",
-    "showInNavigation": "none",
+    "navigation": "none",
     "title": "Unautorisierter Zugriff!"
   }
 ]
