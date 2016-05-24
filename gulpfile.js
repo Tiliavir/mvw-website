@@ -6,18 +6,14 @@
   const gulp = require("gulp"),
       del = require("del"),
       fs = require("fs"),
-      lazypipe = require("lazypipe"),
       marked = require("marked"),
       moment = require("moment"),
-      os = require("os"),
-      parallel = require("concurrent-transform"),
-      sizeOf = require("image-size"),
-      through = require("through2"),
       args   = require('yargs').argv,
-      $ = require("gulp-load-plugins")();
+      $ = require("gulp-load-plugins")(),
+      structure = require("./StructureWalker.js");
 
-  const structure = require("./StructureWalker.js"),
-        img = require("./ImageProcessor.js");
+  let isRelease = args.release || false;
+  let baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
 
   const paths = {
     temp: "./temp/",
@@ -46,9 +42,6 @@
     "./bower_modules/photoswipe/dist/photoswipe.css",
     "./bower_modules/photoswipe/dist/default-skin/default-skin.css"
   ];
-
-  let isRelease = args.release || false;
-  let baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
 
   gulp.task("scripts:typings", function () {
     return gulp.src("./typings.json")
@@ -119,7 +112,7 @@
   });
 
   gulp.task("scripts:tslint", function () {
-    return gulp.src([paths.scripts + "**/*.ts", paths.tests + "**/*.ts", paths.pageScripts + "**/*.ts"])
+    return gulp.src([paths.scripts + "**/*.ts", paths.pageScripts + "**/*.ts"])
                .pipe($.tslint())
                .pipe($.tslint.report("verbose"));
   });
@@ -143,7 +136,7 @@
 
   gulp.task("scripts:app:compile", ["scripts:tslint"], function () {
     processTS(paths.scripts + "**/*.ts", paths.dest + "js/", "app.js");
-    return processTS(paths.pageScripts + "**/*.ts", paths.dest + "js/");
+    return processTS(paths.pageScripts + "**/*.ts", paths.temp + "partials/js/");
   });
 
   gulp.task("scripts:compile", ["scripts:app:compile"], function () {
@@ -151,12 +144,11 @@
         .pipe(gulp.dest(paths.dest + "js/"));
 
     var galJs = photoswipe.slice();
-    // todo : copy bilder to temp and work with that
-    galJs.push(paths.dest + "js/bilder.js");
+    galJs.push(paths.temp + "partials/js/bilder.js");
     return gulp.src(galJs)
                .pipe($.concat("bilder.js"))
                .pipe($.uglify())
-               .pipe(gulp.dest(paths.dest + "js/"));
+               .pipe(gulp.dest(paths.temp + "partials/js/"));
   });
 
   gulp.task("sitemap", function () {
@@ -168,13 +160,7 @@
       .pipe(gulp.dest(paths.dest));
   });
 
-  gulp.task("html:preprocess", function () {
-    return gulp.src(paths.assets + "pages/**/*.pug")
-               .pipe($.replace(/^(\s*#+) /gm, "$1# "))
-               .pipe(gulp.dest(paths.temp));
-  });
-
-  gulp.task("html:generatePages", ["html:preprocess"], function () {
+  gulp.task("html:generatePages", function () {
     fs.writeFileSync(paths.temp + "siteOverviewList.pug", structure.writeNavigation("allplain"));
     fs.writeFileSync(paths.temp + "topnavigation.pug", structure.writeNavigation("top"));
     fs.writeFileSync(paths.temp + "footernavigation.pug", structure.writeNavigation("footer"));
@@ -194,7 +180,6 @@
 
     const scope = {
       register: register,
-      termine: require(paths.assets + "pages/data/termine.json"),
       berichte: require(paths.assets + "pages/data/berichte.json"),
       vorstand: require(paths.assets + "pages/data/vorstand.json"),
 
@@ -230,7 +215,7 @@
               .pipe(gulp.dest(paths.dest + "amp/"));
         }*/
 
-        last = gulp.src(paths.temp + "partials/" + referencedFile + ".pug")
+        last = gulp.src(paths.assets + "pages/partials/" + referencedFile + ".pug")
                    .pipe($.rename(referencedFile + ".html"))
                    .pipe($.grayMatter())
                    .pipe($.data(function (file) { return {
@@ -275,65 +260,9 @@
                .pipe($.bootlint());
   });
 
-  function processImage(w, h, p) {
-    return lazypipe()
-      .pipe($.rename, function (path) {
-        if (/\\m$/.test(path.dirname) || /\\s$/.test(path.dirname)) {
-          path.dirname = path.dirname.substring(0, path.dirname.length - 2);
-        }
-        path.dirname += (p ? ("/" + p) : "");
-      })
-      .pipe(parallel, $.imageResize({
-          width: w,
-          height: h,
-          crop: false,
-          upscale: false,
-          format: "jpg",
-          quality: 0.7
-        }),
-        os.cpus().length)
-      .pipe(gulp.dest, paths.dest + "gallery/")
-      .pipe(through.obj, function (file, enc, cb) {
-        img.addSize(file, sizeOf(file.path));
-        cb(null, file);
-      });
-  }
-
-  gulp.task("gallery:resize", function () {
-    var images = null;
-    var state = null;
-    try {
-      images = require(paths.assets + "/gallery/galleries.json");
-      state = require(paths.assets + "/gallery/state.json");
-    } catch (e) {
-    }
-    if (!img.init(images, state)) {
-      $.util.log("Could not restore gallery information - will start from scratch!");
-    }
-
-    return gulp.src(paths.assets + "gallery/**/*.{png,jpg,jpeg,PNG,JPG,JPEG}",
-                    { base: paths.assets + "gallery/" })
-               .pipe(through.obj(function (chunk, enc, cb) {
-                 img.addInformation(chunk);
-                 cb(null, chunk);
-               }))
-               .pipe($.rename(function (path) {
-                 path.basename = img.filename.replace(/(\..{3,4})$/, "");
-                 var info = path.dirname.split("\\");
-                 path.dirname = path.dirname.replace(info[info.length - 1], img.foldername);
-               }))
-               .pipe(processImage(1200, 1200, null)())
-               .pipe(processImage(800, 800, "m")())
-               .pipe(processImage(200, 200, "s")());
-  });
-
-  gulp.task("gallery:writeInfo", ["gallery:resize"], function () {
-    img.writeFiles(fs.writeFileSync, paths.dest + "/gallery/");
-  });
-
   gulp.task("default", $.sequence(["styles:compile", "scripts:compile", "html:generatePages"], "html:minify", ["html:bootlint", "html:validate", "sitemap"]));
 
-  gulp.task("fast", $.sequence("html:generatePages", "sitemap", "html:minify"));
+  gulp.task("fast", $.sequence("scripts:compile", "html:generatePages", "sitemap", "html:minify"));
 
   gulp.task("development", ["scripts:typings"]);
 })(require);

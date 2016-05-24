@@ -8,6 +8,8 @@ navigation: "top"
 
 extends ../template.pug
 
+require(../data/termine.json")
+
 block content
   - var years = Object.keys(scope.termine);
   - for (var i = 0, year = years[i]; i < years.length; i++, year = years[i])
