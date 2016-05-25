@@ -43,9 +43,13 @@
     "./bower_modules/photoswipe/dist/default-skin/default-skin.css"
   ];
 
-  gulp.task("scripts:typings", function () {
+  gulp.task("typings", function () {
     return gulp.src("./typings.json")
                .pipe($.typings()); ;
+  });
+  
+  gulp.task("bower", function () {
+    return $.bower();
   });
 
   gulp.task("clean", function () {
@@ -264,5 +268,5 @@
 
   gulp.task("fast", $.sequence(["styles:compile", "scripts:compile"], "html:generatePages", ["sitemap", "html:minify"]));
 
-  gulp.task("development", ["scripts:typings"]);
+  gulp.task("development", ["typings", "bower"]);
 })(require);
