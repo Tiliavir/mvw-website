@@ -108,7 +108,7 @@
                  discardComments: { removeAll: true },
                  zindex: false
                }))
-               .pipe(gulp.dest(paths.temp + "css/"));
+               .pipe(gulp.dest(paths.assets + "/pages/css/"));
   });
 
   gulp.task("scripts:tslint", function () {
@@ -135,8 +135,8 @@
   };
 
   gulp.task("scripts:app:compile", ["scripts:tslint"], function () {
-    processTS(paths.scripts + "**/*.ts", paths.dest + "js/", "app.js");
-    return processTS(paths.pageScripts + "**/*.ts", paths.temp + "partials/js/");
+    processTS(paths.scripts + "**/*.ts", paths.assets + "pages/js/", "app.js");
+    return processTS(paths.pageScripts + "**/*.ts", paths.assets + "pages/partials/js/");
   });
 
   gulp.task("scripts:compile", ["scripts:app:compile"], function () {
@@ -161,9 +161,9 @@
   });
 
   gulp.task("html:generatePages", function () {
-    fs.writeFileSync(paths.temp + "siteOverviewList.pug", structure.writeNavigation("allplain"));
-    fs.writeFileSync(paths.temp + "topnavigation.pug", structure.writeNavigation("top"));
-    fs.writeFileSync(paths.temp + "footernavigation.pug", structure.writeNavigation("footer"));
+    fs.writeFileSync(paths.assets + "pages/siteOverviewList.pug", structure.writeNavigation("allplain"));
+    fs.writeFileSync(paths.assets + "pages/topnavigation.pug", structure.writeNavigation("top"));
+    fs.writeFileSync(paths.assets + "pages/footernavigation.pug", structure.writeNavigation("footer"));
 
     var register = require(paths.assets + "pages/data/register.json");
     var distinctNames = {};
@@ -262,7 +262,7 @@
 
   gulp.task("default", $.sequence(["styles:compile", "scripts:compile", "html:generatePages"], "html:minify", ["html:bootlint", "html:validate", "sitemap"]));
 
-  gulp.task("fast", $.sequence("scripts:compile", "html:generatePages", "sitemap", "html:minify"));
+  gulp.task("fast", $.sequence(["styles:compile", "scripts:compile"], "html:generatePages", ["sitemap", "html:minify"]));
 
   gulp.task("development", ["scripts:typings"]);
 })(require);
