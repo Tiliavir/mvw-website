@@ -25,7 +25,7 @@ function writeNavigationEntry(entry, n, type) {
   } else {
     if (type === "allplain" || entry.navigation !== "none") {
       html = indent(n, true)
-               + "li(class=(page.referencedFile === '" + entry.referencedFile + "' ? 'active' : undefined))"
+               + "li(class=(referencedFile === '" + entry.referencedFile + "' ? 'active' : undefined))"
                + indent(n + 2, true)
                + "a(href=\"" + entry.referencedFile + ".html\") "
                + entry.title;

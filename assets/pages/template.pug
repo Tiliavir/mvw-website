@@ -6,7 +6,7 @@ doctype html
 //- xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"
 html(lang="de")
   head
-    title=(page.referencedFile === "index" ? "" : title + " | ") + scope.siteTitle
+    title=(referencedFile === "index" ? "" : title + " | ") + scope.siteTitle
     if isRelease
       base(href=scope.baseUrl)
     meta(charset="utf-8")
@@ -33,7 +33,7 @@ html(lang="de")
     link(rel="stylesheet" media="print" href="/css/print.css?v=" + buildNumber)
 
     if hasAmp
-      link(rel="amphtml" href=scope.baseUrl + "amp/" + page.referencedFile + ".html")
+      link(rel="amphtml" href=scope.baseUrl + "amp/" + referencedFile + ".html")
 
     include ./favicon.pug
 
@@ -59,7 +59,7 @@ html(lang="de")
       .row
         .col-lg-12
           h1.page-header #{title}
-            if page.subtitle
+            if subtitle
               small #{subtitle}
           | !{breadcrumb}
       .row

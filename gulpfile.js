@@ -140,7 +140,7 @@
 
   gulp.task("scripts:app:compile", ["scripts:tslint"], function () {
     processTS(paths.scripts + "**/*.ts", paths.assets + "pages/js/", "app.js");
-    return processTS(paths.pageScripts + "**/*.ts", paths.assets + "pages/partials/js/");
+    return processTS(paths.pageScripts + "**/*.ts", paths.assets + "pages/js/");
   });
 
   gulp.task("scripts:compile", ["scripts:app:compile"], function () {
@@ -152,7 +152,7 @@
     return gulp.src(galJs)
                .pipe($.concat("bilder.js"))
                .pipe($.uglify())
-               .pipe(gulp.dest(paths.temp + "partials/js/"));
+               .pipe(gulp.dest(paths.assets + "pages/js/"));
   });
 
   gulp.task("sitemap", function () {
@@ -163,15 +163,10 @@
       }))
       .pipe(gulp.dest(paths.dest));
   });
-
-  gulp.task("html:generatePages", function () {
-    fs.writeFileSync(paths.assets + "pages/siteOverviewList.pug", structure.writeNavigation("allplain"));
-    fs.writeFileSync(paths.assets + "pages/topnavigation.pug", structure.writeNavigation("top"));
-    fs.writeFileSync(paths.assets + "pages/footernavigation.pug", structure.writeNavigation("footer"));
-
-    var register = require(paths.assets + "pages/data/register.json");
+  
+  function getNumberOfMusicians(register) {
     var distinctNames = {};
-    register.map(function(p) {
+    scope.register.map(function(p) {
         return p.name + " " + p.familyName;
       }).forEach(function(p) {
         distinctNames[p] = true;
@@ -181,22 +176,31 @@
       $.util.log("Unexpected number of musicians calculated:", numberOfMusicians);
       throw ("Unexpected number of musicians calculated: " + numberOfMusicians);
     }
+    
+    return numberOfMusicians;
+  }
+
+  gulp.task("html:generatePages", function () {
+    fs.writeFileSync(paths.assets + "pages/siteOverviewList.pug", structure.writeNavigation("allplain"));
+    fs.writeFileSync(paths.assets + "pages/topnavigation.pug", structure.writeNavigation("top"));
+    fs.writeFileSync(paths.assets + "pages/footernavigation.pug", structure.writeNavigation("footer"));
 
     const scope = {
-      register: register,
+      register: require(paths.assets + "pages/data/register.json"),
       berichte: require(paths.assets + "pages/data/berichte.json"),
       vorstand: require(paths.assets + "pages/data/vorstand.json"),
+      termine: require(paths.assets + "pages/data/termine.json"),
 
       jugendRegister: require(paths.assets + "pages/data/jugend-register.json"),
       news: require(paths.assets + "pages/data/news.json"),
       galleries: require(paths.assets + "gallery/galleries.json"),
 
-      numberOfMusicians: numberOfMusicians,
-
       siteTitle: "Musikverein Wollbach 1866 e.V.",
       baseUrl: baseUrl,
     };
+    
     const buildNumber = parseInt((new Date()).valueOf() / 1000000);
+    scope.numberOfMusicians = getNumberOfMusicians(scope.register);
 
     var last;
     structure.performActionOnLeaf(function (entry, breadcrumb) {
@@ -204,7 +208,7 @@
       if(referencedFile) {
         $.util.log("- processing:", entry.title + ": " + referencedFile);
 
-        /*if (entry.hasAmp) {
+       /* if (entry.hasAmp) {
           gulp.src(paths.temp + "template-amp.pug")
               .pipe($.rename(referencedFile + ".html"))
               .pipe($.replace("<!--PRE:CONTENT-->", "include ./partials/" + referencedFile + ".pug"))
@@ -233,7 +237,7 @@
 
                      breadcrumb: !entry.hideBreadcrumb && breadcrumb && breadcrumb.length > 1 ? structure.getBreadcrumbHtml(breadcrumb) : null,
 
-                     page: entry
+                     referencedFile: entry.referencedFile
                    };}))
                    .pipe($.pug())
                    .pipe(gulp.dest(paths.dest));
