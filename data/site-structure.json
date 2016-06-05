@@ -119,54 +119,33 @@
   {
     "children": [
       {
+        "referencedFile": "blog_2016-marschmusikfestival",
+        "navigation": "none",
+      },
+      {
         "referencedFile": "blog_2016-sauserfahrt",
         "navigation": "none",
         "title": "Sauserfahrt mit dem Chanderli 2016",
-        "hasAmp": true,
-        "publishedDate": "2016-05-01T00:00:00.000Z",
-        "ampLogoUrl": "img/events/chanderli.jpg",
-        "ampLogoWidth": 600,
-        "ampLogoHeight": 380
       },
       {
         "referencedFile": "blog_2016-kirchenkonzert",
         "navigation": "none",
         "title": "Kirchenkonzert 2016",
-        "hasAmp": true,
-        "publishedDate": "2016-05-01T00:00:00.000Z",
-        "ampLogoUrl": "img/events/kirche_kandern.jpg",
-        "ampLogoWidth": 600,
-        "ampLogoHeight": 480
       },
       {
         "referencedFile": "blog_2016-still-feeling-good",
         "navigation": "none",
         "title": "Still Feelin' Good",
-        "hasAmp": true,
-        "publishedDate": "2016-03-06T00:00:00.000Z",
-        "ampLogoUrl": "img/events/cd.jpg",
-        "ampLogoWidth": 600,
-        "ampLogoHeight": 380
       },
       {
         "referencedFile": "blog_2016-jahreskonzert",
         "navigation": "none",
         "title": "Jahreskonzert 2016",
-        "hasAmp": true,
-        "publishedDate": "2015-11-01T00:00:00.000Z",
-        "ampLogoUrl": "files/flyer/16_jahreskonzert.jpg",
-        "ampLogoWidth": 593,
-        "ampLogoHeight": 700
       },
       {
         "referencedFile": "blog_2015-sauserfahrt",
         "navigation": "none",
         "title": "Sauserfahrt mit dem Chanderli 2015",
-        "hasAmp": true,
-        "publishedDate": "2015-05-01T00:00:00.000Z",
-        "ampLogoUrl": "img/events/chanderli.jpg",
-        "ampLogoWidth": 600,
-        "ampLogoHeight": 380
       }
     ],
     "navigation": "none",
