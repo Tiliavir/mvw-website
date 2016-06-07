@@ -12,6 +12,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-data": "^1.2.1",
+    "gulp-flatten": "^0.2.0",
     "gulp-htmlmin": "^2.0.0",
     "gulp-if": "^2.0.1",
     "gulp-image-resize": "^0.8.0",
@@ -35,6 +36,7 @@
     "jstransformer-marked": "^1.0.1",
     "marked": "^0.3.5",
     "moment": "^2.13.0",
+    "path": "^0.12.7",
     "pug": "^2.0.0-alpha7",
     "tslint": "^3.10.2",
     "typings": "^0.8.1"

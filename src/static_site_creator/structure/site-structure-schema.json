@@ -27,7 +27,7 @@
           "$ref": "#"
         }
       },
-      "required": [ "title", "navigation", "children" ]
+      "required": [ "title", "children" ]
     },
     "entry": {
       "type": "object",
@@ -38,31 +38,12 @@
           "type": "string",
           "description": "The title of the menu entry and url path."
         },
-        "subtitle": {
-          "type": "string",
-          "description": "The subtitle of the menu entry and url path."
-        },
-        "keywords": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
         "navigation": {
           "$ref": "#/definitions/navigationType"
         },
         "referencedFile": {
           "type": "string",
           "description": "Name of the partial file."
-        },
-        "isPug": {
-          "type": "boolean"
-        },
-        "hideBreadcrumb": {
-          "type": "boolean"
-        },
-        "hasAmp": {
-          "type": "boolean"
         },
         "children": {
           // these children are considered logical children but will not work in navigation

@@ -7,86 +7,70 @@
   },
   {
     "referencedFile": "termine",
-    "navigation": "top",
     "title": "Termine"
   },
   {
     "referencedFile": "news",
-    "navigation": "top",
     "title": "News"
   },
   {
     "children": [
       {
         "referencedFile": "ueber-uns",
-        "navigation": "top",
         "title": "Wir über uns",
         "schemaOrg": "AboutPage"
       },
       {
         "referencedFile": "register",
-        "navigation": "top",
         "title": "Unsere Register"
       },
       {
         "referencedFile": "dirigent",
-        "navigation": "top",
         "title": "Dirigent"
       },
       {
         "referencedFile": "coach",
-        "navigation": "top",
         "title": "Orchester-Coach"
       },
       {
         "referencedFile": "vorstand",
-        "navigation": "top",
         "title": "Vorstandschaft"
       },
       {
         "referencedFile": "dampfmusik",
-        "navigation": "top",
         "title": "Dampfmusik"
       }
     ],
-    "navigation": "top",
     "title": "Der Verein"
   },
   {
     "children": [
       {
         "referencedFile": "ausbildung",
-        "navigation": "top",
         "title": "Ausbildung"
       },
       {
         "referencedFile": "vorstufenorchester",
-        "navigation": "top",
         "title": "Vorstufenorchester"
       },
       {
         "referencedFile": "jugendorchester",
-        "navigation": "top",
         "title": "Jugendorchester"
       }
     ],
-    "navigation": "top",
     "title": "Jugendarbeit"
   },
   {
     "referencedFile": "berichte",
-    "navigation": "top",
     "title": "Berichte"
   },
   {
     "referencedFile": "bilder",
-    "navigation": "top",
     "title": "Bilder",
     "schemaOrg": "ImageGallery"
   },
   {
     "referencedFile": "vereine-und-links",
-    "navigation": "top",
     "title": "Vereine und Links"
   },
   {
@@ -121,31 +105,32 @@
       {
         "referencedFile": "blog_2016-marschmusikfestival",
         "navigation": "none",
+        "title": "Marschmusikfestival 2016"
       },
       {
         "referencedFile": "blog_2016-sauserfahrt",
         "navigation": "none",
-        "title": "Sauserfahrt mit dem Chanderli 2016",
+        "title": "Sauserfahrt mit dem Chanderli 2016"
       },
       {
         "referencedFile": "blog_2016-kirchenkonzert",
         "navigation": "none",
-        "title": "Kirchenkonzert 2016",
+        "title": "Kirchenkonzert 2016"
       },
       {
         "referencedFile": "blog_2016-still-feeling-good",
         "navigation": "none",
-        "title": "Still Feelin' Good",
+        "title": "Still Feelin' Good"
       },
       {
         "referencedFile": "blog_2016-jahreskonzert",
         "navigation": "none",
-        "title": "Jahreskonzert 2016",
+        "title": "Jahreskonzert 2016"
       },
       {
         "referencedFile": "blog_2015-sauserfahrt",
         "navigation": "none",
-        "title": "Sauserfahrt mit dem Chanderli 2015",
+        "title": "Sauserfahrt mit dem Chanderli 2015"
       }
     ],
     "navigation": "none",

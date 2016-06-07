@@ -6,11 +6,12 @@
   const gulp = require("gulp"),
       del = require("del"),
       fs = require("fs"),
+      path = require("path"),
       marked = require("marked"),
       moment = require("moment"),
       args   = require('yargs').argv,
       $ = require("gulp-load-plugins")(),
-      structure = require("./StructureWalker.js");
+      structure = require("./src/static_site_creator/structure/StructureWalker.js");
 
   let isRelease = args.release || false;
   let baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
@@ -181,6 +182,7 @@
   }
 
   gulp.task("html:generatePages", function () {
+    structure.init(require(paths.assets + "pages/site-structure.json"));
     fs.writeFileSync(paths.assets + "pages/siteOverviewList.pug", structure.writeNavigation("allplain"));
     fs.writeFileSync(paths.assets + "pages/topnavigation.pug", structure.writeNavigation("top"));
     fs.writeFileSync(paths.assets + "pages/footernavigation.pug", structure.writeNavigation("footer"));
@@ -202,11 +204,11 @@
     const buildNumber = parseInt((new Date()).valueOf() / 1000000);
     scope.numberOfMusicians = getNumberOfMusicians(scope.register);
 
-    var last;
+ /*   var last;
     structure.performActionOnLeaf(function (entry, breadcrumb) {
       var referencedFile = entry.referencedFile;
       if(referencedFile) {
-        $.util.log("- processing:", entry.title + ": " + referencedFile);
+        $.util.log("- processing:", entry.title + ": " + referencedFile);*/
 
        /* if (entry.hasAmp) {
           gulp.src(paths.temp + "template-amp.pug")
@@ -223,27 +225,34 @@
               .pipe(gulp.dest(paths.dest + "amp/"));
         }*/
 
-        last = gulp.src(paths.assets + "pages/partials/" + referencedFile + ".pug")
-                   .pipe($.rename(referencedFile + ".html"))
+        return gulp.src(paths.assets + "pages/partials/**/*.pug")
+                   .pipe($.rename(function(path){path.extname = ".html";}))
                    .pipe($.grayMatter())
-                   .pipe($.data(function (file) { return {
-                     marked: marked,
-                     moment: moment,
-                     require: require,
+                   .pipe($.data(function (file) {
+                     var filename = path.basename(file.path);
+                     return {
+                      marked: marked,
+                      moment: moment,
+                      require: require,
 
-                     isRelease: isRelease,
-                     buildNumber: buildNumber,
-                     scope: scope,
+                      isRelease: isRelease,
+                      buildNumber: buildNumber,
+                      scope: scope,
 
-                     breadcrumb: !entry.hideBreadcrumb && breadcrumb && breadcrumb.length > 1 ? structure.getBreadcrumbHtml(breadcrumb) : null,
-
-                     referencedFile: entry.referencedFile
-                   };}))
+                      referencedFile: filename,
+                      breadcrumb: structure.getBreadcrumbHtml(filename)
+                     };
+                   }))
                    .pipe($.pug())
-                   .pipe(gulp.dest(paths.dest));
-      }
+                   .pipe($.flatten())
+                   .pipe(gulp.dest(paths.dest))
+
+                   .pipe($.if(, $.data(function(file) {return {isAmp: true}})))
+                   .pipe($.if(, $.pug()))
+                   .pipe($.if(, gulp.dest(paths.dest + "amp/")));
+/*      }
     });
-    return last;
+    return last;*/
   });
 
   gulp.task("html:minify", function () {
