@@ -47,3 +47,7 @@ block content
             if termin.description
               div(itemprop="description" style="font-style:italic;")
                 != marked(termin.description)
+
+block pageScripts
+  script
+    include ../js/termine.js
