@@ -1,5 +1,32 @@
 ﻿[
   {
+    "date": "2016-06-07T22:13:00.000Z",
+    "hasDescription": true,
+    "hasPicture": true,
+    "srcTitle": "BZ",
+    "srcUrl": "http://www.badische-zeitung.de",
+    "title": "Mit Marschmusik durch Wollbach und die Weiler",
+    "url": "http://www.badische-zeitung.de/kandern/mit-marschmusik-durch-wollbach-und-die-weiler--122804177.html"
+  },
+  {
+    "date": "2016-06-02T00:00:00.000Z",
+    "hasDescription": true,
+    "hasPicture": true,
+    "srcTitle": "BZ",
+    "srcUrl": "http://www.badische-zeitung.de",
+    "title": "Sechs Stunden schallt fröhliche Marschmusik durch Wollbach",
+    "url": "http://www.badische-zeitung.de/kandern/sechs-stunden-schallt-froehliche-marschmusik-durch-wollbach"
+  },
+  {
+    "date": "2016-06-02T22:03:00.000Z",
+    "hasDescription": true,
+    "hasPicture": true,
+    "srcTitle": "VHJ",
+    "srcUrl": "http://www.verlagshaus-jaumann.de",
+    "title": "Festival der Marschmusik in Wollbach",
+    "url": "http://www.verlagshaus-jaumann.de/inhalt.kandern-festival-der-marschmusik-in-wollbach.3580d1ba-cf9f-4c77-882a-347ffc11f4ca.html"
+  },
+  {
     "date": "2016-05-09T22:13:00.000Z",
     "hasDescription": true,
     "hasPicture": true,
@@ -22,7 +49,7 @@
     "hasDescription": true,
     "hasPicture": true,
     "srcTitle": "VHJ",
-    "srcUrl": "http://www.badische-zeitung.de",
+    "srcUrl": "http://www.verlagshaus-jaumann.de",
     "title": "\"Wunderbares Konzertprogramm\"",
     "url": "http://www.verlagshaus-jaumann.de/inhalt.kandern-wunderbares-konzertprogramm.d2beab60-4c07-4178-8697-1a37f1c8c990.html"
   },
