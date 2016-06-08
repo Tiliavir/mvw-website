@@ -74,29 +74,28 @@ function initBreadcrumbs(branch, path) {
     "referencedFile": branch.referencedFile
   });
 
-  if (branch.children.length === 0) { 
-    breadcrumbs[branch.title] = fork;
-  } else {
+  breadcrumbs[branch.referencedFile] = fork;
+
+  if (branch.children) {
     for (var i = 0; i < branch.children.length; i++) {
-      initBreadcrumbs(branch.children.length[i], fork);
+      initBreadcrumbs(branch.children[i], fork);
     }
   }
 }
 
 module.exports = {
-  init: function(structure) {
-    var validation = validate(4, schema);
+  init: function(s) {
+    var validation = validate(s, schema);
 
     if(!validation.valid) {
       console.log(validation);
       throw "Invalid structure provided!";
     }
 
-    this.structure = structure;
-
+    structure = s;
     breadcrumbs = {};
     for (var i = 0; i < structure.length; i++) {
-      initBreadcrumbs(structure[i], []);
+      initBreadcrumbs(structure[i], [{"title": "Start", "referencedFile": "index"}]);
     }
   },
 
@@ -116,6 +115,6 @@ module.exports = {
   },
 
   getBreadcrumbHtml: function(referencedFile) {
-    return renderBreadcrumb(breadcrumbs(referencedFile));
+    return renderBreadcrumb(breadcrumbs[referencedFile]);
   }
 }

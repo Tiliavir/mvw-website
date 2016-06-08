@@ -167,7 +167,7 @@
   
   function getNumberOfMusicians(register) {
     var distinctNames = {};
-    scope.register.map(function(p) {
+    register.map(function(p) {
         return p.name + " " + p.familyName;
       }).forEach(function(p) {
         distinctNames[p] = true;
@@ -226,10 +226,12 @@
         }*/
 
         return gulp.src(paths.assets + "pages/partials/**/*.pug")
-                   .pipe($.rename(function(path){path.extname = ".html";}))
+                   .pipe($.rename(function(path) {
+                       path.extname = ".html";
+                   }))
                    .pipe($.grayMatter())
                    .pipe($.data(function (file) {
-                     var filename = path.basename(file.path);
+                     var filename = path.basename(file.path, path.extname(file.path));
                      return {
                       marked: marked,
                       moment: moment,
@@ -247,9 +249,9 @@
                    .pipe($.flatten())
                    .pipe(gulp.dest(paths.dest))
 
-                   .pipe($.if(, $.data(function(file) {return {isAmp: true}})))
+                   /*.pipe($.if(, $.data(function(file) {return {isAmp: true}})))
                    .pipe($.if(, $.pug()))
-                   .pipe($.if(, gulp.dest(paths.dest + "amp/")));
+                   .pipe($.if(, gulp.dest(paths.dest + "amp/")));*/
 /*      }
     });
     return last;*/
@@ -279,7 +281,7 @@
 
   gulp.task("default", $.sequence(["styles:compile", "scripts:compile", "html:generatePages"], "html:minify", ["html:bootlint", "html:validate", "sitemap"]));
 
-  gulp.task("fast", $.sequence(["styles:compile", "scripts:compile"], "html:generatePages", ["sitemap", "html:minify"]));
+  gulp.task("fast", $.sequence(/*["styles:compile", "scripts:compile"],*/ "html:generatePages", ["sitemap", "html:minify"]));
 
   gulp.task("development", ["typings", "bower"]);
 })(require);

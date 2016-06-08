@@ -46,11 +46,10 @@
           "description": "Name of the partial file."
         },
         "children": {
-          // these children are considered logical children but will not work in navigation
           "$ref": "#"
         }
       },
-      "required": [ "title", "navigation", "referencedFile" ]
+      "required": [ "title", "referencedFile" ]
     },
     "navigationType": {
       "enum": [ "top", "footer", "none" ],
