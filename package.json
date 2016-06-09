@@ -36,6 +36,7 @@
     "jstransformer-marked": "^1.0.1",
     "marked": "^0.3.5",
     "moment": "^2.13.0",
+    "navigation": "./src/static_site_creator/navigation",
     "path": "^0.12.7",
     "pug": "^2.0.0-alpha7",
     "tslint": "^3.10.2",
