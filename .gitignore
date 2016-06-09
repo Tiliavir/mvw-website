@@ -2,9 +2,13 @@
 
 *_modules/
 typings/
-temp/
+
 scripts/*.js
-scripts_tests/*.js
+/assets/pages/js/*.js
+/assets/pages/css/*.css
+/assets/pages/footernavigation.pug
+/assets/pages/siteOverviewList.pug
+/assets/pages/topnavigation.pug
 
 ### Source: https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 ## Ignore Visual Studio temporary files, build results, and
@@ -223,9 +227,3 @@ FakesAssemblies/
 **/*.Server/GeneratedArtifacts
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
-/assets/pages/partials/js
-/assets/pages/js/*.js
-/assets/pages/css/*.css
-/assets/pages/footernavigation.pug
-/assets/pages/siteOverviewList.pug
-/assets/pages/topnavigation.pug
