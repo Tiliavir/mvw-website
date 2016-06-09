@@ -9,9 +9,9 @@
       path = require("path"),
       marked = require("marked"),
       moment = require("moment"),
-      args   = require('yargs').argv,
+      args   = require("yargs").argv,
       $ = require("gulp-load-plugins")(),
-      structure = require("./src/static_site_creator/structure/StructureWalker.js");
+      navigation = require("navigation");
 
   let isRelease = args.release || false;
   let baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
@@ -182,10 +182,10 @@
   }
 
   gulp.task("html:generatePages", function () {
-    structure.init(require(paths.assets + "pages/site-structure.json"));
-    fs.writeFileSync(paths.assets + "pages/siteOverviewList.pug", structure.writeNavigation("allplain"));
-    fs.writeFileSync(paths.assets + "pages/topnavigation.pug", structure.writeNavigation("top"));
-    fs.writeFileSync(paths.assets + "pages/footernavigation.pug", structure.writeNavigation("footer"));
+    navigation.init(require(paths.assets + "pages/site-structure.json"));
+    fs.writeFileSync(paths.assets + "pages/siteOverviewList.pug", navigation.writeNavigation("allplain"));
+    fs.writeFileSync(paths.assets + "pages/topnavigation.pug", navigation.writeNavigation("top"));
+    fs.writeFileSync(paths.assets + "pages/footernavigation.pug", navigation.writeNavigation("footer"));
 
     const scope = {
       register: require(paths.assets + "pages/data/register.json"),
@@ -205,7 +205,7 @@
     scope.numberOfMusicians = getNumberOfMusicians(scope.register);
 
  /*   var last;
-    structure.performActionOnLeaf(function (entry, breadcrumb) {
+    navigation.performActionOnLeaf(function (entry, breadcrumb) {
       var referencedFile = entry.referencedFile;
       if(referencedFile) {
         $.util.log("- processing:", entry.title + ": " + referencedFile);*/
@@ -239,7 +239,7 @@
                       scope: scope,
 
                       referencedFile: filename,
-                      breadcrumb: structure.getBreadcrumbHtml(filename)
+                      breadcrumb: navigation.getBreadcrumbHtml(filename)
                      };
                    }))
                    .pipe($.rename(function(path) {
