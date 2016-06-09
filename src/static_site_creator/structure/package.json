@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "name": "mvw_navigation",
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {
+    "jsonschema": "^1.1.0"
+  }
+}
