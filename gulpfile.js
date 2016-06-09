@@ -226,9 +226,6 @@
         }*/
 
         return gulp.src(paths.assets + "pages/partials/**/*.pug")
-                   .pipe($.rename(function(path) {
-                       path.extname = ".html";
-                   }))
                    .pipe($.grayMatter())
                    .pipe($.data(function (file) {
                      var filename = path.basename(file.path, path.extname(file.path));
@@ -245,13 +242,21 @@
                       breadcrumb: structure.getBreadcrumbHtml(filename)
                      };
                    }))
+                   .pipe($.rename(function(path) {
+                       if(path.dirname.endsWith("Blog")) {
+                         path.basename = "blog_" + path.basename;
+                       }
+                       path.extname = ".html";
+                   }))
                    .pipe($.pug())
                    .pipe($.flatten())
                    .pipe(gulp.dest(paths.dest))
 
-                   /*.pipe($.if(, $.data(function(file) {return {isAmp: true}})))
-                   .pipe($.if(, $.pug()))
-                   .pipe($.if(, gulp.dest(paths.dest + "amp/")));*/
+                   /*
+                   .pipe($.if($.data(function(file) {return file.data.isAmp;}), $.data(function(file) {return {isAmp: true}})))
+                   .pipe($.if($.data(function(file) {return file.data.isAmp;}), $.pug()))
+                   .pipe($.if($.data(function(file) {return file.data.isAmp;}), gulp.dest(paths.dest + "amp/")));
+                   */
 /*      }
     });
     return last;*/

@@ -2,20 +2,20 @@
 
 module MVW.Appointments {
   function addDays(date, days) {
-    var result = new Date(date);
+    let result = new Date(date);
     result.setDate(result.getDate() + days);
     return result;
   }
 
   export function initialize() {
-    var cutOffDate = addDays(new Date(), 3);
+    const cutOffDate = addDays(new Date(), 3);
 
-    $('meta[itemprop="startDate"]').each(function(i,e) {
-      var $e = $(e);
-      var $endDateString = $e.siblings('meta[itemprop="endDate"]');
-      var $e = $endDateString.length === 1 ? $endDateString : $e;
-      var endDate = new Date($e.attr("content"));
-      if(endDate < cutOffDate) {
+    $("meta[itemprop=\"startDate\"]").each(function(i, e) {
+      let $e = $(e);
+      let $endDateString = $e.siblings("meta[itemprop=\"endDate\"]");
+      $e = $endDateString.length === 1 ? $endDateString : $e;
+      let endDate = new Date($e.attr("content"));
+      if (endDate < cutOffDate) {
         $e.closest("tr").css("display", "none");
       }
     });
