@@ -1,6 +1,8 @@
 {
   "version": "1.0.0",
   "name": "mvw_navigation",
+  "description": "Small module generating a site navigation from a given structure file.",
+  "main": "index.js",
   "private": true,
   "devDependencies": {},
   "dependencies": {
