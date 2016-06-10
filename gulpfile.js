@@ -11,7 +11,7 @@
       moment = require("moment"),
       args   = require("yargs").argv,
       $ = require("gulp-load-plugins")(),
-      navigation = require("navigation");
+      navigation = require("mvw-navigation");
 
   let isRelease = args.release || false;
   let baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
@@ -226,6 +226,7 @@
         }*/
 
         return gulp.src(paths.assets + "pages/partials/**/*.pug")
+                   .pipe($.rename(function(path) { path.extname = ".html"; }))
                    .pipe($.grayMatter())
                    .pipe($.data(function (file) {
                      var filename = path.basename(file.path, path.extname(file.path));
@@ -234,6 +235,7 @@
                       moment: moment,
                       require: require,
 
+                      isAmp: false,
                       isRelease: isRelease,
                       buildNumber: buildNumber,
                       scope: scope,
@@ -242,21 +244,13 @@
                       breadcrumb: navigation.getBreadcrumbHtml(filename)
                      };
                    }))
-                   .pipe($.rename(function(path) {
-                       if(path.dirname.endsWith("Blog")) {
-                         path.basename = "blog_" + path.basename;
-                       }
-                       path.extname = ".html";
-                   }))
                    .pipe($.pug())
                    .pipe($.flatten())
                    .pipe(gulp.dest(paths.dest))
 
-                   /*
-                   .pipe($.if($.data(function(file) {return file.data.isAmp;}), $.data(function(file) {return {isAmp: true}})))
-                   .pipe($.if($.data(function(file) {return file.data.isAmp;}), $.pug()))
-                   .pipe($.if($.data(function(file) {return file.data.isAmp;}), gulp.dest(paths.dest + "amp/")));
-                   */
+                   .pipe($.if(function(file) {return file.data.hasAmp;}, $.data(function(file) {return {isAmp: true}})))
+                   .pipe($.if(function(file) {return file.data.hasAmp;}, $.pug()))
+                   .pipe($.if(function(file) {return file.data.hasAmp;}, gulp.dest(paths.dest + "amp/")));
 /*      }
     });
     return last;*/

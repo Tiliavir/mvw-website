@@ -5,6 +5,7 @@ typings/
 
 scripts/*.js
 /assets/pages/js/*.js
+/assets/pages/partials/js/*.js
 /assets/pages/css/*.css
 /assets/pages/footernavigation.pug
 /assets/pages/siteOverviewList.pug

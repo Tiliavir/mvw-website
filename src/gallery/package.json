@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "mvw_gallery",
+  "name": "mvw-gallery",
   "private": true,
   "devDependencies": {},
   "dependencies": {
