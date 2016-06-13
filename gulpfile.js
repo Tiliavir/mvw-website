@@ -164,22 +164,6 @@
       }))
       .pipe(gulp.dest(paths.dest));
   });
-  
-  function getNumberOfMusicians(register) {
-    var distinctNames = {};
-    register.map(function(p) {
-        return p.name + " " + p.familyName;
-      }).forEach(function(p) {
-        distinctNames[p] = true;
-    });
-    var numberOfMusicians = Object.keys(distinctNames).length;
-    if (!numberOfMusicians || numberOfMusicians < 30 || numberOfMusicians > 70) {
-      $.util.log("Unexpected number of musicians calculated:", numberOfMusicians);
-      throw ("Unexpected number of musicians calculated: " + numberOfMusicians);
-    }
-    
-    return numberOfMusicians;
-  }
 
   gulp.task("html:generatePages", function () {
     navigation.init(require(paths.assets + "pages/site-structure.json"));
@@ -199,6 +183,22 @@
 
       siteTitle: "Musikverein Wollbach 1866 e.V.",
       baseUrl: baseUrl,
+    };
+
+    var getNumberOfMusicians = function (register) {
+      var distinctNames = {};
+      register.map(function(p) {
+          return p.name + " " + p.familyName;
+        }).forEach(function(p) {
+          distinctNames[p] = true;
+      });
+      var numberOfMusicians = Object.keys(distinctNames).length;
+      if (!numberOfMusicians || numberOfMusicians < 30 || numberOfMusicians > 70) {
+        $.util.log("Unexpected number of musicians calculated:", numberOfMusicians);
+        throw ("Unexpected number of musicians calculated: " + numberOfMusicians);
+      }
+
+      return numberOfMusicians;
     };
 
     const buildNumber = parseInt((new Date()).valueOf() / 1000000);
