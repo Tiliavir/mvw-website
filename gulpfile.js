@@ -200,60 +200,50 @@
       siteTitle: "Musikverein Wollbach 1866 e.V.",
       baseUrl: baseUrl,
     };
-    
+
     const buildNumber = parseInt((new Date()).valueOf() / 1000000);
     scope.numberOfMusicians = getNumberOfMusicians(scope.register);
 
- /*   var last;
-    navigation.performActionOnLeaf(function (entry, breadcrumb) {
-      var referencedFile = entry.referencedFile;
-      if(referencedFile) {
-        $.util.log("- processing:", entry.title + ": " + referencedFile);*/
+    var getScope = function (file) {
+      var filename = path.basename(file.path, path.extname(file.path));
+      return {
+        marked: marked,
+        moment: moment,
+        require: require,
 
-       /* if (entry.hasAmp) {
-          gulp.src(paths.temp + "template-amp.pug")
-              .pipe($.rename(referencedFile + ".html"))
-              .pipe($.replace("<!--PRE:CONTENT-->", "include ./partials/" + referencedFile + ".pug"))
-              .pipe($.data(function (file) { return {
-                marked: marked,
-                moment: moment,
-                isAmp: true,
-                scope: scope,
-                page: entry
-              };}))
-              .pipe($.pug(  ))
-              .pipe(gulp.dest(paths.dest + "amp/"));
-        }*/
+        isAmp: false,
+        isRelease: isRelease,
+        buildNumber: buildNumber,
+        scope: scope,
 
-        return gulp.src(paths.assets + "pages/partials/**/*.pug")
-                   .pipe($.rename(function(path) { path.extname = ".html"; }))
-                   .pipe($.grayMatter())
-                   .pipe($.data(function (file) {
-                     var filename = path.basename(file.path, path.extname(file.path));
-                     return {
-                      marked: marked,
-                      moment: moment,
-                      require: require,
+        referencedFile: filename,
+        breadcrumb: navigation.getBreadcrumbHtml(filename)
+      };
+    };
 
-                      isAmp: false,
-                      isRelease: isRelease,
-                      buildNumber: buildNumber,
-                      scope: scope,
+    var hasAmp = function (file) {
+      return file.data.hasAmp;
+    };
 
-                      referencedFile: filename,
-                      breadcrumb: navigation.getBreadcrumbHtml(filename)
-                     };
-                   }))
-                   .pipe($.pug())
-                   .pipe($.flatten())
-                   .pipe(gulp.dest(paths.dest))
+    return gulp.src(paths.assets + "pages/partials/**/*.pug")
+                .pipe($.replace(/^(\s*#+) /gm, "$1# "))
+                .pipe($.rename(function(path) { path.extname = ".html"; }))
+                .pipe($.grayMatter())
+                .pipe($.data(getScope))
+                .pipe($.pug())
+                .pipe($.flatten())
+                .pipe(gulp.dest(paths.dest))
 
-                   .pipe($.if(function(file) {return file.data.hasAmp;}, $.data(function(file) {return {isAmp: true}})))
-                   .pipe($.if(function(file) {return file.data.hasAmp;}, $.pug()))
-                   .pipe($.if(function(file) {return file.data.hasAmp;}, gulp.dest(paths.dest + "amp/")));
-/*      }
-    });
-    return last;*/
+/*
+                // https://github.com/pugjs/pug/issues/2367
+                .pipe($.if(hasAmp, $.data(function(file) {
+                  file.data.isAmp = true;
+                  return file.data
+                })))
+                .pipe($.if(hasAmp, $.pug()))
+                .pipe($.if(hasAmp, gulp.dest(paths.dest + "amp/")))
+*/
+                ;
   });
 
   gulp.task("html:minify", function () {
