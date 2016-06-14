@@ -55,17 +55,17 @@
 
     return gulp.src(paths.input + "**/*.{png,jpg,jpeg,PNG,JPG,JPEG}",
                     { base: paths.input })
-                /*.pipe(through.obj(function (chunk, enc, cb) {
+                .pipe(through.obj(function (chunk, enc, cb) {
                   img.addInformation(chunk);
                   cb(null, chunk);
-                }))*/
+                }))
                 .pipe($.rename(function (path) {
                   path.basename = img.filename.replace(/(\..{3,4})$/, "");
                   var info = path.dirname.split("\\");
                   path.dirname = path.dirname.replace(info[info.length - 1], img.foldername);
                 }))
-                /*.pipe(processImage(1200, 1200, null)())
-                .pipe(processImage(800, 800, "m")())*/
+                .pipe(processImage(1200, 1200, null)())
+                .pipe(processImage(800, 800, "m")())
                 .pipe(processImage(200, 200, "s")());
   });
 
