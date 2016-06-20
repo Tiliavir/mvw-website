@@ -149,7 +149,7 @@
         .pipe(gulp.dest(paths.dest + "js/"));
 
     var galJs = photoswipe.slice();
-    galJs.push(paths.temp + "partials/js/bilder.js");
+    galJs.push(paths.assets + "pages/js/bilder.js");
     return gulp.src(galJs)
                .pipe($.concat("bilder.js"))
                .pipe($.uglify())
@@ -217,7 +217,7 @@
         scope: scope,
 
         referencedFile: filename,
-        breadcrumb: navigation.getBreadcrumbHtml(filename)
+        breadcrumb: filename === "index" ? null : navigation.getBreadcrumbHtml(filename)
       };
     };
 

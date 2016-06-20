@@ -5,15 +5,23 @@
         "name": "Kandertalhalle",
         "address": "Wollbach"
       },
-      "starttime": "2016-07-09T17:00:00Z",
+      "starttime": "2016-07-09T19:30:00Z",
       "title": "Doppelkonzert des Jugendorchesters mit dem Verbandsjugendorchester des AMV."
+    },
+    {
+      "location": {
+        "name": "Wartburg",
+        "address": "Wollbach"
+      },
+      "starttime": "2016-07-22T19:00:00Z",
+      "title": "Jugendvorspiel"
     },
     {
       "location": {
         "name": "Kandertalhalle",
         "address": "Wollbach"
       },
-      "starttime": "2016-07-24T00:00:00Z",
+      "starttime": "2016-07-24T10:00:00Z",
       "title": "Kirchhofgottesdienst"
     },
     {
@@ -46,6 +54,41 @@
       },
       "starttime": "2016-12-04T00:00:00Z",
       "title": "Jugend- und Kammerkonzert"
+    }
+  ],
+  "2017": [
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2017-01-05T19:00:00Z",
+      "title": "Neujahrsempfang"
+    },
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "endtime": "2017-01-28T00:00:00Z",
+      "starttime": "2017-01-27T00:00:00Z",
+      "title": "Jahreskonzert"
+    },
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2017-02-09T00:00:00Z",
+      "title": "Generalversammlung"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "endtime": "2017-05-20T00:00:00Z",
+      "starttime": "2017-05-21T00:00:00Z",
+      "title": "1250 Jahre Wollbach"
     }
   ]
 }

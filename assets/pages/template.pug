@@ -6,11 +6,10 @@ doctype html
 //- xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"
 html(lang="de")
   head
+    meta(charset="utf-8")
     title=(referencedFile === "index" ? "" : title + " | ") + scope.siteTitle
     if isRelease
       base(href=scope.baseUrl)
-    meta(charset="utf-8")
-    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
     meta(name="author" content=scope.siteTitle)
 
     if description
