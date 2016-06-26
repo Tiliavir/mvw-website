@@ -78,5 +78,5 @@ html(amp lang="de")
         amp-img(title=scope.siteTitle, src=scope.baseUrl + "img/logo.svg", alt=scope.siteTitle, width=131, height=70)
     h1 #{title}
       if subtitle
-        small #{subtitle}
+        small= " " + subtitle
     block content

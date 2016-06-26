@@ -115,6 +115,10 @@ module.exports = {
   },
 
   getBreadcrumbHtml: function(referencedFile) {
-    return renderBreadcrumb(breadcrumbs[referencedFile]);
+    var bc = breadcrumbs[referencedFile];
+    if(!bc) {
+      throw "Missing in site-structure: " + referencedFile;
+    }
+    return renderBreadcrumb(bc);
   }
 }

@@ -253,7 +253,9 @@
                  collapseWhitespace: true,
                  collapseInlineTagWhitespace: true,
                  removeAttributeQuotes: true,
-                 conservativeCollapse: true
+                 conservativeCollapse: true,
+                 minifyJS: true/*,
+                 minifyCSS: true*/
                }))
                .pipe(gulp.dest(paths.dest));
   });
@@ -268,7 +270,7 @@
                .pipe($.bootlint());
   });
 
-  gulp.task("default", $.sequence(["styles:compile", "scripts:compile", "html:generatePages"], "html:minify", ["html:bootlint", "html:validate", "sitemap"]));
+  gulp.task("default", $.sequence(["styles:compile", "scripts:compile"], "html:generatePages", "html:minify", ["html:bootlint", "html:validate", "sitemap"]));
 
   gulp.task("fast", $.sequence(/*["styles:compile", "scripts:compile"],*/ "html:generatePages", ["sitemap", "html:minify"]));
 

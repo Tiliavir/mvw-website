@@ -99,15 +99,20 @@
   },
   {
     "children": [
+     {
+        "referencedFile": "blog_2016-sauserfahrt",
+        "navigation": "none",
+        "title": "Sauserfahrt mit dem Chanderli 2016"
+      },
+     {
+        "referencedFile": "blog_2016-jugend-doppelkonzert",
+        "navigation": "none",
+        "title": "Konzert des Jugendorchesters"
+      },
       {
         "referencedFile": "blog_2016-marschmusikfestival",
         "navigation": "none",
         "title": "Marschmusikfestival 2016"
-      },
-      {
-        "referencedFile": "blog_2016-sauserfahrt",
-        "navigation": "none",
-        "title": "Sauserfahrt mit dem Chanderli 2016"
       },
       {
         "referencedFile": "blog_2016-kirchenkonzert",
