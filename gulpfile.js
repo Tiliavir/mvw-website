@@ -272,7 +272,5 @@
 
   gulp.task("default", $.sequence(["styles:compile", "scripts:compile"], "html:generatePages", "html:minify", ["html:bootlint", "html:validate", "sitemap"]));
 
-  gulp.task("fast", $.sequence(/*["styles:compile", "scripts:compile"],*/ "html:generatePages", ["sitemap", "html:minify"]));
-
   gulp.task("development", ["typings", "bower"]);
 })(require);

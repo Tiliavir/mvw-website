@@ -1,13 +1,13 @@
 /// <reference path="../../../typings/main.d.ts" />
 
 module MVW.Appointments {
-  function addDays(date, days) {
-    let result = new Date(date);
+  function addDays(date : Date, days : number) : Date {
+    let result = new Date(date.getTime());
     result.setDate(result.getDate() + days);
     return result;
   }
 
-  export function initialize() {
+  export function initialize() : void {
     const cutOffDate = addDays(new Date(), 3);
 
     $("meta[itemprop=\"startDate\"]").each(function(i, e) {
