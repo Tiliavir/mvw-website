@@ -3,5 +3,5 @@
 npm install -g gulp
 npm install
 gulp development
-gulp
+gulp #gulp -release=true; gulp copy:toProdDiff
 ```

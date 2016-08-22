@@ -72,7 +72,7 @@
   });
 
   gulp.task("copy:toProdDiff", function () {
-    const prodDiff = "E:/Code/MVW.Website/MV.Website.Data.Prod/";
+    const prodDiff = "C:/Data/Code/Prod/";
     return gulp.src(paths.dest + "**/*")
                .pipe(gulp.dest(prodDiff))
                .pipe($.jsbeautifier({
