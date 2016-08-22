@@ -32,14 +32,14 @@
     "gulp-util": "^3.0.7",
     "gulp-w3cjs": "^1.2.0",
     "gulp-webserver": "^0.9.1",
-    "jshint": "^2.9.2",
+    "jshint": "^2.9.3",
     "jstransformer-marked": "^1.0.1",
     "marked": "^0.3.5",
     "moment": "^2.13.0",
     "mvw-navigation": "./src/static_site_creator/navigation",
     "path": "^0.12.7",
     "pug": "^2.0.0-beta3",
-    "tslint": "^3.11.0",
+    "tslint": "^3.15.1",
     "typings": "^0.8.1"
   }
 }
