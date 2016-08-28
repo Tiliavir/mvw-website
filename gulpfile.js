@@ -272,5 +272,12 @@
 
   gulp.task("default", $.sequence(["styles:compile", "scripts:compile"], "html:generatePages", "html:minify", ["html:bootlint", "html:validate", "sitemap"]));
 
+  gulp.task("debug", $.sequence(["styles:compile", "scripts:compile"], "html:generatePages", "copy:debug"));
+
+  gulp.task("copy:debug", function() {
+    return gulp.src(paths.dest + "**/*")
+               .pipe(gulp.dest("C:/Data/Code/Prod/"));
+  });
+
   gulp.task("development", ["typings", "bower"]);
 })(require);

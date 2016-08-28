@@ -86,29 +86,31 @@ module MVW.Gallery {
     gallery.init();
   }
 
-  function shufflePreview(e: any, isImmediate: boolean) {
+  function shufflePreview() {
+    let previews = $(".preview:visible");
+    let e: any = $(previews[Math.floor(Math.random() * previews.length)]);
     let g = e[0].images || (e[0].images = galleries[e.data("year")][e.data("gallery")]
                                            .filter((i: any) => (i.s.w === 200))
                                            || galleries[e.data("year")][e.data("gallery")]);
-    if (isImmediate) {
-      e.fadeOut(400, () => {
-        let i = g[Math.floor(Math.random() * g.length)];
-        e.attr("src", `/gallery/${i.b}s/${i.f}`);
-      });
-      e.fadeIn(400);
-    }
-    // 10 + [0..1] * 90 => first change after approx 10s - then approx. all 10s, assuming there are
-    // ~100 images on the overview page
-    setTimeout(() => { shufflePreview(e, true); }, 100000 + Math.random() * 900000);
+
+    e.fadeOut(400, () => {
+      let i = g[Math.floor(Math.random() * g.length)];
+      e.attr("src", `/gallery/${i.b}m/${i.f}`);
+    });
+    e.fadeIn(400);
+
+    setTimeout(() => shufflePreview(), 10000);
   }
 
   export function initialize() {
     pswpElement = document.querySelectorAll(".pswp")[0];
+    $(".gallery img").hover(e => {
+      let $e = $(e.target);
+      $e.attr("src", $e.attr("src").replace("/s/", "/m/"));
+    });
     $.getJSON("/gallery/galleries.json", data => {
       galleries = data;
-      $(".preview").each((i, p) => {
-        shufflePreview($(p), false);
-      });
+      shufflePreview();
     });
   }
 }

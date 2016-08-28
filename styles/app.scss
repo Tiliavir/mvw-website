@@ -1,6 +1,7 @@
-﻿//$highlight-color :#D30630;
+﻿/*$highlight-color :#D30630;*/
 $highlight-color :#07B;
 $secondary-highlight-color: #4A4A4A;
+/*$third-highlight-color: #A9852A;*/
 $navbar-height: 50px;
 
 /* Global Styles */
@@ -75,7 +76,7 @@ blockquote {
   }
   .title,
   .text {
-    color: #fff;
+    color: #eee;
   }
 
   font-weight: lighter;
@@ -101,7 +102,6 @@ blockquote {
 .carousel {
   .carousel-caption {
     display: none;
-    // color: $highlight-color;
   }
 
   .fill {
@@ -139,30 +139,27 @@ blockquote {
 /* Gallery */
 
 #overview {
-   &>.row>div {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
+  padding-top: 10px;
+
+  .tab-pane>div {
+    padding: 0 5px;
+  }
 
   .gallery {
-    max-width: 250px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     cursor: pointer;
     overflow: hidden;
 
     img {
-      -moz-transition: all 3s ease-in-out;
-      -o-transition: all 3s ease-in-out;
-      -webkit-transition: all 3s ease-in-out;
-      transition: all 3s ease-in-out;
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
 
       &:hover {
-        -moz-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        -o-transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
+        -webkit-filter: blur(0);
+        filter: blur(0);
       }
     }
   }

@@ -1,0 +1,14 @@
+mixin renderTabs(tabs)
+  ul.nav.nav-tabs.nav-justified
+    - for (var i = 0, tab = tabs[i]; i < 5 && i < tabs.length; i++, tab = tabs[i])
+      li(role="presentation" class=(i===0 ? "active" : "") + (i > 1 ? "hidden-xs" : ""))
+        a(data-toggle="tab" href="#" + tab) #{tab}
+    if tabs.length > 1
+      li.dropdown(class=(tabs.length > 5 ? "" : "visible-xs"))
+        a.dropdown-toggle(data-toggle="dropdown" href="#")
+          | mehr ...
+          span.caret
+          ul.dropdown-menu
+            - for (var i = 2, tab = tabs[i]; i < tabs.length; i++, tab = tabs[i])
+              li(role="presentation" class=(i===0 ? "active" : "") + (i < 5 ? "visible-xs" : ""))
+                a(data-toggle="tab" href="#" + tab) #{tab}

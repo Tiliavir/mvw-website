@@ -2,7 +2,9 @@
   "version": "1.0.0",
   "name": "mvw",
   "private": true,
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
   "dependencies": {
     "del": "^2.2.0",
     "fs": "^0.0.2",

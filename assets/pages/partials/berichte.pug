@@ -9,17 +9,24 @@ navigation: "top"
 extends ../template.pug
 
 block content
-  table#berTab.table.table-condensed.table-bordered.table-striped.table-hover.responsive
-    tbody
-      tr
-        th Datum
-        th Thema
-        th Quelle
-      each bericht in scope.berichte
-        tr
-          td
-            +formatTimespan(bericht.date)
-          td
-            a.external(href=bericht.url target="_blank") #{bericht.title}
-          td
-            a.external(href=bericht.srcUrl target="_blank") #{bericht.srcTitle}
+  - var years = Object.keys(scope.berichte).sort(function(a, b) { return b-a; });
+  +renderTabs(years)
+
+  .tab-content
+    - for (var i = 0, year = years[i]; i < years.length; i++, year = years[i])
+      .tab-pane.fade(id=year class=(i === 0 ? 'active in' : ''))
+        table#berTab.table.table-condensed.table-bordered.table-striped.table-hover.responsive
+          thead
+            tr
+              th Datum
+              th Thema
+              th Quelle
+          tbody
+            - for (j = 0, bericht = scope.berichte[year][j]; j < scope.berichte[year].length; j++, bericht = scope.berichte[year][j])
+              tr
+                td
+                  +formatTimespan(bericht.date)
+                td
+                  a.external(href=bericht.url target="_blank") #{bericht.title}
+                td
+                  a.external(href=bericht.srcUrl target="_blank") #{bericht.srcTitle}

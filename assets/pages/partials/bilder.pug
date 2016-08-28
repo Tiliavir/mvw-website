@@ -10,19 +10,21 @@ schemaOrg: "ImageGallery"
 extends ../template.pug
 
 block content
-  #overview
-    - var yearTitles = Object.keys(scope.galleries);
-    - for (var i = yearTitles.length - 1, yearTitle = yearTitles[i], year = scope.galleries[yearTitle]; i-- >= 0; yearTitle = yearTitles[i], year = scope.galleries[yearTitle])
-      h2 #{yearTitle}
-      .row
-        - var galleryTitles = Object.keys(year);
-        -  for (var j = galleryTitles.length - 1, galleryTitle = galleryTitles[j], gallery = year[galleryTitle]; j-- >= 0; galleryTitle = galleryTitles[j], gallery = year[galleryTitle])
-          .col-lg-3.col-sm-4.col-xs-6
-            .gallery(onclick="MVW.Gallery.openGallery(this); return false;")
-              - var preview = gallery.filter(function(i) {return i.s.w === 200;})[0] || gallery[0];
-              - var url = "/gallery/" + preview.b + "s/" + preview.f;
-              img.img-responsive.preview(src=url alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
-              span.caption #{galleryTitle}
+  - var years = Object.keys(scope.galleries).sort(function(a, b) { return b-a; });
+  +renderTabs(years)
+
+  #overview.tab-content
+      - var yearTitles = Object.keys(scope.galleries);
+      - for (var i = 0, yearTitle = yearTitles[i], year = scope.galleries[yearTitle]; i < yearTitles.length; i++, yearTitle = yearTitles[i], year = scope.galleries[yearTitle])
+        .tab-pane.fade(id=yearTitle class=(i===yearTitles.length-1 ? 'active in' : ''))
+          - var galleryTitles = Object.keys(year);
+          -  for (var j = galleryTitles.length - 1, galleryTitle = galleryTitles[j], gallery = year[galleryTitle]; j-- >= 0; galleryTitle = galleryTitles[j], gallery = year[galleryTitle])
+            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+              .gallery(onclick="MVW.Gallery.openGallery(this); return false;")
+                - var preview = gallery.filter(function(i) {return i.s.w === 200;})[0] || gallery[0];
+                - var url = "/gallery/" + preview.b + "s/" + preview.f;
+                img.img-responsive.preview(src=url alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
+                span.caption #{galleryTitle}
 
   .pswp(tabindex='-1', role='dialog', aria-hidden='true')
     //-
