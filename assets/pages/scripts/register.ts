@@ -1,4 +1,4 @@
-﻿/// <reference path="../../../typings/main.d.ts" />
+﻿/// <reference path="../../../main.d.ts" />
 /// <reference path="../../../scripts/main.ts" />
 
 module MVW.Register {

@@ -1,4 +1,4 @@
-﻿/// <binding AfterBuild='default' Clean='clean' ProjectOpened='development' />
+﻿/// <binding AfterBuild='default' Clean='clean' />
 
 (function (require) {
   "use strict";
@@ -26,32 +26,23 @@
   };
 
   const librariesJS = [
-    "./bower_modules/bootstrap/dist/js/bootstrap.min.js",
-    "./bower_modules/jquery/dist/jquery.min.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+    "./node_modules/jquery/dist/jquery.min.js",
   ];
 
   const photoswipe = [
-    "./bower_modules/photoswipe/dist/photoswipe.min.js",
-    "./bower_modules/photoswipe/dist/photoswipe-ui-default.min.js"
+    "./node_modules/photoswipe/dist/photoswipe.min.js",
+    "./node_modules/photoswipe/dist/photoswipe-ui-default.min.js"
   ];
 
   const bootstrapCSS = [
-    "./bower_modules/bootstrap/dist/css/bootstrap.min.css"
+    "./node_modules/bootstrap/dist/css/bootstrap.min.css"
   ];
 
   const photoswipeCSS = [
-    "./bower_modules/photoswipe/dist/photoswipe.css",
-    "./bower_modules/photoswipe/dist/default-skin/default-skin.css"
+    "./node_modules/photoswipe/dist/photoswipe.css",
+    "./node_modules/photoswipe/dist/default-skin/default-skin.css"
   ];
-
-  gulp.task("typings", function () {
-    return gulp.src("./typings.json")
-               .pipe($.typings()); ;
-  });
-  
-  gulp.task("bower", function () {
-    return $.bower();
-  });
 
   gulp.task("clean", function () {
     del.sync(paths.serve);
@@ -140,8 +131,8 @@
   };
 
   gulp.task("scripts:app:compile", ["scripts:tslint"], function () {
-    processTS(paths.scripts + "**/*.ts", paths.assets + "pages/js/", "app.js");
-    return processTS(paths.pageScripts + "**/*.ts", paths.assets + "pages/js/");
+    processTS(paths.scripts + "**/*.ts,!**/*.d.ts,!node_modules/**/*.ts", paths.assets + "pages/js/", "app.js");
+    return processTS(paths.pageScripts + "**/*.ts,!**/*.d.ts,!node_modules/**/*.ts", paths.assets + "pages/js/");
   });
 
   gulp.task("scripts:compile", ["scripts:app:compile"], function () {
@@ -278,6 +269,4 @@
     return gulp.src(paths.dest + "**/*")
                .pipe(gulp.dest("C:/Data/Code/Prod/"));
   });
-
-  gulp.task("development", ["typings", "bower"]);
 })(require);

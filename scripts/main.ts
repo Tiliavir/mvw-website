@@ -1,4 +1,4 @@
-﻿/// <reference path="../typings/main.d.ts" />
+﻿/// <reference path="../main.d.ts" />
 
 interface String {
   endsWith: (suffix : string) => boolean;

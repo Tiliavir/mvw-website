@@ -1,4 +1,4 @@
-/// <reference path="../../../typings/main.d.ts" />
+/// <reference path="../../../main.d.ts" />
 
 module MVW.Appointments {
   function addDays(date : Date, days : number) : Date {

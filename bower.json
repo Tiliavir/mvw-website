@@ -1,8 +1,0 @@
-{
-  "name": "MVW",
-  "private": true,
-  "dependencies": {
-    "photoswipe": "latest",
-    "bootstrap": "latest"
-  }
-}
