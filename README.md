@@ -9,7 +9,7 @@ gulp development
 
 ## Build and release
 
-```
+```powershell
 gulp
 gulp --release=true; gulp copy:toProdDiff
 ```

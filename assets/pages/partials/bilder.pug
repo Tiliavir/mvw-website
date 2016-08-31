@@ -16,7 +16,7 @@ block content
   #overview.tab-content
       - var yearTitles = Object.keys(scope.galleries);
       - for (var i = 0, yearTitle = yearTitles[i], year = scope.galleries[yearTitle]; i < yearTitles.length; i++, yearTitle = yearTitles[i], year = scope.galleries[yearTitle])
-        .tab-pane.fade(id=yearTitle class=(i===yearTitles.length-1 ? 'active in' : ''))
+        .tab-pane.fade.row(id=yearTitle class=(i===yearTitles.length-1 ? 'active in' : ''))
           - var galleryTitles = Object.keys(year);
           -  for (var j = galleryTitles.length - 1, galleryTitle = galleryTitles[j], gallery = year[galleryTitle]; j-- >= 0; galleryTitle = galleryTitles[j], gallery = year[galleryTitle])
             .col-lg-3.col-md-4.col-sm-6.col-xs-12

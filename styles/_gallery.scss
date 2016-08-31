@@ -1,0 +1,58 @@
+/* Gallery */
+
+#overview {
+  padding-top: 10px;
+
+  .tab-pane>div {
+    padding: 0 5px;
+  }
+
+  .gallery {
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    img {
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+
+      &:hover {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+      }
+    }
+  }
+
+  .preview {
+    width: 100%;
+  }
+
+  .caption {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    color: #FFF;
+    background-color: #333;
+    text-align: center;
+    opacity: 0.9;
+    line-height: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+
+  .caption:hover {
+    white-space: normal;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    -ms-text-overflow: initial;
+    -o-text-overflow: initial;
+    text-overflow: initial;
+  }
+}

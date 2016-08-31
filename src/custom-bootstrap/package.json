@@ -7,7 +7,6 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^0.6.2",
 	"bootstrap-sass": "^3.3.7"
   }
 }
