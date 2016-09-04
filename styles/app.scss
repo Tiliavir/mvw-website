@@ -27,8 +27,11 @@ h2 {
   padding: 5px 0;
 }
 
-.navbar-brand img {
+.navbar-brand svg {
   height: $navbar-height - 10px;
+  .mvw-logo {
+    fill: #eee;
+  }
 }
 
 .img-portfolio {
@@ -86,3 +89,4 @@ blockquote {
 
 @import "gallery";
 @import "responsive-tables";
+@import "print"

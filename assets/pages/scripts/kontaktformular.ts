@@ -1,5 +1,3 @@
-/// <reference path="../../../main.d.ts" />
-
 module MVW.Contact {
   function isValidEmail (email: string) {
     const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -50,8 +48,8 @@ module MVW.Contact {
       let $form = $("#feedbackForm");
       let hasErrors = false;
 
-      if ($form.validator) {
-        hasErrors = $form.validator("validate").hasErrors;
+      if ((<any>$form).validator) {
+        hasErrors = (<any>$form).validator("validate").hasErrors;
       } else {
         $("#feedbackForm input,#feedbackForm textarea").not(".optional").each(function () {
           let $this = $(this);

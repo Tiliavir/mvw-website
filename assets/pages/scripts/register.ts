@@ -1,7 +1,4 @@
-﻿/// <reference path="../../../main.d.ts" />
-/// <reference path="../../../scripts/main.ts" />
-
-module MVW.Register {
+﻿module MVW.Register {
   const register: any = {
     "Altsaxophon": ["altsaxophon_1.jpg", "altsaxophon_2.jpg", "saxophon_1.jpg"],
     "Baritonsaxophon": ["baritonsaxophon_1.jpg", "baritonsaxophon_2.jpg", "saxophon_1.jpg"],

@@ -30,8 +30,8 @@ html(lang="de")
     meta(property="fb:admins" content="100000073380067")/
 
     style
-      include ./css/app.css
-    link(rel="stylesheet" media="print" href="/css/print.css?v=" + buildNumber)
+      include ../../src/bootstrap/css/bootstrap.min.css
+      include ../../styles/app.css
 
     if hasAmp
       link(rel="amphtml" href=scope.baseUrl + "amp/" + referencedFile + ".html")
@@ -48,7 +48,7 @@ html(lang="de")
             span.icon-bar
             span.icon-bar
           a.navbar-brand(href="index.html")
-            img(alt=scope.siteTitle src="/img/logo.svg")
+            include ./logo.svg
         #mvw-navbar-collapse-1.collapse.navbar-collapse
           include ./topnavigation.pug
 
@@ -75,7 +75,7 @@ html(lang="de")
     script(src="/js/jquery.min.js")
     script(src="/js/bootstrap.min.js")
     script
-      include ./js/app.js
+      include ../../scripts/main.js
     block pageScripts
 
     if isRelease

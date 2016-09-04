@@ -1,6 +1,4 @@
-﻿/// <reference path="../../../main.d.ts" />
-
-module MVW.Gallery {
+﻿module MVW.Gallery {
   let galleries : any;
   let pswpElement : any;
 

@@ -4,14 +4,12 @@
 
 ```powershell
 npm install
-gulp development
 ```
 
 ## Build and release
 
 ```powershell
-gulp
-gulp --release=true; gulp copy:toProdDiff
+npm run release
 ```
 
 # Debug / Test Build
@@ -20,12 +18,12 @@ gulp --release=true; gulp copy:toProdDiff
 
 ```powershell
 cd <build-dir>
-npm install lite-server
+npm install
 ```
 
 ## Build and preview
 
 ```powershell
-gulp Debug
-<build-dir>.\node_modules\.bin\lite-server.cmd
+npm run debug
+<build-dir>\npm run start
 ```

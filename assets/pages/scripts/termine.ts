@@ -1,5 +1,3 @@
-/// <reference path="../../../main.d.ts" />
-
 module MVW.Appointments {
   function addDays(date : Date, days : number) : Date {
     let result = new Date(date.getTime());

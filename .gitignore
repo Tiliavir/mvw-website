@@ -1,13 +1,10 @@
 ### MVW custom added
 
-temp/
 *_modules/
-typings/
 
-scripts/*.js
-
-/assets/pages/js/*.js
-/assets/pages/css/*.css
+/scripts/*.js
+/assets/pages/scripts/*.js
+/styles/*.css
 /assets/pages/footernavigation.pug
 /assets/pages/siteOverviewList.pug
 /assets/pages/topnavigation.pug

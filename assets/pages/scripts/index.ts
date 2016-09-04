@@ -1,6 +1,4 @@
-﻿/// <reference path="../../../main.d.ts" />
-
-module MVW.Start {
+﻿module MVW.Start {
   let slides = [
     {
       "title": "Musikverein",

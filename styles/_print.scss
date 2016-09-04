@@ -1,0 +1,51 @@
+﻿@media print {
+  html,
+  body {
+    padding-top: 0;
+    background : none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12pt;
+  }
+
+  header,
+  .navbar {
+    display : none;
+  }
+
+  h1 {
+    font-size: 18pt;
+  }
+
+  h2 {
+    font-size: 16pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+  }
+
+  .img-responsive {
+    max-height:calc(45vh);
+  }
+
+  img, tr, td, table {
+    page-break-inside: avoid;
+  }
+
+  #print-logo {
+    margin: 0 auto;
+  }
+
+  #content-main {
+    width : 95%;
+  }
+
+  .breadcrumb {
+    a:after {
+      display: none;
+    }
+
+    font-size : 8pt;
+    color : #000000;
+  }
+}

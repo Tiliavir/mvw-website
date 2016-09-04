@@ -64,8 +64,12 @@ block content
         .pswp__caption
           .pswp__caption__center
 
-  link(rel="stylesheet" href="/css/photoswipe.css" property="stylesheet")
+  style
+    include ../../../node_modules/photoswipe/dist/photoswipe.css
+    include ../../../node_modules/photoswipe/dist/default-skin/default-skin.css
 
 block pageScripts
   script
-    include ../js/bilder.js
+    include ../../../node_modules/photoswipe/dist/photoswipe.min.js
+    include ../../../node_modules/photoswipe/dist/photoswipe-ui-default.min.js
+    include ../scripts/bilder.js

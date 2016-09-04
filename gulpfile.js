@@ -4,7 +4,6 @@
   "use strict";
 
   const gulp = require("gulp"),
-      del = require("del"),
       fs = require("fs"),
       path = require("path"),
       marked = require("marked"),
@@ -17,134 +16,17 @@
   let baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
 
   const paths = {
-    temp: "./temp/",
     dest: "./build/",
-    styles: "./styles/",
-    assets: "./assets/",
-    scripts: "./scripts/",
-    pageScripts: "./assets/pages/scripts/"
+    assets: "./assets/"
   };
 
-  const librariesJS = [
-    "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-    "./node_modules/jquery/dist/jquery.min.js",
-  ];
-
-  const photoswipe = [
-    "./node_modules/photoswipe/dist/photoswipe.min.js",
-    "./node_modules/photoswipe/dist/photoswipe-ui-default.min.js"
-  ];
-
-  const bootstrapCSS = [
-    "./node_modules/bootstrap/dist/css/bootstrap.min.css"
-  ];
-
-  const photoswipeCSS = [
-    "./node_modules/photoswipe/dist/photoswipe.css",
-    "./node_modules/photoswipe/dist/default-skin/default-skin.css"
-  ];
-
-  gulp.task("clean", function () {
-    del.sync(paths.serve);
-    del.sync(paths.temp);
-    fs.mkdirSync(paths.temp);
-    del.sync("./bin/");
-    del.sync("./obj/");
-    return del.sync([paths.dest + "**/*"], { force: true });
-  });
-
-  gulp.task("serve", function () {
-    gulp.src(paths.dest)
-        .pipe($.webserver({
-          port: '80',
-          livereload: true,
-          open: true
-    }));
-  });
-
-  gulp.task("copy:toProdDiff", function () {
-    const prodDiff = "C:/Data/Code/Prod/";
+  gulp.task("beautify", function () {
     return gulp.src(paths.dest + "**/*")
-               .pipe(gulp.dest(prodDiff))
                .pipe($.jsbeautifier({
                  indentSize: 2,
                  mode: "VERIFY_AND_WRITE"
                }))
-               .pipe(gulp.dest(prodDiff + "beautified/"));
-  });
-
-  gulp.task("styles:sass", function () {
-    return gulp.src(paths.styles + "**/*.scss")
-               .pipe($.sass({outputStyle: "compressed" })
-                      .on("error", $.sass.logError))
-               .pipe(gulp.dest(paths.temp + "css/"));
-  });
-
-  gulp.task("styles:compile", ["styles:sass"], function () {
-    gulp.src(paths.temp + "css/print.css")
-        .pipe($.cssnano({
-          discardComments: { removeAll: true },
-          zindex: false
-        }))
-        .pipe(gulp.dest(paths.dest + "css/"));
-
-    gulp.src(photoswipeCSS)
-        .pipe($.concat("photoswipe.css"))
-        .pipe($.cssnano({
-          discardComments: { removeAll: true },
-          zindex: false
-        }))
-        .pipe(gulp.dest(paths.dest + "css/"));
-
-    var css = bootstrapCSS.slice();
-    css.push(paths.temp + "css/app.css");
-    return gulp.src(css)
-               .pipe($.concat("app.css"))
-               .pipe($.cssnano({
-                 discardComments: { removeAll: true },
-                 zindex: false
-               }))
-               .pipe(gulp.dest(paths.assets + "/pages/css/"));
-  });
-
-  gulp.task("scripts:tslint", function () {
-    return gulp.src([paths.scripts + "**/*.ts", paths.pageScripts + "**/*.ts"])
-               .pipe($.tslint())
-               .pipe($.tslint.report("verbose"));
-  });
-
-  function processTS(paths, dest, filename) {
-    var options = {
-      removeComments: true,
-      sortOutput: true,
-      noImplicitAny: true
-    };
-
-    if (filename) {
-      options.out = filename;
-    }
-
-    return gulp.src(paths)
-               .pipe($.typescript(options))
-               .pipe($.if(isRelease, $.uglify()))
-               .pipe(gulp.dest(dest));
-  };
-
-  gulp.task("scripts:app:compile", ["scripts:tslint"], function () {
-    processTS(paths.scripts + "**/*.ts,!**/*.d.ts,!node_modules/**/*.ts", paths.assets + "pages/js/", "app.js");
-    return processTS(paths.pageScripts + "**/*.ts,!**/*.d.ts,!node_modules/**/*.ts", paths.assets + "pages/js/");
-  });
-
-  gulp.task("scripts:compile", ["scripts:app:compile"], function () {
-    gulp.src(librariesJS)
-        .pipe(gulp.dest(paths.dest + "js/"));
-
-    var galJs = photoswipe.slice();
-    galJs.push(paths.assets + "pages/js/bilder.js");
-    return gulp.src(galJs)
-               .pipe($.concat("bilder.js"))
-               .pipe($.uglify())
-               .pipe(gulp.dest(paths.assets + "pages/js/"));
+               .pipe(gulp.dest(paths.dest + "beautified/"));
   });
 
   gulp.task("sitemap", function () {
@@ -238,35 +120,29 @@
   });
 
   gulp.task("html:minify", function () {
-    return gulp.src(paths.dest + "**/*.html")
+    return gulp.src([paths.dest + "**/*.html", "!" + paths.dest + "beautified/**/*.html"])
                .pipe($.htmlmin({
                  removeComments: true,
                  collapseWhitespace: true,
                  collapseInlineTagWhitespace: true,
                  removeAttributeQuotes: true,
                  conservativeCollapse: true,
-                 minifyJS: true/*,
-                 minifyCSS: true*/
+                 minifyJS: true,
+                 minifyCSS: true
                }))
                .pipe(gulp.dest(paths.dest));
   });
 
   gulp.task("html:validate", function () {
-    return gulp.src([paths.dest + "**/*.html", "!" + paths.dest + "amp/**/*.html"])
+    return gulp.src([paths.dest + "**/*.html", "!" + paths.dest + "{beautified,amp}/**/*.html"])
                .pipe($.w3cjs());
   });
 
   gulp.task("html:bootlint", function () {
-    return gulp.src(paths.dest + "**/*.html")
+    return gulp.src([paths.dest + "**/*.html", "!" + paths.dest + "{beautified,amp}/**/*.html"])
                .pipe($.bootlint());
   });
 
-  gulp.task("default", $.sequence(["styles:compile", "scripts:compile"], "html:generatePages", "html:minify", ["html:bootlint", "html:validate", "sitemap"]));
-
-  gulp.task("debug", $.sequence(["styles:compile", "scripts:compile"], "html:generatePages", "copy:debug"));
-
-  gulp.task("copy:debug", function() {
-    return gulp.src(paths.dest + "**/*")
-               .pipe(gulp.dest("C:/Data/Code/Prod/"));
-  });
+  gulp.task("default", $.sequence("html:generatePages"));
+  gulp.task("release", $.sequence("html:generatePages", "beautify", "sitemap", "html:minify", ["html:bootlint", "html:validate"]));
 })(require);
