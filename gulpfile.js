@@ -122,6 +122,7 @@
   gulp.task("html:minify", function () {
     return gulp.src([paths.dest + "**/*.html", "!" + paths.dest + "beautified/**/*.html"])
                .pipe($.htmlmin({
+                 sortAttributes: true,
                  removeComments: true,
                  collapseWhitespace: true,
                  collapseInlineTagWhitespace: true,
@@ -144,5 +145,5 @@
   });
 
   gulp.task("default", $.sequence("html:generatePages"));
-  gulp.task("release", $.sequence("html:generatePages", "beautify", "sitemap", "html:minify", ["html:bootlint", "html:validate"]));
+  gulp.task("release", $.sequence("html:generatePages", "sitemap", "html:minify", ["beautify", "html:bootlint", "html:validate"]));
 })(require);

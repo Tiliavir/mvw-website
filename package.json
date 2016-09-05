@@ -49,7 +49,7 @@
     "compile:sass": "node-sass --output-style compressed ./styles/ -o ./styles",
     "compile:ts": "tslint -c tslint.json {assets,scripts}/**/*.ts && tsc",
     "compile": "npm run compile:ts && npm run compile:sass && gulp",
-    "precopy": "copyfiles [./src/bootstrap/js/bootstrap.min.js, ./node_modules/jquery/dist/jquery.min.js] C:/Data/Code/Prod/js && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/* C:/Data/Code/Prod/",
+    "precopy": "copyfiles -u 3 [./src/bootstrap/js/bootstrap.min.js, ./node_modules/jquery/dist/jquery.min.js] C:/Data/Code/Prod/js && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} C:/Data/Code/Prod/",
     "copy": "copyup ./build/**/* C:/Data/Code/Prod/",
     "debug": "npm run compile && npm run copy",
     "release": "npm run compile -- release --release=true && npm run copy"

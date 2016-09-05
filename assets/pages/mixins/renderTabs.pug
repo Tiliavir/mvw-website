@@ -8,7 +8,7 @@ mixin renderTabs(tabs)
         a.dropdown-toggle(data-toggle="dropdown" href="#")
           | mehr ...
           span.caret
-          ul.dropdown-menu
-            - for (var i = 2, tab = tabs[i]; i < tabs.length; i++, tab = tabs[i])
-              li(role="presentation" class=(i===0 ? "active" : "") + (i < 5 ? "visible-xs" : ""))
-                a(data-toggle="tab" href="#" + tab) #{tab}
+        ul.dropdown-menu
+          - for (var i = 2, tab = tabs[i]; i < tabs.length; i++, tab = tabs[i])
+            li(role="presentation" class=(i===0 ? "active" : "") + (i < 5 ? "visible-xs" : ""))
+              a(data-toggle="tab" href="#" + tab) #{tab}
