@@ -11,10 +11,7 @@
   }
 
   function clearForm () {
-    $("#feedbackForm .glyphicon").removeClass("glyphicon-check")
-                                 .addClass("glyphicon-unchecked")
-                                 .css({ color: "" });
-    $("#feedbackForm input,textarea").val("");
+    $("#feedbackForm input").val("");
     grecaptcha.reset();
   }
 
@@ -39,7 +36,7 @@
 
     $("#feedbackSubmit").click(function () {
       let $btn = $(this);
-      $btn.button("Sende ...");
+      $btn.html("Sende ...");
       clearErrors();
 
       // do a little client-side validation -- check that each field has a value and e-mail field is in proper format
@@ -51,7 +48,7 @@
       if ((<any>$form).validator) {
         hasErrors = (<any>$form).validator("validate").hasErrors;
       } else {
-        $("#feedbackForm input,#feedbackForm textarea").not(".optional").each(function () {
+        $("#feedbackForm input").not(".optional").each(function () {
           let $this = $(this);
           if (($this.is(":checkbox") && !$this.is(":checked")) || !$this.val()) {
             hasErrors = true;
@@ -69,14 +66,14 @@
 
       // if there are any errors return without sending e-mail
       if (hasErrors) {
-        $btn.button("Zurücksetzen");
+        $btn.html("Zurücksetzen");
         return false;
       }
 
       // send the feedback e-mail
       $.ajax({
         complete: function () {
-          $btn.button("Zurücksetzen");
+          $btn.html("Zurücksetzen");
         },
         data: $form.serialize(),
         error: function (response) {
