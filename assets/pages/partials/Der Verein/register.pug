@@ -6,7 +6,7 @@ keywords: "Register, Besetzung, Instrumente, Musiker, Musikerinnen, Personen"
 navigation: "top"
 ---
 
-extends ../template.pug
+extends ../../template.pug
 
 block content
   -
@@ -41,6 +41,9 @@ block content
               - for (var j = 0, person = persons[j]; j < persons.length; j++, person =  persons [j])
                 p #{person.name} #{person.familyName}
 
+block pageStyles
+  include ../../styles/index.css
+
 block pageScripts
   script
-    include ../scripts/register.js
+    include ../../scripts/register.js
