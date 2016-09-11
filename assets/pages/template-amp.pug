@@ -51,17 +51,17 @@ html(amp lang="de")
       body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
-      #header {
+      .mvw-header {
         background-color: #222;
         border-color: #080808;
         border-width: 0 0 1px;
       }
-      #header a {
+      .mvw-header a {
         text-align: center;
         width: 100%;
         display: block;
       }
-      #header img {
+      .mvw-header img {
         height: 70px;
       }
       h1 {
@@ -73,7 +73,7 @@ html(amp lang="de")
       }
 
   body
-    nav(id="header")
+    nav.mvw-header
       a(href=scope.baseUrl class="navbar-brand")
         include ../root/logo.svg
     h1 #{title}

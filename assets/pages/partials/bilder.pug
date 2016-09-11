@@ -13,14 +13,14 @@ block content
   - var years = Object.keys(scope.galleries).sort(function(a, b) { return b-a; });
   +renderTabs(years)
 
-  #overview.tab-content
+  .mvw-gallery-overview.tab-content
       - var yearTitles = Object.keys(scope.galleries);
       - for (var i = 0, yearTitle = yearTitles[i], year = scope.galleries[yearTitle]; i < yearTitles.length; i++, yearTitle = yearTitles[i], year = scope.galleries[yearTitle])
         .tab-pane.fade.row(id=yearTitle class=(i===yearTitles.length-1 ? 'active in' : ''))
           - var galleryTitles = Object.keys(year);
           -  for (var j = galleryTitles.length - 1, galleryTitle = galleryTitles[j], gallery = year[galleryTitle]; j-- >= 0; galleryTitle = galleryTitles[j], gallery = year[galleryTitle])
             .col-lg-3.col-md-4.col-sm-6.col-xs-12
-              .gallery(onclick="MVW.Gallery.openGallery(this); return false;")
+              .mvw-gallery(onclick="MVW.Gallery.openGallery(this); return false;")
                 - var preview = gallery.filter(function(i) {return i.s.w === 200;})[0] || gallery[0];
                 - var url = "/gallery/" + preview.b + "s/" + preview.f;
                 img.img-responsive.preview(src=url alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
@@ -65,9 +65,8 @@ block content
           .pswp__caption__center
 
 block pageStyles
-  style
-    include ../../../node_modules/photoswipe/dist/photoswipe.css
-    include ../../../node_modules/photoswipe/dist/default-skin/default-skin.css
+  include ../../../node_modules/photoswipe/dist/photoswipe.css
+  include ../../../node_modules/photoswipe/dist/default-skin/default-skin.css
 
 block pageScripts
   script

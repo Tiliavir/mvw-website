@@ -1,4 +1,8 @@
 ﻿module MVW.Register {
+  function endsWith(str: string, suffix : string) {
+    return str.indexOf(suffix, this.length - suffix.length) !== -1;
+  };
+
   const register: any = {
     "Altsaxophon": ["altsaxophon_1.jpg", "altsaxophon_2.jpg", "saxophon_1.jpg"],
     "Baritonsaxophon": ["baritonsaxophon_1.jpg", "baritonsaxophon_2.jpg", "saxophon_1.jpg"],
@@ -28,7 +32,7 @@
     let $image : JQuery = $($images[Math.floor(Math.random() * $images.length)]);
     if (isElementInViewport($image[0])) {
       let registerImageUrls = register[$image.attr("title")].filter(function (url : string) {
-        return !$image.attr("src").endsWith(url);
+        return !endsWith($image.attr("src"), url);
       });
       $image.fadeOut("fast", function () {
         $image.attr("src", "/img/register/" + registerImageUrls[Math.floor(Math.random() * registerImageUrls.length)]);
@@ -41,7 +45,7 @@
 }
 
 $(() => {
-  let $images = $("#mitRegTab img");
+  let $images = $(".mvw-register-table img");
   setInterval(function () {
     while (!MVW.Register.tryReplaceImage($images)) {
       // find an image to replace...

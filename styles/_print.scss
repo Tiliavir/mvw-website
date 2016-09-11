@@ -1,15 +1,17 @@
-﻿@media print {
+$breadcrumb-print-color: #000;
+
+@media print {
   html,
   body {
-    padding-top: 0;
-    background : none;
-    font-family: Georgia, "Times New Roman", serif;
+    background: none;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 12pt;
+    padding-top: 0;
   }
 
   header,
   .navbar {
-    display : none;
+    display: none;
   }
 
   h1 {
@@ -25,27 +27,32 @@
   }
 
   .img-responsive {
-    max-height:calc(45vh);
+    max-height: 45vh;
   }
 
-  img, tr, td, table {
+  img,
+  tr,
+  td,
+  table {
     page-break-inside: avoid;
   }
 
-  #print-logo {
+  .mvw-logo-print {
     margin: 0 auto;
   }
 
-  #content-main {
-    width : 95%;
+  .mvw-content-main {
+    width: 95%;
   }
 
   .breadcrumb {
-    a:after {
-      display: none;
-    }
+    color: $breadcrumb-print-color;
+    font-size: 8pt;
 
-    font-size : 8pt;
-    color : #000000;
+    a {
+      &::after {
+        display: none;
+      }
+    }
   }
 }

@@ -1,29 +1,18 @@
-/* Gallery */
+$overlay-bg-color: #333;
+$overlay-color: #fff;
 
-#overview {
+.mvw-gallery-overview {
   padding-top: 10px;
 
   .tab-pane>div {
     padding: 0 5px;
   }
 
-  .gallery {
-    margin-bottom: 10px;
-    position: relative;
+  .mvw-gallery {
     cursor: pointer;
+    margin-bottom: 10px;
     overflow: hidden;
-
-    img {
-      -webkit-filter: blur(2px);
-      filter: blur(2px);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
-
-      &:hover {
-        -webkit-filter: blur(0);
-        filter: blur(0);
-      }
-    }
+    position: relative;
   }
 
   .preview {
@@ -31,28 +20,23 @@
   }
 
   .caption {
-    position: absolute;
-    display: block;
+    background-color: $overlay-bg-color;
     bottom: 0;
-    width: 100%;
-    color: #FFF;
-    background-color: #333;
-    text-align: center;
-    opacity: 0.9;
+    color: $overlay-color;
+    display: block;
     line-height: 2em;
-    white-space: nowrap;
+    opacity: .9;
     overflow: hidden;
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
+    position: absolute;
+    text-align: center;
     text-overflow: ellipsis;
-  }
+    white-space: nowrap;
+    width: 100%;
 
-  .caption:hover {
-    white-space: normal;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-    -ms-text-overflow: initial;
-    -o-text-overflow: initial;
-    text-overflow: initial;
+    &:hover {
+      text-overflow: initial;
+      white-space: normal;
+      word-wrap: break-word;
+    }
   }
 }

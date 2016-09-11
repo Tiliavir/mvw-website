@@ -402,6 +402,7 @@
     "list-group.less",
     "panels.less",
     "responsive-embed.less",
+    "component-animations.less",
     "dropdowns.less",
     "carousel.less"
   ],
@@ -414,5 +415,5 @@
     "collapse.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=89cdac56c4817a3c58724e708ca78252"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=37331b67362d2da2c7b95900826ef985"
 }

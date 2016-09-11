@@ -1,6 +1,6 @@
 {
   "name": "mvw-website",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "private": true,
   "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
   "author": "Musikverein Wollbach 1866 e.V.",
@@ -8,12 +8,17 @@
     "type": "git",
     "url": "https://mvw1866.visualstudio.com/DefaultCollection/Website/_git/Website"
   },
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
     "@types/bootstrap": "^3.3.31",
     "@types/grecaptcha": "^2.0.29",
     "@types/photoswipe": "^4.0.26",
     "copyfiles": "^1.0.0",
+    "node-sass": "^3.8.0",
+    "sass-lint": "^1.9.1",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.2"
+  },
+  "dependencies": {
     "fs": "^0.0.2",
     "gulp": "^3.9.1",
     "gulp-bootlint": "^0.7.2",
@@ -36,22 +41,20 @@
     "marked": "^0.3.5",
     "moment": "^2.13.0",
     "mvw-navigation": "./src/static_site_creator/navigation",
-    "node-sass": "^3.8.0",
     "path": "^0.12.7",
     "photoswipe": "^4.1.1",
-    "pug": "^2.0.0-beta6",
-    "tslint": "^3.15.1",
-    "typescript": "^2.0.2"
+    "pug": "^2.0.0-beta6"
   },
   "scripts": {
+    "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json {assets,scripts}/**/*.ts",
     "clean": "rimraf ./build/ ./{assets,styles}/**/*.{css,js}",
     "precompile": "npm run clean && mkdir build",
-    "compile:sass": "node-sass --output-style compressed ./styles/ -o ./styles",
-    "compile:ts": "tslint -c tslint.json {assets,scripts}/**/*.ts && tsc",
+    "compile:sass": "node-sass --output-style compressed ./styles/ -o ./styles && postcss --use autoprefixer ./styles/*.css -r",
+    "compile:ts": "tsc",
     "compile": "npm run compile:ts && npm run compile:sass && gulp",
     "precopy": "copyfiles -u 3 ./src/bootstrap/js/bootstrap.min.js C:/Data/Code/Prod/js/ && copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js C:/Data/Code/Prod/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} C:/Data/Code/Prod/",
     "copy": "copyup ./build/**/* C:/Data/Code/Prod/",
     "debug": "npm run compile && npm run copy",
-    "release": "npm run compile -- release --release=true && npm run copy"
+    "release": "npm run lint && npm run compile -- release --release=true && npm run copy"
   }
 }

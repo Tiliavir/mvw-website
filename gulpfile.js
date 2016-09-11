@@ -120,7 +120,7 @@
   });
 
   gulp.task("html:minify", function () {
-    return gulp.src([paths.dest + "**/*.html", "!" + paths.dest + "beautified/**/*.html"])
+    return gulp.src(paths.dest + "**/*.html")
                .pipe($.htmlmin({
                  sortAttributes: true,
                  removeComments: true,

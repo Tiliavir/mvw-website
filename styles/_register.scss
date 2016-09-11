@@ -1,0 +1,9 @@
+.mvw-register-table {
+  td {
+    padding-left: 10px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}

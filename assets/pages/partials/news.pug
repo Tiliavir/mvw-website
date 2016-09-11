@@ -22,7 +22,3 @@ block content
           if item.video
             +youtube(item.video.src)
           != marked(item.content || "")
-
-block pageScripts
-  script
-    include ../scripts/news.js

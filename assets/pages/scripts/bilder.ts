@@ -102,7 +102,7 @@
 
   export function initialize() {
     pswpElement = document.querySelectorAll(".pswp")[0];
-    $(".gallery img").hover(e => {
+    $(".mvw-gallery img").hover(e => {
       let $e = $(e.target);
       $e.attr("src", $e.attr("src").replace("/s/", "/m/"));
     });

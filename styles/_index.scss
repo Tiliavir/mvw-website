@@ -1,59 +1,63 @@
-/* Start */
+$carousel-bg-color: #f5f5f5;
+$tile-color: #eee;
 
-#mv-logo {
+.mvw-brand {
   padding: 5px 0;
 }
 
 .image-container {
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
-  height: 300px;
   display: block;
+  height: 300px;
 }
 
 .tile {
-  a:hover {
-    text-decoration: none;
-  }
-  .title,
-  .text {
-    color: #eee;
+  box-sizing: border-box;
+  display: inline-block;
+  font-weight: lighter;
+  margin-top: 30px;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
   }
 
-  font-weight: lighter;
-  display: inline-block;
-  box-sizing: border-box;
-  margin-top: 30px;
+  .title,
+  .text {
+    color: $tile-color;
+  }
 }
 
 .blur {
+  background: rgb(50, 50, 50); // for IE
+  background: rgba(34, 34, 34, .55);
   height: inherit;
   padding: 20px;
-  background: rgb(50,50,50); /* for IE */
-  background: rgba(34,34,34,0.55);
+
+  &:hover {
+    background: rgb(34, 34, 34); // for IE
+    background: rgba(34, 34, 34, .75);
+  }
 }
 
-.blur:hover {
-  background: rgb(34,34,34); /* for IE */
-  background: rgba(34,34,34,0.75);
-}
-
-/* Home Page Carousel */
+// Home Page Carousel
 
 .carousel {
+  background-color: $carousel-bg-color;
+
   .carousel-caption {
     display: none;
   }
 
   .fill {
-    max-height: 50vh;
     margin: 0 auto;
+    max-height: 50vh;
   }
 
   .carousel-control {
     background: none !important;
   }
-
-  background-color: #F5F5F5;
 }

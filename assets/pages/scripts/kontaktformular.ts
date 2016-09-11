@@ -36,7 +36,6 @@ module MVW.Contact {
 
     $("#feedbackSubmit").click(function () {
       let $btn = $(this);
-      $btn.html("Sende ...");
       clearErrors();
 
       // do a little client-side validation -- check that each field has a value and e-mail field is in proper format
@@ -66,15 +65,11 @@ module MVW.Contact {
 
       // if there are any errors return without sending e-mail
       if (hasErrors) {
-        $btn.html("Zurücksetzen");
         return false;
       }
 
       // send the feedback e-mail
       $.ajax({
-        complete: function () {
-          $btn.html("Zurücksetzen");
-        },
         data: $form.serialize(),
         error: function (response) {
           addAjaxMessage(response.responseJSON.message, true);

@@ -41,7 +41,7 @@ block content
       return person.register; // note(ml): can also group by array of properties! => change group name
     });
 
-  table#mitRegTab.responsive
+  table.mvw-register-table.responsive
     tbody
       - var registerOrder = [ "Klarinette", "Altsaxophon_Tenorsaxophon_Baritonsaxophon_Querflöte", "Trompete", "Tuba_Posaune_Euphonium", "Schlagzeug" ];
       - for (var i = 0, registerTitle = registerOrder[i]; i < registerOrder.length; i++, registerTitle = registerOrder[i])

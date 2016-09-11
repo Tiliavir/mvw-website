@@ -32,7 +32,7 @@ html(lang="de")
     style
       include ../../src/bootstrap/css/bootstrap.min.css
       include ../../styles/app.css
-    block pageStyles
+      block pageStyles
 
     if hasAmp
       link(rel="amphtml" href=scope.baseUrl + "amp/" + referencedFile + ".html")
@@ -40,24 +40,24 @@ html(lang="de")
     include ./favicon.pug
 
   body(itemscope itemtype="http://schema.org/" + (schemaOrg || "WebPage"))
-    nav#header.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
+    nav.mvw-header.navbar.navbar-inverse.navbar-fixed-top
       .container
         .navbar-header
-          button.navbar-toggle(type="button" data-toggle="collapse" data-target="#mvw-navbar-collapse-1")
+          button.navbar-toggle(type="button" data-toggle="collapse" data-target="#mvw-navbar")
             span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
             span.icon-bar
           a.navbar-brand(href="index.html")
             include ../root/logo.svg
-        #mvw-navbar-collapse-1.collapse.navbar-collapse
+        #mvw-navbar.collapse.navbar-collapse
           include ./topnavigation.pug
 
     block header
 
-    img#print-logo.visible-print(src="/img/logo_color.png" alt=scope.siteTitle)
+    img.mvw-logo-print.visible-print(src="/img/logo_color.png" alt=scope.siteTitle)
 
-    #content-main.container(itemprop="mainContentOfPage")
+    .mvw-content-main.container(itemprop="mainContentOfPage")
       .row
         .col-lg-12
           h1.page-header #{title}
@@ -68,15 +68,13 @@ html(lang="de")
         .col-lg-12
           block content
 
-    #footer.navbar.navbar-default
+    .mvw-footer.navbar.navbar-default
       .container
-        #footerLinks.muted.pull-left
+        .mvw-footer-links.muted.pull-left
           include ./footernavigation.pug
 
     script(src="/js/jquery.min.js")
     script(src="/js/bootstrap.min.js")
-    script
-      include ../../scripts/main.js
     block pageScripts
 
     if isRelease
