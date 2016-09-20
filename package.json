@@ -12,8 +12,11 @@
     "@types/bootstrap": "^3.3.31",
     "@types/grecaptcha": "^2.0.29",
     "@types/photoswipe": "^4.0.26",
+    "autoprefixer": "^6.4.1",
     "copyfiles": "^1.0.0",
     "node-sass": "^3.8.0",
+    "postcss-cli": "^2.6.0",
+    "pug-lint": "^2.3.0",
     "sass-lint": "^1.9.1",
     "tslint": "^3.15.1",
     "typescript": "^2.0.2"
@@ -46,14 +49,14 @@
     "pug": "^2.0.0-beta6"
   },
   "scripts": {
-    "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json {assets,scripts}/**/*.ts",
+    "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"assets/**/*.ts\" && pug-lint \"assets/**/*.pug\"",
     "clean": "rimraf ./build/ ./{assets,styles}/**/*.{css,js}",
     "precompile": "npm run clean && mkdir build",
     "compile:sass": "node-sass ./styles/ -o ./styles && node-sass ./assets/pages/styles/ -o ./assets/pages/styles && postcss --use autoprefixer ./{assets,styles}/*.css -r",
     "compile:ts": "tsc",
     "compile": "npm run compile:ts && npm run compile:sass && gulp",
     "precopy": "copyfiles -u 3 ./src/bootstrap/js/bootstrap.min.js C:/Data/Code/Prod/js/ && copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js C:/Data/Code/Prod/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} C:/Data/Code/Prod/",
-    "copy": "copyup ./build/**/* C:/Data/Code/Prod/",
+    "copy": "copyup ./build/**/* ../Prod/",
     "debug": "npm run compile && npm run copy",
     "release": "npm run lint && npm run compile -- release --release=true && npm run copy"
   }
