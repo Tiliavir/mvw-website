@@ -24,10 +24,9 @@ h2 {
 
 .navbar-brand {
   padding: 5px 0;
+  width: 70px;
 
   svg {
-    height: $navbar-height - 12px; // - padding (10) - random 2px to avoid early collapse of navbar
-
     .mvw-logo {
       fill: $logo-fill-color;
     }
