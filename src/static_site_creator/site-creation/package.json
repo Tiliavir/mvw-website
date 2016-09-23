@@ -1,0 +1,16 @@
+{
+  "name": "mvw-site-creator",
+  "version": "1.0.0",
+  "description": "Module to generate html pages from pug files annotated with a frontmatter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Static",
+    "Site",
+    "Creation"
+  ],
+  "author": "Markus Lindenmann",
+  "license": "MIT"
+}
