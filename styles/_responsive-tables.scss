@@ -1,41 +1,10 @@
+$row-alternation-bg-color: #eee;
+$row-border-color: #ccc;
+$cell-border-color: #eee;
+
 table {
   &.responsive {
     border-collapse: collapse;
-  }
-}
-
-@media not screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  .mvw-managing-committee-table {
-    tr {
-      th {
-        &:nth-child(2) {
-          display: none;
-        }
-      }
-
-      &:first-child {
-        td {
-          :nth-child(2) {
-            border-top-width: 0 !important;
-          }
-        }
-      }
-
-      td {
-        &:nth-child(2) {
-          border-top-width: 1px !important;
-          border-width: 0 !important;
-          float: left;
-          width: 100%;
-        }
-
-        &:nth-child(3) {
-          border: 0 solid transparent !important;
-          clear: left;
-          float: left;
-        }
-      }
-    }
   }
 }
 
@@ -43,7 +12,7 @@ table {
   // First column bold and without border bottom
   tr {
     td {
-      border-bottom-width: 0 !important;
+      border-bottom-width: 0;
 
       &:first-child {
         font-weight: bold;
@@ -73,18 +42,17 @@ table {
       }
 
       tr {
-        border: 1px solid #ccc;
+        border: 1px solid $row-border-color;
 
         :nth-of-type(even) {
-          background-color: #eee;
+          background-color: $row-alternation-bg-color;
         }
       }
 
       td {
         // Behave  like a 'row'
         border: 0;
-        border-bottom: 1px solid #eee;
-        padding-left: 0 !important;
+        border-bottom: 1px solid $cell-border-color;
         position: relative;
 
         ::before {
@@ -100,7 +68,7 @@ table {
       }
 
       img {
-        max-width: calc(100vw - 50px) !important;
+        max-width: calc(100vw - 50px);
       }
     }
   }
