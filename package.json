@@ -49,7 +49,7 @@
     "pug": "^2.0.0-beta6"
   },
   "scripts": {
-    "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"assets/**/*.ts\" && pug-lint \"assets/**/*.pug\"",
+    "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"assets/**/*.ts\"",
     "clean": "rimraf ./build/ ./{assets,styles}/**/*.{css,js}",
     "precompile": "npm run clean && mkdir build",
     "compile:sass": "node-sass ./styles/ -o ./styles && node-sass ./assets/pages/styles/ -o ./assets/pages/styles && postcss --use autoprefixer ./{assets,styles}/*.css -r",
@@ -58,7 +58,7 @@
     "precopy": "copyfiles -u 3 ./src/bootstrap/js/bootstrap.min.js C:/Data/Code/Prod/js/ && copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js C:/Data/Code/Prod/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} C:/Data/Code/Prod/",
     "copy": "copyup ./build/**/* ../Prod/",
     "debug": "npm run compile && npm run copy",
-    "prerelease": "npm run lint"
-    "release": "npm run compile -- release --release=true && npm run copy",
+    "prerelease": "npm run lint",
+    "release": "npm run compile -- release --release=true && npm run copy"
   }
 }
