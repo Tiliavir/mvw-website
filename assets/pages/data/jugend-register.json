@@ -15,16 +15,6 @@
     "register": "Klarinette"
   },
   {
-    "name" : "Leonie",
-    "familyName":"Gresslin",
-    "register": "Klarinette"
-  },
-  {
-    "name" : "Elena",
-    "familyName":"Sieglin",
-    "register": "Klarinette"
-  },
-  {
     "name" : "Janika",
     "familyName":"Böhler",
     "register": "Klarinette"
@@ -60,6 +50,11 @@
     "register": "Trompete"
   },
   {
+    "name": "Luisa",
+    "familyName": "Krey",
+    "register": "Fagott"
+  },
+  {
     "name" : "Kai",
     "familyName":"Bogner",
     "register": "Trompete"
@@ -73,11 +68,6 @@
     "name" : "Timo",
     "familyName":"Braun",
     "register": "Posaune"
-  },
-  {
-    "name" : "Anika",
-    "familyName":"Gresslin",
-    "register": "Euphonium"
   },
   {
     "name" : "Noah",
