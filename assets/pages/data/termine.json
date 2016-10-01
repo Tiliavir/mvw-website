@@ -12,11 +12,35 @@
     },
     {
       "location": {
+        "name": "Forsthof",
+        "address": "Wollbach"
+      },
+      "starttime": "2016-11-25T19:00:00Z",
+      "title": "Adventskranzverkauf"
+    },
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2016-11-27T00:00:00Z",
+      "title": "Wartburgfest"
+    },
+    {
+      "location": {
         "name": "Kirche",
         "address": "Wollbach"
       },
       "starttime": "2016-12-04T00:00:00Z",
       "title": "Jugend- und Kammerkonzert"
+    },
+    {
+      "location": {
+        "name": "Kirche",
+        "address": "Wollbach"
+      },
+      "starttime": "2016-12-11T17:30:00Z",
+      "title": "Jugendvorspiel"
     }
   ],
   "2017": [
@@ -47,11 +71,25 @@
     },
     {
       "location": {
+        "address": "Hüningen"
+      },
+      "starttime": "2017-04-02T00:00:00Z",
+      "title": "Konzert mit der MG Hüningen"
+    },
+    {
+      "location": {
         "address": "Wollbach"
       },
       "endtime": "2017-05-21T00:00:00Z",
       "starttime": "2017-05-20T00:00:00Z",
       "title": "1250 Jahre Wollbach"
+    },
+    {
+      "location": {
+        "address": "Bischofszell"
+      },
+      "starttime": "2017-06-30T00:00:00Z",
+      "title": "Rosentage"
     }
   ]
 }
