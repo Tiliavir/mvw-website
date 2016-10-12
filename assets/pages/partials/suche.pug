@@ -1,0 +1,25 @@
+---
+title: "Suche"
+description: "Durchsuche Inhalte der Webseite des Musikverein Wollbach 1866 e.V."
+keywords: "Suche, Seitensuche"
+
+navigation: "top"
+schemaOrg: "SearchResultsPage"
+---
+
+extends ../template.pug
+
+block content
+  form(itemprop='potentialAction' itemscope itemtype='http://schema.org/SearchAction')
+    meta(itemprop='target' content='http://example.com/search?q={query}')
+    input#mvw-search-field(itemprop='query-input' type="search" results="5" autosave="mvw-search-field" name='query')
+    input(type='submit')
+  ol#results
+
+block pageStyles
+  include ../styles/suche.css
+
+block pageScripts
+  script
+    include ../../../node_modules/lunr/lunr.min.js
+    include ../scripts/suche.js

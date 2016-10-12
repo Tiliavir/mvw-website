@@ -4,13 +4,14 @@
   "use strict";
 
   const gulp = require("gulp"),
-      fs = require("fs"),
-      path = require("path"),
-      marked = require("marked"),
-      moment = require("moment"),
-      args   = require("yargs").argv,
-      $ = require("gulp-load-plugins")(),
-      navigation = require("mvw-navigation");
+        fs = require("fs"),
+        lunr = require("lunr"),
+        path = require("path"),
+        marked = require("marked"),
+        moment = require("moment"),
+        args   = require("yargs").argv,
+        $ = require("gulp-load-plugins")(),
+        navigation = require("mvw-navigation");
 
   let isRelease = args.release || false;
   let baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
@@ -74,7 +75,6 @@
       return numberOfMusicians;
     };
 
-    const buildNumber = parseInt((new Date()).valueOf() / 1000000);
     scope.numberOfMusicians = getNumberOfMusicians(scope.register);
 
     var getScope = function (file) {
@@ -86,7 +86,6 @@
 
         isAmp: false,
         isRelease: isRelease,
-        buildNumber: buildNumber,
         scope: scope,
 
         referencedFile: filename,
