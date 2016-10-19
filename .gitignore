@@ -2,10 +2,8 @@
 
 *_modules/
 
-/scripts/*.js
-/assets/pages/scripts/*.js
-/styles/*.css
-/assets/pages/styles/*.css
+/assets/**/scripts/*.js
+/assets/**/styles/*.css
 /assets/pages/footernavigation.pug
 /assets/pages/siteOverviewList.pug
 /assets/pages/topnavigation.pug

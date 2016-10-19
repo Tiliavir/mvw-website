@@ -31,7 +31,7 @@ html(lang="de")
 
     style
       include ../../src/bootstrap/css/bootstrap.min.css
-      include ../../styles/app.css
+      include ../styles/app.css
       block pageStyles
 
     if hasAmp
@@ -75,7 +75,9 @@ html(lang="de")
 
     script(src="/js/jquery.min.js")
     script(src="/js/bootstrap.min.js")
-    block pageScripts
+    script
+      include ../scripts/app.js
+      block pageScripts
 
     if isRelease
       include ./ga.pug

@@ -1,5 +1,4 @@
 $navbar-height: 50px;
-$logo-fill-color: #eee;
 $highlight-color: #07b;
 $secondary-highlight-color: #4a4a4a;
 // $highlight-color: #D30630;
@@ -29,17 +28,6 @@ h2 {
 
   h2 {
     font-size: 26px;
-  }
-}
-
-.navbar-brand {
-  padding: 5px 0;
-  width: 70px;
-
-  svg {
-    .mvw-logo {
-      fill: $logo-fill-color;
-    }
   }
 }
 

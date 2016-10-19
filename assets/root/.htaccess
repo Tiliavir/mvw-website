@@ -24,7 +24,7 @@ AddType 'text/javascript; charset=UTF-8' js
 AddCharset UTF-8 .css
 AddType 'text/css; charset=UTF-8' css
 AddCharset UTF-8 .svg
-AddType 'image/svg+xml; charset=UTF8' svg
+AddType 'image/svg+xml; charset=UTF8' svg svgz
 
 #Cookieless domain
 <FilesMatch "\.(js|css|jpg|png|jpeg|gif|xml|json|txt|pdf|mov|avi|otf|woff|ico|swf)$">
@@ -72,36 +72,3 @@ ErrorDocument 401 /401.html
 ErrorDocument 410 /404.html
 
 Redirect 302 /sitemap.html http://www.mv-wollbach.de/seiten-uebersicht.html
-
-RedirectMatch 301 ^/bilder/(.*) http://www.mv-wollbach.de/bilder.html
-Redirect 301 /assets/files/flyer/08_herbstfest.pdf http://www.mv-wollbach.de/files/flyer/08_herbstfest.pdf
-Redirect 301 /assets/files/flyer/09_forsthoffest.pdf http://www.mv-wollbach.de/files/flyer/09_forsthoffest.pdf
-Redirect 301 /assets/files/flyer/09_konzert.pdf http://www.mv-wollbach.de/files/flyer/09_konzert.pdf
-Redirect 301 /feed/sauserfahrt-mit-dem-chanderli-2015.html http://www.mv-wollbach.de/blog_2015-sauserfahrt.html
-Redirect 301 /footer/impressum/ http://www.mv-wollbach.de/impressum.html
-Redirect 301 /impressum/haftungsausschluss http://www.mv-wollbach.de/haftung.html
-Redirect 301 /impressum/siteoverview http://www.mv-wollbach.de/seiten-uebersicht.html
-Redirect 301 /jugend/ausbildung.html http://www.mv-wollbach.de/ausbildung.html
-Redirect 301 /jugend/jugendorchester http://www.mv-wollbach.de/jugendorchester.html
-Redirect 301 /jugend/jugendorchester.html http://www.mv-wollbach.de/jugendorchester.html
-Redirect 301 /jugend/vorstufenorchester.html http://www.mv-wollbach.de/vorstufenorchester.html
-Redirect 301 /jugend/termine/aktuelles-08.05.2012 http://www.mv-wollbach.de/termine.html
-Redirect 301 /news/news-08.05.2012 http://www.mv-wollbach.de/news.html
-Redirect 301 /news/news-10.06.2013 http://www.mv-wollbach.de/news.html
-Redirect 301 /news?start=1 http://www.mv-wollbach.de/news.html
-Redirect 301 /sitemap.html http://www.mv-wollbach.de/seiten-uebersicht.html
-Redirect 301 /startseite http://www.mv-wollbach.de/
-Redirect 301 /termine/termine-14.05.2013 http://www.mv-wollbach.de/termine.html
-Redirect 301 /verein/dampfmusik.html http://www.mv-wollbach.de/dampfmusik.html
-Redirect 301 /verein/dirigent.html http://www.mv-wollbach.de/dirigent.html
-Redirect 301 /verein/orchester-coach.html http://www.mv-wollbach.de/coach.html
-Redirect 301 /verein/unsere-register.html http://www.mv-wollbach.de/register.html
-Redirect 301 /verein/vorstandschaft.html http://www.mv-wollbach.de/vorstand.html
-Redirect 301 /verein/wir-ueber-uns/ http://www.mv-wollbach.de/ueber-uns.html
-
-Redirect 410 /feed.rss/jahreskonzert-2011-lets-face-the-music-and-dance
-Redirect 410 /feed.rss/jahreskonzert-2012
-Redirect 410 /feed.rss/sauserfahrt-mit-dem-chanderli-2010
-Redirect 410 /feed/sauserfahrt-mit-dem-chanderli-2014.html
-Redirect 410 /newsErw
-Redirect 410 /verein/

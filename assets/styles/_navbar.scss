@@ -1,0 +1,23 @@
+$logo-fill-color-default: #333;
+$logo-fill-color-inverse: #eee;
+
+.navbar-brand {
+  padding: 5px 0;
+  width: 70px;
+
+  .mvw-logo {
+    fill: $logo-fill-color-inverse;
+  }
+}
+
+.navbar-default{
+  .navbar-brand {
+    .mvw-logo {
+      fill: $logo-fill-color-default;
+    }
+  }
+}
+
+.navbar {
+    transition: background-color ease 0.4s;
+}
