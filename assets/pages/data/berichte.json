@@ -1,6 +1,24 @@
 ﻿{
   "2016": [
     {
+      "date": "2016-10-17T00:00:00.000Z",
+      "hasDescription": true,
+      "hasPicture": true,
+      "srcTitle": "BZ",
+      "srcUrl": "http://www.badische-zeitung.de",
+      "title": "Fulminantes musikalisches Fest",
+      "url": "http://www.badische-zeitung.de/kandern/fulminantes-musikalisches-fest"
+    },
+    {
+      "date": "2016-10-16T23:46:00.000Z",
+      "hasDescription": true,
+      "hasPicture": true,
+      "srcTitle": "VHJ",
+      "srcUrl": "http://www.verlagshaus-jaumann.de",
+      "title": "Aushängeschild für das Kandertal",
+      "url": "http://www.verlagshaus-jaumann.de/inhalt.kandern-aushaengeschild-fuer-das-kandertal.7367e512-b576-4888-b3eb-1c1242d2bbe6.html"
+    },
+    {
       "date": "2016-08-18T00:00:00.000Z",
       "hasDescription": true,
       "hasPicture": true,
