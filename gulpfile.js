@@ -4,16 +4,26 @@
   "use strict";
 
   const gulp = require("gulp"),
-      fs = require("fs"),
-      path = require("path"),
-      marked = require("marked"),
-      moment = require("moment"),
-      args   = require("yargs").argv,
-      $ = require("gulp-load-plugins")(),
-      navigation = require("mvw-navigation");
+        fs = require("fs"),
+        lunr = require("lunr"),
+        path = require("path"),
+        marked = require("marked"),
+        moment = require("moment"),
+        args   = require("yargs").argv,
+        $ = require("gulp-load-plugins")(),
+        navigation = require("mvw-navigation");
 
   let isRelease = args.release || false;
   let baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
+
+  let searchStore = {};
+  let searchIndex = lunr(function () {
+    this.field('title', { boost: 10 });
+    this.field('keywords', { boost: 6 });
+    this.field('description', { boost: 3 });
+    this.field('body');
+    this.ref('href');
+  });
 
   const paths = {
     dest: "./build/",
@@ -38,12 +48,14 @@
       .pipe(gulp.dest(paths.dest));
   });
 
-  gulp.task("html:generatePages", function () {
+  gulp.task("html:writeNavigation", function () {
     navigation.init(require(paths.assets + "pages/site-structure.json"));
     fs.writeFileSync(paths.assets + "pages/siteOverviewList.pug", navigation.writeNavigation("allplain"));
     fs.writeFileSync(paths.assets + "pages/topnavigation.pug", navigation.writeNavigation("top"));
     fs.writeFileSync(paths.assets + "pages/footernavigation.pug", navigation.writeNavigation("footer"));
+  });
 
+  gulp.task("html:generatePages", ["html:writeNavigation"], function () {
     const scope = {
       register: require(paths.assets + "pages/data/register.json"),
       berichte: require(paths.assets + "pages/data/berichte.json"),
@@ -74,7 +86,6 @@
       return numberOfMusicians;
     };
 
-    const buildNumber = parseInt((new Date()).valueOf() / 1000000);
     scope.numberOfMusicians = getNumberOfMusicians(scope.register);
 
     var getScope = function (file) {
@@ -86,7 +97,6 @@
 
         isAmp: false,
         isRelease: isRelease,
-        buildNumber: buildNumber,
         scope: scope,
 
         referencedFile: filename,
@@ -94,29 +104,52 @@
       };
     };
 
+    var addToSearch = function (file) {
+      let data = file.contents.toString();
+      if (file.data.scope.hasOwnProperty(file.data.referencedFile)) {
+        data += JSON.stringify(file.data.scope[file.data.referencedFile]).replace(/\[|\]|\)|\(|\{|\}|\"|:/g, " ");
+      }
+
+      var doc = {
+        'title': file.data.title,
+        'keywords': file.data.keywords,
+        'description': file.data.description,
+        'body': data,
+        'href': file.data.referencedFile
+      };
+
+      searchStore[doc.href] = {
+        'title': doc.title,
+        'description': doc.description
+      };
+
+      searchIndex.add(doc);
+    }
+
     var hasAmp = function (file) {
       return file.data.hasAmp;
     };
 
     return gulp.src(paths.assets + "pages/partials/**/*.pug")
-                .pipe($.replace(/^(\s*#+) /gm, "$1# "))
-                .pipe($.rename(function(path) { path.extname = ".html"; }))
-                .pipe($.grayMatter())
-                .pipe($.data(getScope))
-                .pipe($.pug())
-                .pipe($.flatten())
-                .pipe(gulp.dest(paths.dest))
+               .pipe($.replace(/^(\s*#+) /gm, "$1# "))
+               .pipe($.rename(function(path) { path.extname = ".html"; }))
+               .pipe($.grayMatter())
+               .pipe($.data(getScope))
+               .pipe($.data(addToSearch))
+               .pipe($.pug())
+               .pipe($.flatten())
+               .pipe(gulp.dest(paths.dest))
 
 /*
-                // https://github.com/pugjs/pug/issues/2367
-                .pipe($.if(hasAmp, $.data(function(file) {
-                  file.data.isAmp = true;
-                  return file.data
-                })))
-                .pipe($.if(hasAmp, $.pug()))
-                .pipe($.if(hasAmp, gulp.dest(paths.dest + "amp/")))
+               // https://github.com/pugjs/pug/issues/2367
+               .pipe($.if(hasAmp, $.data(function(file) {
+                 file.data.isAmp = true;
+                 return file.data
+               })))
+               .pipe($.if(hasAmp, $.pug()))
+               .pipe($.if(hasAmp, gulp.dest(paths.dest + "amp/")))
 */
-                ;
+    ;
   });
 
   gulp.task("html:minify", function () {
@@ -144,6 +177,13 @@
                .pipe($.bootlint());
   });
 
-  gulp.task("default", $.sequence("html:generatePages"));
-  gulp.task("release", $.sequence("html:generatePages", "sitemap", "html:minify", ["beautify", "html:bootlint", "html:validate"]));
+  gulp.task("search:index", function () {
+    fs.writeFileSync(paths.dest + "index.json", JSON.stringify({
+      index: searchIndex,
+      store: searchStore
+    }));
+  });
+
+  gulp.task("default", $.sequence("html:generatePages", "search:index"));
+  gulp.task("release", $.sequence("html:generatePages", "sitemap", "html:minify", ["search:index", "beautify", "html:bootlint", "html:validate"]));
 })(require);

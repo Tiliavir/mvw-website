@@ -1,16 +1,6 @@
 ﻿{
   "2016": [
     {
-      "description": "[zum Flyer](/files/flyer/16_herbstfest.pdf)",
-      "endtime": "2016-10-16T00:00:00Z",
-      "location": {
-        "name": "Kandertalhalle",
-        "address": "Wollbach"
-      },
-      "starttime": "2016-10-15T00:00:00Z",
-      "title": "Sauserexpress und Herbstfest mit Jubiläumsgottesdienst"
-    },
-    {
       "location": {
         "name": "Forsthof",
         "address": "Wollbach"
@@ -49,7 +39,7 @@
         "name": "Kandertalhalle",
         "address": "Wollbach"
       },
-      "starttime": "2017-01-05T19:00:00Z",
+      "starttime": "2017-01-06T19:00:00Z",
       "title": "Neujahrsempfang"
     },
     {

@@ -102,6 +102,11 @@
     "navigation": "footer"
   },
   {
+    "title": "Suche",
+    "referencedFile": "suche",
+    "navigation": "footer"
+  },
+  {
     "children": [
      {
         "referencedFile": "blog_2016-sauserfahrt",

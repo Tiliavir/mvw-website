@@ -18,8 +18,7 @@ function writeNavigationEntry(entry, n, type) {
              + indent(n + 2, true)
              + (type !== "allplain" ? "a.dropdown-toggle(href=\"#\" data-toggle=\"dropdown\") " : (entry.referencedFile ? "a(href=\"" + entry.referencedFile + ".html\") " : "div "))
              + entry.title
-             + indent(n + 4, true)
-             + (type !== "allplain" ? "b.caret" : "")
+             + (type !== "allplain" ? indent(n + 4, true) + "b.caret" : "")
              + indent(n + 2, true)
              + "ul"
              + (type !== "allplain" ? ".dropdown-menu" : "");

@@ -1,8 +1,8 @@
 {
   "name": "mvw-navigation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Module to generating a site navigation from a given structure file.",
-  "keywords": "website, navigation, structure",
+  "keywords": ["website", "navigation", "structure"],
   "license": "MIT",
   "author": {
     "name" : "Markus Lindenmann",
