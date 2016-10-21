@@ -29,6 +29,7 @@
         .pipe(parallel, $.imageResize({
             width: w,
             height: h,
+            noProfile: true,
             crop: false,
             upscale: false,
             format: "jpg",
