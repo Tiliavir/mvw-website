@@ -18,13 +18,14 @@ block content
       - for (var i = 0, yearTitle = yearTitles[i], year = scope.galleries[yearTitle]; i < yearTitles.length; i++, yearTitle = yearTitles[i], year = scope.galleries[yearTitle])
         .tab-pane.fade.row(id=yearTitle class=(i===yearTitles.length-1 ? 'active in' : ''))
           - var galleryTitles = Object.keys(year);
-          -  for (var j = galleryTitles.length - 1, galleryTitle = galleryTitles[j], gallery = year[galleryTitle]; j-- >= 0; galleryTitle = galleryTitles[j], gallery = year[galleryTitle])
-            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+          - for (var j = galleryTitles.length - 1, galleryTitle = galleryTitles[j], gallery = year[galleryTitle]; j-- >= 0; galleryTitle = galleryTitles[j], gallery = year[galleryTitle])
+            .col-lg-3.col-md-4.col-sm-6.col-xs-12.mvw-gallery-container
               .mvw-gallery(onclick="MVW.Gallery.openGallery(this); return false;")
                 - var preview = gallery.filter(function(i) {return i.s.w === 200;})[0] || gallery[0];
                 - var url = "/gallery/" + preview.b + "s/" + preview.f;
-                img.img-responsive.preview(src=url alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
-                span.caption #{galleryTitle}
+                .content
+                  img.preview(src=url alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
+                  span.caption #{galleryTitle}
 
   .pswp(tabindex='-1', role='dialog', aria-hidden='true')
     //-
@@ -67,7 +68,7 @@ block content
 block pageStyles
   include ../../../node_modules/photoswipe/dist/photoswipe.css
   include ../../../node_modules/photoswipe/dist/default-skin/default-skin.css
-  include ../styles/gallery.css
+  include ../styles/bilder.css
 
 block pageScripts
   include ../../../node_modules/photoswipe/dist/photoswipe.min.js
