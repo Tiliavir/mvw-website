@@ -9,35 +9,18 @@
         path = require("path"),
         marked = require("marked"),
         moment = require("moment"),
-        args   = require("yargs").argv,
+        args = require("yargs").argv,
         $ = require("gulp-load-plugins")(),
         navigation = require("mvw-navigation");
+        searchIndex = require("mvw-search-index");
 
   let isRelease = args.release || false;
   let baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
-
-  let searchStore = {};
-  let searchIndex = lunr(function () {
-    this.field('title', { boost: 10 });
-    this.field('keywords', { boost: 6 });
-    this.field('description', { boost: 3 });
-    this.field('body');
-    this.ref('href');
-  });
 
   const paths = {
     dest: "./build/",
     assets: "./assets/"
   };
-
-  gulp.task("beautify", function () {
-    return gulp.src(paths.dest + "**/*")
-               .pipe($.jsbeautifier({
-                 indentSize: 2,
-                 mode: "VERIFY_AND_WRITE"
-               }))
-               .pipe(gulp.dest(paths.dest + "beautified/"));
-  });
 
   gulp.task("sitemap", function () {
       return gulp.src([paths.dest + "**/*.html", "!**/401.html", "!**/404.html"])
@@ -104,28 +87,6 @@
       };
     };
 
-    var addToSearch = function (file) {
-      let data = file.contents.toString();
-      if (file.data.scope.hasOwnProperty(file.data.referencedFile)) {
-        data += JSON.stringify(file.data.scope[file.data.referencedFile]).replace(/\[|\]|\)|\(|\{|\}|\"|:/g, " ");
-      }
-
-      var doc = {
-        'title': file.data.title,
-        'keywords': file.data.keywords,
-        'description': file.data.description,
-        'body': data,
-        'href': file.data.referencedFile
-      };
-
-      searchStore[doc.href] = {
-        'title': doc.title,
-        'description': doc.description
-      };
-
-      searchIndex.add(doc);
-    }
-
     var hasAmp = function (file) {
       return file.data.hasAmp;
     };
@@ -135,11 +96,10 @@
                .pipe($.rename(function(path) { path.extname = ".html"; }))
                .pipe($.grayMatter())
                .pipe($.data(getScope))
-               .pipe($.data(addToSearch))
+               .pipe($.data(searchIndex.add))
                .pipe($.pug())
                .pipe($.flatten())
                .pipe(gulp.dest(paths.dest))
-
 /*
                // https://github.com/pugjs/pug/issues/2367
                .pipe($.if(hasAmp, $.data(function(file) {
@@ -178,12 +138,10 @@
   });
 
   gulp.task("search:index", function () {
-    fs.writeFileSync(paths.dest + "index.json", JSON.stringify({
-      index: searchIndex,
-      store: searchStore
-    }));
+    searchIndex.write(paths.dest + "index.json");
   });
 
   gulp.task("default", $.sequence("html:generatePages", "search:index"));
-  gulp.task("release", $.sequence("html:generatePages", "sitemap", "html:minify", ["search:index", "beautify", "html:bootlint", "html:validate"]));
+  gulp.task("release", $.sequence("html:generatePages", "sitemap", "html:minify", ["search:index", "html:bootlint", "html:validate"]));
 })(require);
+
