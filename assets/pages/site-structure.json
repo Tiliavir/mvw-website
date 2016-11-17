@@ -27,10 +27,6 @@
         "title": "Dirigent"
       },
       {
-        "referencedFile": "coach",
-        "title": "Orchester-Coach"
-      },
-      {
         "referencedFile": "vorstand",
         "title": "Vorstandschaft"
       },
