@@ -11,7 +11,7 @@
         moment = require("moment"),
         args = require("yargs").argv,
         $ = require("gulp-load-plugins")(),
-        navigation = require("mvw-navigation");
+        navigation = require("mvw-navigation"),
         searchIndex = require("mvw-search-index");
 
   let isRelease = args.release || false;
