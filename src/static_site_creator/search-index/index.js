@@ -1,6 +1,7 @@
 ﻿"use strict";
 
-var lunr = require('lunr');
+var lunr = require('lunr'),
+    fs = require("fs");
 
 var store = {};
 var index= lunr(function () {
