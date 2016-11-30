@@ -6,7 +6,7 @@ module MVW.Appointments {
   }
 
   export function initialize() : void {
-    const cutOffDate = addDays(new Date(), 3);
+    const cutOffDate = addDays(new Date(), -3);
 
     $("meta[itemprop=\"startDate\"]").each(function(i, e) {
       let $e = $(e);

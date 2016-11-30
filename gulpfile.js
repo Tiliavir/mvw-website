@@ -1,6 +1,4 @@
-﻿/// <binding AfterBuild='default' Clean='clean' />
-
-(function (require) {
+﻿(function (require) {
   "use strict";
 
   const gulp = require("gulp"),
@@ -127,21 +125,11 @@
                .pipe(gulp.dest(paths.dest));
   });
 
-  gulp.task("html:validate", function () {
-    return gulp.src([paths.dest + "**/*.html", "!" + paths.dest + "{beautified,amp}/**/*.html"])
-               .pipe($.w3cjs());
-  });
-
-  gulp.task("html:bootlint", function () {
-    return gulp.src([paths.dest + "**/*.html", "!" + paths.dest + "{beautified,amp}/**/*.html"])
-               .pipe($.bootlint());
-  });
-
   gulp.task("search:index", function () {
     searchIndex.write(paths.dest + "index.json");
   });
 
   gulp.task("default", $.sequence("html:generatePages", "search:index"));
-  gulp.task("release", $.sequence("html:generatePages", "sitemap", "html:minify", ["search:index", "html:bootlint", "html:validate"]));
+  gulp.task("release", $.sequence("html:generatePages", "sitemap", "html:minify", "search:index"));
 })(require);
 

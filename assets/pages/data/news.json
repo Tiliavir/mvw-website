@@ -1,8 +1,24 @@
 ﻿{
   "2016": [
     {
+      "title": "27.11.2016 - Wartburgfest der Ev. Kirchengemeinde Wollbach",
+      "content": "Wie jedes Jahr haben wir am Wartburgfest der Kirchengemeinde Wollbach den Gottesdienst begleitet, sowie zum Frühschoppen aufgespielt."
+    },
+    {
+      "title": "26.11.2016 - Jungmusikerleistungsabzeichen in Silber",
+      "content": "Wir gratulieren ganz herzlich Lea Kronenberger, Lilly Müller, Anna Sieglin und Antonia Müller zum Bestehen des JMLA in Bronze.",
+      "image": {
+        "title": "v.l.n.r.: Lea Kronenberger, Lilly Müller, Anna Sieglin und Antonia Müller",
+        "src": "/img/jugend/jmla/2016_jmla_bronze.jpg"
+      }
+    },
+    {
+      "title": "25.11.2016 - Adventskranzverkauf",
+      "content": "Wunderschöne selbstgemachte Adventskränzen und Gestecken haben wir im weihnachtlichen Ambiente des Forsthofes bei Manfred Wampfler verkaufen können. Mit Glühwein, Raclette und Würsten konnte man es sich bei musikalischer Begleitung durch das Vorstufen- und Jugendorchester gut gehen lassen. [Zum Flyer des Adventskranverkaufs](blog_2016-adventskranz.html)."
+    },
+    {
       "title": "15.-16.10.2016 - Sauserexpress und Herbstfest mit Jubiläumsgottesdienst",
-      "content": "Der [Sauserbummel](blog_2016-sauserfahrt.html) war auch in diesem Jahr wieder eine sehr schöne Veranstaltung. Musikalisch begleitet wurde der Spaziergang durch das Kandertal von unserer Dampfmusik. Am Sonntag feierte der Musikverein sein 150 jähriges Bestehen am Herbstfest mit Festgottesdienst und musikalisch begleitet vom Musikverein Alpenblick Willaringen, dem Musikverein Whylen und dem Jugendorchester Wollbach. [Zum Flyer des Herbstfestes](/files/flyer/16_herbstfest.pdf)."
+      "content": "Der [Sauserbummel](blog_2016-sauserfahrt.html) war auch in diesem Jahr wieder eine sehr schöne Veranstaltung. Musikalisch begleitet wurde der Spaziergang durch das Kandertal von unserer Dampfmusik. Am Sonntag feierte der Musikverein sein 150 jähriges Bestehen am Herbstfest mit Festgottesdienst und musikalisch begleitet vom Musikverein Alpenblick Willaringen, dem Musikverein Whylen und dem Jugendorchester Wollbach. [Zum Flyer des Herbstfestes](/files/flyer/16_herbstfest.pdf). Die Ergebnisse des [Ballon Wettbewerbes](blog_2016-ballonwettbewerb.html) können hier eingesehen werden."
     },
     {
       "title": "28.-31.07.2016 - Konzertreise nach Südtirol",
@@ -10,7 +26,11 @@
     },
     {
       "title": "27.-31.07.2016 - Jungmusikerleistungsabzeichen in Silber",
-      "content": "Wir gratulieren ganz herzlich Lina Müller und Kim Strohmeier zum Bestehen des JMLA in Silber auf der Klarinette."
+      "content": "Wir gratulieren ganz herzlich Lina Müller und Kim Strohmeier zum Bestehen des JMLA in Silber auf der Klarinette.",
+      "image": {
+        "src": "/img/jugend/jmla/2016_jmla_silber.jpg",
+        "title": "Lina Müller bei der Urkundenverleihung in Tegernau"
+      }
     },
     {
       "title": "24.07.2016 - Kirchhofgottesdienst",
@@ -262,7 +282,7 @@
     },
     {
       "title": "28.11.2010 - Wartburgfest der Ev. Kirchengemeinde Wollbach",
-      "content": "Wie jedes Jahr haben am Wartburgfest der Kirchengemeinde Wollbach den Gottesdienst begleitet, sowie zum Frühschoppen aufgespielt."
+      "content": "Wie jedes Jahr haben wir am Wartburgfest der Kirchengemeinde Wollbach den Gottesdienst begleitet, sowie zum Frühschoppen aufgespielt."
     },
     {
       "title": "26.11.2010 - Adventskranzverkauf",

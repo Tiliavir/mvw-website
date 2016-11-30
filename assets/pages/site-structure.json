@@ -104,12 +104,17 @@
   },
   {
     "children": [
-            {
+      {
+        "referencedFile": "blog_2016-ballonwettbewerb",
+        "navigation": "none",
+        "title": "Ergebnisse des Ballonwettbewerbes"
+      },
+      {
         "referencedFile": "blog_2016-adventskonzert",
         "navigation": "none",
         "title": "Benefiz Advents Konzert"
       },
-            {
+      {
         "referencedFile": "blog_2016-adventskranz",
         "navigation": "none",
         "title": "Adventskranz Verkauf"

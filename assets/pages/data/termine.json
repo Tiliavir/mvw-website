@@ -2,22 +2,6 @@
   "2016": [
     {
       "location": {
-        "name": "Forsthof",
-        "address": "Wollbach"
-      },
-      "starttime": "2016-11-25T19:00:00Z",
-      "title": "Adventskranzverkauf"
-    },
-    {
-      "location": {
-        "name": "Kandertalhalle",
-        "address": "Wollbach"
-      },
-      "starttime": "2016-11-27T00:00:00Z",
-      "title": "Wartburgfest"
-    },
-    {
-      "location": {
         "name": "Kirche",
         "address": "Wollbach"
       },
