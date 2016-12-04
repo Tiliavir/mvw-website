@@ -1,17 +1,23 @@
 {
   "name": "mvw-search-index",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Module to generate the search index.",
-  "keywords": ["website", "search", "index"],
+  "keywords": [
+    "website",
+    "search",
+    "index"
+  ],
   "license": "MIT",
   "author": {
-    "name" : "Markus Lindenmann",
-    "email" : "markus.lindenmann@web.de"
+    "name": "Markus Lindenmann",
+    "email": "markus.lindenmann@web.de"
   },
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/lunr": "^0.5.28"
+  },
   "dependencies": {
-    "lunr": "^0.7.2",
-    "fs": "^0.0.2"
+    "fs": "0.0.2",
+    "lunr": "^0.7.2"
   }
 }

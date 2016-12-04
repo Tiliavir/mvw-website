@@ -3,7 +3,6 @@
 
   const gulp = require("gulp"),
         fs = require("fs"),
-        lunr = require("lunr"),
         path = require("path"),
         marked = require("marked"),
         moment = require("moment"),
@@ -132,4 +131,3 @@
   gulp.task("default", $.sequence("html:generatePages", "search:index"));
   gulp.task("release", $.sequence("html:generatePages", "sitemap", "html:minify", "search:index"));
 })(require);
-
