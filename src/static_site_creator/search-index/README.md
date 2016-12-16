@@ -1,1 +1,0 @@
-# MVW Search Index

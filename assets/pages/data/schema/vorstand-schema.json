@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "image": {
+        "type": "string"
+      },
+      "persons": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "title": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "image",
+      "persons",
+      "title"
+    ]
+  }
+}

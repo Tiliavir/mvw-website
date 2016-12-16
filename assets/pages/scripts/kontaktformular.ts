@@ -1,27 +1,31 @@
-module MVW.Contact {
-  function isValidEmail (email: string) {
+class Contact {
+  constructor() {
+    Contact.initialize();
+  }
+
+  private static isValidEmail (email: string): boolean {
     const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
   }
 
-  function clearErrors () {
+  private static clearErrors(): void {
     $("#emailAlert").remove();
     $("#feedbackForm .help-block").hide();
     $("#feedbackForm .form-group").removeClass("has-error");
   }
 
-  function clearForm () {
+  private static clearForm(): void {
     $("#feedbackForm input").val("");
     grecaptcha.reset();
   }
 
-  function addError($input: JQuery) {
+  private static addError($input: JQuery): void {
     let parentFormGroup = $input.parents(".form-group");
     parentFormGroup.children(".help-block").show();
     parentFormGroup.addClass("has-error");
   }
 
-  function addAjaxMessage (msg: string, isError: boolean) {
+  private static addAjaxMessage(msg: string, isError: boolean): void {
     $("#feedbackSubmit").after("<div id='emailAlert' class='alert alert-"
                                + (isError ? "danger'" : "success'")
                                + " style='margin-top: 5px;'>"
@@ -29,14 +33,13 @@ module MVW.Contact {
                                + "</div>");
   }
 
-  export function initialize(): void {
+  private static initialize(): void {
     $("[required]").closest(".form-group")
                    .find("label")
                    .append("<span class='text-warning'>*</span>");
 
-    $("#feedbackSubmit").click(function () {
-      let $btn = $(this);
-      clearErrors();
+    $("#feedbackSubmit").click((): boolean => {
+      Contact.clearErrors();
 
       // do a little client-side validation -- check that each field has a value and e-mail field is in proper format
       // use bootstrap validator (https://github.com/1000hz/bootstrap-validator) if provided, otherwise a bit of custom
@@ -44,22 +47,22 @@ module MVW.Contact {
       let $form = $("#feedbackForm");
       let hasErrors = false;
 
-      if ((<any>$form).validator) {
-        hasErrors = (<any>$form).validator("validate").hasErrors;
+      if ((<any> $form).validator) {
+        hasErrors = (<any> $form).validator("validate").hasErrors;
       } else {
-        $("#feedbackForm input").not(".optional").each(function () {
-          let $this = $(this);
+        $("#feedbackForm input").not(".optional").each((i, e): void => {
+          let $this = $(e);
           if (($this.is(":checkbox") && !$this.is(":checked")) || !$this.val()) {
             hasErrors = true;
-            addError($(this));
+            Contact.addError($(e));
           }
         });
 
         let $email = $("#email");
 
-        if (!isValidEmail($email.val())) {
+        if (!Contact.isValidEmail($email.val())) {
           hasErrors = true;
-          addError($email);
+          Contact.addError($email);
         }
       }
 
@@ -71,12 +74,12 @@ module MVW.Contact {
       // send the feedback e-mail
       $.ajax({
         data: $form.serialize(),
-        error: function (response) {
-          addAjaxMessage(response.responseJSON.message, true);
+        error: function (response: JQueryXHR): void {
+          Contact.addAjaxMessage(response.responseJSON.message, true);
         },
-        success: function (data) {
-          addAjaxMessage(data.message, false);
-          clearForm();
+        success: function (data: any): void {
+          Contact.addAjaxMessage(data.message, false);
+          Contact.clearForm();
         },
         type: "POST",
         url: "/php/sendmail.php"
@@ -87,4 +90,4 @@ module MVW.Contact {
   }
 }
 
-$(() => { MVW.Contact.initialize(); });
+$(() => new Contact());

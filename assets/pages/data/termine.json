@@ -1,22 +1,4 @@
 ﻿{
-  "2016": [
-    {
-      "location": {
-        "name": "Kirche",
-        "address": "Wollbach"
-      },
-      "starttime": "2016-12-04T00:00:00Z",
-      "title": "Jugend- und Kammerkonzert"
-    },
-    {
-      "location": {
-        "name": "Kirche",
-        "address": "Wollbach"
-      },
-      "starttime": "2016-12-11T17:30:00Z",
-      "title": "Jugendvorspiel"
-    }
-  ],
   "2017": [
     {
       "location": {

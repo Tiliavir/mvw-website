@@ -125,7 +125,7 @@
   });
 
   gulp.task("search:index", function () {
-    searchIndex.write(paths.dest + "index.json");
+    fs.writeFileSync(paths.dest + "index.json", JSON.stringify(searchIndex.getResult()));
   });
 
   gulp.task("default", $.sequence("html:generatePages", "search:index"));

@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
     "removeComments": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitThis": true,
+    "allowJs": false
   }
 }

@@ -1,5 +1,10 @@
 ﻿module MVW.Start {
-  let slides = [
+  interface ISlide {
+    title: string;
+    url: string;
+  }
+
+  let slides: ISlide[] = [
     {
       "title": "Musikverein",
       "url": "alle_1.jpg"
@@ -86,18 +91,13 @@
     }
   ];
 
-  interface ISlide {
-    title: string;
-    url: string;
-  }
-
-  function shuffle(array : ISlide[]) : ISlide[] {
+  function shuffle(array: ISlide[]): ISlide[] {
     let currentIndex = array.length;
-    let temporaryValue : ISlide;
-    let randomIndex : number;
+    let temporaryValue: ISlide;
+    let randomIndex: number;
 
     // while there remain elements to shuffle...
-    while (0 !== currentIndex) {
+    while (currentIndex !== 0) {
 
       // pick a remaining element...
       randomIndex = Math.floor(Math.random() * currentIndex);

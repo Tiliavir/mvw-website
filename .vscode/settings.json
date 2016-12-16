@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-  "editor.renderWhitespace": true,
+  "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
 
   "files.exclude": {
@@ -22,7 +22,38 @@
     "**/build": true,
     "**/bin": true,
     "**/obj": true
-  }
-,
-"typescript.tsdk": "./node_modules/typescript/lib"
+  },
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "json.schemas": [
+    {
+        "fileMatch": [
+            "/assets/pages/data/berichte.json"
+        ],
+        "url": "./assets/pages/data/schema/berichte-schema.json"
+    },
+    {
+        "fileMatch": [
+            "/assets/pages/data/*register.json"
+        ],
+        "url": "./assets/pages/data/schema/register-schema.json"
+    },
+    {
+        "fileMatch": [
+            "/assets/pages/data/termine.json"
+        ],
+        "url": "./assets/pages/data/schema/termine-schema.json"
+    },
+    {
+        "fileMatch": [
+            "/assets/pages/data/news.json"
+        ],
+        "url": "./assets/pages/data/schema/news-schema.json"
+    },
+    {
+        "fileMatch": [
+            "/assets/pages/data/vorstand.json"
+        ],
+        "url": "./assets/pages/data/schema/vorstand-schema.json"
+    }
+  ]
 }

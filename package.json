@@ -43,8 +43,8 @@
     "jstransformer-marked": "^1.0.1",
     "marked": "^0.3.6",
     "moment": "^2.17.0",
-    "mvw-navigation": "file:./src/static_site_creator/navigation",
-    "mvw-search-index": "file:./src/static_site_creator/search-index",
+    "mvw-navigation": "^1.0.1",
+    "mvw-search-index": "^1.0.3",
     "path": "^0.12.7",
     "photoswipe": "^4.1.1",
     "pug": "^2.0.0-beta6"

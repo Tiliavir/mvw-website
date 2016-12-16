@@ -1,6 +1,6 @@
 ﻿module MVW.Register {
-  function endsWith(str: string, suffix : string) {
-    return str.indexOf(suffix, this.length - suffix.length) !== -1;
+  function endsWith(str: string, suffix: string): boolean {
+    return str.indexOf(suffix, str.length - suffix.length) !== -1;
   };
 
   const register: any = {
@@ -21,7 +21,7 @@
     "Tuba": ["tuba_1.jpg", "tuba_2.jpg"]
   };
 
-  function isElementInViewport(el: HTMLElement) {
+  function isElementInViewport(el: HTMLElement): boolean {
     let rect = el.getBoundingClientRect();
     return rect.bottom >= 0
              && rect.right >= 0
@@ -29,13 +29,13 @@
              && rect.left <= (window.innerWidth || document.documentElement.clientWidth);
   }
 
-  export function tryReplaceImage($images : JQuery) {
-    let $image : JQuery = $($images[Math.floor(Math.random() * $images.length)]);
+  export function tryReplaceImage($images: JQuery): boolean {
+    let $image: JQuery = $($images[Math.floor(Math.random() * $images.length)]);
     if (isElementInViewport($image[0])) {
-      let registerImageUrls = register[$image.attr("title")].filter(function (url : string) {
+      let registerImageUrls = register[$image.attr("title")].filter((url: string): boolean => {
         return !endsWith($image.attr("src"), url);
       });
-      $image.fadeOut("fast", function () {
+      $image.fadeOut("fast", (): void => {
         $image.attr("src", "/img/register/" + registerImageUrls[Math.floor(Math.random() * registerImageUrls.length)]);
         $image.fadeIn("slow");
       });
@@ -45,11 +45,12 @@
   }
 }
 
-$(() => {
+$((): void => {
   let $images = $(".mvw-register-table img");
-  setInterval(function () {
+  setInterval((): void => {
     while (!MVW.Register.tryReplaceImage($images)) {
       // find an image to replace...
     }
-  }, 8000);
+  },
+  8000);
 });

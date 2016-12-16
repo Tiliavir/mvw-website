@@ -1,6 +1,6 @@
 module MVW {
   const headerNavSelector: string = ".mvw-header.navbar";
-  function checkScroll() : void {
+  function checkScroll(): void {
     // the point where the navbar changes in px
     let startY = $(headerNavSelector).height() * 2;
 
@@ -13,13 +13,11 @@ module MVW {
     }
   }
 
-  export function initialize() : void {
+  export function initialize(): void {
     if ($(headerNavSelector).length > 0) {
-      $(window).on("scroll load resize", function() {
-        checkScroll();
-      });
+      $(window).on("scroll load resize", () => checkScroll());
     }
   }
 }
 
-$(() => { MVW.initialize(); });
+$(() => MVW.initialize());

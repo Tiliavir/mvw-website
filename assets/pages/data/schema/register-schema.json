@@ -16,7 +16,7 @@
         "type": "string"
       },
       "register": {
-        "enum": [ "Querflöte", "Oboe", "Klarinette", "Fagott", "Altsaxophon", "Tenorsaxophon", "Baritonsaxophon", "Trompete", "Horn", "Tenorhorn", "Posaune", "Euphonium", "Tuba", "Schlagzeug" ],
+        "enum": [ "Querflöte", "Oboe", "Klarinette", "Fagott", "Altsaxophon", "Tenorsaxophon", "Baritonsaxophon", "Trompete", "Horn", "Tenorhorn", "Posaune", "Euphonium", "Tuba", "Schlagzeug", "Klavier", "Gitarre" ],
         "description": "All available registers."
       }
     },

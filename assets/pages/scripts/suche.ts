@@ -2,7 +2,7 @@ module MVW.Search {
   let index: any;
   let store: any;
 
-  function handleSearch(e: JQueryEventObject) {
+  function handleSearch(e: JQueryEventObject): void {
     let query = $("input.mvw-search-field").val();
 
     let result = index.search(query);
@@ -23,7 +23,7 @@ module MVW.Search {
     }
   }
 
-  function getParameterByName(name: string) {
+  function getParameterByName(name: string): string {
     let url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
     let regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
@@ -39,7 +39,7 @@ module MVW.Search {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
 
-  export function initialize() {
+  export function initialize(): void {
     $.getJSON("/index.json", data => {
       index = lunr.Index.load(data.index);
       store = data.store;

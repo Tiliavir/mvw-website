@@ -1,8 +1,8 @@
 ﻿module MVW.Gallery {
-  let galleries : any;
-  let pswpElement : any;
+  let galleries: any;
+  let pswpElement: any;
 
-  export function openGallery(e: any) {
+  export function openGallery(e: any): void {
     let items = e.items;
     if (!items) {
       let preview = $(e).find(".preview");
@@ -10,7 +10,7 @@
     }
 
     let options: any = {
-      getThumbBoundsFn() {
+      getThumbBoundsFn(): {w: number, x: number, y: number} {
         let pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
         let rect = e.getBoundingClientRect();
         return { w: rect.width, x: rect.left, y: rect.top + pageYScroll };
@@ -84,7 +84,7 @@
     gallery.init();
   }
 
-  function shufflePreview() {
+  function shufflePreview(): void {
     let previews = $(".preview:visible");
     let e: any = $(previews[Math.floor(Math.random() * previews.length)]);
     let g = e[0].images || (e[0].images = galleries[e.data("year")][e.data("gallery")]
@@ -100,7 +100,7 @@
     setTimeout(() => shufflePreview(), 10000);
   }
 
-  export function initialize() {
+  export function initialize(): void {
     pswpElement = document.querySelectorAll(".pswp")[0];
     $(".mvw-gallery img").hover(e => {
       let $e = $(e.target);
