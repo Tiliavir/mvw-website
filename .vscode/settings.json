@@ -7,21 +7,7 @@
     "**/*.js": {
       "when": "$(basename).ts"
     },
-    "**/*.js.map": true,
-
-    ".bowerrc": true,
-    "*.csproj*": true,
-
-    // folders:
-    "**/*_modules/": true,
-    "typings": true,
-    "**/_book": true,
-
-    "**/temp/": true,
-    "**/tmp": true,
-    "**/build": true,
-    "**/bin": true,
-    "**/obj": true
+    "**/*.js.map": true
   },
   "typescript.tsdk": "./node_modules/typescript/lib",
   "json.schemas": [
