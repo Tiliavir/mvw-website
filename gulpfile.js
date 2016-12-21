@@ -2,6 +2,7 @@
 var fs = require("fs");
 var gulp = require("gulp");
 var moment = require("moment");
+var marked = require("marked");
 var path = require("path");
 var yargs = require("yargs");
 var gulpLoadPlugins = require("gulp-load-plugins");

@@ -2,6 +2,7 @@
 import * as File from "vinyl";
 import * as gulp from "gulp";
 import * as moment from "moment";
+import * as marked from "marked"
 import * as path from "path";
 import * as yargs from "yargs";
 import * as gulpLoadPlugins from "gulp-load-plugins";
