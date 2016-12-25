@@ -10,35 +10,31 @@ extends ../../template.pug
 
 block content
   -
+    var register = require("./assets/pages/data/register.json");
     function groupBy(array , f)
     {
       var groups = {};
-      array.forEach( function( o )
+      array.forEach((o) =>
       {
         var group = f(o); // note(ml): use to sort by groups of properties: JSON.stringify(f(o));
         groups[group] = groups[group] || [];
-        groups[group].push( o );
+        groups[group].push(o);
       });
       return groups;
     }
 
-    var groupedRegisters = groupBy(scope.register, function(person) {
-      return person.register; // note(ml): can also group by array of properties! => change group name
-    });
+    // note(ml): can also group by array of properties! => change group name
+    var groupedRegisters = groupBy(register, (person) => person.register);
 
   table.mvw-register-table.responsive
     tbody
-      - var registerOrder = ["Querflöte", "Oboe", "Klarinette", "Fagott", "Altsaxophon", "Tenorsaxophon", "Baritonsaxophon", "Trompete", "Horn", "Posaune", "Euphonium", "Tuba", "Klavier", "Gitarre", "Schlagzeug"];
-      - for (var i = 0, registerTitle = registerOrder[i]; i < registerOrder.length; i++, registerTitle = registerOrder[i])
-        - var currentRegister = groupedRegisters[registerTitle];
-        if currentRegister
+      each registerTitle in ["Querflöte", "Oboe", "Klarinette", "Fagott", "Altsaxophon", "Tenorsaxophon", "Baritonsaxophon", "Trompete", "Horn", "Posaune", "Euphonium", "Tuba", "Klavier", "Gitarre", "Schlagzeug"]
+        if groupedRegisters[registerTitle]
           tr
             td
-              - var imageUrl = "/img/register/" + registerTitle.toLowerCase().replace("ö", "oe") + "_1.jpg";
-              +image(imageUrl, registerTitle)
+              +image(`/img/register/${registerTitle.toLowerCase().replace("ö", "oe")}_1.jpg`, registerTitle)
             td
-              - var persons = currentRegister.sort(function(a, b) { return a.familyName.localeCompare(b.familyName);});
-              - for (var j = 0, person = persons[j]; j < persons.length; j++, person =  persons [j])
+              each person in groupedRegisters[registerTitle].sort((a, b) => a.familyName.localeCompare(b.familyName))
                 p #{person.name} #{person.familyName}
 
 block pageStyles

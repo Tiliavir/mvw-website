@@ -9,12 +9,15 @@ navigation: "top"
 extends ../template.pug
 
 block content
-  - var years = Object.keys(scope.termine);
-  - for (var i = 0, year = years[i]; i < years.length; i++, year = years[i])
+  -
+    var termine = require("./assets/pages/data/termine.json");
+    var years = Object.keys(termine);
+
+  each year in years
     h2 #{year}
     table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
       tbody
-        - var inYear = scope.termine[year];
+        - var inYear = termine[year];
         - for (var j = 0, termin = inYear[j]; j < inYear.length; j++, termin = inYear[j])
           tr(itemscope itemtype="http://schema.org/Event")
             td

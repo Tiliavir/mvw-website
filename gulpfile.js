@@ -34,29 +34,15 @@ gulp.task("html:writeNavigation", function () {
 gulp.task("html:generatePages", ["html:writeNavigation"], function () {
     var scope = {
         register: require(paths.assets + "pages/data/register.json"),
-        berichte: require(paths.assets + "pages/data/berichte.json"),
-        vorstand: require(paths.assets + "pages/data/vorstand.json"),
-        termine: require(paths.assets + "pages/data/termine.json"),
-        jugendRegister: require(paths.assets + "pages/data/jugend-register.json"),
-        news: require(paths.assets + "pages/data/news.json"),
-        galleries: require(paths.assets + "gallery/galleries.json"),
         siteTitle: "Musikverein Wollbach 1866 e.V.",
         baseUrl: baseUrl,
         numberOfMusicians: 0
     };
     var getNumberOfMusicians = function (register) {
         var distinctNames = {};
-        register.map(function (p) {
-            return p.name + " " + p.familyName;
-        }).forEach(function (p) {
-            distinctNames[p] = true;
-        });
-        var numberOfMusicians = Object.keys(distinctNames).length;
-        if (!numberOfMusicians || numberOfMusicians < 30 || numberOfMusicians > 70) {
-            $.util.log("Unexpected number of musicians calculated:", numberOfMusicians);
-            throw ("Unexpected number of musicians calculated: " + numberOfMusicians);
-        }
-        return numberOfMusicians;
+        register.map(function (p) { return p.name + " " + p.familyName; })
+            .forEach(function (p) { return distinctNames[p] = true; });
+        return Object.keys(distinctNames).length;
     };
     scope.numberOfMusicians = getNumberOfMusicians(scope.register);
     var getScope = function (file) {
@@ -77,9 +63,7 @@ gulp.task("html:generatePages", ["html:writeNavigation"], function () {
         .pipe($.rename(function (path) { path.ext = ".html"; }))
         .pipe($.grayMatter())
         .pipe($.data(getScope))
-        .pipe($.data(function (file) {
-        searchIndex.add(file, file.data);
-    }))
+        .pipe($.data(function (file) { return searchIndex.add(file, file.data); }))
         .pipe($.pug())
         .pipe($.flatten())
         .pipe(gulp.dest(paths.dest));

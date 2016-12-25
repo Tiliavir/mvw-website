@@ -9,7 +9,10 @@ navigation: "top"
 extends ../template.pug
 
 block content
-  - var years = Object.keys(scope.berichte).sort(function(a, b) { return b-a; });
+  -
+    var berichte = require("./assets/pages/data/berichte.json");
+    var years = Object.keys(berichte).sort(function(a, b) { return b - a; });
+
   +renderTabs(years)
 
   .tab-content
@@ -22,7 +25,7 @@ block content
               th Thema
               th Quelle
           tbody
-            - for (j = 0, bericht = scope.berichte[year][j]; j < scope.berichte[year].length; j++, bericht = scope.berichte[year][j])
+            - for (j = 0, bericht = berichte[year][j]; j < berichte[year].length; j++, bericht = berichte[year][j])
               tr
                 td
                   +formatTimespan(bericht.date)

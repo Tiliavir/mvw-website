@@ -7,12 +7,12 @@
     if (start.isSame(end, "d")) {
       dateString = start.format("DD.MM.YYYY");
       if (start.diff(moment().startOf("day")) != 0 && !start.isSame(end)) {
-        dateString += " " + start.format("HH:mm") + " - " + end.format("HH:mm");
+        dateString += ` ${start.format("HH:mm")} - ${end.format("HH:mm")}`;
       }
     } else if (start.clone().add(1, "d").isSame(end, "d")) {
-      dateString = start.format("DD") + " & " + end.format("DD.MM.YYYY");
+      dateString = `${start.format("DD")} & ${end.format("DD.MM.YYYY")}`;
     } else {
-      dateString = start.format("DD.MM.") + " - " + end.format ("DD.MM.YYYY");
+      dateString = `${start.format("DD.MM.")} - ${end.format ("DD.MM.YYYY")}`;
     }
 
   if printSchemaOrgMeta

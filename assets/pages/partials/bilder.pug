@@ -10,22 +10,25 @@ schemaOrg: "ImageGallery"
 extends ../template.pug
 
 block content
-  - var years = Object.keys(scope.galleries).sort(function(a, b) { return b-a; });
+  -
+    var galleries = require("./assets/gallery/galleries.json");
+    var years = Object.keys(galleries).sort(function(a, b) { return b - a; });
+
   +renderTabs(years)
 
   .mvw-gallery-overview.tab-content
-      - var yearTitles = Object.keys(scope.galleries);
-      - for (var i = 0, yearTitle = yearTitles[i], year = scope.galleries[yearTitle]; i < yearTitles.length; i++, yearTitle = yearTitles[i], year = scope.galleries[yearTitle])
-        .tab-pane.fade.row(id=yearTitle class=(i===yearTitles.length-1 ? 'active in' : ''))
-          - var galleryTitles = Object.keys(year);
-          - for (var j = galleryTitles.length - 1, galleryTitle = galleryTitles[j], gallery = year[galleryTitle]; j-- >= 0; galleryTitle = galleryTitles[j], gallery = year[galleryTitle])
-            .col-lg-3.col-md-4.col-sm-6.col-xs-12.mvw-gallery-container
-              .mvw-gallery(onclick="MVW.Gallery.openGallery(this); return false;")
-                - var preview = gallery.filter(function(i) {return i.s.w === 200;})[0] || gallery[0];
-                - var url = "/gallery/" + preview.b + "s/" + preview.f;
-                .content
-                  img.preview(src=url alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
-                  span.caption #{galleryTitle}
+    - var yearTitles = Object.keys(galleries);
+    - for (var i = 0, yearTitle = yearTitles[i], year = galleries[yearTitle]; i < yearTitles.length; i++, yearTitle = yearTitles[i], year = galleries[yearTitle])
+      .tab-pane.fade.row(id=yearTitle class=(i === yearTitles.length-1 ? 'active in' : ''))
+        - var galleryTitles = Object.keys(year);
+        - for (var j = galleryTitles.length - 1, galleryTitle = galleryTitles[j], gallery = year[galleryTitle]; j-- >= 0; galleryTitle = galleryTitles[j], gallery = year[galleryTitle])
+          .col-lg-3.col-md-4.col-sm-6.col-xs-12.mvw-gallery-container
+            .mvw-gallery(onclick="MVW.Gallery.openGallery(this); return false;")
+              - var preview = gallery.filter(function(i) {return i.s.w === 200;})[0] || gallery[0];
+              - var url = "/gallery/" + preview.b + "s/" + preview.f;
+              .content
+                img.preview(src=url alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
+                span.caption #{galleryTitle}
 
   .pswp(tabindex='-1', role='dialog', aria-hidden='true')
     //-

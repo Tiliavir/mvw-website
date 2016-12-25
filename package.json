@@ -35,6 +35,7 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-data": "^1.2.1",
+    "gulp-sequence": "^0.4.6",
     "gulp-flatten": "^0.3.1",
     "gulp-gray-matter": "^3.0.1",
     "gulp-htmlmin": "^3.0.0",
@@ -43,9 +44,8 @@
     "gulp-pug": "^3.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
-    "gulp-sequence": "^0.4.6",
     "gulp-sitemap": "^4.2.0",
-    "gulp-util": "^3.0.7",
+
     "jquery": "^3.1.1",
     "jstransformer-marked": "^1.0.2",
     "marked": "^0.3.6",

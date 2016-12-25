@@ -7,6 +7,7 @@
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitThis": true,
-    "allowJs": false
+    "allowJs": false,
+    "alwaysStrict": true
   }
 }

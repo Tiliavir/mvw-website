@@ -44,13 +44,6 @@ gulp.task("html:writeNavigation", () => {
 gulp.task("html:generatePages", ["html:writeNavigation"], () => {
   const scope = {
     register: require(paths.assets + "pages/data/register.json"),
-    berichte: require(paths.assets + "pages/data/berichte.json"),
-    vorstand: require(paths.assets + "pages/data/vorstand.json"),
-    termine: require(paths.assets + "pages/data/termine.json"),
-
-    jugendRegister: require(paths.assets + "pages/data/jugend-register.json"),
-    news: require(paths.assets + "pages/data/news.json"),
-    galleries: require(paths.assets + "gallery/galleries.json"),
 
     siteTitle: "Musikverein Wollbach 1866 e.V.",
     baseUrl: baseUrl,
@@ -59,18 +52,9 @@ gulp.task("html:generatePages", ["html:writeNavigation"], () => {
 
   let getNumberOfMusicians = (register: IPerson[]) => {
     let distinctNames: {[key: string]: boolean} = {};
-    register.map((p) => {
-        return p.name + " " + p.familyName;
-      }).forEach((p) => {
-        distinctNames[p] = true;
-    });
-    var numberOfMusicians = Object.keys(distinctNames).length;
-    if (!numberOfMusicians || numberOfMusicians < 30 || numberOfMusicians > 70) {
-      $.util.log("Unexpected number of musicians calculated:", numberOfMusicians);
-      throw ("Unexpected number of musicians calculated: " + numberOfMusicians);
-    }
-
-    return numberOfMusicians;
+    register.map((p) => p.name + " " + p.familyName)
+            .forEach((p) => distinctNames[p] = true);
+    return Object.keys(distinctNames).length;
   };
 
   scope.numberOfMusicians = getNumberOfMusicians(scope.register);
@@ -96,9 +80,7 @@ gulp.task("html:generatePages", ["html:writeNavigation"], () => {
               .pipe($.rename((path: path.ParsedPath): void => { path.ext = ".html"; }))
               .pipe($.grayMatter())
               .pipe($.data(getScope))
-              .pipe($.data((file: File) => {
-                searchIndex.add(file, (<any> file).data);
-              }))
+              .pipe($.data((file: File): void => searchIndex.add(file, (<any> file).data)))
               .pipe($.pug())
               .pipe($.flatten())
               .pipe(gulp.dest(paths.dest))
