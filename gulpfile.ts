@@ -15,9 +15,8 @@ let navigation: Navigation;
 let searchIndex: SearchIndex = new SearchIndex();
 let $: any = gulpLoadPlugins();
 
-const paths: {dest: string, assets: string} = {
+const paths: {dest: string} = {
   dest: "./build/",
-  assets: "./assets/"
 };
 
 declare interface IPerson {
@@ -35,15 +34,15 @@ gulp.task("sitemap", () => {
 });
 
 gulp.task("html:writeNavigation", () => {
-  navigation = new Navigation(require(paths.assets + "pages/site-structure.json"));
-  fs.writeFileSync(paths.assets + "pages/siteOverviewList.pug", navigation.writeNavigation("allplain"));
-  fs.writeFileSync(paths.assets + "pages/topnavigation.pug", navigation.writeNavigation("top"));
-  fs.writeFileSync(paths.assets + "pages/footernavigation.pug", navigation.writeNavigation("footer"));
+  navigation = new Navigation(require("./pages/site-structure.json"));
+  fs.writeFileSync("./pages/siteOverviewList.pug", navigation.writeNavigation("allplain"));
+  fs.writeFileSync("./pages/topnavigation.pug", navigation.writeNavigation("top"));
+  fs.writeFileSync("./pages/footernavigation.pug", navigation.writeNavigation("footer"));
 });
 
 gulp.task("html:generatePages", ["html:writeNavigation"], () => {
   const scope = {
-    register: require(paths.assets + "pages/data/register.json"),
+    register: require("./pages/data/register.json"),
 
     siteTitle: "Musikverein Wollbach 1866 e.V.",
     baseUrl: baseUrl,
@@ -75,7 +74,7 @@ gulp.task("html:generatePages", ["html:writeNavigation"], () => {
     };
   };
 
-  return gulp.src(paths.assets + "pages/partials/**/*.pug")
+  return gulp.src("./pages/partials/**/*.pug")
               .pipe($.replace(/^(\s*#+) /gm, "$1# "))
               .pipe($.rename((path: path.ParsedPath): void => { path.ext = ".html"; }))
               .pipe($.grayMatter())

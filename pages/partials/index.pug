@@ -35,20 +35,8 @@ block content
       span.icon-next
 
   .row
-    .col-sm-6.col-xs-12.tile
-      a.image-container(href="blog_2016-ballonwettbewerb.html" style="background-image:url(./img/events/ballon.jpg);")
-        .blur
-          h3.title
-            | Ballon Wettbewerb am Herbstfest
-          .text
-            | Die Ergebnisse des Ballon Wettbewerbes am Herbstfest...
-    .col-sm-6.col-xs-12.tile
-      a.image-container(href="mitgliedschaft.html" style="background-image:url(./img/slider/alle_4.jpg);")
-        .blur
-          h3.title
-            | Mitglied werden
-          .text
-            | Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden.
+    +tile("blog_2016-ballonwettbewerb", "./img/events/ballon.jpg", "Ballon Wettbewerb am Herbstfest", "Die Ergebnisse des Ballon Wettbewerbes am Herbstfest...")
+    +tile("mitgliedschaft", "./img/slider/alle_4.jpg", "Mitglied werden", "Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden.")
 
 block pageStyles
   include ../styles/index.css

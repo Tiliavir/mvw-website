@@ -16,26 +16,26 @@
           }
         }
       }
+    }
 
-      th {
-        &:nth-child(2) {
-          display: none;
-        }
+    th {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+    td {
+      &:nth-child(2) {
+        border-top-width: 1px;
+        border-width: 0;
+        float: left;
+        width: 100%;
       }
 
-      td {
-        &:nth-child(2) {
-          border-top-width: 1px;
-          border-width: 0;
-          float: left;
-          width: 100%;
-        }
-
-        &:nth-child(3) {
-          border: 0 solid transparent;
-          clear: left;
-          float: left;
-        }
+      &:nth-child(3) {
+        border: 0 solid transparent;
+        clear: left;
+        float: left;
       }
     }
   }

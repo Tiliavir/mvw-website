@@ -9,5 +9,9 @@
     "noImplicitThis": true,
     "allowJs": false,
     "alwaysStrict": true
-  }
+  },
+  "include": [
+    "pages/scripts/**/*.ts",
+    "gulpfile.ts"
+  ]
 }

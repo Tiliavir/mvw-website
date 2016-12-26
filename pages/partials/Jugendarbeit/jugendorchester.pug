@@ -25,11 +25,9 @@ block content
     Musikern:
 
   -
-    function groupBy(array , f)
-    {
+    function groupBy(array , f) {
       var groups = {};
-      array.forEach((o) =>
-      {
+      array.forEach((o) => {
         var group = f(o); // note(ml): use to sort by groups of properties: JSON.stringify(f(o));
         groups[group] = groups[group] || [];
         groups[group].push(o);
@@ -37,7 +35,8 @@ block content
       return groups;
     }
 
-    var jugendRegister = require("./assets/pages/data/jugend-register.json");
+    var jugendRegister = require("./pages/data/jugend-register.json");
+
     // note(ml): can also group by array of properties! => change group name
     var groupedRegisters = groupBy(jugendRegister, (person) => person.register);
 

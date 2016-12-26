@@ -2,11 +2,11 @@
 
 *_modules/
 
-/assets/**/scripts/*.js
-/assets/**/styles/*.css
-/assets/pages/footernavigation.pug
-/assets/pages/siteOverviewList.pug
-/assets/pages/topnavigation.pug
+/pages/scripts/**/*.js
+/pages/styles/**/*.css
+/pages/footernavigation.pug
+/pages/siteOverviewList.pug
+/pages/topnavigation.pug
 
 ### Source: https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 ## Ignore Visual Studio temporary files, build results, and

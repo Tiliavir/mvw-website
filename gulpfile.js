@@ -14,8 +14,7 @@ var navigation;
 var searchIndex = new mvw_search_index_1.SearchIndex();
 var $ = gulpLoadPlugins();
 var paths = {
-    dest: "./build/",
-    assets: "./assets/"
+    dest: "./build/"
 };
 gulp.task("sitemap", function () {
     return gulp.src([paths.dest + "**/*.html", "!**/401.html", "!**/404.html"])
@@ -26,14 +25,14 @@ gulp.task("sitemap", function () {
         .pipe(gulp.dest(paths.dest));
 });
 gulp.task("html:writeNavigation", function () {
-    navigation = new mvw_navigation_1.Navigation(require(paths.assets + "pages/site-structure.json"));
-    fs.writeFileSync(paths.assets + "pages/siteOverviewList.pug", navigation.writeNavigation("allplain"));
-    fs.writeFileSync(paths.assets + "pages/topnavigation.pug", navigation.writeNavigation("top"));
-    fs.writeFileSync(paths.assets + "pages/footernavigation.pug", navigation.writeNavigation("footer"));
+    navigation = new mvw_navigation_1.Navigation(require("./pages/site-structure.json"));
+    fs.writeFileSync("./pages/siteOverviewList.pug", navigation.writeNavigation("allplain"));
+    fs.writeFileSync("./pages/topnavigation.pug", navigation.writeNavigation("top"));
+    fs.writeFileSync("./pages/footernavigation.pug", navigation.writeNavigation("footer"));
 });
 gulp.task("html:generatePages", ["html:writeNavigation"], function () {
     var scope = {
-        register: require(paths.assets + "pages/data/register.json"),
+        register: require("./pages/data/register.json"),
         siteTitle: "Musikverein Wollbach 1866 e.V.",
         baseUrl: baseUrl,
         numberOfMusicians: 0
@@ -58,7 +57,7 @@ gulp.task("html:generatePages", ["html:writeNavigation"], function () {
             breadcrumb: filename === "index" ? null : navigation.getBreadcrumb(filename, true)
         };
     };
-    return gulp.src(paths.assets + "pages/partials/**/*.pug")
+    return gulp.src("./pages/partials/**/*.pug")
         .pipe($.replace(/^(\s*#+) /gm, "$1# "))
         .pipe($.rename(function (path) { path.ext = ".html"; }))
         .pipe($.grayMatter())

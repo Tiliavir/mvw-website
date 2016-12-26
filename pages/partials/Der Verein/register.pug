@@ -10,12 +10,11 @@ extends ../../template.pug
 
 block content
   -
-    var register = require("./assets/pages/data/register.json");
+    var register = require("./pages/data/register.json");
     function groupBy(array , f)
     {
       var groups = {};
-      array.forEach((o) =>
-      {
+      array.forEach((o) => {
         var group = f(o); // note(ml): use to sort by groups of properties: JSON.stringify(f(o));
         groups[group] = groups[group] || [];
         groups[group].push(o);

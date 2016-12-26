@@ -9,7 +9,7 @@ navigation: "top"
 extends ../../template.pug
 
 block content
-  - var vorstand = require("./assets/pages/data/vorstand.json");
+  - var vorstand = require("./pages/data/vorstand.json");
   table.mvw-managing-committee-table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
     thead
       tr
@@ -27,7 +27,7 @@ block content
           td
             each person in role.persons
               | #{person}
-              br/
+              br
           td
             if (role.address)
               | #{role.address}
@@ -52,19 +52,20 @@ block content
     Engagement. Was würde ich _ohne_ euch alle tun. Danke!"
 
     ## ... über den Verein:
+
   -
-    var text = "\"Mein großer Dank gilt dem Musikverein-Wollbach mit seinen "
-                + scope.numberOfMusicians
-                + " aktiven Musiker/innen im Durchschnittsalter von 30 \
-                Jahren. Nur mit Ihnen allen ist es möglich gute und anspruchsvolle Musik zu \
-                machen. Aber auch in Traurigkeit zusammenzuhalten und trotzdem Feste zu \
-                reißen, die uns allen in unvergesslicher Erinnerungen bleiben.\"";
+    var text = `"Mein großer Dank gilt dem Musikverein Wollbach mit seinen ${scope.numberOfMusicians}
+                aktiven Musiker/innen im Durchschnittsalter von 30 Jahren. Nur
+                mit Ihnen allen ist es möglich gute und anspruchsvolle Musik zu
+                machen. Aber auch in Traurigkeit zusammenzuhalten und trotzdem
+                Feste zu reißen, die uns allen in unvergesslicher Erinnerungen
+                bleiben."`;
   != marked(text)
 
   :marked
     ## ... über den Dirigenten:
     "Natürlch ist alles nur möglich, mit unserem hoch motivierten Dirigenten -
-     ein Glücksfall für den Musikverein-Wollbach. Mit seiner charmanten Art
+    ein Glücksfall für den Musikverein-Wollbach. Mit seiner charmanten Art
     motiviert er die Musiker und begeistert bei Konzerten das Publikum. Sein
     Herz hängt am Musikverein, den er mit phantastischer Musik, Ideenreichtum
     und unglaublich viel Arbeit und Zeit bereichert. Und dies ist, meiner

@@ -10,14 +10,14 @@ extends ../template.pug
 
 block content
   -
-    var berichte = require("./assets/pages/data/berichte.json");
+    var berichte = require("./pages/data/berichte.json");
     var years = Object.keys(berichte).sort((a, b) => b - a );
 
   +renderTabs(years)
 
   .tab-content
     each year, index in years
-      .tab-pane.fade(id=year class=(index === 0 ? 'active in' : ''))
+      .tab-pane.fade(id=year class=(index === 0 ? "active in" : ""))
         table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
           thead
             tr

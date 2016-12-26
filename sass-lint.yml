@@ -2,8 +2,7 @@ options:
   formatter: stylish
 files:
   include:
-    - 'styles/**/*.s+(a|c)ss'
-    - 'assets/pages/**/*.s+(a|c)ss'
+    - 'pages/styles/**/*.scss'
 rules:
   # Extends
   extends-before-mixins: 1

@@ -9,39 +9,42 @@
     },
     "**/*.js.map": true,
     "build": true,
-    "node_modules": true
+    "node_modules": true,
+    "*/footernavigation.pug": true,
+    "*/siteOverviewList.pug": true,
+    "*/topnavigation.pug": true
   },
   "typescript.tsdk": "./node_modules/typescript/lib",
   "json.schemas": [
     {
         "fileMatch": [
-            "/assets/pages/data/berichte.json"
+            "/pages/data/berichte.json"
         ],
-        "url": "./assets/pages/data/schema/berichte-schema.json"
+        "url": "./pages/data/schema/berichte-schema.json"
     },
     {
         "fileMatch": [
-            "/assets/pages/data/*register.json"
+            "/pages/data/*register.json"
         ],
-        "url": "./assets/pages/data/schema/register-schema.json"
+        "url": "./pages/data/schema/register-schema.json"
     },
     {
         "fileMatch": [
-            "/assets/pages/data/termine.json"
+            "/pages/data/termine.json"
         ],
-        "url": "./assets/pages/data/schema/termine-schema.json"
+        "url": "./pages/data/schema/termine-schema.json"
     },
     {
         "fileMatch": [
-            "/assets/pages/data/news.json"
+            "/pages/data/news.json"
         ],
-        "url": "./assets/pages/data/schema/news-schema.json"
+        "url": "./pages/data/schema/news-schema.json"
     },
     {
         "fileMatch": [
-            "/assets/pages/data/vorstand.json"
+            "/pages/data/vorstand.json"
         ],
-        "url": "./assets/pages/data/schema/vorstand-schema.json"
+        "url": "./pages/data/schema/vorstand-schema.json"
     }
   ]
 }

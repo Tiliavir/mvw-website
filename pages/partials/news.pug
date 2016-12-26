@@ -10,14 +10,14 @@ extends ../template.pug
 
 block content
   -
-    var news = require("./assets/pages/data/news.json");
+    var news = require("./pages/data/news.json");
     var years = Object.keys(news).sort((a, b) => b - a);
 
   +renderTabs(years)
 
   .tab-content
     each year, index in years
-      .tab-pane.fade(id=year class=(index === 0 ? 'active in' : ''))
+      .tab-pane.fade(id=year class=(index === 0 ? "active in" : ""))
         each item in news[year]
           h3 #{item.title}
           if item.image

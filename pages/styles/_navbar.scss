@@ -10,7 +10,7 @@ $logo-fill-color-inverse: #eee;
   }
 }
 
-.navbar-default{
+.navbar-default {
   .navbar-brand {
     .mvw-logo {
       fill: $logo-fill-color-default;
@@ -19,5 +19,5 @@ $logo-fill-color-inverse: #eee;
 }
 
 .navbar {
-  transition: background-color ease 0.4s;
+  transition: background-color ease .4s;
 }

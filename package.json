@@ -1,6 +1,6 @@
 {
   "name": "mvw-website",
-  "version": "1.0.16",
+  "version": "17.0.1",
   "private": true,
   "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
   "author": "Musikverein Wollbach 1866 e.V.",
@@ -18,18 +18,18 @@
     "@types/grecaptcha": "^2.0.30",
     "@types/lunr": "^0.5.28",
     "@types/marked": "^0.0.28",
-    "@types/node": "^6.0.52",
+    "@types/node": "^6.0.53",
     "@types/photoswipe": "^4.0.27",
     "@types/vinyl": "^2.0.0",
-    "@types/yargs": "^6.3.3",
+    "@types/yargs": "^6.5.0",
 
-    "autoprefixer": "^6.5.4",
+    "autoprefixer": "^6.6.0",
     "copyfiles": "^1.0.0",
-    "node-sass": "^4.1.0",
+    "node-sass": "^4.1.1",
     "postcss-cli": "^2.6.0",
     "pug-lint": "^2.3.0",
     "sass-lint": "^1.10.2",
-    "tslint": "^4.1.1",
+    "tslint": "^4.2.0",
     "typescript": "^2.1.4"
   },
   "dependencies": {
@@ -56,15 +56,13 @@
     "pug": "^2.0.0-beta6"
   },
   "scripts": {
-    "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"assets/**/*.ts\"",
-    "clean": "rimraf ./build/ ./{assets,styles}/**/*.{css,js}",
+    "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"pages/scripts/**/*.ts\"",
+    "clean": "rimraf ./build/ ./pages/{styles,scripts}/**/*.{css,js}",
     "precompile": "npm run clean && mkdir build",
-    "compile:sass": "node-sass ./assets/styles/ -o ./assets/styles && node-sass ./assets/pages/styles/ -o ./assets/pages/styles && postcss --use autoprefixer ./assets/**/*.css -r",
-    "compile:ts": "tsc",
-    "compile": "npm run compile:ts && npm run compile:sass && gulp",
+    "compile:sass": "node-sass ./pages/styles/ -o ./pages/styles && postcss --use autoprefixer ./pages/styles/**/*.css -r",
+    "compile": "tsc && npm run compile:sass && gulp",
     "precopy": "copyfiles -u 3 ./src/bootstrap/js/bootstrap.min.js %npm_package_config_pathToProd%/js/ && copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js %npm_package_config_pathToProd%/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} %npm_package_config_pathToProd%/",
     "copy": "copyup ./build/**/* %npm_package_config_pathToProd%/",
-    "debug": "npm run compile && npm run copy",
     "prerelease": "npm run lint",
     "release": "npm run compile -- release --release=true && npm run copy"
   }

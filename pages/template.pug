@@ -1,4 +1,5 @@
 ﻿include ./mixins/image.pug
+include ./mixins/tile.pug
 include ./mixins/youtube.pug
 include ./mixins/formatTimespan.pug
 include ./mixins/renderTabs.pug
@@ -30,14 +31,25 @@ html(lang="de")
     meta(property="fb:admins" content="100000073380067")/
 
     style
-      include ../../src/bootstrap/css/bootstrap.min.css
-      include ../styles/app.css
+      include ../src/bootstrap/css/bootstrap.min.css
+      include ./styles/app.css
       block pageStyles
 
     if hasAmp
-      link(rel="amphtml" href=scope.baseUrl + "amp/" + referencedFile + ".html")
+      link(rel="amphtml" href=`${scope.baseUrl}amp/${referencedFile}.html`)
 
-    include ./favicon.pug
+    link(rel="icon", type="image/png", href="/favicon-32x32.png", sizes="32x32")
+    link(rel="icon", type="image/png", href="/favicon-194x194.png", sizes="194x194")
+    link(rel="icon", type="image/png", href="/favicon-96x96.png", sizes="96x96")
+    link(rel="icon", type="image/png", href="/android-chrome-192x192.png", sizes="192x192")
+    link(rel="icon", type="image/png", href="/favicon-16x16.png", sizes="16x16")
+    link(rel="manifest", href="/manifest.json")
+    link(rel="mask-icon", href="/safari-pinned-tab.svg")
+    meta(name="apple-mobile-web-app-title", content="MV Wollbach")
+    meta(name="application-name", content="MV Wollbach")
+    meta(name="msapplication-TileColor", content="#4a4a4a")
+    meta(name="msapplication-TileImage", content="/mstile-144x144.png")
+    meta(name="theme-color", content="#4a4a4a")
 
   body(itemscope itemtype="http://schema.org/" + (schemaOrg || "WebPage"))
     nav.mvw-header.navbar.navbar-inverse.navbar-fixed-top
@@ -76,8 +88,16 @@ html(lang="de")
     script(src="/js/jquery.min.js")
     script(src="/js/bootstrap.min.js")
     script
-      include ../scripts/app.js
+      include ./scripts/app.js
       block pageScripts
 
     if isRelease
-      include ./ga.pug
+      script(type='text/javascript').
+        (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-54136927-1', 'auto');
+        ga('send', 'pageview');
