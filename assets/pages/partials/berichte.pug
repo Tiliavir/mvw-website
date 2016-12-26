@@ -11,13 +11,13 @@ extends ../template.pug
 block content
   -
     var berichte = require("./assets/pages/data/berichte.json");
-    var years = Object.keys(berichte).sort(function(a, b) { return b - a; });
+    var years = Object.keys(berichte).sort((a, b) => b - a );
 
   +renderTabs(years)
 
   .tab-content
-    - for (var i = 0, year = years[i]; i < years.length; i++, year = years[i])
-      .tab-pane.fade(id=year class=(i === 0 ? 'active in' : ''))
+    each year, index in years
+      .tab-pane.fade(id=year class=(index === 0 ? 'active in' : ''))
         table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
           thead
             tr
@@ -25,7 +25,7 @@ block content
               th Thema
               th Quelle
           tbody
-            - for (j = 0, bericht = berichte[year][j]; j < berichte[year].length; j++, bericht = berichte[year][j])
+            each bericht in berichte[year]
               tr
                 td
                   +formatTimespan(bericht.date)

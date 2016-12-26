@@ -11,7 +11,7 @@ extends ../template.pug
 block content
   -
     var news = require("./assets/pages/data/news.json");
-    var years = Object.keys(news).sort(function(a, b) { return b - a; });
+    var years = Object.keys(news).sort((a, b) => b - a);
 
   +renderTabs(years)
 

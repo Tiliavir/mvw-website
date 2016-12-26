@@ -9,16 +9,13 @@ navigation: "top"
 extends ../template.pug
 
 block content
-  -
-    var termine = require("./assets/pages/data/termine.json");
-    var years = Object.keys(termine);
+  - var termine = require("./assets/pages/data/termine.json");
 
-  each year in years
+  each year in Object.keys(termine)
     h2 #{year}
     table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
       tbody
-        - var inYear = termine[year];
-        - for (var j = 0, termin = inYear[j]; j < inYear.length; j++, termin = inYear[j])
+        each termin in termine[year]
           tr(itemscope itemtype="http://schema.org/Event")
             td
               +formatTimespan(termin.starttime, termin.endtime, true)
