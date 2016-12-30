@@ -50,19 +50,22 @@
     "jstransformer-marked": "^1.0.2",
     "marked": "^0.3.6",
     "moment": "^2.17.1",
-    "mvw-navigation": "^1.0.1",
-    "mvw-search-index": "^1.0.4",
+    "mvw-navigation": "^1.0.2",
+    "mvw-search-index": "^1.0.5",
     "photoswipe": "^4.1.1",
     "pug": "^2.0.0-beta6"
   },
   "scripts": {
     "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"pages/scripts/**/*.ts\"",
     "clean": "rimraf ./build/ ./pages/{styles,scripts}/**/*.{css,js}",
+
     "precompile": "npm run clean && mkdir build",
     "compile:sass": "node-sass ./pages/styles/ -o ./pages/styles && postcss --use autoprefixer ./pages/styles/**/*.css -r",
     "compile": "tsc && npm run compile:sass && gulp",
+
     "precopy": "copyfiles -u 3 ./src/bootstrap/js/bootstrap.min.js %npm_package_config_pathToProd%/js/ && copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js %npm_package_config_pathToProd%/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} %npm_package_config_pathToProd%/",
     "copy": "copyup ./build/**/* %npm_package_config_pathToProd%/",
+
     "prerelease": "npm run lint",
     "release": "npm run compile -- release --release=true && npm run copy"
   }
