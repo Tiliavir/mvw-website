@@ -105,6 +105,11 @@
   {
     "children": [
       {
+        "referencedFile": "blog_2017-jahreskonzert",
+        "navigation": "none",
+        "title": "Jahreskonzert 2017"
+      },
+      {
         "referencedFile": "blog_2016-ballonwettbewerb",
         "navigation": "none",
         "title": "Ergebnisse des Ballonwettbewerbes"
