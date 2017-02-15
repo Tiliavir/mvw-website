@@ -17,7 +17,9 @@ var paths = {
     dest: "./build/"
 };
 gulp.task("sitemap", function () {
-    return gulp.src([paths.dest + "**/*.html", "!**/401.html", "!**/404.html"])
+    return gulp.src([paths.dest + "**/*.html", "!**/401.html"], {
+        read: false
+    })
         .pipe($.sitemap({
         siteUrl: baseUrl,
         changefreq: "monthly"
@@ -57,6 +59,15 @@ gulp.task("html:generatePages", ["html:writeNavigation"], function () {
             breadcrumb: filename === "index" ? null : navigation.getBreadcrumb(filename, true)
         };
     };
+    var hasAmp = function (file) { return (file.data.isAmp = file.data.hasAmp); };
+    gulp.src("./pages/partials/**/*.pug")
+        .pipe($.replace(/^(\s*#+) /gm, "$1# "))
+        .pipe($.rename(function (path) { path.ext = ".html"; }))
+        .pipe($.grayMatter())
+        .pipe($.data(getScope))
+        .pipe($["if"](hasAmp, $.pug()))
+        .pipe($.flatten())
+        .pipe($["if"](hasAmp, gulp.dest(paths.dest + "amp/")));
     return gulp.src("./pages/partials/**/*.pug")
         .pipe($.replace(/^(\s*#+) /gm, "$1# "))
         .pipe($.rename(function (path) { path.ext = ".html"; }))

@@ -1,6 +1,6 @@
 {
   "name": "mvw-website",
-  "version": "17.1.0",
+  "version": "17.2.0",
   "private": true,
   "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
   "author": "Musikverein Wollbach 1866 e.V.",
@@ -18,18 +18,18 @@
     "@types/grecaptcha": "^2.0.31",
     "@types/lunr": "^0.5.28",
     "@types/marked": "^0.0.28",
-    "@types/node": "^6.0.58",
+    "@types/node": "^7.0.5",
     "@types/photoswipe": "^4.0.27",
     "@types/vinyl": "^2.0.0",
-    "@types/yargs": "^6.5.0",
+    "@types/yargs": "^6.6.0",
 
-    "autoprefixer": "^6.6.1",
-    "copyfiles": "^1.0.0",
-    "node-sass": "^4.1.1",
+    "autoprefixer": "^6.7.2",
+    "copyfiles": "^1.2.0",
+    "node-sass": "^4.5.0",
     "postcss-cli": "^2.6.0",
     "sass-lint": "^1.10.2",
-    "tslint": "^4.3.1",
-    "typescript": "^2.1.4"
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.6"
   },
   "dependencies": {
     "gulp": "^3.9.1",
@@ -39,7 +39,7 @@
     "gulp-gray-matter": "^3.0.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.2",
-    "gulp-load-plugins": "^1.4.0",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-pug": "^3.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
@@ -49,10 +49,10 @@
     "jstransformer-marked": "^1.0.2",
     "marked": "^0.3.6",
     "moment": "^2.17.1",
-    "mvw-navigation": "^1.0.3",
-    "mvw-search-index": "^1.0.5",
+    "mvw-navigation": "^1.0.4",
+    "mvw-search-index": "^1.0.6",
     "photoswipe": "^4.1.1",
-    "pug": "^2.0.0-beta6"
+    "pug": "^2.0.0-beta11"
   },
   "scripts": {
     "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"pages/scripts/**/*.ts\"",

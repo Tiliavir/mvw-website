@@ -1,7 +1,36 @@
 ﻿{
+  "2017": [
+    {
+      "title": "Der Musikverein Wollbach absolvierte so viele Auftritte wie nie",
+      "date": "2017-01-30",
+      "hasDescription": true,
+      "hasPicture": true,
+      "srcTitle": "BZ",
+      "srcUrl": "http://www.badische-zeitung.de",
+      "url": "http://www.badische-zeitung.de/kandern/der-musikverein-wollbach-absolvierte-so-viele-auftritte-wie-nie--133450707.html"
+    },
+    {
+      "title": "Große Anstrengungen, viele Erfolge",
+      "date": "2017-02-11T00:37:00.000Z",
+      "hasDescription": true,
+      "hasPicture": true,
+      "srcTitle": "VHJ",
+      "srcUrl": "http://www.verlagshaus-jaumann.de",
+      "url": "http://www.verlagshaus-jaumann.de/inhalt.kandern-grosse-anstrengungen-viele-erfolge.71b03080-4e28-4c48-b96c-2c76767cbbc8.html"
+    },
+    {
+      "date": "2017-01-30",
+      "hasDescription": true,
+      "hasPicture": true,
+      "url": "http://www.badische-zeitung.de/kandern/interpretationsvermoegen-auf-oberstufenniveau",
+      "title": "Interpretationsvermoegen auf Oberstufenniveau",
+      "srcTitle": "BZ",
+      "srcUrl": "http://www.badische-zeitung.de"
+    }
+  ],
   "2016": [
     {
-      "date": "2016-12-09T00:00:00.000Z",
+      "date": "2016-12-09",
       "hasDescription": true,
       "hasPicture": true,
       "srcTitle": "BZ",

@@ -25,12 +25,14 @@ declare interface IPerson {
 }
 
 gulp.task("sitemap", () => {
-    return gulp.src([paths.dest + "**/*.html", "!**/401.html", "!**/404.html"])
-    .pipe($.sitemap({
-      siteUrl: baseUrl,
-      changefreq: "monthly"
-    }))
-    .pipe(gulp.dest(paths.dest));
+    return gulp.src([paths.dest + "**/*.html", "!**/401.html"], {
+                  read: false
+                })
+               .pipe($.sitemap({
+                 siteUrl: baseUrl,
+                 changefreq: "monthly"
+               }))
+               .pipe(gulp.dest(paths.dest));
 });
 
 gulp.task("html:writeNavigation", () => {
@@ -74,25 +76,27 @@ gulp.task("html:generatePages", ["html:writeNavigation"], () => {
     };
   };
 
+  var hasAmp = (file: File) => ((<any> file).data.isAmp = (<any> file).data.hasAmp);
+
+  gulp.src("./pages/partials/**/*.pug")
+              .pipe($.replace(/^(\s*#+) /gm, "$1# "))
+              .pipe($.rename((path: path.ParsedPath): void => { path.ext = ".html"; }))
+              .pipe($.grayMatter())
+              .pipe($.data(getScope))
+              .pipe($.if(hasAmp, $.pug()))
+              .pipe($.flatten())
+              .pipe($.if(hasAmp, gulp.dest(paths.dest + "amp/")));
+
   return gulp.src("./pages/partials/**/*.pug")
               .pipe($.replace(/^(\s*#+) /gm, "$1# "))
               .pipe($.rename((path: path.ParsedPath): void => { path.ext = ".html"; }))
               .pipe($.grayMatter())
               .pipe($.data(getScope))
               .pipe($.data((file: File): void => searchIndex.add(file, (<any> file).data)))
+
               .pipe($.pug())
               .pipe($.flatten())
-              .pipe(gulp.dest(paths.dest))
-/*
-              // https://github.com/pugjs/pug/issues/2367
-              .pipe($.if(file.data.hasAmp, $.data(function(file) {
-                file.data.isAmp = true;
-                return file.data
-              })))
-              .pipe($.if(file.data.hasAmp, $.pug()))
-              .pipe($.if(file.data.hasAmp, gulp.dest(paths.dest + "amp/")))
-*/
-  ;
+              .pipe(gulp.dest(paths.dest));
 });
 
 gulp.task("html:minify", () => {

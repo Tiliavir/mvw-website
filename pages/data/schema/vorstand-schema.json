@@ -1,11 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Vorstandschaft",
+
   "type": "array",
+
   "items": {
     "type": "object",
     "properties": {
       "image": {
-        "type": "string"
+        "type": "string",
+        "format": "uri"
       },
       "persons": {
         "type": "array",

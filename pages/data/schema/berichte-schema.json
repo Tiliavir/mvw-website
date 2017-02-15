@@ -1,8 +1,9 @@
 ﻿{
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "JSON Schema for my JSON file format",
+  "title": "Berichte",
 
   "type": "object",
+
   "additionalProperties": {
     "type": "array",
     "items": {
@@ -15,7 +16,8 @@
           "type": "string"
         },
         "url": {
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         },
         "hasPicture": {
           "type": "boolean",
@@ -29,7 +31,8 @@
           "type": "string"
         },
         "srcUrl": {
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         }
       },
       "additionalProperties": false,

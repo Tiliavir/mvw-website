@@ -75,9 +75,9 @@
         item.title = item.t;
       }
 
-      // it doesn't really matter what will you do here, 
+      // it doesn't really matter what will you do here,
       // as long as item.src, item.w and item.h have valid values.
-      // 
+      //
       // just avoid http requests in this listener, as it fires quite often
     });
 

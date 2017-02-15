@@ -2,35 +2,28 @@
   "2017": [
     {
       "location": {
-        "name": "Kandertalhalle",
+        "name": "Buchhole beim Rebhüsli / Baselblick",
         "address": "Wollbach"
       },
-      "starttime": "2017-01-06T19:00:00Z",
-      "title": "Neujahrsempfang"
+      "description": "Bei Einbruch der Dunkelheit wird wieder das große Feuer entzündet. Für euer Wohl ist mit Grillwürsten, Glühwein, Punsch, sonstigen Getränken, sowie Kaffee und Kuchen wieder bestens gesorgt.<br/>Ebenfalls ist für Holz an den Feuerstellen gesorgt und die Scheibenböcke sind gestellt.",
+      "starttime": "2017-03-05",
+      "title": "Fastnachtsfeuer"
     },
     {
       "location": {
-        "name": "Kandertalhalle",
-        "address": "Wollbach"
-      },
-      "endtime": "2017-01-28T00:00:00Z",
-      "starttime": "2017-01-27T00:00:00Z",
-      "title": "Jahreskonzert"
-    },
-    {
-      "location": {
-        "name": "Kandertalhalle",
-        "address": "Wollbach"
-      },
-      "starttime": "2017-02-09T00:00:00Z",
-      "title": "Generalversammlung"
-    },
-    {
-      "location": {
-        "address": "Hüningen"
+        "name": "Le Triangle",
+        "address": "3 rue de Saint-Louis, Huningue"
       },
       "starttime": "2017-04-02T00:00:00Z",
-      "title": "Konzert mit der MG Hüningen"
+      "title": "Doppelkonzert mit der Stadtmusik Hüningen"
+    },
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2017-05-14T00:00:00Z",
+      "title": "Muttertagskonzert des Vorstufen- und Jugendorchesters"
     },
     {
       "location": {
@@ -42,10 +35,71 @@
     },
     {
       "location": {
+        "address": "Wollbach",
+        "name": "Forsthof"
+      },
+      "starttime": "2017-06-24T00:00:00Z",
+      "title": "Open-Air Konzert"
+    },
+    {
+      "location": {
         "address": "Bischofszell"
       },
       "starttime": "2017-06-30T00:00:00Z",
       "title": "Rosentage"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2017-07-23T00:00:00Z",
+      "title": "Kirchhofgottesdienst"
+    },
+    {
+      "location": {
+        "address": "Mambach"
+      },
+      "starttime": "2017-09-01T20:00:00Z",
+      "endtime": "2017-09-01T22:00:00Z",
+      "title": "Konzert bei der Feuerwehrmusik Mambach"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2017-10-14T00:00:00Z",
+      "title": "Sauserexpress"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kandertalhalle"
+      },
+      "starttime": "2017-10-15T00:00:00Z",
+      "title": "Herbstfest"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kandertalhalle"
+      },
+      "starttime": "2017-12-03T00:00:00Z",
+      "title": "Wartburgfest"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2017-12-09T00:00:00Z",
+      "title": "Weihnachtsfeier"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kirche"
+      },
+      "starttime": "2017-12-17T17:30:00Z",
+      "title": "Jugendvorspiel"
     }
   ]
 }

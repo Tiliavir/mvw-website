@@ -55,4 +55,4 @@ module MVW.Search {
   }
 }
 
-$(() => { MVW.Search.initialize(); });
+$(() => MVW.Search.initialize());

@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "JSON Schema for the Members file",
-  "description": "Schema for the members.",
+  "title": "Register",
+  "description": "Schema for members.",
 
   "type": "array",
 

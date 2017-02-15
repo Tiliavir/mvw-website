@@ -1,7 +1,9 @@
 ﻿{
   "$schema": "http://json-schema.org/draft-04/schema",
-  "title": "JSON Schema for my JSON file format",
+  "title": "News",
+
   "type": "object",
+
   "additionalProperties": {
     "type": "array",
     "items": {
@@ -10,14 +12,24 @@
         "title": {
           "type": "string"
         },
+        "starttime": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endtime": {
+          "type": "string",
+          "format": "date-time"
+        },
         "content": {
-          "type": "string"
+          "type": "string",
+          "format": "markdown"
         },
         "image": {
           "type": "object",
           "properties": {
             "src": {
-              "type": "string"
+              "type": "string",
+              "format": "uri"
             },
             "title": {
               "type": "string"
@@ -36,13 +48,20 @@
           "type": "object",
           "properties": {
             "src": {
-              "type": "string"
+              "type": "string",
+              "format": "uri"
             }
           },
           "required": [
             "src"
           ],
           "additionalProperties": false
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
       },
       "required": [
