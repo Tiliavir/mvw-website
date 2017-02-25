@@ -1,6 +1,6 @@
 {
   "name": "mvw-website",
-  "version": "17.2.0",
+  "version": "17.2.1",
   "private": true,
   "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
   "author": "Musikverein Wollbach 1866 e.V.",
@@ -9,7 +9,7 @@
     "url": "https://mvw1866.visualstudio.com/DefaultCollection/Website/_git/Website"
   },
   "config": {
-    "pathToProd": "../Prod/"
+    "pathToProd": "../mvw-prod/"
   },
   "devDependencies": {
     "@types/bootstrap": "^3.3.32",
@@ -23,13 +23,13 @@
     "@types/vinyl": "^2.0.0",
     "@types/yargs": "^6.6.0",
 
-    "autoprefixer": "^6.7.2",
+    "autoprefixer": "^6.7.5",
     "copyfiles": "^1.2.0",
     "node-sass": "^4.5.0",
     "postcss-cli": "^2.6.0",
     "sass-lint": "^1.10.2",
     "tslint": "^4.4.2",
-    "typescript": "^2.1.6"
+    "typescript": "^2.2.1"
   },
   "dependencies": {
     "gulp": "^3.9.1",
@@ -62,6 +62,7 @@
     "compile:sass": "node-sass ./pages/styles/ -o ./pages/styles && postcss --use autoprefixer ./pages/styles/**/*.css -r",
     "compile": "tsc && npm run compile:sass && gulp",
 
+    "preprecopy": "copyfiles -u 2 ./root/_*/* %npm_package_config_pathToProd%/ && copyfiles -u 1 ./root/[!_]* %npm_package_config_pathToProd%/ ",
     "precopy": "copyfiles -u 3 ./src/bootstrap/js/bootstrap.min.js %npm_package_config_pathToProd%/js/ && copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js %npm_package_config_pathToProd%/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} %npm_package_config_pathToProd%/",
     "copy": "copyup ./build/**/* %npm_package_config_pathToProd%/",
 

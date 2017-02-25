@@ -20,6 +20,10 @@ $gallery-bg-color: #ccc;
   .preview {
     bottom: 0;
     width: 100%;
+
+    &:hover {
+      opacity: .9;
+    }
   }
 
   .caption {
