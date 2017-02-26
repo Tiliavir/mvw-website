@@ -1,4 +1,5 @@
 "use strict";
+exports.__esModule = true;
 var fs = require("fs");
 var gulp = require("gulp");
 var moment = require("moment");
