@@ -6,7 +6,7 @@
   "author": "Musikverein Wollbach 1866 e.V.",
   "repository": {
     "type": "git",
-    "url": "https://mvw1866.visualstudio.com/DefaultCollection/Website/_git/Website"
+    "url": "https://tiliavir.visualstudio.com/DefaultCollection/Website/_git/Website"
   },
   "config": {
     "pathToProd": "../mvw-prod/"
