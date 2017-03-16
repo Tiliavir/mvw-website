@@ -13,22 +13,22 @@
   },
   "devDependencies": {
     "@types/bootstrap": "^3.3.32",
-    "@types/gulp": "^3.8.32",
+    "@types/gulp": "^4.0.1",
     "@types/gulp-load-plugins": "^0.0.28",
     "@types/grecaptcha": "^2.0.31",
     "@types/lunr": "^0.5.28",
     "@types/marked": "^0.0.28",
-    "@types/node": "^7.0.5",
+    "@types/node": "^7.0.8",
     "@types/photoswipe": "^4.0.27",
     "@types/vinyl": "^2.0.0",
     "@types/yargs": "^6.6.0",
 
-    "autoprefixer": "^6.7.5",
+    "autoprefixer": "^6.7.7",
     "copyfiles": "^1.2.0",
     "node-sass": "^4.5.0",
-    "postcss-cli": "^2.6.0",
+    "postcss-cli": "^3.0.0",
     "sass-lint": "^1.10.2",
-    "tslint": "^4.4.2",
+    "tslint": "^4.5.1",
     "typescript": "^2.2.1"
   },
   "dependencies": {
@@ -40,7 +40,7 @@
     "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.2",
     "gulp-load-plugins": "^1.5.0",
-    "gulp-pug": "^3.2.0",
+    "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
     "gulp-sitemap": "^4.2.0",
@@ -50,7 +50,7 @@
     "marked": "^0.3.6",
     "moment": "^2.17.1",
     "mvw-navigation": "^1.0.4",
-    "mvw-search-index": "^1.0.6",
+    "mvw-search-index": "^1.0.7",
     "photoswipe": "^4.1.1",
     "pug": "^2.0.0-beta11"
   },
@@ -59,7 +59,7 @@
     "clean": "rimraf ./build/ ./pages/{styles,scripts}/**/*.{css,js}",
 
     "precompile": "npm run clean && mkdir build",
-    "compile:sass": "node-sass ./pages/styles/ -o ./pages/styles && postcss --use autoprefixer ./pages/styles/**/*.css -r",
+    "compile:sass": "node-sass ./pages/styles/ -o ./pages/styles && postcss ./pages/styles/**/*.css -r --use autoprefixer",
     "compile": "tsc && npm run compile:sass && gulp",
 
     "copy:static": "copyfiles -u 2 ./root/_*/* %npm_package_config_pathToProd%/ && copyfiles -u 1 -a ./root/[!_]* %npm_package_config_pathToProd%/ && copyfiles -u 1 ./root/[!_]*/**/* %npm_package_config_pathToProd%/",
