@@ -2,19 +2,10 @@
   "2017": [
     {
       "location": {
-        "name": "Buchhole beim Rebhüsli / Baselblick",
-        "address": "Wollbach"
-      },
-      "description": "Bei Einbruch der Dunkelheit wird wieder das große Feuer entzündet. Für euer Wohl ist mit Grillwürsten, Glühwein, Punsch, sonstigen Getränken, sowie Kaffee und Kuchen wieder bestens gesorgt.<br/>Ebenfalls ist für Holz an den Feuerstellen gesorgt und die Scheibenböcke sind gestellt.",
-      "starttime": "2017-03-05",
-      "title": "Fastnachtsfeuer"
-    },
-    {
-      "location": {
         "name": "Le Triangle",
         "address": "3 rue de Saint-Louis, Huningue"
       },
-      "starttime": "2017-04-02T00:00:00Z",
+      "starttime": "2017-04-02T16:00:00Z",
       "title": "Doppelkonzert mit der Stadtmusik Hüningen"
     },
     {
