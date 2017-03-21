@@ -19,6 +19,11 @@
         "title": "Wir über uns"
       },
       {
+        "referencedFile": "konzerte",
+        "navigation": "none",
+        "title": "Konzerte"
+      },
+      {
         "referencedFile": "register",
         "title": "Unsere Register"
       },
@@ -104,6 +109,11 @@
   },
   {
     "children": [
+      {
+        "referencedFile": "blog_2017-doppelkonzert-huningue",
+        "navigation": "none",
+        "title": "Frühlingskonzert 2017"
+      },
       {
         "referencedFile": "blog_2017-jahreskonzert",
         "navigation": "none",
