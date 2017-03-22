@@ -8,11 +8,16 @@
     "type": "git",
     "url": "https://tiliavir.visualstudio.com/DefaultCollection/Website/_git/Website"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "Firefox ESR",
+    "ie 9-11"
+  ],
   "config": {
     "pathToProd": "../mvw-prod/"
   },
   "devDependencies": {
-    "@types/bootstrap": "^3.3.32",
     "@types/gulp": "^4.0.1",
     "@types/gulp-load-plugins": "^0.0.28",
     "@types/grecaptcha": "^2.0.31",
@@ -49,7 +54,7 @@
     "jstransformer-marked": "^1.0.2",
     "marked": "^0.3.6",
     "moment": "^2.17.1",
-    "mvw-navigation": "^1.0.4",
+    "mvw-navigation": "^2.0.1",
     "mvw-search-index": "^1.0.7",
     "photoswipe": "^4.1.1",
     "pug": "^2.0.0-beta11"
@@ -63,7 +68,7 @@
     "compile": "tsc && npm run compile:sass && gulp",
 
     "copy:static": "copyfiles -u 2 ./root/_*/* %npm_package_config_pathToProd%/ && copyfiles -u 1 -a ./root/[!_]* %npm_package_config_pathToProd%/ && copyfiles -u 1 ./root/[!_]*/**/* %npm_package_config_pathToProd%/",
-    "precopy": "copyfiles -u 3 ./src/bootstrap/js/bootstrap.min.js %npm_package_config_pathToProd%/js/ && copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js %npm_package_config_pathToProd%/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} %npm_package_config_pathToProd%/",
+    "precopy": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js %npm_package_config_pathToProd%/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} %npm_package_config_pathToProd%/",
     "copy": "npm run copy:static && copyup ./build/**/* %npm_package_config_pathToProd%/",
 
     "prerelease": "npm run lint",
