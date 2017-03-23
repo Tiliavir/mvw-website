@@ -1,0 +1,25 @@
+%comma-separated-list {
+  &:not-last-child {
+    &::before {
+      content: ', ';
+    }
+  }
+}
+
+.konzert > .parts,
+.dates,
+.composers,
+.arrangers,
+.soloists {
+  list-style: none;
+  padding-left: 0;
+}
+
+.composers,
+.arrangers {
+  display: inline;
+
+  & > li {
+    @extend %comma-separated-list;
+  }
+}

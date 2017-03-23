@@ -8,20 +8,22 @@ navigation: "top"
 
 extends ../../template.pug
 
+block pageStyles
+  include ../../styles/konzerte.css
+
 block content
   -
     var konzerte = require("./pages/data/konzerte.json");
 
   each konzert in konzerte
     .konzert
-      if konzert.title
-        h2.title= konzert.title
-          if konzert.subtitle
-            small= konzert.subtitle
+      h2.title= konzert.title || konzert.category
+        if konzert.subtitle
+          small= konzert.subtitle
       if konzert.category
         span.category= konzert.category
       span.location= konzert.location.location
-      ul.location.dates
+      ul.dates
         each date in konzert.location.dates
           li= date
       if konzert.parts
