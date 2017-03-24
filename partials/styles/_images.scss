@@ -1,0 +1,29 @@
+.img-responsive {
+  display: block;
+  height: auto;
+  max-height: calc(75vh - #{$top-nav-height});
+  max-width: 100%;
+}
+
+.img-center {
+  margin: 0 auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.img {
+  & > [onclick] {
+    cursor: pointer;
+  }
+}
+
+.full-view {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%) translateY(-50%);
+  max-height: 100%;
+  max-width: 100%;
+}

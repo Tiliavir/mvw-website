@@ -1,5 +1,11 @@
-@import 'global';
-@import 'navbar';
+@import 'structure';
+@import 'global-style';
+
+@import 'topnav';
+@import 'breadcrumb';
+
+@import 'images';
+@import 'tile';
 @import 'responsive-tables';
+
 @import 'print';
-@import 'mixin-tile';

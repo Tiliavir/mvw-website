@@ -1,5 +1,9 @@
 $breadcrumb-print-color: #000;
 
+.print-only {
+  display: none;
+}
+
 @media print {
   html,
   body {
