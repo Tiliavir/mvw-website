@@ -1,0 +1,58 @@
+---
+title: "Jugendorchester"
+description: "Das Jugendorchester des Musikverein Wollbach under der Leitung von Michael Bierwirth."
+keywords: "Jugendorchester, Jugenarbeit, Ausbildung, Jungmusiker, Jungmusikerinnen, Instrument lernen"
+
+navigation: "top"
+---
+
+extends ../../template.pug
+
+block content
+  +image("/img/jugend/jugendorchester.jpg", "Das Jugendorchester im Mai 2015")
+
+  :marked
+    # Der Dirigent
+    Unser Dirigent ist Michael Bierwirth aus Bad Bellingen. Michael spielt
+    selbst Trompete und leitet auch das Jugendochester des Musikverein Bad
+    Bellingen.
+
+  +image("/img/personen/2015_dirigent_jugend.jpg", "Jugendorchester Dirigent", null, "Der Jugendorchester Dirigent: Michael Bierwirth")
+
+  :marked
+    # Die Jungmusiker
+    Unser Jugendorchester besteht derzeit aus 18 jungen Musikerinnen und
+    Musikern:
+
+  -
+    function groupBy(array , f) {
+      var groups = {};
+      array.forEach((o) => {
+        var group = f(o); // note(ml): use to sort by groups of properties: JSON.stringify(f(o));
+        groups[group] = groups[group] || [];
+        groups[group].push(o);
+      });
+      return groups;
+    }
+
+    var jugendRegister = require("./pages/data/jugend-register.json");
+
+    // note(ml): can also group by array of properties! => change group name
+    var groupedRegisters = groupBy(jugendRegister, (person) => person.register);
+
+  table.mvw-register-table.responsive
+    tbody
+      each registerTitle in [ "Klarinette", "Altsaxophon_Tenorsaxophon_Baritonsaxophon_Querflöte", "Fagott", "Trompete", "Tuba_Posaune_Euphonium", "Schlagzeug" ]
+        - var currentRegister = [];
+        each currentGroupRegister in registerTitle.split("_")
+          - if (groupedRegisters[currentGroupRegister])
+            - currentRegister = currentRegister.concat(groupedRegisters[currentGroupRegister]);
+        tr
+          td
+            +image(`/img/jugend/register/${registerTitle.toLowerCase().replace("ö", "oe")}.jpg`, registerTitle)
+          td
+            each person in currentRegister.sort((a, b) => a.familyName.localeCompare(b.familyName))
+              p #{person.name} #{person.familyName}
+
+block pageStyles
+  include ../../styles/register.css

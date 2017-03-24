@@ -1,0 +1,61 @@
+﻿[
+  {
+    "address": "Rathausstr. 17 79400 Wollbach",
+    "email": "annette.krey@mv-wollbach.de",
+    "image": "/img/personen/vorstand.jpg",
+    "persons": [ "Annette Krey" ],
+    "telephone": "07626 1764",
+    "title": "1. Vorsitzende"
+  },
+  {
+    "address": "79400 Wollbach",
+    "email": "frank.reinacher@mv-wollbach.de",
+    "image": "/img/personen/vorstand2.jpg",
+    "persons": [ "Frank Reinacher" ],
+    "telephone": "07626 973317",
+    "title": "2. Vorsitzender"
+  },
+  {
+    "address": "79400 Wollbach",
+    "email": "maria.krey@mv-wollbach.de",
+    "image": "/img/personen/jugendleitung.jpg",
+    "persons": [ "Matthias Braun", "Maria Krey" ],
+    "title": "Jugendleitung"
+  },
+  {
+    "address": "79599 Wittlingen",
+    "email": "martina.reinauer@mv-wollbach.de",
+    "image": "/img/personen/kassierer.jpg",
+    "persons": [ "Leonie Gresslin", "Martina Reinauer" ],
+    "telephone": "07621 82375",
+    "title": "Kassiererin"
+  },
+  {
+    "address": "79400 Wollbach",
+    "email": "jutta.schmidt@mv-wollbach.de",
+    "image": "/img/personen/schriftfuehrer.jpg",
+    "persons": [ "Stefanie van Linn", "Jutta Schmidt" ],
+    "telephone": "07626 973673",
+    "title": "Schriftführerin"
+  },
+  {
+    "image": "/img/personen/protokollfuehrer.jpg",
+    "persons": [ "Beate Mayer" ],
+    "title": "Protokollführung"
+  },
+  {
+    "image": "/img/personen/orchestervorstand.jpg",
+    "persons": [ "Thomas Kuckuk" ],
+    "title": "Orchestervorstand"
+  },
+  {
+    "image": "/img/personen/aktivbeisitzer.jpg",
+    "persons": [ "Ralf Ernst", "Manfred Braun" ],
+    "title": "Aktivbeisitzer"
+  },
+  {
+    "image": "/img/personen/passivbeisitzer.jpg",
+    "persons": [ "Reinhard Gresslin", "Erwin Bürgin" ],
+    "title": "Passivbeisitzer"
+  }
+]

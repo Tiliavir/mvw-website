@@ -24,6 +24,6 @@ npm install
 ## Build and preview
 
 ```powershell
-npm run debug
-<build-dir>\npm run start
+npm run dev
+<build-dir>..\mvw-prod\npm run start
 ```

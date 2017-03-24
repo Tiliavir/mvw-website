@@ -14,9 +14,6 @@
     "Firefox ESR",
     "ie 9-11"
   ],
-  "config": {
-    "pathToProd": "../mvw-prod/"
-  },
   "devDependencies": {
     "@types/gulp": "^4.0.1",
     "@types/gulp-load-plugins": "^0.0.28",
@@ -60,18 +57,20 @@
     "pug": "^2.0.0-beta11"
   },
   "scripts": {
-    "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"pages/scripts/**/*.ts\"",
-    "clean": "rimraf ./build/ ./pages/{styles,scripts}/**/*.{css,js}",
+    "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"partials/scripts/**/*.ts\"",
+    "clean": "rimraf ./build/ ./partials/{styles,scripts}/**/*.{css,js}",
 
     "precompile": "npm run clean && mkdir build",
-    "compile:sass": "node-sass ./pages/styles/ -o ./pages/styles && postcss ./pages/styles/**/*.css -r --use autoprefixer",
+    "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss --use autoprefixer ./partials/styles/**/*.css -r",
     "compile": "tsc && npm run compile:sass && gulp",
 
-    "copy:static": "copyfiles -u 2 ./root/_*/* %npm_package_config_pathToProd%/ && copyfiles -u 1 -a ./root/[!_]* %npm_package_config_pathToProd%/ && copyfiles -u 1 ./root/[!_]*/**/* %npm_package_config_pathToProd%/",
-    "precopy": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js %npm_package_config_pathToProd%/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} %npm_package_config_pathToProd%/",
-    "copy": "npm run copy:static && copyup ./build/**/* %npm_package_config_pathToProd%/",
+    "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
+    "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 ./root/[!_]*/**/* ./build/",
+    "copy": "npm run copy:lib && npm run copy:root",
 
     "prerelease": "npm run lint",
     "release": "npm run compile -- release --release=true && npm run copy"
+    
+    "dev": "npm run compile && npm run copy && copyup ./build/**/* ../mvw-prod/"
   }
 }

@@ -36,15 +36,15 @@ gulp.task("sitemap", () => {
 });
 
 gulp.task("html:writeNavigation", () => {
-  navigation = new Navigation(require("./pages/site-structure.json"));
-  fs.writeFileSync("./pages/siteOverviewList.pug", navigation.writeNavigation("allplain"));
-  fs.writeFileSync("./pages/topnavigation.pug", navigation.writeNavigation("top"));
-  fs.writeFileSync("./pages/footernavigation.pug", navigation.writeNavigation("footer"));
+  navigation = new Navigation(require("./partials/site-structure.json"));
+  fs.writeFileSync("./partials/siteOverviewList.pug", navigation.writeNavigation("allplain"));
+  fs.writeFileSync("./partials/topnavigation.pug", navigation.writeNavigation("top"));
+  fs.writeFileSync("./partials/footernavigation.pug", navigation.writeNavigation("footer"));
 });
 
 gulp.task("html:generatePages", ["html:writeNavigation"], () => {
   const scope = {
-    register: require("./pages/data/register.json"),
+    register: require("./partials/data/register.json"),
 
     siteTitle: "Musikverein Wollbach 1866 e.V.",
     baseUrl: baseUrl,
@@ -78,7 +78,7 @@ gulp.task("html:generatePages", ["html:writeNavigation"], () => {
 
   var hasAmp = (file: File) => ((<any> file).data.isAmp = (<any> file).data.hasAmp);
 
-  gulp.src("./pages/partials/**/*.pug")
+  gulp.src("./partials/pages/**/*.pug")
               .pipe($.replace(/^(\s*#+) /gm, "$1# "))
               .pipe($.rename((path: path.ParsedPath): void => { path.ext = ".html"; }))
               .pipe($.grayMatter())
@@ -87,7 +87,7 @@ gulp.task("html:generatePages", ["html:writeNavigation"], () => {
               .pipe($.flatten())
               .pipe($.if(hasAmp, gulp.dest(paths.dest + "amp/")));
 
-  return gulp.src("./pages/partials/**/*.pug")
+  return gulp.src("./partials/pages/**/*.pug")
               .pipe($.replace(/^(\s*#+) /gm, "$1# "))
               .pipe($.rename((path: path.ParsedPath): void => { path.ext = ".html"; }))
               .pipe($.grayMatter())
@@ -118,5 +118,5 @@ gulp.task("search:index", () => {
   fs.writeFileSync(paths.dest + "index.json", JSON.stringify(searchIndex.getResult()));
 });
 
-gulp.task("default", $.sequence("html:generatePages", "search:index"));
+gulp.task("default", ["html:generatePages"]);
 gulp.task("release", $.sequence("html:generatePages", "sitemap", "html:minify", "search:index"));

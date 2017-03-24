@@ -1,0 +1,887 @@
+[
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2003-01-18"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Das Abzeichen",
+            "composers": ["Stefan Marinoff"]
+          },
+          {
+            "title": "Pilatus - Berg der Drachen",
+            "composers": ["Steven Reinecke"]
+          },
+          {
+            "title": "Konzert für Oboe",
+            "composers": ["Vincenzo Bellini"],
+            "soloists": [
+              {
+                "name": "Mirjam Hüttner",
+                "part": "Oboe"
+              }
+            ]
+          },
+          {
+            "title": "The first and the last",
+            "composers": ["Stephen Melillo"]
+          },
+          {
+            "title": "Marcia Milano",
+            "composers": ["Almicare Ponchielli"]
+          },
+          {
+            "title": "Fellini Song",
+            "composers": ["Giorgio Gaslini"]
+          },
+          {
+            "title": "Into the Joy of Spring",
+            "composers": ["James Swearingen"]
+          },
+          {
+            "title": "La Vita è Bella",
+            "composers": ["Nicola Piovani"]
+          },
+          {
+            "title": "Funiculi Funicula",
+            "composers": ["Luigi Denza"]
+          },
+          {
+            "title": "Yes Indeed",
+            "composers": ["Sy Oliver"],
+            "arrangers": ["Andy Clark"],
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Oliver Hauser"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2004-01-??"]
+    },
+    "title": "New York, New York",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Manhatten Beach March",
+            "composers": ["John Philip Sousa"]
+          },
+          {
+            "title": "Overture to Candide",
+            "composers": ["Leonard Bernstein"]
+          },
+          {
+            "title": "American Suite",
+            "composers": ["Antonín Dvořák"]
+          },
+          {
+            "title": "Eine kleine yiddishe Ragmusik",
+            "composers": ["Adam Gorb"]
+          },
+          {
+            "title": "Karl Reinacher Marsch",
+            "composers": ["Ulrich Winzer"]
+          },
+          {
+            "title": "Matrix",
+            "composers": ["Steve Grimo"]
+          },
+          {
+            "title": "America, the Brave",
+            "composers": ["Steven Melillo"]
+          },
+          {
+            "title": "New York 1927",
+            "composers": ["Warren Barker"]
+          },
+          {
+            "title": "Irving Berlin Showstoppers",
+            "composers": ["Irving Berlin"],
+            "arrangers": ["John Higgins"]
+          },
+          {
+            "title": "In the mood",
+            "composers": ["Joe Garland"]
+          },
+          {
+            "title": "New York, New York",
+            "composers": ["Fred Ebb", "John Kander"],
+            "arrangers": ["Goff Richards"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2008-01-19"]
+    },
+    "title": "Feel Blue",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": []
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2009-01-17"]
+    },
+    "title": "'Mi voz se hizo viento para llegar a su oido' - Pablo Neruda",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Don Quixote",
+            "composers": ["Robert W. Smith"],
+            "soloist": [{"part": "Sprache", "name": "Ekkehard Bierl"}],
+            "parts": [
+               {"title": "Suche"},
+               {"title": "Dulcinea"},
+               {"title": "Sancho und die Windmühlen"},
+               {"title": "Erleuchtung"}
+             ]
+          },
+          {
+            "title": "Adagio für Bläserensemble",
+            "composers": ["Joaquin Rodrigo"]
+          },
+          {
+            "title": "El Golpe Fatal",
+            "composers": ["Dirk Brossé"]
+          },
+          {
+            "title": "Cordoba",
+            "composers": ["Isaac Albeniz"],
+            "soloists": [{"part": "Tanz / Improvisation", "name": "Sandra Schillinger"}]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Kirchenkonzert",
+    "location": {
+      "location": "Kirche Wollbach",
+      "dates": ["2009-04-09"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Bist du bei mir",
+            "composers": ["Johann Sebastian Bach"],
+            "arrangers": ["Alfred Reed"]
+          },
+          {
+            "title": "Lux Aurumque (Light and gold)",
+            "composers": ["Eric Whitacre"]
+          },
+          {
+            "title": "Sonatina Op. 27",
+            "composers": ["Zedenek Fibich"],
+            "soloists": [
+              {
+                "part": "Piano",
+                "name": "Maria Krey"
+              },
+              {
+                "part": "Violino",
+                "name": "Gregor Hänsler"
+              }
+            ]
+          },
+          {
+            "title": "A light in the wilderness Op. 92",
+            "composers": ["James Barnes"]
+          },
+          {
+            "title": "Wachet auf!",
+            "composers": ["Johann Sebastian Bach"],
+            "arrangers": ["Alfred Reed"]
+          },
+          {
+            "title": "The echo of god's laughter",
+            "composers": ["Kenneth H. Lampl"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2010-01-23"]
+    },
+    "title": "Klang Licht Raum",
+    "subtitle": "Lichtklänge, Raumlichter, Klangräume … eine Inszenierung",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Joy Revisited",
+            "composers": ["Frank Ticheli"]
+          },
+          {
+            "title": "Ahab",
+            "composers": ["Stephen Melillo"],
+            "soloists": [{"part": "Darsteller", "name": "Ekkehard Bierl"}]
+          },
+          {
+            "title": "To this heart there is no end",
+            "composers": ["Richard Saucedo"]
+          },
+          {
+            "title": "Chaos Theory - Konzert für Blasorchester und E-Gitarre",
+            "composers": ["James Bonney"],
+            "soloists": [{"part": "E-Gitarre", "name": "Stefan Siekierski"}]
+          },
+          {
+            "title": "Fantasie für Natalie (aus der 3. Sinfonie)",
+            "composers": ["James Barnes"],
+            "soloists": [{"part": "Cello", "name": "Wolfgang Brobeil"}]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2011-01-22"]
+    },
+    "title": "Let's face the music and dance",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Ain't that a kick in the head",
+            "soloists": [{"part": "Gesang", "name": "Oliver Hauser"}]
+          },
+          {
+            "title": "He's a tramp",
+            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+          },
+          {
+            "title": "Let's call the whole thing off",
+            "soloists": [{"part": "Gesang", "name": "Jutta Schmidt und Ralf Ernst"}]
+          },
+          {
+            "title": "Save the last dance for me",
+            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+          },
+          {
+            "title": "Colours of the wind",
+            "soloists": [{"part": "Gesang", "name": "Diana Würslin"}]
+          },
+          {
+            "title": "Papa can you hear me",
+            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+          },
+          {
+            "title": "Mr. Bojangles",
+            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+          },
+          {
+            "title": "Watch what happens",
+            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+          },
+          {
+            "title": "The incredibles"
+          },
+          {
+            "title": "Against all odds",
+            "soloists": [{"part": "Alt-Saxophon", "name": "Klaus Fischer"}]
+          },
+          {
+            "title": "Down with love",
+            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia und Daniel Vorburger"}]
+          },
+          {
+            "title": "Feeling good",
+            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+          },
+          {
+            "title": "A Star is born",
+            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+          },
+          {
+            "title": "The Way we were",
+            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+          },
+          {
+            "title": "Let's face the music and dance",
+            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2012-01-21"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Noisy wheels of joy",
+            "composers": ["Eric Whitacre"]
+          },
+          {
+            "title": "Global Variations",
+            "composers": ["Nigel Hess"]
+          },
+          {
+            "title": "Meta March",
+            "composers": ["Steven Bryant"]
+          },
+          {
+            "title": "Uncle Sid",
+            "composers": ["Jonathan Newman"]
+          },
+          {
+            "title": "Garisson at Goliad",
+            "composers": ["Steven Melillo"]
+          },
+          {
+            "title": "Thames Journey",
+            "composers": ["Nigel Hess"]
+          },
+          {
+            "title": "Heart of the Hero",
+            "composers": ["Steven Melillo"]
+          },
+          {
+            "title": "Slava!",
+            "composers": ["Leonard Bernstein"],
+            "arrangers": ["Clare Grundman"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2013-01-19"]
+    },
+    "title": "",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Symphonie pour musique d'harmonie",
+            "composers": ["Paul Fauchet"],
+            "arrangers": ["Miguel Etchegoncelay", "Felix Hauswirth"],
+            "parts": [
+              {"title": "Overture"},
+              {"title": "Nocturne"},
+              {"title": "Scherzo"},
+              {"title": "Finale"}
+            ]
+          },
+          {
+            "title": "Danzón no. 2",
+            "composers": ["Arturo Marquez"],
+            "arrangers": ["Oliver Nickel"]
+          },
+          {
+            "title": "Deux Danses für Klarinettenchor",
+            "composers": ["Masamic Amano"],
+            "parts": [
+              {"title": "Danse Melancholique"},
+              {"title": "Danse Antipathique"}
+            ]
+          },
+          {
+            "title": "Konzert für Viloloncello und Blasorchester",
+            "composers": ["Friedrich Gulda"],
+            "soloists": [{"part": "Violoncello", "name": "Elisa Silber"}],
+            "parts": [
+              {"title": "Overture"},
+              {"title": "Idylle"},
+              {"title": "Cadenza"},
+              {"title": "Menuett"},
+              {"title": "Finale alla marcia"}
+            ]
+          },
+          {
+            "title": "At kitty O'Shea's - Irish folk song suite",
+            "composers": ["Johan de Meij"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Kirchenkonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2013-04-12"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Jugendorchester Wollbach",
+        "conductor": "Michael Bierwirth",
+        "program": [
+          {
+            "title": "Deep River",
+            "composers": ["James Swearingen"]
+          },
+          {
+            "title": "The girl with the flaxen hair",
+            "composers": ["Claude Debussy"],
+            "arrangers": ["John Moss"],
+            "soloists": [{"part": "Saxophon", "name": "Maria Krey"}]
+          },
+          {
+            "title": "Gospel John",
+            "composers": ["Jeff Steinberg"],
+            "arrangers": ["Andy Clark"]
+          }
+        ]
+      },
+      {
+        "orchestraOrEnsemble": "Klarinettenchor des Musikvereins",
+        "conductor": "Thomas Kuckuck und Klaus Fischer",
+        "program": [
+          {
+            "title": "Toccata und Fuge",
+            "composers": ["Johann Sebastian Bach"],
+            "arrangers": ["Marten Jeense"]
+          }
+        ]
+      },
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Musique Funèbre Maconnique",
+            "composers": ["Wolfgang Amadeus Mozart"]
+          },
+          {
+            "title": "A light in the wilderness",
+            "composers": ["James Barnes"]
+          },
+          {
+            "title": "The seal lullaby",
+            "composers": ["Eric Whitacre"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2014-01-18"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "As rosas não falam",
+            "composers": ["Angenor de Oliveira (Cartola)"]
+          },
+          {
+            "title": "Il gurany",
+            "composers": ["Antõnio Carlos Gomes"]
+          },
+          {
+            "title": "Festa Criolla",
+            "composers": ["Louis Moreau Gottschalk"]
+          },
+          {
+            "title": "Valsinha Brasileira",
+            "composers": ["Heitor Villa-Lobos"]
+          },
+          {
+            "title": "Estados d'Alma",
+            "composers": ["Edmundo Villani-Côrtes"]
+          },
+          {
+            "title": "Libertadores",
+            "composers": ["Óscar Navarro González"]
+          },
+          {
+            "title": "Oblivion",
+            "composers": ["Astor Pantaleón Piazolla"],
+            "soloists": [{"part": "Cello", "name": "Rebekka Busch"}]
+          },
+          {
+            "title": "Braseijo",
+            "composers": ["Edmundo Villani-Córtes"]
+          },
+          {
+            "title": "Huapango",
+            "composers": ["José Pablo Moncayo"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2015-01-23",  "2015-01-24"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "The Queen Symphony - Sinfonisches Werk für Orchester und Chor mit Motiven der Rockband Queen",
+            "composers": ["Tolga Kashif"]
+          },
+          {
+            "title": "Jon Lord Concerto for group and orchestra, Sinfonisches Werk für Orchester und Rockband im Stil der Rockband Deep Purple",
+            "composers": ["Jon Lord"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2016-01-22", "2016-01-23"]
+    },
+    "title": "Still Feeling Good",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Opening",
+            "composers": ["KC Sunshineband"]
+          },
+          {
+            "title": "Your love keeps lifting me",
+            "soloists": [{"part": "Gesang", "name": "Christina"}]
+          },
+          {
+            "title": "Americanos",
+            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+          },
+          {
+            "title": "Somethin' Stupid",
+            "soloists": [{"part": "Gesang", "name": "Ralf Ernst und Jutta Schmidt"}]
+          },
+          {
+            "title": "Candyman",
+            "soloists": [{"part": "Gesang", "name": "alle vocals"}]
+          },
+          {
+            "title": "Diggin on James Brown"
+          },
+          {
+            "title": "Reet Petite",
+            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+          },
+          {
+            "title": "I've got you under my skin",
+            "soloists": [{"part": "Gesang", "name": "Ralf Ernst"}]
+          },
+          {
+            "title": "Fly me to the moon",
+            "soloists": [{"part": "Gesang", "name": "Oliver Hauser"}]
+          },
+          {
+            "title": "If you don`t know me by now",
+            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+          },
+          {
+            "title": "Americano",
+            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+          },
+          {
+            "title": "Cry me a river",
+            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+          },
+          {
+            "title": "At this moment",
+            "soloists": [{"part": "Gesang", "name": "Christina"}]
+          },
+          {
+            "title": "Sparkling Diamonds",
+            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+          },
+          {
+            "title": "Feelin` good",
+            "soloists": [{"part": "Gesang", "name": "alle vocals"}]
+          },
+          {
+            "title": "Cry me a river (Cello Performance)",
+            "soloists": [{"part": "Cello", "name": "Jhon Hernandez"}]
+          },
+          {
+            "title": "Save the last dance for me",
+            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Kirchenkonzert",
+    "location": {
+      "location": "evangelische Stadtkirche Kandern",
+      "dates": ["2016-05-08"]
+    },
+    "title": "Jubiläums-Doppelkonzert",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Verbandsjugendorchester Hochrhein",
+        "conductor": "Julian Gibbons",
+        "program": [
+          {
+            "title": "Festliche Overtüre op. 96",
+            "composers": ["Dmitri Shostakovich"]
+          },
+          {
+            "title": "Humperdinck Variationen",
+            "subtitle": "Solokonzert für 4 Hörner",
+            "composers": ["Bert Appermont"]
+          },
+          {
+            "title": "Angels in the architecture",
+            "composers": ["Frank Ticheli"]
+          }
+        ]
+      },
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Tsar Boris - Overtüre",
+            "composers": ["Vasily Kalinnikov"]
+          },
+          {
+            "title": "Klavierkonzert a-moll op. 16",
+            "composers": ["Edvard Grieg"],
+            "soloists": [{"part": "Klavier", "name": "Paulina Maslanka"}]
+          }
+        ]
+      },
+      {
+        "orchestraOrEnsemble": "Verbandsjugendorchester Hochrhein und Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "An der schönen Blauen Donau op. 314",
+            "composers": ["Johann Strauss II"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Adventskonzert",
+    "location": {
+      "location": "Kirche Wollbach",
+      "dates": ["2016-12-04"]
+    },
+    "title": "Benefiz Adventskonzert",
+    "subtitle": "veranstaltet vom Lions Club Lörrach",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Jugendorchester Wollbach",
+        "conductor": "Michael Bierwirth",
+        "program": [
+          {
+            "title": "Beautiful Savior",
+            "composers": ["James Swearing"]
+          },
+          {
+            "title": "Fairytale of New York",
+            "composers": ["Sean O'Loughlin"]
+          },
+          {
+            "title": "Benediction",
+            "composers": ["John Stevens"]
+          }
+        ]
+      },
+      {
+        "orchestraOrEnsemble": "Fagott - Klavier Duo",
+        "conductor": "",
+        "program": [
+          {
+            "title": "Sonate in f-moll",
+            "composers": ["Georg Philipp Telemann"]
+          }
+        ]
+      },
+      {
+        "orchestraOrEnsemble": "Klarinettenchor",
+        "program": [
+          {
+            "title": "Jesu, Joy of Man's Desiring",
+            "composers": ["Johann Sebastian Bach"]
+          },
+          {
+            "title": "Irish Tune from County Derry",
+            "composers": ["Percy Grainger"]
+          }
+        ]
+      },
+      {
+        "orchestraOrEnsemble": "Bläserquartett",
+        "program": [
+          {
+            "title": "Nocturne No.3 in g-moll",
+            "composers": ["Louis Emmanuell Jadin"]
+          }
+        ]
+      },
+      {
+        "orchestraOrEnsemble": "Klarinettenquartett",
+        "program": [
+          {
+            "title": "Nothing else matters",
+            "arrangers": ["Olivier Reinertz"],
+            "composers": ["Metallica"]
+          },
+          {
+            "title": "Scarborough Fair",
+            "arrangers": ["Hirokazu Fukushima"]
+          }
+        ]
+      },
+      {
+        "orchestraOrEnsemble": "Bläserseptett",
+        "conductor": "",
+        "program": [
+          {
+            "title": "6 deutsche Tänze",
+            "composers": ["Wolfgang Amadeus Mozart"]
+          }
+        ]
+      },
+      {
+        "orchestraOrEnsemble": "Blechquintett",
+        "program": [
+          {
+            "title": "Bist du bei mir",
+            "composers": ["Johann Sebastian Bach"]
+          },
+          {
+            "title": "Adeste Fidelis",
+            "composers": ["Pavel Stanek"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2017-01-27", "2017-01-28"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Tintin",
+            "subtitle": "Suite aus dem Musical 'Tim und Struppi - Der Sonnentempel'",
+            "composers": ["Dirk Bosse"],
+            "arrangers": ["Johan de Meij"]
+          },
+          {
+            "title": "Five Folk Songs",
+            "subtitle": "Fünf Volkslieder für Sopran und Orchester",
+            "composers": ["Bernard Gilmore"],
+            "soloists": [{"part": "Gesang", "name": "Sigrid Fuchs"}],
+            "parts": [
+              {"title": "Mrs. McGrath", "subtitle": "Irisch"},
+              {"title": "All the Pretty Little Horses", "subtitle": "Amerikanisch"},
+              {"title": "Yerekina", "subtitle": "Griechisch"},
+              {"title": "El Burro", "subtitle": "Spanisch"},
+              {"title": "A Fiddler", "subtitle": "Jiddisch"}
+            ]
+          },
+          {
+            "title": "Fantasie",
+            "subtitle": "für Cello und Blasorchester",
+            "composers": ["Frigyes Hidas"],
+            "soloists": [{"part": "Cello", "name": "Jhon Hernandez"}]
+          },
+          {
+            "title": "Concerto",
+            "subtitle": "für Klarinette und Blasorchester",
+            "composers": ["Oscar Navaro"],
+            "soloists": [{"part": "Klarinette", "name": "Maria Krey"}]
+          },
+          {
+            "title": "Teutonic Tales",
+            "subtitle": "Teutonische Fabeln",
+            "composers": ["Robert W. Smith"],
+            "parts": [
+              {"title": "Tanz der Dämonen", "soloists": [{"part": "Fagott", "name": "Luisa Krey"}]},
+              {"title": "Freya - Göttin der Schönheit und Liebe", "soloists": [{"part": "Fagott", "name": "Luisa Krey"}, {"part": "Tuba", "name": "Noah Goehlke"}]},
+              {"title": "Der Hammer des Gottes Thor", "soloists": [{"part": "Tuba", "name": "Noah Goehlke"}]}
+            ]
+          },
+          {
+            "title": "Paper Cut",
+            "subtitle": "für Papier, Tonaufnahmen und Blasorchester",
+            "composers": ["Alex Shapiro"]
+          }
+        ]
+      }
+    ]
+  }
+]

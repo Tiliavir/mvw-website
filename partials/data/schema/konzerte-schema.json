@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "category": {
+        "type": "string",
+        "enum": ["Jahreskonzert", "Kirchenkonzert", "Platzkonzert", "Adventskonzert"]
+      },
+      "title": {
+        "type": "string"
+      },
+      "subtitle": {
+        "type": "string"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string"
+          },
+          "dates": {
+            "type": "array",
+            "minLength": 1,
+            "items": {
+              "type": "string",
+              "format": ["date-time", "full-date"]
+            }
+          }
+        },
+        "required": [
+          "location",
+          "dates"
+        ]
+      },
+      "parts": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "orchestraOrEnsemble": {
+              "type": "string"
+            },
+            "conductor": {
+              "type": "string"
+            },
+            "program": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                 "subtitle": {
+                    "type": "string"
+                  },
+                  "composers": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "arrangers": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "soloists":  { "$ref": "#/definitions/soloists" },
+                  "parts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string"
+                        },
+                        "subtitle": {
+                          "type": "string"
+                        },
+                        "soloists": { "$ref": "#/definitions/soloists" }
+                      },
+                      "required": [
+                        "title"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "title",
+                  "composers"
+                ]
+              }
+            }
+          },
+          "required": [
+            "orchestraOrEnsemble",
+            "program"
+          ]
+        }
+      }
+    },
+    "required": [
+      "category",
+      "location",
+      "parts"
+    ]
+  },
+  "definitions": {
+    "soloists": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "part": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "part"
+        ]
+      }
+    }
+  }
+}

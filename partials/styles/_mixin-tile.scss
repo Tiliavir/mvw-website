@@ -1,0 +1,31 @@
+$tile-color: #eee;
+$tile-bg-color: rgba(34, 34, 34, .55);
+$tile-bg-color-hover: rgba(34, 34, 34, .75);
+
+.tile {
+  box-sizing: border-box;
+  display: inline-block;
+  font-weight: lighter;
+  margin-top: 30px;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .title,
+  .text {
+    color: $tile-color;
+  }
+}
+
+.blur {
+  background: $tile-bg-color;
+  height: inherit;
+  padding: 20px;
+
+  &:hover {
+    background: $tile-bg-color-hover;
+  }
+}

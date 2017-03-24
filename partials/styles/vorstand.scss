@@ -1,0 +1,47 @@
+.mvw-managing-committee-table {
+  img {
+    margin: 0 auto;
+    max-height: 400px;
+    max-width: 30vw;
+  }
+}
+
+@media not screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  %td-style {
+    td {
+      :nth-child(2) {
+        border-top-width: 0;
+      }
+    }
+  }
+
+  .mvw-managing-committee-table {
+    tr {
+      &:first-child {
+        @extend %td-style;
+      }
+    }
+
+    th {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+    td {
+      &:nth-child(2) {
+        border-top-width: 1px;
+        border-width: 0;
+        float: left;
+        width: 100%;
+      }
+
+      &:nth-child(3) {
+        border: 0 solid transparent;
+        clear: left;
+        float: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+---
+title: "Konzerte"
+description: "Übersicht über Konzerte des Musikverein Wollbachs."
+keywords: "Konzerte, Jahreskonzerte, Kirchenkonzerte, Konzertprogramme"
+
+navigation: "top"
+---
+
+extends ../../template.pug
+
+block content
+  -
+    var konzerte = require("./pages/data/konzerte.json");
+
+  each konzert in konzerte
+    .konzert
+      if konzert.title
+        h2.title= konzert.title
+          if konzert.subtitle
+            small= konzert.subtitle
+      if konzert.category
+        span.category= konzert.category
+      span.location= konzert.location.location
+      ul.location.dates
+        each date in konzert.location.dates
+          li= date
+      if konzert.parts
+        ul.parts
+          each part in konzert.parts
+            li.part
+              h3.orchestra-or-ensemble= part.orchestraOrEnsemble
+              if part.conductor
+                span.conductor= part.conductor
+              ul.program
+                each song in part.program
+                  li
+                    h4.title= song.title
+                      if song.subtitle
+                        small= song.subtitle
+                    if song.composers
+                      ul.composers
+                        each composer in song.composers
+                          li= composer
+                    if song.arrangers
+                      ul.arrangers
+                        each arranger in song.arrangers
+                          li= arranger
+                    if song.soloists
+                      ul.soloists
+                        each soloist in song.soloists
+                          li
+                            span.part= soloist.part
+                            span.name= soloist.name
+                    if song.parts
+                      ul.parts
+                        each songPart in song.parts
+                          li
+                            h5= songPart.title
+                              if songPart.subtitle
+                                small= songPart.subtitle
+                            if songPart.soloists
+                              ul.soloists
+                                each soloist in songPart.soloists
+                                  li
+                                    span.part= soloist.part
+                                    span.name= soloist.name

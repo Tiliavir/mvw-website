@@ -1,0 +1,19 @@
+.mvw-register-table {
+  td {
+    padding-left: 20px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+@media not screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  .mvw-register-table {
+    td {
+      &:first-child {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
