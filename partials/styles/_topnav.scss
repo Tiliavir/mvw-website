@@ -1,29 +1,44 @@
 @import 'global-variables';
 
-$padding: 21px 20px;
-$background-color: $body-bg;
-$active-bg-no-transparency: #141e28;
-$background-color-active: transparentize($active-bg-no-transparency, .3);
+$brand-width: 80px;
+$brand-padding: 0 10px 0 5px;
+
+$background-color: $gray-base;
+$background-color-active-no-transparency: darken($background-color, 10%);
+$background-color-active: transparentize($background-color-active-no-transparency, .3);
 $background-color-hover-and-focus: lighten($background-color-active, 20%);
-$color-active: #ebc904;
+
+$color: $gray-light;
+$color-active: $color-light-grey;
 $color-hover-and-focus: lighten($color-active, 10%);
 
 .navigation {
-  background-color: transparentize($background-color, .5);
+  background-color: $background-color;
   color: $text-color;
   font-size: $font-size-base;
   font-weight: 700;
   width: 100%;
-  position: relative;
-  top: -$top-nav-height;
+  position: fixed;
+  top: 0;
   z-index: 1000;
   margin: 0 auto;
   height: $top-nav-height;
   user-select: none;
 }
 
+.navbar-brand {
+  display: block;
+  max-width: $brand-width;
+  padding: $brand-padding;
+  height: $top-nav-height;
+  border: 0;
+  fill: $color-active;
+}
+
 .navigation-header {
-  display: inline-block;
+  .navigation-hamburger {
+    display: inline-block;
+  }
 }
 
 .navigation-menu {
@@ -100,7 +115,7 @@ $color-hover-and-focus: lighten($color-active, 10%);
     li {
       &:hover,
       &.active {
-        color: $color-red;
+        color: $highlight-color;
       }
     }
   }
@@ -194,7 +209,9 @@ $color-hover-and-focus: lighten($color-active, 10%);
 
 @media (min-width: 768px) {
   .navigation-header {
-    display: none;
+    .navigation-hamburger {
+      display: none;
+    }
   }
 
   .navigation-menu > ul {
@@ -203,6 +220,7 @@ $color-hover-and-focus: lighten($color-active, 10%);
 
     & > li {
       display: inline-block;
+      color: $color;
 
       &:hover,
       &:focus {
@@ -233,13 +251,13 @@ $color-hover-and-focus: lighten($color-active, 10%);
   }
 
   .navigation-menu {
-    min-height: $top-nav-height;
-    position: relative;
+    min-height: 50px;
+    position: absolute;
     top: 0;
-    width: 100%;
+    right: 0;
+    width: calc(100% - #{$brand-width + nth($brand-padding, 2) + nth($brand-padding, 4)});
     overflow-x: visible;
-    max-width: $header-max-width;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .dropdown {
@@ -282,12 +300,12 @@ $color-hover-and-focus: lighten($color-active, 10%);
           font-weight: 400;
 
           &:hover {
-            color: $color-red;
+            color: $highlight-color;
           }
         }
 
         &.active {
-          color: $color-red;
+          color: $highlight-color;
         }
       }
     }

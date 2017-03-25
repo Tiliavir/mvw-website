@@ -11,7 +11,7 @@
     "alwaysStrict": true
   },
   "include": [
-    "pages/scripts/**/*.ts",
+    "partials/scripts/**/*.ts",
     "gulpfile.ts"
   ]
 }

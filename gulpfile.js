@@ -28,14 +28,14 @@ gulp.task("sitemap", function () {
         .pipe(gulp.dest(paths.dest));
 });
 gulp.task("html:writeNavigation", function () {
-    navigation = new mvw_navigation_1.Navigation(require("./pages/site-structure.json"));
-    fs.writeFileSync("./pages/siteOverviewList.pug", navigation.writeNavigation("allplain"));
-    fs.writeFileSync("./pages/topnavigation.pug", navigation.writeNavigation("top"));
-    fs.writeFileSync("./pages/footernavigation.pug", navigation.writeNavigation("footer"));
+    navigation = new mvw_navigation_1.Navigation(require("./partials/site-structure.json"));
+    fs.writeFileSync("./partials/siteOverviewList.pug", navigation.writeNavigation("allplain"));
+    fs.writeFileSync("./partials/topnavigation.pug", navigation.writeNavigation("top"));
+    fs.writeFileSync("./partials/footernavigation.pug", navigation.writeNavigation("footer"));
 });
 gulp.task("html:generatePages", ["html:writeNavigation"], function () {
     var scope = {
-        register: require("./pages/data/register.json"),
+        register: require("./partials/data/register.json"),
         siteTitle: "Musikverein Wollbach 1866 e.V.",
         baseUrl: baseUrl,
         numberOfMusicians: 0
@@ -61,7 +61,7 @@ gulp.task("html:generatePages", ["html:writeNavigation"], function () {
         };
     };
     var hasAmp = function (file) { return (file.data.isAmp = file.data.hasAmp); };
-    gulp.src("./pages/partials/**/*.pug")
+    gulp.src("./partials/pages/**/*.pug")
         .pipe($.replace(/^(\s*#+) /gm, "$1# "))
         .pipe($.rename(function (path) { path.ext = ".html"; }))
         .pipe($.grayMatter())
@@ -69,7 +69,7 @@ gulp.task("html:generatePages", ["html:writeNavigation"], function () {
         .pipe($["if"](hasAmp, $.pug()))
         .pipe($.flatten())
         .pipe($["if"](hasAmp, gulp.dest(paths.dest + "amp/")));
-    return gulp.src("./pages/partials/**/*.pug")
+    return gulp.src("./partials/pages/**/*.pug")
         .pipe($.replace(/^(\s*#+) /gm, "$1# "))
         .pipe($.rename(function (path) { path.ext = ".html"; }))
         .pipe($.grayMatter())
@@ -96,5 +96,5 @@ gulp.task("html:minify", function () {
 gulp.task("search:index", function () {
     fs.writeFileSync(paths.dest + "index.json", JSON.stringify(searchIndex.getResult()));
 });
-gulp.task("default", $.sequence("html:generatePages", "search:index"));
+gulp.task("default", ["html:generatePages"]);
 gulp.task("release", $.sequence("html:generatePages", "sitemap", "html:minify", "search:index"));

@@ -1,15 +1,13 @@
 module MVW {
-  const headerNavSelector: string = ".mvw-header.navbar";
+  const headerNavSelector: string = ".navigation";
   function checkScroll(): void {
     // the point where the navbar changes in px
     let startY = $(headerNavSelector).height() * 2;
 
     if ($(window).scrollTop() > startY) {
-      $(headerNavSelector).removeClass("navbar-inverse");
-      $(headerNavSelector).addClass("navbar-default");
+      $(headerNavSelector).removeClass("inverse");
     } else {
-      $(headerNavSelector).addClass("navbar-inverse");
-      $(headerNavSelector).removeClass("navbar-default");
+      $(headerNavSelector).addClass("inverse");
     }
   }
 

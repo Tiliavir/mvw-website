@@ -16,7 +16,7 @@ block pageStyles
 
 block content
   -
-    var news = require("./pages/data/news.json");
+    var news = require("./partials/data/news.json");
     var years = Object.keys(news).sort((a, b) => b - a);
     var keywords = [];
     years.map((y) => {

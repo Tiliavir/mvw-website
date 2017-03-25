@@ -1,0 +1,20 @@
+.breadcrumb {
+  padding: 8px 0;
+  margin-bottom: 20px;
+  list-style: none;
+
+  &>li {
+    display: inline-block;
+
+    &.active {
+      color: $highlight-color;
+    }
+  }
+
+  &>li+li {
+    &::before {
+      content: '\00a0>';
+      padding: 0 3px;
+    }
+  }
+}

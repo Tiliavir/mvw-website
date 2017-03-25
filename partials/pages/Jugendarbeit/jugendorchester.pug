@@ -35,7 +35,7 @@ block content
       return groups;
     }
 
-    var jugendRegister = require("./pages/data/jugend-register.json");
+    var jugendRegister = require("./partials/data/jugend-register.json");
 
     // note(ml): can also group by array of properties! => change group name
     var groupedRegisters = groupBy(jugendRegister, (person) => person.register);

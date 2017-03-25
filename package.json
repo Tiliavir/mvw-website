@@ -15,19 +15,19 @@
     "ie 9-11"
   ],
   "devDependencies": {
-    "@types/gulp": "^4.0.1",
-    "@types/gulp-load-plugins": "^0.0.28",
+    "@types/gulp": "^4.0.2",
+    "@types/gulp-load-plugins": "^0.0.29",
     "@types/grecaptcha": "^2.0.31",
-    "@types/lunr": "^0.5.28",
+    "@types/lunr": "^0.5.29",
     "@types/marked": "^0.0.28",
-    "@types/node": "^7.0.8",
+    "@types/node": "^7.0.11",
     "@types/photoswipe": "^4.0.27",
     "@types/vinyl": "^2.0.0",
     "@types/yargs": "^6.6.0",
 
     "autoprefixer": "^6.7.7",
     "copyfiles": "^1.2.0",
-    "node-sass": "^4.5.0",
+    "node-sass": "^4.5.1",
     "postcss-cli": "^3.0.0",
     "sass-lint": "^1.10.2",
     "tslint": "^4.5.1",
@@ -47,10 +47,10 @@
     "gulp-replace": "^0.5.4",
     "gulp-sitemap": "^4.2.0",
 
-    "jquery": "^3.1.1",
+    "jquery": "^3.2.1",
     "jstransformer-marked": "^1.0.2",
     "marked": "^0.3.6",
-    "moment": "^2.17.1",
+    "moment": "^2.18.1",
     "mvw-navigation": "^2.0.1",
     "mvw-search-index": "^1.0.7",
     "photoswipe": "^4.1.1",
@@ -61,7 +61,7 @@
     "clean": "rimraf ./build/ ./partials/{styles,scripts}/**/*.{css,js}",
 
     "precompile": "npm run clean && mkdir build",
-    "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss --use autoprefixer ./partials/styles/**/*.css -r",
+    "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss ./partials/styles/**/*.css -r --use autoprefixer",
     "compile": "tsc && npm run compile:sass && gulp",
 
     "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
@@ -69,7 +69,7 @@
     "copy": "npm run copy:lib && npm run copy:root",
 
     "prerelease": "npm run lint",
-    "release": "npm run compile -- release --release=true && npm run copy"
+    "release": "npm run compile -- release --release=true && npm run copy",
     
     "dev": "npm run compile && npm run copy && copyup ./build/**/* ../mvw-prod/"
   }

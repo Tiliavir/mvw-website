@@ -11,15 +11,18 @@ html(lang="de")
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    //- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
 
     title=(referencedFile === "index" ? "" : title + " | ") + scope.siteTitle
+
     if isRelease
       base(href=scope.baseUrl)
+
     meta(name="author" content=scope.siteTitle)
 
     if description
       meta(name="description" content=description)
+
     if keywords
       meta(name="keywords" content=keywords)
 
@@ -27,7 +30,6 @@ html(lang="de")
     meta(property="og:image" content=scope.baseUrl + "img/logo_color.png")
     meta(property="og:locale" content="de_DE")
     meta(property="og:site_name" content=scope.siteTitle)
-
     meta(property="fb:admins" content="100000073380067")/
 
     style
@@ -37,52 +39,41 @@ html(lang="de")
     if hasAmp
       link(rel="amphtml" href=`${scope.baseUrl}amp/${referencedFile}.html`)
 
-    link(rel="icon", type="image/png", href="/favicon-32x32.png", sizes="32x32")
-    link(rel="icon", type="image/png", href="/favicon-194x194.png", sizes="194x194")
-    link(rel="icon", type="image/png", href="/favicon-96x96.png", sizes="96x96")
-    link(rel="icon", type="image/png", href="/android-chrome-192x192.png", sizes="192x192")
-    link(rel="icon", type="image/png", href="/favicon-16x16.png", sizes="16x16")
-    link(rel="manifest", href="/manifest.json")
-    link(rel="mask-icon", href="/safari-pinned-tab.svg")
+    link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
+    link(rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32")
+    link(rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16")
+    link(rel="manifest" href="/manifest.json")
+    link(rel="mask-icon" href="/safari-pinned-tab.svg")
     meta(name="apple-mobile-web-app-title", content="MV Wollbach")
     meta(name="application-name", content="MV Wollbach")
     meta(name="msapplication-TileColor", content="#4a4a4a")
     meta(name="msapplication-TileImage", content="/mstile-144x144.png")
-    meta(name="theme-color", content="#4a4a4a")
+    meta(name="theme-color" content="#4a4a4a")
 
   body(itemscope itemtype="http://schema.org/" + (schemaOrg || "WebPage"))
-    nav.mvw-header.navbar.navbar-inverse.navbar-fixed-top
-      .container
-        .navbar-header
-          button.navbar-toggle(type="button" data-toggle="collapse" data-target="#mvw-navbar")
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href="/")
-            include ../root/logo.svg
-        #mvw-navbar.collapse.navbar-collapse
-          include ./topnavigation.pug
+    nav.navigation
+      input#navigation-checkbox.navigation-checkbox(type="checkbox")
+      .navigation-header
+        a.navbar-brand(href="/")
+          include ../root/logo.svg
+        label.navigation-hamburger(for="navigation-checkbox")
+          span
+      .navigation-menu
+        include ./topnavigation.pug
 
     block header
 
-    img.mvw-logo-print.visible-print(src="/img/logo_color.png" alt=scope.siteTitle)
+    img.mvw-logo-print.print-only(src="/img/logo_color.png" alt=scope.siteTitle)
 
-    .mvw-content-main.container(itemprop="mainContentOfPage")
-      .row
-        .col-lg-12
-          h1.page-header #{title}
-            if subtitle
-              small= " " + subtitle
-          | !{breadcrumb}
-      .row
-        .col-lg-12
-          block content
+    .content(itemprop="mainContentOfPage")
+      h1.page-header #{title}
+        if subtitle
+          small= " " + subtitle
+      | !{breadcrumb}
+      block content
 
-    .mvw-footer.navbar.navbar-default
-      .container
-        .mvw-footer-links.muted.pull-left
-          include ./footernavigation.pug
+    .footer
+      include ./footernavigation.pug
 
     script(src="/js/jquery.min.js")
     script
