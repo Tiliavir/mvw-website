@@ -24,6 +24,7 @@ $color-hover-and-focus: lighten($color-active, 10%);
   margin: 0 auto;
   height: $top-nav-height;
   user-select: none;
+  box-shadow: 0 10px 15px -10px $black;
 }
 
 .navbar-brand {
@@ -45,9 +46,7 @@ $color-hover-and-focus: lighten($color-active, 10%);
   overflow-x: hidden;
   text-align: left;
   position: relative;
-  top: 30px;
   height: $top-nav-height;
-  box-shadow: 0 10px 15px -10px $black;
 }
 
 .navigation-menu > ul {
@@ -66,11 +65,6 @@ $color-hover-and-focus: lighten($color-active, 10%);
       text-decoration: none;
       color: inherit;
       cursor: pointer;
-
-      &:hover,
-      &:focus {
-        border: 0;
-      }
     }
   }
 }
@@ -133,6 +127,7 @@ $color-hover-and-focus: lighten($color-active, 10%);
         height: initial;
         overflow-y: hidden;
         transition: max-height .8s ease;
+        box-shadow: 0 10px 15px -10px $black;
       }
 
       & ~ .navigation-header {
@@ -176,7 +171,7 @@ $color-hover-and-focus: lighten($color-active, 10%);
       height: 2px;
       width: 22px;
       transition: transform .4s ease;
-      background: $text-color;
+      background: $color;
       z-index: 1;
     }
 
@@ -216,7 +211,9 @@ $color-hover-and-focus: lighten($color-active, 10%);
 
   .navigation-menu > ul {
     flex-flow: row;
-    width: 100%;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
 
     & > li {
       display: inline-block;

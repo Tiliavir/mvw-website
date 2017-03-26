@@ -163,29 +163,17 @@ small,
   font-size: 85%;
 }
 
-a {
-  color: $highlight-color;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    color: $text-color;
+.content,
+.footer {
+  a {
+    color: $highlight-color;
     text-decoration: none;
-    border-bottom: 1px solid $highlight-color;
-  }
 
-  &[href*='//'] {
-    &:not([href*='wollbach.info']) {
-      &::after {
-        background-image: url('/img/external.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        content: '';
-        display: inline-block;
-        width: .8em;
-        height: .8em;
-        margin-left: 5px;
-      }
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $highlight-color;
+      color: $text-color;
+      text-decoration: none;
     }
   }
 }
@@ -195,14 +183,14 @@ a {
 }
 
 .overlay {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 2000;
-  left: 0;
-  top: 0;
   background-color: transparentize($black, .6);
-  overflow-x: hidden;
-  transition: .5s;
   cursor: pointer;
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  transition: .5s;
+  width: 100%;
+  z-index: 2000;
 }

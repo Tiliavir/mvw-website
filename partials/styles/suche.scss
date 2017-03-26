@@ -1,9 +1,11 @@
+@import 'global-variables';
+
 form {
   text-align: center;
 }
 
 .mvw-search-field {
-  font-size: 3rem;
+  font-size: 1.2rem;
   margin: 15px 0 40px;
   max-width: 100%;
 }
@@ -13,13 +15,13 @@ form {
 
   li {
     list-style: none;
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
   }
 
   a {
-    &:first-of-type {
-      display: block;
-      font-size: 2.2rem;
-      padding: 15px 0 2px;
-    }
+    font-size: $font-size-large;
   }
 }

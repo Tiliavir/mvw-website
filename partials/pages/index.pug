@@ -19,22 +19,111 @@ block header
           +image("/img/events/cd.jpg", "Still Feelin' Good")
 
 block content
-  #startCarousel.carousel.slide
-    ol.carousel-indicators.hidden-xs.visible-md
-      li.active(data-target="#startCarousel" data-slide-to="0")
+  -
+    let slides = [
+      {
+        "title": "Der Musikverein vor dem Jahreskonzert 2015",
+        "url": "/img/jahreskonzerte/konzert_2015.jpg"
+      },
+      {
+        "title": "Musikverein",
+        "url": "/img/slider/alle_1.jpg"
+      },
+      {
+        "title": "Musikverein",
+        "url": "/img/slider/alle_2.jpg"
+      },
+      {
+        "title": "Musikverein",
+        "url": "/img/slider/alle_3.jpg"
+      },
+      {
+        "title": "Musikverein",
+        "url": "/img/slider/alle_4.jpg"
+      },
+      {
+        "title": "Musikverein",
+        "url": "/img/slider/alle_5.jpg"
+      },
+      {
+        "title": "Altsaxophon",
+        "url": "/img/slider/altsaxophon.jpg"
+      },
+      {
+        "title": "Baritonsaxophon",
+        "url": "/img/slider/baritonsaxophon.jpg"
+      },
+      {
+        "title": "Dampfmusik",
+        "url": "/img/slider/dampfmusik.jpg"
+      },
+      {
+        "title": "Euphonium",
+        "url": "/img/slider/euphonium.jpg"
+      },
+      {
+        "title": "Fagott",
+        "url": "/img/slider/fagott.jpg"
+      },
+      {
+        "title": "Gitarre",
+        "url": "/img/slider/gitarre.jpg"
+      },
+      {
+        "title": "Horn",
+        "url": "/img/slider/horn.jpg"
+      },
+      {
+        "title": "Klarinette",
+        "url": "/img/slider/klarinette.jpg"
+      },
+      {
+        "title": "Klavier",
+        "url": "/img/slider/klavier.jpg"
+      },
+      {
+        "title": "Posaune",
+        "url": "/img/slider/posaune.jpg"
+      },
+      {
+        "title": "Querflöte",
+        "url": "/img/slider/querfloete.jpg"
+      },
+      {
+        "title": "Saxophon",
+        "url": "/img/slider/saxophon.jpg"
+      },
+      {
+        "title": "Schlagzeug",
+        "url": "/img/slider/schlagzeug.jpg"
+      },
+      {
+        "title": "Tenorsaxophon",
+        "url": "/img/slider/tenorsaxophon.jpg"
+      },
+      {
+        "title": "Trompete",
+        "url": "/img/slider/trompete.jpg"
+      },
+      {
+        "title": "Tuba",
+        "url": "/img/slider/tuba.jpg"
+      }
+    ];
 
-    .carousel-inner
-      .item.active
-        img.fill(src="/img/jahreskonzerte/konzert_2015.jpg" alt="Der Musikverein vor dem Jahreskonzert 2015")
-        .carousel-caption
-          h2 Das neue Logo des Musikvereins Wollbach
-
-    a.left.carousel-control(href="#startCarousel" data-slide="prev")
+  .slider
+    ol.slider-items
+      for slide in slides
+        li.slider-item
+          img.fill(src=slide.url alt=slide.title)
+          .carousel-caption
+            h2= slide.title
+    a.left.slider-control(href="#slider")
       span.icon-prev
-    a.right.carousel-control(href="#startCarousel" data-slide="next")
+    a.right.slider-control(href="#slider")
       span.icon-next
 
-  .row
+  .tiles
     +tile("blog_2017-doppelkonzert-huningue", "./img/events/spring.jpg", "Frühlingskonzert", "Das Frühlings-Doppelkonzert mit der Stadtmusik Hüningen am Sonntag den 02. April...")
     +tile("mitgliedschaft", "./img/slider/alle_4.jpg", "Mitglied werden", "Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden.")
 
