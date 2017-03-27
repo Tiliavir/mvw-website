@@ -9,12 +9,10 @@ hideBreadcrumb: true
 extends ../template.pug
 
 block header
-  header.container
-    .row
-      .mvw-brand.col-md-6.col-xs-12
-        +image("/img/slider/logo.png", "Das neue Logo des Musikvereins Wollbach")
-      .col-md-1.hidden-xs
-      .col-md-5.col-xs-12
+  header
+      .mvw-brand
+        +image("/img/slider/logo.png", "Das neue Logo des Musikverein Wollbach")
+      .cd
         a(href="blog_2016-still-feeling-good.html")
           +image("/img/events/cd.jpg", "Still Feelin' Good")
 

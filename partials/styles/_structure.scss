@@ -10,7 +10,8 @@ $footer-border-gray: #e7e7e7;
   margin: 0 auto;
 }
 
-.content {
+.content,
+header {
   @extend %content-width-behavior;
   min-height: 200px;
   margin-top: $top-nav-height + 30px;

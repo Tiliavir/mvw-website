@@ -5,6 +5,12 @@ $carousel-bg-color: $color-light-grey;
   padding: 5px 0;
 }
 
+.cd {
+  &:hover {
+    opacity: .9;
+  }
+}
+
 .image-container {
   background-position: 50% 50%;
   background-repeat: no-repeat;
