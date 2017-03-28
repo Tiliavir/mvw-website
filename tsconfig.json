@@ -8,7 +8,11 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitThis": true,
     "allowJs": false,
-    "alwaysStrict": true
+    "alwaysStrict": true,
+    "inlineSourceMap": false,
+    "sourceMap": false,
+    "forceConsistentCasingInFileNames": true,
+    "compileOnSave": false
   },
   "include": [
     "partials/scripts/**/*.ts",

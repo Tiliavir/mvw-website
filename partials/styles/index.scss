@@ -1,22 +1,36 @@
 @import 'global-variables';
+@import 'mixins/breakpoint';
+
 $carousel-bg-color: $color-light-grey;
 
-.mvw-brand {
-  padding: 5px 0;
-}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-.cd {
-  &:hover {
-    opacity: .9;
+  .mvw-brand {
+    padding: 5px 0;
+    width: 50%;
   }
-}
 
-.image-container {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  height: 300px;
+  .cd {
+    width: percentage(5 / 12);
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  @include breakpoint(0, 768px) {
+    .mvw-brand,
+    .cd {
+      width: 100%;
+    }
+
+    .cd {
+      margin-top: 20px;
+    }
+  }
 }
 
 .slider {

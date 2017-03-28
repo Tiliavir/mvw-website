@@ -17,6 +17,12 @@ header {
   margin-top: $top-nav-height + 30px;
 }
 
+header {
+  &~.content {
+    margin-top: 30px;
+  }
+}
+
 @include breakpoint(0, 767px) {
   .footer ul,
   .content {

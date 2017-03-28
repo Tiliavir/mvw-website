@@ -1,12 +1,29 @@
+@import 'mixins/breakpoint';
+
 $tile-color: #eee;
 $tile-bg-color: rgba(34, 34, 34, .55);
 $tile-bg-color-hover: rgba(34, 34, 34, .75);
+
+.image-container {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 300px;
+}
+
+.tiles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .tile {
   box-sizing: border-box;
   display: inline-block;
   font-weight: lighter;
   margin-top: 30px;
+  width: calc(50% - 10px);
 
   a {
     &:hover {
@@ -27,5 +44,11 @@ $tile-bg-color-hover: rgba(34, 34, 34, .75);
 
   &:hover {
     background: $tile-bg-color-hover;
+  }
+}
+
+@include breakpoint(0, 768px) {
+  .tile {
+    width: 100%;
   }
 }

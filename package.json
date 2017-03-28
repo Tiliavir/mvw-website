@@ -31,7 +31,7 @@
     "postcss-cli": "^3.0.0",
     "sass-lint": "^1.10.2",
     "tslint": "^4.5.1",
-    "typescript": "^2.2.1"
+    "typescript": "^2.2.2"
   },
   "dependencies": {
     "gulp": "^3.9.1",
@@ -61,7 +61,7 @@
     "clean": "rimraf ./build/ ./partials/{styles,scripts}/**/*.{css,js}",
 
     "precompile": "npm run clean && mkdir build",
-    "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss ./partials/styles/**/*.css -r --use autoprefixer",
+    "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss ./partials/styles/**/*.css -r --use autoprefixer --no-map",
     "compile": "tsc && npm run compile:sass && gulp",
 
     "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
