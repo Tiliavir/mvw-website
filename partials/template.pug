@@ -65,14 +65,14 @@ html(lang="de")
 
     img.mvw-logo-print.print-only(src="/img/logo_color.png" alt=scope.siteTitle)
 
-    .content(itemprop="mainContentOfPage")
+    main.content(itemprop="mainContentOfPage")
       h1.page-header #{title}
         if subtitle
           small= " " + subtitle
       | !{breadcrumb}
       block content
 
-    .footer
+    footer.footer
       include ./footernavigation.pug
 
     script(src="/js/jquery.min.js")
