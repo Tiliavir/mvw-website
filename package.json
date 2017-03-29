@@ -1,78 +1,81 @@
 {
-  "name": "mvw-website",
-  "version": "17.3.20",
-  "private": true,
-  "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
-  "author": "Musikverein Wollbach 1866 e.V.",
-  "repository": {
-    "type": "git",
-    "url": "https://tiliavir.visualstudio.com/DefaultCollection/Website/_git/Website"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "Firefox ESR",
-    "ie 9-11"
-  ],
-  "devDependencies": {
-    "@types/gulp": "^4.0.2",
-    "@types/gulp-load-plugins": "^0.0.29",
-    "@types/grecaptcha": "^2.0.31",
-    "@types/lunr": "^0.5.29",
-    "@types/marked": "^0.0.28",
-    "@types/node": "^7.0.11",
-    "@types/photoswipe": "^4.0.27",
-    "@types/vinyl": "^2.0.0",
-    "@types/yargs": "^6.6.0",
+    "name": "mvw-website",
+    "version": "17.4.1",
+    "private": true,
+    "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
+    "author": "Musikverein Wollbach 1866 e.V.",
+    "repository": {
+        "type": "git",
+        "url": "https://tiliavir.visualstudio.com/DefaultCollection/Website/_git/Website"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "Firefox ESR",
+        "ie 9-11"
+    ],
+    "devDependencies": {
+        "@types/gulp": "^4.0.2",
+        "@types/gulp-load-plugins": "^0.0.29",
+        "@types/grecaptcha": "^2.0.31",
+        "@types/jquery": "^2.0.41",
+        "@types/lunr": "^0.5.29",
+        "@types/marked": "^0.0.28",
+        "@types/node": "^7.0.11",
+        "@types/photoswipe": "^4.0.27",
+        "@types/vinyl": "^2.0.0",
+        "@types/yargs": "^6.6.0",
 
-    "autoprefixer": "^6.7.7",
-    "copyfiles": "^1.2.0",
-    "node-sass": "^4.5.1",
-    "postcss-cli": "^3.0.0",
-    "lite-server": "^2.3.0",
-    "sass-lint": "^1.10.2",
-    "tslint": "^4.5.1",
-    "typescript": "^2.2.2"
-  },
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-data": "^1.2.1",
-    "gulp-sequence": "^0.4.6",
-    "gulp-flatten": "^0.3.1",
-    "gulp-gray-matter": "^3.0.1",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-if": "^2.0.2",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-pug": "^3.3.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
-    "gulp-sitemap": "^4.2.0",
+        "autoprefixer": "^6.7.7",
+        "copyfiles": "^1.2.0",
+        "node-sass": "^4.5.1",
+        "postcss-cli": "^3.0.0",
+        "lite-server": "^2.3.0",
+        "sass-lint": "^1.10.2",
+        "tslint": "^4.5.1",
+        "typescript": "^2.2.2"
+    },
+    "dependencies": {
+        "gulp": "^3.9.1",
+        "gulp-data": "^1.2.1",
+        "gulp-sequence": "^0.4.6",
+        "gulp-flatten": "^0.3.1",
+        "gulp-gray-matter": "^3.0.1",
+        "gulp-htmlmin": "^3.0.0",
+        "gulp-if": "^2.0.2",
+        "gulp-load-plugins": "^1.5.0",
+        "gulp-pug": "^3.3.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-replace": "^0.5.4",
+        "gulp-sitemap": "^4.2.0",
 
-    "jquery": "^3.2.1",
-    "jstransformer-marked": "^1.0.2",
-    "marked": "^0.3.6",
-    "moment": "^2.18.1",
-    "mvw-navigation": "^2.0.1",
-    "mvw-search-index": "^1.0.7",
-    "photoswipe": "^4.1.1",
-    "pug": "^2.0.0-beta11"
-  },
-  "scripts": {
-    "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"partials/scripts/**/*.ts\"",
-    "clean": "rimraf ./build/ ./partials/{styles,scripts}/**/*.{css,js}",
+        "jquery": "^3.2.1",
+        "jstransformer-marked": "^1.0.2",
+        "marked": "^0.3.6",
+        "moment": "^2.18.1",
+        "mvw-navigation": "^2.0.1",
+        "mvw-search-index": "^1.0.7",
+        "photoswipe": "^4.1.1",
+        "pug": "^2.0.0-beta11"
+    },
+    "scripts": {
+        "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"partials/scripts/**/*.ts\"",
+        "clean": "rimraf ./build/ ./partials/{styles,scripts}/**/*.{css,js}",
 
-    "precompile": "npm run clean && mkdir build",
-    "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss ./partials/styles/**/*.css -r --use autoprefixer --no-map",
-    "compile": "tsc && npm run compile:sass && gulp",
+        "precompile": "npm run clean && mkdir build",
+        "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss ./partials/styles/**/*.css -r --use autoprefixer --no-map",
+        "compile": "tsc && npm run compile:sass && gulp",
 
-    "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
-    "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 ./root/[!_]*/**/* ./build/",
-    "copy": "npm run copy:lib && npm run copy:root",
+        "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
+        "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 ./root/[!_]*/**/* ./build/",
+        "copy": "npm run copy:lib && npm run copy:root",
 
-    "prerelease": "npm run lint",
-    "release": "npm run compile -- release --release=true && npm run copy",
-    
-    "dev": "npm run compile && npm run copy && copyup ./build/**/* ../mvw-prod/",
-    "dev:start": "lite-server"
-  }
+        "copy:todiff": "copyup ./build/**/* ../mvw-prod/",
+
+        "prerelease": "npm run lint",
+        "release": "npm run compile -- release --release=true && npm run copy",
+
+        "dev": "npm run compile && npm run copy",
+        "serve": "lite-server"
+    }
 }

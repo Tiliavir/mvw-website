@@ -1,0 +1,6 @@
+{
+  "injectChanges": true,
+  "files": [ "./**/*.{html,css,js}" ],
+  "watchOptions": { "ignored": ["./img", "./gallery"] },
+  "server": { "baseDir": "./build" }
+}
