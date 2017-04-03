@@ -19,10 +19,8 @@ $tile-bg-color-hover: rgba(34, 34, 34, .75);
 }
 
 .tile {
-  box-sizing: border-box;
   display: inline-block;
   font-weight: lighter;
-  margin-top: 30px;
   width: calc(50% - 10px);
 
   a {
@@ -31,16 +29,15 @@ $tile-bg-color-hover: rgba(34, 34, 34, .75);
     }
   }
 
-  .title,
-  .text {
+  .tile-content {
     color: $tile-color;
+    padding: 20px;
   }
 }
 
 .blur {
   background: $tile-bg-color;
   height: inherit;
-  padding: 20px;
 
   &:hover {
     background: $tile-bg-color-hover;
