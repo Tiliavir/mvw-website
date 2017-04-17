@@ -2,14 +2,6 @@
   "2017": [
     {
       "location": {
-        "name": "Le Triangle",
-        "address": "3 rue de Saint-Louis, Huningue"
-      },
-      "starttime": "2017-04-02T16:00:00Z",
-      "title": "Doppelkonzert mit der Stadtmusik Hüningen"
-    },
-    {
-      "location": {
         "name": "Kandertalhalle",
         "address": "Wollbach"
       },
@@ -26,11 +18,10 @@
     },
     {
       "location": {
-        "address": "Wollbach",
-        "name": "Forsthof"
+        "address": "Rheinfelden"
       },
-      "starttime": "2017-06-24T00:00:00Z",
-      "title": "Open-Air Konzert"
+      "starttime": "2017-06-24",
+      "title": "Kastanienparkfest"
     },
     {
       "location": {
@@ -48,11 +39,25 @@
     },
     {
       "location": {
+        "address": "Wieden"
+      },
+      "starttime": "2017-07-23",
+      "title": "Auftritt"
+    },
+    {
+      "location": {
         "address": "Mambach"
       },
       "starttime": "2017-09-01T20:00:00Z",
       "endtime": "2017-09-01T22:00:00Z",
       "title": "Konzert bei der Feuerwehrmusik Mambach"
+    },
+    {
+      "location": {
+        "address": "Wies"
+      },
+      "starttime": "2017-10-01",
+      "title": "Oktoberfest"
     },
     {
       "location": {
