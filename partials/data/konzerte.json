@@ -883,5 +883,72 @@
         ]
       }
     ]
+  },
+  {
+    "category": "Frühlingskonzert",
+    "location": {
+      "location": "Le Triangle, Huningue",
+      "dates": ["2017-04-02"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Stadtmusik Hüningen",
+        "conductor": "Sandrine Bitonti",
+        "program": [
+          {
+            "title": "Norma",
+            "composers": ["Vincezo Bellini"],
+            "arrangers": ["Franko Cesarini"]
+          },
+          {
+            "title": "Le seigneur des anneux",
+            "composers": ["Howard Shore"],
+            "arrangers": ["Victor Lopez"]
+          },
+          {
+            "title": "The golden age of the xylophone selection",
+            "composers": ["Floyd E. Werle"],
+            "soloists": [{"part": "Xylophone", "name": "Guillaume Bitonti"}]
+          },
+          {
+            "title": "Le roi lion",
+            "composers": ["Hans Zimmer"],
+            "arrangers": ["John Higgins"]
+          },
+          {
+            "title": "Whistle while you work",
+            "composers": ["Frank Churchill"]
+          }
+        ]
+      },
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Tintin",
+            "subtitle": "Suite aus dem Musical 'Tim und Struppi - Der Sonnentempel'",
+            "composers": ["Dirk Bosse"],
+            "arrangers": ["Johan de Meij"]
+          },
+          {
+            "title": "Teutonic Tales",
+            "subtitle": "Teutonische Fabeln",
+            "composers": ["Robert W. Smith"],
+            "parts": [
+              {"title": "Tanz der Dämonen", "soloists": [{"part": "Fagott", "name": "Luisa Krey"}]},
+              {"title": "Freya - Göttin der Schönheit und Liebe", "soloists": [{"part": "Fagott", "name": "Luisa Krey"}, {"part": "Tuba", "name": "Noah Goehlke"}]},
+              {"title": "Der Hammer des Gottes Thor", "soloists": [{"part": "Tuba", "name": "Noah Goehlke"}]}
+            ]
+          },
+          {
+            "title": "Concerto",
+            "subtitle": "für Klarinette und Blasorchester",
+            "composers": ["Oscar Navaro"],
+            "soloists": [{"part": "Klarinette", "name": "Maria Krey"}]
+          }
+        ]
+      }
+    ]
   }
 ]

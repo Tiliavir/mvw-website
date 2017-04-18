@@ -9,26 +9,25 @@
   },
   {
     "address": "79400 Wollbach",
-    "email": "frank.reinacher@mv-wollbach.de",
+    "email": "thomas.kuckuck@mv-wollbach.de",
     "image": "/img/personen/vorstand2.jpg",
-    "persons": [ "Frank Reinacher" ],
-    "telephone": "07626 973317",
+    "persons": [ "Thomas Kuckuck" ],
     "title": "2. Vorsitzender"
   },
   {
     "address": "79400 Wollbach",
     "email": "maria.krey@mv-wollbach.de",
     "image": "/img/personen/jugendleitung.jpg",
-    "persons": [ "Matthias Braun", "Maria Krey" ],
+    "persons": [ "Maria Krey", "Moritz Merkert" ],
     "title": "Jugendleitung"
   },
   {
     "address": "79599 Wittlingen",
-    "email": "martina.reinauer@mv-wollbach.de",
+    "email": "frank.reinacher@mv-wollbach.de",
     "image": "/img/personen/kassierer.jpg",
-    "persons": [ "Leonie Gresslin", "Martina Reinauer" ],
-    "telephone": "07621 82375",
-    "title": "Kassiererin"
+    "persons": [ "Frank Reinacher", "Sven Gut" ],
+    "telephone": "07626 973317",
+    "title": "Kassierer"
   },
   {
     "address": "79400 Wollbach",
@@ -55,7 +54,7 @@
   },
   {
     "image": "/img/personen/passivbeisitzer.jpg",
-    "persons": [ "Reinhard Gresslin", "Erwin Bürgin" ],
+    "persons": [ "Reinhard Gresslin", "Alexander Serazio" ],
     "title": "Passivbeisitzer"
   }
 ]
