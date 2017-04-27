@@ -1,6 +1,7 @@
 [
   {
     "category": "Jahreskonzert",
+    "title": "Pilatus, Berg der Drachen",
     "location": {
       "location": "Kandertalhalle Wollbach",
       "dates": ["2003-01-18"]
@@ -71,7 +72,7 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2004-01-??"]
+      "dates": ["2004-01-17"]
     },
     "title": "New York, New York",
     "parts": [
@@ -435,7 +436,7 @@
             ]
           },
           {
-            "title": "Konzert für Viloloncello und Blasorchester",
+            "title": "Konzert für Violoncello und Blasorchester",
             "composers": ["Friedrich Gulda"],
             "soloists": [{"part": "Violoncello", "name": "Elisa Silber"}],
             "parts": [
@@ -449,6 +450,11 @@
           {
             "title": "At kitty O'Shea's - Irish folk song suite",
             "composers": ["Johan de Meij"]
+          },
+          {
+            "title": "Le Paris d'Azzola",
+            "composers": ["Thierry Muller"],
+            "soloists": [{"name": "Oliver Hauser", "part": "Akkordeon"}]
           }
         ]
       }
@@ -582,7 +588,12 @@
           },
           {
             "title": "Jon Lord Concerto for group and orchestra, Sinfonisches Werk für Orchester und Rockband im Stil der Rockband Deep Purple",
-            "composers": ["Jon Lord"]
+            "composers": ["Jon Lord"],
+            "parts": [
+              {"title": "Movement One Moderato - Allegro"},
+              {"title": "Movement Two Andante"},
+              {"title": "Movement Three Vivace - Presto"}
+            ]
           }
         ]
       }
