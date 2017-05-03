@@ -1,10 +1,10 @@
-﻿module MVW.Start {
+﻿namespace MVW.Start {
   export function initialize(): void {
-    let $items: JQuery = $(".slider-item");
-    let slideCount = $items.length;
-    let slideWidth = $items.width();
-    let slideHeight = $items.height();
-    let sliderUlWidth = slideCount * slideWidth;
+    const $items: JQuery = $(".slider-item");
+    const slideCount = $items.length;
+    const slideWidth = $items.width();
+    const slideHeight = $items.height();
+    const sliderUlWidth = slideCount * slideWidth;
 
     $(".slider").css({ width: slideWidth, height: slideHeight });
     $(".slider-items").css({ width: sliderUlWidth, marginLeft: - slideWidth });
@@ -38,6 +38,6 @@
     $(".slider-control.right").click(() => moveRight());
     setInterval(() => moveRight(), 6000);
   }
-}
 
-$(() => { MVW.Start.initialize(); });
+  $(() => { MVW.Start.initialize(); });
+}

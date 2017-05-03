@@ -1,9 +1,5 @@
 class Contact {
-  constructor() {
-    Contact.initialize();
-  }
-
-  private static isValidEmail (email: string): boolean {
+  private static isValidEmail(email: string): boolean {
     const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
   }
@@ -20,7 +16,7 @@ class Contact {
   }
 
   private static addError($input: JQuery): void {
-    let parentFormGroup = $input.parents(".form-group");
+    const parentFormGroup = $input.parents(".form-group");
     parentFormGroup.children(".help-block").show();
     parentFormGroup.addClass("has-error");
   }
@@ -44,21 +40,21 @@ class Contact {
       // do a little client-side validation -- check that each field has a value and e-mail field is in proper format
       // use bootstrap validator (https://github.com/1000hz/bootstrap-validator) if provided, otherwise a bit of custom
       // validation
-      let $form = $("#feedbackForm");
+      const $form = $("#feedbackForm");
       let hasErrors = false;
 
-      if ((<any> $form).validator) {
-        hasErrors = (<any> $form).validator("validate").hasErrors;
+      if (($form as any).validator) {
+        hasErrors = ($form as any).validator("validate").hasErrors;
       } else {
         $("#feedbackForm input").not(".optional").each((i, e): void => {
-          let $this = $(e);
+          const $this = $(e);
           if (($this.is(":checkbox") && !$this.is(":checked")) || !$this.val()) {
             hasErrors = true;
             Contact.addError($(e));
           }
         });
 
-        let $email = $("#email");
+        const $email = $("#email");
 
         if (!Contact.isValidEmail($email.val())) {
           hasErrors = true;
@@ -74,10 +70,10 @@ class Contact {
       // send the feedback e-mail
       $.ajax({
         data: $form.serialize(),
-        error: function (response: JQueryXHR): void {
+        error: (response: JQueryXHR): void => {
           Contact.addAjaxMessage(response.responseJSON.message, true);
         },
-        success: function (data: any): void {
+        success: (data: any): void => {
           Contact.addAjaxMessage(data.message, false);
           Contact.clearForm();
         },
@@ -87,6 +83,10 @@ class Contact {
 
       return false;
     });
+  }
+
+  constructor() {
+    Contact.initialize();
   }
 }
 

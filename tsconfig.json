@@ -11,8 +11,7 @@
     "alwaysStrict": true,
     "inlineSourceMap": false,
     "sourceMap": false,
-    "forceConsistentCasingInFileNames": true,
-    "compileOnSave": false
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "partials/scripts/**/*.ts",

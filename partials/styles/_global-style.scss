@@ -12,7 +12,8 @@
 }
 
 * {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  $black-rgba: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: $black-rgba;
 
   &:focus,
   &:hover {
@@ -173,15 +174,17 @@ small,
 
 .content,
 .footer {
-  a:not(.unstyled) {
-    color: $highlight-color;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      border-bottom: 1px solid $highlight-color;
-      color: $text-color;
+  a {
+    &:not(.unstyled) {
+      color: $highlight-color;
       text-decoration: none;
+
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid $highlight-color;
+        color: $text-color;
+        text-decoration: none;
+      }
     }
   }
 }

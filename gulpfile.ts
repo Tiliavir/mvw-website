@@ -60,8 +60,8 @@ gulp.task("html:generatePages", ["html:writeNavigation"], () => {
 
   scope.numberOfMusicians = getNumberOfMusicians(scope.register);
 
-  var getScope = (file: File) => {
-    var filename = path.basename(file.path, path.extname(file.path));
+  let getScope = (file: File) => {
+    const filename = path.basename(file.path, path.extname(file.path));
     return {
       marked: marked,
       moment: moment,
@@ -76,7 +76,7 @@ gulp.task("html:generatePages", ["html:writeNavigation"], () => {
     };
   };
 
-  var hasAmp = (file: File) => ((<any> file).data.isAmp = (<any> file).data.hasAmp);
+  let hasAmp = (file: File) => ((<any> file).data.isAmp = (<any> file).data.hasAmp);
 
   gulp.src("./partials/pages/**/*.pug")
               .pipe($.replace(/^(\s*#+) /gm, "$1# "))
@@ -93,7 +93,6 @@ gulp.task("html:generatePages", ["html:writeNavigation"], () => {
               .pipe($.grayMatter())
               .pipe($.data(getScope))
               .pipe($.data((file: File): void => searchIndex.add(file, (<any> file).data)))
-
               .pipe($.pug())
               .pipe($.flatten())
               .pipe(gulp.dest(paths.dest));

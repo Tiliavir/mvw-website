@@ -1,22 +1,22 @@
-﻿module MVW.Gallery {
+﻿namespace MVW.Gallery {
   let galleries: any;
   let pswpElement: any;
 
   export function openGallery(e: any): void {
     let items = e.items;
     if (!items) {
-      let preview = $(e).find(".preview");
+      const preview = $(e).find(".preview");
       items = e.items = galleries[preview.data("year")][preview.data("gallery")];
     }
 
-    let options: any = {
+    const options: any = {
       getThumbBoundsFn(): {w: number, x: number, y: number} {
-        let pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
-        let rect = e.getBoundingClientRect();
+        const pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
+        const rect = e.getBoundingClientRect();
         return { w: rect.width, x: rect.left, y: rect.top + pageYScroll };
       }
     };
-    let gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+    const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
 
     // create variable that will store real size of viewport
     let realViewportWidth: number;
@@ -85,14 +85,14 @@
   }
 
   function shufflePreview(): void {
-    let previews = $(".preview:visible");
-    let e: any = $(previews[Math.floor(Math.random() * previews.length)]);
-    let g = e[0].images || (e[0].images = galleries[e.data("year")][e.data("gallery")]
+    const previews = $(".preview:visible");
+    const e: any = $(previews[Math.floor(Math.random() * previews.length)]);
+    const g = e[0].images || (e[0].images = galleries[e.data("year")][e.data("gallery")]
                                            .filter((i: any) => (i.s.w === 200))
                                            || galleries[e.data("year")][e.data("gallery")]);
 
     e.fadeOut(400, () => {
-      let i = g[Math.floor(Math.random() * g.length)];
+      const i = g[Math.floor(Math.random() * g.length)];
       e.attr("src", `/gallery/${i.b}m/${i.f}`);
     });
     e.fadeIn(400);
@@ -102,15 +102,15 @@
 
   export function initialize(): void {
     pswpElement = document.querySelectorAll(".pswp")[0];
-    $(".mvw-gallery img").hover(e => {
-      let $e = $(e.target);
+    $(".mvw-gallery img").hover((e) => {
+      const $e = $(e.target);
       $e.attr("src", $e.attr("src").replace("/s/", "/m/"));
     });
-    $.getJSON("/gallery/galleries.json", data => {
+    $.getJSON("/gallery/galleries.json", (data) => {
       galleries = data;
       shufflePreview();
     });
   }
-}
 
-$(() => { MVW.Gallery.initialize(); });
+  $(() => { MVW.Gallery.initialize(); });
+}

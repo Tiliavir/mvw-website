@@ -1,7 +1,7 @@
-﻿module MVW.Register {
+﻿namespace MVW.Register {
   function endsWith(str: string, suffix: string): boolean {
     return str.indexOf(suffix, str.length - suffix.length) !== -1;
-  };
+  }
 
   const register: any = {
     "Altsaxophon": ["altsaxophon_1.jpg", "altsaxophon_2.jpg", "saxophon_1.jpg"],
@@ -22,7 +22,7 @@
   };
 
   function isElementInViewport(el: HTMLElement): boolean {
-    let rect = el.getBoundingClientRect();
+    const rect = el.getBoundingClientRect();
     return rect.bottom >= 0
       && rect.right >= 0
       && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
@@ -30,9 +30,9 @@
   }
 
   export function tryReplaceImage($images: JQuery): boolean {
-    let $image: JQuery = $($images[Math.floor(Math.random() * $images.length)]);
+    const $image: JQuery = $($images[Math.floor(Math.random() * $images.length)]);
     if (isElementInViewport($image[0])) {
-      let registerImageUrls = register[$image.attr("title")].filter((url: string): boolean => {
+      const registerImageUrls = register[$image.attr("title")].filter((url: string): boolean => {
         return !endsWith($image.attr("src"), url);
       });
       $image.fadeOut("fast", (): void => {
@@ -43,15 +43,15 @@
     }
     return false;
   }
-}
 
-$((): void => {
-  let $images = $(".mvw-register-table img");
-  setInterval(
-    (): void => {
-      while (!MVW.Register.tryReplaceImage($images)) {
-        // find an image to replace...
-      }
-    },
-    8000);
-});
+  $((): void => {
+    const $images = $(".mvw-register-table img");
+    setInterval(
+      (): void => {
+        while (!MVW.Register.tryReplaceImage($images)) {
+          // find an image to replace...
+        }
+      },
+      8000);
+  });
+}

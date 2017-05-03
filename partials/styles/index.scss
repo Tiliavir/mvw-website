@@ -3,6 +3,10 @@
 
 $carousel-bg-color: $color-light-grey;
 
+$slider-item-bg: #ccc;
+$slider-control-fg: #fff;
+$slider-control-bg: #2a2a2a;
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +59,7 @@ header {
   margin: 0 auto;
   padding: 0;
   max-height: 45vh;
-  background: #ccc;
+  background: $slider-item-bg;
 }
 
 .slider-control {
@@ -66,8 +70,8 @@ header {
   padding: 4% 3%;
   width: auto;
   height: auto;
-  background: #2a2a2a;
-  color: #fff;
+  background: $slider-control-bg;
+  color: $slider-control-fg;
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;

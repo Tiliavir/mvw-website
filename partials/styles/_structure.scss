@@ -24,10 +24,19 @@ header {
 }
 
 @include breakpoint(0, 767px) {
-  .footer ul,
-  .content {
+  %width-and-padding-reset {
     width: initial;
     padding: 0 5px;
+  }
+
+  .footer {
+    ul {
+      @extend %width-and-padding-reset;
+    }
+  }
+
+  .content {
+    @extend %width-and-padding-reset;
   }
 }
 

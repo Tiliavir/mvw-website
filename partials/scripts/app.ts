@@ -1,8 +1,8 @@
-module MVW {
+namespace MVW {
   const headerNavSelector: string = ".navigation";
   function checkScroll(): void {
     // the point where the navbar changes in px
-    let startY = $(headerNavSelector).height() * 2;
+    const startY = $(headerNavSelector).height() * 2;
 
     if ($(window).scrollTop() > startY) {
       $(headerNavSelector).removeClass("inverse");
@@ -16,6 +16,6 @@ module MVW {
       $(window).on("scroll load resize", () => checkScroll());
     }
   }
-}
 
-$(() => MVW.initialize());
+  $(() => { MVW.initialize(); });
+}

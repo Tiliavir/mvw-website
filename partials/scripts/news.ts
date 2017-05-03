@@ -1,9 +1,15 @@
 class News {
+  private static containsAll(array: string[], find: string[]): boolean {
+    return find.every((v) => {
+      return array.indexOf(v) !== -1;
+    });
+  }
+
   private filters: string[] = [];
 
-  constructor() {
+  public initialize() {
     $(".keyword-selector .keyword").each((i, e) => {
-      let $e = $(e);
+      const $e = $(e);
       $e.click(() => {
         $e.toggleClass("active");
         this.toggleFilter($e.text());
@@ -11,8 +17,8 @@ class News {
     });
   }
 
-  toggleFilter(filter: string): void {
-    let index = this.filters.indexOf(filter);
+  private toggleFilter(filter: string): void {
+    const index = this.filters.indexOf(filter);
     if (index === -1) {
       this.filters.push(filter);
     } else {
@@ -21,13 +27,13 @@ class News {
     this.updateFilter();
   }
 
-  updateFilter(): void {
+  private updateFilter(): void {
     if (this.filters.length > 0) {
       $(".nav-tabs").hide();
       $(".tab-content .tab-pane").show().css("opacity", "1");
       $(".tab-content .entry").each((i, entry) => {
-        let $entry = $(entry);
-        let itemTags: string[] = [];
+        const $entry = $(entry);
+        const itemTags: string[] = [];
         $entry.find(".keyword").each((j, e) => {
           itemTags.push($(e).text());
         });
@@ -36,16 +42,10 @@ class News {
       });
     } else {
       $(".nav-tabs").show();
-      $(".tab-content .tab-pane:not(.active)").css({ "opacity": 0, "display": "none" });
+      $(".tab-content .tab-pane:not(.active)").css({ opacity: 0, display: "none" });
       $(".tab-content .entry").show();
     }
   }
-
-  static containsAll(array: string[], find: string[]): boolean {
-    return find.every((v) => {
-      return array.indexOf(v) !== -1;
-    });
-  }
 }
 
-$(() => new News());
+$(() => { new News().initialize(); });

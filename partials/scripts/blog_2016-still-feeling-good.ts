@@ -1,27 +1,27 @@
-﻿module MVW.StillFeelingGood {
-  function isValidEmail (email: string): boolean {
+﻿namespace MVW.StillFeelingGood {
+  function isValidEmail(email: string): boolean {
     const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
   }
 
-  function clearErrors (): void {
+  function clearErrors(): void {
     $("#emailAlert").remove();
     $("#feedbackForm .help-block").hide();
     $("#feedbackForm .form-group").removeClass("has-error");
   }
 
-  function clearForm (): void {
+  function clearForm(): void {
     $("#feedbackForm input").val("");
     grecaptcha.reset();
   }
 
   function addError($input: JQuery): void {
-    let parentFormGroup = $input.parents(".form-group");
+    const parentFormGroup = $input.parents(".form-group");
     parentFormGroup.children(".help-block").show();
     parentFormGroup.addClass("has-error");
   }
 
-  function addAjaxMessage (msg: string, isError: boolean): void {
+  function addAjaxMessage(msg: string, isError: boolean): void {
     $("#feedbackSubmit").after("<div id='emailAlert' class='alert alert-"
                                + (isError ? "danger'" : "success'")
                                + " style='margin-top: 5px;'>"
@@ -40,21 +40,21 @@
       // do a little client-side validation -- check that each field has a value and e-mail field is in proper format
       // use bootstrap validator (https://github.com/1000hz/bootstrap-validator) if provided, otherwise a bit of custom
       // validation
-      let $form = $("#feedbackForm");
+      const $form = $("#feedbackForm");
       let hasErrors = false;
 
-      if ((<any> $form).validator) {
-        hasErrors = (<any> $form).validator("validate").hasErrors;
+      if (($form as any).validator) {
+        hasErrors = ($form as any).validator("validate").hasErrors;
       } else {
         $("#feedbackForm input").not(".optional").each((i: number, e: HTMLElement) => {
-          let $this = $(e);
+          const $this = $(e);
           if (($this.is(":checkbox") && !$this.is(":checked")) || !$this.val()) {
             hasErrors = true;
             addError($(e));
           }
         });
 
-        let $email = $("#email");
+        const $email = $("#email");
 
         if (!isValidEmail($email.val())) {
           hasErrors = true;
@@ -70,10 +70,10 @@
       // send the feedback e-mail
       $.ajax({
         data: $form.serialize(),
-        error: function (response: JQueryXHR): void {
+        error: (response: JQueryXHR): void => {
           addAjaxMessage(response.responseJSON.message, true);
         },
-        success: function (data: any): void {
+        success: (data: any): void => {
           addAjaxMessage(data.message, false);
           clearForm();
         },
@@ -84,6 +84,6 @@
       return false;
     });
   }
-}
 
-$(() => { MVW.StillFeelingGood.initialize(); });
+  $(() => { MVW.StillFeelingGood.initialize(); });
+}

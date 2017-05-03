@@ -17,11 +17,11 @@
     "devDependencies": {
         "@types/gulp": "^4.0.2",
         "@types/gulp-load-plugins": "^0.0.29",
-        "@types/grecaptcha": "^2.0.31",
-        "@types/jquery": "^2.0.41",
+        "@types/grecaptcha": "^2.0.33",
+        "@types/jquery": "^2.0.42",
         "@types/lunr": "^0.5.29",
         "@types/marked": "^0.0.28",
-        "@types/node": "^7.0.11",
+        "@types/node": "^7.0.15",
         "@types/photoswipe": "^4.0.27",
         "@types/vinyl": "^2.0.0",
         "@types/yargs": "^6.6.0",
@@ -32,8 +32,8 @@
         "postcss-cli": "^3.0.0",
         "lite-server": "^2.3.0",
         "sass-lint": "^1.10.2",
-        "tslint": "^4.5.1",
-        "typescript": "^2.2.2"
+        "tslint": "^5.1.0",
+        "typescript": "^2.3.2"
     },
     "dependencies": {
         "gulp": "^3.9.1",
@@ -56,7 +56,7 @@
         "mvw-navigation": "^2.0.1",
         "mvw-search-index": "^1.0.7",
         "photoswipe": "^4.1.1",
-        "pug": "^2.0.0-beta11"
+        "pug": "^2.0.0-rc.1"
     },
     "scripts": {
         "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"partials/scripts/**/*.ts\"",
