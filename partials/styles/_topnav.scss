@@ -9,7 +9,7 @@ $background-color-active: transparentize($background-color-active-no-transparenc
 $background-color-hover-and-focus: lighten($background-color-active, 20%);
 
 $color: $gray-light;
-$color-active: $color-light-grey;
+$color-active: $gray-lightest;
 $color-hover-and-focus: lighten($color-active, 10%);
 
 .navigation {

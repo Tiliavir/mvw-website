@@ -1,7 +1,7 @@
 @import 'global-variables';
 @import 'mixins/breakpoint';
 
-$carousel-bg-color: $color-light-grey;
+$carousel-bg-color: $gray-lightest;
 
 $slider-item-bg: #ccc;
 $slider-control-fg: #fff;
@@ -58,8 +58,18 @@ header {
   float: left;
   margin: 0 auto;
   padding: 0;
+  width: inherit;
+  height: 800px;
   max-height: 45vh;
   background: $slider-item-bg;
+
+  .fill {
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: inherit;
+
+  }
 }
 
 .slider-control {

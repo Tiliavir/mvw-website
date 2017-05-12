@@ -22,8 +22,11 @@ $tile-bg-color-hover: rgba(34, 34, 34, .75);
   display: inline-block;
   font-weight: lighter;
   width: calc(50% - 10px);
+  margin-bottom: 20px;
 
   a {
+    text-decoration: none;
+
     &:hover {
       text-decoration: none;
     }

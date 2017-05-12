@@ -29,7 +29,7 @@ body {
   font-size: $font-size-base;
   background-color: $body-bg;
   color: $text-color;
-  line-height: 1.4285;
+  line-height: $line-height-base;
   min-height: 100vh;
 }
 
@@ -127,6 +127,8 @@ h1 {
   font-size: 1.33 * $font-size-large;
   color: $highlight-color;
   letter-spacing: 1px;
+  border-bottom: 1px solid $gray-lighter;
+  padding-bottom: 10px;
 }
 
 h2 {

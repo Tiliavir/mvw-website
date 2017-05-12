@@ -1,7 +1,11 @@
 .breadcrumb {
   list-style: none;
-  margin-bottom: 20px;
-  padding: 8px 0;
+  margin-bottom: 25px;
+  padding: 4px 12px;
+  background-color: $gray-lightest;
+  border-radius: 6px;
+  font-size: $font-size-small;
+  margin-top: 15px;
 
   &>li {
     display: inline-block;
