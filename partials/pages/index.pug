@@ -113,9 +113,7 @@ block content
     ol.slider-items
       for slide in slides
         li.slider-item
-          div.fill(style="background-image:url('" + slide.url + "');" data-alt=slide.title)
-          .carousel-caption
-            h2= slide.title
+          div.fill(style="background-image: url('" + slide.url + "');" data-alt=slide.title)
     a.unstyled.left.slider-control(href="#slider")
       span.icon-prev
     a.unstyled.right.slider-control(href="#slider")

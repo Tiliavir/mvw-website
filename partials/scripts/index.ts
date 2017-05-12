@@ -1,14 +1,13 @@
 ﻿namespace MVW.Start {
   export function initialize(): void {
-    const $items: JQuery = $(".slider-item");
-    const slideCount = $items.length;
-    const slideWidth = $items.width();
-    const slideHeight = $items.height();
-    const sliderUlWidth = slideCount * slideWidth;
+    const slideWidth = $(".slider-items").width();
 
-    $(".slider").css({ width: slideWidth, height: slideHeight });
-    $(".slider-items").css({ width: sliderUlWidth, marginLeft: - slideWidth });
-    $(".slider-item:last-child").prependTo(".slider-items");
+    let interval: NodeJS.Timer;
+
+    function resetInterval(): void {
+      clearInterval(interval);
+      interval = setInterval(() => moveRight(), 6000);
+    }
 
     function moveLeft(): void {
       $(".slider-items").animate(
@@ -20,6 +19,7 @@
           $(".slider-item:last-child").prependTo(".slider-items");
           $(".slider-items").css("left", "");
         });
+      resetInterval();
     }
 
     function moveRight(): void {
@@ -32,11 +32,13 @@
           $(".slider-item:first-child").appendTo(".slider-items");
           $(".slider-items").css("left", "");
         });
+      resetInterval();
     }
 
+    $(".slider-item:last-child").prependTo(".slider-items");
     $(".slider-control.left").click(() => moveLeft());
     $(".slider-control.right").click(() => moveRight());
-    setInterval(() => moveRight(), 6000);
+    resetInterval();
   }
 
   $(() => { MVW.Start.initialize(); });
