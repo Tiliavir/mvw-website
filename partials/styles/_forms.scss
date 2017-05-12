@@ -1,19 +1,19 @@
 @import 'global-variables';
 
-$line-height-computed: floor(($font-size-base * $line-height-base));
-$line-height-large:         1.3333333;
-$line-height-small:         1.5;
+$line-height-computed:           floor(($font-size-base * $line-height-base));
+$line-height-large:              1.3333333;
+$line-height-small:              1.5;
 
-$padding-base-vertical: 6px;
-$padding-base-horizontal:   12px;
-$padding-large-vertical:    10px;
-$padding-large-horizontal:  16px;
-$padding-small-vertical: 5px;
-$padding-small-horizontal:  10px;
+$padding-base-vertical:          6px;
+$padding-base-horizontal:        12px;
+$padding-large-vertical:         10px;
+$padding-large-horizontal:       16px;
+$padding-small-vertical:         5px;
+$padding-small-horizontal:       10px;
 
-$border-radius-small:       3px;
-$border-radius-base:        4px;
-$border-radius-large:       6px;
+$border-radius-small:            3px;
+$border-radius-base:             4px;
+$border-radius-large:            6px;
 
 $input-bg:                       #fff;
 $input-bg-disabled:              $gray-lighter;
@@ -50,21 +50,25 @@ $state-danger-text:              #a94442;
 $state-danger-bg:                #f2dede;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%);
 
-$grid-gutter-width: 20px;
+$grid-gutter-width:              20px;
 
 @mixin form-control-validation($text-color: #555, $border-color: #ccc, $background-color: #f5f5f5) {
-  // Color the label and help text
   .help-block,
   .control-label,
   .radio,
   .checkbox,
   .radio-inline,
-  .checkbox-inline,
-  &.radio label,
-  &.checkbox label,
-  &.radio-inline label,
-  &.checkbox-inline label  {
+  .checkbox-inline {
     color: $text-color;
+  }
+
+  &.radio,
+  &.checkbox,
+  &.radio-inline,
+  &.checkbox-inline   {
+    label {
+      color: $text-color;
+    }
   }
 
   .form-control {
@@ -111,6 +115,38 @@ $grid-gutter-width: 20px;
 
 input {
   box-sizing: border-box;
+
+  &[type='radio'], 
+  &[type='checkbox'] {
+    margin: 4px 0 0;
+    margin-top: 1px \9; // IE8-9
+    line-height: normal;
+
+    &[disabled],
+    &.disabled,
+    fieldset[disabled] & {
+      cursor: $cursor-disabled;
+    }
+  }
+
+  &[type='file'] {
+    display: block;
+  }
+
+  &[type='range'] {
+    display: block;
+    width: 100%;
+  }
+
+  &[multiple],
+  &[size] {
+    height: auto;
+  }
+
+  &[type='search'] {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+  }
 }
 
 fieldset {
@@ -140,38 +176,6 @@ label {
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 5px;
   font-weight: bold;
-}
-
-input[type='search'] {
-  box-sizing: border-box;
-  -webkit-appearance: none;
-}
-
-input[type='radio'],
-input[type='checkbox'] {
-  margin: 4px 0 0;
-  margin-top: 1px \9; // IE8-9
-  line-height: normal;
-
-  &[disabled],
-  &.disabled,
-  fieldset[disabled] & {
-    cursor: $cursor-disabled;
-  }
-}
-
-input[type='file'] {
-  display: block;
-}
-
-input[type='range'] {
-  display: block;
-  width: 100%;
-}
-
-select[multiple],
-select[size] {
-  height: auto;
 }
 
 output {
@@ -220,15 +224,21 @@ output {
   }
 
   &[disabled],
-  &[readonly],
-  fieldset[disabled] & {
+  &[readonly] {
     background-color: $input-bg-disabled;
     opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
   }
 
-  &[disabled],
-  fieldset[disabled] & {
+  &[disabled] {
     cursor: $cursor-disabled;
+  }
+
+  fieldset {
+    &[disabled] & {
+      cursor: $cursor-disabled;
+      background-color: $input-bg-disabled;
+      opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+    }
   }
 }
 
@@ -237,22 +247,24 @@ textarea.form-control {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  input[type='date'],
-  input[type='time'],
-  input[type='datetime-local'],
-  input[type='month'] {
-    &.form-control {
-      line-height: $input-height-base;
-    }
+  input {
+    &[type='date'],
+    &[type='time'],
+    &[type='datetime-local'],
+    &[type='month'] {
+      &.form-control {
+        line-height: $input-height-base;
+      }
 
-    &.input-sm,
-    .input-group-sm & {
-      line-height: $input-height-small;
-    }
+      &.input-sm,
+      .input-group-sm & {
+        line-height: $input-height-small;
+      }
 
-    &.input-lg,
-    .input-group-lg & {
-      line-height: $input-height-large;
+      &.input-lg,
+      .input-group-lg & {
+        line-height: $input-height-large;
+      }
     }
   }
 }
@@ -277,13 +289,20 @@ textarea.form-control {
   }
 }
 
-.radio input[type='radio'],
-.radio-inline input[type='radio'],
-.checkbox input[type='checkbox'],
-.checkbox-inline input[type='checkbox'] {
-  position: absolute;
-  margin-left: -20px;
-  margin-top: 4px \9;
+.radio,
+.radio-inline,
+.checkbox,
+.checkbox-inline {
+  input {
+    &[type='radio'],
+    &[type='radio'],
+    &[type='checkbox'],
+    &[type='checkbox'] {
+      position: absolute;
+      margin-left: -20px;
+      margin-top: 4px \9;
+    }
+  }
 }
 
 .radio + .radio,
@@ -301,9 +320,14 @@ textarea.form-control {
   font-weight: normal;
   cursor: pointer;
 
-  &.disabled,
-  fieldset[disabled] & {
+  &.disabled {
     cursor: $cursor-disabled;
+  }
+
+  fieldset {
+    &[disabled] & {
+      cursor: $cursor-disabled;
+    }
   }
 }
 
@@ -316,9 +340,11 @@ textarea.form-control {
 .radio,
 .checkbox {
   &.disabled,
-  fieldset[disabled] & {
-    label {
-      cursor: $cursor-disabled;
+  fieldset {
+    &[disabled] & {
+      label {
+        cursor: $cursor-disabled;
+      }
     }
   }
 }
@@ -512,14 +538,21 @@ textarea.form-control {
       }
     }
 
-    .radio input[type='radio'],
-    .checkbox input[type='checkbox'] {
-      position: relative;
-      margin-left: 0;
+    .radio,
+    .checkbox {
+      input {
+        [type='radio'],
+        [type='checkbox'] {
+          position: relative;
+          margin-left: 0;
+        }
+      }
     }
 
-    .has-feedback .form-control-feedback {
-      top: 0;
+    .has-feedback {
+      .form-control-feedback {
+        top: 0;
+      }
     }
   }
 }
@@ -566,7 +599,9 @@ textarea.form-control {
     }
   }
 
-  .has-feedback .form-control-feedback {
-    right: floor(($grid-gutter-width / 2));
+  .has-feedback {
+    .form-control-feedback {
+      right: floor(($grid-gutter-width / 2));
+    }
   }
 }
