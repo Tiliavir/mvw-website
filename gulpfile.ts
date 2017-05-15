@@ -10,7 +10,7 @@ import { Navigation } from "mvw-navigation";
 import { SearchIndex } from "mvw-search-index";
 
 let isRelease: boolean = yargs.default("release", false).boolean("release").argv;
-let baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
+let baseUrl = isRelease ? "https://www.mv-wollbach.de/" : "http://localhost/";
 let navigation: Navigation;
 let searchIndex: SearchIndex = new SearchIndex();
 let $: any = gulpLoadPlugins();
