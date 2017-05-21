@@ -28,7 +28,7 @@
 
         "autoprefixer": "^7.0.1",
         "copyfiles": "^1.2.0",
-        "node-sass": "^4.5.1",
+        "node-sass": "^4.5.2",
         "postcss-cli": "^4.0.0",
         "lite-server": "^2.3.0",
         "sass-lint": "^1.10.2",
@@ -55,7 +55,7 @@
         "moment": "^2.18.1",
         "mvw-navigation": "^2.0.1",
         "mvw-search-index": "^1.0.7",
-        "photoswipe": "^4.1.1",
+        "photoswipe": "^4.1.2",
         "pug": "^2.0.0-rc.1"
     },
     "scripts": {
