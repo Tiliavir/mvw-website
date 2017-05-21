@@ -6,7 +6,7 @@ RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK|OPTIONS)
 RewriteRule .* - [F]
 
 RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
 # X-Frame-Options to avoid Clickjacking
 Header always append X-Frame-Options SAMEORIGIN
@@ -71,4 +71,4 @@ ErrorDocument 404 /404.html
 ErrorDocument 401 /401.html
 ErrorDocument 410 /404.html
 
-Redirect 302 /sitemap.html http://www.mv-wollbach.de/seiten-uebersicht.html
+Redirect 302 /sitemap.html https://www.mv-wollbach.de/seiten-uebersicht.html
