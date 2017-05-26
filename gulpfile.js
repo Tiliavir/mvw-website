@@ -10,7 +10,7 @@ var gulpLoadPlugins = require("gulp-load-plugins");
 var mvw_navigation_1 = require("mvw-navigation");
 var mvw_search_index_1 = require("mvw-search-index");
 var isRelease = yargs["default"]("release", false).boolean("release").argv.release;
-var baseUrl = isRelease ? "http://www.mv-wollbach.de/" : "http://localhost/";
+var baseUrl = isRelease ? "https://www.mv-wollbach.de/" : "http://localhost/";
 var navigation;
 var searchIndex = new mvw_search_index_1.SearchIndex();
 var $ = gulpLoadPlugins();

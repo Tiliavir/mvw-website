@@ -1,6 +1,6 @@
 {
     "name": "mvw-website",
-    "version": "17.4.17",
+  "version": "17.05.21",
     "private": true,
     "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
     "author": "Musikverein Wollbach 1866 e.V.",

@@ -3,4 +3,4 @@ Disallow: /gallery/
 
 Allow: /
 
-Sitemap: http://www.mv-wollbach.de/sitemap.xml
+Sitemap: https://www.mv-wollbach.de/sitemap.xml
