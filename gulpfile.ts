@@ -1,4 +1,4 @@
-﻿import * as fs from "fs";
+import * as fs from "fs";
 import * as File from "vinyl";
 import * as gulp from "gulp";
 import * as moment from "moment";

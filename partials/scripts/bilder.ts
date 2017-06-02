@@ -1,4 +1,4 @@
-﻿namespace MVW.Gallery {
+namespace MVW.Gallery {
   let galleries: any;
   let pswpElement: any;
 

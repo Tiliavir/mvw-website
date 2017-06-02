@@ -1,4 +1,4 @@
-﻿namespace MVW.Start {
+namespace MVW.Start {
   export function initialize(): void {
     const slideWidth = $(".slider-items").width();
 

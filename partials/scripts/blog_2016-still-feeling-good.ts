@@ -1,4 +1,4 @@
-﻿namespace MVW.StillFeelingGood {
+namespace MVW.StillFeelingGood {
   function isValidEmail(email: string): boolean {
     const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
