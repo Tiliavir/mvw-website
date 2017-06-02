@@ -6,7 +6,7 @@
     "properties": {
       "category": {
         "type": "string",
-        "enum": ["Jahreskonzert", "Kirchenkonzert", "Platzkonzert", "Adventskonzert"]
+        "enum": ["Jahreskonzert", "Kirchenkonzert", "Platzkonzert", "Adventskonzert", "Frühlingskonzert"]
       },
       "title": {
         "type": "string"
@@ -25,7 +25,10 @@
             "minLength": 1,
             "items": {
               "type": "string",
-              "format": ["date-time", "full-date"]
+              "anyOf": [
+                {"format": "date-time"},
+                {"format": "full-date"}
+              ]
             }
           }
         },
