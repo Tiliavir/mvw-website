@@ -1,3 +1,6 @@
+import * as PhotoSwipe from "photoswipe";
+import * as PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";
+
 namespace MVW.Gallery {
   let galleries: any;
   let pswpElement: any;
@@ -16,7 +19,7 @@ namespace MVW.Gallery {
         return { w: rect.width, x: rect.left, y: rect.top + pageYScroll };
       }
     };
-    const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+    const gallery = new PhotoSwipe<PhotoSwipeUI_Default.Options>(pswpElement, PhotoSwipeUI_Default, items, options);
 
     // create variable that will store real size of viewport
     let realViewportWidth: number;

@@ -5,7 +5,7 @@ namespace MVW.Search {
   function handleSearch(e: JQueryEventObject): void {
     const query = $("input.mvw-search-field").val();
 
-    const result = index.search(query);
+    const result = index.search(`*${query}*`);
 
     const resultContainer = $(".results");
     if (result.length === 0) {
@@ -14,7 +14,10 @@ namespace MVW.Search {
       resultContainer.empty();
       for (const item of result) {
         const ref = item.ref;
-        const i = `<li><a href="${ref}.html">${store[ref].title}</a><span>${store[ref].description}</span></li>`;
+        const i = `<li>
+                     <h2><a href="${ref}.html">${store[ref].title}</a></h2>
+                     <span>${store[ref].description}</span>
+                   </li>`;
         resultContainer.append(i);
       }
       resultContainer.show();
