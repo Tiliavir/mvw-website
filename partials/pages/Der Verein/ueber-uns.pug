@@ -23,7 +23,10 @@ block content
 
   +image("/img/wappen.png", "Wollbacher Wappen")
 
-  != marked(`Der Musikverein besteht aus ${scope.numberOfMusicians} Musikern und dem Dirigenten Oliver Hauser.`)
+  p
+    | Der Musikverein besteht aus
+    +numberOfMusicians
+    | Musikern und dem Dirigenten Oliver Hauser.
 
   +image("/img/karte.png", "Lage Wollbachs")
 

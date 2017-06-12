@@ -8,29 +8,14 @@ var path = require("path");
 var yargs = require("yargs");
 var gulpLoadPlugins = require("gulp-load-plugins");
 var mvw_navigation_1 = require("mvw-navigation");
-var mvw_search_index_1 = require("mvw-search-index");
 var $ = gulpLoadPlugins();
 var isRelease = yargs["default"]("release", false).boolean("release").argv.release;
 var baseUrl = isRelease ? "https://www.mv-wollbach.de/" : "http://localhost/";
 var navigation = new mvw_navigation_1.Navigation(require("./partials/site-structure.json"));
 ;
-var fileCollection = [];
 var paths = {
     dest: "./build/"
 };
-var scope = {
-    register: require("./partials/data/register.json"),
-    siteTitle: "Musikverein Wollbach 1866 e.V.",
-    baseUrl: baseUrl,
-    numberOfMusicians: 0
-};
-var getNumberOfMusicians = function (register) {
-    var distinctNames = {};
-    register.map(function (p) { return p.name + " " + p.familyName; })
-        .forEach(function (p) { return distinctNames[p] = true; });
-    return Object.keys(distinctNames).length;
-};
-scope.numberOfMusicians = getNumberOfMusicians(scope.register);
 var getScope = function (file) {
     var filename = path.basename(file.path, path.extname(file.path));
     return {
@@ -39,7 +24,10 @@ var getScope = function (file) {
         require: require,
         isAmp: false,
         isRelease: isRelease,
-        scope: scope,
+        scope: {
+            siteTitle: "Musikverein Wollbach 1866 e.V.",
+            baseUrl: baseUrl
+        },
         referencedFile: filename,
         breadcrumb: filename === "index" ? null : navigation.getBreadcrumb(filename, true)
     };
@@ -67,12 +55,6 @@ gulp.task("html:generatePages", function (done) {
         .pipe($.rename(function (path) { path.ext = ".html"; }))
         .pipe($.grayMatter())
         .pipe($.data(getScope))
-        .pipe($.data(function (file) {
-        fileCollection.push({
-            file: file,
-            metadata: file.data
-        });
-    }))
         .pipe($.pug())
         .pipe($.flatten())
         .pipe(gulp.dest(paths.dest));
@@ -101,10 +83,5 @@ gulp.task("html:minify", function () {
     }))
         .pipe(gulp.dest(paths.dest));
 });
-gulp.task("search:index", function (done) {
-    var index = new mvw_search_index_1.SearchIndex(fileCollection);
-    fs.writeFileSync(paths.dest + "index.json", JSON.stringify(index.getResult()));
-    return done();
-});
 gulp.task("default", gulp.series("html:writeNavigation", "html:generatePages"));
-gulp.task("release", gulp.series("html:writeNavigation", "html:generateAMP", "html:generatePages", "sitemap", "html:minify", "search:index"));
+gulp.task("release", gulp.series("html:writeNavigation", "html:generateAMP", "html:generatePages", "sitemap", "html:minify"));

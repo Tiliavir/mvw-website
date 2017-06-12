@@ -54,13 +54,14 @@ block content
     ## ... über den Verein:
 
   -
-    var text = `"Mein großer Dank gilt dem Musikverein Wollbach mit seinen ${scope.numberOfMusicians}
-                aktiven Musiker/innen im Durchschnittsalter von 30 Jahren. Nur
-                mit Ihnen allen ist es möglich gute und anspruchsvolle Musik zu
-                machen. Aber auch in Traurigkeit zusammenzuhalten und trotzdem
-                Feste zu reißen, die uns allen in unvergesslicher Erinnerungen
-                bleiben."`;
-  != marked(text)
+  p
+    | "Mein großer Dank gilt dem Musikverein Wollbach mit seinen
+    +numberOfMusicians
+    | aktiven Musiker/innen im Durchschnittsalter von 30 Jahren. Nur
+    | mit Ihnen allen ist es möglich gute und anspruchsvolle Musik zu
+    | machen. Aber auch in Traurigkeit zusammenzuhalten und trotzdem
+    | Feste zu reißen, die uns allen in unvergesslicher Erinnerungen
+    | bleiben."
 
   :marked
     ## ... über den Dirigenten:

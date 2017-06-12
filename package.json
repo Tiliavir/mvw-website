@@ -1,6 +1,6 @@
 {
     "name": "mvw-website",
-  "version": "17.06.07",
+  "version": "17.06.12",
     "private": true,
     "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
     "author": "Musikverein Wollbach 1866 e.V.",
@@ -21,7 +21,7 @@
         "@types/jquery": "2.0.46",
         "@types/lunr": "0.5.29",
         "@types/marked": "0.0.28",
-        "@types/node": "7.0.28",
+        "@types/node": "7.0.29",
         "@types/photoswipe": "4.0.28",
         "@types/vinyl": "2.0.0",
         "@types/yargs": "6.6.0",
@@ -29,7 +29,7 @@
         "autoprefixer": "7.1.1",
         "copyfiles": "1.2.0",
         "node-sass": "4.5.3",
-        "postcss-cli": "4.0.0",
+        "postcss-cli": "4.1.0",
         "lite-server": "2.3.0",
         "sass-lint": "1.10.2",
         "tslint": "5.4.3",
@@ -53,7 +53,7 @@
         "marked": "0.3.6",
         "moment": "2.18.1",
         "mvw-navigation": "2.0.2",
-        "mvw-search-index": "2.0.0",
+        "mvw-search-index": "2.1.1",
         "photoswipe": "4.1.2",
         "pug": "2.0.0-rc.2"
     },
@@ -71,6 +71,7 @@
 
         "prerelease": "npm run lint",
         "release": "npm run compile -- release --release=true",
+        "postrelease": "mvw-search-index ./build/**/*.html ./build/index.json main",
 
         "copy:todiff": "copyup ./build/**/* ../mvw-prod/",
 

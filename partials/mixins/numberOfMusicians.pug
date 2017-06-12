@@ -1,0 +1,10 @@
+mixin numberOfMusicians
+  -
+    var register = require("./partials/data/register.json");
+    function getNumberOfMusicians() {
+      var distinctNames = {};
+      register.map(function (p) { return p.name + " " + p.familyName; })
+              .forEach(function (p) { distinctNames[p] = true; });
+      return Object.keys(distinctNames).length;
+    }
+  = " " + getNumberOfMusicians() + " "
