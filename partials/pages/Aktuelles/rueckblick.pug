@@ -6,21 +6,21 @@ keywords: "Rückblick, Berichte, Zusammenfassungen, Vergangene Events, Nachricht
 navigation: "top"
 ---
 
-extends ../template.pug
+extends ../../template.pug
 
 block pageScripts
-  include ../scripts/news.js
+  include ../../scripts/rueckblick.js
 
 block pageStyles
-  include ../styles/news.css
+  include ../../styles/rueckblick.css
 
 block content
   -
-    var news = require("./partials/data/news.json");
-    var years = Object.keys(news).sort((a, b) => b - a);
+    var rueckblick = require("./partials/data/rueckblick.json");
+    var years = Object.keys(rueckblick).sort((a, b) => b - a);
     var keywords = [];
     years.map((y) => {
-      news[y].map((e) => {
+      rueckblick[y].map((e) => {
         for (var k = 0; k < (e.keywords || []).length; k++) {
           var keyword = e.keywords[k];
           if (keywords.indexOf(keyword) === -1) {
@@ -41,7 +41,7 @@ block content
   .tab-content
     each year, index in years
       .tab-pane.fade(id=year class=(index === 0 ? "active in" : ""))
-        each item in news[year]
+        each item in rueckblick[year]
           .entry
             if item.keywords
               .keywords.hidden

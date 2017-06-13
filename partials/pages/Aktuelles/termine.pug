@@ -6,7 +6,13 @@ keywords: "Termine, Events, Daten, Auftritte, Konzerte, Anlässe, Terminplan, Te
 navigation: "top"
 ---
 
-extends ../template.pug
+extends ../../template.pug
+
+block pageScripts
+  include ../../scripts/termine.js
+
+block pageStyles
+  include ../../styles/termine.css
 
 block content
   - var termine = require("./partials/data/termine.json");
@@ -39,9 +45,3 @@ block content
               if termin.description
                 div.description(itemprop="description")
                   != marked(termin.description)
-
-block pageScripts
-  include ../scripts/termine.js
-
-block pageStyles
-  include ../styles/termine.css

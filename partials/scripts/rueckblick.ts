@@ -1,4 +1,4 @@
-class News {
+class Rueckblick {
   private static containsAll(array: string[], find: string[]): boolean {
     return find.every((v) => {
       return array.indexOf(v) !== -1;
@@ -38,7 +38,7 @@ class News {
           itemTags.push($(e).text());
         });
 
-        $entry.toggle(News.containsAll(itemTags, this.filters));
+        $entry.toggle(Rueckblick.containsAll(itemTags, this.filters));
       });
     } else {
       $(".nav-tabs").show();
@@ -48,4 +48,4 @@ class News {
   }
 }
 
-$(() => { new News().initialize(); });
+$(() => { new Rueckblick().initialize(); });

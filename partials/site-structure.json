@@ -5,12 +5,21 @@
     "title": "Willkommen beim Musikverein Wollbach"
   },
   {
-    "referencedFile": "termine",
-    "title": "Termine"
-  },
-  {
-    "referencedFile": "news",
-    "title": "News"
+    "children": [
+      {
+        "referencedFile": "termine",
+        "title": "Termine"
+      },
+      {
+        "referencedFile": "rueckblick",
+        "title": "Rückblick"
+      },
+      {
+        "referencedFile": "berichte",
+        "title": "Berichte"
+      }
+    ],
+    "title": "Aktuelles"
   },
   {
     "children": [
@@ -19,9 +28,18 @@
         "title": "Wir über uns"
       },
       {
-        "referencedFile": "konzerte",
-        "title": "Konzerte"
+        "referencedFile": "vorstand",
+        "title": "Vorstandschaft"
       },
+      {
+        "referencedFile": "mitgliedschaft",
+        "title": "Mitglied werden"
+      }
+    ],
+    "title": "Der Verein"
+  },
+  {
+    "children":[
       {
         "referencedFile": "register",
         "title": "Unsere Register"
@@ -31,19 +49,15 @@
         "title": "Dirigent"
       },
       {
-        "referencedFile": "vorstand",
-        "title": "Vorstandschaft"
+        "referencedFile": "konzerte",
+        "title": "Konzerte"
       },
       {
         "referencedFile": "dampfmusik",
         "title": "Dampfmusik"
-      },
-      {
-        "referencedFile": "mitgliedschaft",
-        "title": "Mitglied werden"
       }
     ],
-    "title": "Der Verein"
+    "title": "Das Orchester"
   },
   {
     "children": [
@@ -61,10 +75,6 @@
       }
     ],
     "title": "Jugendarbeit"
-  },
-  {
-    "referencedFile": "berichte",
-    "title": "Berichte"
   },
   {
     "referencedFile": "bilder",
