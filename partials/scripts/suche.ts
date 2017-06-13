@@ -8,7 +8,7 @@ namespace MVW.Search {
     const result = index.search(`*${query}*`);
 
     const resultContainer = $(".results");
-    if (result.length === 0) {
+    if (!query || result.length === 0) {
       resultContainer.hide();
     } else {
       resultContainer.empty();
