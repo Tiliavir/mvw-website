@@ -21,7 +21,7 @@
         "@types/jquery": "2.0.46",
         "@types/lunr": "0.5.29",
         "@types/marked": "0.0.28",
-        "@types/node": "7.0.29",
+        "@types/node": "7.0.31",
         "@types/photoswipe": "4.0.28",
         "@types/vinyl": "2.0.0",
         "@types/yargs": "6.6.0",
@@ -65,12 +65,13 @@
 
         "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss ./partials/styles/**/*.css -r --use autoprefixer --no-map",
         "compile": "tsc && npm run compile:sass && gulp",
+
         "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
         "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 ./root/[!_]*/**/* ./build/",
-        "postcompile": "npm run copy:lib && npm run copy:root",
+        "copy": "npm run copy:lib && npm run copy:root",
 
         "prerelease": "npm run lint",
-        "release": "npm run compile -- release --release=true",
+        "release": "npm run compile -- release --release=true && npm run copy",
         "postrelease": "mvw-search-index ./build/**/*.html ./build/index.json main",
 
         "copy:todiff": "copyup ./build/**/* ../mvw-prod/",

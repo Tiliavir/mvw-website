@@ -8,12 +8,18 @@ navigation: "top"
 
 extends ../template.pug
 
+block pageScripts
+  include ../scripts/termine.js
+
+block pageStyles
+  include ../styles/termine.css
+
 block content
   - var termine = require("./partials/data/termine.json");
 
   each year in Object.keys(termine)
     h2 #{year}
-    table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
+    table.termine.table.responsive
       tbody
         each termin in termine[year]
           tr(itemscope itemtype="http://schema.org/Event")
@@ -39,9 +45,3 @@ block content
               if termin.description
                 div.description(itemprop="description")
                   != marked(termin.description)
-
-block pageScripts
-  include ../scripts/termine.js
-
-block pageStyles
-  include ../styles/termine.css

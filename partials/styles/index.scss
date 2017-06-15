@@ -87,6 +87,8 @@ header {
   display: block;
   width: 30px;
   height: 50px;
+  line-height: 50px;
+  text-align: center;
   background: $slider-control-bg;
   color: $slider-control-fg;
   text-decoration: none;
@@ -107,6 +109,13 @@ header {
   &.right {
     right: 0;
     border-radius: 2px 0 0 2px;
+  }
+
+  .icon-prev,
+  .icon-next {
+    transform: scaleX(0.4);
+    display: block;
+    font-size: 30px;
   }
 }
 

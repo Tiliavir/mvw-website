@@ -43,9 +43,9 @@
     },
     {
         "fileMatch": [
-            "/partials/data/news.json"
+            "/partials/data/rueckblick.json"
         ],
-        "url": "./partials/data/schema/news-schema.json"
+        "url": "./partials/data/schema/rueckblick-schema.json"
     },
     {
         "fileMatch": [
