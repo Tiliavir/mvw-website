@@ -8,6 +8,9 @@ navigation: "top"
 
 extends ../../template.pug
 
+block pageStyles
+  include ../styles/berichte.css
+
 block content
   -
     var berichte = require("./partials/data/berichte.json");
@@ -18,7 +21,7 @@ block content
   .tab-content
     each year, index in years
       .tab-pane.fade(id=year class=(index === 0 ? "active in" : ""))
-        table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
+        table.table.responsive.berichte
           thead
             tr
               th Datum

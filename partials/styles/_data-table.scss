@@ -1,0 +1,27 @@
+@import 'global-variables';
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 6px;
+  border: 1px solid $gray-light-border-color;
+  text-align: left;
+}
+
+tr {
+  &:nth-child(even) {
+    background-color: $gray-lightest;
+  }
+
+  &:nth-child(odd) {
+    background-color: transparent;
+  }
+
+  &:hover {
+    background-color: darken($gray-lightest, 5%);
+  }
+}

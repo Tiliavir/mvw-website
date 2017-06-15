@@ -47,7 +47,7 @@ block content
               .keywords.hidden
                 each tag in item.keywords
                   span.keyword #{tag}
-            h3
+            h2
               if item.starttime
                 +formatTimespan(item.starttime, item.endtime, false)
                 | &nbsp;-&nbsp;
