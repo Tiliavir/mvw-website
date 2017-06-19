@@ -9,6 +9,16 @@ schemaOrg: "ImageGallery"
 
 extends ../template.pug
 
+block pageStyles
+  include ../../node_modules/photoswipe/dist/photoswipe.css
+  include ../../node_modules/photoswipe/dist/default-skin/default-skin.css
+  include ../styles/bilder.css
+
+block pageScripts
+  include ../../node_modules/photoswipe/dist/photoswipe.min.js
+  include ../../node_modules/photoswipe/dist/photoswipe-ui-default.min.js
+  include ../scripts/bilder.js
+
 block content
   -
     var galleries = require("./root/gallery/galleries.json");
@@ -67,13 +77,3 @@ block content
         button.pswp__button.pswp__button--arrow--right(title="Next (arrow right)")
         .pswp__caption
           .pswp__caption__center
-
-block pageStyles
-  include ../../node_modules/photoswipe/dist/photoswipe.css
-  include ../../node_modules/photoswipe/dist/default-skin/default-skin.css
-  include ../styles/bilder.css
-
-block pageScripts
-  include ../../node_modules/photoswipe/dist/photoswipe.min.js
-  include ../../node_modules/photoswipe/dist/photoswipe-ui-default.min.js
-  include ../scripts/bilder.js

@@ -5,7 +5,7 @@ mixin renderTabs(tabs)
         li(role="presentation" class=(index === 0 ? "active" : "") + (index > 1 ? "hidden-xs" : ""))
           a(data-toggle="tab" href="#" + tab) #{tab}
     if tabs.length > 1
-      li.dropdown(class=(tabs.length > 5 ? "" : "visible-xs"))
+      li.dropdown(class=(tabs.length > 5 ? "" : tabs.length > 2 ? "visible-xs" : "hidden"))
         a.dropdown-toggle(data-toggle="dropdown" href="#")
           | mehr ...
           span.caret

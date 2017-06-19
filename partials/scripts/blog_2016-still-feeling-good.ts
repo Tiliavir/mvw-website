@@ -56,7 +56,7 @@ namespace MVW.StillFeelingGood {
 
         const $email = $("#email");
 
-        if (!isValidEmail($email.val())) {
+        if (!isValidEmail($email.val().toString())) {
           hasErrors = true;
           addError($email);
         }

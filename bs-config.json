@@ -1,6 +1,7 @@
 {
-  "injectChanges": true,
-  "files": [ "./**/*.{html,css,js}" ],
-  "watchOptions": { "ignored": ["./img", "./gallery"] },
+  "port": "9876",
+  "codeSync": false,
+  "ghostMode": false,
+  "files": [],
   "server": { "baseDir": "./build" }
 }
