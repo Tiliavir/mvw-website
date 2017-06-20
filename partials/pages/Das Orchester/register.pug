@@ -8,6 +8,12 @@ navigation: "top"
 
 extends ../../template.pug
 
+block pageStyles
+  include ../../styles/register.css
+
+block pageScripts
+  include ../../scripts/register.js
+
 block content
   -
     var register = require("./partials/data/register.json");
@@ -35,9 +41,3 @@ block content
             td
               each person in groupedRegisters[registerTitle].sort((a, b) => a.familyName.localeCompare(b.familyName))
                 p #{person.name} #{person.familyName}
-
-block pageStyles
-  include ../../styles/register.css
-
-block pageScripts
-  include ../../scripts/register.js

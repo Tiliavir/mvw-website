@@ -8,11 +8,14 @@ navigation: "footer"
 
 extends ../template.pug
 
+block pageStyles
+  include ../styles/impressum.css
+
 block content
   :marked
     # Kontakt
 
-  img(src="/img/fueller.jpg" alt="Füller" style="float:right")
+  img(src="/img/fueller.jpg" alt="Füller" class="fueller")
 
   :marked
     Wenn Sie wissen, an wen Sie sich wenden möchten, finden Sie hier die
@@ -37,10 +40,16 @@ block content
     ## Registereintrag
     Eintragung im Vereinsregister.
 
-    |                |                           |
-    |:---------------|:--------------------------|
-    |Registergericht |Amtsgericht Freiburg i. Br.|
-    |Registernummer  |VR 410834                  |
+    <table class="registereintrag">
+      <tr>
+        <td>Registergericht</td>
+        <td>Amtsgericht Freiburg i. Br.</td>
+      </tr>
+      <tr>
+        <td>Registernummer</td>
+        <td>VR 410834</td>
+      </tr>
+    </table>
 
     <!--
     ## Umsatzsteuer-ID

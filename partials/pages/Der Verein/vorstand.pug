@@ -8,9 +8,12 @@ navigation: "top"
 
 extends ../../template.pug
 
+block pageStyles
+  include ../../styles/vorstand.css
+
 block content
   - var vorstand = require("./partials/data/vorstand.json");
-  table.mvw-managing-committee-table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
+  table.mvw-managing-committee-table.responsive.banded-rows
     thead
       tr
         th
@@ -85,6 +88,3 @@ block content
     stets mit großem Engagement vorbildlich geführt und musikalisch
     weiterentwickelt haben, damit _wir_ alle dieses wunderschöne Hobby und
     diese Tradition bewahren und weiterführen dürfen."
-
-block pageStyles
-  include ../../styles/vorstand.css

@@ -1,1 +1,7 @@
-@import 'data-table';
+td,
+th {
+  &:first-child {
+    max-width: 200px;
+    width: 200px;
+  }
+}

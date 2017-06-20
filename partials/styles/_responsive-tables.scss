@@ -1,3 +1,5 @@
+@import 'global-variables';
+
 $row-alternation-bg-color: #eee;
 $row-border-color: #ccc;
 $cell-border-color: #eee;
@@ -5,21 +7,33 @@ $cell-border-color: #eee;
 table {
   &.responsive {
     border-collapse: collapse;
+    width: 100%;
+
+    td,
+    th {
+      border: 1px solid $gray-light-border-color;
+      text-align: left;
+    }
+  }
+}
+
+.banded-rows {
+  tr {
+    &:nth-child(even) {
+      background-color: $gray-lightest;
+    }
+
+    &:nth-child(odd) {
+      background-color: transparent;
+    }
+
+    &:hover {
+      background-color: darken($gray-lightest, 5%);
+    }
   }
 }
 
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  // First column bold and without border bottom
-  tr {
-    td {
-      border-bottom-width: 0;
-
-      &:first-child {
-        font-weight: bold;
-      }
-    }
-  }
-
   // Hide table headers (but not display: none;, for accessibility)
   table {
     &.responsive {
@@ -46,6 +60,15 @@ table {
 
         :nth-of-type(even) {
           background-color: $row-alternation-bg-color;
+        }
+
+        // First column bold and without border bottom
+        td {
+          border-bottom-width: 0;
+
+          &:first-child {
+            font-weight: bold;
+          }
         }
       }
 

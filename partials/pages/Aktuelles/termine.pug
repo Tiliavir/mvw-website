@@ -19,7 +19,7 @@ block content
 
   each year in Object.keys(termine)
     h2 #{year}
-    table.termine.table.responsive
+    table.termine.responsive.banded-rows
       tbody
         each termin in termine[year]
           tr(itemscope itemtype="http://schema.org/Event")

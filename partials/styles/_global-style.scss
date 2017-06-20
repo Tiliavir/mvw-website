@@ -64,6 +64,14 @@ svg {
 
 button {
   overflow: visible;
+  background-color: $highlight-color;
+  color: $gray-lightest;
+  border: 0;
+  padding: 10px;
+
+  &:hover {
+    background-color: lighten($highlight-color, 10%);
+  }
 }
 
 blockquote {
@@ -80,7 +88,8 @@ table {
 
 td,
 th {
-  padding: 0;
+  border: 0;
+  padding: 6px;
 }
 
 h1,
@@ -123,7 +132,7 @@ h6 {
 
 h1 {
   font-weight: 300;
-  font-size: 1.33 * $font-size-large;
+  font-size: 1.33 * $font-size-larger;
   color: $highlight-color;
   letter-spacing: 1px;
   border-bottom: 1px solid $gray-lighter;
@@ -131,24 +140,24 @@ h1 {
 }
 
 h2 {
-  font-size: $font-size-large;
+  font-size: $font-size-larger;
 }
 
 h3 {
-  font-size: $font-size-base;
+  font-size: $font-size-large;
   font-weight: 500;
 }
 
 h4 {
-  font-size: $font-size-small + 1;
+  font-size: $font-size-base;
 }
 
 h5 {
-  font-size: $font-size-small;
+  font-size: $font-size-small + 1;
 }
 
 h6 {
-  font-size: $font-size-small - 1;
+  font-size: $font-size-small;
 }
 
 p {
@@ -210,4 +219,19 @@ small,
   transition: .5s;
   width: 100%;
   z-index: 2000;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 9 / 16 * 100%;
+  padding-top: 25px;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }

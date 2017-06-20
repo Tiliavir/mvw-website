@@ -12,6 +12,9 @@ ampLogoHeight: 380
 
 extends ../../template-blog.pug
 
+block pageScripts
+  include ../../scripts/blog_2016-still-feeling-good.js
+
 block content
   +image("/img/events/cd.jpg", "Still Feelin' Good", null, null, 600, 380)
 
@@ -77,7 +80,7 @@ block content
             .g-recaptcha(data-sitekey="6LcuIhoTAAAAAJP9auarRgUhtg7DIz-JTmRdYOqA")
             span.help-block(style="display: none;") Bitte bestätigen Sie, dass Sie kein Bot sind.
           span.help-block(style="display: none;") Bitte geben Sie einen Sicherheits code ein.
-          button#feedbackSubmit.btn.btn-primary.btn-lg(type="submit", data-loading-text="Sende...", style="display: block; margin-top: 10px;") Bestellen
+          button#feedbackSubmit(type="submit", data-loading-text="Sende...", style="display: block; margin-top: 10px;") Bestellen
     script(src="https://www.google.com/recaptcha/api.js")
 
   :marked
@@ -87,6 +90,3 @@ block content
     Wörishofen kurzerhand in unser Aufnahmestudio verwandelt haben.
 
     [studio80]: http://www.studio-80.de/ueber-uns/
-
-block pageScripts
-  include ../../scripts/blog_2016-still-feeling-good.js

@@ -7,19 +7,14 @@
 }
 
 @media not screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-
-  %td-style {
-    td {
-      :nth-child(2) {
-        border-top-width: 0;
-      }
-    }
-  }
-
   .mvw-managing-committee-table {
     tr {
       &:first-child {
-        @extend %td-style;
+        td {
+          :nth-child(2) {
+            border-top-width: 0;
+          }
+        }
       }
     }
 
@@ -31,8 +26,8 @@
 
     td {
       &:nth-child(2) {
-        border-top-width: 1px;
         border-width: 0;
+        border-top-width: 1px;
         float: left;
         width: 100%;
       }
