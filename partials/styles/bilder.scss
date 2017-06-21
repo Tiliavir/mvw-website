@@ -4,10 +4,20 @@ $overlay-bg-color: #333;
 $overlay-color: #fff;
 $gallery-bg-color: #ccc;
 
+.tab-pane {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 .mvw-gallery-overview {
   .mvw-gallery-container {
-    padding-bottom: 10px;
-    padding-top: 10px;
+    flex-grow: 1;
+    width: 230px;
+    max-width: 400px;
+    float: left;
+    padding: 10px;
   }
 
   .mvw-gallery {

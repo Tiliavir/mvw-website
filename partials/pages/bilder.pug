@@ -36,7 +36,7 @@ block content
           .mvw-gallery-container
             .mvw-gallery(onclick="MVW.Gallery.openGallery(this); return false;")
               - var preview = gallery.filter((i) => i.s.w === 200)[0] || gallery[0];
-              .content
+              .ratio-content
                 img.preview(src=`/gallery/${preview.b}s/${preview.f}` alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
                 span.caption #{galleryTitle}
 
