@@ -223,7 +223,7 @@ small,
 
 .video {
   position: relative;
-  padding-bottom: 9 / 16 * 100%;
+  padding-bottom: percentage(9 / 16);
   padding-top: 25px;
   height: 0;
 
