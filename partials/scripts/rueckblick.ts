@@ -29,8 +29,8 @@ class Rueckblick {
 
   private updateFilter(): void {
     if (this.filters.length > 0) {
-      $(".nav-tabs").hide();
-      $(".tab-content .tab-pane").show().css("opacity", "1");
+      $(".tabs").hide();
+      $(".tab-content .tab-pane").show();
       $(".tab-content .entry").each((i, entry) => {
         const $entry = $(entry);
         const itemTags: string[] = [];
@@ -41,8 +41,8 @@ class Rueckblick {
         $entry.toggle(Rueckblick.containsAll(itemTags, this.filters));
       });
     } else {
-      $(".nav-tabs").show();
-      $(".tab-content .tab-pane:not(.active)").css({ opacity: 0, display: "none" });
+      $(".tabs").show();
+      $(".tab-content .tab-pane").css("display", "");
       $(".tab-content .entry").show();
     }
   }

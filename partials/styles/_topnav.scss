@@ -1,4 +1,5 @@
 @import 'global-variables';
+@import 'mixins/breakpoint';
 
 $brand-width: 80px;
 $brand-padding: 0 10px 0 5px;
@@ -25,6 +26,11 @@ $color-hover-and-focus: lighten($color-active, 10%);
   height: $top-nav-height;
   user-select: none;
   box-shadow: 0 10px 15px -10px $black;
+
+  &.inverse {
+    filter: invert(100%);
+    background-color: $black;
+  }
 }
 
 .navbar-brand {
@@ -97,7 +103,7 @@ $color-hover-and-focus: lighten($color-active, 10%);
   }
 }
 
-@media (max-width: 767px) {
+@include breakpoint(0, $mobile-max-width) {
   %mobile-colors {
     & > ul {
       & > li {
@@ -225,7 +231,7 @@ $color-hover-and-focus: lighten($color-active, 10%);
   }
 }
 
-@media (min-width: 768px) {
+@include breakpoint($mobile-max-width) {
   .navigation-header {
     .navigation-hamburger {
       display: none;

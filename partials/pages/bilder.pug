@@ -30,7 +30,7 @@ block content
     - var yearTitles = Object.keys(galleries);
     each yearTitle, index in yearTitles
       - var year = galleries[yearTitle];
-      .tab-pane(id=yearTitle class=(index === yearTitles.length - 1 ? "active in" : ""))
+      .tab-pane(id=yearTitle class=(index === yearTitles.length - 1 ? "active" : ""))
         each galleryTitle in Object.keys(year).reverse()
           - var gallery = year[galleryTitle]
           .mvw-gallery-container

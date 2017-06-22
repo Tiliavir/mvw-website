@@ -25,7 +25,7 @@ header {
     }
   }
 
-  @include breakpoint(0, 768px) {
+  @include breakpoint(0, $mobile-max-width) {
     .mvw-brand,
     .cd {
       width: 100%;

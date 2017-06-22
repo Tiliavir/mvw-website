@@ -1,4 +1,5 @@
 @import 'mixins/breakpoint';
+@import 'global-variables';
 
 $tile-color: #eee;
 $tile-bg-color: rgba(34, 34, 34, .55);
@@ -47,7 +48,7 @@ $tile-bg-color-hover: rgba(34, 34, 34, .75);
   }
 }
 
-@include breakpoint(0, 768px) {
+@include breakpoint(0, $mobile-max-width) {
   .tile {
     width: 100%;
   }

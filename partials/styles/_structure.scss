@@ -23,7 +23,7 @@ header {
   }
 }
 
-@include breakpoint(0, 767px) {
+@include breakpoint(0, $mobile-max-width) {
   %width-and-padding-reset {
     width: initial;
     padding: 0 5px;

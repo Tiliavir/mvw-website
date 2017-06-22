@@ -20,7 +20,7 @@ block content
 
   .tab-content
     each year, index in years
-      .tab-pane.fade(id=year class=(index === 0 ? "active in" : ""))
+      .tab-pane(id=year class=(index === 0 ? "active" : ""))
         table.berichte.responsive.banded-rows
           thead
             tr

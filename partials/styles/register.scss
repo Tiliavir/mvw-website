@@ -1,3 +1,6 @@
+@import 'mixins/breakpoint';
+@import 'global-variables';
+
 .mvw-register-table {
   &.responsive {
     td {
@@ -15,7 +18,7 @@
   }
 }
 
-@media not screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@include breakpoint(0, $mobile-max-width) {
   .mvw-register-table {
     td {
       border: initial;

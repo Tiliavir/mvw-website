@@ -1,6 +1,7 @@
 @import 'global-variables';
+@import 'mixins/breakpoint';
 
-@media(max-width: 480px) {
+@include breakpoint(0, 480px) {
   h1 {
     font-size: 28px;
   }
