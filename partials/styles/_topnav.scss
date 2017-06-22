@@ -34,6 +34,10 @@ $color-hover-and-focus: lighten($color-active, 10%);
   height: $top-nav-height;
   border: 0;
   fill: $color-active;
+
+  > * {
+    margin-top: 4px;
+  }
 }
 
 .navigation-header {
@@ -94,23 +98,39 @@ $color-hover-and-focus: lighten($color-active, 10%);
 }
 
 @media (max-width: 767px) {
+  %mobile-colors {
+    & > ul {
+      & > li {
+        color: $color;
+
+        &:hover,
+        &:focus {
+          color: $color-hover-and-focus;
+        }
+
+        &.active {
+          color: $color-active;
+          background-color: $background-color-active;
+        }
+      }
+    }
+  }
+
   .navigation-menu {
-    background-color: transparentize($background-color, .1);
+    @extend %mobile-colors;
+
+    background-color: transparentize($background-color, .05);
     box-shadow: 0 5px 10px -2px $black;
+    word-wrap: break-word;
   }
 
   .dropdown {
+    @extend %mobile-colors;
+
     &:hover > ul {
       position: relative;
       display: block;
       min-width: 100%;
-    }
-
-    li {
-      &:hover,
-      &.active {
-        color: $highlight-color;
-      }
     }
   }
 
@@ -123,9 +143,12 @@ $color-hover-and-focus: lighten($color-active, 10%);
 
     &:checked {
       & ~ .navigation-menu {
-        max-height: 2000px;
+        $padding-top-bot: 7px;
+
+        padding: $padding-top-bot 0;
+        max-height: calc(100vh - #{2 * $padding-top-bot + $top-nav-height});
         height: initial;
-        overflow-y: hidden;
+        overflow-y: auto;
         transition: max-height .8s ease;
         box-shadow: 0 10px 15px -10px $black;
       }
