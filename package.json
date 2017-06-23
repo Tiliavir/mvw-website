@@ -75,7 +75,7 @@
         "release": "npm run compile -- release --release=true && npm run copy",
         "postrelease": "mvw-search-index ./build/**/*.html ./build/index.json main",
 
-        "copy:todiff": "copyup ./build/**/* ../mvw-prod/",
+        "copy:todiff": "copyup -a ./build/**/* ../mvw-prod/",
 
         "dev": "npm run compile",
         "serve": "lite-server"
