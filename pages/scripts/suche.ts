@@ -49,7 +49,7 @@ module MVW.Search {
       if (query) {
         inputField.val(query);
       }
-      inputField.on("keyup", handleSearch);
+      inputField.on(<any> "keyup", handleSearch);
       handleSearch(null);
     });
   }

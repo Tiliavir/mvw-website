@@ -60,7 +60,7 @@ class Contact {
 
         let $email = $("#email");
 
-        if (!Contact.isValidEmail($email.val())) {
+        if (!Contact.isValidEmail($email.val().toString())) {
           hasErrors = true;
           Contact.addError($email);
         }
