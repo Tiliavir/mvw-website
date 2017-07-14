@@ -30,6 +30,13 @@ $color-hover-and-focus: lighten($color-active, 10%);
   &.inverse {
     filter: invert(100%);
     background-color: $black;
+    box-shadow: 0 10px 15px -10px invert($black);
+
+    .dropdown {
+      & > ul {
+        filter: invert(100%);
+      }
+    }
   }
 }
 

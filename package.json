@@ -18,22 +18,22 @@
         "@types/gulp": "4.0.4",
         "@types/gulp-load-plugins": "0.0.29",
         "@types/grecaptcha": "2.0.33",
-        "@types/jquery": "3.2.3",
+        "@types/jquery": "3.2.7",
         "@types/lunr": "0.5.29",
         "@types/marked": "0.0.28",
-        "@types/node": "8.0.1",
+        "@types/node": "8.0.12",
         "@types/photoswipe": "4.0.28",
         "@types/vinyl": "2.0.0",
-        "@types/yargs": "6.6.0",
+        "@types/yargs": "8.0.1",
 
-        "autoprefixer": "7.1.1",
+        "autoprefixer": "7.1.2",
         "copyfiles": "1.2.0",
         "node-sass": "4.5.3",
         "postcss-cli": "4.1.0",
         "lite-server": "2.3.0",
         "sass-lint": "1.10.2",
-        "tslint": "5.4.3",
-        "typescript": "2.3.4"
+        "tslint": "5.5.0",
+        "typescript": "2.4.1"
     },
     "dependencies": {
         "gulp": "github:gulpjs/gulp#4.0",
@@ -54,7 +54,7 @@
         "moment": "2.18.1",
         "mvw-navigation": "2.0.2",
         "mvw-search-index": "2.1.1",
-        "mvw-gallery": "1.0.4",
+        "mvw-gallery": "1.0.5",
         "photoswipe": "4.1.2",
         "pug": "2.0.0-rc.2"
     },

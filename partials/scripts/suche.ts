@@ -2,7 +2,7 @@ namespace MVW.Search {
   let index: any;
   let store: any;
 
-  function handleSearch(e: JQueryEventObject): void {
+  function handleSearch(e: JQuery.Event<HTMLElement, null>): void {
     const query = $("input.mvw-search-field").val();
 
     const result = index.search(`*${query}*`);
