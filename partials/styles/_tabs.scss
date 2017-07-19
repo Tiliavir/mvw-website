@@ -19,7 +19,7 @@
   }
 
   & > .tab,
-  & > .dropdown {
+  & > .tab-dropdown {
     margin-bottom: -1px;
     display: inline-block;
     min-width: 50px;
@@ -44,11 +44,42 @@
     }
   }
 
-  .dropdown {
-    height: initial;
+  .tab-dropdown {
+    position: relative;
+
+    & > ul {
+      color: $text-color;
+      font-size: $font-size-base;
+      font-weight: 400;
+      list-style: none;
+      padding: 0;
+      display: none;
+      box-shadow: 0 5px 10px -2px $black;
+
+      li {
+        padding: 0;
+
+        a {
+          white-space: nowrap;
+          display: block;
+          padding: 3px 20px;
+          height: 35px;
+          line-height: 35px;
+          font-weight: 400;
+
+          &:hover {
+            color: $highlight-color;
+          }
+        }
+
+        &.active {
+          color: $highlight-color;
+        }
+      }
+    }
 
     &:hover {
-      .dropdown-menu {
+      .tab-dropdown-menu {
         top: auto;
         z-index: 100;
         min-width: 100%;
@@ -57,6 +88,27 @@
           color: $gray-base;
           text-decoration: none;
         }
+      }
+
+      & > ul {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: $top-nav-height;
+        padding: 0;
+        background-color: $body-bg;
+      }
+    }
+
+    & > a {
+      &::after {
+        $expand-arrow-height: 3px;
+        position: absolute;
+        content: '';
+        right: 4px;
+        top: $top-nav-height / 2 - $expand-arrow-height + 1px;
+        border: $expand-arrow-height solid transparent;
+        border-top: $expand-arrow-height solid $text-color;
       }
     }
 
@@ -68,7 +120,7 @@
   }
 }
 
-.dropdown-menu,
+.tab-dropdown-menu,
 .tabs {
   & > .hidden-mobile {
     @include breakpoint(0, $mobile-max-width) {

@@ -7,9 +7,9 @@ mixin renderTabs(tabs)
                class=(index === 0 ? "active" : "") + (index > 1 ? "hidden-mobile" : ""))
           a.unstyled(href="#" + tab) #{tab}
     if tabs.length > 1
-      li.dropdown(class=(tabs.length > 5 ? "" : tabs.length > 2 ? "visible-mobile" : "hidden"))
+      li.tab-dropdown(class=(tabs.length > 5 ? "" : tabs.length > 2 ? "visible-mobile" : "hidden"))
         span.caret mehr ...
-        ul.dropdown-menu
+        ul.tab-dropdown-menu
           each tab, index in tabs
             if index > 1
               li.tab(id="tab-" + tab
