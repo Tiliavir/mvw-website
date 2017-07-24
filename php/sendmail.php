@@ -18,42 +18,7 @@
     return $message_body;
   }
 
-  function constructCDMessageBody () {
-    $fields_req = array("name" => true, "email" => true, "quantity"=>true, "message"=> true);
-    $message_body = "";
-    foreach ($fields_req as $name => $required) {
-      $postedValue = $_POST[$name];
-      if ($required && empty($postedValue)) {
-        errorResponse("$name is empty.");
-      } else {
-        $message_body .= ucfirst($name) . ":  " . $postedValue . "\n";
-      }
-    }
-
-    $body = array();
-    $body[] = "\r\n\r\nVorbereitete Antwort:\r\n";
-    $body[] = "Sehr geehrte/r ";
-    $body[] = $_POST['name'];
-    $body[] = "\r\nvielen Dank für Ihre Bestellung!\r\n";
-    $body[] = "Bitte überweisen Sie nachstehenden Betrag auf unser Konto:\r\n\r\n";
-    $body[] = 15 * $_POST['quantity'];
-    $body[] = "€ zzgl. Versand: __€\r\nVerwendungszweck:";
-    $body[] = $_POST['quantity'];
-    $body[] = " CD";
-    $body[] = $_POST['quantity'] > 1 ? "s" : '';
-    $body[] = ", ";
-    $body[] = $_POST['name'];
-    $body[] = "\r\n\r\nZugunsten:\r\n";
-    $body[] = "Förderverein Blasmusik\r\n";
-    $body[] = "DE07 6835 0048 1004 1066 11\r\n";
-    $body[] = "BIC SKLODE66";
-
-    return $message_body.implode($body);
-  }
-
   header('Content-type: application/json');
-
-  $isCD = $_GET["isCD"];
 
   require_once '../../files/private.php';
   
@@ -76,15 +41,8 @@
 
   // attempt to send email
   $to      = 'kontakt@mv-wollbach.de';
-
-  if($isCD) {
-    $subject = 'CD Bestellung [Musikverein Wollbach]';
-    $message = constructCDMessageBody();
-  } else {
-    $subject = 'Kontakt [Musikverein Wollbach]';
-    $message = constructMessageBody();
-  }
-
+  $subject = 'Kontakt [Musikverein Wollbach]';
+  $message = constructMessageBody();
   $message = wordwrap($message, 70, "\r\n", true);
 
   $headers = array();
