@@ -1,9 +1,16 @@
 ﻿{
   "2017": [
     {
-      "starttime": "2017-05-14T14:30:00Z",
-      "title": "Muttertagskonzert des Vorstufen- und Jugendorchesters",
-      "content": "Erstmals unter der Leitung von Maria Krey konnte das Jugend- und das Vorstufenorchester an diesem Konzert zeigen, was erarbeitet wurde.",
+      "starttime": "2017-06-30T00:00:00Z",
+      "title": "Bischofszeller Rosen- und Kulturwoche",
+      "content": "",
+      "keywords": ["Konzert"]
+    },
+    {
+      "starttime": "2017-06-24T20:00:00Z",
+      "endtime": "2017-06-24T21:30:00Z",
+      "title": "Kastanienparkfest",
+      "content": "Bei schönem Wetter und super Ambiente konnten wir auch in diesem Jahr den Auftritt am Kastanienparkfest in Rheinfelden zusammen mit zahlreichen Zuhörern genießen.",
       "keywords": ["Konzert"]
     },
     {
@@ -14,16 +21,9 @@
       "keywords": ["Marschmusikfestival", "Konzert"]
     },
     {
-      "starttime": "2017-06-24T20:00:00Z",
-      "endtime": "2017-06-24T21:30:00Z",
-      "title": "Kastanienparkfest",
-      "content": "Bei schönem Wetter und super Ambiente konnten wir auch in diesem Jahr den Auftritt am Kastanienparkfest in Rheinfelden zusammen mit zahlreichen Zuhörern genießen.",
-      "keywords": ["Konzert"]
-    },
-    {
-      "starttime": "2017-06-30T00:00:00Z",
-      "title": "Rosentage",
-      "content": "",
+      "starttime": "2017-05-14T14:30:00Z",
+      "title": "Muttertagskonzert des Vorstufen- und Jugendorchesters",
+      "content": "Erstmals unter der Leitung von Maria Krey konnte das Jugend- und das Vorstufenorchester an diesem Konzert zeigen, was erarbeitet wurde.",
       "keywords": ["Konzert"]
     },
     {
