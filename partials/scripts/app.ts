@@ -12,12 +12,20 @@ namespace MVW {
     }
   }
 
+  function fixAnchors(): void {
+    const pathname = window.location.href.split("#")[0];
+    $("a[href^='#']").each((i, e) => {
+        const $elem = $(e);
+        $elem.attr("href", pathname + $elem.attr("href"));
+    });
+  }
+
   function activateTabs(): void {
     function setActive(id: string) {
       $(".tab-pane").removeClass("active");
       $(".tab").removeClass("active");
 
-      $(`#tab-${id}`).addClass("active");
+      $(`.tab-${id}`).addClass("active");
       $(`#${id}`).addClass("active");
     }
 
@@ -29,7 +37,7 @@ namespace MVW {
     }
 
     $(".tab").click((e: JQuery.Event<HTMLAnchorElement>) => {
-      setActive($(e.target).attr("href").substring(1));
+      setActive($(e.target).data("tab"));
       e.stopPropagation();
     });
   }
@@ -38,6 +46,8 @@ namespace MVW {
     if ($(headerNavSelector).length > 0) {
       $(window).on("scroll load resize", () => checkScroll());
     }
+
+    fixAnchors();
 
     activateTabs();
   }

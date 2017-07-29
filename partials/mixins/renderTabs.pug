@@ -2,17 +2,16 @@ mixin renderTabs(tabs)
   ul.tabs
     each tab, index in tabs
       if index < 5
-        li.tab(id="tab-" + tab
-               role="presentation"
-               class=(index === 0 ? "active" : "") + (index > 1 ? "hidden-mobile" : ""))
-          a.unstyled(href="#" + tab) #{tab}
+        li.tab(role="presentation"
+               class=(index === 0 ? "active" : "") + (index > 1 ? "hidden-mobile" : "") + " tab-" + tab)
+          a.unstyled(href="#" + tab data-tab=tab) #{tab}
     if tabs.length > 2
       li.tab-dropdown(class=(tabs.length > 5 ? "" : tabs.length > 2 ? "visible-mobile" : "hidden"))
         span.caret mehr ...
         ul.tab-dropdown-menu
           each tab, index in tabs
             if index > 1
-              li.tab(id="tab-" + tab
+              li.tab(class="tab-" + tab
                      role="presentation"
                      class=(index < 5 ? "visible-mobile" : ""))
-                a.unstyled(href="#" + tab) #{tab}
+                a.unstyled(href="#" + tab data-tab=tab) #{tab}
