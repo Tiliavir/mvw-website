@@ -243,8 +243,10 @@ output {
   }
 }
 
-textarea.form-control {
-  height: auto;
+textarea {
+  &.form-control {
+    height: auto;
+  }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -287,6 +289,15 @@ textarea.form-control {
     margin-bottom: 0;
     font-weight: normal;
     cursor: pointer;
+  }
+
+  &.disabled,
+  fieldset {
+    &[disabled] & {
+      label {
+        cursor: $cursor-disabled;
+      }
+    }
   }
 }
 
@@ -338,18 +349,6 @@ textarea.form-control {
   margin-left: 10px; // space out consecutive inline controls
 }
 
-.radio,
-.checkbox {
-  &.disabled,
-  fieldset {
-    &[disabled] & {
-      label {
-        cursor: $cursor-disabled;
-      }
-    }
-  }
-}
-
 .form-control-static {
   padding-top: ($padding-base-vertical + 1);
   padding-bottom: ($padding-base-vertical + 1);
@@ -381,9 +380,11 @@ textarea.form-control {
     }
   }
 
-  textarea.form-control,
-  select[multiple].form-control {
-    height: auto;
+  textarea,
+  select[multiple] {
+    &.form-control {
+      height: auto;
+    }
   }
 
   .form-control-static {
@@ -406,14 +407,18 @@ textarea.form-control {
     border-radius: $input-border-radius-large;
   }
 
-  select.form-control {
-    height: $input-height-large;
-    line-height: $input-height-large;
+  select {
+    &.form-control {
+      height: $input-height-large;
+      line-height: $input-height-large;
+    }
   }
 
-  textarea.form-control,
-  select[multiple].form-control {
-    height: auto;
+  textarea,
+  select[multiple] {
+    &.form-control {
+      height: auto;
+    }
   }
 
   .form-control-static {
@@ -431,6 +436,16 @@ textarea.form-control {
   .form-control {
     padding-right: ($input-height-base * 1.25);
   }
+
+  label {
+    & ~ .form-control-feedback {
+      top: ($line-height-computed + 5); // Height of the `label` and its margin
+    }
+
+    &.sr-only ~ .form-control-feedback {
+      top: 0;
+    }
+  }
 }
 
 .form-control-feedback {
@@ -446,20 +461,24 @@ textarea.form-control {
   pointer-events: none;
 }
 
-.input-lg + .form-control-feedback,
-.input-group-lg + .form-control-feedback,
-.form-group-lg .form-control + .form-control-feedback {
-  width: $input-height-large;
-  height: $input-height-large;
-  line-height: $input-height-large;
+.input-lg,
+.input-group-lg,
+.form-group-lg .form-control {
+  &  + .form-control-feedback {
+    width: $input-height-large;
+    height: $input-height-large;
+    line-height: $input-height-large;
+  }
 }
 
-.input-sm + .form-control-feedback,
-.input-group-sm + .form-control-feedback,
-.form-group-sm .form-control + .form-control-feedback {
-  width: $input-height-small;
-  height: $input-height-small;
-  line-height: $input-height-small;
+.input-sm,
+.input-group-sm,
+.form-group-sm .form-control {
+  &  + .form-control-feedback {
+    width: $input-height-small;
+    height: $input-height-small;
+    line-height: $input-height-small;
+  }
 }
 
 .has-success {
@@ -472,16 +491,6 @@ textarea.form-control {
 
 .has-error {
   @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
-}
-
-.has-feedback label {
-  & ~ .form-control-feedback {
-    top: ($line-height-computed + 5); // Height of the `label` and its margin
-  }
-
-  &.sr-only ~ .form-control-feedback {
-    top: 0;
-  }
 }
 
 .help-block {

@@ -51,6 +51,18 @@ $color-hover-and-focus: lighten($color-active, 10%);
   > * {
     margin-top: 4px;
   }
+
+  .mvw-logo {
+    & > g {
+      &:nth-child(3) {
+        & > use {
+          &:nth-child(-n+4) {
+            fill: $highlight-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 .navigation-header {
