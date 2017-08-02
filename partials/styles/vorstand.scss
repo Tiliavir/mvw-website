@@ -11,34 +11,19 @@
 
 @include breakpoint(0, $mobile-max-width) {
   .mvw-managing-committee-table {
-    tr {
-      &:first-child {
+    .banded-rows {
+      img {
+        max-width: 100%;
+      }
+
+      tr {
         td {
-          :nth-child(2) {
-            border-top-width: 0;
+          background-color: $gray-lightest;
+
+          &:first-child {
+            background-color: $body-bg;
           }
         }
-      }
-    }
-
-    th {
-      &:nth-child(2) {
-        display: none;
-      }
-    }
-
-    td {
-      &:nth-child(2) {
-        border-width: 0;
-        border-top-width: 1px;
-        float: left;
-        width: 100%;
-      }
-
-      &:nth-child(3) {
-        border: 0 solid transparent;
-        clear: left;
-        float: left;
       }
     }
   }

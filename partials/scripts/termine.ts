@@ -1,12 +1,6 @@
-namespace MVW.Appointments {
-  function addDays(date: Date, days: number): Date {
-    const result = new Date(date.getTime());
-    result.setDate(result.getDate() + days);
-    return result;
-  }
-
-  export function initialize(): void {
-    const cutOffDate = addDays(new Date(), -3);
+class Appointments {
+  public static initialize(): void {
+    const cutOffDate = Appointments.addDays(new Date(), -3);
 
     $("meta[itemprop=\"startDate\"]").each((i, e) => {
       let $e = $(e);
@@ -19,5 +13,11 @@ namespace MVW.Appointments {
     });
   }
 
-  $(() => { MVW.Appointments.initialize(); });
+  private static addDays(date: Date, days: number): Date {
+    const result = new Date(date.getTime());
+    result.setDate(result.getDate() + days);
+    return result;
+  }
 }
+
+$(() => { Appointments.initialize(); });

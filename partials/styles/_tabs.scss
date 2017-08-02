@@ -78,7 +78,7 @@
       }
     }
 
-    &:hover {
+    &.open {
       .tab-dropdown-menu {
         top: auto;
         z-index: 100;

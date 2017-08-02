@@ -1,15 +1,12 @@
-import * as PhotoSwipe from "photoswipe";
-import * as PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";
+/// <reference path="../../node_modules/@types/photoswipe/index.d.ts" />
+/// <reference path="../../node_modules/@types/photoswipe/dist/photoswipe-ui-default/index.d.ts" />
 
-namespace MVW.Gallery {
-  let galleries: any;
-  let pswpElement: any;
-
-  export function openGallery(e: any): void {
+class Gallery {
+  public static openGallery(e: any): void {
     let items = e.items;
     if (!items) {
       const preview = $(e).find(".preview");
-      items = e.items = galleries[preview.data("year")][preview.data("gallery")];
+      items = e.items = Gallery.galleries[preview.data("year")][preview.data("gallery")];
     }
 
     const options: any = {
@@ -19,7 +16,8 @@ namespace MVW.Gallery {
         return { w: rect.width, x: rect.left, y: rect.top + pageYScroll };
       }
     };
-    const gallery = new PhotoSwipe<PhotoSwipeUI_Default.Options>(pswpElement, PhotoSwipeUI_Default, items, options);
+    const gallery = new PhotoSwipe<PhotoSwipeUI_Default.Options>(Gallery.pswpElement,
+                                                                 PhotoSwipeUI_Default, items, options);
 
     // create variable that will store real size of viewport
     let realViewportWidth: number;
@@ -87,12 +85,27 @@ namespace MVW.Gallery {
     gallery.init();
   }
 
-  function shufflePreview(): void {
+  public static initialize(): void {
+    Gallery.pswpElement = document.querySelectorAll(".pswp")[0];
+    $(".mvw-gallery img").hover((e) => {
+      const $e = $(e.target);
+      $e.attr("src", $e.attr("src").replace("/s/", "/m/"));
+    });
+    $.getJSON("/gallery/galleries.json", (data) => {
+      Gallery.galleries = data;
+      Gallery.shufflePreview();
+    });
+  }
+
+  private static galleries: any;
+  private static pswpElement: any;
+
+  private static shufflePreview(): void {
     const previews = $(".preview:visible");
     const e: any = $(previews[Math.floor(Math.random() * previews.length)]);
-    const g = e[0].images || (e[0].images = galleries[e.data("year")][e.data("gallery")]
+    const g = e[0].images || (e[0].images = Gallery.galleries[e.data("year")][e.data("gallery")]
                                            .filter((i: any) => (i.s.w === 200))
-                                           || galleries[e.data("year")][e.data("gallery")]);
+                                           || Gallery.galleries[e.data("year")][e.data("gallery")]);
 
     e.fadeOut(400, () => {
       const i = g[Math.floor(Math.random() * g.length)];
@@ -100,20 +113,8 @@ namespace MVW.Gallery {
     });
     e.fadeIn(400);
 
-    setTimeout(() => shufflePreview(), 10000);
+    setTimeout(() => Gallery.shufflePreview(), 10000);
   }
-
-  export function initialize(): void {
-    pswpElement = document.querySelectorAll(".pswp")[0];
-    $(".mvw-gallery img").hover((e) => {
-      const $e = $(e.target);
-      $e.attr("src", $e.attr("src").replace("/s/", "/m/"));
-    });
-    $.getJSON("/gallery/galleries.json", (data) => {
-      galleries = data;
-      shufflePreview();
-    });
-  }
-
-  $(() => { MVW.Gallery.initialize(); });
 }
+
+$(() => { Gallery.initialize(); });

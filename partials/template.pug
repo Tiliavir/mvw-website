@@ -1,13 +1,7 @@
-include ./mixins/image.pug
-include ./mixins/tile.pug
-include ./mixins/youtube.pug
-include ./mixins/formatTimespan.pug
-include ./mixins/renderTabs.pug
-include ./mixins/numberOfMusicians.pug
+include ./mixins/_all-mixins.pug
 
 doctype html
-//- xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"
-html(lang="de")
+html(lang="de" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
@@ -80,6 +74,7 @@ html(lang="de")
 
     script(src="/js/jquery.min.js")
     script
+      include ./scripts/tabs.js
       include ./scripts/app.js
     script
       block pageScripts

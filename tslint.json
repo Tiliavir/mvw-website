@@ -7,6 +7,7 @@
     "new-parens": true,
     "no-arg": true,
     "no-bitwise": true,
+    "no-reference": false,
     "trailing-comma": false,
     "no-namespace": false,
     "no-conditional-assignment": true,

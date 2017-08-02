@@ -34,7 +34,7 @@ block content
         each galleryTitle in Object.keys(year).reverse()
           - var gallery = year[galleryTitle]
           .mvw-gallery-container
-            .mvw-gallery(onclick="MVW.Gallery.openGallery(this); return false;")
+            .mvw-gallery(onclick="Gallery.openGallery(this); return false;")
               - var preview = gallery.filter((i) => i.s.w === 200)[0] || gallery[0];
               .ratio-content
                 img.preview(src=`/gallery/${preview.b}s/${preview.f}` alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)

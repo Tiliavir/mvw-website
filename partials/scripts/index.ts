@@ -1,5 +1,5 @@
-namespace MVW.Start {
-  export function initialize(): void {
+class Index {
+  public static initialize(): void {
     const slideWidth = $(".slider-items").width();
 
     let interval: NodeJS.Timer;
@@ -40,6 +40,6 @@ namespace MVW.Start {
     $(".slider-control.right").click(() => moveRight());
     resetInterval();
   }
-
-  $(() => { MVW.Start.initialize(); });
 }
+
+$(() => { Index.initialize(); });

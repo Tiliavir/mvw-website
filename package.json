@@ -1,6 +1,6 @@
 {
     "name": "mvw-website",
-    "version": "17.07.29",
+    "version": "17.08.02",
     "private": true,
     "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
     "author": "Musikverein Wollbach 1866 e.V.",
@@ -65,7 +65,8 @@
         "postclean": "mkdir build",
 
         "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss ./partials/styles/**/*.css -r --use autoprefixer --no-map",
-        "compile": "tsc && npm run compile:sass && gulp",
+        "compile:ts": "tsc -p tsconfig.gulpfile.json && tsc -p tsconfig.json",
+        "compile": "npm run compile:ts && npm run compile:sass && gulp",
 
         "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
         "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 ./root/[!_]*/**/* ./build/",

@@ -1,13 +1,9 @@
-namespace MVW.Search {
-  let index: any;
-  let store: any;
-
-  function handleSearch(e: JQuery.Event<HTMLElement, null>): void {
+class Search {
+  public static handleSearch(e: JQuery.Event<HTMLElement, null>): void {
     const query = $("input.mvw-search-field").val();
-
-    const result = index.search(`*${query}*`);
-
+    const result = Search.index.search(`*${query}*`);
     const resultContainer = $(".results");
+
     if (!query || result.length === 0) {
       resultContainer.hide();
     } else {
@@ -15,8 +11,8 @@ namespace MVW.Search {
       for (const item of result) {
         const ref = item.ref;
         const i = `<li>
-                     <h2><a href="${ref}.html">${store[ref].title}</a></h2>
-                     <span>${store[ref].description}</span>
+                     <h2><a href="${ref}.html">${Search.store[ref].title}</a></h2>
+                     <span>${Search.store[ref].description}</span>
                    </li>`;
         resultContainer.append(i);
       }
@@ -24,7 +20,25 @@ namespace MVW.Search {
     }
   }
 
-  function getParameterByName(name: string): string {
+  public static initialize(): void {
+    $.getJSON("/index.json", (data) => {
+      Search.index = lunr.Index.load(data.index);
+      Search.store = data.store;
+
+      const query = Search.getParameterByName("query") || Search.getParameterByName("q");
+      const inputField = $("input.mvw-search-field");
+      if (query) {
+        inputField.val(query);
+      }
+      inputField.on("keyup", Search.handleSearch);
+      Search.handleSearch(null);
+    });
+  }
+
+  private static index: any;
+  private static store: any;
+
+  private static getParameterByName(name: string): string {
     const url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
     const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
@@ -39,21 +53,6 @@ namespace MVW.Search {
 
     return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
-
-  export function initialize(): void {
-    $.getJSON("/index.json", (data) => {
-      index = lunr.Index.load(data.index);
-      store = data.store;
-
-      const query = getParameterByName("query") || getParameterByName("q");
-      const inputField = $("input.mvw-search-field");
-      if (query) {
-        inputField.val(query);
-      }
-      inputField.on("keyup", handleSearch);
-      handleSearch(null);
-    });
-  }
-
-  $(() => MVW.Search.initialize());
 }
+
+$(() => Search.initialize());

@@ -117,7 +117,7 @@ $grid-gutter-width:              20px;
 input {
   box-sizing: border-box;
 
-  &[type='radio'], 
+  &[type='radio'],
   &[type='checkbox'] {
     margin: 4px 0 0;
     margin-top: 1px \9; // IE8-9
@@ -374,9 +374,11 @@ textarea.form-control {
     border-radius: $input-border-radius-small;
   }
 
-  select.form-control {
-    height: $input-height-small;
-    line-height: $input-height-small;
+  select {
+    .form-control {
+      height: $input-height-small;
+      line-height: $input-height-small;
+    }
   }
 
   textarea.form-control,
