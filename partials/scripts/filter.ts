@@ -1,4 +1,4 @@
-class Rueckblick {
+class Filter {
   private static containsAll(array: string[], find: string[]): boolean {
     return find.every((v) => {
       return array.indexOf(v) !== -1;
@@ -38,7 +38,7 @@ class Rueckblick {
           itemTags.push($(e).text());
         });
 
-        $entry.toggle(Rueckblick.containsAll(itemTags, this.filters));
+        $entry.toggle(Filter.containsAll(itemTags, this.filters));
       });
     } else {
       $(".tabs").show();
@@ -48,4 +48,4 @@ class Rueckblick {
   }
 }
 
-$(() => { new Rueckblick().initialize(); });
+$(() => { new Filter().initialize(); });

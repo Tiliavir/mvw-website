@@ -3,6 +3,7 @@ exports.__esModule = true;
 var fs = require("fs");
 var gulp = require("gulp");
 var moment = require("moment");
+require("moment/locale/de");
 var marked = require("marked");
 var path = require("path");
 var yargs = require("yargs");
@@ -18,6 +19,7 @@ var paths = {
 };
 var getScope = function (file) {
     var filename = path.basename(file.path, path.extname(file.path));
+    moment.locale("de");
     return {
         marked: marked,
         moment: moment,

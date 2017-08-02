@@ -2,6 +2,7 @@ import * as fs from "fs";
 import * as File from "vinyl";
 import * as gulp from "gulp";
 import * as moment from "moment";
+import "moment/locale/de";
 import * as marked from "marked"
 import * as path from "path";
 import * as yargs from "yargs";
@@ -21,6 +22,8 @@ const paths: {dest: string} = {
 
 let getScope = (file: File) => {
   const filename = path.basename(file.path, path.extname(file.path));
+  moment.locale("de");
+
   return {
     marked: marked,
     moment: moment,
