@@ -1,6 +1,22 @@
 ﻿{
   "2017": [
     {
+      "starttime": "2017-07-23T14:00:00Z",
+      "endtime": "2017-07-23T15:00:00Z",
+      "title": "Auftritt am Sommerfest der Bergmannskapelle Wieden",
+      "content": "Das Sommerfest der Bergmannskapelle Wieden, bei schönstem Wetter und bester Stimmung, war unser letzter Auftritt vor der Sommerpause. Wir genossen das Musizieren vor dieser wunderbaren Schwarzwald-Kulisse."
+    },
+    {
+      "starttime": "2017-07-23T10:00:00Z",
+      "title": "Kirchhofgottesdienst"
+    },
+    {
+      "starttime": "2017-07-21T19:00:00Z",
+      "title": "Jugendvorspiel mit anschließendem Grillabend",
+      "content": "Unsere Zöglinge konnten auch bei diesem Vorspiel ihr Können unter Beweis stellen und das Auftreten vor Publikum üben. Der Abend wurde beim Grillen und geselligen Beisammensein beschlossen.",
+      "keywords": ["Jugend"]
+    },
+    {
       "starttime": "2017-06-30T00:00:00Z",
       "title": "Bischofszeller Rosen- und Kulturwoche",
       "content": "",

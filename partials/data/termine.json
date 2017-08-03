@@ -2,28 +2,6 @@
   "2017": [
     {
       "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2017-07-21T19:00:00Z",
-      "title": "Jugendvorspiel mit anschließendem Grillabend"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2017-07-23T10:00:00Z",
-      "title": "Kirchhofgottesdienst"
-    },
-    {
-      "location": {
-        "address": "Wieden"
-      },
-      "starttime": "2017-07-23T14:00:00Z",
-      "endtime": "2017-07-23T15:00:00Z",
-      "title": "Auftritt"
-    },
-    {
-      "location": {
         "address": "Mambach"
       },
       "starttime": "2017-09-01T20:00:00Z",
