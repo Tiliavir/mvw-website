@@ -1,12 +1,10 @@
----
-title: "Vorstandschaft"
-description: "Hier finden Sie den richtigen Ansprechpartner des Musikverein Wollbachs."
-keywords: "Vorstand, Vorstandschaft, Ansprechpartner, Kontakt"
-
-navigation: "top"
----
-
 extends ../../template.pug
+
+block variables
+  -
+    var title = "Vorstandschaft";
+    var description = "Hier finden Sie den richtigen Ansprechpartner des Musikverein Wollbachs.";
+    var keywords = "Vorstand, Vorstandschaft, Ansprechpartner, Kontakt";
 
 block pageStyles
   include ../../styles/vorstand.css
@@ -39,7 +37,7 @@ block content
               | Telefon: #{role.telephone}
             br
             if role.email
-              a(href="mailto:" + role.email) E-Mail
+              a(href=`mailto:${role.email}`) E-Mail
 
   :marked
     # Im Gespräch mit unserer Vorsitzenden Annette Krey, ...

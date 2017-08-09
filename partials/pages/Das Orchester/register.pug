@@ -1,12 +1,10 @@
----
-title: "Unsere Register"
-description: "Die aktuelle Besetzung des Musikverein Wollbach nach Registern."
-keywords: "Register, Besetzung, Instrumente, Musiker, Musikerinnen, Personen"
-
-navigation: "top"
----
-
 extends ../../template.pug
+
+block variables
+  -
+    var title = "Unsere Register";
+    var description = "Die aktuelle Besetzung des Musikverein Wollbach nach Registern.";
+    var keywords = "Register, Besetzung, Instrumente, Musiker, Musikerinnen, Personen";
 
 block pageStyles
   include ../../styles/register.css

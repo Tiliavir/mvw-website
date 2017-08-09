@@ -1,13 +1,11 @@
----
-title: "Suche"
-description: "Durchsuche Inhalte der Webseite des Musikverein Wollbach 1866 e.V."
-keywords: "Suche, Seitensuche"
-
-navigation: "footer"
-schemaOrg: "SearchResultsPage"
----
-
 extends ../template.pug
+
+block variables
+  -
+    var title = "Suche";
+    var description = "Durchsuche Inhalte der Webseite des Musikverein Wollbach 1866 e.V.";
+    var keywords = "Suche, Seitensuche";
+    var schemaOrg = "SearchResultsPage";
 
 block content
   form(itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction")
@@ -19,5 +17,5 @@ block pageStyles
   include ../styles/suche.css
 
 block pageScripts
-    include ../../node_modules/lunr/lunr.js
-    include ../scripts/suche.js
+  include ../../node_modules/lunr/lunr.js
+  include ../scripts/suche.js

@@ -1,9 +1,9 @@
----
-title: "Seite nicht gefunden!"
-description: "Die von Ihnen angeforderte Seite konnte leider nicht gefunden werden."
----
-
 extends ../template.pug
+
+block variables
+  -
+    var title = "Seite nicht gefunden!";
+    var description = "Die von Ihnen angeforderte Seite konnte leider nicht gefunden werden.";
 
 block content
   :marked

@@ -1,9 +1,9 @@
----
-title: "Unautorisierter Zugriff!"
-description: "Sie sind leider nicht authorisiert auf diese Seite zuzugreifen."
----
-
 extends ../template.pug
+
+block variables
+  -
+    var title = "Unautorisierter Zugriff!";
+    var description = "Sie sind leider nicht authorisiert auf diese Seite zuzugreifen.";
 
 block content
   :marked

@@ -1,12 +1,10 @@
----
-title: "Willkommen beim Musikverein Wollbach"
-description: "Die Website des Musikverein Wollbach 1866 e.V.. Alles Rund um unsere Auftritte, Jugendarbeit, Besetzung, Bilder und Einblicke in die Vereinshistorie."
-keywords: "Wollbach, Musikverein, Musikverein Wollbach 1866 e.V., Verein, Musik, Orchester, Blasmusik, Instrument, Jugendarbeit, Konzert"
-
-hideBreadcrumb: true
----
-
 extends ../template.pug
+
+block variables
+  -
+    var title = "Willkommen beim Musikverein Wollbach";
+    var description = "Die Website des Musikverein Wollbach 1866 e.V.. Alles Rund um unsere Auftritte, Jugendarbeit, Besetzung, Bilder und Einblicke in die Vereinshistorie.";
+    var keywords = "Wollbach, Musikverein, Musikverein Wollbach 1866 e.V., Verein, Musik, Orchester, Blasmusik, Instrument, Jugendarbeit, Konzert";
 
 block pageStyles
   include ../styles/index.css
@@ -16,11 +14,11 @@ block pageScripts
 
 block header
   header
-      .mvw-brand
-        +image("/img/slider/logo.png", "Das neue Logo des Musikverein Wollbach")
-      .cd
-        a(href="blog_2016-still-feeling-good.html")
-          +image("/img/events/cd.jpg", "Still Feelin' Good")
+    .mvw-brand
+      +image("/img/slider/logo.png", "Das neue Logo des Musikverein Wollbach")
+    .cd
+      a(href="blog_2016-still-feeling-good.html")
+        +image("/img/events/cd.jpg", "Still Feelin' Good")
 
 block content
   -
@@ -119,7 +117,7 @@ block content
     ol.slider-items
       for slide in slides
         li.slider-item
-          div.fill(style="background-image: url('" + slide.url + "');" data-alt=slide.title)
+          .fill(style=`background-image: url('${slide.url}');` data-alt=slide.title)
     a.unstyled.left.slider-control(href="#slider")
       span.icon-prev &lt;
     a.unstyled.right.slider-control(href="#slider")

@@ -1,12 +1,10 @@
----
-title: "Rückblick"
-description: "Vergangene Konzerte, Feste und sonstige Anlässe des Musikverein Wollbachs werden hier kurz zusammengefasst."
-keywords: "Rückblick, Berichte, Zusammenfassungen, Vergangene Events, Nachrichten"
-
-navigation: "top"
----
-
 extends ../../template.pug
+
+block variables
+  -
+    var title = "Rückblick";
+    var description = "Vergangene Konzerte, Feste und sonstige Anlässe des Musikverein Wollbachs werden hier kurz zusammengefasst.";
+    var keywords = "Rückblick, Berichte, Zusammenfassungen, Vergangene Events, Nachrichten";
 
 block pageScripts
   include ../../scripts/filter.js

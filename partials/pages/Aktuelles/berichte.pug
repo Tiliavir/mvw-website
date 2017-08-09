@@ -1,12 +1,10 @@
----
-title: "Berichte"
-description: "Eine Sammlung von Presseberichten rund um den Musikverein Wollbach."
-keywords: "Presse, Presseberichte, Zeitungsartikel, Presseschau, Pressespiegel"
-
-navigation: "top"
----
-
 extends ../../template.pug
+
+block variables
+  -
+    var title = "Berichte";
+    var description = "Eine Sammlung von Presseberichten rund um den Musikverein Wollbach.";
+    var keywords = "Presse, Presseberichte, Zeitungsartikel, Presseschau, Pressespiegel";
 
 block pageStyles
   include ../../styles/berichte.css

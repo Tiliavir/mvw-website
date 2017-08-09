@@ -1,13 +1,11 @@
----
-title: "Bilder"
-description: "Bildergalerie mit Bildern von dirversen Konzerten, Festen und anderen Anlässen des Musikverein Wollbach."
-keywords: "Bilder, Bildergalerie, Fotos, Photos, Alben, Album, Fotoalbum"
-
-navigation: "top"
-schemaOrg: "ImageGallery"
----
-
 extends ../template.pug
+
+block variables
+  -
+    var title = "Bilder";
+    var description = "Bildergalerie mit Bildern von dirversen Konzerten, Festen und anderen Anlässen des Musikverein Wollbach.";
+    var keywords = "Bilder, Bildergalerie, Fotos, Photos, Alben, Album, Fotoalbum";
+    var schemaOrg = "ImageGallery";
 
 block pageStyles
   include ../../node_modules/photoswipe/dist/photoswipe.css
@@ -40,7 +38,7 @@ block content
                 img.preview(src=`/gallery/${preview.b}s/${preview.f}` alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
                 span.caption #{galleryTitle}
 
-  .pswp(tabindex="-1", role="dialog", aria-hidden="true")
+  .pswp(tabindex="-1" role="dialog" aria-hidden="true")
     //-
       Background of PhotoSwipe.
       It's a separate element as animating opacity is faster than rgba().

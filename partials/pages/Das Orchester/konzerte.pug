@@ -1,12 +1,10 @@
----
-title: "Konzerte"
-description: "Übersicht über Konzerte des Musikverein Wollbachs."
-keywords: "Konzerte, Jahreskonzerte, Kirchenkonzerte, Konzertprogramme"
-
-navigation: "top"
----
-
 extends ../../template.pug
+
+block variables
+  -
+    var title = "Konzerte";
+    var description = "Übersicht über Konzerte des Musikverein Wollbachs.";
+    var keywords = "Konzerte, Jahreskonzerte, Kirchenkonzerte, Konzertprogramme";
 
 block pageScripts
   include ../../scripts/filter.js

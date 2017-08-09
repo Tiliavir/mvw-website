@@ -1,12 +1,10 @@
----
-title: "Projekt - Jugendorchester"
-description: "Das Jugendorchester des Musikverein Wollbach under der Leitung von Maria Krey."
-keywords: "Jugendorchester, Jugenarbeit, Ausbildung, Jungmusiker, Jungmusikerinnen, Instrument lernen"
-
-navigation: "top"
----
-
 extends ../../template.pug
+
+block variables
+  -
+    var title = "Projekt - Jugendorchester";
+    var description = "Das Jugendorchester des Musikverein Wollbach under der Leitung von Maria Krey.";
+    var keywords = "Jugendorchester, Jugenarbeit, Ausbildung, Jungmusiker, Jungmusikerinnen, Instrument lernen";
 
 block content
   +image("/img/jugend/jugendorchester.jpg", "Das Jugendorchester im Mai 2015")

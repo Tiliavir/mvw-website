@@ -1,12 +1,10 @@
----
-title: "Termine"
-description: "Eine Übersicht über Termine von Auftritten und Anlässen des Musikverein Wollbach 1866 e.V."
-keywords: "Termine, Events, Daten, Auftritte, Konzerte, Anlässe, Terminplan, Terminkalender, Kalender"
-
-navigation: "top"
----
-
 extends ../../template.pug
+
+block variables
+  -
+    var title = "Termine";
+    var description = "Eine Übersicht über Termine von Auftritten und Anlässen des Musikverein Wollbach 1866 e.V.";
+    var keywords = "Termine, Events, Daten, Auftritte, Konzerte, Anlässe, Terminplan, Terminkalender, Kalender";
 
 block pageScripts
   include ../../scripts/termine.js
@@ -43,5 +41,5 @@ block content
                 | )
 
               if termin.description
-                div.description(itemprop="description")
+                .description(itemprop="description")
                   != marked(termin.description)

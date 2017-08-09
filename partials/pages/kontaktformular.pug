@@ -1,12 +1,10 @@
----
-title: "Kontakt"
-description: "Ideen, Wünsche, Kritik oder Anregungen? Nehmen Sie Kontakt auf mit dem Musikverein Wollbach."
-keywords: "Kontakt, Kontaktformular"
-
-navigation: "footer"
----
-
 extends ../template.pug
+
+block variables
+  -
+    var title = "Kontakt";
+    var description = "Ideen, Wünsche, Kritik oder Anregungen? Nehmen Sie Kontakt auf mit dem Musikverein Wollbach.";
+    var keywords = "Kontakt, Kontaktformular";
 
 block pageScripts
   include ../scripts/kontaktformular.js
@@ -18,7 +16,7 @@ block content
         .form-group
           label.control-label(for="name") Name
           .input-group
-            input#name.form-control(type="text" name="name" placeholder="Ihr Name", required)
+            input#name.form-control(type="text" name="name" placeholder="Ihr Name" required)
             span.input-group-addon
           span.help-block(style="display: none;") Bitte geben Sie Ihren Namen an.
         .form-group
@@ -36,6 +34,6 @@ block content
           .g-recaptcha(data-sitekey="6LcuIhoTAAAAAJP9auarRgUhtg7DIz-JTmRdYOqA")
           span.help-block(style="display: none;") Bitte bestätigen Sie, dass Sie kein Bot sind.
         span.help-block(style="display: none;") Bitte geben Sie einen Sicherheits code ein.
-        button#feedbackSubmit(type="submit", data-loading-text="Sende...", style="display: block; margin-top: 10px;") Absenden
+        button#feedbackSubmit(type="submit" data-loading-text="Sende..." style="display: block; margin-top: 10px;") Absenden
 
   script(src="https://www.google.com/recaptcha/api.js")

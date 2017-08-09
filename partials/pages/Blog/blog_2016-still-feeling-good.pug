@@ -1,16 +1,14 @@
----
-title: "Still Feelin' Good"
-description: "Die CD \"Still Feelin' Good\" anlässlich des 150 jährigen Jubiläums des Musikverein Wollbach zu unserem Jahreskonzert 2016."
-keywords: "CD, Aufnahme, Still Feelin' Good, Still Feeling Good, Studio 80, Städele, Musikverein Wollbach, Verkauf"
-
-hasAmp: true
-publishedDate: "2016-03-06T00:00:00.000Z"
-ampLogoUrl: "img/events/cd.jpg"
-ampLogoWidth: 600
-ampLogoHeight: 380
----
-
 extends ../../template-blog.pug
+
+block variables
+  -
+    var title = "Still Feelin' Good";
+    var description = "Die CD \"Still Feelin' Good\" anlässlich des 150 jährigen Jubiläums des Musikverein Wollbach zu unserem Jahreskonzert 2016.";
+    var keywords = "CD, Aufnahme, Still Feelin' Good, Still Feeling Good, Studio 80, Städele, Musikverein Wollbach, Verkauf";
+    var publishedDate = "2016-03-06T00:00:00.000Z";
+    var ampLogoUrl = "img/events/cd.jpg";
+    var ampLogoWidth = 600;
+    var ampLogoHeight = 380;
 
 block content
   +image("/img/events/cd.jpg", "Still Feelin' Good", null, null, 600, 380)

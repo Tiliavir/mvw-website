@@ -1,16 +1,14 @@
----
-title: "Ergebnisse des Ballonwettbewerbes"
-description: "Die Ergebnisse und Preise des Ballonwettbewerbes am Herbstfest mit Gewinnern, Zielort und Preisen."
-keywords: "Ballon, Ballonwettbewerb, Wettbewerb, Herbstfest, Wollbach"
-
-hasAmp: true
-publishedDate: "2016-11-30T00:00:00.000Z"
-ampLogoUrl: "img/events/ballon.jpg"
-ampLogoWidth: 500
-ampLogoHeight: 365
----
-
 extends ../../template-blog.pug
+
+block variables
+  -
+    var title = "Ergebnisse des Ballonwettbewerbes";
+    var description = "Die Ergebnisse und Preise des Ballonwettbewerbes am Herbstfest mit Gewinnern, Zielort und Preisen.";
+    var keywords = "Ballon, Ballonwettbewerb, Wettbewerb, Herbstfest, Wollbach";
+    var publishedDate = "2016-11-30T00:00:00.000Z";
+    var ampLogoUrl = "img/events/ballon.jpg";
+    var ampLogoWidth = 500;
+    var ampLogoHeight = 365;
 
 block content
   +image("/img/events/ballon.jpg", "Ballonwettbewerb am Herbstfest 2016", null, null, 500, 365)

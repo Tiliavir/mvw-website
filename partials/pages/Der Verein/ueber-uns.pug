@@ -1,13 +1,11 @@
----
-title: "Wir über uns"
-description: "Ein kurzer Einblick in die Geschichte des Musikverein Wollbach 1866 e.V."
-keywords: "Historie, Geschichte, Chronik"
-
-schemaOrg: "AboutPage"
-navigation: "top"
----
-
 extends ../../template.pug
+
+block variables
+  -
+    var title = "Wir über uns";
+    var description = "Ein kurzer Einblick in die Geschichte des Musikverein Wollbach 1866 e.V.";
+    var keywords = "Historie, Geschichte, Chronik";
+    var schemaOrg = "AboutPage";
 
 block content
   :marked

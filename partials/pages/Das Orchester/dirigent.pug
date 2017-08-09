@@ -1,12 +1,10 @@
----
-title: "Dirigent"
-description: "Der Dirigent des Musikverein Wollbach: Oliver Hauser."
-keywords: "Dirigent, musikalische Leitung, Leitung, Oliver Hauser"
-
-navigation": "top"
----
-
 extends ../../template.pug
+
+block variables
+  -
+    var title = "Dirigent";
+    var description = "Der Dirigent des Musikverein Wollbach: Oliver Hauser.";
+    var keywords = "Dirigent, musikalische Leitung, Leitung, Oliver Hauser";
 
 block content
   +image("/img/personen/dirigent.jpg",
