@@ -14,7 +14,6 @@ var $ = gulpLoadPlugins();
 var isRelease = yargs["default"]("release", false).boolean("release").argv.release;
 var baseUrl = isRelease ? "https://www.mv-wollbach.de/" : "http://localhost/";
 var navigation = new mvw_navigation_1.Navigation(require("./partials/site-structure.json"));
-;
 var paths = {
     dest: "./build/"
 };
@@ -48,7 +47,7 @@ var build = function (path, isAmp, dest) {
         .pipe(gulp.dest(dest));
 };
 gulp.task("sitemap", function () {
-    return gulp.src([paths.dest + "**/*.html", "!**/401.html"], {
+    return gulp.src([paths.dest + "**/*.html", "!**/401.html", "!**/google*"], {
         read: false
     })
         .pipe($.sitemap({

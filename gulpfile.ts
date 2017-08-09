@@ -9,17 +9,17 @@ import * as yargs from "yargs";
 import * as gulpLoadPlugins from "gulp-load-plugins";
 import { Navigation } from "mvw-navigation";
 
-var logger = require("gulplog");
+let logger = require("gulplog");
 
 let $: any = gulpLoadPlugins();
 
 let isRelease: boolean = yargs.default("release", false).boolean("release").argv.release;
 let baseUrl = isRelease ? "https://www.mv-wollbach.de/" : "http://localhost/";
 
-let navigation: Navigation = new Navigation(require("./partials/site-structure.json"));;
+let navigation: Navigation = new Navigation(require("./partials/site-structure.json"));
 
 const paths: {dest: string} = {
-  dest: "./build/",
+  dest: "./build/"
 };
 
 let getScope = (file: File, isAmp: boolean = false) => {
@@ -56,7 +56,7 @@ let build = (path: string, isAmp: boolean, dest: string) => {
 }
 
 gulp.task("sitemap", () => {
-    return gulp.src([paths.dest + "**/*.html", "!**/401.html"], {
+    return gulp.src([paths.dest + "**/*.html", "!**/401.html", "!**/google*"], {
                   read: false
                 })
                .pipe($.sitemap({
@@ -67,8 +67,8 @@ gulp.task("sitemap", () => {
 });
 
 gulp.task("lint:pug", () => {
-  var PugLint = require("pug-lint");
-  var linter = new PugLint();
+  let PugLint = require("pug-lint");
+  let linter = new PugLint();
   linter.configure({extends: __dirname + "\\\.pug-lint.json"});
 
   return gulp.src("./partials/pages/**/*.pug")
