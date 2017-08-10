@@ -7,7 +7,7 @@ $brand-padding: 0 10px 0 5px;
 $background-color: $gray-base;
 $background-color-active-no-transparency: darken($background-color, 10%);
 $background-color-active: transparentize($background-color-active-no-transparency, .3);
-$background-color-hover-and-focus: lighten($background-color-active, 20%);
+$background-color-hover-and-focus: lighten($background-color-active, 10%);
 
 $color: $gray-light;
 $color-active: $gray-lightest;
@@ -29,12 +29,19 @@ $color-hover-and-focus: lighten($color-active, 10%);
 
   &.inverse {
     filter: invert(100%);
-    background-color: $black;
+    background-color: transparentize($black, 0.05);
+    transition: filter 0.3s ease;
     box-shadow: 0 10px 15px -10px invert($black);
 
-    .dropdown {
-      & > ul {
-        filter: invert(100%);
+    .mvw-logo {
+      & > g {
+        &:nth-child(3) {
+          & > use {
+            &:nth-child(-n+4) {
+              fill: invert($highlight-color);
+            }
+          }
+        }
       }
     }
   }
@@ -324,7 +331,7 @@ $color-hover-and-focus: lighten($color-active, 10%);
         right: 4px;
         top: $top-nav-height / 2 - $expand-arrow-height + 1px;
         border: $expand-arrow-height solid transparent;
-        border-top: $expand-arrow-height solid $text-color;
+        border-top: $expand-arrow-height solid $color;
       }
     }
 
