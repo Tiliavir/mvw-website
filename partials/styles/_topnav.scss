@@ -7,13 +7,13 @@ $brand-padding: 0 10px 0 5px;
 $background-color: $gray-base;
 $background-color-active-no-transparency: darken($background-color, 10%);
 $background-color-active: transparentize($background-color-active-no-transparency, .3);
-$background-color-hover-and-focus: lighten($background-color-active, 10%);
 
 $color: $gray-light;
 $color-active: $gray-lightest;
 $color-hover-and-focus: lighten($color-active, 10%);
 
 .navigation {
+  transition: filter .3s ease;
   background-color: $background-color;
   color: $text-color;
   font-size: $font-size-base;
@@ -29,8 +29,8 @@ $color-hover-and-focus: lighten($color-active, 10%);
 
   &.inverse {
     filter: invert(100%);
-    background-color: transparentize($black, 0.05);
-    transition: filter 0.3s ease;
+    background-color: transparentize($black, .05);
+    transition: filter .3s ease;
     box-shadow: 0 10px 15px -10px invert($black);
 
     .mvw-logo {
@@ -43,6 +43,10 @@ $color-hover-and-focus: lighten($color-active, 10%);
           }
         }
       }
+    }
+
+    .navigation-menu {
+      background-color: transparentize($black, .05);
     }
   }
 }
@@ -114,7 +118,6 @@ $color-hover-and-focus: lighten($color-active, 10%);
   height: auto;
 
   & > ul {
-    color: $text-color;
     font-size: $font-size-base;
     font-weight: 400;
     display: block;
@@ -264,43 +267,6 @@ $color-hover-and-focus: lighten($color-active, 10%);
     }
   }
 
-  .navigation-menu > ul {
-    flex-flow: row;
-    position: absolute;
-    right: 20px;
-
-    & > li {
-      display: inline-block;
-      color: $color;
-
-      &:hover,
-      &:focus {
-        background-color: transparentize($background-color-hover-and-focus, .3);
-        color: $color-hover-and-focus;
-      }
-
-      a {
-        position: relative;
-        padding: 0 15px;
-        display: block;
-        height: $top-nav-height;
-        line-height: $top-nav-height;
-        font-variant: small-caps;
-      }
-
-      &.active {
-        background-color: $background-color-active;
-        color: $color-active;
-      }
-    }
-  }
-
-  .navigation-checkbox {
-    &:not(:checked)~.navigation-menu {
-      display: block;
-    }
-  }
-
   .navigation-menu {
     min-height: 50px;
     position: absolute;
@@ -309,6 +275,56 @@ $color-hover-and-focus: lighten($color-active, 10%);
     width: calc(100% - #{$brand-width + nth($brand-padding, 2) + nth($brand-padding, 4)});
     overflow-x: visible;
     margin: 0;
+
+    & > ul {
+      flex-flow: row;
+      position: absolute;
+      right: 20px;
+
+      & > li {
+        display: inline-block;
+        color: $color;
+
+        &:hover,
+        &:focus {
+          background-color: $background-color;
+          color: $color;
+        }
+
+        a {
+          position: relative;
+          padding: 0 15px;
+          display: block;
+          height: $top-nav-height;
+          line-height: $top-nav-height;
+          font-variant: small-caps;
+        }
+
+        &.active {
+          background-color: $background-color-active;
+          color: $color-active;
+        }
+      }
+    }
+  }
+
+  .inverse {
+    .navigation-menu {
+      & > ul {
+        & > li {
+          &:hover,
+          &:focus {
+            background-color: transpatentize($black, .05);
+          }
+        }
+      }
+    }
+  }
+
+  .navigation-checkbox {
+    &:not(:checked)~.navigation-menu {
+      display: block;
+    }
   }
 
   .dropdown {
@@ -320,7 +336,7 @@ $color-hover-and-focus: lighten($color-active, 10%);
       left: 0;
       top: $top-nav-height;
       padding: 0;
-      background-color: $body-bg;
+      background-color: inherit;
     }
 
     & > a {
