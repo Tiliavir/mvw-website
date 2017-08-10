@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitThis": true,
+    "allowJs": false,
+    "alwaysStrict": true
+  },
+  "include": [
+    "pages/scripts/**/*.ts",
+    "gulpfile.ts"
+  ]
+}

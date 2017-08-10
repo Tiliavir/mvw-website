@@ -1,0 +1,35 @@
+---
+title: "Berichte"
+description: "Eine Sammlung von Presseberichten rund um den Musikverein Wollbach."
+keywords: "Presse, Presseberichte, Zeitungsartikel, Presseschau, Pressespiegel"
+
+navigation: "top"
+---
+
+extends ../template.pug
+
+block content
+  -
+    var berichte = require("./pages/data/berichte.json");
+    var years = Object.keys(berichte).sort((a, b) => b - a );
+
+  +renderTabs(years)
+
+  .tab-content
+    each year, index in years
+      .tab-pane.fade(id=year class=(index === 0 ? "active in" : ""))
+        table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
+          thead
+            tr
+              th Datum
+              th Thema
+              th Quelle
+          tbody
+            each bericht in berichte[year]
+              tr
+                td
+                  +formatTimespan(bericht.date)
+                td
+                  a.external(href=bericht.url target="_blank") #{bericht.title}
+                td
+                  a.external(href=bericht.srcUrl target="_blank") #{bericht.srcTitle}

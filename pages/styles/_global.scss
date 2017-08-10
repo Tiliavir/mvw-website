@@ -1,0 +1,67 @@
+$navbar-height: 50px;
+$highlight-color: #07b;
+$secondary-highlight-color: #4a4a4a;
+// $highlight-color: #D30630;
+// $third-highlight-color: #A9852A;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding-top: $navbar-height;
+}
+
+h1 {
+  color: $highlight-color;
+}
+
+h2 {
+  color: $secondary-highlight-color;
+}
+
+@media(max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+.img-portfolio {
+  margin-bottom: 30px;
+}
+
+.img-hover {
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.img-center {
+  margin: 0 auto;
+}
+
+.img-responsive {
+  max-height: calc(75vh - #{$navbar-height});
+}
+
+.img {
+  .caption {
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+blockquote {
+  font-size: 14px;
+}
+
+// Footer Styles
+
+.mvw-footer {
+  margin-top: 50px;
+}

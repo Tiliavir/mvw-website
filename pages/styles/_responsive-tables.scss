@@ -1,0 +1,75 @@
+$row-alternation-bg-color: #eee;
+$row-border-color: #ccc;
+$cell-border-color: #eee;
+
+table {
+  &.responsive {
+    border-collapse: collapse;
+  }
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  // First column bold and without border bottom
+  tr {
+    td {
+      border-bottom-width: 0;
+
+      &:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+
+  // Hide table headers (but not display: none;, for accessibility)
+  table {
+    &.responsive {
+      min-width: 200px;
+      width: 100%;
+
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        // Force table to not be like tables anymore
+        display: block;
+      }
+
+      th {
+        left: -9999px;
+        position: absolute;
+        top: -9999px;
+      }
+
+      tr {
+        border: 1px solid $row-border-color;
+
+        :nth-of-type(even) {
+          background-color: $row-alternation-bg-color;
+        }
+      }
+
+      td {
+        // Behave  like a 'row'
+        border: 0;
+        border-bottom: 1px solid $cell-border-color;
+        position: relative;
+
+        ::before {
+          // Now like a table header
+          // Top/left values mimic padding
+          left: 6px;
+          padding-right: 10px;
+          position: absolute;
+          top: 6px;
+          white-space: nowrap;
+          width: 45%;
+        }
+      }
+
+      img {
+        max-width: calc(100vw - 50px);
+      }
+    }
+  }
+}

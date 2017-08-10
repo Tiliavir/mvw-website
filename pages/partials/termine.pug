@@ -1,0 +1,47 @@
+---
+title: "Termine"
+description: "Eine Übersicht über Termine von Auftritten und Anlässen des Musikverein Wollbach 1866 e.V."
+keywords: "Termine, Events, Daten, Auftritte, Konzerte, Anlässe, Terminplan, Terminkalender, Kalender"
+
+navigation: "top"
+---
+
+extends ../template.pug
+
+block content
+  - var termine = require("./pages/data/termine.json");
+
+  each year in Object.keys(termine)
+    h2 #{year}
+    table.table.table-condensed.table-bordered.table-striped.table-hover.responsive
+      tbody
+        each termin in termine[year]
+          tr(itemscope itemtype="http://schema.org/Event")
+            td
+              +formatTimespan(termin.starttime, termin.endtime, true)
+            td
+              span(itemprop="name")
+                | #{termin.title}
+
+              if termin.location
+                | &nbsp;(
+                span(itemprop="location" itemscope itemtype="http://schema.org/Place")
+                  if termin.location.name
+                    span(itemprop="name")
+                      | #{termin.location.name}
+                  if termin.location.address
+                    if termin.location.name
+                      | ,&nbsp;
+                    span(itemprop="address")
+                      | #{termin.location.address}
+                | )
+
+              if termin.description
+                div.description(itemprop="description")
+                  != marked(termin.description)
+
+block pageScripts
+  include ../scripts/termine.js
+
+block pageStyles
+  include ../styles/termine.css

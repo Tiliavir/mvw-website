@@ -1,0 +1,196 @@
+﻿[
+  {
+    "referencedFile": "index",
+    "navigation": "none",
+    "title": "Willkommen beim Musikverein Wollbach"
+  },
+  {
+    "referencedFile": "termine",
+    "title": "Termine"
+  },
+  {
+    "referencedFile": "news",
+    "title": "News"
+  },
+  {
+    "children": [
+      {
+        "referencedFile": "ueber-uns",
+        "title": "Wir über uns"
+      },
+      {
+        "referencedFile": "konzerte",
+        "navigation": "none",
+        "title": "Konzerte"
+      },
+      {
+        "referencedFile": "register",
+        "title": "Unsere Register"
+      },
+      {
+        "referencedFile": "dirigent",
+        "title": "Dirigent"
+      },
+      {
+        "referencedFile": "vorstand",
+        "title": "Vorstandschaft"
+      },
+      {
+        "referencedFile": "dampfmusik",
+        "title": "Dampfmusik"
+      },
+      {
+        "referencedFile": "mitgliedschaft",
+        "title": "Mitglied werden"
+      }
+    ],
+    "title": "Der Verein"
+  },
+  {
+    "children": [
+      {
+        "referencedFile": "ausbildung",
+        "title": "Ausbildung"
+      },
+      {
+        "referencedFile": "vorstufenorchester",
+        "title": "Vorstufenorchester"
+      },
+      {
+        "referencedFile": "jugendorchester",
+        "title": "Jugendorchester"
+      }
+    ],
+    "title": "Jugendarbeit"
+  },
+  {
+    "referencedFile": "berichte",
+    "title": "Berichte"
+  },
+  {
+    "referencedFile": "bilder",
+    "title": "Bilder"
+  },
+  {
+    "referencedFile": "vereine-und-links",
+    "title": "Vereine und Links"
+  },
+  {
+    "children": [
+      {
+        "referencedFile": "haftung",
+        "navigation": "none",
+        "title": "Haftungsausschluss"
+      },
+      {
+        "referencedFile": "datenschutz",
+        "navigation": "none",
+        "title": "Datenschutz"
+      },
+      {
+        "referencedFile": "seiten-uebersicht",
+        "navigation": "none",
+        "title": "Seiten-Übersicht"
+      }
+    ],
+    "referencedFile": "impressum",
+    "navigation": "footer",
+    "title": "Impressum"
+  },
+  {
+    "title": "Kontakt",
+    "referencedFile": "kontaktformular",
+    "navigation": "footer"
+  },
+  {
+    "title": "Suche",
+    "referencedFile": "suche",
+    "navigation": "footer"
+  },
+  {
+    "children": [
+      {
+        "referencedFile": "blog_2017-sauserfahrt",
+        "navigation": "none",
+        "title": "Sauserfahrt mit dem Chanderli 2017"
+      },
+      {
+        "referencedFile": "blog_2017-1250-wollbach",
+        "navigation": "none",
+        "title": "1250 Jahre Wollbach"
+      },
+      {
+        "referencedFile": "blog_2017-doppelkonzert-huningue",
+        "navigation": "none",
+        "title": "Frühlingskonzert 2017"
+      },
+      {
+        "referencedFile": "blog_2017-jahreskonzert",
+        "navigation": "none",
+        "title": "Jahreskonzert 2017"
+      },
+      {
+        "referencedFile": "blog_2016-ballonwettbewerb",
+        "navigation": "none",
+        "title": "Ergebnisse des Ballonwettbewerbes"
+      },
+      {
+        "referencedFile": "blog_2016-adventskonzert",
+        "navigation": "none",
+        "title": "Benefiz Advents Konzert"
+      },
+      {
+        "referencedFile": "blog_2016-adventskranz",
+        "navigation": "none",
+        "title": "Adventskranz Verkauf"
+      },
+      {
+        "referencedFile": "blog_2016-sauserfahrt",
+        "navigation": "none",
+        "title": "Sauserfahrt mit dem Chanderli 2016"
+      },
+      {
+        "referencedFile": "blog_2016-jugend-doppelkonzert",
+        "navigation": "none",
+        "title": "Konzert des Jugendorchesters"
+      },
+      {
+        "referencedFile": "blog_2016-marschmusikfestival",
+        "navigation": "none",
+        "title": "Marschmusikfestival 2016"
+      },
+      {
+        "referencedFile": "blog_2016-kirchenkonzert",
+        "navigation": "none",
+        "title": "Kirchenkonzert 2016"
+      },
+      {
+        "referencedFile": "blog_2016-still-feeling-good",
+        "navigation": "none",
+        "title": "Still Feelin' Good"
+      },
+      {
+        "referencedFile": "blog_2016-jahreskonzert",
+        "navigation": "none",
+        "title": "Jahreskonzert 2016"
+      },
+      {
+        "referencedFile": "blog_2015-sauserfahrt",
+        "navigation": "none",
+        "title": "Sauserfahrt mit dem Chanderli 2015"
+      }
+    ],
+    "navigation": "none",
+    "title": "Blog"
+  },
+  {
+    "referencedFile": "404",
+    "navigation": "none",
+    "title": "Seite nicht gefunden!"
+  },
+  {
+    "referencedFile": "401",
+    "navigation": "none",
+    "title": "Unautorisierter Zugriff!"
+  }
+]

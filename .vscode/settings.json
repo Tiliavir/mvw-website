@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-  "editor.renderWhitespace": true,
+  "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
 
   "files.exclude": {
@@ -8,19 +8,44 @@
       "when": "$(basename).ts"
     },
     "**/*.js.map": true,
-
-    ".bowerrc": true,
-    "*.csproj*": true,
-
-    // folders:
-    "**/*_modules/": true,
-    "typings": true,
-    "**/_book": true,
-
-    "**/temp/": true,
-    "**/tmp": true,
-    "**/build": true,
-    "**/bin": true,
-    "**/obj": true
-  }
+    "build": true,
+    ".vscode": true,
+    "node_modules": true,
+    "*/footernavigation.pug": true,
+    "*/siteOverviewList.pug": true,
+    "*/topnavigation.pug": true
+  },
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "json.schemas": [
+    {
+        "fileMatch": [
+            "/pages/data/berichte.json"
+        ],
+        "url": "./pages/data/schema/berichte-schema.json"
+    },
+    {
+        "fileMatch": [
+            "/pages/data/*register.json"
+        ],
+        "url": "./pages/data/schema/register-schema.json"
+    },
+    {
+        "fileMatch": [
+            "/pages/data/termine.json"
+        ],
+        "url": "./pages/data/schema/termine-schema.json"
+    },
+    {
+        "fileMatch": [
+            "/pages/data/news.json"
+        ],
+        "url": "./pages/data/schema/news-schema.json"
+    },
+    {
+        "fileMatch": [
+            "/pages/data/vorstand.json"
+        ],
+        "url": "./pages/data/schema/vorstand-schema.json"
+    }
+  ]
 }
