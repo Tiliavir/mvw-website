@@ -63,11 +63,26 @@ html(amp lang="de")
         width: 100%;
         display: block;
       }
-      .mvw-header img {
-        height: 70px;
+      .navbar-brand {
+        max-height: 60px;
+      }
+      .navbar-brand svg {
+        max-height: 50px;
+        fill: #fff;
+      }
+      .mvw-logo > g:nth-child(3) > use:nth-child(-n+4) {
+        fill: #a9852a;
+      }
+      h1, h2, h3, h4, h5 {
+        font-weight: 100;
       }
       h1 {
-        color: #07B;
+        color: #a9852a;
+        font-size: 28px;
+      }
+      h2 {
+        color: #a9852a;
+        font-size: 24px;
       }
       .caption {
         font-style: italic;
