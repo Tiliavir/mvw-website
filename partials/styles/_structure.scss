@@ -10,6 +10,11 @@ $footer-border-gray: #e7e7e7;
   margin: 0 auto;
 }
 
+main {
+  // fix for IE
+  display: block;
+}
+
 .content,
 header {
   @extend %content-width-behavior;
