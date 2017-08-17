@@ -17,6 +17,7 @@ npm run release
 ## Prerequisites
 
 ```powershell
+npm install
 cd <build-dir>
 npm install
 ```
@@ -25,5 +26,6 @@ npm install
 
 ```powershell
 npm run dev
-<build-dir>..\mvw-prod\npm run start
+cd <build-dir>
+npm run serve
 ```
