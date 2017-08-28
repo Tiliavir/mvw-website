@@ -12,7 +12,7 @@
     ".vscode": true,
     "node_modules": true,
     "*/footernavigation.pug": true,
-    "*/siteOverviewList.pug": true,
+    "*/site-overview.pug": true,
     "*/topnavigation.pug": true
   },
   "typescript.tsdk": "./node_modules/typescript/lib",

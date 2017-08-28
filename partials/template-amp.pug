@@ -6,8 +6,8 @@ doctype html
 html(amp lang="de")
   head
     meta(charset="utf-8")
-    title=(referencedFile === "index" ? "" : title + " | ") + scope.siteTitle
-    link(rel="canonical" href=scope.baseUrl+referencedFile+".html")
+    title= `${(referencedFile === "index" ? "" : `${title} | `)}${environment.siteTitle}`
+    link(rel="canonical" href=`${environment.baseUrl}${referencedFile}.html`)
     meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1")
     script(type="application/ld+json").
       {
@@ -15,7 +15,7 @@ html(amp lang="de")
         "@type": "NewsArticle",
         "mainEntityOfPage": {
           "@type":"WebPage",
-          "@id":"#{scope.baseUrl}#{referencedFile}.html"
+          "@id":"#{environment.baseUrl}#{referencedFile}.html"
         },
         "headline": "#{title}",
         "keywords": "#{keywords}",
@@ -23,21 +23,21 @@ html(amp lang="de")
         "datePublished": "#{publishedDate}",
         "publisher": {
           "@type": "Organization",
-          "name": "#{scope.siteTitle}",
+          "name": "#{environment.siteTitle}",
           "logo": {
             "@type": "ImageObject",
-            "url": "#{scope.baseUrl}img/logo_color.png",
+            "url": "#{environment.baseUrl}img/logo_color.png",
             "height": 60,
             "width": 114
           }
         },
         "author": {
           "@type": "Person",
-          "name": "#{scope.siteTitle}"
+          "name": "#{environment.siteTitle}"
         },
         "image": {
           "@type": "ImageObject",
-          "url": "#{scope.baseUrl}#{ampLogoUrl}",
+          "url": "#{environment.baseUrl}#{ampLogoUrl}",
           "height": #{ampLogoHeight},
           "width": #{ampLogoWidth}
         },
@@ -91,9 +91,9 @@ html(amp lang="de")
 
   body
     nav.mvw-header
-      a(href=scope.baseUrl class="navbar-brand")
+      a.navbar-brand(href=environment.baseUrl)
         include ../root/logo.svg
     h1 #{title}
       if subtitle
-        small= " " + subtitle
+        small= ` ${subtitle}`
     block content

@@ -14,17 +14,33 @@
         "Firefox ESR",
         "ie 9-11"
     ],
+    "mvwc": {
+      "environment": "prod",
+      "environments": {
+        "base": {
+          "siteTitle": "Musikverein Wollbach 1866 e.V."
+        },
+        "prod": {
+          "key": "prod",
+          "baseUrl": "https://www.mv-wollbach.de/"
+        },
+        "dev": {
+          "key": "dev",
+          "baseUrl": "http://localhost/"
+        }
+      },
+      "structureJsonPath": "./partials/site-structure.json",
+      "destinationPath": "./build/",
+      "navigationPath": "./partials/",
+      "ampPath": "./partials/pages/Blog/*.pug",
+      "pugLintPath": "./partials/**/*.pug",
+      "pugPath": "./partials/pages/**/*.pug",
+      "searchIndex": {
+        "bodySelector": "main"
+      }
+    },
     "devDependencies": {
-        "@types/gulp": "4.0.4",
-        "@types/gulp-load-plugins": "0.0.29",
-        "@types/grecaptcha": "2.0.33",
-        "@types/jquery": "3.2.11",
-        "@types/lunr": "0.5.29",
-        "@types/marked": "0.3.0",
-        "@types/node": "8.0.22",
         "@types/photoswipe": "4.0.28",
-        "@types/vinyl": "2.0.0",
-        "@types/yargs": "8.0.2",
 
         "autoprefixer": "7.1.2",
         "copyfiles": "1.2.0",
@@ -36,49 +52,30 @@
         "typescript": "2.4.2"
     },
     "dependencies": {
-        "gulp": "github:gulpjs/gulp#4.0",
-        "gulp-data": "1.2.1",
-        "gulp-flatten": "0.3.1",
-        "gulp-htmlmin": "3.0.0",
-        "gulp-load-plugins": "1.5.0",
-        "gulp-pug": "3.3.0",
-        "gulp-rename": "1.2.2",
-        "gulp-replace": "0.6.1",
-        "gulp-sitemap": "4.2.0",
-        "gulplog": "1.0.0",
-
         "jquery": "3.2.1",
-        "jstransformer-marked": "1.0.2",
-        "marked": "0.3.6",
-        "moment": "2.18.1",
-        "mvw-navigation": "2.0.4",
-        "mvw-search-index": "2.1.2",
+        "mvw-creator": "1.0.6",
         "mvw-gallery": "1.0.7",
-        "photoswipe": "4.1.2",
-        "pug": "2.0.0-rc.3",
-        "pug-lint": "2.4.0"
+        "photoswipe": "4.1.2"
     },
     "scripts": {
-        "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"partials/scripts/**/*.ts\" && gulp lint:pug",
+        "lint": "sass-lint -c sass-lint.yml -v -q && tslint -c tslint.json \"partials/scripts/**/*.ts\" && mvwc-lint",
 
         "clean": "rimraf ./build/ ./partials/{styles,scripts}/**/*.{css,js}",
         "postclean": "mkdir build",
 
         "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss ./partials/styles/**/*.css -r --use autoprefixer --no-map",
-        "compile:ts": "tsc -p tsconfig.gulpfile.json && tsc -p tsconfig.json",
-        "compile": "npm run compile:ts && npm run compile:sass && gulp",
+        "compile:ts": "tsc -p tsconfig.json",
+        "compile": "npm run compile:ts && npm run compile:sass && mvwc",
 
         "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
         "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 ./root/[!_]*/**/* ./build/",
         "copy": "npm run copy:lib && npm run copy:root",
 
         "prerelease": "npm run lint",
-        "release": "npm run compile -- release --release=true && npm run copy",
-        "postrelease": "mvw-search-index ./build/**/*.html ./build/index.json main",
+        "release": "npm run compile && npm run copy",
 
         "copy:todiff": "copyup -a ./build/**/* ../mvw-prod/",
 
-        "dev": "npm run compile",
         "serve": "lite-server"
     }
 }

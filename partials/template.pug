@@ -11,12 +11,12 @@ html(lang="de")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
     //- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
 
-    title=(referencedFile === "index" ? "" : title + " | ") + scope.siteTitle
+    title= (referencedFile === "index" ? "" : title + " | ") + environment.siteTitle
 
-    if isRelease
-      base(href=scope.baseUrl)
+    if environment.key == "prod"
+      base(href=environment.baseUrl)
 
-    meta(name="author" content=scope.siteTitle)
+    meta(name="author" content=environment.siteTitle)
 
     if description
       meta(name="description" content=description)
@@ -25,9 +25,9 @@ html(lang="de")
       meta(name="keywords" content=keywords)
 
     meta(property="og:type" content="website")
-    meta(property="og:image" content=scope.baseUrl + "img/logo_color.png")
+    meta(property="og:image" content=environment.baseUrl + "img/logo_color.png")
     meta(property="og:locale" content="de_DE")
-    meta(property="og:site_name" content=scope.siteTitle)
+    meta(property="og:site_name" content=environment.siteTitle)
     meta(property="fb:admins" content="100000073380067")/
 
     style
@@ -35,7 +35,7 @@ html(lang="de")
       block pageStyles
 
     if hasAmp
-      link(rel="amphtml" href=`${scope.baseUrl}amp/${referencedFile}.html`)
+      link(rel="amphtml" href=`${environment.baseUrl}amp/${referencedFile}.html`)
 
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin-ext")
 
@@ -63,13 +63,14 @@ html(lang="de")
 
     block header
 
-    img.mvw-logo-print.print-only(src="/img/logo_color.png" alt=scope.siteTitle)
+    img.mvw-logo-print.print-only(src="/img/logo_color.png" alt=environment.siteTitle)
 
     main.content(itemprop="mainContentOfPage")
       h1.page-header #{title}
         if subtitle
           small= " " + subtitle
-      | !{breadcrumb}
+      if referencedFile != "index"
+        | !{breadcrumb}
       block content
 
     footer.footer
@@ -82,7 +83,7 @@ html(lang="de")
     script
       block pageScripts
 
-    if isRelease
+    if environment.key == "prod"
       script(type='text/javascript').
         (function (i, s, o, g, r, a, m) {
           i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {

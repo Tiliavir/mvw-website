@@ -10,7 +10,10 @@
   "validateSelfClosingTags": true,
   "validateTemplateString": true,
   "disallowDuplicateAttributes": true,
-  "validateAttributeSeparator": " ",
+  "validateAttributeSeparator":  {
+    "separator": " ",
+    "multiLineSeparator": "\n"
+  },
   "validateAttributeQuoteMarks": "\"",
   "disallowAttributeInterpolation": true,
   "disallowAttributeConcatenation": true,
