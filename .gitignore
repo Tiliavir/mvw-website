@@ -5,7 +5,7 @@
 /partials/scripts/**/*.js
 /partials/styles/**/*.css
 /partials/footernavigation.pug
-/partials/siteOverviewList.pug
+/partials/site-overview.pug
 /partials/topnavigation.pug
 
 ### Source: https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
