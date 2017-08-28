@@ -22,7 +22,8 @@
         },
         "prod": {
           "key": "prod",
-          "baseUrl": "https://www.mv-wollbach.de/"
+          "baseUrl": "https://www.mv-wollbach.de/",
+          "isRelease": true
         },
         "dev": {
           "key": "dev",
@@ -34,7 +35,10 @@
       "navigationPath": "./partials/",
       "ampPath": "./partials/pages/Blog/*.pug",
       "pugLintPath": "./partials/**/*.pug",
-      "pugPath": "./partials/pages/**/*.pug"
+      "pugPath": "./partials/pages/**/*.pug",
+      "searchIndex": {
+        "bodySelector": "main"
+      }
     },
     "devDependencies": {
         "@types/photoswipe": "4.0.28",
@@ -50,7 +54,7 @@
     },
     "dependencies": {
         "jquery": "3.2.1",
-        "mvw-creator": "file:../mvw-creator",
+        "mvw-creator": "1.0.6",
         "mvw-gallery": "1.0.7",
         "photoswipe": "4.1.2"
     },
@@ -62,19 +66,17 @@
 
         "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss ./partials/styles/**/*.css -r --use autoprefixer --no-map",
         "compile:ts": "tsc -p tsconfig.json",
-        "compile": "npm run compile:ts && npm run compile:sass && gulp",
+        "compile": "npm run compile:ts && npm run compile:sass && mvwc",
 
         "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
         "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 ./root/[!_]*/**/* ./build/",
         "copy": "npm run copy:lib && npm run copy:root",
 
         "prerelease": "npm run lint",
-        "release": "npm run compile -- release --release=true && npm run copy",
-        "postrelease": "mvw-search-index ./build/**/*.html ./build/index.json main",
+        "release": "npm run compile && npm run copy",
 
         "copy:todiff": "copyup -a ./build/**/* ../mvw-prod/",
 
-        "dev": "npm run compile",
         "serve": "lite-server"
     }
 }
