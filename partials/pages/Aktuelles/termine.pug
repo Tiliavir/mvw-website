@@ -13,7 +13,7 @@ block pageStyles
   include ../../styles/termine.css
 
 block content
-  - var termine = require("./partials/data/termine.json");
+  - var termine = require("partials/data/termine.json");
 
   each year in Object.keys(termine)
     h2 #{year}

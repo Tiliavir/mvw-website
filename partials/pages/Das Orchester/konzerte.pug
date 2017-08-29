@@ -14,7 +14,7 @@ block pageStyles
 
 block content
   -
-    var konzerte = require("./partials/data/konzerte.json").sort((a, b) => new Date(b.location.dates[0]) - new Date(a.location.dates[0]));
+    var konzerte = require("partials/data/konzerte.json").sort((a, b) => new Date(b.location.dates[0]) - new Date(a.location.dates[0]));
     var konzerteByYears = {};
     var years = [];
     var keywords = [];

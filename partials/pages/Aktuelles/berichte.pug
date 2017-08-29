@@ -11,7 +11,7 @@ block pageStyles
 
 block content
   -
-    var berichte = require("./partials/data/berichte.json");
+    var berichte = require("partials/data/berichte.json");
     var years = Object.keys(berichte).sort((a, b) => b - a );
 
   +renderTabs(years)

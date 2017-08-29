@@ -19,7 +19,7 @@ block pageScripts
 
 block content
   -
-    var galleries = require("./root/gallery/galleries.json");
+    var galleries = require("root/gallery/galleries.json");
     var years = Object.keys(galleries).sort((a, b) => b - a);
 
   +renderTabs(years)

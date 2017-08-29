@@ -6,6 +6,7 @@
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "allowUnreachableCode": false,
+    "target": "es6",
     "noFallthroughCasesInSwitch": true,
     "noImplicitThis": true,
     "allowJs": false,

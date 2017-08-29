@@ -14,7 +14,7 @@ block pageStyles
 
 block content
   -
-    var rueckblick = require("./partials/data/rueckblick.json");
+    var rueckblick = require("partials/data/rueckblick.json");
     var years = Object.keys(rueckblick).sort((a, b) => b - a);
     var keywords = [];
     years.map((y) => {
