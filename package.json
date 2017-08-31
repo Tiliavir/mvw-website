@@ -57,7 +57,7 @@
     },
     "dependencies": {
         "jquery": "3.2.1",
-        "mvw-creator": "1.0.8",
+        "mvw-creator": "1.0.9",
         "mvw-gallery": "1.0.7",
         "photoswipe": "4.1.2"
     },
