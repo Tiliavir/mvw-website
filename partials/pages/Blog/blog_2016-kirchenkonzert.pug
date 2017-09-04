@@ -1,0 +1,21 @@
+extends ../../template-blog.pug
+
+block variables
+  -
+    var title = "Kirchenkonzert 2016";
+    var description = "Das Kirchenkonzert mit dem Musikverein Wollbach und dem Verbandsjugendorchester Hochrhein in der ev. Kirche in Kandern.";
+    var keywords = "Kirchenkonzert, Kandern, Konzert, Blasmusik, Verbandsjugendorchester Hochrhein";
+    var publishedDate = "2016-05-01T00:00:00.000Z";
+    var ampLogoUrl = "img/events/kirche_kandern.jpg";
+    var ampLogoWidth = 600;
+    var ampLogoHeight = 480;
+
+block content
+  :marked
+    # Kirchenkonzert in Kandern
+    In der evangelischen Stadtkirche Kandern gibt der Musikverein Wollbach und
+    das Verbandsjugendorchester Hochrhein am 08. Mai ein Jubiläums-Doppelkonzert.
+
+    Weitere Details zum Kirchenkonzert entnehmen Sie dem [Flyer](/files/flyer/16_kirchenkonzert.pdf).
+
+  +image("/img/events/kirche_kandern.jpg", "Evangelische Stadtkirche Kandern", null, null, 600, 480)

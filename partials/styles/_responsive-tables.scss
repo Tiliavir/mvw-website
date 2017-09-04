@@ -1,0 +1,99 @@
+@import 'global-variables';
+@import 'mixins/breakpoint';
+
+$row-alternation-bg-color: #eee;
+$row-border-color: #ccc;
+$cell-border-color: #eee;
+
+table {
+  &.responsive {
+    border-collapse: collapse;
+    width: 100%;
+
+    td,
+    th {
+      border: 1px solid $gray-light-border-color;
+      text-align: left;
+    }
+  }
+}
+
+.banded-rows {
+  tr {
+    &:nth-child(even) {
+      background-color: $gray-lightest;
+    }
+
+    &:nth-child(odd) {
+      background-color: transparent;
+    }
+
+    &:hover {
+      background-color: darken($gray-lightest, 5%);
+    }
+  }
+}
+
+@include breakpoint(0, $mobile-max-width) {
+  // Hide table headers (but not display: none;, for accessibility)
+  table {
+    &.responsive {
+      min-width: 200px;
+      width: 100%;
+
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        // Force table to not be like tables anymore
+        display: block;
+      }
+
+      th {
+        left: -9999px;
+        position: absolute;
+        top: -9999px;
+      }
+
+      tr {
+        border: 1px solid $row-border-color;
+
+        :nth-of-type(even) {
+          background-color: $row-alternation-bg-color;
+        }
+
+        // First column bold and without border bottom
+        td {
+          border-bottom-width: 0;
+
+          &:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+
+      td {
+        // Behave  like a 'row'
+        border: 0;
+        border-bottom: 1px solid $cell-border-color;
+        position: relative;
+
+        ::before {
+          // Now like a table header
+          // Top/left values mimic padding
+          left: 6px;
+          padding-right: 10px;
+          position: absolute;
+          top: 6px;
+          white-space: nowrap;
+          width: 45%;
+        }
+      }
+
+      img {
+        max-width: calc(100vw - 50px);
+      }
+    }
+  }
+}

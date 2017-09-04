@@ -17,6 +17,7 @@ npm run release
 ## Prerequisites
 
 ```powershell
+npm install
 cd <build-dir>
 npm install
 ```
@@ -24,6 +25,7 @@ npm install
 ## Build and preview
 
 ```powershell
-npm run debug
-<build-dir>\npm run start
+npm run dev
+cd <build-dir>
+npm run serve
 ```

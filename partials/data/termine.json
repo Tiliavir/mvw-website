@@ -1,0 +1,115 @@
+{
+  "2017": [
+    {
+      "location": {
+        "address": "Mambach"
+      },
+      "starttime": "2017-09-01T20:00:00Z",
+      "endtime": "2017-09-01T22:00:00Z",
+      "title": "Auftritt bei der Feuerwehrmusik Mambach"
+    },
+    {
+      "location": {
+        "address": "Wies"
+      },
+      "starttime": "2017-10-01",
+      "title": "Oktoberfest"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2017-10-14T00:00:00Z",
+      "title": "Sauserexpress"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kandertalhalle"
+      },
+      "starttime": "2017-10-15T00:00:00Z",
+      "title": "Herbstfest"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2017-10-31T10:00:00Z",
+      "title": "Feiertagsgottesdienst '500 Jahre Martin Luther'"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2017-11-11",
+      "title": "Vorstufen- und Jugendorchester begleiten den Sankt-Martins-Umzug"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Alte Forsthof"
+      },
+      "starttime": "2017-12-01",
+      "title": "Adventskranzverkauf"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kandertalhalle"
+      },
+      "starttime": "2017-12-03T00:00:00Z",
+      "title": "Wartburgfest"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2017-12-09T00:00:00Z",
+      "title": "Weihnachtsfeier"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kirche"
+      },
+      "starttime": "2017-12-17T17:30:00Z",
+      "title": "Jugendvorspiel"
+    }
+  ],
+  "2018": [
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kandertalhalle"
+      },
+      "starttime": "2018-01-06T19:00:00Z",
+      "title": "Neujahrsempfang"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kandertalhalle"
+      },
+      "starttime": "2018-01-19",
+      "endtime": "2018-01-21",
+      "title": "Probewochenende"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kandertalhalle"
+      },
+      "starttime": "2018-01-26",
+      "endtime": "2018-01-27",
+      "title": "Jahreskonzert"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Stübli"
+      },
+      "starttime": "2018-02-15T20:00:00Z",
+      "title": "Generalversammlung"
+    }
+  ]
+}

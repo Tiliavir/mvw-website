@@ -1,0 +1,173 @@
+@import 'global-variables';
+@import 'mixins/breakpoint';
+
+$background-color: $gray-base;
+$background-color-active: transparentize(darken($background-color, 10%), .3);
+
+$color: $gray-light;
+$color-active: $gray-lightest;
+$color-hover-and-focus: lighten($color-active, 10%);
+$brand-fill: $gray-lightest;
+
+.navigation {
+  transition: background-color .3s ease;
+  background-color: $background-color;
+  color: $text-color;
+  box-shadow: 0 10px 15px -10px $black;
+}
+
+.navbar-brand {
+  fill: $brand-fill;
+
+  .mvw-logo {
+    & > g {
+      &:nth-child(3) {
+        & > use {
+          &:nth-child(-n+4) {
+            fill: $highlight-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.inverse {
+  &.navigation {
+    background-color: transparentize($body-bg, .05);
+    color: $color;
+    transition: background-color .3s ease;
+  }
+
+  .navbar-brand {
+    fill: invert($brand-fill);
+  }
+
+  .navigation-menu {
+    background-color: transparentize($body-bg, .05);
+    color: $color;
+  }
+}
+
+// MOBILE
+@include breakpoint(0, $mobile-max-width) {
+  .navigation-menu,
+  .dropdown {
+    & > ul {
+      & > li {
+        color: $color;
+
+        &:hover,
+        &:focus {
+          color: $color-hover-and-focus;
+        }
+
+        &.active {
+          color: $color-active;
+          background-color: $background-color-active;
+        }
+      }
+    }
+  }
+
+  .navigation-menu {
+    box-shadow: 0 5px 10px -2px $black;
+    background-color: transparentize($background-color, .05);
+  }
+
+  .inverse {
+    .navigation-menu,
+    .dropdown {
+      & > ul {
+        & > li {
+          color: invert($color);
+
+          &:hover,
+          &:focus {
+            color: $highlight-color;
+          }
+
+          &.active {
+            color: invert($color-active);
+            background-color: invert($background-color-active);
+          }
+        }
+      }
+    }
+
+    &.navigation {
+      background-color: transparentize(darken($body-bg, 1%), .05);
+    }
+
+    .navigation-menu {
+      background-color: transparentize($body-bg, .05);
+    }
+  }
+}
+
+// DESKTOP
+@include breakpoint($mobile-max-width) {
+  .navigation-menu {
+    & > ul {
+      & > li {
+        color: $color;
+
+        &:hover,
+        &:focus {
+          background-color: $background-color;
+          color: $color;
+        }
+
+        &.active {
+          background-color: $background-color-active;
+          color: $color-active;
+        }
+      }
+    }
+  }
+
+  .dropdown {
+    &:hover > ul {
+      background-color: inherit;
+    }
+
+    & > a {
+      &::after {
+        color: $color;
+      }
+    }
+
+    & > ul {
+      box-shadow: 0 5px 10px -2px $black;
+
+      li {
+        a {
+          &:hover {
+            color: $highlight-color;
+          }
+        }
+
+        &.active {
+          color: $highlight-color;
+        }
+      }
+    }
+  }
+
+  .inverse {
+    &.navigation {
+      opacity: .95;
+    }
+
+    .navigation-menu {
+      & > ul {
+        & > li {
+          &:hover,
+          &:focus {
+            background-color: $body-bg;
+          }
+        }
+      }
+    }
+  }
+}

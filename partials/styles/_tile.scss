@@ -1,0 +1,55 @@
+@import 'mixins/breakpoint';
+@import 'global-variables';
+
+$tile-color: #eee;
+$tile-bg-color: rgba(34, 34, 34, .55);
+$tile-bg-color-hover: rgba(34, 34, 34, .75);
+
+.image-container {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 300px;
+}
+
+.tiles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tile {
+  display: inline-block;
+  font-weight: lighter;
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .tile-content {
+    color: $tile-color;
+    padding: 20px;
+  }
+}
+
+.blur {
+  background: $tile-bg-color;
+  height: inherit;
+
+  &:hover {
+    background: $tile-bg-color-hover;
+  }
+}
+
+@include breakpoint(0, $mobile-max-width) {
+  .tile {
+    width: 100%;
+  }
+}

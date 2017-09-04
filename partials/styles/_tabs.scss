@@ -1,0 +1,136 @@
+@import 'global-variables';
+@import 'mixins/breakpoint';
+
+.tab-pane {
+  &:not(.active) {
+    display: none;
+  }
+}
+
+.tabs {
+  border-bottom: 1px  solid $gray-light;
+  padding: 0;
+
+  & > .tab {
+    &.active {
+      border: 1px solid $gray-light;
+      border-bottom: 1px solid $body-bg;
+    }
+  }
+
+  & > .tab,
+  & > .tab-dropdown {
+    margin-bottom: -1px;
+    display: inline-block;
+    min-width: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $gray-light;
+
+    &:hover {
+      &:not(.active) {
+        background-color: $gray-lighter;
+      }
+    }
+
+    & > span,
+    & > a {
+      color: $gray-base;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      text-align: center;
+    }
+  }
+
+  .tab-dropdown {
+    position: relative;
+
+    & > ul {
+      color: $text-color;
+      font-size: $font-size-base;
+      font-weight: 400;
+      list-style: none;
+      padding: 0;
+      display: none;
+      box-shadow: 0 5px 10px -2px $black;
+
+      li {
+        padding: 0;
+
+        a {
+          white-space: nowrap;
+          display: block;
+          padding: 3px 20px;
+          height: 35px;
+          line-height: 35px;
+          font-weight: 400;
+
+          &:hover {
+            color: $highlight-color;
+          }
+        }
+
+        &.active {
+          color: $highlight-color;
+        }
+      }
+    }
+
+    &.open {
+      .tab-dropdown-menu {
+        top: auto;
+        z-index: 100;
+        min-width: 100%;
+
+        a {
+          color: $gray-base;
+          text-decoration: none;
+        }
+      }
+
+      & > ul {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: $top-nav-height;
+        padding: 0;
+        background-color: $body-bg;
+      }
+    }
+
+    & > a {
+      &::after {
+        $expand-arrow-height: 3px;
+        position: absolute;
+        content: '';
+        right: 4px;
+        top: $top-nav-height / 2 - $expand-arrow-height + 1px;
+        border: $expand-arrow-height solid transparent;
+        border-top: $expand-arrow-height solid $text-color;
+      }
+    }
+
+    .tab {
+      &.active {
+        background-color: $gray-lighter;
+      }
+    }
+  }
+}
+
+.tab-dropdown-menu,
+.tabs {
+  & > .hidden-mobile {
+    @include breakpoint(0, $mobile-max-width) {
+      display: none;
+    }
+  }
+
+  & > .visible-mobile {
+    @include breakpoint($mobile-max-width) {
+      display: none;
+    }
+  }
+}

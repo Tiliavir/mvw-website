@@ -12,40 +12,46 @@
     ".vscode": true,
     "node_modules": true,
     "*/footernavigation.pug": true,
-    "*/siteOverviewList.pug": true,
+    "*/site-overview.pug": true,
     "*/topnavigation.pug": true
   },
   "typescript.tsdk": "./node_modules/typescript/lib",
   "json.schemas": [
     {
         "fileMatch": [
-            "/pages/data/berichte.json"
+            "/partials/data/berichte.json"
         ],
-        "url": "./pages/data/schema/berichte-schema.json"
+        "url": "./partials/data/schema/berichte-schema.json"
     },
     {
         "fileMatch": [
-            "/pages/data/*register.json"
+            "/partials/data/konzerte.json"
         ],
-        "url": "./pages/data/schema/register-schema.json"
+        "url": "./partials/data/schema/konzerte-schema.json"
     },
     {
         "fileMatch": [
-            "/pages/data/termine.json"
+            "/partials/data/*register.json"
         ],
-        "url": "./pages/data/schema/termine-schema.json"
+        "url": "./partials/data/schema/register-schema.json"
     },
     {
         "fileMatch": [
-            "/pages/data/news.json"
+            "/partials/data/termine.json"
         ],
-        "url": "./pages/data/schema/news-schema.json"
+        "url": "./partials/data/schema/termine-schema.json"
     },
     {
         "fileMatch": [
-            "/pages/data/vorstand.json"
+            "/partials/data/rueckblick.json"
         ],
-        "url": "./pages/data/schema/vorstand-schema.json"
+        "url": "./partials/data/schema/rueckblick-schema.json"
+    },
+    {
+        "fileMatch": [
+            "/partials/data/vorstand.json"
+        ],
+        "url": "./partials/data/schema/vorstand-schema.json"
     }
   ]
 }

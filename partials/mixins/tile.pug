@@ -1,0 +1,7 @@
+mixin tile(file, image, title, text)
+  .tile
+    a.unstyled.image-container(href=`${file}.html` style=`background-image:url(${image});`)
+      .blur
+        .tile-content
+          h3.title= title
+          .text= text

@@ -1,0 +1,81 @@
+extends ../template.pug
+
+block variables
+  -
+    var title = "Vereine und Links";
+    var description = "Vereine und Verbände mit denen der Musikverein in langjähriger freundschaftlicher Verbindung steht und eine gute Zusammenarbeit pflegt.";
+    var keywords = "Befreundete Vereine, Befreundete Verbände, Vereine, Partnerschaften, Freundschaften, Verbindungen";
+
+block content
+  :marked
+    # Befreundete Vereine
+    Wir danken den Schweizer Musikgesellschaften ganz herzlich für die
+    vergangen Jahre und hoffen auf ein noch langes, erfolgreiches Fortbestehen
+    dieser Freundschaft.
+
+    ## <a class="mvw-verein" href="http://www.mgbannwil.ch/" target="_blank">Musikgesellschaft Bannwil</a>
+
+    Die Musikgesellschaft Bannwil wurde 1879 gegründet. Der Verein besteht aus
+    30 Mitgliedern im Alter zwischen 16 und 72 Jahren, spielt in der 4.
+    Stärkeklasse Harmonie und nimmt an den verschiedenen Eidg.-, Kant.- und Amtsfesten teil,
+    an welchen er immer wieder grosse Erfolge feiern kann.
+
+  +image("/img/vereine/bannwil.jpg", "Musikgesellschaft Bannwil", null, null, 640, 390)
+
+  :marked
+    Die Freundschaft zur Musikgesellschaft in der Schweiz (Oberargau, Kanton
+    Bern) besteht seit dem Jahr 1966. Der Besuch der Freunde aus der Schweiz
+    zum damaligen 100-jährigen Jubiläum des Musikvereins Wollbach wurde für
+    alle Beteiligten zu einem unvergeßlichen Erlebnis.
+
+    Die Musikgesellschaft Bannwil marschierte durch Wollbach und begeisterte
+    die Zuhörer im Festzelt. Der Wortrag des eigens zu diesem Anlaß vom
+    Dirigenten Erich P. Bader komponierten Marsches "Gruss an Wollbach" löste
+    Begeisterungsstürme aus.
+
+    Seither pflegen wir diese musikalische Freundschaft mit gegenseitigen
+    Besuchen. So waren wir unter anderem im Jahr 1979 zum 100-jährigen Jubiläum
+    der Musikgesellschaft in Bannwil zu Besuch und beteiligten uns zuletzt 2013
+    an einem beeindruckenden Musiktag in Bannwil mit 19 Kapellen und über 800
+    Musikern. Die Musikgesellschft Bannwil besuchte uns zuletzt 2016 an unserem
+    Marschmusikfestival zum 150 jährigen Jubiläum.
+
+    ## <a class="mvw-verein" href="http://www.ostmusik.ch/" target="_blank">Musikgesellschaft Sankt Gallen Ost</a>
+
+    <!-- todo : Text -->
+
+    # Musikvereine
+    <a class="mvw-verein" href="http://www.stadtmusik-loerrach.de/" target="_blank">Stadtmusik Lörrach</a>
+
+    <a class="mvw-verein" href="http://www.musikverein-fahrnau.de/" target="_blank">Musikverein Fahrnau</a>
+
+    <a class="mvw-verein" href="http://www.stadtmusik-kandern.de" target="_blank">Stadtmusik Kandern</a>
+
+    <a class="mvw-verein" href="http://www.mvtannenkirch.de/" target="_blank">Musikverein Tannenkirch</a>
+
+    <a class="mvw-verein" href="http://www.mv-willaringen.de/" target="_blank">Musikverein Willaringen</a>
+
+    <a class="mvw-verein" href="http://www.musikvereinbinzen.de/" target="_blank">Musikverein Binzen</a>
+
+    <a class="mvw-verein" href="http://www.musikverein-denkingen.de/" target="_blank">Musikverein Denkingen</a>
+
+    # Verbände
+    <a class="mvw-verein" href="http://www.musik-verband.de/" target="_blank">AMV</a>
+    Der Alemannische Musikverband, hier machen unter anderem unsere Jungmusiker Ihre Jungmusikerleistungsabzeichen
+
+    <a class="mvw-verein" href="http://www.blasmusikverbaende.de/" target="_blank">BDB</a>
+    Bund Deutscher Blasmusikverbände - der Dachverband
+
+    # Sonstiges
+    <a class="mvw-verein" href="http://www.kandertalbahn.de/" target="_blank">Kandertalbahn</a>
+    Die Homepage des "Chanderlis"
+
+    <a class="mvw-verein" href="http://www.musical-bruggfeld.ch/" target="_blank">Musical Bruggfeld</a>
+
+    <a class="mvw-verein" href="http://www.blasmusik-service.de/"  target="_blank">Blasmusik Service, Studio 80</a>
+    
+    <a class="mvw-verein" href="http://www.halleonard.com/" target="_blank">Musikverlag</a>
+    Von hier beziehen wir unsere Noten
+
+block pageScripts
+  include ../scripts/vereine-und-links.js

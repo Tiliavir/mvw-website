@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Termine",
+
+  "type": "object",
+
+  "additionalProperties": {
+    "type": "array",
+
+    "items": {
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "location": {
+          "type": "object",
+          "name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "starttime": {
+          "type": "string",
+          "anyOf": [
+            {"format": "date-time"},
+            {"format": "date"}
+          ]
+        },
+        "endtime": {
+          "type": "string",
+          "anyOf": [
+            {"format": "date-time"},
+            {"format": "date"}
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [ "title", "starttime", "location" ]
+    }
+  }
+}

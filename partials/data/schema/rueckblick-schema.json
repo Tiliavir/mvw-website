@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Rückblick",
+
+  "type": "object",
+
+  "additionalProperties": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "starttime": {
+          "type": "string",
+          "anyOf": [
+            {"format": "date-time"},
+            {"format": "date"}
+          ]
+        },
+        "endtime": {
+          "type": "string",
+          "anyOf": [
+            {"format": "date-time"},
+            {"format": "date"}
+          ]
+        },
+        "content": {
+          "type": "string",
+          "format": "markdown"
+        },
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string",
+              "format": "uri"
+            },
+            "title": {
+              "type": "string"
+            },
+            "caption": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "src",
+            "title"
+          ],
+          "additionalProperties": false
+        },
+        "video": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "src"
+          ],
+          "additionalProperties": false
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalItems": false
+}

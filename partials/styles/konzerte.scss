@@ -1,0 +1,52 @@
+@import 'global-variables';
+@import 'keywords';
+
+%comma-separated-list {
+  &:not(:first-of-type) {
+    &::before {
+      content: ', ';
+    }
+  }
+}
+
+%title-with-colon {
+  &::after {
+    content: ': ';
+  }
+}
+
+small {
+  &::before {
+    content: ' ';
+  }
+}
+
+.soloists {
+  .part {
+    @extend %title-with-colon;
+  }
+}
+
+.konzert > .parts,
+.dates,
+.composers,
+.arrangers,
+.soloists {
+  list-style: none;
+  padding-left: 0;
+}
+
+.composers,
+.dates,
+.arrangers {
+  & > li {
+    @extend %comma-separated-list;
+    display: inline;
+  }
+}
+
+.konzert {
+  &:nth-of-type(2n) {
+    background-color: $gray-lightest;
+  }
+}

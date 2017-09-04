@@ -1,0 +1,99 @@
+extends ../../template.pug
+
+block variables
+  -
+    var title = "Konzerte";
+    var description = "Übersicht über Konzerte des Musikverein Wollbachs.";
+    var keywords = "Konzerte, Jahreskonzerte, Kirchenkonzerte, Konzertprogramme";
+
+block pageScripts
+  include ../../scripts/filter.js
+
+block pageStyles
+  include ../../styles/konzerte.css
+
+block content
+  -
+    var konzerte = require("partials/data/konzerte.json").sort((a, b) => new Date(b.location.dates[0]) - new Date(a.location.dates[0]));
+    var konzerteByYears = {};
+    var years = [];
+    var keywords = [];
+
+    konzerte.map((k) => {
+      var year = moment.utc(k.location.dates[0]).year();
+      if (years.indexOf(year) === -1) {
+        years.push(year);
+        konzerteByYears[year] = [];
+      }
+      konzerteByYears[year].push(k);
+
+      var keyword = k.category;
+      if (keyword && keywords.indexOf(keyword) === -1) {
+        keywords.push(keyword);
+      }
+    });
+
+  if keywords.length > 0
+    .keyword-selector
+      each keyword in keywords
+        span.keyword
+          | #{keyword}
+
+  +renderTabs(years)
+
+  .tab-content
+    each year, index in years
+      .tab-pane(id=year class=(index === 0 ? "active" : ""))
+        each konzert in konzerteByYears[year]
+          .entry.konzert
+            if konzert.category
+              .keywords.hidden
+                span.keyword= konzert.category
+
+            h2.title= konzert.title || konzert.category
+              if konzert.subtitle
+                small= konzert.subtitle
+            span.location= konzert.location.location
+            ul.dates
+              each date in konzert.location.dates
+                li= moment.utc(date).format("D. MMMM Y")
+            if konzert.parts
+              ul.parts
+                each part in konzert.parts
+                  li.part
+                    h3.orchestra-or-ensemble= part.orchestraOrEnsemble
+                      if part.conductor
+                        small.conductor= part.conductor
+                    ul.program
+                      each song in part.program
+                        li
+                          h4.title= song.title
+                            if song.subtitle
+                              small= song.subtitle
+                          if song.composers
+                            ul.composers
+                              each composer in song.composers
+                                li= composer
+                          if song.arrangers
+                            ul.arrangers
+                              each arranger in song.arrangers
+                                li= arranger
+                          if song.soloists
+                            ul.soloists
+                              each soloist in song.soloists
+                                li
+                                  span.part= soloist.part
+                                  span.name= soloist.name
+                          if song.parts
+                            ul.parts
+                              each songPart in song.parts
+                                li
+                                  h5= songPart.title
+                                    if songPart.subtitle
+                                      small= songPart.subtitle
+                                  if songPart.soloists
+                                    ul.soloists
+                                      each soloist in songPart.soloists
+                                        li
+                                          span.part= soloist.part
+                                          span.name= soloist.name
