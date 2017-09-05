@@ -1,6 +1,6 @@
 {
     "name": "mvw-website",
-    "version": "17.08.09",
+    "version": "17.09.05",
     "private": true,
     "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
     "author": "Musikverein Wollbach 1866 e.V.",
@@ -14,32 +14,6 @@
         "Firefox ESR",
         "ie 9-11"
     ],
-    "mvwc": {
-      "environment": "prod",
-      "environments": {
-        "base": {
-          "siteTitle": "Musikverein Wollbach 1866 e.V."
-        },
-        "prod": {
-          "key": "prod",
-          "baseUrl": "https://www.mv-wollbach.de/",
-          "isRelease": true
-        },
-        "dev": {
-          "key": "dev",
-          "baseUrl": "http://localhost/"
-        }
-      },
-      "structureJsonPath": "./partials/site-structure.json",
-      "destinationPath": "./build/",
-      "navigationPath": "./partials/",
-      "ampPath": "./partials/pages/Blog/*.pug",
-      "pugLintPath": "./partials/**/*.pug",
-      "pugPath": "./partials/pages/**/*.pug",
-      "searchIndex": {
-        "bodySelector": "main"
-      }
-    },
     "devDependencies": {
         "@types/photoswipe": "4.0.28",
         "@types/jquery": "3.2.12",
@@ -51,14 +25,14 @@
         "node-sass": "4.5.3",
         "postcss-cli": "4.1.0",
         "lite-server": "2.3.0",
-        "sass-lint": "1.11.0",
+        "sass-lint": "1.11.1",
         "tslint": "5.7.0",
-        "typescript": "2.4.2"
+        "typescript": "2.5.2"
     },
     "dependencies": {
         "jquery": "3.2.1",
-        "mvw-creator": "1.0.9",
-        "mvw-gallery": "1.0.7",
+        "mvw-creator": "1.0.10",
+        "mvw-gallery": "1.0.8",
         "photoswipe": "4.1.2"
     },
     "scripts": {
