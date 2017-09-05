@@ -6,14 +6,20 @@
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "allowUnreachableCode": false,
-    "target": "es6",
+    "target": "es5",
     "noFallthroughCasesInSwitch": true,
     "noImplicitThis": true,
     "allowJs": false,
     "alwaysStrict": true,
     "inlineSourceMap": false,
     "sourceMap": false,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.iterable"
+    ]
   },
   "include": [
     "partials/scripts/**/*.ts"
