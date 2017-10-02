@@ -1,6 +1,15 @@
 ﻿{
   "2017": [
     {
+      "starttime": "2017-10-01T17:00:00Z",
+      "title": "Oktoberfest Wies"
+    },
+    {
+      "starttime": "2017-09-01T20:00:00Z",
+      "endtime": "2017-09-01T22:00:00Z",
+      "title": "Auftritt bei der Feuerwehrmusik Mambach"
+    },
+    {
       "starttime": "2017-07-23T14:00:00Z",
       "endtime": "2017-07-23T15:00:00Z",
       "title": "Auftritt am Sommerfest der Bergmannskapelle Wieden",
