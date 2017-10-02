@@ -90,3 +90,4 @@ rules:
   # Final Items
   trailing-semicolon: 1
   final-newline: 1
+  
