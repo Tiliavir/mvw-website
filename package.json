@@ -1,6 +1,6 @@
 {
     "name": "mvw-website",
-    "version": "17.10.02",
+    "version": "17.10.06",
     "private": true,
     "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
     "author": "Musikverein Wollbach 1866 e.V.",
@@ -16,7 +16,7 @@
     ],
     "devDependencies": {
         "@types/photoswipe": "4.0.28",
-        "@types/jquery": "3.2.12",
+        "@types/jquery": "3.2.13",
         "@types/grecaptcha": "2.0.33",
         "@types/lunr": "2.1.1",
 
@@ -25,7 +25,7 @@
         "node-sass": "4.5.3",
         "postcss-cli": "4.1.1",
         "lite-server": "2.3.0",
-        "sass-lint": "1.11.1",
+        "sass-lint": "1.12.0",
         "tslint": "5.7.0",
         "typescript": "2.5.3"
     },
@@ -33,7 +33,7 @@
         "jquery": "3.2.1",
         "lunr": "2.1.3",
         "mvw-creator": "1.1.2",
-        "mvw-gallery": "1.0.9",
+        "mvw-gallery": "file:../mvw-gallery",
         "photoswipe": "4.1.2"
     },
     "scripts": {
@@ -49,6 +49,8 @@
         "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
         "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 ./root/[!_]*/**/* ./build/",
         "copy": "npm run copy:lib && npm run copy:root",
+
+        "gallery": "mvwGallery ./root/gallery/ ./root/new_gallery/",
 
         "prerelease": "npm run lint",
         "release": "npm run compile && npm run copy",
