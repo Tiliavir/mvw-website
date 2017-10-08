@@ -72,3 +72,10 @@ ErrorDocument 401 /401.html
 ErrorDocument 410 /404.html
 
 Redirect 302 /sitemap.html https://www.mv-wollbach.de/seiten-uebersicht.html
+
+<FilesMatch "bilder.html">
+  AuthName "Bilder"
+  AuthType Basic
+  AuthUserFile /var/www/web112/html/gallery/.htpasswd
+  require valid-user
+</FilesMatch>
