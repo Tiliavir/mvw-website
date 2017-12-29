@@ -143,6 +143,11 @@
     {
       "children": [
         {
+          "referencedFile": "blog_2018-jahreskonzert",
+          "navigation": "none",
+          "title": "Jahreskonzert 2018"
+        },
+        {
           "referencedFile": "blog_2017-sauserfahrt",
           "navigation": "none",
           "title": "Sauserfahrt mit dem Chanderli 2017"
