@@ -1,8 +1,24 @@
 ﻿{
+  "2018": [
+    {
+      "starttime": "2018-01-26",
+      "endtime": "2018-01-27",
+      "title": "Jahreskonzert",
+      "content": "Am freitag den 26. und Samstag den 27. Januar veranstaltete der Musikverein sein Jahreskonzert, dass diesmal im Rahmen des Barock aufgeführt wurde. Mit Stücken von Bach, Händel, Susato oder auch 'Der gestiefelten Kater' von Cesarini der zwar nicht aus dieser Zeit stammt aber von selbiger erzählt.",
+      "keywords": ["Konzert", "Jahreskonzert"]
+    },
+    {
+      "starttime": "2018-01-06T19:00:00Z",
+      "title": "Neujahrsempfang",
+      "content": "Zusammen mit dem Jugendorchester, sowie dem Gesangverein und dem Kirchenchor gestaltete der Musikverein die musikalische Umrahmung des Neujahrsempfangs.",
+      "keywords": ["Neujahrsempfang"]
+    }
+  ],
   "2017": [
     {
       "starttime": "2017-12-17T17:30:00Z",
-      "title": "Jugendvorspiel"
+      "title": "Jugendvorspiel",
+      "keywords": ["Jugend"]
     },
     {
       "starttime": "2017-12-09T00:00:00Z",
@@ -22,15 +38,13 @@
     },
     {
       "starttime": "2017-10-31T10:00:00Z",
-      "title": "Feiertagsgottesdienst '500 Jahre Martin Luther'"      
-    },
-    {
-      "starttime": "2017-10-15T00:00:00Z",
-      "title": "Herbstfest"
+      "title": "Feiertagsgottesdienst '500 Jahre Martin Luther'"
     },
     {
       "starttime": "2017-10-14T00:00:00Z",
-      "title": "Sauserexpress"
+      "endtime": "2017-10-15T00:00:00Z",
+      "title": "Sauserexpress und Herbstfest",
+      "keywords": ["Sauserbummel"]
     },
     {
       "starttime": "2017-10-01T17:00:00Z",

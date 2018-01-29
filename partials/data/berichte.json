@@ -1,4 +1,15 @@
 {
+  "2018": [
+    {
+      "title": "Kandertalhalle wird zum barocken Festsaal",
+      "date": "2018-01-29",
+      "hasDescription": true,
+      "hasPicture": true,
+      "srcTitle": "BZ",
+      "srcUrl": "http://www.badische-zeitung.de/",
+      "url": "http://www.badische-zeitung.de/kandertalhalle-wird-zum-barocken-festsaal"
+    }
+  ],
   "2017": [
     {
       "title": "Blasmusik und Gemütlichkeit",
@@ -16,7 +27,7 @@
       "hasPicture": true,
       "srcTitle": "BZ",
       "srcUrl": "http://www.badische-zeitung.de/",
-      "url": "http://www.badische-zeitung.de/kandern/festprogramm-so-farbig-wie-der-herbst--143519067.html"
+      "url": "http://www.badische-zeitung.de/kandern/festprogramm-so-farbig-wie-der-herbst.html"
     },
     {
       "title": "Wettsägen und heisse Rythmen",

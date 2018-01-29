@@ -3,32 +3,6 @@
     {
       "location": {
         "address": "Wollbach",
-        "name": "Kandertalhalle"
-      },
-      "starttime": "2018-01-06T19:00:00Z",
-      "title": "Neujahrsempfang"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Kandertalhalle"
-      },
-      "starttime": "2018-01-19",
-      "endtime": "2018-01-21",
-      "title": "Probewochenende"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Kandertalhalle"
-      },
-      "starttime": "2018-01-26",
-      "endtime": "2018-01-27",
-      "title": "Jahreskonzert"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
         "name": "Stübli"
       },
       "starttime": "2018-02-15T20:00:00Z",
