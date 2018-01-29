@@ -961,5 +961,66 @@
         ]
       }
     ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2018-01-26", "2018-01-27"]
+    },
+    "title": "Barock Konzert",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Einzug der Königin von Saba",
+            "composers": ["Georg Friedrich Händel"],
+            "arrangers": ["Scott Richards"]
+          },
+          {
+            "title": "Stücke aus der Danserye",
+            "composers": ["Tielman Susato"],
+            "arrangers": ["Patrick Dunnigan"]
+          },
+          {
+            "title": "Sinfonie Opus 18, Nr. 6",
+            "subtitle": "für Klarinettenchor",
+            "composers": ["Johann Christian Bach"],
+            "arrangers": ["Douglas McLain"]
+          },
+          {
+            "title": "Toccata",
+            "composers": ["Girolamo Frescobaldi"],
+            "arrangers": ["Earl Slocum"]
+          },
+          {
+            "title": "Der gestiefelte Kater",
+            "subtitle": "Ein Märchen für Erzähler und Blasorchester",
+            "composers": ["Franco Cesarini"],
+            "arrangers": ["Ekkehard Bierl"]
+          },
+          {
+            "title": "Dutch Masters Suite",
+            "composers": ["Johann de Meij"],
+            "parts": [
+              {
+                "title": "Nachtwacht",
+                "subtitle": "Rembrandt van Rijn"
+              },
+              {
+                "title": "De Liefdesbrief",
+                "subtitle": "Jahannes Vermeer"
+              },
+              {
+                "title": "Prinsjedag",
+                "subtitle": "Jan Steen"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
