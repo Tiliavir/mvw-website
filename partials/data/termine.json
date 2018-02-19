@@ -21,15 +21,16 @@
       "location": {
         "address": "Schwörstadt"
       },
-      "starttime": "2018-04-14",
-      "title": "Doppelkonzert mit Schwörstadt"
+      "starttime": "2018-04-14T20:00:00Z",
+      "title": "Doppelkonzert mit dem Musikverein Schwörstadt"
     },
     {
       "location": {
+        "name": "Stadthalle",
         "address": "Fahrnau"
       },
-      "starttime": "2018-04-28",
-      "title": "Doppelkonzert mit Fahrnau"
+      "starttime": "2018-04-28T20:00:00Z",
+      "title": "Doppelkonzert mit derm Musikverein Fahrnau"
     },
     {
       "location": {
@@ -40,11 +41,19 @@
     },
     {
       "location": {
-        "name": "Winzerkapelle",
-        "address": "Oberrotweil"
+        "name": "Forsthof",
+        "address": "Wollbach"
       },
       "starttime": "2018-06-09",
-      "title": "Auftritt"
+      "title": "Open-Air Konzert"
+    },
+    {
+      "location": {
+        "address": "Oberrotweil"
+      },
+      "starttime": "2018-09-08T19:30:00Z",
+      "endtime": "2018-09-08T22:00:00Z",
+      "title": "Auftritt am Herbsthock der Winzerkapelle"
     }
   ]
 }
