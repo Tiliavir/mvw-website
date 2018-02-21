@@ -49,12 +49,12 @@
   },
   {
     "image": "/img/personen/aktivbeisitzer.jpg",
-    "persons": [ "Ralf Ernst", "Manfred Braun" ],
+    "persons": [ "Ralf Ernst", "Helen Strittmatter" ],
     "title": "Aktivbeisitzer"
   },
   {
     "image": "/img/personen/passivbeisitzer.jpg",
-    "persons": [ "Reinhard Greßlin", "Alexander Serazio" ],
+    "persons": [ "Reinhard Greßlin", "Thomas Link" ],
     "title": "Passivbeisitzer"
   }
 ]
