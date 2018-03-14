@@ -2,23 +2,6 @@
   "2018": [
     {
       "location": {
-        "address": "Wollbach",
-        "name": "Stübli"
-      },
-      "starttime": "2018-02-15T20:00:00Z",
-      "title": "Generalversammlung"
-    },
-    {
-      "location": {
-        "name": "Buchhole beim Rebhüsli / Baselblick",
-        "address": "Wollbach"
-      },
-      "description": "Bei Einbruch der Dunkelheit wird wieder das große Feuer entzündet. Für euer Wohl ist mit Grillwürsten, Glühwein, Punsch, sonstigen Getränken, sowie Kaffee und Kuchen wieder bestens gesorgt.<br/>Ebenfalls ist für Holz an den Feuerstellen gesorgt und die Scheibenböcke sind gestellt.",
-      "starttime": "2018-02-18",
-      "title": "Fastnachtsfeuer"
-    },
-    {
-      "location": {
         "address": "Schwörstadt"
       },
       "starttime": "2018-04-14T20:00:00Z",
@@ -49,11 +32,41 @@
     },
     {
       "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2018-06-17T11:00:00Z",
+      "title": "60 Jahre SV Wollbach: Frühschoppenkonzert"
+    },
+    {
+      "location": {
         "address": "Oberrotweil"
       },
       "starttime": "2018-09-08T19:30:00Z",
       "endtime": "2018-09-08T22:00:00Z",
       "title": "Auftritt am Herbsthock der Winzerkapelle"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2018-10-13",
+      "title": "Sauser-Express"
+    },
+    {
+      "location": {
+        "location": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2018-10-14",
+      "title": "Herbstfest"
+    },
+    {
+      "location": {
+        "location": "Forsthof",
+        "address": "Wollbach"
+      },
+      "starttime": "2018-11-30",
+      "title": "Adventskranzverkauf"
     }
   ]
 }
