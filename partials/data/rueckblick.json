@@ -1,6 +1,17 @@
 ﻿{
   "2018": [
     {
+      "starttime": "2018-02-18",
+      "title": "Scheibenfeuer",
+      "content": "Das Scheibenfeuer war auch in diesem Jahr ein schöner Anlass bei bestem Wetter."
+    },
+    {
+      "starttime": "2018-02-15",
+      "title": "Generalversammlung",
+      "content": "An der Generalversammlung rekapitulierten wir das ereignisreiche Jubiläumsjahr 2017 und stellten uns, unter anderem mit Wahlen, für die kommenden Jahre neu auf.",
+      "keywords": ["Generalversammlung"]
+    },
+    {
       "starttime": "2018-01-26",
       "endtime": "2018-01-27",
       "title": "Jahreskonzert",
