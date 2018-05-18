@@ -1,3 +1,5 @@
+/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
+
 class Register {
   public static tryReplaceImage($images: JQuery): boolean {
     const register: any = {

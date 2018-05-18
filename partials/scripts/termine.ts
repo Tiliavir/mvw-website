@@ -1,3 +1,5 @@
+/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
+
 class Appointments {
   public static initialize(): void {
     const cutOffDate = Appointments.addDays(new Date(), -3);

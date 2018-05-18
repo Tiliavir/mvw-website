@@ -1,3 +1,6 @@
+/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
+/// <reference path="../../node_modules/@types/grecaptcha/index.d.ts" />
+
 class Contact {
   private static isValidEmail(email: string): boolean {
     const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;

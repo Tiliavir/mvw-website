@@ -1,3 +1,5 @@
+/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
+
 class Filter {
   private static containsAll(array: string[], find: string[]): boolean {
     return find.every((v) => {

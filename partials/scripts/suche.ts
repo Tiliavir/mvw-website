@@ -1,3 +1,5 @@
+/// <reference path="../../node_modules/@types/lunr/index.d.ts" />
+
 class Search {
   public static handleSearch(e: JQuery.Event<HTMLElement, null>): void {
     const query = $("input.mvw-search-field").val();

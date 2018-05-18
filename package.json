@@ -1,6 +1,6 @@
 {
         "name": "mvw-website",
-        "version": "18.05.02",
+        "version": "18.05.18",
         "private": true,
         "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
         "author": "Musikverein Wollbach 1866 e.V.",
@@ -16,21 +16,21 @@
         ],
         "devDependencies": {
                 "@types/photoswipe": "4.0.28",
-                "@types/jquery": "3.3.1",
+                "@types/jquery": "3.3.2",
                 "@types/grecaptcha": "2.0.34",
                 "@types/lunr": "2.1.5",
-                "autoprefixer": "8.1.0",
+                "autoprefixer": "8.5.0",
                 "copyfiles": "2.0.0",
-                "node-sass": "4.7.2",
+                "node-sass": "4.9.0",
                 "postcss-cli": "5.0.0",
                 "lite-server": "2.3.0",
                 "sass-lint": "1.12.1",
-                "tslint": "5.9.1",
-                "typescript": "2.7.2"
+                "tslint": "5.10.0",
+                "typescript": "2.8.3"
         },
         "dependencies": {
                 "jquery": "3.3.1",
-                "lunr": "2.1.6",
+                "lunr": "2.2.0",
                 "mvw-creator": "1.1.7",
                 "mvw-gallery": "1.0.14",
                 "photoswipe": "4.1.2"

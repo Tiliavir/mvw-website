@@ -1,3 +1,5 @@
+/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
+
 class Tabs {
   public static initialize(): void {
     const url: string = window.location.href;

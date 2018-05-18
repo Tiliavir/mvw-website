@@ -1,5 +1,6 @@
 /// <reference path="../../node_modules/@types/photoswipe/index.d.ts" />
 /// <reference path="../../node_modules/@types/photoswipe/dist/photoswipe-ui-default/index.d.ts" />
+/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
 
 class Gallery {
   public static openGallery(e: any): void {

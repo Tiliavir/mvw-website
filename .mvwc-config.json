@@ -143,6 +143,11 @@
     {
       "children": [
         {
+          "referencedFile": "blog_2018-forsthof",
+          "navigation": "none",
+          "title": "Forsthof Open-Air"
+        },
+        {
           "referencedFile": "blog_2018-sauserfahrt",
           "navigation": "none",
           "title": "Sauserfahrt mit dem Chanderli 2018"

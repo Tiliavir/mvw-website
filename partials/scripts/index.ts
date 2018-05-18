@@ -2,7 +2,7 @@ class Index {
   public static initialize(): void {
     const slideWidth = $(".slider-items").width();
 
-    let interval: NodeJS.Timer;
+    let interval: any;
 
     function resetInterval(): void {
       clearInterval(interval);
