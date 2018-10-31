@@ -48,7 +48,7 @@
                 "gallery": "mvwGallery ./root/gallery/ ./root/new_gallery/",
                 "prerelease": "npm run lint",
                 "release": "npm run compile && npm run copy",
-                "copy:todiff": "copyup -u 1 -a ./build/**/* ../mvw-prod/",
+                "postrelease": "copyup -u 1 -a ./build/**/* ./_prod/artifacts/",
                 "serve": "lite-server"
         }
 }

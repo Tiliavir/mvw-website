@@ -3949,36 +3949,7 @@
                         }
                     },
                     Yt = function(e, t, n) {
-                        if (e.src && !e.loadError) {
-                            var o = !n;
-                            if (o && (e.vGap || (e.vGap = {
-                                    top: 0,
-                                    bottom: 0
-                                }), Ee("parseVerticalMargin", e)), Ht.x = t.x, Ht.y = t.y - e.vGap.top - e.vGap.bottom, o) {
-                                var i = Ht.x / e.w,
-                                    a = Ht.y / e.h;
-                                e.fitRatio = i < a ? i : a;
-                                var r = v.scaleMode;
-                                "orig" === r ? n = 1 : "fit" === r && (n = e.fitRatio), 1 < n && (n = 1), e.initialZoomLevel = n, e.bounds || (e.bounds = {
-                                    center: {
-                                        x: 0,
-                                        y: 0
-                                    },
-                                    max: {
-                                        x: 0,
-                                        y: 0
-                                    },
-                                    min: {
-                                        x: 0,
-                                        y: 0
-                                    }
-                                })
-                            }
-                            if (!n) return;
-                            return s = (l = e).w * n, u = e.h * n, (c = l.bounds).center.x = Math.round((Ht.x - s) / 2), c.center.y = Math.round((Ht.y - u) / 2) + l.vGap.top, c.max.x = s > Ht.x ? Math.round(Ht.x - s) : c.center.x, c.max.y = u > Ht.y ? Math.round(Ht.y - u) + l.vGap.top : c.center.y, c.min.x = s > Ht.x ? 0 : c.center.x, c.min.y = u > Ht.y ? l.vGap.top : c.center.y, o && n === e.initialZoomLevel && (e.initialPosition = e.bounds.center), e.bounds
-                        }
-                        var l, s, u, c;
-                        return e.w = e.h = 0, e.initialZoomLevel = e.fitRatio = 1, e.bounds = {
+                        if (!e.src || e.loadError) return e.w = e.h = 0, e.initialZoomLevel = e.fitRatio = 1, e.bounds = {
                             center: {
                                 x: 0,
                                 y: 0
@@ -3991,7 +3962,32 @@
                                 x: 0,
                                 y: 0
                             }
-                        }, e.initialPosition = e.bounds.center, e.bounds
+                        }, e.initialPosition = e.bounds.center, e.bounds;
+                        var o, i, a, r, l = !n;
+                        if (l && (e.vGap || (e.vGap = {
+                                top: 0,
+                                bottom: 0
+                            }), Ee("parseVerticalMargin", e)), Ht.x = t.x, Ht.y = t.y - e.vGap.top - e.vGap.bottom, l) {
+                            var s = Ht.x / e.w,
+                                u = Ht.y / e.h;
+                            e.fitRatio = s < u ? s : u;
+                            var c = v.scaleMode;
+                            "orig" === c ? n = 1 : "fit" === c && (n = e.fitRatio), 1 < n && (n = 1), e.initialZoomLevel = n, e.bounds || (e.bounds = {
+                                center: {
+                                    x: 0,
+                                    y: 0
+                                },
+                                max: {
+                                    x: 0,
+                                    y: 0
+                                },
+                                min: {
+                                    x: 0,
+                                    y: 0
+                                }
+                            })
+                        }
+                        return n ? (i = (o = e).w * n, a = e.h * n, (r = o.bounds).center.x = Math.round((Ht.x - i) / 2), r.center.y = Math.round((Ht.y - a) / 2) + o.vGap.top, r.max.x = i > Ht.x ? Math.round(Ht.x - i) : r.center.x, r.max.y = a > Ht.y ? Math.round(Ht.y - a) + o.vGap.top : r.center.y, r.min.x = i > Ht.x ? 0 : r.center.x, r.min.y = a > Ht.y ? o.vGap.top : r.center.y, l && n === e.initialZoomLevel && (e.initialPosition = e.bounds.center), e.bounds) : void 0
                     },
                     qt = function(e, t, n, o, i, a) {
                         t.loadError || o && (t.imageAppended = !0, $t(t, o, t === h.currItem && xe), n.appendChild(o), a && setTimeout(function() {
