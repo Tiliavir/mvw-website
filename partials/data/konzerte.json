@@ -1022,5 +1022,97 @@
         ]
       }
     ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2018-01-25", "2018-01-26"]
+    },
+    "title": "Space Odyssey",
+    "subtitle": "Eine musikalische Reise durch das Universum",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "A Song in the Universe",
+            "subtitle": "Ein Lied im Universum",
+            "composers": ["Stephen Melillo"]
+          },
+          {
+            "title": "Die Planeten",
+            "composers": ["Gustav Holst"],
+            "arrangers": ["Christian Janssen"],
+            "parts": [
+              {
+                "title": "Mars",
+                "subtitle": "Der Kriegsbringer"
+              },
+              {
+                "title": "Venus",
+                "subtitle": "Die Friedensbringerin"
+              },
+              {
+                "title": "Saturn",
+                "subtitle": "Der Bringer des hohen Alters"
+              },
+              {
+                "title": "Jupiter",
+                "subtitle": "Der Bringer der Fröhlichkeit"
+              }
+            ]
+          },
+          {
+            "title": "This cruel Moon",
+            "subtitle": "Dieser grausame Mond",
+            "composers": ["John Mackey"]
+          },
+          {
+            "title": "Star Wars Triologie",
+            "composers": ["John Williams"],
+            "arrangers": ["Donald Hunsberger"],
+            "parts": [
+              {
+                "title": "Imperial March",
+                "subtitle": "Darth Vaders Thema"
+              },
+              {
+                "title": "Prinzessin Leias Thema"
+              },
+              {
+                "title": "Battle in the Forest",
+                "subtitle": "Schlacht im Wald"
+              },
+              {
+                "title": "Yodas Thema"
+              },
+              {
+                "title": "Star Wars",
+                "subtitle": "Hauptthema"
+              }
+            ]
+          },
+          {
+            "title": "Aurora",
+            "subtitle": "Have you ever wondered? / Hast du Dich jemals gefragt?",
+            "composers": ["Stephen Melillo"]
+          },
+          {
+            "title": "Space Oddity / Life on Mars?",
+            "subtitle": "Weltraumkuriosität / Leben auf dem Mars",
+            "composers": ["David Bowie"],
+            "arrangers": ["Al Hug"]
+          },
+          {
+            "title": "Stairway to Heaven",
+            "subtitle": "Himmelsleiter",
+            "composers": ["Led Zeppelin"],
+            "arrangers": ["Vrtacnik", "Al Hug"]
+          }
+        ]
+      }
+    ]
   }
 ]

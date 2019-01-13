@@ -1,0 +1,57 @@
+extends ../../template.pug
+
+block variables
+  -
+    var title = "Jahreskonzert 2019";
+    var description = "Space Odyssey - Das Jahreskonzert des Musikverein Wollbach im Jahr 2019.";
+    var keywords = "Jahreskonzert, Jahreskonzert 2019, Konzert";
+    var publishedDate = "2019-01-13T00:00:00.000Z";
+    var ampLogoUrl = "files/flyer/19_jahreskonzert.jpg";
+    var ampLogoWidth = 1000;
+    var ampLogoHeight = 333;
+
+block pageStyles
+
+block content
+  :marked
+    Am Freitag den 25. und Samstag den 26. Januar veranstalten wir unser
+    alljährliches Jahreskonzert in der Kandertalhalle in Wollbach. Das
+    Konzert hat in diesem Jahr das Thema "Space Odyssey" - begeben Sie
+    sich mit uns auf eine musikalische Reise durchs Weltall. Einlass
+    ist ab 18:30, Konzertbeginn um 20:00.
+
+  +image("/files/flyer/19_jahreskonzert.jpg", "Jahreskonzert 2019", null, null, 1000, 333)
+
+  :marked
+    [Flyer des Jahreskonzertes als PDF herunterladen.](/files/flyer/19_jahreskonzert.pdf)
+
+    # Programm
+    ## A Song in the Universe <sub>Ein Lied im Universum</sub>
+    *Stephen Melillo*
+
+    ## Die Planeten
+    *Gustav Holst, arr. Christiaan Janssen*
+    1. Mars <sub>Der Kriegsbringer</sub>
+    2. Venus <sub>Die Friedensbringerin</sub>
+    3. Saturn <sub>Der Bringer des hohen Alters</sub
+    4.Jupiter <sub>Der Bringer der Fröhlichkeit</sub>
+
+    ## This cruel Moon <sub>Dieser grausame Mond</sub>
+    *John Mackey*
+
+    ## Star Wars Triologie
+    *John Williams, arr. Donald Hunsberger*
+    1. Imperial March <sub>Darth Vaders Thema</sub>
+    2. Prinzessin Leias Thema
+    3. Battle in the Forest <sub>Schlacht im Wald</sub>
+    4. Yodas Thema
+    5. Star Wars <sub>Hauptthema</sub>
+
+    ## Aurora <sub>Have you ever wondered? / Hast du Dich jemals gefragt?</sub>
+    *Stephen Melillo*
+
+    ## Space Oddity / Life on Mars? <sub>Weltraumkuriosität / Leben auf dem Mars</sub>
+    *David Bowie, arr. Al Hug*
+
+    ## Stairway to Heaven <sub>Himmelsleiter</sub>
+    *Led Zeppelin, arr. Vrtacnik / Al Hug*
