@@ -51,7 +51,7 @@ header {
 
 .footer {
   background-color: $gray-lightest;
-  height: 40px;
+  height: 60px;
   margin: 30px 0 20px;
   border-color: $footer-border-gray;
   box-shadow: 0 1px 0 transparentize($footer-shadow-gray, .9), 0 1px 3px transparentize($footer-shadow-gray, .9), 0 4px 20px transparentize($footer-shadow-gray, .965), 0 1px 1px transparentize($footer-shadow-gray, .975);
@@ -67,6 +67,16 @@ header {
     padding: 0 10px;
     line-height: 40px;
     height: 40px;
+  }
+
+  .social {
+    height: 20px;
+    text-align: right;
+
+    li {
+      height: 20px;
+      line-height: 20px;
+    }
   }
 
   a {

@@ -73,8 +73,18 @@ html(lang="de")
         | !{breadcrumb}
       block content
 
+      #mail-popup
+        include ./mail-popup.pug
+
     footer.footer
       include ./footernavigation.pug
+      ul.social
+        li
+          a(href="https://www.facebook.com/Musikverein-Wollbach-1866-eV-378378646043433/") Facebook
+        li
+          a(href="https://instagram.com/musikvereinwollbach") Instagram
+        li
+          a(href="http://eepurl.com/geNZNz") Newsletter
 
     script(src="/js/jquery.min.js")
     script
