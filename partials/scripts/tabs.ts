@@ -9,7 +9,7 @@ class Tabs {
       Tabs.setActive(url.substring(startIndex));
     }
 
-    $(".tab").click((e: JQuery.Event<HTMLAnchorElement>) => {
+    $(".tab").click((e: JQuery.ClickEvent) => {
       Tabs.setActive($(e.target).data("tab"));
       e.preventDefault(); // prevent auto scroll to target
       e.stopPropagation();

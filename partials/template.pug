@@ -11,7 +11,7 @@ html(lang="de")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
     //- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
 
-    title= `${(referencedFile === "index" ? "" : `${title} | `)}${environment.siteTitle}`
+    title= `${(reference === "index" ? "" : `${title} | `)}${environment.siteTitle}`
 
     if environment.key === "prod"
       base(href=environment.baseUrl)
@@ -35,7 +35,7 @@ html(lang="de")
       block pageStyles
 
     if hasAmp
-      link(rel="amphtml" href=path.join(environment.baseUrl,"amp", `${referencedFile}.html`))
+      link(rel="amphtml" href=path.join(environment.baseUrl,"amp", `${reference}.html`))
 
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin-ext")
 
@@ -69,11 +69,11 @@ html(lang="de")
       h1.page-header #{title}
         if subtitle
           small= ` ${subtitle}`
-      if referencedFile !== "index"
+      if reference !== "index"
         | !{breadcrumb}
       block content
 
-      #mail-popup
+      .mail-popup
         include ./mail-popup.pug
 
     footer.footer

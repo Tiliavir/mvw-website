@@ -1544,40 +1544,40 @@
             }
         }
 
-        #mail-popup {
+        .mail-popup {
             display: none
         }
 
-        #mail-popup #mc_embed_signup {
+        .mail-popup #mc_embed_signup {
             background: #fff;
             clear: left
         }
 
-        #mail-popup #mc-embedded-subscribe-form input[type=checkbox] {
+        .mail-popup #mc-embedded-subscribe-form input[type=checkbox] {
             display: inline;
             width: auto;
             margin-right: 10px
         }
 
-        #mail-popup #mc-embedded-subscribe-form .mc_fieldset {
+        .mail-popup #mc-embedded-subscribe-form .mc_fieldset {
             border: 0;
             min-height: 0;
             padding: 0 20px
         }
 
-        #mail-popup #mergeRow-gdpr {
+        .mail-popup #mergeRow-gdpr {
             margin-top: 20px
         }
 
-        #mail-popup #mergeRow-gdpr fieldset label {
+        .mail-popup #mergeRow-gdpr fieldset label {
             font-weight: 400
         }
 
-        #mail-popup .mc_embed_signup_scroll {
+        .mail-popup .mc_embed_signup_scroll {
             padding: 10px
         }
 
-        #mail-popup.visible {
+        .mail-popup.visible {
             display: block;
             position: absolute;
             width: 50vw;
@@ -1587,7 +1587,7 @@
         }
 
         @media (max-width:767px) {
-            #mail-popup.visible {
+            .mail-popup.visible {
                 width: 100vw;
                 top: 50px;
                 left: 0;
@@ -1596,14 +1596,14 @@
             }
         }
 
-        #mail-popup .dont-show {
+        .mail-popup .dont-show {
             z-index: 3;
             position: absolute;
             bottom: 16px;
             right: 16px
         }
 
-        #mail-popup .close {
+        .mail-popup .close {
             position: absolute;
             right: 16px;
             top: 16px;
@@ -1613,12 +1613,12 @@
             z-index: 3
         }
 
-        #mail-popup .close:hover {
+        .mail-popup .close:hover {
             opacity: 1
         }
 
-        #mail-popup .close::after,
-        #mail-popup .close::before {
+        .mail-popup .close::after,
+        .mail-popup .close::before {
             position: absolute;
             left: 15px;
             content: ' ';
@@ -1627,13 +1627,13 @@
             background-color: #333
         }
 
-        #mail-popup .close::before {
+        .mail-popup .close::before {
             -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             transform: rotate(45deg)
         }
 
-        #mail-popup .close::after {
+        .mail-popup .close::after {
             -webkit-transform: rotate(-45deg);
             -ms-transform: rotate(-45deg);
             transform: rotate(-45deg)
@@ -1850,12 +1850,12 @@
         <form itemprop=potentialAction itemscope itemtype=http://schema.org/SearchAction>
             <meta content="http://www.mv-wollbach.de/search.html?q={query}" itemprop=target><input type=search name=query class=mvw-search-field itemprop=query-input placeholder=Suche...></form>
         <ol class=results></ol>
-        <div id=mail-popup><span class=close></span><label class=dont-show><input type=checkbox>Nicht mehr anzeigen</label>
+        <div class=mail-popup><span class=close></span><label class=dont-show><input type=checkbox>Nicht mehr anzeigen</label>
             <link href=//cdn-images.mailchimp.com/embedcode/classic-10_7.css rel=stylesheet type=text/css>
             <div id=mc_embed_signup>
                 <form action="https://mv-wollbach.us20.list-manage.com/subscribe/post?u=7b54117c9ad7cafceac3f2ddc&amp;id=86e7362fc5" class=validate id=mc-embedded-subscribe-form method=post name=mc-embedded-subscribe-form novalidate="" target=_blank>
                     <div id=mc_embed_signup_scroll>
-                        <h2>Subscribe to our mailing list</h2>
+                        <h2>Newsletter abonnieren</h2>
                         <div class=indicates-required><span class=asterisk>*</span> erforderlich</div>
                         <div class=mc-field-group><label for=mce-EMAIL>E-Mail Adresse <span class=asterisk>*</span></label><input type=email name=EMAIL value="" id=mce-EMAIL class="required email"></div>
                         <div class=mc-field-group><label for=mce-VORNAME>Vorname </label><input type=text name=VORNAME value="" id=mce-VORNAME></div>
@@ -1953,7 +1953,7 @@
                     })
                 }, t.registerPopUp = function() {
                     if ("dont-show" !== localStorage.getItem("mvw-popup") && "dont-show" !== sessionStorage.getItem("mvw-popup")) {
-                        var t = $("#mail-popup");
+                        var t = $(".mail-popup");
                         0 < t.length && ($(window).on("scroll load resize", function() {
                             200 < $(window).scrollTop() && t.addClass("visible")
                         }), t.find(".close").click(function() {
@@ -1970,11 +1970,11 @@
     </script>
     <script>
         ! function() {
-            var t, l, c, e, r, h, d, f, p, y, m, g, x, v, w, Q, S, k, E, L, P, b, T, O, I, i, n, s, V = function(e) {
+            var t, l, c, e, r, h, d, f, p, y, m, g, x, v, w, Q, S, k, E, L, b, P, T, O, I, i, n, s, V = function(e) {
                 var t = new V.Builder;
                 return t.pipeline.add(V.trimmer, V.stopWordFilter, V.stemmer), t.searchPipeline.add(V.stemmer), e.call(t, t), t.build()
             };
-            V.version = "2.3.2", V.utils = {}, V.utils.warn = (t = this, function(e) {
+            V.version = "2.3.5", V.utils = {}, V.utils.warn = (t = this, function(e) {
                 t.console && console.warn && console.warn(e)
             }), V.utils.asString = function(e) {
                 return null == e ? "" : e.toString()
@@ -2031,7 +2031,7 @@
                 var t, r, i, n = [];
                 if (e === V.Set.complete) return this;
                 if (e === V.Set.empty) return e;
-                this.length < e.length ? (t = this, r = e) : (t = e, r = this), i = Object.keys(t.elements);
+                r = this.length < e.length ? (t = this, e) : (t = e, this), i = Object.keys(t.elements);
                 for (var s = 0; s < i.length; s++) {
                     var o = i[s];
                     o in r.elements && n.push(o)
@@ -2104,7 +2104,7 @@
                     for (var i = this._stack[r], n = [], s = 0; s < e.length; s++) {
                         var o = i(e[s], s, e);
                         if (void 0 !== o && "" !== o)
-                            if (o instanceof Array)
+                            if (Array.isArray(o))
                                 for (var a = 0; a < o.length; a++) n.push(o[a]);
                             else n.push(o)
                     }
@@ -2183,7 +2183,7 @@
                 ical: "ic",
                 ful: "",
                 ness: ""
-            }, e = "[aeiouy]", r = "[^aeiou][^aeiouy]*", h = new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy][aeiou]*[^aeiou][^aeiouy]*"), d = new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy][aeiou]*[^aeiou][^aeiouy]*[aeiouy][aeiou]*[^aeiou][^aeiouy]*"), f = new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy][aeiou]*[^aeiou][^aeiouy]*([aeiouy][aeiou]*)?$"), p = new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy]"), y = /^(.+?)(ss|i)es$/, m = /^(.+?)([^s])s$/, g = /^(.+?)eed$/, x = /^(.+?)(ed|ing)$/, v = /.$/, w = /(at|bl|iz)$/, Q = new RegExp("([^aeiouylsz])\\1$"), S = new RegExp("^" + r + e + "[^aeiouwxy]$"), k = /^(.+?[^aeiou])y$/, E = /^(.+?)(ational|tional|enci|anci|izer|bli|alli|entli|eli|ousli|ization|ation|ator|alism|iveness|fulness|ousness|aliti|iviti|biliti|logi)$/, L = /^(.+?)(icate|ative|alize|iciti|ical|ful|ness)$/, P = /^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/, b = /^(.+?)(s|t)(ion)$/, T = /^(.+?)e$/, O = /ll$/, I = new RegExp("^" + r + e + "[^aeiouwxy]$"), i = function(e) {
+            }, e = "[aeiouy]", r = "[^aeiou][^aeiouy]*", h = new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy][aeiou]*[^aeiou][^aeiouy]*"), d = new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy][aeiou]*[^aeiou][^aeiouy]*[aeiouy][aeiou]*[^aeiou][^aeiouy]*"), f = new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy][aeiou]*[^aeiou][^aeiouy]*([aeiouy][aeiou]*)?$"), p = new RegExp("^([^aeiou][^aeiouy]*)?[aeiouy]"), y = /^(.+?)(ss|i)es$/, m = /^(.+?)([^s])s$/, g = /^(.+?)eed$/, x = /^(.+?)(ed|ing)$/, v = /.$/, w = /(at|bl|iz)$/, Q = new RegExp("([^aeiouylsz])\\1$"), S = new RegExp("^" + r + e + "[^aeiouwxy]$"), k = /^(.+?[^aeiou])y$/, E = /^(.+?)(ational|tional|enci|anci|izer|bli|alli|entli|eli|ousli|ization|ation|ator|alism|iveness|fulness|ousness|aliti|iviti|biliti|logi)$/, L = /^(.+?)(icate|ative|alize|iciti|ical|ful|ness)$/, b = /^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/, P = /^(.+?)(s|t)(ion)$/, T = /^(.+?)e$/, O = /ll$/, I = new RegExp("^" + r + e + "[^aeiouwxy]$"), i = function(e) {
                 var t, r, i, n, s, o, a;
                 if (e.length < 3) return e;
                 if ("y" == (i = e.substr(0, 1)) && (e = i.toUpperCase() + e.substr(1)), s = m, (n = y).test(e) ? e = e.replace(n, "$1$2") : s.test(e) && (e = e.replace(s, "$1$2")), s = x, (n = g).test(e)) {
@@ -2194,7 +2194,7 @@
                 }(n = k).test(e) && (e = (t = (u = n.exec(e))[1]) + "i");
                 (n = E).test(e) && (t = (u = n.exec(e))[1], r = u[2], (n = h).test(t) && (e = t + l[r]));
                 (n = L).test(e) && (t = (u = n.exec(e))[1], r = u[2], (n = h).test(t) && (e = t + c[r]));
-                if (s = b, (n = P).test(e)) t = (u = n.exec(e))[1], (n = d).test(t) && (e = t);
+                if (s = P, (n = b).test(e)) t = (u = n.exec(e))[1], (n = d).test(t) && (e = t);
                 else if (s.test(e)) {
                     t = (u = s.exec(e))[1] + u[2], (s = d).test(t) && (e = t)
                 }(n = T).test(e) && (t = (u = n.exec(e))[1], s = f, o = I, ((n = d).test(t) || s.test(t) && !o.test(t)) && (e = t));
@@ -2226,7 +2226,7 @@
                         str: e
                     }]; i.length;) {
                     var n, s, o, a = i.pop();
-                    if (0 < a.str.length)(s = a.str.charAt(0)) in a.node.edges ? n = a.node.edges[s] : (n = new V.TokenSet, a.node.edges[s] = n), 1 == a.str.length ? n.final = !0 : i.push({
+                    if (0 < a.str.length)(s = a.str.charAt(0)) in a.node.edges ? n = a.node.edges[s] : (n = new V.TokenSet, a.node.edges[s] = n), 1 == a.str.length && (n.final = !0), i.push({
                         node: n,
                         editsRemaining: a.editsRemaining,
                         str: a.str.slice(1)
@@ -2272,13 +2272,13 @@
                 }
                 return r
             }, V.TokenSet.fromString = function(e) {
-                for (var t = new V.TokenSet, r = t, i = !1, n = 0, s = e.length; n < s; n++) {
-                    var o = e[n],
-                        a = n == s - 1;
-                    if ("*" == o) i = !0, (t.edges[o] = t).final = a;
+                for (var t = new V.TokenSet, r = t, i = 0, n = e.length; i < n; i++) {
+                    var s = e[i],
+                        o = i == n - 1;
+                    if ("*" == s)(t.edges[s] = t).final = o;
                     else {
-                        var u = new V.TokenSet;
-                        u.final = a, t.edges[o] = u, t = u, i && (t.edges["*"] = r)
+                        var a = new V.TokenSet;
+                        a.final = o, t.edges[s] = a, t = a
                     }
                 }
                 return r
@@ -2397,10 +2397,10 @@
                                             return e + t
                                         }), !n[S]) {
                                         for (var E = 0; E < Q.length; E++) {
-                                            var L, P = Q[E],
-                                                b = new V.FieldRef(P, R),
-                                                T = w[P];
-                                            void 0 === (L = r[b]) ? r[b] = new V.MatchData(g, R, T) : L.add(g, R, T)
+                                            var L, b = Q[E],
+                                                P = new V.FieldRef(b, R),
+                                                T = w[b];
+                                            void 0 === (L = r[P]) ? r[P] = new V.MatchData(g, R, T) : L.add(g, R, T)
                                         }
                                         n[S] = !0
                                     }
@@ -2425,9 +2425,9 @@
                 if (t.isNegated()) {
                     F = Object.keys(this.fieldVectors);
                     for (a = 0; a < F.length; a++) {
-                        b = F[a];
-                        var j = V.FieldRef.fromString(b);
-                        r[b] = new V.MatchData
+                        P = F[a];
+                        var j = V.FieldRef.fromString(P);
+                        r[P] = new V.MatchData
                     }
                 }
                 for (a = 0; a < F.length; a++) {
@@ -2467,7 +2467,7 @@
                 var t = {},
                     r = {},
                     i = e.fieldVectors,
-                    n = {},
+                    n = Object.create(null),
                     s = e.invertedIndex,
                     o = new V.TokenSet.Builder,
                     a = V.Pipeline.load(e.pipeline);

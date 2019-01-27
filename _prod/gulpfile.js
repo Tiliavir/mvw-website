@@ -23,5 +23,5 @@
                .pipe(gulp.dest(paths.beauty));
   });
 
-  gulp.task("default", ["html:validate", "beautify"]);
+  gulp.task("default", gulp.parallel("html:validate", "beautify"));
 })(require);

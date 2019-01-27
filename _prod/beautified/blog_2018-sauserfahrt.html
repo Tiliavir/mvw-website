@@ -1544,40 +1544,40 @@
             }
         }
 
-        #mail-popup {
+        .mail-popup {
             display: none
         }
 
-        #mail-popup #mc_embed_signup {
+        .mail-popup #mc_embed_signup {
             background: #fff;
             clear: left
         }
 
-        #mail-popup #mc-embedded-subscribe-form input[type=checkbox] {
+        .mail-popup #mc-embedded-subscribe-form input[type=checkbox] {
             display: inline;
             width: auto;
             margin-right: 10px
         }
 
-        #mail-popup #mc-embedded-subscribe-form .mc_fieldset {
+        .mail-popup #mc-embedded-subscribe-form .mc_fieldset {
             border: 0;
             min-height: 0;
             padding: 0 20px
         }
 
-        #mail-popup #mergeRow-gdpr {
+        .mail-popup #mergeRow-gdpr {
             margin-top: 20px
         }
 
-        #mail-popup #mergeRow-gdpr fieldset label {
+        .mail-popup #mergeRow-gdpr fieldset label {
             font-weight: 400
         }
 
-        #mail-popup .mc_embed_signup_scroll {
+        .mail-popup .mc_embed_signup_scroll {
             padding: 10px
         }
 
-        #mail-popup.visible {
+        .mail-popup.visible {
             display: block;
             position: absolute;
             width: 50vw;
@@ -1587,7 +1587,7 @@
         }
 
         @media (max-width:767px) {
-            #mail-popup.visible {
+            .mail-popup.visible {
                 width: 100vw;
                 top: 50px;
                 left: 0;
@@ -1596,14 +1596,14 @@
             }
         }
 
-        #mail-popup .dont-show {
+        .mail-popup .dont-show {
             z-index: 3;
             position: absolute;
             bottom: 16px;
             right: 16px
         }
 
-        #mail-popup .close {
+        .mail-popup .close {
             position: absolute;
             right: 16px;
             top: 16px;
@@ -1613,12 +1613,12 @@
             z-index: 3
         }
 
-        #mail-popup .close:hover {
+        .mail-popup .close:hover {
             opacity: 1
         }
 
-        #mail-popup .close::after,
-        #mail-popup .close::before {
+        .mail-popup .close::after,
+        .mail-popup .close::before {
             position: absolute;
             left: 15px;
             content: ' ';
@@ -1627,13 +1627,13 @@
             background-color: #333
         }
 
-        #mail-popup .close::before {
+        .mail-popup .close::before {
             -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             transform: rotate(45deg)
         }
 
-        #mail-popup .close::after {
+        .mail-popup .close::after {
             -webkit-transform: rotate(-45deg);
             -ms-transform: rotate(-45deg);
             transform: rotate(-45deg)
@@ -1877,12 +1877,12 @@
         <h3 id=r-ckblick>Rückblick</h3>
         <p>Hier, auf unserer Website finden Sie <a href=bilder.html>Bilder</a> und Informationen wie <a href=berichte.html>Presseberichte</a> und einen <a href=rueckblick.html>Rückblick</a> zu der Veranstaltung des letzten Jahres.</p>
         <figure class=img><img alt="Das Chanderli durch das Kandertal" class="img-center img-responsive" src=/img/events/chanderli.jpg title="Das Chanderli durch das Kandertal"></figure>
-        <div id=mail-popup><span class=close></span><label class=dont-show><input type=checkbox>Nicht mehr anzeigen</label>
+        <div class=mail-popup><span class=close></span><label class=dont-show><input type=checkbox>Nicht mehr anzeigen</label>
             <link href=//cdn-images.mailchimp.com/embedcode/classic-10_7.css rel=stylesheet type=text/css>
             <div id=mc_embed_signup>
                 <form action="https://mv-wollbach.us20.list-manage.com/subscribe/post?u=7b54117c9ad7cafceac3f2ddc&amp;id=86e7362fc5" class=validate id=mc-embedded-subscribe-form method=post name=mc-embedded-subscribe-form novalidate="" target=_blank>
                     <div id=mc_embed_signup_scroll>
-                        <h2>Subscribe to our mailing list</h2>
+                        <h2>Newsletter abonnieren</h2>
                         <div class=indicates-required><span class=asterisk>*</span> erforderlich</div>
                         <div class=mc-field-group><label for=mce-EMAIL>E-Mail Adresse <span class=asterisk>*</span></label><input type=email id=mce-EMAIL name=EMAIL value="" class="required email"></div>
                         <div class=mc-field-group><label for=mce-VORNAME>Vorname </label><input type=text id=mce-VORNAME name=VORNAME value=""></div>
@@ -1980,7 +1980,7 @@
                     })
                 }, t.registerPopUp = function() {
                     if ("dont-show" !== localStorage.getItem("mvw-popup") && "dont-show" !== sessionStorage.getItem("mvw-popup")) {
-                        var t = $("#mail-popup");
+                        var t = $(".mail-popup");
                         0 < t.length && ($(window).on("scroll load resize", function() {
                             200 < $(window).scrollTop() && t.addClass("visible")
                         }), t.find(".close").click(function() {

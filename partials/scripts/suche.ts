@@ -1,7 +1,7 @@
 /// <reference path="../../node_modules/@types/lunr/index.d.ts" />
 
 class Search {
-  public static handleSearch(e: JQuery.Event<HTMLElement, null>): void {
+  public static handleSearch(e: JQuery.KeyUpEvent): void {
     const query = $("input.mvw-search-field").val();
     const result = Search.index.search(`*${query}*`);
     const resultContainer = $(".results");

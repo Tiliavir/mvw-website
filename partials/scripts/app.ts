@@ -39,7 +39,7 @@ class App {
       return;
     }
 
-    const $popup = $("#mail-popup");
+    const $popup = $(".mail-popup");
     if ($popup.length > 0) {
       $(window).on("scroll load resize", () => {
         if ($(window).scrollTop() > 200) {

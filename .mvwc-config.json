@@ -24,22 +24,22 @@
   },
   "structure": [
     {
-      "referencedFile": "index",
+      "reference": "index",
       "navigation": "none",
       "title": "Willkommen beim Musikverein Wollbach"
     },
     {
       "children": [
         {
-          "referencedFile": "termine",
+          "reference": "termine",
           "title": "Termine"
         },
         {
-          "referencedFile": "rueckblick",
+          "reference": "rueckblick",
           "title": "Rückblick"
         },
         {
-          "referencedFile": "berichte",
+          "reference": "berichte",
           "title": "Berichte"
         }
       ],
@@ -48,15 +48,15 @@
     {
       "children": [
         {
-          "referencedFile": "ueber-uns",
+          "reference": "ueber-uns",
           "title": "Wir über uns"
         },
         {
-          "referencedFile": "vorstand",
+          "reference": "vorstand",
           "title": "Vorstandschaft"
         },
         {
-          "referencedFile": "mitgliedschaft",
+          "reference": "mitgliedschaft",
           "title": "Mitglied werden"
         }
       ],
@@ -65,19 +65,19 @@
     {
       "children":[
         {
-          "referencedFile": "register",
+          "reference": "register",
           "title": "Unsere Register"
         },
         {
-          "referencedFile": "dirigent",
+          "reference": "dirigent",
           "title": "Dirigent"
         },
         {
-          "referencedFile": "konzerte",
+          "reference": "konzerte",
           "title": "Konzerte"
         },
         {
-          "referencedFile": "dampfmusik",
+          "reference": "dampfmusik",
           "title": "Dampfmusik"
         }
       ],
@@ -86,149 +86,149 @@
     {
       "children": [
         {
-          "referencedFile": "ausbildung",
+          "reference": "ausbildung",
           "title": "Ausbildung"
         },
         {
-          "referencedFile": "vorstufenorchester",
+          "reference": "vorstufenorchester",
           "title": "Vorstufenorchester"
         },
         {
-          "referencedFile": "jugendorchester",
+          "reference": "jugendorchester",
           "title": "Jugendorchester"
         }
       ],
       "title": "Jugendarbeit"
     },
     {
-      "referencedFile": "bilder",
+      "reference": "bilder",
       "title": "Bilder"
     },
     {
-      "referencedFile": "vereine-und-links",
+      "reference": "vereine-und-links",
       "title": "Vereine und Links"
     },
     {
       "children": [
         {
-          "referencedFile": "haftung",
+          "reference": "haftung",
           "navigation": "none",
           "title": "Haftungsausschluss"
         },
         {
-          "referencedFile": "datenschutz",
+          "reference": "datenschutz",
           "navigation": "none",
           "title": "Datenschutz"
         },
         {
-          "referencedFile": "seiten-uebersicht",
+          "reference": "seiten-uebersicht",
           "navigation": "none",
           "title": "Seiten-Übersicht"
         }
       ],
-      "referencedFile": "impressum",
+      "reference": "impressum",
       "navigation": "footer",
       "title": "Impressum"
     },
     {
       "title": "Kontakt",
-      "referencedFile": "kontaktformular",
+      "reference": "kontaktformular",
       "navigation": "footer"
     },
     {
       "title": "Suche",
-      "referencedFile": "suche",
+      "reference": "suche",
       "navigation": "footer"
     },
     {
       "children": [
         {
-          "referencedFile": "blog_2019-jahreskonzert",
+          "reference": "blog_2019-jahreskonzert",
           "navigation": "none",
           "title": "Jahreskonzert 2019"
         },
         {
-          "referencedFile": "blog_2018-forsthof",
+          "reference": "blog_2018-forsthof",
           "navigation": "none",
           "title": "Forsthof Open-Air"
         },
         {
-          "referencedFile": "blog_2018-sauserfahrt",
+          "reference": "blog_2018-sauserfahrt",
           "navigation": "none",
           "title": "Sauserfahrt mit dem Chanderli 2018"
         },
         {
-          "referencedFile": "blog_2018-jahreskonzert",
+          "reference": "blog_2018-jahreskonzert",
           "navigation": "none",
           "title": "Jahreskonzert 2018"
         },
         {
-          "referencedFile": "blog_2017-sauserfahrt",
+          "reference": "blog_2017-sauserfahrt",
           "navigation": "none",
           "title": "Sauserfahrt mit dem Chanderli 2017"
         },
         {
-          "referencedFile": "blog_2017-1250-wollbach",
+          "reference": "blog_2017-1250-wollbach",
           "navigation": "none",
           "title": "1250 Jahre Wollbach"
         },
         {
-          "referencedFile": "blog_2017-doppelkonzert-huningue",
+          "reference": "blog_2017-doppelkonzert-huningue",
           "navigation": "none",
           "title": "Frühlingskonzert 2017"
         },
         {
-          "referencedFile": "blog_2017-jahreskonzert",
+          "reference": "blog_2017-jahreskonzert",
           "navigation": "none",
           "title": "Jahreskonzert 2017"
         },
         {
-          "referencedFile": "blog_2016-ballonwettbewerb",
+          "reference": "blog_2016-ballonwettbewerb",
           "navigation": "none",
           "title": "Ergebnisse des Ballonwettbewerbes"
         },
         {
-          "referencedFile": "blog_2016-adventskonzert",
+          "reference": "blog_2016-adventskonzert",
           "navigation": "none",
           "title": "Benefiz Advents Konzert"
         },
         {
-          "referencedFile": "blog_2016-adventskranz",
+          "reference": "blog_2016-adventskranz",
           "navigation": "none",
           "title": "Adventskranz Verkauf"
         },
         {
-          "referencedFile": "blog_2016-sauserfahrt",
+          "reference": "blog_2016-sauserfahrt",
           "navigation": "none",
           "title": "Sauserfahrt mit dem Chanderli 2016"
         },
         {
-          "referencedFile": "blog_2016-jugend-doppelkonzert",
+          "reference": "blog_2016-jugend-doppelkonzert",
           "navigation": "none",
           "title": "Konzert des Jugendorchesters"
         },
         {
-          "referencedFile": "blog_2016-marschmusikfestival",
+          "reference": "blog_2016-marschmusikfestival",
           "navigation": "none",
           "title": "Marschmusikfestival 2016"
         },
         {
-          "referencedFile": "blog_2016-kirchenkonzert",
+          "reference": "blog_2016-kirchenkonzert",
           "navigation": "none",
           "title": "Kirchenkonzert 2016"
         },
         {
-          "referencedFile": "blog_2016-still-feeling-good",
+          "reference": "blog_2016-still-feeling-good",
           "navigation": "none",
           "title": "Still Feelin' Good"
         },
         {
-          "referencedFile": "blog_2016-jahreskonzert",
+          "reference": "blog_2016-jahreskonzert",
           "navigation": "none",
           "title": "Jahreskonzert 2016"
         },
         {
-          "referencedFile": "blog_2015-sauserfahrt",
+          "reference": "blog_2015-sauserfahrt",
           "navigation": "none",
           "title": "Sauserfahrt mit dem Chanderli 2015"
         }
@@ -237,12 +237,12 @@
       "title": "Blog"
     },
     {
-      "referencedFile": "404",
+      "reference": "404",
       "navigation": "none",
       "title": "Seite nicht gefunden!"
     },
     {
-      "referencedFile": "401",
+      "reference": "401",
       "navigation": "none",
       "title": "Unautorisierter Zugriff!"
     }

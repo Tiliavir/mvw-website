@@ -6,8 +6,8 @@ doctype html
 html(amp lang="de")
   head
     meta(charset="utf-8")
-    title= `${(referencedFile === "index" ? "" : `${title} | `)}${environment.siteTitle}`
-    link(rel="canonical" href=`${environment.baseUrl}${referencedFile}.html`)
+    title= `${(reference === "index" ? "" : `${title} | `)}${environment.siteTitle}`
+    link(rel="canonical" href=`${environment.baseUrl}${reference}.html`)
     meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1")
     script(type="application/ld+json").
       {
@@ -15,7 +15,7 @@ html(amp lang="de")
         "@type": "NewsArticle",
         "mainEntityOfPage": {
           "@type":"WebPage",
-          "@id":"#{environment.baseUrl}#{referencedFile}.html"
+          "@id":"#{environment.baseUrl}#{reference}.html"
         },
         "headline": "#{title}",
         "keywords": "#{keywords}",
