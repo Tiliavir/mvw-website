@@ -15,10 +15,10 @@
   });
 
   gulp.task("beautify", function () {
-    return gulp.src([paths.src + "amp/*.html", paths.src + "*.html", paths.src + "gallery/*.json"])
+    return gulp.src([paths.src + "**/*.html", paths.src + "gallery/*.json"])
                .pipe($.jsbeautifier({
-                 indentSize: 2,
-                 mode: "VERIFY_AND_WRITE"
+                 indent_size: 2,
+                 operator_position: "after-newline"
                }))
                .pipe(gulp.dest(paths.beauty));
   });

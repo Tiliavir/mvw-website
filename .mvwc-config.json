@@ -143,6 +143,11 @@
     {
       "children": [
         {
+          "reference": "blog_2019-forsthof",
+          "navigation": "none",
+          "title": "Forsthof Open-Air 2019"
+        },
+        {
           "reference": "blog_2019-jahreskonzert",
           "navigation": "none",
           "title": "Jahreskonzert 2019"
@@ -150,7 +155,7 @@
         {
           "reference": "blog_2018-forsthof",
           "navigation": "none",
-          "title": "Forsthof Open-Air"
+          "title": "Forsthof Open-Air 2018"
         },
         {
           "reference": "blog_2018-sauserfahrt",
