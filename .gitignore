@@ -119,6 +119,7 @@ ClientBin/
 *.publishsettings
 node_modules/
 orleans.codegen.cs
+/php/includes/private.php
 
 # SQL Server files
 *.mdf
