@@ -36,8 +36,7 @@ Following snippet can be used to process all images in the current folder:
 ```powershell
 ls ./*.jpg | % {
   $name = $_.Name
-  gm convert $name -auto-orient -quality 70 -strip -resize '1200x
-  1200' "c_$name"
+  gm convert $name -auto-orient -quality 70 -strip -resize '1200x1200' "c_$name"
 }
 ```
 
