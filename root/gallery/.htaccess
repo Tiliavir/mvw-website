@@ -1,4 +1,0 @@
-AuthName "Bilder"
-AuthType Basic
-AuthUserFile /var/www/web112/html/gallery/.htpasswd
-require valid-user

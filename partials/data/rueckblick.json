@@ -1,6 +1,167 @@
 ﻿{
+  "2019": [
+    {
+      "keywords": ["Fastnachtsfeuer"],
+      "image": {
+        "src": "/img/news/2019_fastnachtsfeuer.jpg",
+        "title": "Fastnachtsfeuer 2019"
+      },
+      "content": "Wegen den Wetterbedingungen mussten wir unser diesjähriges Fansachtsfeuer verschieben. Jedoch konnten wir es dann am 16. März 2019 unter einem leuchtenden Sternenhimmel nachholen. Auch in diesem Jahr wurden kräftig Scheiben geschlagen. Als Stärkung gab es Grill- und Rostbratwürste sowie Berliner, Kuchen und natürlich Getränke.",
+      "title": "Fastnachtsfeuer",
+      "starttime": "2019-03-16"
+    },
+    {
+      "content": "Bei der diesjährigen Generalversammlung reflektierten wir noch einmal das vergangene Jahr mit all seinen Veranstaltungen und Ereignissen. Ebenso wurde ein Teil der Vorstandschaft wiedergewählt und für das kommende Jahr aufgestellt.",
+      "title": "Generalversammlung",
+      "image": {
+        "title": "Generalversammlung 2019",
+        "caption": "Die Vorstandschaft nach der Generalversammlung",
+        "src": "/img/news/2019_generalversammlung.jpg"
+      },
+      "keywords": ["Generalversammlung"],
+      "starttime": "2019-02-07"
+    },
+    {
+      "image": {
+        "src": "/img/jahreskonzerte/konzert_2019.jpg",
+        "title": "Der Musikverein vor dem Jahreskonzert 2019"
+      },
+      "keywords": ["Konzert", "Jahreskonzert"],
+      "title": "Jahreskonzert 'Space Odyssey'",
+      "starttime": "2019-01-25",
+      "endtime": "2019-01-26",
+      "content": "Am 25. & 26. Januar 2019 luden wir unter dem Motto „Space Odyssey – Eine musikalische Reise durchs Universum“ zu unseren diesjährigen Jahreskonzerten ein. Ein Abend rund um das Universum, die Planeten und die Sterne. Wir bedanken uns ganz herzlich bei all unseren Gästen sowie Herrn Wiederhold für spannende Einblicke in die Welt der Planeten."
+    },
+    {
+      "title": "Neujahrsempfang",
+      "starttime": "2019-01-06",
+      "keywords": ["Neujahrsempfang"]
+    }
+  ],
   "2018": [
     {
+      "keywords": ["Konzert"],
+      "title": "Lions Benefiz Adventskonzert",
+      "starttime": "2018-12-16",
+      "content": "Am 16.12. veranstaltete der Lions Club Lörrach zum 2. Mal mit uns das „Lions-Benefiz-Adventskonzert“ in der Kirche in Wollbach. So haben sich einige unterschiedliche Holz- und Blechensembles aus dem Aktivorchester zusammengefunden und ein abwechslungsreiches Programm geboten. Ebenso hat unser Jugendorchester mit 3 Stücken mitgewirkt."
+    },
+    {
+      "keywords": ["Jungend"],
+      "title": "Weihnachtsvorspiel",
+      "image": {
+        "src": "/img/news/2018_weihnachtsvorspiel.jpg",
+        "title": "Weihnachtsvorspiel 2018"
+      },
+      "starttime": "2018-12-09",
+      "content": "Unsere jüngsten Musikerinnen und Musiker konnten beim Weihnachtsvorspiel in der Kirche ihr neues Können unter Beweis stellen. Auch das Vorstufenorchester begeisterte mit seinen Beiträgen zum Abschluss des Abends."
+    },
+    {
+      "title": "Musik baut Brücken",
+      "content": "Durch den Vorschlag unseres Ortsvorsteher Max Sütterlin wurde die Arbeit des Musikverein Wollbach unter dem Motto „Musik baut Brücken“ von Landrätin Frau Damman in einer Feierstunde in Lörrach gewürdigt. Einige unserer Jungmusiker umrahmten diesen Anlass musikalisch. Ebenso wurde unser 2. Vorstand Thomas Kuckuk von Matthias Zeller zu einem Interview gebeten.",
+      "starttime": "2018-12-01"
+    },
+    {
+      "starttime": "2018-11-30",
+      "image": {
+        "src": "/img/news/2018_adventskranzverkauf.jpg",
+        "title": "Das Jugendorchester beim Adventskranzverkauf 2018"
+      },
+      "title": "Adventskranzverkauf",
+      "content": "Unsere Jungmusiker haben auch in diesem Jahr wieder fleißig Adventskränze gebunden und dekoriert. Diese konnten wir beim Adventskranzverkauf im schönen Forsthof verkaufen. Für das leibliche wohl war mit Raclette, Grillwürsten, Glühwein und Kinderpunsch gesorgt. Das Vorstufen- und Jugendorchester stimmte unsere Gäste mit Weihnachtsliedern auf die Weihnachtszeit ein."
+    },
+    {
+      "starttime": "2018-10-28",
+      "title": "Urkundenverleihung der Jungmusikerleistungsabzeichen",
+      "content": "Alle die im Jahr 2018 ein Jungmusiker Leistungsabzeichen absolviert haben, erhielten am 28.10. ihre Urkunde in Hauingen. Überreicht wurde diese durch den Präsidenten des Alemannischen Musikverbandes - Peter Hässler."
+    },
+    {
+      "title": "Jungmusikerleistungsabzeichen in Bronze",
+      "starttime": "2018-10-01",
+      "image": {
+        "src": "/img/jugend/jmla/2018_jmla_bronze.jpg",
+        "title": "JMLA Bronze 2018"
+      },
+      "content": "Jungmusiker Leistungsabzeichen in Bronze! Wir gratulieren folgenden 7 Jungmusikerinnen und Jungmusikern ganz herzlich: Henri, Ben, Anny, Hanna, Laurina, Emil und Alban."
+    },
+    {
+      "starttime": "2018-10-14",
+      "title": "Herbstfest",
+      "content": "Traditionell fand auch in diesem Jahr wieder unser Herbstfest am 14.10.2018 statt. Wie jedes Jahr eröffneten wir den Tag mit einem Festgottesdienst mit Pfarrer Werner Häffner. Dieser wurde musikalisch umrahmt durch den Gesangverein und Kirchenchor Wollbach sowie unser Vorstufen- und Aktivorchester. Anschließend wurden unsere Gäste musikalisch unterhalten von der Feuerwehrmusik Mambach, dem Jugendorchester des MV Wollbach 1866 e.V., dem Musikverein „Freundschaft“ Wies und dem Musikverein Schwörstadt. Auf der Speisekarte stand dieses Jahr neu die Schlachtplatte mit Blut- und Leberwurst, Kesselfleisch, Sauerkraut und Meerrettich. Für die jüngsten gab es eine Hüpfburg, Kinderschminken und eine Gummibärenschleuder. Vielen Dank an all unsere Besucher."
+    },
+    {
+      "keywords": ["Sauserbummel"],
+      "image": {
+        "src": "/img/news/2018_sauserbummel.jpg",
+        "title": "Sauserbummel 2018"
+      },
+      "starttime": "2018-10-13",
+      "title": "Sauserbummel",
+      "content": "Am 13. Oktober 2018 war es wieder soweit. Das Chanderli dampfte mit unseren 250 Gästen von Haltingen Richtung Hammerstein. Anschließend ging es bei strahlendem Sonnenschein durch die Weinberge mi 5 Weinstationen. An allen Stationen gab es unterschiedliche Weine von Weingütern aus der Region. Bei guter Stimmung konnten unsere Gäste den Abend mit unserer Dampfmusik ausklingen lassen. Fast pünktlich dampfte das Chanderli dann wieder zurück nach Haltingen."
+    },
+    {
+      "title": "Jungmusikerleistungsabzeichen in Silber",
+      "keywords": ["JMLA", "Jugend"],
+      "starttime": "2018-07-01",
+       "image": {
+         "src": "/img/jugend/jmla/2018_jmla_silber.jpg",
+         "title": ""
+       },
+      "content": "Jungmusiker Leistungsabzeichen in Silber! Zu diesem tolle Erfolg gratulieren wir ganz herzlich unserer Klarinettistin Karolin Grozinger."
+    },
+    {
+      "keywords": ["Konzert"],
+      "starttime": "2018-05-22",
+      "title": "Forsthof Open-Air",
+      "image": {
+        "src": "/img/news/2018_forsthof_openair.jpg",
+        "title": "Forsthof Open-Air 2018"
+      },
+      "content": "Am 22. Juni 2018 fand unsere Premiere des Forsthof Open Air statt. Bei ausverkauftem Forsthof und etwas Glück mit dem Wetter konnten wir unser Sommerprogramm darbieten. Mit dabei waren auch unsere Sängerinnen Anuschka Wagner, Christina De Groote, Damaris Arnold. Und Raija Kuckuk sowie unser Sänger Alex Gottstein. Kaltes Bier gab es vom Brauwerk in Tannenkirch und leckere Speisen der Engenmühle in Wintersweiler. Leckere Cocktails wurden an der Cocktailbar durch unsere Musikerfreunde aus Bannwil serviert."
+    },
+    {
+      "keywords": ["Jugend"],
+      "starttime": "2018-05-13",
+      "title": "Jugendkonzert",
+      "content": "Muttertag – der Tag für unser Jugendkonzert. So lud auch in diesem Jahr unser Vorstufen-und Jugendorchester zum gemeinsamen Konzert am Nachmittag ein. Unter der Leitung von Maria Krey zeigten unsere Jungmusiker ihr einstudiertes Konzertprogramm. Nach dem Konzert gab es noch Kaffee und Kuchen für alle."
+    },
+    {
+      "keywords": ["Marschmusikfestival"],
+      "starttime": "2018-05-05",
+      "image": {
+        "src": "/img/news/2018_marschmusik.jpg",
+        "title": "Marschmusik 2018"
+      },
+      "title": "Marschmusikfestival",
+      "content": "Bei Sonnenschein und strahlend blauem Himmel sind wir am 05. Mai 2018 mit unserer Marschmusik durch die Dörfer maschiert. Dieses Jahr waren wir zu Gast in Schallbach, Wollbach und Hammerstein. Unsere letzte Station war in Egisholz, wo wir beim Grillen den Abend ausklingen konnten."
+    },
+    {
+      "keywords": ["Konzert"],
+      "starttime": "2018-04-28",
+      "image": {
+        "src": "/img/news/2018_doppelkonzert_fahrnau.jpg",
+        "title": "Doppelkonzert mit dem Musikverein Fahrnau"
+      },
+      "title": "Dopelkonzert mit dem Musikverein Fahrnau",
+      "content": "Ein weiteres tolles Doppelkonzert durften wir am 28.04.2018 in der Sadthalle in Schopfheim erleben. Dieses Mal waren wir zu Gast beim Musikverein Fahrnau. Auch beim Musikverein Fahrnau bedanken wir uns ganz herzlich für einen wundervollen Konzertabend."
+    },
+    {
+      "starttime": "2018-04-21",
+      "title": "Gewerbetage Binzen",
+      "endtime": "2018-04-22",
+      "content": "Auch im Jahr 2018 haben wir wieder bei den Gewerbetagen in Binzen mitgewirkt. So hatten wir am 21. Und 22. April 2018 auf dem Gelände des Autohaus Gottstein einen Stand mit Grillwürsten, Gyros mit Pommes Chips, Currywurst und kühlen Getränken."
+    },
+    {
+      "keywords": ["Konzert"],
+      "starttime": "2018-04-14",
+      "title": "Doppelkonzert mit dem Musikverein Schwörstadt",
+      "image": {
+        "src": "/img/news/2018_doppelkonzert_schwoerstadt.jpg",
+        "title": "Doppelkonzert mit dem Musikverein Schwörstadt"
+      },
+      "content": "Am 14. April 2018 hatten wir ein gemeinsames Doppelkonzert mit dem Musikverein Schwörstadt. Für uns war dies ein gelungener Abend und wir bedanken uns bei den Musikerinnen und Musikern aus Schwörstadt für ihre Gastfreundschaft."
+    },
+    {
+      "keywords": ["Fastnachtsfeuer"],
       "starttime": "2018-02-18",
       "title": "Scheibenfeuer",
       "content": "Das Scheibenfeuer war auch in diesem Jahr ein schöner Anlass bei bestem Wetter."
@@ -115,6 +276,7 @@
       "keywords": ["Konzert"]
     },
     {
+      "keywords": ["Fastnachtsfeuer"],
       "starttime": "2017-03-05",
       "title": "Scheibenfeuer",
       "content": "Das Scheibenfeuer war auch in diesem Jahr allen Wetterkapriolen zum Trotz ein schöner Anlass."
@@ -225,6 +387,7 @@
       "keywords": ["Konzert", "Kirchenkonzert"]
     },
     {
+      "keywords": ["Fastnachtsfeuer"],
       "starttime": "2016-02-14",
       "title": "Scheibenfeuer",
       "content": "Trotz des durchwachsenen Wetters war das Scheibenfeuer auch in diesem Jahr wieder ein schöner Anlass."
@@ -295,6 +458,7 @@
       "keywords": ["Jugend"]
     },
     {
+      "keywords": ["Fastnachtsfeuer"],
       "starttime": "2015-02-22",
       "title": "Scheibenfeuer",
       "content": "Zum Scheibenschlagen haben wir am 22.02. zum Fastnachtsfeuer eingeladen. Auch in diesem Jahr wieder ein schöner Anlass."
@@ -352,6 +516,7 @@
       "title": "Gewerbetage Binzen"
     },
     {
+      "keywords": ["Fastnachtsfeuer"],
       "starttime": "2014-03-09",
       "title": "Fastnachtsfeuer"
     },
@@ -383,7 +548,8 @@
     },
     {
       "starttime": "2013-10-19",
-      "title": "Sauserexpress mit dem Chanderli"
+      "title": "Sauserexpress mit dem Chanderli",
+      "keywords": ["Sauserbummel"]
     },
     {
       "starttime": "2013-06-09",
@@ -577,6 +743,7 @@
       "keywords": ["Jahreskonzert", "Konzert"]
     },
     {
+      "keywords": ["Fastnachtsfeuer"],
       "starttime": "2010-02-21",
       "title": "Fastnachtsfeuer am Rebhüsli",
       "content": "Bei wunderschönem Wetter konnten am Rebhüsli die glühenen Scheiben ins Tal geschlagen werden. Für die Bewirtung war mit Glühwein, Punsch, Grillwürsten, Kaffee und Kuchen durch den Förderverein des Musikverein ebenfalls bestens gesorgt."
@@ -649,6 +816,7 @@
       "keywords": ["Konzert", "Kirchenkonzert"]
     },
     {
+      "keywords": ["Fastnachtsfeuer"],
       "starttime": "2009-03-01",
       "title": "Fastnachtsfeuer 2009",
       "content": "Bei gutem Wetter konnte das Scheibenfeuer am Rebhüsli ausgerichtet werden und die vielen Besucherinnen und Besucher konnten es sich bei Glühwein, Schorle, Würsten, Kaffee und Kuchen gut gehen lassen."
