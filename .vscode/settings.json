@@ -4,17 +4,18 @@
   "editor.tabSize": 2,
 
   "files.exclude": {
+    "_prod": true,
+    ".vscode": true,
     "**/*.js": {
-      "when": "$(basename).ts"
+        "when": "$(basename).ts"
     },
     "**/*.js.map": true,
-    "build": true,
-    ".vscode": true,
-    "node_modules": true,
     "*/footernavigation.pug": true,
     "*/site-overview.pug": true,
-    "*/topnavigation.pug": true
-  },
+    "*/topnavigation.pug": true,
+    "build": true,
+    "node_modules": true
+},
   "typescript.tsdk": "./node_modules/typescript/lib",
   "json.schemas": [
     {
