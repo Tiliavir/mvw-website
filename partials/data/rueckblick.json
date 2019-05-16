@@ -1,6 +1,16 @@
 ﻿{
   "2019": [
     {
+      "keywords": ["Jugend"],
+      "image": {
+        "src": "/img/news/2019_muttertagskonzert.jpg",
+        "title": "Muttertagskonzert 2019"
+      },
+      "content": "Dieses Jahr stand das Muttertagskonzert des Vorstufen- und Jugendorchester unter dem Motto „Zirkus“. So zeigten unsere jüngsten Musikerinnen und Musiker gleich mehrere Talente. Nicht nur auf ihrem Instrument, sondern auch auf dem Einrad, dem Rola Bola, beim jonglieren oder turnen, mit dem Diabolo, den Kiwidos oder Hula Hoop Reifen überzeugten die Jungmusiker das große Publikum. Nach dem Konzert konnten sich alle an dem vielseitigen Kuchenbuffet bedienen.",
+      "title": "Muttertagskonzert des Vorstufen- und Jugendorchesters",
+      "starttime": "2019-05-12"
+    },
+    {
       "keywords": ["Fastnachtsfeuer"],
       "image": {
         "src": "/img/news/2019_fastnachtsfeuer.jpg",
