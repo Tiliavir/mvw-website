@@ -247,6 +247,11 @@
       "title": "Blog"
     },
     {
+      "reference": "gooding",
+      "navigation": "none",
+      "title": "Gooding"
+    },
+    {
       "reference": "404",
       "navigation": "none",
       "title": "Seite nicht gefunden!"
