@@ -143,11 +143,6 @@
     {
       "children": [
         {
-          "reference": "blog_2019-gooding",
-          "navigation": "none",
-          "title": "Gooding"
-        },
-        {
           "reference": "blog_2019-sauserfahrt",
           "navigation": "none",
           "title": "Sauserfahrt mit dem Chanderli 2019"
@@ -250,6 +245,11 @@
       ],
       "navigation": "none",
       "title": "Blog"
+    },
+    {
+      "reference": "gooding",
+      "navigation": "none",
+      "title": "Gooding"
     },
     {
       "reference": "404",

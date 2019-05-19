@@ -3,5 +3,9 @@ mixin tile(file, image, title, text)
     a.unstyled.image-container(href=`${file}.html` style=`background-image:url(${image});`)
       .blur
         .tile-content
-          h3.title= title
-          .text= text
+          if title
+            h3.title= title
+          if block
+            block
+          else
+            .text= text
