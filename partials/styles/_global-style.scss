@@ -222,6 +222,10 @@ small,
   z-index: 2000;
 }
 
+iframe {
+  border: 0;
+}
+
 .video {
   position: relative;
   padding-bottom: percentage(9 / 16);

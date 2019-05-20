@@ -2,7 +2,7 @@
   "environment": "prod",
   "environments": {
     "base": {
-      "siteTitle": "Musikverein Wollbach 1866 e.V."
+      "siteTitle": "Musikverein Wollbach"
     },
     "prod": {
       "key": "prod",
