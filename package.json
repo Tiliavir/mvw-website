@@ -1,6 +1,6 @@
 {
         "name": "mvw-website",
-        "version": "19.04.22",
+        "version": "19.06.02",
         "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
         "author": "Markus Lindenmann <tiliavir@gmail.com>",
         "repository": {
