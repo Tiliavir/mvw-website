@@ -1,19 +1,6 @@
 {
   "2019": [
     {
-      "starttime": "2019-08-01T05:30:00Z",
-      "endtime": "2019-08-04",
-      "title": "Konzertreise Dresden - Prag"
-    },
-    {
-      "starttime": "2019-08-08T19:30:00Z",
-      "title": "Bilderpräsentation der Konzertreise",
-      "location": {
-        "address": "Wollbach",
-        "name": "Kandertalhalle"
-      }
-    },
-    {
       "location": {
         "address": "Binzen"
       },
@@ -99,6 +86,7 @@
         "name": "Forsthof"
       },
       "starttime": "2020-06-12T20:00:00Z",
+      "endtime": "2020-06-13",
       "title": "Forsthof Open-Air"
     },
     {
