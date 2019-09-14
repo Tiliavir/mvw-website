@@ -1,6 +1,6 @@
 {
         "name": "mvw-website",
-        "version": "19.06.10",
+        "version": "19.09.14",
         "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
         "author": "Markus Lindenmann <tiliavir@gmail.com>",
         "repository": {
@@ -15,17 +15,17 @@
         ],
         "devDependencies": {
                 "@types/photoswipe": "4.0.29",
-                "@types/jquery": "3.3.29",
+                "@types/jquery": "3.3.31",
                 "@types/grecaptcha": "2.0.36",
                 "@types/lunr": "2.3.2",
-                "autoprefixer": "9.5.1",
-                "copyfiles": "2.1.0",
+                "autoprefixer": "9.6.1",
+                "copyfiles": "2.1.1",
                 "node-sass": "4.12.0",
-                "postcss-cli": "6.1.2",
-                "lite-server": "2.4.0",
+                "postcss-cli": "6.1.3",
+                "lite-server": "2.5.4",
                 "sass-lint": "1.13.1",
-                "tslint": "5.16.0",
-                "typescript": "3.4.5"
+                "tslint": "5.20.0",
+                "typescript": "3.6.3"
         },
         "dependencies": {
                 "jquery": "3.4.1",
