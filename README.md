@@ -1,7 +1,5 @@
 # Website: Musikverein Wollbach
 
-[![Build Status](https://travis-ci.com/Tiliavir/mvw-website.svg?branch=master)](https://travis-ci.com/tiliavir/mvw-website)
-
 ## Prerequisites
 
 ```powershell
