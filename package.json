@@ -16,7 +16,7 @@
         "devDependencies": {
                 "@types/photoswipe": "4.0.29",
                 "@types/jquery": "3.3.31",
-                "@types/grecaptcha": "2.0.36",
+                "@types/grecaptcha": "3.0.0",
                 "@types/lunr": "2.3.2",
                 "autoprefixer": "9.6.1",
                 "copyfiles": "2.1.1",
