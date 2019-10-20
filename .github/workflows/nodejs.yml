@@ -22,5 +22,11 @@ jobs:
         npm ci
         npm run release
         npm test
+        git diff > release.diff
+    - name: Copy Diff
+      uses: actions/upload-artifact@master
+      with:
+        name: release.diff
+        path: release.diff
       env:
         CI: true

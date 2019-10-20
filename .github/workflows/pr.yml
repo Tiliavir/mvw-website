@@ -22,18 +22,5 @@ jobs:
         npm ci
         npm run release
         npm test
-      env:
-        CI: true
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v1.5.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        COMMIT_MESSAGE: Release Build
-        COMMIT_AUTHOR_EMAIL: tiliavir@gmail.com
-        COMMIT_AUTHOR_NAME: Markus Lindenmann
-        PULL_REQUEST_TITLE: Release Build
-        PULL_REQUEST_BODY: This is an auto-generated PR with release build changes.
-        PULL_REQUEST_LABELS: release
-        PULL_REQUEST_REVIEWERS: tiliavir
-        PULL_REQUEST_BRANCH: ${{ steps.vars.outputs.branch-name }}
-        BRANCH_SUFFIX: none
+        git commit -am "Release Build changes"
+        git push
