@@ -4,12 +4,11 @@ on: pull_request
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v1
@@ -17,23 +16,19 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm ci, build, and test
+    - name: npm ci, build, test and validate
       run: |
         npm ci
         npm run release
         npm test
-      env:
-        CI: true
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v1.5.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        COMMIT_MESSAGE: Release Build
-        COMMIT_AUTHOR_EMAIL: tiliavir@gmail.com
-        COMMIT_AUTHOR_NAME: Markus Lindenmann
-        PULL_REQUEST_TITLE: Release Build
-        PULL_REQUEST_BODY: This is an auto-generated PR with release build changes.
-        PULL_REQUEST_LABELS: release
-        PULL_REQUEST_REVIEWERS: tiliavir
-        PULL_REQUEST_BRANCH: ${{ steps.vars.outputs.branch-name }}
-        BRANCH_SUFFIX: none
+        cd ./_prod
+        npm ci
+        npm run validate
+    - name: commit
+      run: |
+        git config user.email "markus.lindenmann@gmail.com"
+        git config user.name "Markus Lindenmann"
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
+        git checkout $GITHUB_HEAD_REF
+        git commit -am "Release Build changes"
+        git push
