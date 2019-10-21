@@ -2080,7 +2080,7 @@
         var t = new V.Builder;
         return t.pipeline.add(V.trimmer, V.stopWordFilter, V.stemmer), t.searchPipeline.add(V.stemmer), e.call(t, t), t.build()
       };
-      V.version = "2.3.6", V.utils = {}, V.utils.warn = (t = this, function(e) {
+      V.version = "2.3.7", V.utils = {}, V.utils.warn = (t = this, function(e) {
         t.console && console.warn && console.warn(e)
       }), V.utils.asString = function(e) {
         return null == e ? "" : e.toString()
@@ -2165,7 +2165,7 @@
         if (Array.isArray(e)) return e.map(function(e) {
           return new V.Token(V.utils.asString(e).toLowerCase(), V.utils.clone(t))
         });
-        for (var r = e.toString().trim().toLowerCase(), i = r.length, n = [], s = 0, o = 0; s <= i; s++) {
+        for (var r = e.toString().toLowerCase(), i = r.length, n = [], s = 0, o = 0; s <= i; s++) {
           var a = s - o;
           if (r.charAt(s).match(V.tokenizer.separator) || s == i) {
             if (0 < a) {
