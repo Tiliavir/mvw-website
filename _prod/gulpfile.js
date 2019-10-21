@@ -5,7 +5,7 @@
         $ = require("gulp-load-plugins")();
 
   const paths = {
-    src: "./artifacts/",
+    src: "../build/",
     beauty: "./beautified/"
   };
 
