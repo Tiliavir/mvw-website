@@ -2,28 +2,6 @@
   "2019": [
     {
       "location": {
-        "address": "Binzen"
-      },
-      "starttime": "2019-09-15T17:00:00Z",
-      "endtime": "2019-09-15T19:00:00Z",
-      "title": "150 Jahre MV Binzen"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2019-10-12",
-      "title": "Sauserbummel"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2019-10-13",
-      "title": "Herbstfest"
-    },
-    {
-      "location": {
         "address": "Wollbach"
       },
       "starttime": "2019-11-29",

@@ -25,7 +25,7 @@ html(lang="de")
       meta(name="keywords" content=keywords)
 
     meta(property="og:type" content="website")
-    meta(property="og:image" content=path.join(environment.baseUrl, "img/logo_color.png"))
+    meta(property="og:image" content=environment.baseUrl + "img/logo_color.png")
     meta(property="og:locale" content="de_DE")
     meta(property="og:site_name" content=environment.siteTitle)
     meta(property="fb:admins" content="100000073380067")/
@@ -35,7 +35,7 @@ html(lang="de")
       block pageStyles
 
     if hasAmp
-      link(rel="amphtml" href=path.join(environment.baseUrl,"amp", `${reference}.html`))
+      link(rel="amphtml" href=environment.baseUrl + `amp/${reference}.html`)
 
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin-ext")
 
