@@ -21,6 +21,7 @@ jobs:
           cd ./_prod
           npm ci
           npm run validate
+          cd ..
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1.5.2
         env:
