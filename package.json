@@ -18,9 +18,9 @@
                 "@types/jquery": "3.3.31",
                 "@types/grecaptcha": "3.0.0",
                 "@types/lunr": "2.3.2",
-                "autoprefixer": "9.6.5",
+                "autoprefixer": "9.7.0",
                 "copyfiles": "2.1.1",
-                "node-sass": "4.12.0",
+                "node-sass": "4.13.0",
                 "postcss-cli": "6.1.3",
                 "lite-server": "2.5.4",
                 "sass-lint": "1.13.1",
@@ -29,7 +29,7 @@
         },
         "dependencies": {
                 "jquery": "3.4.1",
-                "lunr": "2.3.7",
+                "lunr": "2.3.8",
                 "mvw-creator": "1.3.6",
                 "mvw-gallery": "1.0.18",
                 "photoswipe": "4.1.3"
