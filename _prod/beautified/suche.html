@@ -2080,7 +2080,7 @@
         var t = new V.Builder;
         return t.pipeline.add(V.trimmer, V.stopWordFilter, V.stemmer), t.searchPipeline.add(V.stemmer), e.call(t, t), t.build()
       };
-      V.version = "2.3.7", V.utils = {}, V.utils.warn = (t = this, function(e) {
+      V.version = "2.3.8", V.utils = {}, V.utils.warn = (t = this, function(e) {
         t.console && console.warn && console.warn(e)
       }), V.utils.asString = function(e) {
         return null == e ? "" : e.toString()
@@ -2209,7 +2209,7 @@
         for (var t = this._stack.length, r = 0; r < t; r++) {
           for (var i = this._stack[r], n = [], s = 0; s < e.length; s++) {
             var o = i(e[s], s, e);
-            if (void 0 !== o && "" !== o)
+            if (null != o && "" !== o)
               if (Array.isArray(o))
                 for (var a = 0; a < o.length; a++) n.push(o[a]);
               else n.push(o)
