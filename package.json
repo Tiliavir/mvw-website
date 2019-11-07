@@ -18,7 +18,7 @@
                 "@types/jquery": "3.3.31",
                 "@types/grecaptcha": "3.0.0",
                 "@types/lunr": "2.3.2",
-                "autoprefixer": "9.7.0",
+                "autoprefixer": "9.7.1",
                 "copyfiles": "2.1.1",
                 "node-sass": "4.13.0",
                 "postcss-cli": "6.1.3",
