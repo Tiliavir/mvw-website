@@ -9,6 +9,15 @@
     },
     {
       "location": {
+        "address": "Wollbach",
+        "name": "Kandertalhalle"
+      },
+      "starttime": "2019-12-01T10:00:00Z",
+      "endtime": "2019-12-01T12:00:00Z",
+      "title": "Wartburgfest"
+    },
+    {
+      "location": {
         "address": "Wollbach"
       },
       "starttime": "2019-12-07",
@@ -61,6 +70,38 @@
     {
       "location": {
         "address": "Wollbach",
+        "name": "Buchhole beim Rebhüsli / Baselblick"
+      },
+      "description": "Bei Einbruch der Dunkelheit wird wieder das große Feuer entzündet. Für euer Wohl ist mit Grillwürsten, Glühwein, Punsch, sonstigen Getränken, sowie Kaffee und Kuchen wieder bestens gesorgt.<br/>Ebenfalls ist für Holz an den Feuerstellen gesorgt und die Scheibenböcke sind gestellt.",
+      "starttime": "2020-03-07",
+      "title": "Fastnachtsfeuer"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kandertalhalle"
+      },
+      "starttime": "2020-05-10",
+      "title": "Muttertagskonzert des Jugendorchesters"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2020-05-16",
+      "title": "Marschmusik gemeinsam mit der MG Bannwil"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kandertalhalle"
+      },
+      "starttime": "2020-05-29",
+      "title": "Jugendvorspiel"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
         "name": "Forsthof"
       },
       "starttime": "2020-06-12T20:00:00Z",
@@ -73,6 +114,14 @@
       },
       "starttime": "2020-07-06",
       "title": "Auftritt am Rheinfest"
+    },
+    {
+      "location": {
+        "address": "Wollbach",
+        "name": "Kandertalhalle"
+      },
+      "starttime": "2020-07-18",
+      "title": "Instrumentenvorstellung"
     },
     {
       "location": {
