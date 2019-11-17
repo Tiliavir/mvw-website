@@ -120,6 +120,7 @@ ClientBin/
 node_modules/
 orleans.codegen.cs
 /php/includes/private.php
+.idea
 
 # SQL Server files
 *.mdf
