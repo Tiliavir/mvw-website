@@ -143,6 +143,11 @@
     {
       "children": [
         {
+          "reference": "blog_2020-jahreskonzert",
+          "navigation": "none",
+          "title": "Jahreskonzert 2020"
+        },
+        {
           "reference": "blog_2019-sauserfahrt",
           "navigation": "none",
           "title": "Sauserfahrt mit dem Chanderli 2019"
