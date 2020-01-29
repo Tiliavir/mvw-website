@@ -10,6 +10,7 @@ RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
 # X-Frame-Options to avoid Clickjacking
 Header always append X-Frame-Options SAMEORIGIN
+Header set Referrer-Policy "no-referrer"
 
 # CharSet
 AddDefaultCharset UTF-8
