@@ -143,6 +143,11 @@
     {
       "children": [
         {
+          "reference": "blog_2020-forsthof",
+          "navigation": "none",
+          "title": "Forsthof Open-Air 2020"
+        },
+        {
           "reference": "blog_2020-jahreskonzert",
           "navigation": "none",
           "title": "Jahreskonzert 2020"
