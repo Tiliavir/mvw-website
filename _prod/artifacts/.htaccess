@@ -8,9 +8,6 @@ RewriteRule .* - [F]
 RewriteCond %{HTTP_HOST} !^www\.
 RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
-# X-Frame-Options to avoid Clickjacking
-Header always append X-Frame-Options SAMEORIGIN
-
 # CharSet
 AddDefaultCharset UTF-8
 DefaultLanguage de-DE
@@ -64,6 +61,19 @@ AddType 'image/svg+xml; charset=UTF8' svg svgz
 
 <ifModule mod_headers.c>
   Header set Connection keep-alive
+
+  # X-Frame-Options to avoid Clickjacking
+  Header always append X-Frame-Options SAMEORIGIN
+
+  Header set Referrer-Policy "no-referrer"
+
+  Header set Content-Security-Policy "default-src 'self' https://www.mv-wollbach.de; script-src 'self' 'unsafe-inline' s3.amazonaws.com www.google.com www.gstatic.com; object-src 'none'; style-src 'self' 'unsafe-inline' fonts.googleapis.com cdn-images.mailchimp.com gooding.s3.amazonaws.com; img-src 'self' gooding.s3.amazonaws.com www.google.com www.w3basis.de jigsaw.w3.org; media-src youtube.com youtube.de; frame-src erweiterungen.gooding.de www.youtube.com www.google.com; font-src 'self' fonts.gstatic.com; connect-src 'none'"
+  Header set X-Content-Security-Policy "default-src 'self' https://www.mv-wollbach.de; script-src 'self' 'unsafe-inline' s3.amazonaws.com www.google.com www.gstatic.com; object-src 'none'; style-src 'self' 'unsafe-inline' fonts.googleapis.com cdn-images.mailchimp.com gooding.s3.amazonaws.com; img-src 'self' gooding.s3.amazonaws.com www.google.com www.w3basis.de jigsaw.w3.org; media-src youtube.com youtube.de; frame-src erweiterungen.gooding.de www.youtube.com www.google.com; font-src 'self' fonts.gstatic.com; connect-src 'none'"
+  Header set X-WebKit-CSP "default-src 'self' https://www.mv-wollbach.de; script-src 'self' 'unsafe-inline' s3.amazonaws.com www.google.com www.gstatic.com; object-src 'none'; style-src 'self' 'unsafe-inline' fonts.googleapis.com cdn-images.mailchimp.com gooding.s3.amazonaws.com; img-src 'self' gooding.s3.amazonaws.com www.google.com www.w3basis.de jigsaw.w3.org; media-src youtube.com youtube.de; frame-src erweiterungen.gooding.de www.youtube.com www.google.com; font-src 'self' fonts.gstatic.com; connect-src 'none'"
+
+  Header always set X-Content-Type-Options "nosniff"
+
+  Header always set Feature-Policy "fullscreen 'self'"
 </ifModule>
 
 # Error Pages
