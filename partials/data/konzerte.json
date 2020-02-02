@@ -1114,5 +1114,80 @@
         ]
       }
     ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2020-01-31", "2019-02-01"]
+    },
+    "title": "BTHVN",
+    "subtitle": "250 Jahre Ludwig van Beethoven",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Overtüre zu 'Fidelio'",
+            "arrangers": ["Simon Scheiwiller"],
+            "subtitle": "op. 72",
+            "composers": ["Ludwig van Beethoven"]
+          },
+          {
+            "title": "Klavierkonzert Nr. 3",
+            "subtitle": "op. 37 C-moll",
+            "composers": ["Ludwig van Beethoven"],
+            "arrangers": ["Bilgin Bayrak"],
+            "soloists": [{
+              "part": "Klavier",
+              "name": "Paulina Maślanka"
+            }],
+            "parts": [
+              {
+                "title": "Allegro con brio"
+              },
+              {
+                "title": "Largo"
+              },
+              {
+                "title": "Rondo - Allegro"
+              }
+            ]
+          },
+          {
+            "title": "Overtüre zu 'Egmont'",
+            "subtitle": "op. 84",
+            "composers": ["Ludwig van Beethoven"],
+            "arrangers": ["Douglas McLain"]
+          },
+          {
+            "title": "Wellingtons Sieg",
+            "subtitle": "op. 91",
+            "composers": ["Ludwig van Beethoven"],
+            "arrangers": ["Carlo Balmelli"],
+            "parts": [
+              {
+                "title": "Erste Abteilung: Schlacht"
+              },
+              {
+                "title": "Zweite Abteilung: Sieges-Sinfonie"
+              }
+            ]
+          },
+          {
+            "title": "Türkischer Marsch",
+            "subtitle": "aus 'Die Ruinen von Athen', op. 113",
+            "composers": ["Ludwig van Beethoven"],
+            "arrangers": ["Marco Tamanini"]
+          },
+          {
+            "title": "Beethovens Gruß",
+            "subtitle": "Fantasy on the canon \"Freu' dich des Lebens\"",
+            "composers": ["Philip Sparke"]
+          }
+        ]
+      }
+    ]
   }
 ]
