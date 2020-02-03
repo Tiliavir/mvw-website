@@ -1,4 +1,24 @@
 {
+  "2020": [
+    {
+      "title": "Die Wollbacher Hommage an ein 250 Jahre altes Genie",
+      "date": "2020-02-02",
+      "hasDescription": true,
+      "hasPicture": true,
+      "srcTitle": "BZ",
+      "srcUrl": "https://www.badische-zeitung.de/",
+      "url": "https://www.badische-zeitung.de/die-wollbacher-hommage-an-ein-250-jahre-altes-genie"
+    },
+    {
+      "title": "Musikgenuss auf höchstem Niveau",
+      "date": "2020-02-02",
+      "hasDescription": true,
+      "hasPicture": true,
+      "srcTitle": "VHJ",
+      "srcUrl": "https://www.verlagshaus-jaumann.de/",
+      "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-musikgenuss-auf-hoechstem-niveau.4cd028eb-3a81-4cf1-b265-ac021585e513.html"
+    }
+  ],
   "2019": [
     {
       "title": "Musikverein auf Tournee im Osten - Wollbacher Musiker gastierten in Freiberg, Dresden und Prag – ein Reisebericht.",
