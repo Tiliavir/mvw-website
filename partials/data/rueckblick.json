@@ -1,4 +1,16 @@
 ﻿{
+  "2020": [
+    {
+      "image": {
+        "src": "/img/jahreskonzerte/konzert_2020.jpg",
+        "title": "Der Musikverein vor dem Jahreskonzert 2020"
+      },
+      "keywords": ["Konzert", "Jahreskonzert"],
+      "title": "Jahreskonzert 'BTHVN' - 250 Jahre Beethoven",
+      "starttime": "2020-01-31",
+      "endtime": "2020-02-01"
+    }
+  ],
   "2019": [
     {
       "keywords": ["Jugend"],
