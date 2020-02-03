@@ -1,7 +1,7 @@
 {
   "name": "mvw-website",
   "license": "MIT",
-  "version": "20.01.19",
+  "version": "20.02.03",
   "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
   "author": "Markus Lindenmann <tiliavir@gmail.com>",
   "repository": {
