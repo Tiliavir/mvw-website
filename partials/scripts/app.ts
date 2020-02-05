@@ -47,12 +47,12 @@ class App {
         }
       });
 
-      $popup.find(".close").click(() => {
+      $popup.find(".close").on("click", () => {
         sessionStorage.setItem("mvw-popup", "dont-show");
         $popup.remove();
       });
 
-      $popup.find(".dont-show").click(() => {
+      $popup.find(".dont-show").on("click", () => {
         localStorage.setItem("mvw-popup", "dont-show");
         $popup.remove();
       });

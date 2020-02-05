@@ -35,7 +35,6 @@ class Index {
       resetInterval();
     }
 
-    $(".slider-item:last-child").prependTo(".slider-items");
     $(".slider-control.left").click(() => moveLeft());
     $(".slider-control.right").click(() => moveRight());
     resetInterval();
