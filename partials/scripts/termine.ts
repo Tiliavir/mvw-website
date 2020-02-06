@@ -13,6 +13,12 @@ class Appointments {
         $e.closest("tr").css("display", "none");
       }
     });
+
+    $("main h2").each((i, e) => {
+      if ($(e).next("table").first().height() === 0) {
+        $(e).hide();
+      }
+    });
   }
 
   private static addDays(date: Date, days: number): Date {

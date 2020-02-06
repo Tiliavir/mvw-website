@@ -1,37 +1,4 @@
 {
-  "2019": [
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2019-11-29",
-      "title": "Adventskranzverkauf"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Kandertalhalle"
-      },
-      "starttime": "2019-12-01T10:00:00Z",
-      "endtime": "2019-12-01T12:00:00Z",
-      "title": "Wartburgfest"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2019-12-07",
-      "title": "Weihnachtsfeier"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Kirche"
-      },
-      "starttime": "2019-12-15T17:00:00Z",
-      "title": "Jugendvorspiel"
-    }
-  ],
   "2020": [
     {
       "location": {
