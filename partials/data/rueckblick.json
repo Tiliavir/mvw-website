@@ -13,6 +13,49 @@
   ],
   "2019": [
     {
+      "keywords": ["JMLA", "Jugend"],
+      "title": "Jungmusikerleistungsabzeichen in Bronze",
+      "starttime": "2019-10-19",
+      "content": "Die diesjährige Bronzeprüfung fand in Degerfelden statt. Mit Priska Offenwanger, Yannik Brunner, Benjamin Hamm, Vincent Ernst und Mattis Riesterer besuchten und absolvierten fünf Musikerinnen und Musiker aus Wollbach die Prüfung. Allen gratulieren wir herzlich zu diesem Erfolg und wünschen weiterhin viel Freude an der Musik."
+    },
+    {
+      "starttime": "2019-10-13",
+      "title": "Herbstfest",
+      "content": "Traditionell fand auch in diesem Jahr wieder unser Herbstfest am 13.10.2019 statt. Wie jedes Jahr eröffneten wir den Tag mit einem Festgottesdienst mit Pfarrer Werner Häffner. Dieser wurde musikalisch umrahmt durch den Gesangverein und Kirchenchor Wollbach sowie unser Vorstufen- und Aktivorchester. Anschließend wurden unsere Gäste musikalisch unterhalten von der Feuerwehrmusik Mambach, dem Jugendorchester des MV Wollbach 1866 e.V., dem Musikverein „Freundschaft“ Wies und dem Musikverein Schwörstadt. Auf der Speisekarte stand dieses Jahr neu die Schlachtplatte mit Blut- und Leberwurst, Kesselfleisch, Sauerkraut und Meerrettich. Für die jüngsten gab es eine Hüpfburg, Kinderschminken und eine Gummibärenschleuder. Vielen Dank an all unsere Besucher."
+    },
+    {
+      "keywords": ["Sauserbummel"],
+      "starttime": "2019-10-12",
+      "title": "Sauserbummel",
+      "content": "Am 12. Oktober 2019 war es wieder soweit. Das Chanderli dampfte mit unseren 250 Gästen von Haltingen Richtung Hammerstein. Anschließend ging es bei strahlendem Sonnenschein durch die Weinberge mi 5 Weinstationen. An allen Stationen gab es unterschiedliche Weine von Weingütern aus der Region. Bei guter Stimmung konnten unsere Gäste den Abend mit unserer Dampfmusik ausklingen lassen. Fast pünktlich dampfte das Chanderli dann wieder zurück nach Haltingen."
+    },
+    {
+      "keywords": ["Konzert"],
+      "starttime": "2019-09-15",
+      "title": "Sommerabschlusskonzert beim Jubiläumsfest des Musikverein Binzen",
+      "content": "Bei wunderbarem Wetter konnten wir gegen Abend nocheinmal ein schönes Konzert unter freiem Himmel geben, bevor wir in unsere Sommerpause gingen. Auch all unsere Sängerinnen und Sänger waren nochmals dabei."
+    },
+    {
+      "keywords": ["Konzert"],
+      "starttime": "2019-08-01",
+      "starttime": "2019-08-04",
+      "title": "Konzertreise: Freiburg - Dresden - Prag",
+      "content": "Am Donnerstag früh fuhren wir mit zwei vollen Bussen Richtng Freiberg wo wir gleich am Donnerstag Abend bei sommerlicher Atmosphäre unser erstes Konzert gaben. Am Freitag verbrachten wir unseren Tag in Dresden und durften am Nachmittag vor der Frauenkirche unser zweites Konzert geben. Glücklicherweise haben sehr viele Zuhörer angehalten und un über längere Zeit zugehört. Weiter ging es am nächsten Tag nach Prag, wo wir wetterbedingt leider das dritte Konzert absagen mussten. Trotzdem war es ein gelungener Tag in der schönen Stadt Prag. Am Sonntag fuhren wir wieder Richtung Wollbach - wobei wir einen Stopp in Bayreuth einlegten um uns das prachtvolle Festspielhaus anzuschauen."
+    },
+    {
+      "keywords": ["JMLA", "Jugend"],
+      "title": "Jungmusikerleistungsabzeichen in Silber",
+      "starttime": "2019-07-26",
+      "starttime": "2019-07-28",
+      "content": "Wir gratulieren Lilly Müller zum Jungmusiker Leistungsabzeichen in Silber!"
+    },
+    {
+      "keywords": ["Konzert"],
+      "starttime": "2019-06-22",
+      "title": "Forsthof Open-Air",
+      "content": "Am 22. Juni 2019 fand unsere Premiere des Forsthof Open Air statt. Auch dieses Jahr durften wir wieder ein berauschendes Open-Air Spektakel erleben. Gleichzeitig konnten wir bei glücklicher Wetterlage den 90. Geburtstag von Manfred Wampfler feiern. Vielen Dank an unsere Freunde aus Bannwil für ihre super Unterstützung an der Bar sowie allen Angehörigen für ihre Hilfe hinter den Theken. Ein weiteres Dankeschön geht an unsere tollen Sängerinnen und Sänger die diesen Abend wieder mit ihren fantastischen Stimmen bereichert haben."
+    },
+    {
       "keywords": ["Jugend"],
       "image": {
         "src": "/img/news/2019_muttertagskonzert.jpg",
@@ -97,6 +140,7 @@
       "content": "Alle die im Jahr 2018 ein Jungmusiker Leistungsabzeichen absolviert haben, erhielten am 28.10. ihre Urkunde in Hauingen. Überreicht wurde diese durch den Präsidenten des Alemannischen Musikverbandes - Peter Hässler."
     },
     {
+      "keywords": ["JMLA", "Jugend"],
       "title": "Jungmusikerleistungsabzeichen in Bronze",
       "starttime": "2018-10-01",
       "image": {
