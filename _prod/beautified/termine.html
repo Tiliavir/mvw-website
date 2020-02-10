@@ -1980,42 +1980,12 @@
     <ol class=breadcrumb itemprop=breadcrumb itemscope=itemscope itemtype=http://schema.org/BreadcrumbList>
       <li itemprop=itemListElement itemscope=itemscope itemtype=http://schema.org/ListItem><a href=index.html itemprop=item><span itemprop=name>Start</span>
           <meta content=1 itemprop=position></a></li>
-      <li itemprop=itemListElement itemscope=itemscope itemtype=http://schema.org/ListItem><span itemprop=name>Aktuelles</span>
-        <meta content=2 itemprop=position>
-      </li>
+      <li itemprop=itemListElement itemscope=itemscope itemtype=http://schema.org/ListItem><a href=# itemprop=item><span itemprop=name>Aktuelles</span>
+          <meta content=2 itemprop=position></a></li>
       <li class=active itemprop=itemListElement itemscope=itemscope itemtype=http://schema.org/ListItem><span itemprop=name>Termine</span>
         <meta content=3 itemprop=position>
       </li>
     </ol>
-    <h2>2019</h2>
-    <table class="termine responsive banded-rows">
-      <tbody>
-        <tr itemscope itemtype=http://schema.org/Event>
-          <td>
-            <meta content=2019-11-29 itemprop=startDate>
-            <meta content=2019-11-29 itemprop=endDate>29.11.2019</td>
-          <td><span itemprop=name>Adventskranzverkauf</span>&nbsp;(<span itemprop=location itemscope itemtype=http://schema.org/Place><span itemprop=address>Wollbach</span></span>)</td>
-        </tr>
-        <tr itemscope itemtype=http://schema.org/Event>
-          <td>
-            <meta content=2019-12-01T10:00:00Z itemprop=startDate>
-            <meta content=2019-12-01T12:00:00.000Z itemprop=endDate>01.12.2019 10:00 - 12:00</td>
-          <td><span itemprop=name>Wartburgfest</span>&nbsp;(<span itemprop=location itemscope itemtype=http://schema.org/Place><span itemprop=name>Kandertalhalle</span>,&nbsp;<span itemprop=address>Wollbach</span></span>)</td>
-        </tr>
-        <tr itemscope itemtype=http://schema.org/Event>
-          <td>
-            <meta content=2019-12-07 itemprop=startDate>
-            <meta content=2019-12-07 itemprop=endDate>07.12.2019</td>
-          <td><span itemprop=name>Weihnachtsfeier</span>&nbsp;(<span itemprop=location itemscope itemtype=http://schema.org/Place><span itemprop=address>Wollbach</span></span>)</td>
-        </tr>
-        <tr itemscope itemtype=http://schema.org/Event>
-          <td>
-            <meta content=2019-12-15T17:00:00Z itemprop=startDate>
-            <meta content=2019-12-15 itemprop=endDate>15.12.2019 17:00</td>
-          <td><span itemprop=name>Jugendvorspiel</span>&nbsp;(<span itemprop=location itemscope itemtype=http://schema.org/Place><span itemprop=name>Kirche</span>,&nbsp;<span itemprop=address>Wollbach</span></span>)</td>
-        </tr>
-      </tbody>
-    </table>
     <h2>2020</h2>
     <table class="termine responsive banded-rows">
       <tbody>
@@ -2178,20 +2148,20 @@
   <script>
     "use strict";
     var Tabs = function() {
-        function e() {}
-        return e.initialize = function() {
+        function n() {}
+        return n.initialize = function() {
           var t = window.location.href,
             o = t.indexOf("#") + 1;
-          0 < o && e.setActive(t.substring(o)), $(".tab").click(function(t) {
-            e.setActive($(t.target).data("tab")), t.preventDefault(), t.stopPropagation()
+          0 < o && n.setActive(t.substring(o)), $(".tab").click(function(t) {
+            n.setActive($(t.target).data("tab")), t.preventDefault(), t.stopPropagation()
           }), $(".tab-dropdown").click(function(t) {
             return $(t.target).closest(".tab-dropdown").toggleClass("open")
           }), $(".tab-dropdown-menu .tab").click(function(t) {
             return $(t.target).closest(".tab-dropdown").removeClass("open")
           })
-        }, e.setActive = function(t) {
+        }, n.setActive = function(t) {
           $(".tab-pane").removeClass("active"), $(".tab").removeClass("active"), $(".tab-" + t).addClass("active"), $("#" + t).addClass("active")
-        }, e
+        }, n
       }(),
       App = function() {
         function t() {}
@@ -2203,19 +2173,19 @@
             $(window).scrollTop() > 2 * t.height() ? t.addClass("inverse") : t.removeClass("inverse")
           })
         }, t.fixAnchors = function() {
-          var n = window.location.href.split("#")[0];
+          var e = window.location.href.split("#")[0];
           $("a[href^='#']").each(function(t, o) {
-            var e = $(o);
-            e.attr("href", n + e.attr("href"))
+            var n = $(o);
+            n.attr("href", e + n.attr("href"))
           })
         }, t.registerPopUp = function() {
           if ("dont-show" !== localStorage.getItem("mvw-popup") && "dont-show" !== sessionStorage.getItem("mvw-popup")) {
             var t = $(".mail-popup");
             0 < t.length && ($(window).on("scroll load resize", function() {
               200 < $(window).scrollTop() && t.addClass("visible")
-            }), t.find(".close").click(function() {
+            }), t.find(".close").on("click", function() {
               sessionStorage.setItem("mvw-popup", "dont-show"), t.remove()
-            }), t.find(".dont-show").click(function() {
+            }), t.find(".dont-show").on("click", function() {
               localStorage.setItem("mvw-popup", "dont-show"), t.remove()
             }))
           }
@@ -2230,11 +2200,13 @@
     var Appointments = function() {
       function t() {}
       return t.initialize = function() {
-        var i = t.addDays(new Date, -3);
+        var a = t.addDays(new Date, -3);
         $('meta[itemprop="startDate"]').each(function(t, e) {
           var n = $(e),
-            a = n.siblings('meta[itemprop="endDate"]');
-          n = 1 === a.length ? a : n, new Date(n.attr("content")) < i && n.closest("tr").css("display", "none")
+            i = n.siblings('meta[itemprop="endDate"]');
+          n = 1 === i.length ? i : n, new Date(n.attr("content")) < a && n.closest("tr").css("display", "none")
+        }), $("main h2").each(function(t, e) {
+          0 === $(e).next("table").first().height() && $(e).hide()
         })
       }, t.addDays = function(t, e) {
         var n = new Date(t.getTime());

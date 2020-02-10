@@ -1969,9 +1969,8 @@
     <ol class=breadcrumb itemprop=breadcrumb itemscope=itemscope itemtype=http://schema.org/BreadcrumbList>
       <li itemprop=itemListElement itemscope=itemscope itemtype=http://schema.org/ListItem><a href=index.html itemprop=item><span itemprop=name>Start</span>
           <meta content=1 itemprop=position></a></li>
-      <li itemprop=itemListElement itemscope=itemscope itemtype=http://schema.org/ListItem><span itemprop=name>Jugendarbeit</span>
-        <meta content=2 itemprop=position>
-      </li>
+      <li itemprop=itemListElement itemscope=itemscope itemtype=http://schema.org/ListItem><a href=# itemprop=item><span itemprop=name>Jugendarbeit</span>
+          <meta content=2 itemprop=position></a></li>
       <li class=active itemprop=itemListElement itemscope=itemscope itemtype=http://schema.org/ListItem><span itemprop=name>Vorstufenorchester</span>
         <meta content=3 itemprop=position>
       </li>
@@ -2058,20 +2057,20 @@
   <script>
     "use strict";
     var Tabs = function() {
-        function e() {}
-        return e.initialize = function() {
+        function n() {}
+        return n.initialize = function() {
           var t = window.location.href,
             o = t.indexOf("#") + 1;
-          0 < o && e.setActive(t.substring(o)), $(".tab").click(function(t) {
-            e.setActive($(t.target).data("tab")), t.preventDefault(), t.stopPropagation()
+          0 < o && n.setActive(t.substring(o)), $(".tab").click(function(t) {
+            n.setActive($(t.target).data("tab")), t.preventDefault(), t.stopPropagation()
           }), $(".tab-dropdown").click(function(t) {
             return $(t.target).closest(".tab-dropdown").toggleClass("open")
           }), $(".tab-dropdown-menu .tab").click(function(t) {
             return $(t.target).closest(".tab-dropdown").removeClass("open")
           })
-        }, e.setActive = function(t) {
+        }, n.setActive = function(t) {
           $(".tab-pane").removeClass("active"), $(".tab").removeClass("active"), $(".tab-" + t).addClass("active"), $("#" + t).addClass("active")
-        }, e
+        }, n
       }(),
       App = function() {
         function t() {}
@@ -2083,19 +2082,19 @@
             $(window).scrollTop() > 2 * t.height() ? t.addClass("inverse") : t.removeClass("inverse")
           })
         }, t.fixAnchors = function() {
-          var n = window.location.href.split("#")[0];
+          var e = window.location.href.split("#")[0];
           $("a[href^='#']").each(function(t, o) {
-            var e = $(o);
-            e.attr("href", n + e.attr("href"))
+            var n = $(o);
+            n.attr("href", e + n.attr("href"))
           })
         }, t.registerPopUp = function() {
           if ("dont-show" !== localStorage.getItem("mvw-popup") && "dont-show" !== sessionStorage.getItem("mvw-popup")) {
             var t = $(".mail-popup");
             0 < t.length && ($(window).on("scroll load resize", function() {
               200 < $(window).scrollTop() && t.addClass("visible")
-            }), t.find(".close").click(function() {
+            }), t.find(".close").on("click", function() {
               sessionStorage.setItem("mvw-popup", "dont-show"), t.remove()
-            }), t.find(".dont-show").click(function() {
+            }), t.find(".dont-show").on("click", function() {
               localStorage.setItem("mvw-popup", "dont-show"), t.remove()
             }))
           }
