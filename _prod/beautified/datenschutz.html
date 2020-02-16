@@ -2102,46 +2102,50 @@
     var Tabs = function() {
         function e() {}
         return e.initialize = function() {
-          var t = window.location.href,
-            o = t.indexOf("#") + 1;
-          0 < o && e.setActive(t.substring(o)), $(".tab").click(function(t) {
-            e.setActive($(t.target).data("tab")), t.preventDefault(), t.stopPropagation()
-          }), $(".tab-dropdown").click(function(t) {
-            return $(t.target).closest(".tab-dropdown").toggleClass("open")
-          }), $(".tab-dropdown-menu .tab").click(function(t) {
-            return $(t.target).closest(".tab-dropdown").removeClass("open")
+          var o = window.location.href,
+            t = o.indexOf("#") + 1;
+          if (0 < t) {
+            var n = o.substring(t);
+            0 < n.length && e.setActive(n)
+          }
+          $(".tab").on("click", function(o) {
+            e.setActive($(o.target).data("tab")), o.preventDefault(), o.stopPropagation()
+          }), $(".tab-dropdown").on("click", function(o) {
+            return $(o.target).closest(".tab-dropdown").toggleClass("open")
+          }), $(".tab-dropdown-menu .tab").on("click", function(o) {
+            return $(o.target).closest(".tab-dropdown").removeClass("open")
           })
-        }, e.setActive = function(t) {
-          $(".tab-pane").removeClass("active"), $(".tab").removeClass("active"), $(".tab-" + t).addClass("active"), $("#" + t).addClass("active")
+        }, e.setActive = function(o) {
+          $(".tab-pane").removeClass("active"), $(".tab").removeClass("active"), $(".tab-" + o).addClass("active"), $("#" + o).addClass("active")
         }, e
       }(),
       App = function() {
-        function t() {}
-        return t.initialize = function() {
-          t.registerScroll(), t.fixAnchors(), t.registerPopUp(), Tabs.initialize()
-        }, t.registerScroll = function() {
-          var t = $(".navigation");
-          0 < t.length && $(window).on("scroll load resize", function() {
-            $(window).scrollTop() > 2 * t.height() ? t.addClass("inverse") : t.removeClass("inverse")
+        function o() {}
+        return o.initialize = function() {
+          o.registerScroll(), o.fixAnchors(), o.registerPopUp(), Tabs.initialize()
+        }, o.registerScroll = function() {
+          var o = $(".navigation");
+          0 < o.length && $(window).on("scroll load resize", function() {
+            $(window).scrollTop() > 2 * o.height() ? o.addClass("inverse") : o.removeClass("inverse")
           })
-        }, t.fixAnchors = function() {
-          var n = window.location.href.split("#")[0];
-          $("a[href^='#']").each(function(t, o) {
-            var e = $(o);
-            e.attr("href", n + e.attr("href"))
+        }, o.fixAnchors = function() {
+          var e = window.location.href.split("#")[0];
+          $("a[href^='#']").each(function(o, t) {
+            var n = $(t);
+            n.attr("href", e + n.attr("href"))
           })
-        }, t.registerPopUp = function() {
+        }, o.registerPopUp = function() {
           if ("dont-show" !== localStorage.getItem("mvw-popup") && "dont-show" !== sessionStorage.getItem("mvw-popup")) {
-            var t = $(".mail-popup");
-            0 < t.length && ($(window).on("scroll load resize", function() {
-              200 < $(window).scrollTop() && t.addClass("visible")
-            }), t.find(".close").click(function() {
-              sessionStorage.setItem("mvw-popup", "dont-show"), t.remove()
-            }), t.find(".dont-show").click(function() {
-              localStorage.setItem("mvw-popup", "dont-show"), t.remove()
+            var o = $(".mail-popup");
+            0 < o.length && ($(window).on("scroll load resize", function() {
+              200 < $(window).scrollTop() && o.addClass("visible")
+            }), o.find(".close").on("click", function() {
+              sessionStorage.setItem("mvw-popup", "dont-show"), o.remove()
+            }), o.find(".dont-show").on("click", function() {
+              localStorage.setItem("mvw-popup", "dont-show"), o.remove()
             }))
           }
-        }, t
+        }, o
       }();
     $(function() {
       App.initialize()

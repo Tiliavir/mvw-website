@@ -6,20 +6,23 @@ class Tabs {
 
     const startIndex = url.indexOf("#") + 1;
     if (startIndex > 0) {
-      Tabs.setActive(url.substring(startIndex));
+      const id = url.substring(startIndex);
+      if (id.length > 0) {
+        Tabs.setActive(id);
+      }
     }
 
-    $(".tab").click((e: JQuery.ClickEvent) => {
+    $(".tab").on("click",(e: JQuery.ClickEvent) => {
       Tabs.setActive($(e.target).data("tab"));
       e.preventDefault(); // prevent auto scroll to target
       e.stopPropagation();
     });
 
-    $(".tab-dropdown").click((e) => $(e.target)
+    $(".tab-dropdown").on("click",(e) => $(e.target)
                       .closest(".tab-dropdown")
                       .toggleClass("open"));
 
-    $(".tab-dropdown-menu .tab").click((e) => $(e.target)
+    $(".tab-dropdown-menu .tab").on("click",(e) => $(e.target)
                                 .closest(".tab-dropdown")
                                 .removeClass("open"));
   }
