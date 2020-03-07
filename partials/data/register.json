@@ -45,11 +45,6 @@
     "register": "Klarinette"
   },
   {
-    "name": "Elena",
-    "familyName": "Sieglin",
-    "register": "Klarinette"
-  },
-  {
     "name": "Janika",
     "familyName": "Böhler",
     "register": "Klarinette"
@@ -95,11 +90,6 @@
     "register": "Altsaxophon"
   },
   {
-    "name": "Elisabeth",
-    "familyName": "Bürgin",
-    "register": "Altsaxophon"
-  },
-  {
     "name": "Carole",
     "familyName": "Enderlin",
     "register": "Altsaxophon"
@@ -112,6 +102,11 @@
   {
     "name": "Maria",
     "familyName": "Krey",
+    "register": "Altsaxophon"
+  },
+  {
+    "name": "Lilly",
+    "familyName": "Müller",
     "register": "Altsaxophon"
   },
   {
@@ -140,18 +135,8 @@
     "register": "Trompete"
   },
   {
-    "name": "Johannes",
-    "familyName": "Krey",
-    "register": "Trompete"
-  },
-  {
     "name": "Kai",
     "familyName": "Bogner",
-    "register": "Trompete"
-  },
-  {
-    "name": "Bernd",
-    "familyName": "Müller",
     "register": "Trompete"
   },
   {
@@ -255,13 +240,23 @@
     "register": "Tuba"
   },
   {
+    "name": "Gerd",
+    "familyName": "Friedel",
+    "register": "Tuba"
+  },
+  {
+    "name": "Dietmar",
+    "familyName": "Müller",
+    "register": "Tuba"
+  },
+  {
     "name": "Maria",
     "familyName": "Krey",
     "register": "Klavier"
   },
   {
-    "name": "Bernd",
-    "familyName": "Müller",
+    "name": "Tobias",
+    "familyName": "Bronner",
     "register": "Gitarre"
   },
   {
