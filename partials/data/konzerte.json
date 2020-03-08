@@ -1,6 +1,94 @@
 [
   {
     "category": "Jahreskonzert",
+    "title": "Die Urgewalten",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["1999-01-16"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "",
+            "composers": [""],
+            "arrangers": [""],
+            "soloists": [{"name": "", "part": ""}]
+          }
+        ]
+      }
+    ]
+},
+{
+    "category": "Jahreskonzert",
+    "title": "On Broadway",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2000-01-15"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "",
+            "composers": [""],
+            "arrangers": [""],
+            "soloists": [{"name": "", "part": ""}]
+          }
+        ]
+      }
+    ]
+},
+{
+    "category": "Jahreskonzert",
+    "title": "Das Meer",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2001-01-20"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "",
+            "composers": [""],
+            "arrangers": [""],
+            "soloists": [{"name": "", "part": ""}]
+          }
+        ]
+      }
+    ]
+},
+{
+    "category": "Jahreskonzert",
+    "title": "... von Brettern, die die Welt bedeuten",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2002-01-19"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "",
+            "composers": [""],
+            "arrangers": [""],
+            "soloists": [{"name": "", "part": ""}]
+          }
+        ]
+      }
+    ]
+},
+  {
+    "category": "Jahreskonzert",
     "title": "Pilatus, Berg der Drachen",
     "location": {
       "location": "Kandertalhalle Wollbach",
@@ -130,6 +218,28 @@
       }
     ]
   },
+  {
+    "category": "Jahreskonzert",
+    "title": "Best of 10 Years",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": ["2006-01-21"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "",
+            "composers": [""],
+            "arrangers": [""],
+            "soloists": [{"name": "", "part": ""}]
+          }
+        ]
+      }
+    ]
+},
   {
     "category": "Jahreskonzert",
     "location": {
@@ -1115,6 +1225,28 @@
       }
     ]
   },
+    {
+    "category": "Konzert",
+    "title": "Forsthof Open-Air",
+    "location": {
+      "location": "Forsthof Wollbach",
+      "dates": ["2019-06-22"]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "",
+            "composers": [""],
+            "arrangers": [""],
+            "soloists": [{"name": "", "part": ""}]
+          }
+        ]
+      }
+    ]
+},
   {
     "category": "Jahreskonzert",
     "location": {
