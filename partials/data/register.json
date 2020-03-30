@@ -220,11 +220,6 @@
     "register": "Euphonium"
   },
   {
-    "name": "Michael",
-    "familyName": "Lindemer",
-    "register": "Euphonium"
-  },
-  {
     "name": "Frieder",
     "familyName": "Hering",
     "register": "Euphonium"
@@ -257,6 +252,11 @@
   {
     "name": "Tobias",
     "familyName": "Bronner",
+    "register": "Gitarre"
+  },
+  {
+    "name": "Markus",
+    "familyName": "Winterhalter",
     "register": "Gitarre"
   },
   {
