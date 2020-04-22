@@ -7,6 +7,8 @@ block variables
     var keywords = "Bilder, Bildergalerie, Fotos, Photos, Alben, Album, Fotoalbum";
     var schemaOrg = "ImageGallery";
 
+    var galleries = require("partials/data/bilder.json");
+
 block pageStyles
   include ../../node_modules/photoswipe/dist/photoswipe.css
   include ../../node_modules/photoswipe/dist/default-skin/default-skin.css
@@ -16,10 +18,11 @@ block pageScripts
   include ../../node_modules/photoswipe/dist/photoswipe.min.js
   include ../../node_modules/photoswipe/dist/photoswipe-ui-default.min.js
   include ../scripts/bilder.js
+  .
+    const galleries = !{JSON.stringify(galleries)};
 
 block content
   -
-    var galleries = require("root/gallery/galleries.json");
     var years = Object.keys(galleries).sort((a, b) => b - a);
 
   +renderTabs(years)
@@ -33,9 +36,8 @@ block content
           - var gallery = year[galleryTitle]
           .mvw-gallery-container
             .mvw-gallery(onclick="Gallery.openGallery(this); return false;")
-              - var preview = gallery.filter((i) => i.s.w === 200)[0] || gallery[0];
               .ratio-content
-                img.preview(src=`/gallery/${preview.b}s/${preview.f}` alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
+                img.preview(src=gallery.i[0].u + "=w200-h200" alt=galleryTitle data-year=yearTitle data-gallery=galleryTitle)
                 span.caption #{galleryTitle}
 
   .pswp(tabindex="-1" role="dialog" aria-hidden="true")

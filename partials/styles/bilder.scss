@@ -11,6 +11,19 @@ $gallery-bg-color: #ccc;
   justify-content: space-around;
 }
 
+.pswp__img {
+  object-fit: contain;
+}
+
+.pswp__img--placeholder--blank{
+  display: none !important;
+}
+
+.ratio-content {
+  display: flex;
+  align-items: center;
+}
+
 .mvw-gallery-overview {
   .mvw-gallery-container {
     flex-grow: 1;

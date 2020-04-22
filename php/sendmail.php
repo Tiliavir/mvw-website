@@ -58,4 +58,3 @@
   } else {
     errorResponse('Fehler beim Versenden der Anfrage. Bitte wenden Sie sich an info@mv-wollbach.de');
   }
-?>

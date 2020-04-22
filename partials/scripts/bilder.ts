@@ -2,12 +2,14 @@
 /// <reference path="../../node_modules/@types/photoswipe/dist/photoswipe-ui-default/index.d.ts" />
 /// <reference path="../../node_modules/@types/jquery/index.d.ts" />
 
+declare var galleries: any;
+
 class Gallery {
   public static openGallery(e: any): void {
     let items = e.items;
     if (!items) {
       const preview = $(e).find(".preview");
-      items = e.items = Gallery.galleries[preview.data("year")][preview.data("gallery")];
+      items = e.items = Gallery.galleries[preview.data("year")][preview.data("gallery")].i;
     }
 
     const options: any = {
@@ -65,15 +67,15 @@ class Gallery {
     gallery.listen("gettingData", (index: number, item: any) => {
       // set image source & size based on real viewport width
       if (useLargeImages) {
-        item.src = `/gallery/${item.b + item.f}`;
-        item.w = item.o.w;
-        item.h = item.o.h;
+        item.src = item.u + "=w1200-h1200";
+        item.w = "1200";
+        item.h = "1200";
       } else {
-        item.src = `/gallery/${item.b}m/${item.f}`;
-        item.w = item.m.w;
-        item.h = item.m.h;
+        item.src = item.u + "=w800-h800";
+        item.w = "800";
+        item.h = "800";
       }
-      if (item.t.indexOf(" ") > 0) {
+      if (item.t != null) {
         item.title = item.t;
       }
 
@@ -90,12 +92,10 @@ class Gallery {
     Gallery.pswpElement = document.querySelectorAll(".pswp")[0];
     $(".mvw-gallery img").hover((e) => {
       const $e = $(e.target);
-      $e.attr("src", $e.attr("src").replace("/s/", "/m/"));
+      $e.attr("src", $e.attr("src").replace("=w200-h200", "=w800-h800"));
     });
-    $.getJSON("/gallery/galleries.json", (data) => {
-      Gallery.galleries = data;
-      Gallery.shufflePreview();
-    });
+    Gallery.galleries = galleries;
+    Gallery.shufflePreview();
   }
 
   private static galleries: any;
@@ -104,13 +104,11 @@ class Gallery {
   private static shufflePreview(): void {
     const previews = $(".preview:visible");
     const e: any = $(previews[Math.floor(Math.random() * previews.length)]);
-    const g = e[0].images || (e[0].images = Gallery.galleries[e.data("year")][e.data("gallery")]
-                                           .filter((i: any) => (i.s.w === 200))
-                                           || Gallery.galleries[e.data("year")][e.data("gallery")]);
+    const g = e[0].images || (e[0].images = Gallery.galleries[e.data("year")][e.data("gallery")].i);
 
     e.fadeOut(400, () => {
       const i = g[Math.floor(Math.random() * g.length)];
-      e.attr("src", `/gallery/${i.b}m/${i.f}`);
+      e.attr("src", i.u + "=w800-h800");
     });
     e.fadeIn(400);
 
