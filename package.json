@@ -16,7 +16,7 @@
   ],
   "devDependencies": {
     "@types/grecaptcha": "3.0.1",
-    "@types/jquery": "3.3.34",
+    "@types/jquery": "3.3.35",
     "@types/lunr": "2.3.3",
     "@types/photoswipe": "4.1.0",
     "autoprefixer": "9.7.6",
