@@ -16,16 +16,16 @@
   ],
   "devDependencies": {
     "@types/grecaptcha": "3.0.1",
-    "@types/jquery": "3.3.35",
+    "@types/jquery": "3.3.36",
     "@types/lunr": "2.3.3",
     "@types/photoswipe": "4.1.0",
     "autoprefixer": "9.7.6",
     "copyfiles": "2.2.0",
     "lite-server": "2.5.4",
-    "node-sass": "^4.13.1",
-    "postcss-cli": "7.1.0",
+    "node-sass": "^4.14.0",
+    "postcss-cli": "7.1.1",
     "sass-lint": "1.13.1",
-    "tslint": "6.1.1",
+    "tslint": "6.1.2",
     "typescript": "3.8.3"
   },
   "dependencies": {
