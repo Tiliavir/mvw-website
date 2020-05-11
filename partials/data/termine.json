@@ -2,61 +2,10 @@
   "2020": [
     {
       "location": {
-        "address": "Wollbach",
-        "name": "Kandertalhalle"
-      },
-      "starttime": "2020-01-06T19:00:00Z",
-      "title": "Neujahrsempfang"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Kandertalhalle"
-      },
-      "starttime": "2020-01-17",
-      "endtime": "2020-01-19",
-      "title": "Probewochenende"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Kandertalhalle"
-      },
-      "starttime": "2020-01-31",
-      "endtime": "2020-02-01",
-      "title": "Jahreskonzert"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Kandertalhalle"
-      },
-      "starttime": "2020-02-13T19:00:00Z",
-      "title": "Generalversammlungen"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Buchhole beim Rebhüsli / Baselblick"
-      },
-      "description": "Bei Einbruch der Dunkelheit wird wieder das große Feuer entzündet. Für euer Wohl ist mit Grillwürsten, Glühwein, Punsch, sonstigen Getränken, sowie Kaffee und Kuchen wieder bestens gesorgt.<br/>Ebenfalls ist für Holz an den Feuerstellen gesorgt und die Scheibenböcke sind gestellt.",
-      "starttime": "2020-03-07",
-      "title": "Fastnachtsfeuer"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Kandertalhalle"
-      },
-      "starttime": "2020-05-10",
-      "title": "Muttertagskonzert des Jugendorchesters"
-    },
-    {
-      "location": {
         "address": "Wollbach"
       },
       "starttime": "2020-05-16",
-      "title": "Marschmusik gemeinsam mit der MG Bannwil"
+      "title": "- ABGESAGT - Marschmusik gemeinsam mit der MG Bannwil"
     },
     {
       "location": {
@@ -64,7 +13,7 @@
         "name": "Kandertalhalle"
       },
       "starttime": "2020-05-29",
-      "title": "Jugendvorspiel"
+      "title": "- ABGESAGT - Jugendvorspiel"
     },
     {
       "location": {
@@ -73,7 +22,8 @@
       },
       "starttime": "2020-06-12T20:00:00Z",
       "endtime": "2020-06-13",
-      "title": "Forsthof Open-Air"
+      "title": "- ABGESAGT - Forsthof Open-Air",
+      "description": "Eintrittspreis wird gegen Rückgabe der Eintrittskarten bei Autohaus Krug und Annette Krey erstattet. Der Eintrittspreis kann zur Unterstützung des Vereins bei Rückgabe der Eintrittskarte auch gerne gespendet werden. Es wird darum gebeten, Eintrittskarten in jedem Fall zurückzugeben und im Falle einer Spende Informationen für eine Spendenquittung beim Autohaus Krug oder bei Annette Krey zu hinterlassen."
     },
     {
       "location": {
@@ -88,7 +38,7 @@
         "name": "Kandertalhalle"
       },
       "starttime": "2020-07-18",
-      "title": "Instrumentenvorstellung"
+      "title": "- ABGESAGT - Instrumentenvorstellung"
     },
     {
       "location": {
@@ -102,14 +52,16 @@
         "address": "Wollbach"
       },
       "starttime": "2020-10-10",
-      "title": "Sauserbummel"
+      "title": "Sauserbummel",
+      "description": "Über Durchführung wird später entschieden. Anmeldung frühestens zwei Monate vorher. Weitere Informationen werden an dieser Stelle zu gegebener Zeit veröffentlicht. Gerne kann man sich bei unserem Newsletter für weiter Informationen registrieren."
     },
     {
       "location": {
         "address": "Wollbach"
       },
       "starttime": "2020-10-11",
-      "title": "Herbstfest"
+      "title": "Herbstfest",
+      "description": "Über Durchführung wird später entschieden. Anmeldung frühestens zwei Monate vorher. Weitere Informationen werden an dieser Stelle zu gegebener Zeit veröffentlicht. Gerne kann man sich bei unserem Newsletter für weiter Informationen registrieren."
     }
   ]
 }
