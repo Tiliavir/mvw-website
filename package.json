@@ -1,7 +1,7 @@
 {
   "name": "mvw-website",
   "license": "MIT",
-  "version": "20.05.11",
+  "version": "20.06.08",
   "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
   "author": "Markus Lindenmann <tiliavir@gmail.com>",
   "repository": {
@@ -20,7 +20,7 @@
     "@types/lunr": "2.3.3",
     "@types/photoswipe": "4.1.0",
     "autoprefixer": "9.8.0",
-    "copyfiles": "2.2.0",
+    "copyfiles": "2.3.0",
     "lite-server": "2.5.4",
     "node-sass": "^4.14.1",
     "postcss-cli": "7.1.1",
@@ -31,8 +31,7 @@
   "dependencies": {
     "jquery": "3.5.1",
     "lunr": "2.3.8",
-    "mvw-creator": "1.3.10",
-    "mvw-gallery": "1.0.21",
+    "mvw-creator": "1.3.13",
     "photoswipe": "4.1.3"
   },
   "scripts": {
@@ -45,7 +44,6 @@
     "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
     "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 ./root/[!_]*/**/* ./build/",
     "copy": "npm run copy:lib && npm run copy:root",
-    "gallery": "mvwGallery ./root/gallery/ ./root/new_gallery/",
     "prerelease": "npm run lint",
     "release": "npm run compile && npm run copy",
     "postrelease": "copyup -u 1 -a ./build/**/* ./_prod/artifacts/",
