@@ -2,21 +2,6 @@
   "2020": [
     {
       "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2020-05-16",
-      "title": "- ABGESAGT - Marschmusik gemeinsam mit der MG Bannwil"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Kandertalhalle"
-      },
-      "starttime": "2020-05-29",
-      "title": "- ABGESAGT - Jugendvorspiel"
-    },
-    {
-      "location": {
         "address": "Wollbach",
         "name": "Forsthof"
       },
@@ -62,6 +47,22 @@
       "starttime": "2020-10-11",
       "title": "Herbstfest",
       "description": "Über Durchführung wird später entschieden. Anmeldung frühestens zwei Monate vorher. Weitere Informationen werden an dieser Stelle zu gegebener Zeit veröffentlicht. Gerne kann man sich bei unserem Newsletter für weiter Informationen registrieren."
+    }
+  ],
+  "2021": [
+    {
+      "location": {
+        "address": "Tannenkirch"
+      },
+      "starttime": "2021-06-28T20:00:00Z",
+      "title": "Bergfest Tannenkirch"
+    },
+    {
+      "location": {
+        "address": "Egringen"
+      },
+      "starttime": "2021-07-11T10:00:00Z",
+      "title": "Frühschoppen am Sommerfest"
     }
   ]
 }
