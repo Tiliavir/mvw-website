@@ -27,6 +27,12 @@ small {
   }
 }
 
+.arrangers {
+  &::before {
+    content: "arr.: ";
+  }
+}
+
 .konzert > .parts,
 .dates,
 .composers,

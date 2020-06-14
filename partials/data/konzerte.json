@@ -1,10 +1,269 @@
 [
   {
     "category": "Jahreskonzert",
+    "title": "Die Urgewalten",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "1999-01-16"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Prelude on a hymn of praise",
+            "subtitle": "for the Beauty of the Earth",
+            "composers": [
+              "James Curnow"
+            ]
+          },
+          {
+            "title": "Sinfonia XVII",
+            "subtitle": "The four winds",
+            "composers": [
+              "Timothy Broege"
+            ]
+          },
+          {
+            "title": "Canticle of the Creatures",
+            "composers": [
+              "James Curnow"
+            ]
+          },
+          {
+            "title": "Zephyrs",
+            "composers": [
+              "Thomas C. Duffy"
+            ]
+          },
+          {
+            "title": "By Loch and Mountain",
+            "composers": [
+              "Robert W. Smith"
+            ]
+          },
+          {
+            "title": "Mazama",
+            "composers": [
+              "Jay Chattaway"
+            ]
+          },
+          {
+            "title": "Titanic",
+            "arrangers": [
+              "Calvin Custer"
+            ],
+            "composers": [
+              "James Horner"
+            ]
+          },
+          {
+            "title": "Donner und Blitz",
+            "composers": [
+              "Johann Strauss II"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "title": "On Broadway",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "2000-01-15"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Blue Moon"
+          },
+          {
+            "title": "Disney Razzamatazz"
+          },
+          {
+            "title": "But not for me"
+          },
+          {
+            "title": "Charles Chaplin"
+          },
+          {
+            "title": "Circus Days"
+          },
+          {
+            "title": "Glenn Beats",
+            "subtitle": "The Battle of Jericho"
+          },
+          {
+            "title": "Im Schönen Schwabenland"
+          },
+          {
+            "title": "Irving Berlin Showstoppers"
+          },
+          {
+            "title": "Mr. Music"
+          },
+          {
+            "title": "The Wizard of Oz"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "title": "Das Meer",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "2001-01-20"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Into the Raging River",
+            "composers": [
+              "Steven Reineke"
+            ]
+          },
+          {
+            "title": "Sea Songs",
+            "composers": [
+              "Ralph Vaughan Williams"
+            ]
+          },
+          {
+            "title": "Das Boot"
+          },
+          {
+            "title": "Hands across the sea",
+            "composers": [
+              "John Philip Sousa"
+            ]
+          },
+          {
+            "title": "Song of the Sea Maidens",
+            "composers": [
+              "Andrew Boysen, Jr."
+            ]
+          },
+          {
+            "title": "By the Riversbend",
+            "composers": [
+              "Warren Barker"
+            ]
+          },
+          {
+            "title": "Wave"
+          },
+          {
+            "title": "In a gentle rain",
+            "composers": [
+              "Robert W. Smith"
+            ]
+          },
+          {
+            "title": "Instant Concert",
+            "composers": [
+              "Harold L. Walters"
+            ]
+          },
+          {
+            "title": "Ik heff mol in Hamburg a Veermaster sehn ..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "title": "... von Brettern, die die Welt bedeuten",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "2002-01-19"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Fate of the Gods",
+            "composers": [
+              "Steven Reineke"
+            ]
+          },
+          {
+            "title": "Theatre Music",
+            "composers": [
+              "Philip Sparke"
+            ],
+            "parts": [
+              {
+                "title": "Ouvertüre"
+              },
+              {
+                "title": "Entr'acte"
+              },
+              {
+                "title": "Finale"
+              }
+            ]
+          },
+          {
+            "title": "Die Fledermaus",
+            "composers": [
+              "Johann Strauss II"
+            ]
+          },
+          {
+            "title": "Curtain Up!",
+            "composers": [
+              "Alfred Reed"
+            ]
+          },
+          {
+            "title": "Electricity"
+          },
+          {
+            "title": "Vilia"
+          },
+          {
+            "title": "My fair lady"
+          },
+          {
+            "title": "Macky Messer"
+          },
+          {
+            "title": "Radezky-Marsch"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
     "title": "Pilatus, Berg der Drachen",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2003-01-18"]
+      "dates": [
+        "2003-01-18"
+      ]
     },
     "parts": [
       {
@@ -13,15 +272,21 @@
         "program": [
           {
             "title": "Das Abzeichen",
-            "composers": ["Stefan Marinoff"]
+            "composers": [
+              "Stefan Marinoff"
+            ]
           },
           {
             "title": "Pilatus - Berg der Drachen",
-            "composers": ["Steven Reinecke"]
+            "composers": [
+              "Steven Reinecke"
+            ]
           },
           {
             "title": "Konzert für Oboe",
-            "composers": ["Vincenzo Bellini"],
+            "composers": [
+              "Vincenzo Bellini"
+            ],
             "soloists": [
               {
                 "name": "Mirjam Hüttner",
@@ -31,32 +296,48 @@
           },
           {
             "title": "The first and the last",
-            "composers": ["Stephen Melillo"]
+            "composers": [
+              "Stephen Melillo"
+            ]
           },
           {
             "title": "Marcia Milano",
-            "composers": ["Almicare Ponchielli"]
+            "composers": [
+              "Almicare Ponchielli"
+            ]
           },
           {
             "title": "Fellini Song",
-            "composers": ["Giorgio Gaslini"]
+            "composers": [
+              "Giorgio Gaslini"
+            ]
           },
           {
             "title": "Into the Joy of Spring",
-            "composers": ["James Swearingen"]
+            "composers": [
+              "James Swearingen"
+            ]
           },
           {
             "title": "La Vita è Bella",
-            "composers": ["Nicola Piovani"]
+            "composers": [
+              "Nicola Piovani"
+            ]
           },
           {
             "title": "Funiculi Funicula",
-            "composers": ["Luigi Denza"]
+            "composers": [
+              "Luigi Denza"
+            ]
           },
           {
             "title": "Yes Indeed",
-            "composers": ["Sy Oliver"],
-            "arrangers": ["Andy Clark"],
+            "composers": [
+              "Sy Oliver"
+            ],
+            "arrangers": [
+              "Andy Clark"
+            ],
             "soloists": [
               {
                 "part": "Gesang",
@@ -72,7 +353,9 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2004-01-17"]
+      "dates": [
+        "2004-01-17"
+      ]
     },
     "title": "New York, New York",
     "parts": [
@@ -82,49 +365,218 @@
         "program": [
           {
             "title": "Manhatten Beach March",
-            "composers": ["John Philip Sousa"]
+            "composers": [
+              "John Philip Sousa"
+            ]
           },
           {
             "title": "Overture to Candide",
-            "composers": ["Leonard Bernstein"]
+            "composers": [
+              "Leonard Bernstein"
+            ]
           },
           {
             "title": "American Suite",
-            "composers": ["Antonín Dvořák"]
+            "composers": [
+              "Antonín Dvořák"
+            ],
+            "arrangers": [
+              "Johann de Meij"
+            ],
+            "parts": [
+              {
+                "title": "Andante con moto"
+              },
+              {
+                "title": "Allegro"
+              },
+              {
+                "title": "Moderato (Alla Pollacca)"
+              },
+              {
+                "title": "Andante"
+              },
+              {
+                "title": "Finale - Allegro"
+              }
+            ]
           },
           {
             "title": "Eine kleine yiddishe Ragmusik",
-            "composers": ["Adam Gorb"]
+            "composers": [
+              "Adam Gorb"
+            ]
           },
           {
             "title": "Karl Reinacher Marsch",
-            "composers": ["Ulrich Winzer"]
+            "composers": [
+              "Ulrich Winzer"
+            ]
           },
           {
             "title": "Matrix",
-            "composers": ["Steve Grimo"]
+            "composers": [
+              "Steve Grimo"
+            ]
           },
           {
             "title": "America, the Brave",
-            "composers": ["Steven Melillo"]
+            "composers": [
+              "Steven Melillo"
+            ]
           },
           {
             "title": "New York 1927",
-            "composers": ["Warren Barker"]
+            "composers": [
+              "Warren Barker"
+            ]
           },
           {
             "title": "Irving Berlin Showstoppers",
-            "composers": ["Irving Berlin"],
-            "arrangers": ["John Higgins"]
+            "composers": [
+              "Irving Berlin"
+            ],
+            "arrangers": [
+              "John Higgins"
+            ]
           },
           {
             "title": "In the mood",
-            "composers": ["Joe Garland"]
+            "composers": [
+              "Joe Garland"
+            ]
           },
           {
             "title": "New York, New York",
-            "composers": ["Fred Ebb", "John Kander"],
-            "arrangers": ["Goff Richards"]
+            "composers": [
+              "Fred Ebb",
+              "John Kander"
+            ],
+            "arrangers": [
+              "Goff Richards"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "title": "Ungarn",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "2005-01-22"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Capriccio"
+          },
+          {
+            "title": "Symphonic Movement"
+          },
+          {
+            "title": "Vjenne",
+            "composer": ["Frigyes Hidas"]
+          },
+          {
+            "title": "Hungarian Rhapsody",
+            "composer": ["Franz Liszt"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "title": "Best of 10 Years",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "2006-01-21"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {"title":  "Theatre Music"},
+          {"title":  "Fate of the gods"},
+          {"title":  "Die Fledermaus"},
+          {"title":  "Mazama"},
+          {"title":  "Pilatus", "subtitle":  "Mountain of Dragons"},
+          {"title":  "Eine kleine Yiddishe Ragmusik"},
+          {"title":  "South Ramport Street Parade"},
+          {"title":  "Funiculi, Funicula"},
+          {"title":  "In a gentle Rain"},
+          {"title":  "Yes indeed"},
+          {"title":  "Vjenne"}
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "2008-01-19"
+      ]
+    },
+    "title": "Feel Blue",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Ode for Trumpet",
+            "soloist": "",
+            "composers": [
+              "Alfred Reed"
+            ]
+          },
+          {
+            "title": "Rhapsody in Blue",
+            "composers": [
+              "Georg Gershwin"
+            ]
+          },
+          {
+            "title": "On the sunny side of the street",
+            "composers": [
+              "Jimmy McHugh"
+            ]
+          },
+          {
+            "title": "Bacchus on Blue Ridge",
+            "composers": [
+              "Joseph Horovitz"
+            ]
+          },
+          {
+            "title": "Wrong note rag",
+            "composers": [
+              "Leonard Bernstein"
+            ]
+          },
+          {
+            "title": "Cartoon",
+            "composers": [
+              "Paul Hart"
+            ]
+          },
+          {
+            "title": "Silver Screen",
+            "composers": [
+              "Paul Hart"
+            ]
           }
         ]
       }
@@ -134,22 +586,9 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2008-01-19"]
-    },
-    "title": "Feel Blue",
-    "parts": [
-      {
-        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
-        "conductor": "Oliver Hauser",
-        "program": []
-      }
-    ]
-  },
-  {
-    "category": "Jahreskonzert",
-    "location": {
-      "location": "Kandertalhalle Wollbach",
-      "dates": ["2009-01-17"]
+      "dates": [
+        "2009-01-17"
+      ]
     },
     "title": "'Mi voz se hizo viento para llegar a su oido' - Pablo Neruda",
     "parts": [
@@ -159,27 +598,53 @@
         "program": [
           {
             "title": "Don Quixote",
-            "composers": ["Robert W. Smith"],
-            "soloist": [{"part": "Sprache", "name": "Ekkehard Bierl"}],
+            "composers": [
+              "Robert W. Smith"
+            ],
+            "soloist": [
+              {
+                "part": "Sprache",
+                "name": "Ekkehard Bierl"
+              }
+            ],
             "parts": [
-               {"title": "Suche"},
-               {"title": "Dulcinea"},
-               {"title": "Sancho und die Windmühlen"},
-               {"title": "Erleuchtung"}
-             ]
+              {
+                "title": "Suche"
+              },
+              {
+                "title": "Dulcinea"
+              },
+              {
+                "title": "Sancho und die Windmühlen"
+              },
+              {
+                "title": "Erleuchtung"
+              }
+            ]
           },
           {
             "title": "Adagio für Bläserensemble",
-            "composers": ["Joaquin Rodrigo"]
+            "composers": [
+              "Joaquin Rodrigo"
+            ]
           },
           {
             "title": "El Golpe Fatal",
-            "composers": ["Dirk Brossé"]
+            "composers": [
+              "Dirk Brossé"
+            ]
           },
           {
             "title": "Cordoba",
-            "composers": ["Isaac Albeniz"],
-            "soloists": [{"part": "Tanz / Improvisation", "name": "Sandra Schillinger"}]
+            "composers": [
+              "Isaac Albeniz"
+            ],
+            "soloists": [
+              {
+                "part": "Tanz / Improvisation",
+                "name": "Sandra Schillinger"
+              }
+            ]
           }
         ]
       }
@@ -189,7 +654,9 @@
     "category": "Kirchenkonzert",
     "location": {
       "location": "Kirche Wollbach",
-      "dates": ["2009-04-09"]
+      "dates": [
+        "2009-04-09"
+      ]
     },
     "parts": [
       {
@@ -198,16 +665,24 @@
         "program": [
           {
             "title": "Bist du bei mir",
-            "composers": ["Johann Sebastian Bach"],
-            "arrangers": ["Alfred Reed"]
+            "composers": [
+              "Johann Sebastian Bach"
+            ],
+            "arrangers": [
+              "Alfred Reed"
+            ]
           },
           {
             "title": "Lux Aurumque (Light and gold)",
-            "composers": ["Eric Whitacre"]
+            "composers": [
+              "Eric Whitacre"
+            ]
           },
           {
             "title": "Sonatina Op. 27",
-            "composers": ["Zedenek Fibich"],
+            "composers": [
+              "Zedenek Fibich"
+            ],
             "soloists": [
               {
                 "part": "Piano",
@@ -221,16 +696,24 @@
           },
           {
             "title": "A light in the wilderness Op. 92",
-            "composers": ["James Barnes"]
+            "composers": [
+              "James Barnes"
+            ]
           },
           {
             "title": "Wachet auf!",
-            "composers": ["Johann Sebastian Bach"],
-            "arrangers": ["Alfred Reed"]
+            "composers": [
+              "Johann Sebastian Bach"
+            ],
+            "arrangers": [
+              "Alfred Reed"
+            ]
           },
           {
             "title": "The echo of god's laughter",
-            "composers": ["Kenneth H. Lampl"]
+            "composers": [
+              "Kenneth H. Lampl"
+            ]
           }
         ]
       }
@@ -240,7 +723,9 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2010-01-23"]
+      "dates": [
+        "2010-01-23"
+      ]
     },
     "title": "Klang Licht Raum",
     "subtitle": "Lichtklänge, Raumlichter, Klangräume … eine Inszenierung",
@@ -251,26 +736,51 @@
         "program": [
           {
             "title": "Joy Revisited",
-            "composers": ["Frank Ticheli"]
+            "composers": [
+              "Frank Ticheli"
+            ]
           },
           {
             "title": "Ahab",
-            "composers": ["Stephen Melillo"],
-            "soloists": [{"part": "Darsteller", "name": "Ekkehard Bierl"}]
+            "composers": [
+              "Stephen Melillo"
+            ],
+            "soloists": [
+              {
+                "part": "Darsteller",
+                "name": "Ekkehard Bierl"
+              }
+            ]
           },
           {
             "title": "To this heart there is no end",
-            "composers": ["Richard Saucedo"]
+            "composers": [
+              "Richard Saucedo"
+            ]
           },
           {
             "title": "Chaos Theory - Konzert für Blasorchester und E-Gitarre",
-            "composers": ["James Bonney"],
-            "soloists": [{"part": "E-Gitarre", "name": "Stefan Siekierski"}]
+            "composers": [
+              "Jim Bonney"
+            ],
+            "soloists": [
+              {
+                "part": "E-Gitarre",
+                "name": "Stefan Siekierski"
+              }
+            ]
           },
           {
             "title": "Fantasie für Natalie (aus der 3. Sinfonie)",
-            "composers": ["James Barnes"],
-            "soloists": [{"part": "Cello", "name": "Wolfgang Brobeil"}]
+            "composers": [
+              "James Barnes"
+            ],
+            "soloists": [
+              {
+                "part": "Cello",
+                "name": "Wolfgang Brobeil"
+              }
+            ]
           }
         ]
       }
@@ -280,7 +790,9 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2011-01-22"]
+      "dates": [
+        "2011-01-22"
+      ]
     },
     "title": "Let's face the music and dance",
     "parts": [
@@ -290,62 +802,132 @@
         "program": [
           {
             "title": "Ain't that a kick in the head",
-            "soloists": [{"part": "Gesang", "name": "Oliver Hauser"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Oliver Hauser"
+              }
+            ]
           },
           {
             "title": "He's a tramp",
-            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Anuschka Laveccia"
+              }
+            ]
           },
           {
             "title": "Let's call the whole thing off",
-            "soloists": [{"part": "Gesang", "name": "Jutta Schmidt und Ralf Ernst"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Jutta Schmidt und Ralf Ernst"
+              }
+            ]
           },
           {
             "title": "Save the last dance for me",
-            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Daniel Vorburger"
+              }
+            ]
           },
           {
             "title": "Colours of the wind",
-            "soloists": [{"part": "Gesang", "name": "Diana Würslin"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Diana Würslin"
+              }
+            ]
           },
           {
             "title": "Papa can you hear me",
-            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Anuschka Laveccia"
+              }
+            ]
           },
           {
             "title": "Mr. Bojangles",
-            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Daniel Vorburger"
+              }
+            ]
           },
           {
             "title": "Watch what happens",
-            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Daniel Vorburger"
+              }
+            ]
           },
           {
             "title": "The incredibles"
           },
           {
             "title": "Against all odds",
-            "soloists": [{"part": "Alt-Saxophon", "name": "Klaus Fischer"}]
+            "soloists": [
+              {
+                "part": "Alt-Saxophon",
+                "name": "Klaus Fischer"
+              }
+            ]
           },
           {
             "title": "Down with love",
-            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia und Daniel Vorburger"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Anuschka Laveccia und Daniel Vorburger"
+              }
+            ]
           },
           {
             "title": "Feeling good",
-            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Daniel Vorburger"
+              }
+            ]
           },
           {
             "title": "A Star is born",
-            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Anuschka Laveccia"
+              }
+            ]
           },
           {
             "title": "The Way we were",
-            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Anuschka Laveccia"
+              }
+            ]
           },
           {
             "title": "Let's face the music and dance",
-            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Daniel Vorburger"
+              }
+            ]
           }
         ]
       }
@@ -355,7 +937,9 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2012-01-21"]
+      "dates": [
+        "2012-01-21"
+      ]
     },
     "parts": [
       {
@@ -364,36 +948,54 @@
         "program": [
           {
             "title": "Noisy wheels of joy",
-            "composers": ["Eric Whitacre"]
+            "composers": [
+              "Eric Whitacre"
+            ]
           },
           {
             "title": "Global Variations",
-            "composers": ["Nigel Hess"]
+            "composers": [
+              "Nigel Hess"
+            ]
           },
           {
             "title": "Meta March",
-            "composers": ["Steven Bryant"]
+            "composers": [
+              "Steven Bryant"
+            ]
           },
           {
             "title": "Uncle Sid",
-            "composers": ["Jonathan Newman"]
+            "composers": [
+              "Jonathan Newman"
+            ]
           },
           {
             "title": "Garisson at Goliad",
-            "composers": ["Steven Melillo"]
+            "composers": [
+              "Steven Melillo"
+            ]
           },
           {
             "title": "Thames Journey",
-            "composers": ["Nigel Hess"]
+            "composers": [
+              "Nigel Hess"
+            ]
           },
           {
             "title": "Heart of the Hero",
-            "composers": ["Steven Melillo"]
+            "composers": [
+              "Steven Melillo"
+            ]
           },
           {
             "title": "Slava!",
-            "composers": ["Leonard Bernstein"],
-            "arrangers": ["Clare Grundman"]
+            "composers": [
+              "Leonard Bernstein"
+            ],
+            "arrangers": [
+              "Clare Grundman"
+            ]
           }
         ]
       }
@@ -403,9 +1005,10 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2013-01-19"]
+      "dates": [
+        "2013-01-19"
+      ]
     },
-    "title": "",
     "parts": [
       {
         "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
@@ -413,48 +1016,97 @@
         "program": [
           {
             "title": "Symphonie pour musique d'harmonie",
-            "composers": ["Paul Fauchet"],
-            "arrangers": ["Miguel Etchegoncelay", "Felix Hauswirth"],
+            "composers": [
+              "Paul Fauchet"
+            ],
+            "arrangers": [
+              "Miguel Etchegoncelay",
+              "Felix Hauswirth"
+            ],
             "parts": [
-              {"title": "Overture"},
-              {"title": "Nocturne"},
-              {"title": "Scherzo"},
-              {"title": "Finale"}
+              {
+                "title": "Overture"
+              },
+              {
+                "title": "Nocturne"
+              },
+              {
+                "title": "Scherzo"
+              },
+              {
+                "title": "Finale"
+              }
             ]
           },
           {
             "title": "Danzón no. 2",
-            "composers": ["Arturo Marquez"],
-            "arrangers": ["Oliver Nickel"]
+            "composers": [
+              "Arturo Marquez"
+            ],
+            "arrangers": [
+              "Oliver Nickel"
+            ]
           },
           {
             "title": "Deux Danses für Klarinettenchor",
-            "composers": ["Masamic Amano"],
+            "composers": [
+              "Masamic Amano"
+            ],
             "parts": [
-              {"title": "Danse Melancholique"},
-              {"title": "Danse Antipathique"}
+              {
+                "title": "Danse Melancholique"
+              },
+              {
+                "title": "Danse Antipathique"
+              }
             ]
           },
           {
             "title": "Konzert für Violoncello und Blasorchester",
-            "composers": ["Friedrich Gulda"],
-            "soloists": [{"part": "Violoncello", "name": "Elisa Silber"}],
+            "composers": [
+              "Friedrich Gulda"
+            ],
+            "soloists": [
+              {
+                "part": "Violoncello",
+                "name": "Elisa Silber"
+              }
+            ],
             "parts": [
-              {"title": "Overture"},
-              {"title": "Idylle"},
-              {"title": "Cadenza"},
-              {"title": "Menuett"},
-              {"title": "Finale alla marcia"}
+              {
+                "title": "Overture"
+              },
+              {
+                "title": "Idylle"
+              },
+              {
+                "title": "Cadenza"
+              },
+              {
+                "title": "Menuett"
+              },
+              {
+                "title": "Finale alla marcia"
+              }
             ]
           },
           {
             "title": "At kitty O'Shea's - Irish folk song suite",
-            "composers": ["Johan de Meij"]
+            "composers": [
+              "Johan de Meij"
+            ]
           },
           {
             "title": "Le Paris d'Azzola",
-            "composers": ["Thierry Muller"],
-            "soloists": [{"name": "Oliver Hauser", "part": "Akkordeon"}]
+            "composers": [
+              "Thierry Muller"
+            ],
+            "soloists": [
+              {
+                "name": "Oliver Hauser",
+                "part": "Akkordeon"
+              }
+            ]
           }
         ]
       }
@@ -464,7 +1116,9 @@
     "category": "Kirchenkonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2013-04-12"]
+      "dates": [
+        "2013-04-12"
+      ]
     },
     "parts": [
       {
@@ -473,18 +1127,33 @@
         "program": [
           {
             "title": "Deep River",
-            "composers": ["James Swearingen"]
+            "composers": [
+              "James Swearingen"
+            ]
           },
           {
             "title": "The girl with the flaxen hair",
-            "composers": ["Claude Debussy"],
-            "arrangers": ["John Moss"],
-            "soloists": [{"part": "Saxophon", "name": "Maria Krey"}]
+            "composers": [
+              "Claude Debussy"
+            ],
+            "arrangers": [
+              "John Moss"
+            ],
+            "soloists": [
+              {
+                "part": "Saxophon",
+                "name": "Maria Krey"
+              }
+            ]
           },
           {
             "title": "Gospel John",
-            "composers": ["Jeff Steinberg"],
-            "arrangers": ["Andy Clark"]
+            "composers": [
+              "Jeff Steinberg"
+            ],
+            "arrangers": [
+              "Andy Clark"
+            ]
           }
         ]
       },
@@ -494,8 +1163,12 @@
         "program": [
           {
             "title": "Toccata und Fuge",
-            "composers": ["Johann Sebastian Bach"],
-            "arrangers": ["Marten Jeense"]
+            "composers": [
+              "Johann Sebastian Bach"
+            ],
+            "arrangers": [
+              "Marten Jeense"
+            ]
           }
         ]
       },
@@ -505,94 +1178,20 @@
         "program": [
           {
             "title": "Musique Funèbre Maconnique",
-            "composers": ["Wolfgang Amadeus Mozart"]
+            "composers": [
+              "Wolfgang Amadeus Mozart"
+            ]
           },
           {
             "title": "A light in the wilderness",
-            "composers": ["James Barnes"]
+            "composers": [
+              "James Barnes"
+            ]
           },
           {
             "title": "The seal lullaby",
-            "composers": ["Eric Whitacre"]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "category": "Jahreskonzert",
-    "location": {
-      "location": "Kandertalhalle Wollbach",
-      "dates": ["2014-01-18"]
-    },
-    "parts": [
-      {
-        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
-        "conductor": "Oliver Hauser",
-        "program": [
-          {
-            "title": "As rosas não falam",
-            "composers": ["Angenor de Oliveira (Cartola)"]
-          },
-          {
-            "title": "Il gurany",
-            "composers": ["Antõnio Carlos Gomes"]
-          },
-          {
-            "title": "Festa Criolla",
-            "composers": ["Louis Moreau Gottschalk"]
-          },
-          {
-            "title": "Valsinha Brasileira",
-            "composers": ["Heitor Villa-Lobos"]
-          },
-          {
-            "title": "Estados d'Alma",
-            "composers": ["Edmundo Villani-Côrtes"]
-          },
-          {
-            "title": "Libertadores",
-            "composers": ["Óscar Navarro González"]
-          },
-          {
-            "title": "Oblivion",
-            "composers": ["Astor Pantaleón Piazolla"],
-            "soloists": [{"part": "Cello", "name": "Rebekka Busch"}]
-          },
-          {
-            "title": "Braseijo",
-            "composers": ["Edmundo Villani-Córtes"]
-          },
-          {
-            "title": "Huapango",
-            "composers": ["José Pablo Moncayo"]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "category": "Jahreskonzert",
-    "location": {
-      "location": "Kandertalhalle Wollbach",
-      "dates": ["2015-01-23",  "2015-01-24"]
-    },
-    "parts": [
-      {
-        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
-        "conductor": "Oliver Hauser",
-        "program": [
-          {
-            "title": "The Queen Symphony - Sinfonisches Werk für Orchester und Chor mit Motiven der Rockband Queen",
-            "composers": ["Tolga Kashif"]
-          },
-          {
-            "title": "Jon Lord Concerto for group and orchestra, Sinfonisches Werk für Orchester und Rockband im Stil der Rockband Deep Purple",
-            "composers": ["Jon Lord"],
-            "parts": [
-              {"title": "Movement One Moderato - Allegro"},
-              {"title": "Movement Two Andante"},
-              {"title": "Movement Three Vivace - Presto"}
+            "composers": [
+              "Eric Whitacre"
             ]
           }
         ]
@@ -603,7 +1202,129 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2016-01-22", "2016-01-23"]
+      "dates": [
+        "2014-01-18"
+      ]
+    },
+    "title": "Thema: Brasilien / Südamerika",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "As rosas não falam",
+            "composers": [
+              "Angenor de Oliveira (Cartola)"
+            ]
+          },
+          {
+            "title": "Il gurany",
+            "composers": [
+              "Antõnio Carlos Gomes"
+            ]
+          },
+          {
+            "title": "Festa Criolla",
+            "composers": [
+              "Louis Moreau Gottschalk"
+            ]
+          },
+          {
+            "title": "Valsinha Brasileira",
+            "composers": [
+              "Heitor Villa-Lobos"
+            ]
+          },
+          {
+            "title": "Estados d'Alma",
+            "composers": [
+              "Edmundo Villani-Côrtes"
+            ]
+          },
+          {
+            "title": "Libertadores",
+            "composers": [
+              "Óscar Navarro González"
+            ]
+          },
+          {
+            "title": "Oblivion",
+            "composers": [
+              "Astor Pantaleón Piazolla"
+            ],
+            "soloists": [
+              {
+                "part": "Cello",
+                "name": "Rebekka Busch"
+              }
+            ]
+          },
+          {
+            "title": "Braseijo",
+            "composers": [
+              "Edmundo Villani-Córtes"
+            ]
+          },
+          {
+            "title": "Huapango",
+            "composers": [
+              "José Pablo Moncayo"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "2015-01-23",
+        "2015-01-24"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "The Queen Symphony - Sinfonisches Werk für Orchester und Chor mit Motiven der Rockband Queen",
+            "composers": [
+              "Tolga Kashif"
+            ]
+          },
+          {
+            "title": "Jon Lord Concerto for group and orchestra, Sinfonisches Werk für Orchester und Rockband im Stil der Rockband Deep Purple",
+            "composers": [
+              "Jon Lord"
+            ],
+            "parts": [
+              {
+                "title": "Movement One Moderato - Allegro"
+              },
+              {
+                "title": "Movement Two Andante"
+              },
+              {
+                "title": "Movement Three Vivace - Presto"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "2016-01-22",
+        "2016-01-23"
+      ]
     },
     "title": "Still Feeling Good",
     "parts": [
@@ -613,70 +1334,147 @@
         "program": [
           {
             "title": "Opening",
-            "composers": ["KC Sunshineband"]
+            "composers": [
+              "KC Sunshineband"
+            ]
           },
           {
             "title": "Your love keeps lifting me",
-            "soloists": [{"part": "Gesang", "name": "Christina De Groote"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Christina De Groote"
+              }
+            ]
           },
           {
             "title": "Americanos",
-            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Daniel Vorburger"
+              }
+            ]
           },
           {
             "title": "Somethin' Stupid",
-            "soloists": [{"part": "Gesang", "name": "Ralf Ernst und Jutta Schmidt"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Ralf Ernst und Jutta Schmidt"
+              }
+            ]
           },
           {
             "title": "Candyman",
-            "soloists": [{"part": "Gesang", "name": "alle vocals"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "alle vocals"
+              }
+            ]
           },
           {
             "title": "Diggin on James Brown"
           },
           {
             "title": "Reet Petite",
-            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Anuschka Laveccia"
+              }
+            ]
           },
           {
             "title": "I've got you under my skin",
-            "soloists": [{"part": "Gesang", "name": "Ralf Ernst"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Ralf Ernst"
+              }
+            ]
           },
           {
             "title": "Fly me to the moon",
-            "soloists": [{"part": "Gesang", "name": "Oliver Hauser"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Oliver Hauser"
+              }
+            ]
           },
           {
             "title": "If you don`t know me by now",
-            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Daniel Vorburger"
+              }
+            ]
           },
           {
             "title": "Americano",
-            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Anuschka Laveccia"
+              }
+            ]
           },
           {
             "title": "Cry me a river",
-            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Daniel Vorburger"
+              }
+            ]
           },
           {
             "title": "At this moment",
-            "soloists": [{"part": "Gesang", "name": "Christina De Groote"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Christina De Groote"
+              }
+            ]
           },
           {
             "title": "Sparkling Diamonds",
-            "soloists": [{"part": "Gesang", "name": "Anuschka Laveccia"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Anuschka Laveccia"
+              }
+            ]
           },
           {
             "title": "Feelin` good",
-            "soloists": [{"part": "Gesang", "name": "alle vocals"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "alle vocals"
+              }
+            ]
           },
           {
             "title": "Cry me a river (Cello Performance)",
-            "soloists": [{"part": "Cello", "name": "Jhon Hernandez"}]
+            "soloists": [
+              {
+                "part": "Cello",
+                "name": "Jhon Hernandez"
+              }
+            ]
           },
           {
             "title": "Save the last dance for me",
-            "soloists": [{"part": "Gesang", "name": "Daniel Vorburger"}]
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Daniel Vorburger"
+              }
+            ]
           }
         ]
       }
@@ -686,7 +1484,9 @@
     "category": "Kirchenkonzert",
     "location": {
       "location": "evangelische Stadtkirche Kandern",
-      "dates": ["2016-05-08"]
+      "dates": [
+        "2016-05-08"
+      ]
     },
     "title": "Jubiläums-Doppelkonzert",
     "parts": [
@@ -696,16 +1496,22 @@
         "program": [
           {
             "title": "Festliche Overtüre op. 96",
-            "composers": ["Dmitri Shostakovich"]
+            "composers": [
+              "Dmitri Shostakovich"
+            ]
           },
           {
             "title": "Humperdinck Variationen",
             "subtitle": "Solokonzert für 4 Hörner",
-            "composers": ["Bert Appermont"]
+            "composers": [
+              "Bert Appermont"
+            ]
           },
           {
             "title": "Angels in the architecture",
-            "composers": ["Frank Ticheli"]
+            "composers": [
+              "Frank Ticheli"
+            ]
           }
         ]
       },
@@ -715,12 +1521,21 @@
         "program": [
           {
             "title": "Tsar Boris - Overtüre",
-            "composers": ["Vasily Kalinnikov"]
+            "composers": [
+              "Vasily Kalinnikov"
+            ]
           },
           {
             "title": "Klavierkonzert a-moll op. 16",
-            "composers": ["Edvard Grieg"],
-            "soloists": [{"part": "Klavier", "name": "Paulina Maslanka"}]
+            "composers": [
+              "Edvard Grieg"
+            ],
+            "soloists": [
+              {
+                "part": "Klavier",
+                "name": "Paulina Maslanka"
+              }
+            ]
           }
         ]
       },
@@ -730,7 +1545,9 @@
         "program": [
           {
             "title": "An der schönen Blauen Donau op. 314",
-            "composers": ["Johann Strauss II"]
+            "composers": [
+              "Johann Strauss II"
+            ]
           }
         ]
       }
@@ -740,7 +1557,9 @@
     "category": "Adventskonzert",
     "location": {
       "location": "Kirche Wollbach",
-      "dates": ["2016-12-04"]
+      "dates": [
+        "2016-12-04"
+      ]
     },
     "title": "Benefiz Adventskonzert",
     "subtitle": "veranstaltet vom Lions Club Lörrach",
@@ -751,25 +1570,32 @@
         "program": [
           {
             "title": "Beautiful Savior",
-            "composers": ["James Swearing"]
+            "composers": [
+              "James Swearing"
+            ]
           },
           {
             "title": "Fairytale of New York",
-            "composers": ["Sean O'Loughlin"]
+            "composers": [
+              "Sean O'Loughlin"
+            ]
           },
           {
             "title": "Benediction",
-            "composers": ["John Stevens"]
+            "composers": [
+              "John Stevens"
+            ]
           }
         ]
       },
       {
         "orchestraOrEnsemble": "Fagott - Klavier Duo",
-        "conductor": "",
         "program": [
           {
             "title": "Sonate in f-moll",
-            "composers": ["Georg Philipp Telemann"]
+            "composers": [
+              "Georg Philipp Telemann"
+            ]
           }
         ]
       },
@@ -778,11 +1604,15 @@
         "program": [
           {
             "title": "Jesu, Joy of Man's Desiring",
-            "composers": ["Johann Sebastian Bach"]
+            "composers": [
+              "Johann Sebastian Bach"
+            ]
           },
           {
             "title": "Irish Tune from County Derry",
-            "composers": ["Percy Grainger"]
+            "composers": [
+              "Percy Grainger"
+            ]
           }
         ]
       },
@@ -791,7 +1621,9 @@
         "program": [
           {
             "title": "Nocturne No.3 in g-moll",
-            "composers": ["Louis Emmanuell Jadin"]
+            "composers": [
+              "Louis Emmanuell Jadin"
+            ]
           }
         ]
       },
@@ -800,22 +1632,29 @@
         "program": [
           {
             "title": "Nothing else matters",
-            "arrangers": ["Olivier Reinertz"],
-            "composers": ["Metallica"]
+            "arrangers": [
+              "Olivier Reinertz"
+            ],
+            "composers": [
+              "Metallica"
+            ]
           },
           {
             "title": "Scarborough Fair",
-            "arrangers": ["Hirokazu Fukushima"]
+            "arrangers": [
+              "Hirokazu Fukushima"
+            ]
           }
         ]
       },
       {
         "orchestraOrEnsemble": "Bläserseptett",
-        "conductor": "",
         "program": [
           {
             "title": "6 deutsche Tänze",
-            "composers": ["Wolfgang Amadeus Mozart"]
+            "composers": [
+              "Wolfgang Amadeus Mozart"
+            ]
           }
         ]
       },
@@ -824,11 +1663,15 @@
         "program": [
           {
             "title": "Bist du bei mir",
-            "composers": ["Johann Sebastian Bach"]
+            "composers": [
+              "Johann Sebastian Bach"
+            ]
           },
           {
             "title": "Adeste Fidelis",
-            "composers": ["Pavel Stanek"]
+            "composers": [
+              "Pavel Stanek"
+            ]
           }
         ]
       }
@@ -838,7 +1681,10 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2017-01-27", "2017-01-28"]
+      "dates": [
+        "2017-01-27",
+        "2017-01-28"
+      ]
     },
     "parts": [
       {
@@ -848,48 +1694,120 @@
           {
             "title": "Tintin",
             "subtitle": "Suite aus dem Musical 'Tim und Struppi - Der Sonnentempel'",
-            "composers": ["Dirk Bosse"],
-            "arrangers": ["Johan de Meij"]
+            "composers": [
+              "Dirk Bosse"
+            ],
+            "arrangers": [
+              "Johan de Meij"
+            ]
           },
           {
             "title": "Five Folk Songs",
             "subtitle": "Fünf Volkslieder für Sopran und Orchester",
-            "composers": ["Bernard Gilmore"],
-            "soloists": [{"part": "Gesang", "name": "Sigrid Fuchs"}],
+            "composers": [
+              "Bernard Gilmore"
+            ],
+            "soloists": [
+              {
+                "part": "Gesang",
+                "name": "Sigrid Fuchs"
+              }
+            ],
             "parts": [
-              {"title": "Mrs. McGrath", "subtitle": "Irisch"},
-              {"title": "All the Pretty Little Horses", "subtitle": "Amerikanisch"},
-              {"title": "Yerekina", "subtitle": "Griechisch"},
-              {"title": "El Burro", "subtitle": "Spanisch"},
-              {"title": "A Fiddler", "subtitle": "Jiddisch"}
+              {
+                "title": "Mrs. McGrath",
+                "subtitle": "Irisch"
+              },
+              {
+                "title": "All the Pretty Little Horses",
+                "subtitle": "Amerikanisch"
+              },
+              {
+                "title": "Yerekina",
+                "subtitle": "Griechisch"
+              },
+              {
+                "title": "El Burro",
+                "subtitle": "Spanisch"
+              },
+              {
+                "title": "A Fiddler",
+                "subtitle": "Jiddisch"
+              }
             ]
           },
           {
             "title": "Fantasie",
             "subtitle": "für Cello und Blasorchester",
-            "composers": ["Frigyes Hidas"],
-            "soloists": [{"part": "Cello", "name": "Jhon Hernandez"}]
+            "composers": [
+              "Frigyes Hidas"
+            ],
+            "soloists": [
+              {
+                "part": "Cello",
+                "name": "Jhon Hernandez"
+              }
+            ]
           },
           {
             "title": "Concerto",
             "subtitle": "für Klarinette und Blasorchester",
-            "composers": ["Oscar Navaro"],
-            "soloists": [{"part": "Klarinette", "name": "Maria Krey"}]
+            "composers": [
+              "Oscar Navaro"
+            ],
+            "soloists": [
+              {
+                "part": "Klarinette",
+                "name": "Maria Krey"
+              }
+            ]
           },
           {
             "title": "Teutonic Tales",
             "subtitle": "Teutonische Fabeln",
-            "composers": ["Robert W. Smith"],
+            "composers": [
+              "Robert W. Smith"
+            ],
             "parts": [
-              {"title": "Tanz der Dämonen", "soloists": [{"part": "Fagott", "name": "Luisa Krey"}]},
-              {"title": "Freya - Göttin der Schönheit und Liebe", "soloists": [{"part": "Fagott", "name": "Luisa Krey"}, {"part": "Tuba", "name": "Noah Goehlke"}]},
-              {"title": "Der Hammer des Gottes Thor", "soloists": [{"part": "Tuba", "name": "Noah Goehlke"}]}
+              {
+                "title": "Tanz der Dämonen",
+                "soloists": [
+                  {
+                    "part": "Fagott",
+                    "name": "Luisa Krey"
+                  }
+                ]
+              },
+              {
+                "title": "Freya - Göttin der Schönheit und Liebe",
+                "soloists": [
+                  {
+                    "part": "Fagott",
+                    "name": "Luisa Krey"
+                  },
+                  {
+                    "part": "Tuba",
+                    "name": "Noah Goehlke"
+                  }
+                ]
+              },
+              {
+                "title": "Der Hammer des Gottes Thor",
+                "soloists": [
+                  {
+                    "part": "Tuba",
+                    "name": "Noah Goehlke"
+                  }
+                ]
+              }
             ]
           },
           {
             "title": "Paper Cut",
             "subtitle": "für Papier, Tonaufnahmen und Blasorchester",
-            "composers": ["Alex Shapiro"]
+            "composers": [
+              "Alex Shapiro"
+            ]
           }
         ]
       }
@@ -899,7 +1817,9 @@
     "category": "Frühlingskonzert",
     "location": {
       "location": "Le Triangle, Huningue",
-      "dates": ["2017-04-02"]
+      "dates": [
+        "2017-04-02"
+      ]
     },
     "parts": [
       {
@@ -908,27 +1828,48 @@
         "program": [
           {
             "title": "Norma",
-            "composers": ["Vincezo Bellini"],
-            "arrangers": ["Franko Cesarini"]
+            "composers": [
+              "Vincezo Bellini"
+            ],
+            "arrangers": [
+              "Franko Cesarini"
+            ]
           },
           {
             "title": "Le seigneur des anneux",
-            "composers": ["Howard Shore"],
-            "arrangers": ["Victor Lopez"]
+            "composers": [
+              "Howard Shore"
+            ],
+            "arrangers": [
+              "Victor Lopez"
+            ]
           },
           {
             "title": "The golden age of the xylophone selection",
-            "composers": ["Floyd E. Werle"],
-            "soloists": [{"part": "Xylophone", "name": "Guillaume Bitonti"}]
+            "composers": [
+              "Floyd E. Werle"
+            ],
+            "soloists": [
+              {
+                "part": "Xylophone",
+                "name": "Guillaume Bitonti"
+              }
+            ]
           },
           {
             "title": "Le roi lion",
-            "composers": ["Hans Zimmer"],
-            "arrangers": ["John Higgins"]
+            "composers": [
+              "Hans Zimmer"
+            ],
+            "arrangers": [
+              "John Higgins"
+            ]
           },
           {
             "title": "Whistle while you work",
-            "composers": ["Frank Churchill"]
+            "composers": [
+              "Frank Churchill"
+            ]
           }
         ]
       },
@@ -939,24 +1880,65 @@
           {
             "title": "Tintin",
             "subtitle": "Suite aus dem Musical 'Tim und Struppi - Der Sonnentempel'",
-            "composers": ["Dirk Bosse"],
-            "arrangers": ["Johan de Meij"]
+            "composers": [
+              "Dirk Bosse"
+            ],
+            "arrangers": [
+              "Johan de Meij"
+            ]
           },
           {
             "title": "Teutonic Tales",
             "subtitle": "Teutonische Fabeln",
-            "composers": ["Robert W. Smith"],
+            "composers": [
+              "Robert W. Smith"
+            ],
             "parts": [
-              {"title": "Tanz der Dämonen", "soloists": [{"part": "Fagott", "name": "Luisa Krey"}]},
-              {"title": "Freya - Göttin der Schönheit und Liebe", "soloists": [{"part": "Fagott", "name": "Luisa Krey"}, {"part": "Tuba", "name": "Noah Goehlke"}]},
-              {"title": "Der Hammer des Gottes Thor", "soloists": [{"part": "Tuba", "name": "Noah Goehlke"}]}
+              {
+                "title": "Tanz der Dämonen",
+                "soloists": [
+                  {
+                    "part": "Fagott",
+                    "name": "Luisa Krey"
+                  }
+                ]
+              },
+              {
+                "title": "Freya - Göttin der Schönheit und Liebe",
+                "soloists": [
+                  {
+                    "part": "Fagott",
+                    "name": "Luisa Krey"
+                  },
+                  {
+                    "part": "Tuba",
+                    "name": "Noah Goehlke"
+                  }
+                ]
+              },
+              {
+                "title": "Der Hammer des Gottes Thor",
+                "soloists": [
+                  {
+                    "part": "Tuba",
+                    "name": "Noah Goehlke"
+                  }
+                ]
+              }
             ]
           },
           {
             "title": "Concerto",
             "subtitle": "für Klarinette und Blasorchester",
-            "composers": ["Oscar Navaro"],
-            "soloists": [{"part": "Klarinette", "name": "Maria Krey"}]
+            "composers": [
+              "Oscar Navaro"
+            ],
+            "soloists": [
+              {
+                "part": "Klarinette",
+                "name": "Maria Krey"
+              }
+            ]
           }
         ]
       }
@@ -966,7 +1948,10 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2018-01-26", "2018-01-27"]
+      "dates": [
+        "2018-01-26",
+        "2018-01-27"
+      ]
     },
     "title": "Barock Konzert",
     "parts": [
@@ -976,34 +1961,56 @@
         "program": [
           {
             "title": "Einzug der Königin von Saba",
-            "composers": ["Georg Friedrich Händel"],
-            "arrangers": ["Scott Richards"]
+            "composers": [
+              "Georg Friedrich Händel"
+            ],
+            "arrangers": [
+              "Scott Richards"
+            ]
           },
           {
             "title": "Stücke aus der Danserye",
-            "composers": ["Tielman Susato"],
-            "arrangers": ["Patrick Dunnigan"]
+            "composers": [
+              "Tielman Susato"
+            ],
+            "arrangers": [
+              "Patrick Dunnigan"
+            ]
           },
           {
             "title": "Sinfonie Opus 18, Nr. 6",
             "subtitle": "für Klarinettenchor",
-            "composers": ["Johann Christian Bach"],
-            "arrangers": ["Douglas McLain"]
+            "composers": [
+              "Johann Christian Bach"
+            ],
+            "arrangers": [
+              "Douglas McLain"
+            ]
           },
           {
             "title": "Toccata",
-            "composers": ["Girolamo Frescobaldi"],
-            "arrangers": ["Earl Slocum"]
+            "composers": [
+              "Girolamo Frescobaldi"
+            ],
+            "arrangers": [
+              "Earl Slocum"
+            ]
           },
           {
             "title": "Der gestiefelte Kater",
             "subtitle": "Ein Märchen für Erzähler und Blasorchester",
-            "composers": ["Franco Cesarini"],
-            "arrangers": ["Ekkehard Bierl"]
+            "composers": [
+              "Franco Cesarini"
+            ],
+            "arrangers": [
+              "Ekkehard Bierl"
+            ]
           },
           {
             "title": "Dutch Masters Suite",
-            "composers": ["Johann de Meij"],
+            "composers": [
+              "Johann de Meij"
+            ],
             "parts": [
               {
                 "title": "Nachtwacht",
@@ -1027,7 +2034,10 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2019-01-25", "2019-01-26"]
+      "dates": [
+        "2019-01-25",
+        "2019-01-26"
+      ]
     },
     "title": "Space Odyssey",
     "subtitle": "Eine musikalische Reise durch das Universum",
@@ -1039,12 +2049,18 @@
           {
             "title": "A Song in the Universe",
             "subtitle": "Ein Lied im Universum",
-            "composers": ["Stephen Melillo"]
+            "composers": [
+              "Stephen Melillo"
+            ]
           },
           {
             "title": "Die Planeten",
-            "composers": ["Gustav Holst"],
-            "arrangers": ["Christian Janssen"],
+            "composers": [
+              "Gustav Holst"
+            ],
+            "arrangers": [
+              "Christian Janssen"
+            ],
             "parts": [
               {
                 "title": "Mars",
@@ -1067,12 +2083,18 @@
           {
             "title": "This cruel Moon",
             "subtitle": "Dieser grausame Mond",
-            "composers": ["John Mackey"]
+            "composers": [
+              "John Mackey"
+            ]
           },
           {
             "title": "Star Wars Triologie",
-            "composers": ["John Williams"],
-            "arrangers": ["Donald Hunsberger"],
+            "composers": [
+              "John Williams"
+            ],
+            "arrangers": [
+              "Donald Hunsberger"
+            ],
             "parts": [
               {
                 "title": "Imperial March",
@@ -1097,19 +2119,126 @@
           {
             "title": "Aurora",
             "subtitle": "Have you ever wondered? / Hast du Dich jemals gefragt?",
-            "composers": ["Stephen Melillo"]
+            "composers": [
+              "Stephen Melillo"
+            ]
           },
           {
             "title": "Space Oddity / Life on Mars?",
             "subtitle": "Weltraumkuriosität / Leben auf dem Mars",
-            "composers": ["David Bowie"],
-            "arrangers": ["Al Hug"]
+            "composers": [
+              "David Bowie"
+            ],
+            "arrangers": [
+              "Al Hug"
+            ]
           },
           {
             "title": "Stairway to Heaven",
             "subtitle": "Himmelsleiter",
-            "composers": ["Led Zeppelin"],
-            "arrangers": ["Vrtacnik", "Al Hug"]
+            "composers": [
+              "Led Zeppelin"
+            ],
+            "arrangers": [
+              "Vrtacnik",
+              "Al Hug"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Konzert",
+    "title": "Forsthof Open-Air",
+    "location": {
+      "location": "Forsthof Wollbach",
+      "dates": [
+        "2019-06-22"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Benny Goodman"
+          },
+          {
+            "title": "Sparkling Diamonds"
+          },
+          {
+            "title": "Just a Gigolo"
+          },
+          {
+            "title": "Happy Birthday"
+          },
+          {
+            "title": "Candy"
+          },
+          {
+            "title": "Trouble with my Baby"
+          },
+          {
+            "title": "Rum & Coca Cola"
+          },
+          {
+            "title": "Mack the Knife"
+          },
+          {
+            "title": "Mouth to Mouth"
+          },
+          {
+            "title": "Digging on James Brown"
+          },
+          {
+            "title": "Cry me a River"
+          },
+          {
+            "title": "Conga"
+          },
+          {
+            "title": "Dear future Husband"
+          },
+          {
+            "title": "Can't rely on you"
+          },
+          {
+            "title": "Udo Jürgens Das Beste"
+          },
+          {
+            "title": "Candyman"
+          },
+          {
+            "title": "Rote Lippen soll man küssen"
+          },
+          {
+            "title": "Minnie the Moocher"
+          },
+          {
+            "title": "Time"
+          },
+          {
+            "title": "What a wonderful world"
+          },
+          {
+            "title": "Americano"
+          },
+          {
+            "title": "New York Medley"
+          },
+          {
+            "title": "Deep Purple"
+          },
+          {
+            "title": "Upside down"
+          },
+          {
+            "title": "If you don't know me"
+          },
+          {
+            "title": "Save the last Dance"
           }
         ]
       }
@@ -1119,7 +2248,10 @@
     "category": "Jahreskonzert",
     "location": {
       "location": "Kandertalhalle Wollbach",
-      "dates": ["2020-01-31", "2019-02-01"]
+      "dates": [
+        "2020-01-31",
+        "2019-02-01"
+      ]
     },
     "title": "BTHVN",
     "subtitle": "250 Jahre Ludwig van Beethoven",
@@ -1130,19 +2262,29 @@
         "program": [
           {
             "title": "Overtüre zu 'Fidelio'",
-            "arrangers": ["Simon Scheiwiller"],
+            "arrangers": [
+              "Simon Scheiwiller"
+            ],
             "subtitle": "op. 72",
-            "composers": ["Ludwig van Beethoven"]
+            "composers": [
+              "Ludwig van Beethoven"
+            ]
           },
           {
             "title": "Klavierkonzert Nr. 3",
             "subtitle": "op. 37 C-moll",
-            "composers": ["Ludwig van Beethoven"],
-            "arrangers": ["Bilgin Bayrak"],
-            "soloists": [{
-              "part": "Klavier",
-              "name": "Paulina Maślanka"
-            }],
+            "composers": [
+              "Ludwig van Beethoven"
+            ],
+            "arrangers": [
+              "Bilgin Bayrak"
+            ],
+            "soloists": [
+              {
+                "part": "Klavier",
+                "name": "Paulina Maślanka"
+              }
+            ],
             "parts": [
               {
                 "title": "Allegro con brio"
@@ -1158,14 +2300,22 @@
           {
             "title": "Overtüre zu 'Egmont'",
             "subtitle": "op. 84",
-            "composers": ["Ludwig van Beethoven"],
-            "arrangers": ["Douglas McLain"]
+            "composers": [
+              "Ludwig van Beethoven"
+            ],
+            "arrangers": [
+              "Douglas McLain"
+            ]
           },
           {
             "title": "Wellingtons Sieg",
             "subtitle": "op. 91",
-            "composers": ["Ludwig van Beethoven"],
-            "arrangers": ["Carlo Balmelli"],
+            "composers": [
+              "Ludwig van Beethoven"
+            ],
+            "arrangers": [
+              "Carlo Balmelli"
+            ],
             "parts": [
               {
                 "title": "Erste Abteilung: Schlacht"
@@ -1178,13 +2328,19 @@
           {
             "title": "Türkischer Marsch",
             "subtitle": "aus 'Die Ruinen von Athen', op. 113",
-            "composers": ["Ludwig van Beethoven"],
-            "arrangers": ["Marco Tamanini"]
+            "composers": [
+              "Ludwig van Beethoven"
+            ],
+            "arrangers": [
+              "Marco Tamanini"
+            ]
           },
           {
             "title": "Beethovens Gruß",
             "subtitle": "Fantasy on the canon \"Freu' dich des Lebens\"",
-            "composers": ["Philip Sparke"]
+            "composers": [
+              "Philip Sparke"
+            ]
           }
         ]
       }
