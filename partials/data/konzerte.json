@@ -473,7 +473,22 @@
       {
         "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
         "conductor": "Oliver Hauser",
-        "program": []
+        "program": [
+          {
+            "title": "Capriccio"
+          },
+          {
+            "title": "Symphonic Movement"
+          },
+          {
+            "title": "Vjenne",
+            "composer": ["Frigyes Hidas"]
+          },
+          {
+            "title": "Hungarian Rhapsody",
+            "composer": ["Franz Liszt"]
+          }
+        ]
       }
     ]
   },
@@ -519,7 +534,51 @@
       {
         "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
         "conductor": "Oliver Hauser",
-        "program": []
+        "program": [
+          {
+            "title": "Ode for Trumpet",
+            "soloist": "",
+            "composers": [
+              "Alfred Reed"
+            ]
+          },
+          {
+            "title": "Rhapsody in Blue",
+            "composers": [
+              "Georg Gershwin"
+            ]
+          },
+          {
+            "title": "On the sunny side of the street",
+            "composers": [
+              "Jimmy McHugh"
+            ]
+          },
+          {
+            "title": "Bacchus on Blue Ridge",
+            "composers": [
+              "Joseph Horovitz"
+            ]
+          },
+          {
+            "title": "Wrong note rag",
+            "composers": [
+              "Leonard Bernstein"
+            ]
+          },
+          {
+            "title": "Cartoon",
+            "composers": [
+              "Paul Hart"
+            ]
+          },
+          {
+            "title": "Silver Screen",
+            "composers": [
+              "Paul Hart"
+            ]
+          }
+        ]
       }
     ]
   },
