@@ -16,10 +16,10 @@
   ],
   "devDependencies": {
     "@types/grecaptcha": "3.0.1",
-    "@types/jquery": "3.3.38",
+    "@types/jquery": "3.5.0",
     "@types/lunr": "2.3.3",
     "@types/photoswipe": "4.1.0",
-    "autoprefixer": "9.8.0",
+    "autoprefixer": "9.8.2",
     "copyfiles": "2.3.0",
     "lite-server": "2.5.4",
     "node-sass": "^4.14.1",
