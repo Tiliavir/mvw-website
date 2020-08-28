@@ -2129,7 +2129,7 @@
         var t = new V.Builder;
         return t.pipeline.add(V.trimmer, V.stopWordFilter, V.stemmer), t.searchPipeline.add(V.stemmer), e.call(t, t), t.build()
       };
-      V.version = "2.3.8", V.utils = {}, V.utils.warn = (t = this, function(e) {
+      V.version = "2.3.9", V.utils = {}, V.utils.warn = (t = this, function(e) {
         t.console && console.warn && console.warn(e)
       }), V.utils.asString = function(e) {
         return null == e ? "" : e.toString()
@@ -2164,8 +2164,8 @@
         intersect: function(e) {
           return e
         },
-        union: function(e) {
-          return e
+        union: function() {
+          return this
         },
         contains: function() {
           return !0
@@ -2524,7 +2524,7 @@
         for (a = 0; a < t.clauses.length; a++) {
           var u = t.clauses[a],
             l = null,
-            c = V.Set.complete;
+            c = V.Set.empty;
           l = u.usePipeline ? this.pipeline.runString(u.term, {
             fields: u.fields
           }) : [u.term];
