@@ -42,11 +42,11 @@
     "compile:ts": "tsc -p tsconfig.json",
     "compile": "npm run compile:ts && npm run compile:sass && mvwc",
     "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
-    "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 ./root/[!_]*/**/* ./build/",
+    "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 './root/[!_]*/**/*' ./build/",
     "copy": "npm run copy:lib && npm run copy:root",
     "prerelease": "npm run lint",
     "release": "npm run compile && npm run copy",
-    "postrelease": "copyup -u 1 -a ./build/**/* ./_prod/artifacts/",
+    "postrelease": "copyfiles -u 1 -a './build/**/*' ./_prod/artifacts/",
     "serve": "lite-server"
   }
 }
