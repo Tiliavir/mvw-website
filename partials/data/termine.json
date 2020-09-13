@@ -1,55 +1,23 @@
 {
-  "2020": [
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Forsthof"
-      },
-      "starttime": "2020-06-12T20:00:00Z",
-      "endtime": "2020-06-13",
-      "title": "- ABGESAGT - Forsthof Open-Air",
-      "description": "Eintrittspreis wird gegen Rückgabe der Eintrittskarten bei Autohaus Krug und Annette Krey erstattet. Der Eintrittspreis kann zur Unterstützung des Vereins bei Rückgabe der Eintrittskarte auch gerne gespendet werden. Es wird darum gebeten, Eintrittskarten in jedem Fall zurückzugeben und im Falle einer Spende Informationen für eine Spendenquittung beim Autohaus Krug oder bei Annette Krey zu hinterlassen."
-    },
-    {
-      "location": {
-        "address": "Schwörstadt"
-      },
-      "starttime": "2020-07-06",
-      "title": "Auftritt am Rheinfest"
-    },
+  "2021": [
     {
       "location": {
         "address": "Wollbach",
         "name": "Kandertalhalle"
       },
-      "starttime": "2020-07-18",
-      "title": "- ABGESAGT - Instrumentenvorstellung"
+      "starttime": "2021-01-22",
+      "endtime": "2021-01-24",
+      "title": "Probewochenende"
     },
     {
       "location": {
-        "address": "Oberrotweil"
+        "address": "Wollbach",
+        "title": "Kandertalhalle"
       },
-      "starttime": "2020-09-12",
-      "title": "Auftritt am Winzerfest der Winzerkapelle"
+      "endtime": "2021-01-30",
+      "starttime": "2021-01-29",
+      "title": "Jahreskonzert"
     },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2020-10-10",
-      "title": "Sauserbummel",
-      "description": "Über Durchführung wird später entschieden. Anmeldung frühestens zwei Monate vorher. Weitere Informationen werden an dieser Stelle zu gegebener Zeit veröffentlicht. Gerne kann man sich bei unserem Newsletter für weiter Informationen registrieren."
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2020-10-11",
-      "title": "Herbstfest",
-      "description": "Über Durchführung wird später entschieden. Anmeldung frühestens zwei Monate vorher. Weitere Informationen werden an dieser Stelle zu gegebener Zeit veröffentlicht. Gerne kann man sich bei unserem Newsletter für weiter Informationen registrieren."
-    }
-  ],
-  "2021": [
     {
       "location": {
         "address": "Tannenkirch"
