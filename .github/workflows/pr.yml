@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
 
     steps:
     - uses: actions/checkout@v1
@@ -27,8 +27,8 @@ jobs:
         cd ..
     - name: commit
       run: |
-        git config user.email "markus.lindenmann@gmail.com"
-        git config user.name "Markus Lindenmann"
+        git config user.email "tiliavir@users.noreply.github.com"
+        git config user.name "tiliavir"
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
         git checkout $GITHUB_HEAD_REF
         git commit -am "Release Build changes"
