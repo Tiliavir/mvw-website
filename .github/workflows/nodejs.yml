@@ -23,6 +23,5 @@ jobs:
       run: |
         npm ci
         npm run release
-        npm test
       env:
         CI: true
