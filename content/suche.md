@@ -6,7 +6,7 @@
   menu: footer
   customJs:
     - ts/suche.ts
-    - js/lunr.js
+    - gen/js/lunr.js
   customCss:
     - scss/suche.scss
 ---

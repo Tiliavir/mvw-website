@@ -1,7 +1,7 @@
 {
   "name": "mv-wollbach",
   "license": "MIT",
-  "version": "20.12.25",
+  "version": "21.01.26",
   "description": "Hugo theme for the website of Musikverein Wollbach 1866 e.V.",
   "author": "Markus Lindenmann <tiliavir@gmail.com>",
   "repository": {
@@ -15,12 +15,14 @@
     "ie 9-11"
   ],
   "devDependencies": {
-    "@types/jquery": "3.5.1",
-    "autoprefixer": "9.8.6",
-    "postcss-cli": "7.1.2",
+    "@types/jquery": "3.5.5",
+    "autoprefixer": "10.2.3",
+    "postcss": "8.2.4",
+    "postcss-cli": "8.3.1",
     "sass-lint": "1.13.1",
     "tslint": "6.1.3",
-    "copyfiles": "2.4.1"
+    "copyfiles": "2.4.1",
+    "typescript": "4.1.3"
   },
   "dependencies": {
     "jquery": "3.5.1"
@@ -28,8 +30,6 @@
   "scripts": {
     "lint": "sass-lint -c sass-lint.yml -v -q && tslint --project ./",
     "update:lib:jquery": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./static/js/",
-    "update:lib:photoswipe": "copyfiles -u2 ./node_modules/photoswipe/dist/**/*, ./static/photoswipe",
-    "postinstall": "npm run update:lib:jquery && update:lib:photoswipe && npm run lint",
-    "test": "todo: validate the build result!!"
+    "postinstall": "npm run update:lib:jquery && npm run lint"
   }
 }

@@ -6,12 +6,12 @@
   menu: main
   customCss:
     - scss/bilder.scss
-    - css/photoswipe.css
-    - css/default-skin.css
+    - gen/css/photoswipe.css
+    - gen/css/default-skin.css
   customJs:
     - ts/bilder.ts
-    - js/photoswipe.min.js
-    - js/photoswipe-ui-default.min.js
+    - gen/js/photoswipe.min.js
+    - gen/js/photoswipe-ui-default.min.js
 ---
 -
     var galleries = require("partials/data/bilder.json");
