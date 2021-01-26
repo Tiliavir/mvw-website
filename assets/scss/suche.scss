@@ -1,0 +1,27 @@
+@import 'themes/mv-wollbach/assets/scss/global-variables';
+
+form {
+  text-align: center;
+}
+
+.mvw-search-field {
+  font-size: 1.2rem;
+  margin: 15px 0 40px;
+  max-width: 100%;
+}
+
+.results {
+  padding-left: 0;
+
+  li {
+    list-style: none;
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+
+  a {
+    font-size: $font-size-larger;
+  }
+}

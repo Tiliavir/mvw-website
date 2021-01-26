@@ -1,8 +1,8 @@
 {
   "name": "mvw-website",
   "license": "MIT",
-  "version": "20.06.14",
-  "description": "Project to generate the website for Musikverein Wollbach 1866 e.V.",
+  "version": "20.12.25",
+  "description": "Website of Musikverein Wollbach 1866 e.V.",
   "author": "Markus Lindenmann <tiliavir@gmail.com>",
   "repository": {
     "type": "git",
@@ -16,37 +16,33 @@
   ],
   "devDependencies": {
     "@types/grecaptcha": "3.0.1",
-    "@types/jquery": "3.5.1",
     "@types/lunr": "2.3.3",
     "@types/photoswipe": "4.1.0",
+    "@types/jquery": "3.5.5",
     "autoprefixer": "9.8.6",
-    "copyfiles": "2.3.0",
-    "lite-server": "2.5.4",
-    "node-sass": "^4.14.1",
     "postcss-cli": "7.1.2",
     "sass-lint": "1.13.1",
     "tslint": "6.1.3",
-    "typescript": "4.0.2"
+    "copyfiles": "2.4.1",
+    "typescript": "^4.1.3",
+    "gulp": "4.0.2",
+    "gulp-w3cjs": "1.3.2"
   },
   "dependencies": {
-    "jquery": "3.5.1",
+    "hugo-lunr": "0.0.4",
     "lunr": "2.3.9",
-    "mvw-creator": "1.3.13",
     "photoswipe": "4.1.3"
   },
   "scripts": {
-    "lint": "sass-lint -c sass-lint.yml -v -q && tslint --project ./ && mvwc-lint",
-    "clean": "rimraf ./build/ ./partials/{styles,scripts}/**/*.{css,js}",
-    "postclean": "mkdir build",
-    "compile:sass": "node-sass ./partials/styles/ -o ./partials/styles && postcss ./partials/styles/**/*.css -r --use autoprefixer --no-map",
-    "compile:ts": "tsc -p tsconfig.json",
-    "compile": "npm run compile:ts && npm run compile:sass && mvwc",
-    "copy:lib": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./build/js/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./build/",
-    "copy:root": "copyfiles -u 2 ./root/_*/* ./build/ && copyfiles -u 1 -a ./root/[!_]* ./build/ && copyfiles -u 1 './root/[!_]*/**/*' ./build/",
-    "copy": "npm run copy:lib && npm run copy:root",
-    "prerelease": "npm run lint",
-    "release": "npm run compile && npm run copy",
-    "postrelease": "copyfiles -u 1 -a './build/**/*' ./_prod/artifacts/",
-    "serve": "lite-server"
+    "validate": "gulp default",
+    "lint": "sass-lint -c sass-lint.yml -v -q && tslint --project ./",
+    "build": "hugo --minify",
+    "index": "hugo-lunr -o ./public/suche/lunr.json",
+    "update:lib:photoswipe:css": "copyfiles -u 3 ./node_modules/photoswipe/dist/photoswipe.css ./assets/css/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/default-skin.css ./assets/css/",
+    "update:lib:photoswipe:js": "copyfiles -u 3 ./node_modules/photoswipe/dist/photoswipe.min.js ./assets/js/ && copyfiles -u 3 ./node_modules/photoswipe/dist/photoswipe-ui-default.min.js ./assets/js/",
+    "update:lib:photoswipe:img": "copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./static/",
+    "update:lib:photoswipe": "npm run update:lib:photoswipe:css && npm run update:lib:photoswipe:js && npm run update:lib:photoswipe:img",
+    "update:lib:lunr": "copyfiles -u 2 ./node_modules/lunr/lunr.js ./assets/js/",
+    "postinstall": "npm run update:lib:photoswipe && npm run lint"
   }
 }

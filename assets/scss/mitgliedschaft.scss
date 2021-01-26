@@ -1,0 +1,17 @@
+@import 'themes/mv-wollbach/assets/scss/global-variables';
+@import 'mixins/breakpoint';
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.side-by-side {
+  width: calc(50% - 20px);
+
+  @include breakpoint(0, $mobile-max-width) {
+    width: initial;
+  }
+}

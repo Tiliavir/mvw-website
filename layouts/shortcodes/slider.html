@@ -1,0 +1,17 @@
+<div class="slider" id="slider">
+  <ol class="slider-items">
+    {{ range (slice "alle_1.jpg" "alle_4.jpg" "baritonsaxophon.jpg" "fagott.jpg" "klarinette.jpg" "konzert_2019.jpg" "posaune.jpg" "schlagzeug.jpg" "tuba.jpg" "alle_2.jpg" "alle_5.jpg" "dampfmusik.jpg" "gitarre.jpg" "klavier.jpg" "konzert_2020.jpg" "querfloete.jpg" "tenorsaxophon.jpg" "alle_3.jpg" "altsaxophon.jpg" "euphonium.jpg" "horn.jpg" "konzert_2018.jpg" "logo.png" "saxophon.jpg" "trompete.jpg") | shuffle }}
+      <li class="slider-item">
+        <div class="fill"
+             style="background-image: url('/slider/{{ . }}');">
+        </div>
+      </li>
+    {{ end }}
+  </ol>
+  <a class="unstyled left slider-control">
+    <span class="icon-prev">&lt;</span>
+  </a>
+  <a class="unstyled right slider-control">
+    <span class="icon-next">&gt;</span>
+  </a>
+</div>

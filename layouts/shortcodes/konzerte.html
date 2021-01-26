@@ -1,0 +1,130 @@
+{{ with $.Site.Data.konzerte }}
+
+{{ $keywords := slice }}
+{{ $years := slice }}
+{{ $byYear := dict }}
+
+{{ range . }}
+  {{ if .category }}
+    {{ $keywords = $keywords | append .category | uniq }}
+  {{ end }}
+
+  {{ $year := (time (index .location.dates 0)).Year }}
+  {{ $years = $years | append $year | uniq }}
+
+  {{ $byYear = merge $byYear (dict (string $year) (default (slice .) (index $byYear (string $year) | append .))) }}
+{{end}}
+
+{{ $activeYear := (index (last 1 $years) 0) }}
+
+{{ partial "filter" (dict "keywords" (sort $keywords "value" "asc")) }}
+{{ partial "tabs" (dict "tabs" (sort $years "value" "desc") "active" $activeYear) }}
+
+<div class="tab-content">
+  {{ $konzerte := . }}
+  {{ range $years }}
+    <div class="tab-pane{{ if (eq . $activeYear) }} active{{ end }}" id="{{ . }}">
+    {{ range sort (index $byYear (string .)) ".location.dates" }}
+      <div class="entry konzert">
+        {{ with .category }}
+          <div class="keywords hidden">
+            <span class="keyword">{{ . }}</span>
+          </div>
+        {{ end }}
+
+        <h2 class="title">{{ default .category .title }}
+          {{ if .subtitle }}
+            <small>{{ .subtitle }}</small>
+          {{ end }}
+        </h2>
+
+        <span class="location">{{ .location.location }}</span>
+
+        <ul class="dates">
+          {{- range .location.dates -}}
+            {{- $date := (time .) -}}
+            <li>{{ $date.Day }}. {{ index $.Site.Data.monate (printf "%d" $date.Month) }} {{ $date.Year }}</li>
+          {{- end -}}
+        </ul>
+
+        {{ with .parts }}
+          <ul class="parts">
+            {{ range . }}
+              <li class="part">
+                <h3 class="orchestra-or-ensemble">
+                  {{ .orchestraOrEnsemble }}
+                  {{ with .conductor }}
+                    <small class="conductor">{{ . }}</small>
+                  {{ end }}
+                </h3>
+                <ul class="program">
+                  {{ range .program }}
+                    <li>
+                      <h4 class="title">
+                        {{ .title }}
+                        {{ with .subtitle }}
+                          <small>{{ . }}</small>
+                        {{ end }}
+                      </h4>
+                      {{ with .composers }}
+                        <ul class="composers">
+                          {{ range . }}
+                            <li>{{ . }}</li>
+                          {{ end }}
+                        </ul>
+                      {{ end }}
+                      {{ with .arrangers }}
+                        <ul class="arrangers">
+                          {{ range . }}
+                            <li>{{ . }}</li>
+                          {{ end }}
+                        </ul>
+                      {{ end }}
+                      {{ with .soloists }}
+                        <ul class="soloists">
+                          {{ range . }}
+                            <li>
+                              <span class="part">{{ .part }}</span>
+                              <span class="name">{{ .name }}</span>
+                            </li>
+                          {{ end }}
+                        </ul>
+                      {{ end }}
+                      {{ with .parts }}
+                        <ul class="parts">
+                          {{ range . }}
+                            <li>
+                              <h5>
+                                {{.title}}
+                                {{ with .subtitle }}
+                                  <small>{{ . }}</small>
+                                {{ end }}
+                              </h5>
+                              {{ with .soloists }}
+                                <ul class="soloists">
+                                  {{ range .}}
+                                    <li>
+                                      <span class="part">{{ .part }}</span>
+                                      <span class="name">{{ .name }}</span>
+                                    </li>
+                                  {{ end }}
+                                </ul>
+                              {{ end }}
+                            </li>
+                          {{ end }}
+                        </ul>
+                      {{ end }}
+                    </li>
+                  {{ end }}
+                </ul>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
+  {{ end }}
+</div>
+
+{{ end }}

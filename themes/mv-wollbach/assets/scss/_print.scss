@@ -1,0 +1,73 @@
+$breadcrumb-print-color: #000;
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  .print-only {
+    display: inline-block;
+  }
+
+  html,
+  body {
+    background: none;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    padding-top: 0;
+  }
+
+  main.content {
+    margin-top: 0;
+    padding-top: 15px;
+  }
+
+  footer,
+  header,
+  nav,
+  .navigation {
+    display: none !important;
+  }
+
+  h1 {
+    font-size: 18pt;
+  }
+
+  h2 {
+    font-size: 16pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+  }
+
+  .img-responsive {
+    max-height: 45vh;
+  }
+
+  img,
+  tr,
+  td,
+  table {
+    page-break-inside: avoid;
+  }
+
+  .mvw-logo-print {
+    margin-left: calc(50% - 57px);
+  }
+
+  .content {
+    width: 95%;
+  }
+
+  .breadcrumb {
+    color: $breadcrumb-print-color;
+    font-size: 8pt;
+
+    a {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

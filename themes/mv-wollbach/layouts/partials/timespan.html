@@ -1,0 +1,87 @@
+{{ $starttime := time .start }}
+{{ $endtime := time (default .start .end) }}
+{{ $schema := .schema }}
+
+{{ if gt $starttime $endtime }}
+  {{ errorf "Start (%s) is supposed to be before end (%s)!" $starttime $endtime }}
+{{ end }}
+
+{{ if $schema }}
+  {{ if ne $starttime.Hour 0 }}
+    <meta itemprop="startDate" content={{ .start }} />
+  {{ else }}
+    <meta itemprop="startDate" content="{{ printf "%d-%0#2d-%0#2d" $starttime.Year $starttime.Month $starttime.Day }}" />
+  {{ end }}
+  {{ if and (ne $starttime.Hour 0) (ne $starttime $endtime) }}
+    <meta itemprop="endDate" content={{ .end }} />
+  {{ else }}
+    <meta itemprop="endDate" content="{{ printf "%d-%0#2d-%0#2d" $endtime.Year $endtime.Month $endtime.Day }}" />
+  {{ end }}
+{{ end }}
+
+{{ $sameMonth := eq $starttime.Month $endtime.Month }}
+{{ $sameYear := eq $starttime.Year $endtime.Year }}
+
+{{ $timestring := "" }}
+{{ $from := printf "%0#2d:%0#2d" $starttime.Hour $starttime.Minute }}
+{{ $till := printf "%0#2d:%0#2d" $endtime.Hour $endtime.Minute }}
+{{ if and (ne $starttime.Hour 0) (ne $endtime.Hour 0) (ne $from $till) }}
+  {{ $timestring = printf "%s - %s" $from $till }}
+{{ else if ne $starttime.Hour 0 }}
+  {{ $timestring = $from }}
+{{ end }}
+
+{{ $startstring := "" }}
+{{ if and $sameYear $sameMonth }}
+  {{ $startstring = printf "%0#2d." $starttime.Day }}
+{{ else if $sameYear }}
+  {{ $startstring = printf "%0#2d.%0#2d." $starttime.Day $starttime.Month }}
+{{ else }}
+  {{ $startstring = printf "%0#2d.%0#2d.%d" $starttime.Day $starttime.Month $starttime.Year }}
+{{ end }}
+
+{{ $endstring := printf "%0#2d.%0#2d.%d" $endtime.Day $endtime.Month $endtime.Year }}
+
+{{ if eq $starttime.YearDay $endtime.YearDay }}
+  {{ $endstring }} {{ $timestring }}
+{{ else if eq ($starttime.AddDate 0 0 1) $endtime }}
+  {{ printf "%s & %s" $startstring $endstring }} {{ $timestring }}
+{{ else }}
+  {{ printf "%s - %s" $startstring $endstring }} {{ $timestring }}
+{{ end }}
+
+<!--
+mixin formatTimespan(starttime, endtime, printSchemaOrgMeta)
+  -
+    var start = moment.utc(starttime);
+    var end = moment.utc(endtime || starttime);
+    var dateString;
+    var con = 0;
+
+
+    if (start.isSame(end, "d")) {
+      dateString = start.format("DD.MM.YYYY");
+      if (!isBeginningOfDay(start)) {
+        if (!start.isSame(end) && !isBeginningOfDay(end)) {
+          dateString += ` ${start.format("HH:mm")} - ${end.format("HH:mm")}`;
+        } else {
+          dateString += ` ${start.format("HH:mm")}`;
+        }
+      }
+    } else if (start.clone().add(1, "d").isSame(end, "d")) {
+      dateString = `${start.format("DD.")} & ${end.format("DD.MM.YYYY")}`;
+    } else {
+      dateString = `${start.format("DD.MM.")} - ${end.format ("DD.MM.YYYY")}`;
+    }
+
+  if printSchemaOrgMeta
+    if !isBeginningOfDay(start)
+      meta(itemprop="startDate" content=starttime)
+    else
+      meta(itemprop="startDate" content=start.format('YYYY-MM-DD'))
+    if !isBeginningOfDay(end) && !start.isSame(end)
+      meta(itemprop="endDate" content=end)
+    else
+      meta(itemprop="endDate" content=end.format('YYYY-MM-DD'))
+  = dateString
+-->

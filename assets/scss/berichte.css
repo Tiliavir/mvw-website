@@ -1,0 +1,4 @@
+td:first-child,
+th:first-child {
+  max-width: 200px;
+  width: 200px; }

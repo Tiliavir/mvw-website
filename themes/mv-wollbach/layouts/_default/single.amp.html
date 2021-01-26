@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{{ $pathToOriginal := relref . (dict "path" .File.Path "outputFormat" "html") }}
+{{ $baseUrl := .Site.BaseURL }}
+{{ $siteTitle := .Site.Title }}
+<html ⚡ lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{if not .IsHome}}{{.Title}} | {{end}}{{ $siteTitle }}</title>
+    <link rel="canonical" href="{{ $pathToOriginal }}" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+          "@type":"WebPage",
+          "@id":"{{ $pathToOriginal }}"
+        },
+        "headline": "{{.Title}}",
+        "keywords": "{{.Keywords}}",
+        "description": "{{.Description}}",
+        "datePublished": "{{.PublishDate}}",
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ $siteTitle }}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ $baseUrl }}img/logo_color.png",
+            "height": 60,
+            "width": 114
+          }
+        },
+        "author": {
+          "@type": "Person",
+          "name": "{{ $siteTitle }}"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ $baseUrl }}{{.Page.Params.AmpLogoUrl}}",
+          "height": {{.Page.Params.AmpLogoHeight}},
+          "width": {{.Page.Params.AmpLogoWidth}}
+        },
+        "dateModified": "{{ safeJS ( .Lastmod.Format "2006-01-02T15:04:05-07:00Z" ) }}"
+      }
+    </script>
+    <style amp-boilerplate>
+      body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    </style>
+    <noscript>
+      <style amp-boilerplate>
+        body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+      </style>
+    </noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-custom>
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .mvw-header {
+        background-color: #222;
+        border-color: #080808;
+        border-width: 0 0 1px;
+      }
+      .mvw-header a {
+        text-align: center;
+        width: 100%;
+        display: block;
+      }
+      .navbar-brand {
+        max-height: 60px;
+      }
+      .navbar-brand svg {
+        max-height: 50px;
+        fill: #fff;
+      }
+      .mvw-logo > g:nth-child(3) > use:nth-child(-n+4) {
+        fill: #a9852a;
+      }
+      h1, h2, h3, h4, h5 {
+        font-weight: 100;
+      }
+      h1 {
+        color: #a9852a;
+        font-size: 28px;
+      }
+      h2 {
+        color: #a9852a;
+        font-size: 24px;
+      }
+      .caption {
+        font-style: italic;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="mvw-header">
+      <a class="navbar-brand" href="{{ $baseUrl }}">
+        {{- partial "logo.svg" -}}
+      </a>
+    </nav>
+    <h1>{{- .Title -}}{{if .Page.Params.Subtitle}}&nbsp;<small>{{.Page.Params.Subtitle -}}</small>{{- end}}</h1>
+    {{ .Content }}
+  </body>
+</html>

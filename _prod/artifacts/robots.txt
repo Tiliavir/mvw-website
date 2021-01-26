@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /gallery/
-
-Allow: /
-
-Sitemap: https://www.mv-wollbach.de/sitemap.xml

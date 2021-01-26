@@ -1,0 +1,20 @@
+<div class="tile">
+  <a class="unstyled image-container" href="{{ ref .Page (.Get "file") }}" style="background-image:url({{- .Get "image" -}});">
+    <div class="blur">
+      <div class="tile-content">
+        {{ with .Get "title" }}
+          <h3 class="title">
+            {{ . }}
+          </h3>
+        {{ end }}
+        {{ if gt (len .Inner) 0 }}
+          {{ .Inner }}
+        {{ else if .Get "text" }}
+          <div class="text">
+            {{ .Get "text" }}
+          </div>
+        {{end}}
+      </div>
+    </div>
+  </a>
+</div>

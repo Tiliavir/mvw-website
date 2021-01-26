@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="de">
+{{- partial "head.html" . -}}
+<body itemscope itemtype="http://schema.org/{{- .Page.Params.schemaorg | default "WebPage" -}}">
+{{- partial "navigation.html" . -}}
+<main class="content" itemprop="mainContentOfPage">
+  <h1 class="page-header">{{- .Title -}}{{if .Page.Params.Subtitle}}&nbsp;<small>{{.Page.Params.Subtitle -}}</small>{{- end}}</h1>
+  {{- partial "breadcrumb.html" . -}}
+  {{ .Content }}
+</main>
+{{- partial "footer.html" . -}}
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import 'mixins/breakpoint';
+@import 'themes/mv-wollbach/assets/scss/global-variables';
+
+.mvw-managing-committee-table {
+  img {
+    margin: 0 auto;
+    max-height: 400px;
+    max-width: 30vw;
+  }
+}
+
+@include breakpoint(0, $mobile-max-width) {
+  .mvw-managing-committee-table {
+    .banded-rows {
+      img {
+        max-width: 100%;
+      }
+
+      tr {
+        td {
+          background-color: $gray-lightest;
+
+          &:first-child {
+            background-color: $body-bg;
+          }
+        }
+      }
+    }
+  }
+}

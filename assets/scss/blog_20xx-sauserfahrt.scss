@@ -1,0 +1,13 @@
+$warning-fg: #8a6d3b;
+$warning-bg: #fcf8e3;
+$warning-border: #faebcc;
+
+.ausverkauft {
+  text-align: center;
+  color: $warning-fg;
+  background-color: $warning-bg;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid $warning-border;
+  border-radius: 4px;
+}

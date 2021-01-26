@@ -1,0 +1,9 @@
+{{ $musicians := slice }}
+
+{{- with $.Site.Data.register -}}
+  {{ range . }}
+    {{ $musicians = $musicians | append (printf "%s %s" .name .familyName) }}
+  {{ end }}
+{{- end -}}
+
+{{ $musicians | uniq | len }}
