@@ -1,8 +1,8 @@
 name: 🚀 Deploy website on tag
 on:
   push:
-  tags:
-  - '*'
+    tags:
+      - '*'
 
 jobs:
   build:
