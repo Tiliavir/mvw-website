@@ -2,12 +2,13 @@ name: Update Dependencies
 on:
   schedule:
     - cron:  '10 19 * * 1'
-  workflow_dispatch: 
+  workflow_dispatch:
+
 jobs:
   update-deps:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
@@ -17,29 +18,18 @@ jobs:
           npm install -g npm-check-updates
           ncu -u
           npm install
-          npm run release
-          npm run test
-          cd ./_prod
-          npm ci
-          npm run validate
-          cd ..
+          cd ./themes/mv-wollbach
+          ncu -u
+          npm install
+          cd ../..
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: update dependencies
-          committer: GitHub <noreply@github.com>
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          signoff: false
-          branch: dependencies
-          branch-suffix: timestamp
-          base: master
-          delete-branch: true
-          title: 'Automated Dependency Updates'
+          title: Automated Dependency Updates
           body: This is an auto-generated PR with dependency updates.
           labels: dependencies
-          assignees: tiliavir
           reviewers: tiliavir
-          team-reviewers: |
-            owners
-            maintainers
+          branch: dependencies
+          branch-suffix: timestamp

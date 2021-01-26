@@ -1,0 +1,42 @@
+{{ with $.Site.Data.berichte }}
+
+{{ $years := slice }}
+{{ range $key, $v := . }}
+  {{ $years = $years | append $key }}
+{{ end }}
+{{ $activeYear := (index (last 1 $years) 0) }}
+
+{{ partial "tabs" (dict "tabs" (sort $years "value" "desc") "active" $activeYear) }}
+
+<div class="tab-content">
+  {{ range $year, $records := . }}
+  <div class="tab-pane{{ if (eq $year $activeYear) }} active{{ end }}" id="{{ $year }}">
+    <table class="berichte responsive banded-rows">
+      <thead>
+      <tr>
+        <th>Datum</th>
+        <th>Thema</th>
+        <th>Quelle</th>
+      </tr>
+      </thead>
+      <tbody>
+      {{ range $records }}
+      <tr>
+        <td>
+          {{ partial "timespan" (dict "start" .date) }}
+        </td>
+        <td>
+          <a href={{ .url }} target="_blank">{{ .title }}</a>
+        </td>
+        <td>
+          <a href={{ .srcUrl }} target="_blank">{{ .srcTitle }}</a>
+        </td>
+      </tr>
+      {{ end }}
+      </tbody>
+    </table>
+  </div>
+  {{ end }}
+</div>
+
+{{ end }}

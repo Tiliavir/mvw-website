@@ -1,0 +1,18 @@
+<ol class="breadcrumb" itemprop="breadcrumb" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+</ol>
+
+{{ define "breadcrumbnav" }}
+  {{ if .p1.Parent }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+  {{ else if not .p1.IsHome }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+  {{ end }}
+
+  <li {{ if eq .p1 .p2 }}class="active"{{ end }} itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem">
+    <a itemprop="item" href="{{ .p1.Permalink }}">
+      <span itemprop="name">{{if .p1.IsHome}}Start{{else}}{{ .p1.Title }}{{end}}</span>
+    </a>
+    <meta itemprop="position" content="1"/>
+  </li>
+{{ end }}

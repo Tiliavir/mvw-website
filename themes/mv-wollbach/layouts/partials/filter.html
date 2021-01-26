@@ -1,0 +1,7 @@
+{{ with .keywords }}
+<div class="keyword-selector">
+{{ range . }}
+  <span class="keyword">{{ . }}</span>
+{{ end }}
+</div>
+{{ end }}

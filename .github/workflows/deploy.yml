@@ -1,0 +1,49 @@
+name: 🚀 Deploy website on tag
+on:
+  push:
+  tags:
+  - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: ↧ Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: ↧ npm ci
+        run: npm ci
+      - name: ⚛ Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: ⚙ Build
+        run: hugo --minify
+      - name: 𝍖 Create Index
+        run: npm run index
+      - name: ✓ Validate with W3C
+        run: npm run validate
+  web-deploy:
+    name: 🎉 Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: mv-wollbach.de
+          username: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_password }}
+          protocol: ftps
+          local-dir: ./build/
+          server-dir: /html/
+          dangerous-clean-slate: true
+          security: strict
+          port: 21
+          dry-run: true

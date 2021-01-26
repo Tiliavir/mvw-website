@@ -1,0 +1,23 @@
+<ul class="tabs">
+  {{ range $index, $value := (first 5 .tabs) }}
+    <li class="tab{{if (eq . $.active)}} active{{end}}{{if (gt $index 1)}} hidden-mobile{{end}} tab-{{$value}}" role="presentation">
+      <a class="unstyled" href="#{{$value}}" data-tab="{{$value}}">{{$value}}</a>
+    </li>
+  {{ end }}
+  {{ if (gt (len .tabs) 2) }}
+    {{$class := (cond (gt (len .tabs) 5) "" (cond (gt (len .tabs) 2) " visible-mobile" " hidden")) }}
+    <li class="tab-dropdown{{$class}}">
+      <span class="caret">mehr ...</span>
+      <ul class="tab-dropdown-menu">
+        {{ range $index, $tab := .tabs }}
+          {{ if (gt $index 1) }}
+            <li class="tab tab-{{$tab}}{{if (lt $index 5)}} visible-mobile{{end}}"
+                       role="presentation">
+                  <a class="unstyled" href="#{{$tab}}" data-tab="{{$tab}}">{{$tab}}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </li>
+  {{ end }}
+</ul>

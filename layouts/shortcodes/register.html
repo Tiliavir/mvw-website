@@ -1,0 +1,23 @@
+{{ with $.Site.Data.register }}
+{{ $register := . }}
+<table class="mvw-register-table responsive">
+  <tbody>
+  {{ range (slice "Querflöte" "Oboe" "Klarinette" "Fagott" "Altsaxophon" "Tenorsaxophon" "Baritonsaxophon" "Trompete" "Horn" "Posaune" "Euphonium" "Tuba" "Klavier" "Gitarre" "Schlagzeug") }}
+    <tr>
+      <td>
+        <figure class="img">
+          <img src="/img/register/{{ replace (. | lower) "ö" "oe" }}_1.jpg"
+               alt="{{ . }}"
+               title="{{ . }}" />
+        </figure>
+      </td>
+      <td>
+        {{ range (sort (where $register "register" "eq" .) "familyName") }}
+          <p>{{ .name }} {{ .familyName }}</p>
+        {{ end }}
+      </td>
+    </tr>
+  {{ end }}
+  </tbody>
+</table>
+{{end}}

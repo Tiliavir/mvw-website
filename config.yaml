@@ -1,0 +1,71 @@
+title: Musikverein Wollbach
+theme: mv-wollbach
+defaultContentLanguage: de
+languageCode: de-de
+baseURL: https://mv-wollbach.de/
+canonifyURLs: true
+
+disableKinds:
+  - "taxonomy"
+  - "term"
+  - "RSS"
+  - "section"
+
+outputs:
+  home:
+    - HTML
+    - AMP
+  page:
+    - HTML
+    - AMP
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+enableGitInfo: true
+
+menu:
+  main:
+    - identifier: aktuelles
+      name: Aktuelles
+      title: Aktuelles
+      weight: 100
+      url: #
+    - identifier: der-verein
+      name: Der Verein
+      title: Der Verein
+      weight: 200
+      url: #
+    - identifier: das-orchester
+      name: Das Orchester
+      title: Das Orchester
+      weight: 300
+      url: #
+    - identifier: jugendarbeit
+      name: Jugendarbeit
+      title: Jugendarbeit
+      weight: 400
+      url: #
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
+  instagram:
+    simple: true
+  twitter:
+    enableDNT: true
+    simple: true
+  vimeo:
+    enableDNT: true
+    simple: false
+  youtube:
+    privacyEnhanced: true

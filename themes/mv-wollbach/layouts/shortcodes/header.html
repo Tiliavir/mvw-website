@@ -1,0 +1,7 @@
+{{ .Page.Scratch.Set "headerContent" .Inner }}
+
+{{ define "page-header" }}
+  <header>
+    {{ .Page.Scratch.Get "headerContent" }}
+  </header>
+{{ end }}

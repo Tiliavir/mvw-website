@@ -1,0 +1,42 @@
+<footer class="footer">
+  <ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.footer }}
+    <li>
+      <a href="{{ .URL }}">
+        {{ .Name }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+  <ul class="social">
+    <li>
+      <a href="https://www.facebook.com/Musikverein-Wollbach-1866-eV-378378646043433/">Facebook</a>
+    </li>
+    <li>
+      <a href="https://instagram.com/musikvereinwollbach">Instagram</a>
+    </li>
+    <li>
+      <a href="http://eepurl.com/geNZNz">Newsletter</a>
+    </li>
+    <li>
+      <a href="https://github.com/Tiliavir/mvw-website">GitHub</a>
+    </li>
+  </ul>
+
+  <script type="text/javascript"  src="{{ "/js/gen/jquery.min.js" | urlize | relURL }}"></script>
+
+  {{ with resources.Get "ts/app.ts" | js.Build | minify }}
+    <script type="text/javascript">{{ .Content | safeJS }}</script>
+  {{ end }}
+
+  {{ range .Page.Params.CustomJs -}}
+    {{ with resources.Get . | js.Build | minify }}
+      <script type="text/javascript">{{ .Content | safeJS }}</script>
+    {{ end }}
+  {{- end }}
+
+  {{ range .Page.Params.CustomExternalJs -}}
+      <script defer type="text/javascript" src="{{ . }}"></script>
+  {{- end }}
+</footer>

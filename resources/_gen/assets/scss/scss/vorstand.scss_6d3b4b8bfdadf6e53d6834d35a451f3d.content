@@ -1,0 +1,1 @@
+.mvw-managing-committee-table img{margin:0 auto;max-height:400px;max-width:30vw}@media(max-width:767px){.mvw-managing-committee-table .banded-rows img{max-width:100%}.mvw-managing-committee-table .banded-rows tr td{background-color:#f5f5f5}.mvw-managing-committee-table .banded-rows tr td:first-child{background-color:#fff}}

@@ -1,0 +1,34 @@
+{{ with $.Site.Data.termine }}
+{{ range $key, $value := . }}
+  <h2>{{ $key }}</h2>
+  <table class="termine responsive banded-rows">
+    <tbody>
+      {{ range . }}
+        <tr itemscope itemtype="http://schema.org/Event">
+          <td>
+            {{ partial "timespan" (dict "start" .starttime "end" .endtime "schema" true) }}
+          </td>
+          <td>
+            <span itemprop="name">{{.title}}</span>
+            {{- with .location -}}
+              &nbsp;(<span itemprop="location" itemscope itemtype="http://schema.org/Place">
+                {{- if .name -}}<span itemprop="name">{{ .name }}</span>{{- end -}}
+                {{- if .address -}}
+                  {{- if .name -}}&nbsp;{{- end -}}
+                  <span itemprop="name">{{ .address }}</span>
+                {{- end -}}
+              </span>)
+            {{- end -}}
+
+            {{ with .description -}}
+              <div class=description itemprop="description">
+                {{ . | markdownify }}
+              </div>
+            {{- end }}
+          </td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+{{ end }}
+{{ end }}

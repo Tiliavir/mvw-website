@@ -1,0 +1,30 @@
+{
+ "compilerOptions": {
+  "module": "none",
+  "removeComments": true,
+  "noImplicitAny": true,
+  "noUnusedLocals": true,
+  "noImplicitReturns": true,
+  "allowUnreachableCode": false,
+  "target": "es5",
+  "noFallthroughCasesInSwitch": true,
+  "noImplicitThis": true,
+  "alwaysStrict": true,
+  "inlineSourceMap": false,
+  "sourceMap": false,
+  "forceConsistentCasingInFileNames": true,
+  "lib": [
+   "dom",
+   "es5",
+   "scripthost",
+   "es2015.iterable"
+  ],
+  "baseUrl": ".",
+  "paths": {
+   "*": [
+    "../themes/mv-wollbach/assets/*",
+    "../node_modules/*"
+   ]
+  }
+ }
+}

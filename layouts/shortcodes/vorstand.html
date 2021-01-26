@@ -1,0 +1,43 @@
+{{ with $.Site.Data.vorstand }}
+<table class="mvw-managing-committee-table responsive banded-rows">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Kontakt</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range . }}
+    <tr>
+      <td>
+        {{ if .image }}
+        <figure class="img">
+          <img src="{{ .image }}" alt="{{ .title }}" title="{{ .title }}" />
+        </figure>
+        {{ end }}
+      </td>
+      <td><strong>{{ .title }}</strong></td>
+      <td>
+        {{ range .persons }}
+          <span>{{ . }}</span>
+          <br />
+        {{ end }}
+      </td>
+      <td>
+        {{ .address }}
+        <br />
+        {{ with .telephone }}
+          Telefon: {{ . }}
+        {{ end }}
+        <br />
+        {{ with .email }}
+          <a href="mailto:{{ . }}">E-Mail</a>
+        {{ end }}
+      </td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+{{ end }}

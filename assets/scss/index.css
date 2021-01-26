@@ -1,0 +1,98 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  header .mvw-brand {
+    padding: 5px 0;
+    width: 50%; }
+  header .cd {
+    width: 41.66667%; }
+    header .cd:hover {
+      opacity: .9; }
+  @media (max-width: 767px) {
+    header .mvw-brand,
+    header .cd {
+      width: 100%; }
+    header .cd {
+      margin-top: 20px; } }
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  max-height: 45vh; }
+
+.slider-items {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap; }
+
+.slider-item {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: inherit;
+  height: 1000px;
+  max-height: 45vh;
+  background: #ddd;
+  display: inline-block; }
+  .slider-item .fill {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: inherit;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto; }
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 999;
+  display: block;
+  width: 30px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: .8;
+  cursor: pointer; }
+  .slider-control:hover {
+    opacity: 1;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease; }
+  .slider-control.left {
+    border-radius: 0 2px 2px 0; }
+  .slider-control.right {
+    right: 0;
+    border-radius: 2px 0 0 2px; }
+  .slider-control .icon-prev,
+  .slider-control .icon-next {
+    -webkit-transform: scaleX(0.4);
+        -ms-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    display: block;
+    font-size: 30px; }
+
+.tiles {
+  margin-top: 30px; }
