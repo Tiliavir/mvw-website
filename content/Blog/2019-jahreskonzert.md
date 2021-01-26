@@ -32,8 +32,8 @@ ist ab 18:30, Konzertbeginn um 20:00.
 *Gustav Holst, arr. Christiaan Janssen*
 1. Mars <sub>Der Kriegsbringer</sub>
 2. Venus <sub>Die Friedensbringerin</sub>
-3. Saturn <sub>Der Bringer des hohen Alters</sub
-4.Jupiter <sub>Der Bringer der Fröhlichkeit</sub>
+3. Saturn <sub>Der Bringer des hohen Alters</sub>
+4. Jupiter <sub>Der Bringer der Fröhlichkeit</sub>
 
 ### This cruel Moon <sub>Dieser grausame Mond</sub>
 *John Mackey*

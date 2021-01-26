@@ -29,7 +29,7 @@ ab 18:30, Konzertbeginn um 20:00.
 ### Stücke aus der "Dansery"
 *Tielman Susato, arr. Patrick Dunnigan*
 
-### Sinfonie <sub>Opus 18, Nr.6 für Klarinettenchor<sub>
+### Sinfonie <sub>Opus 18, Nr.6 für Klarinettenchor</sub>
 *Johann Christian Bach, arr. Douglas McLain*
 
 ### Tocatta

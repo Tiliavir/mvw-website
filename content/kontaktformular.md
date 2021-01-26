@@ -32,7 +32,7 @@
         <span class="input-group-addon"></span>
       </div>
     </div>
-    <div class="form-group" class="has-feedback">
+    <div class="form-group has-feedback">
       <div class="g-recaptcha" data-sitekey="6LeUkp8UAAAAAAe3vQ6fI_qCvn7rDb91MDwNYOLC"></div>
       <span class="help-block" style="display: none;">Bitte bestätigen Sie, dass Sie kein Bot sind.</span>
     </div>

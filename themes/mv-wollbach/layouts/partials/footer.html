@@ -27,12 +27,12 @@
   <script type="text/javascript"  src="{{ "/js/gen/jquery.min.js" | urlize | relURL }}"></script>
 
   {{ with resources.Get "ts/app.ts" | js.Build | minify }}
-    <script defer type="text/javascript">{{ .Content | safeJS }}</script>
+    <script type="text/javascript">{{ .Content | safeJS }}</script>
   {{ end }}
 
   {{ range .Page.Params.CustomJs -}}
     {{ with resources.Get . | js.Build | minify }}
-      <script defer type="text/javascript">{{ .Content | safeJS }}</script>
+      <script type="text/javascript">{{ .Content | safeJS }}</script>
     {{ end }}
   {{- end }}
 

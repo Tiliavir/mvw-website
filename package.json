@@ -1,7 +1,7 @@
 {
   "name": "mvw-website",
   "license": "MIT",
-  "version": "20.12.25",
+  "version": "21.01.26",
   "description": "Website of Musikverein Wollbach 1866 e.V.",
   "author": "Markus Lindenmann <tiliavir@gmail.com>",
   "repository": {
@@ -43,7 +43,7 @@
     "update:lib:photoswipe:js": "copyfiles -u 3 ./node_modules/photoswipe/dist/photoswipe.min.js ./assets/gen/js/ && copyfiles -u 3 ./node_modules/photoswipe/dist/photoswipe-ui-default.min.js ./assets/gen/js/",
     "update:lib:photoswipe:img": "copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./static/",
     "update:lib:photoswipe": "npm run update:lib:photoswipe:css && npm run update:lib:photoswipe:js && npm run update:lib:photoswipe:img",
-    "update:lib:lunr": "copyfiles -u 2 ./node_modules/lunr/lunr.js ./assets/js/",
-    "postinstall": "npm run update:lib:photoswipe && npm run lint"
+    "update:lib:lunr": "copyfiles -u 2 ./node_modules/lunr/lunr.js ./assets/gen/js/",
+    "postinstall": "npm run update:lib:photoswipe && npm run update:lib:lunr && npm run lint"
   }
 }
