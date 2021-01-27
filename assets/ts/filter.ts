@@ -1,5 +1,3 @@
-/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
-
 class Filter {
   private static containsAll(array: string[], find: string[]): boolean {
     return find.every((v) => {
@@ -12,7 +10,7 @@ class Filter {
   public initialize() {
     $(".keyword-selector .keyword").each((i, e) => {
       const $e = $(e);
-      $e.click(() => {
+      $e.on("click", () => {
         $e.toggleClass("active");
         this.toggleFilter($e.text());
       });

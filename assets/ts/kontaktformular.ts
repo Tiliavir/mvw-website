@@ -1,9 +1,6 @@
-/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
-/// <reference path="../../node_modules/@types/grecaptcha/index.d.ts" />
-
 class Contact {
   private static isValidEmail(email: string): boolean {
-    const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    const regex = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
   }
 
@@ -37,32 +34,25 @@ class Contact {
                    .find("label")
                    .append("<span class='text-warning'>*</span>");
 
-    $("#feedbackSubmit").click((): boolean => {
+    $("#feedbackSubmit").on("click", (): boolean => {
       Contact.clearErrors();
 
-      // do a little client-side validation -- check that each field has a value and e-mail field is in proper format
-      // use bootstrap validator (https://github.com/1000hz/bootstrap-validator) if provided, otherwise a bit of custom
-      // validation
       const $form = $("#feedbackForm");
       let hasErrors = false;
 
-      if (($form as any).validator) {
-        hasErrors = ($form as any).validator("validate").hasErrors;
-      } else {
-        $("#feedbackForm input").not(".optional").each((i, e): void => {
-          const $this = $(e);
-          if (($this.is(":checkbox") && !$this.is(":checked")) || !$this.val()) {
-            hasErrors = true;
-            Contact.addError($(e));
-          }
-        });
-
-        const $email = $("#email");
-
-        if (!Contact.isValidEmail($email.val().toString())) {
+      $("#feedbackForm input").not(".optional").each((i, e): void => {
+        const $this = $(e);
+        if (($this.is(":checkbox") && !$this.is(":checked")) || !$this.val()) {
           hasErrors = true;
-          Contact.addError($email);
+          Contact.addError($(e));
         }
+      });
+
+      const $email = $("#email");
+
+      if (!Contact.isValidEmail($email.val().toString())) {
+        hasErrors = true;
+        Contact.addError($email);
       }
 
       // if there are any errors return without sending e-mail
@@ -76,7 +66,7 @@ class Contact {
         error: (response: JQueryXHR): void => {
           Contact.addAjaxMessage(response.responseJSON.message, true);
         },
-        success: (data: any): void => {
+        success: (data: {message: string}): void => {
           Contact.addAjaxMessage(data.message, false);
           Contact.clearForm();
         },

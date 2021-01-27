@@ -1,7 +1,5 @@
-/// <reference path="../../node_modules/@types/lunr/index.d.ts" />
-
 class Search {
-  public static handleSearch(e: JQuery.KeyUpEvent): void {
+  public static handleSearch(): void {
     const query = $("input.mvw-search-field").val();
     const result = Search.index.search(`*${query}*`);
     const resultContainer = $(".results");
@@ -33,16 +31,16 @@ class Search {
         inputField.val(query);
       }
       inputField.on("keyup", Search.handleSearch);
-      Search.handleSearch(null);
+      Search.handleSearch();
     });
   }
 
-  private static index: any;
-  private static store: any;
+  private static index: lunr.Index;
+  private static store: {[token: string]: {description: string, title: string}};
 
   private static getParameterByName(name: string): string {
     const url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
+    name = name.replace(/[[\]]/g, "\\$&");
     const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
     const results = regex.exec(url);
     if (!results) {

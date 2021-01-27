@@ -2,7 +2,7 @@ class Index {
   public static initialize(): void {
     const slideWidth = $(".slider-items").width();
 
-    let interval: any;
+    let interval: number;
 
     function resetInterval(): void {
       clearInterval(interval);
@@ -35,8 +35,8 @@ class Index {
       resetInterval();
     }
 
-    $(".slider-control.left").click(() => moveLeft());
-    $(".slider-control.right").click(() => moveRight());
+    $(".slider-control.left").on("click", () => moveLeft());
+    $(".slider-control.right").on("click", () => moveRight());
     document.onkeydown = (e) => {
       switch (e.key) {
         case "ArrowLeft":

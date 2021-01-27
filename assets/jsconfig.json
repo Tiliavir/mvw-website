@@ -6,7 +6,7 @@
   "noUnusedLocals": true,
   "noImplicitReturns": true,
   "allowUnreachableCode": false,
-  "target": "es5",
+  "target": "es6",
   "noFallthroughCasesInSwitch": true,
   "noImplicitThis": true,
   "alwaysStrict": true,

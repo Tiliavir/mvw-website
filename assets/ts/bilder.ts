@@ -1,26 +1,43 @@
-/// <reference path="../../node_modules/@types/photoswipe/index.d.ts" />
-/// <reference path="../../node_modules/@types/photoswipe/dist/photoswipe-ui-default/index.d.ts" />
-/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
+import PhotoSwipeUI_Default = require("photoswipe/dist/photoswipe-ui-default");
+import * as PhotoSwipe from "photoswipe";
 
-declare var galleries: any;
+interface GalleryImage extends PhotoSwipe.Item {
+  t?: string;
+  u: string;
+}
+
+interface GalleryAlbum {
+  d: string;
+  u: string;
+  i: GalleryImage[];
+}
+
+declare let galleries: {[year: string]: {[title: string]: GalleryAlbum}};
+
+class HTMLElementWithImage extends HTMLElement {
+  images: GalleryImage[];
+}
+
+class HTMLElementWithItems extends HTMLElement {
+  items: PhotoSwipe.Item[];
+}
 
 class Gallery {
-  public static openGallery(e: any): void {
-    let items = e.items;
+  public static openGallery(e: HTMLElement): void {
+    let items = (<HTMLElementWithItems> e).items;
     if (!items) {
       const preview = $(e).find(".preview");
-      items = e.items = Gallery.galleries[preview.data("year")][preview.data("gallery")].i;
+      items = (<HTMLElementWithItems> e).items = Gallery.galleries[preview.data("year")][preview.data("gallery")].i;
     }
 
-    const options: any = {
+    const options = {
       getThumbBoundsFn(): {w: number, x: number, y: number} {
         const pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
         const rect = e.getBoundingClientRect();
         return { w: rect.width, x: rect.left, y: rect.top + pageYScroll };
       }
     };
-    const gallery = new PhotoSwipe<PhotoSwipeUI_Default.Options>(Gallery.pswpElement,
-                                                                 PhotoSwipeUI_Default, items, options);
+    const gallery = new PhotoSwipe<PhotoSwipeUI_Default.Options>(Gallery.pswpElement, PhotoSwipeUI_Default, items, options);
 
     // create variable that will store real size of viewport
     let realViewportWidth: number;
@@ -64,22 +81,19 @@ class Gallery {
     });
 
     // gettingData event fires each time PhotoSwipe retrieves image source & size
-    gallery.listen("gettingData", (index: number, item: any) => {
+    gallery.listen("gettingData", (index: number, item: GalleryImage) => {
       // set image source & size based on real viewport width
       if (useLargeImages) {
         item.src = item.u + "=w1200-h1200";
-        item.w = "1200";
-        item.h = "1200";
+        item.w = 1200;
+        item.h = 1200;
       } else {
         item.src = item.u + "=w800-h800";
-        item.w = "800";
-        item.h = "800";
-      }
-      if (item.t != null) {
-        item.title = item.t;
+        item.w = 800;
+        item.h = 800;
       }
 
-      // it doesn't really matter what will you do here,
+      // it doesn't really matter what you do here,
       // as long as item.src, item.w and item.h have valid values.
       //
       // just avoid http requests in this listener, as it fires quite often
@@ -89,7 +103,7 @@ class Gallery {
   }
 
   public static initialize(): void {
-    Gallery.pswpElement = document.querySelectorAll(".pswp")[0];
+    Gallery.pswpElement = <HTMLElement> document.querySelectorAll(".pswp")[0];
     $(".mvw-gallery img").hover((e) => {
       const $e = $(e.target);
       $e.attr("src", $e.attr("src").replace("=w200-h200", "=w800-h800"));
@@ -98,13 +112,13 @@ class Gallery {
     Gallery.shufflePreview();
   }
 
-  private static galleries: any;
-  private static pswpElement: any;
+  private static galleries: {[year: string]: {[title: string]: GalleryAlbum}};
+  private static pswpElement: HTMLElement;
 
   private static shufflePreview(): void {
     const previews = $(".preview:visible");
-    const e: any = $(previews[Math.floor(Math.random() * previews.length)]);
-    const g = e[0].images || (e[0].images = Gallery.galleries[e.data("year")][e.data("gallery")].i);
+    const e: JQuery<HTMLElement> = $(previews[Math.floor(Math.random() * previews.length)]);
+    const g = (<HTMLElementWithImage>e[0]).images || ((<HTMLElementWithImage>e[0]).images = Gallery.galleries[e.data("year")][e.data("gallery")].i);
 
     e.fadeOut(400, () => {
       const i = g[Math.floor(Math.random() * g.length)];

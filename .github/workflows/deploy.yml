@@ -6,6 +6,8 @@ on:
 
 jobs:
   build:
+    if: github.event.base_ref == 'refs/heads/master'
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -29,12 +31,17 @@ jobs:
         run: npm run index
       - name: ✓ Validate with W3C
         run: npm run validate
-  web-deploy:
-    name: 🎉 Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: 📂 Sync files
+      - name: 🏷️ Get tag name
+        run: echo "TAG_NAME=$(echo ${GITHUB_REF#refs/*/} | tr / -)" >> $GITHUB_ENV
+      - name: 📂 Archive
+        uses: JamesIves/github-pages-deploy-action@3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: release-diff
+          FOLDER: build
+          CLEAN: true
+          COMMIT_MESSAGE: Release ${{ env.TAG_NAME }}
+      - name: 🎉 Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: mv-wollbach.de

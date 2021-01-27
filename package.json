@@ -16,18 +16,20 @@
   ],
   "devDependencies": {
     "@types/grecaptcha": "3.0.1",
+    "@types/jquery": "3.5.5",
     "@types/lunr": "2.3.3",
     "@types/photoswipe": "4.1.1",
-    "@types/jquery": "3.5.5",
+    "@typescript-eslint/eslint-plugin": "4.14.1",
+    "@typescript-eslint/parser": "4.14.1",
     "autoprefixer": "10.2.3",
-    "postcss-cli": "8.3.1",
-    "postcss": "8.2.4",
-    "sass-lint": "1.13.1",
-    "tslint": "6.1.3",
     "copyfiles": "2.4.1",
-    "typescript": "4.1.3",
+    "eslint": "7.18.0",
     "gulp": "4.0.2",
-    "gulp-w3cjs": "1.3.2"
+    "gulp-w3cjs": "1.3.2",
+    "postcss": "8.2.4",
+    "postcss-cli": "8.3.1",
+    "sass-lint": "1.13.1",
+    "typescript": "4.1.3"
   },
   "dependencies": {
     "hugo-lunr": "0.0.4",
@@ -36,7 +38,7 @@
   },
   "scripts": {
     "validate": "gulp default",
-    "lint": "sass-lint -c sass-lint.yml -v -q && tslint --project ./",
+    "lint": "sass-lint -c sass-lint.yml -v -q && npx eslint . --ext .ts",
     "build": "hugo --minify",
     "index": "hugo-lunr -o ./public/suche/lunr.json",
     "update:lib:photoswipe:css": "copyfiles -u 3 ./node_modules/photoswipe/dist/photoswipe.css ./assets/gen/css/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/default-skin.css ./assets/gen/css/",

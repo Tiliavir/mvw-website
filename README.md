@@ -13,6 +13,7 @@ hugo serve
 ```
 
 ## Deploy
+Deployment happens automatically on tag on master.
 Be sure to have the `private.php` in the `files` directory:
 ```php
 <?php
