@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "termine.css",
+	"sourceRoot": "/home/runner/work/mvw-website/mvw-website",
+	"sources": [
+		"stdin"
+	],
+	"sourcesContent": [
+		".description {\n  font-size: .9em;\n  font-style: italic;\n}\n\ntd,\nth {\n  &:first-child {\n    max-width: 200px;\n    width: 200px;\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,YAAY,AAAC,CACX,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,MAAM,CACnB,AAED,AAEE,EAFA,CAEE,WAAW,CADf,EAAE,CACE,WAAW,AAAC,CACZ,SAAS,CAAE,KAAK,CAChB,KAAK,CAAE,KAAK,CACb"
+}

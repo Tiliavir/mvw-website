@@ -1,0 +1,15 @@
+{
+	"version": 3,
+	"file": "rueckblick.css",
+	"sourceRoot": "/home/runner/work/mvw-website/mvw-website",
+	"sources": [
+		"assets/scss/rueckblick.scss",
+		"assets/scss/_keywords.scss"
+	],
+	"sourcesContent": [
+		"@import 'keywords';\n",
+		"$light-grey: #f5f5f5;\n$light-grey-hover: #eee;\n$dark-grey: #555;\n$active-bg: #07b;\n\n.keyword {\n  background-color: $light-grey;\n  border-radius: 5px;\n  color: $dark-grey;\n  cursor: pointer;\n  display: inline-block;\n  font-size: 12px;\n  font-weight: 300;\n  margin: 0 5px 5px;\n  padding: 5px;\n\n  &:hover {\n    background-color: $light-grey-hover;\n  }\n\n  &.active {\n    background-color: $active-bg;\n    color: $light-grey;\n  }\n}\n\n.keyword-selector {\n  margin-bottom: 10px;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACKA,AAAA,QAAQ,AAAC,CACP,gBAAgB,CANL,OAAO,CAOlB,aAAa,CAAE,GAAG,CAClB,KAAK,CANK,IAAI,CAOd,MAAM,CAAE,OAAO,CACf,OAAO,CAAE,YAAY,CACrB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,GAAG,CAChB,MAAM,CAAE,SAAS,CACjB,OAAO,CAAE,GAAG,CAUb,AAnBD,AAWE,QAXM,CAWJ,KAAK,AAAC,CACN,gBAAgB,CAhBD,IAAI,CAiBpB,AAbH,AAeE,QAfM,AAeL,OAAO,AAAC,CACP,gBAAgB,CAlBR,IAAI,CAmBZ,KAAK,CAtBI,OAAO,CAuBjB,AAGH,AAAA,iBAAiB,AAAC,CAChB,aAAa,CAAE,IAAI,CACpB"
+}

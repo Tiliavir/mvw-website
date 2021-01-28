@@ -1,0 +1,17 @@
+{
+	"version": 3,
+	"file": "mitgliedschaft.css",
+	"sourceRoot": "/home/runner/work/mvw-website/mvw-website",
+	"sources": [
+		"assets/scss/mitgliedschaft.scss",
+		"themes/mv-wollbach/assets/scss/_global-variables.scss",
+		"assets/scss/mixins/_breakpoint.scss"
+	],
+	"sourcesContent": [
+		"@import 'themes/mv-wollbach/assets/scss/global-variables';\n@import 'mixins/breakpoint';\n\n.row {\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-between;\n  align-items: flex-start;\n}\n\n.side-by-side {\n  width: calc(50% - 20px);\n\n  @include breakpoint(0, $mobile-max-width) {\n    width: initial;\n  }\n}\n",
+		"// colors\n// $highlight-color: #07b;\n$highlight-color: #a9852a;\n$secondary-highlight-color: #4a4a4a;\n\n$gray-base: #333;\n$gray: #555;\n$gray-light: #999;\n$gray-lighter: #ddd;\n$gray-lightest: #f5f5f5;\n$body-bg: #fff;\n$black: #000;\n\n$text-color: $gray-base;\n$text-color-inactive: $gray-lighter;\n$gray-border-color: #ccc;\n$gray-light-border-color: $gray-lighter;\n\n// fonts\n$font-family: 'Open Sans', Arial, sans-serif;\n$font-size-larger: 18px;\n$font-size-large: 16px;\n$font-size-base: 14px;\n$font-size-small: 12px;\n\n$line-height-base: 1.428571429;\n\n// structure\n$top-nav-height: 50px;\n$header-min-height: 200px;\n$header-max-width: 1200px;\n$content-max-width: 1100px;\n\n$mobile-max-width: 768px;\n",
+		"// creates a media query - use zero or negative numbers to lower / upper value from query\n@mixin breakpoint($lower, $upper: 0) {\n  @if $lower <= 0 {\n    @media (max-width: $upper - 1) {\n      @content\n    }\n  } @else if $upper <= 0 {\n    @media (min-width: $lower) {\n      @content\n    }\n  } @else {\n    @media (min-width: $lower) and (max-width: $upper - 1) {\n      @content\n    }\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "AAGA,AAAA,IAAI,AAAC,CACH,OAAO,CAAE,IAAI,CACb,SAAS,CAAE,QAAQ,CACnB,eAAe,CAAE,aAAa,CAC9B,WAAW,CAAE,UAAU,CACxB,AAED,AAAA,aAAa,AAAC,CACZ,KAAK,CAAE,gBAAgB,CAKxB,AEbG,MAAM,mBFOV,CAAA,AAAA,aAAa,AAAC,CAIV,KAAK,CAAE,OAAO,CAEjB,CAAA"
+}

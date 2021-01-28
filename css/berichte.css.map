@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "berichte.css",
+	"sourceRoot": "/home/runner/work/mvw-website/mvw-website",
+	"sources": [
+		"stdin"
+	],
+	"sourcesContent": [
+		"td,\nth {\n  &:first-child {\n    max-width: 200px;\n    width: 200px;\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAEE,EAFA,CAEE,WAAW,CADf,EAAE,CACE,WAAW,AAAC,CACZ,SAAS,CAAE,KAAK,CAChB,KAAK,CAAE,KAAK,CACb"
+}

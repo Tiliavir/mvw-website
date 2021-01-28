@@ -1,0 +1,17 @@
+{
+	"version": 3,
+	"file": "register.css",
+	"sourceRoot": "/home/runner/work/mvw-website/mvw-website",
+	"sources": [
+		"assets/scss/register.scss",
+		"assets/scss/mixins/_breakpoint.scss",
+		"themes/mv-wollbach/assets/scss/_global-variables.scss"
+	],
+	"sourcesContent": [
+		"@import 'mixins/breakpoint';\n@import 'themes/mv-wollbach/assets/scss/global-variables';\n\n.mvw-register-table {\n  &.responsive {\n    td {\n      border: 0;\n      padding-left: 20px;\n\n      &:first-child {\n        padding-left: 0;\n      }\n\n      p {\n        text-align: left;\n      }\n    }\n  }\n}\n\n@include breakpoint(0, $mobile-max-width) {\n  .mvw-register-table {\n    td {\n      border: initial;\n\n      &:first-child {\n        padding-bottom: 20px;\n      }\n    }\n  }\n}\n",
+		"// creates a media query - use zero or negative numbers to lower / upper value from query\n@mixin breakpoint($lower, $upper: 0) {\n  @if $lower <= 0 {\n    @media (max-width: $upper - 1) {\n      @content\n    }\n  } @else if $upper <= 0 {\n    @media (min-width: $lower) {\n      @content\n    }\n  } @else {\n    @media (min-width: $lower) and (max-width: $upper - 1) {\n      @content\n    }\n  }\n}\n",
+		"// colors\n// $highlight-color: #07b;\n$highlight-color: #a9852a;\n$secondary-highlight-color: #4a4a4a;\n\n$gray-base: #333;\n$gray: #555;\n$gray-light: #999;\n$gray-lighter: #ddd;\n$gray-lightest: #f5f5f5;\n$body-bg: #fff;\n$black: #000;\n\n$text-color: $gray-base;\n$text-color-inactive: $gray-lighter;\n$gray-border-color: #ccc;\n$gray-light-border-color: $gray-lighter;\n\n// fonts\n$font-family: 'Open Sans', Arial, sans-serif;\n$font-size-larger: 18px;\n$font-size-large: 16px;\n$font-size-base: 14px;\n$font-size-small: 12px;\n\n$line-height-base: 1.428571429;\n\n// structure\n$top-nav-height: 50px;\n$header-min-height: 200px;\n$header-max-width: 1200px;\n$content-max-width: 1100px;\n\n$mobile-max-width: 768px;\n"
+	],
+	"names": [],
+	"mappings": "AAGA,AAEI,mBAFe,AAChB,WAAW,CACV,EAAE,AAAC,CACD,MAAM,CAAE,CAAC,CACT,YAAY,CAAE,IAAI,CASnB,AAbL,AAMM,mBANa,AAChB,WAAW,CACV,EAAE,CAIE,WAAW,AAAC,CACZ,YAAY,CAAE,CAAC,CAChB,AARP,AAUM,mBAVa,AAChB,WAAW,CACV,EAAE,CAQA,CAAC,AAAC,CACA,UAAU,CAAE,IAAI,CACjB,ACZH,MAAM,mBDmBN,CADF,AACE,mBADiB,CACjB,EAAE,AAAC,CACD,MAAM,CAAE,OAAO,CAKhB,AAPH,AAII,mBAJe,CACjB,EAAE,CAGE,WAAW,AAAC,CACZ,cAAc,CAAE,IAAI,CACrB,CACF"
+}
