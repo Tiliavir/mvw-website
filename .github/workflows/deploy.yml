@@ -38,7 +38,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: release-diff
-          FOLDER: build
+          FOLDER: public
           CLEAN: true
           COMMIT_MESSAGE: Release ${{ env.TAG_NAME }}
       - name: 🎉 Deploy
@@ -48,7 +48,7 @@ jobs:
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
           protocol: ftps
-          local-dir: ./build/
+          local-dir: ./public/
           server-dir: /html/
           dangerous-clean-slate: true
           security: strict
