@@ -15,7 +15,7 @@ jobs:
           submodules: true
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: ↧ Install Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 14.x
       - name: ↧ npm ci
@@ -53,4 +53,3 @@ jobs:
           dangerous-clean-slate: true
           security: strict
           port: 21
-          dry-run: true
