@@ -1,7 +1,7 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
   <title>{{- .Title -}}{{ cond (eq .Title "") "" " | " }}{{- .Site.Title -}}`</title>
@@ -19,12 +19,12 @@
   <meta property="fb:admins" content="100000073380067"/>
 
   <style class="critical">
-    {{- $cssOpts := (dict "targetPath" "css/app.css" "enableSourceMap" true ) -}}
+    {{- $cssOpts := (dict "targetPath" "css/app.css" "outputStyle" "compressed" "enableSourceMap" false ) -}}
     {{- with resources.Get "scss/app.scss" | resources.ExecuteAsTemplate "style.app.css" . | toCSS $cssOpts | postCSS | minify -}}
       {{ .Content | safeCSS }}
     {{- end -}}
 
-    {{- $cssOpts := (dict "targetPath" (printf "css/%s.css" .File.ContentBaseName) "outputStyle" "compressed" "enableSourceMap" true) -}}
+    {{- $cssOpts := (dict "targetPath" (printf "css/%s.css" .File.ContentBaseName) "outputStyle" "compressed" "enableSourceMap" false) -}}
     {{- range .Page.Params.CustomCss -}}
       {{- with resources.Get . | toCSS $cssOpts | postCSS | minify -}}
         {{ .Content | safeCSS }}
