@@ -5,8 +5,8 @@
   schemaOrg: SearchResultsPage
   menu: footer
   customJs:
-    - ts/suche.ts
     - gen/js/lunr.js
+    - ts/suche.ts
   customCss:
     - scss/suche.scss
 ---

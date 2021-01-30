@@ -14,3 +14,4 @@ node_modules
 /static/default-skin.png
 /static/default-skin.svg
 /static/preloader.gif
+/static/suche/index.json
