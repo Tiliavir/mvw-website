@@ -15,7 +15,7 @@ title is the img title here, and there is no "caption title"
          {{- end -}}
          {{- with .Get "width" }} width="{{ . }}"{{ end -}}
          {{- with .Get "height" }} height="{{ . }}"{{ end -}}
-         {{- with .Get "title" }} title="{{ . }}"{{ end -}}
+         {{- with .Get "title" }} title="{{ . }}"{{ end }}
          class="img-center img-responsive"
     /> <!-- Closing img tag -->
     {{- if .Get "link" }}</a>{{ end -}}

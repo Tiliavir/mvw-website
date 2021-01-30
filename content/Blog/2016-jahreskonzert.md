@@ -16,7 +16,7 @@ Produktion einer CD. Diese wird im Rahmen der Konzerte am 22. und 23.
 Januar veröffentlicht. Die meisten Titel wurden eigens für diese CD
 arrangiert und alle werden live erklingen.
 
-Mit einem Abend voll packendem Sound, groovenden Rythmen und begeisternden
+Mit einem Abend voll packendem Sound, groovenden Rhythmen und begeisternden
 Gesangssolisten wollen wir unser Jubiläum gebührend feiern.
 
 {{< figure src="/files/flyer/16_jahreskonzert.jpg"

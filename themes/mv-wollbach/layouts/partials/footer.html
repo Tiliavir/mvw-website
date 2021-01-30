@@ -24,19 +24,21 @@
     </li>
   </ul>
 
-  <script type="text/javascript"  src="{{ "/js/gen/jquery.min.js" | urlize | relURL }}"></script>
-
-  {{ with resources.Get "ts/app.ts" | js.Build | minify }}
-    <script type="text/javascript">{{ .Content | safeJS }}</script>
-  {{ end }}
-
-  {{ range .Page.Params.CustomJs -}}
-    {{ with resources.Get . | js.Build | minify }}
-      <script type="text/javascript">{{ .Content | safeJS }}</script>
-    {{ end }}
-  {{- end }}
+  <script src="{{ "/js/jquery.min.js" | urlize | relURL }}"></script>
 
   {{ range .Page.Params.CustomExternalJs -}}
-      <script defer type="text/javascript" src="{{ . }}"></script>
+    <script defer src="{{ . }}"></script>
   {{- end }}
+
+  {{ with resources.Get "ts/app.ts" | js.Build | minify }}
+    <script>{{ .Content | safeJS }}</script>
+  {{ end }}
+
+  <script>
+  {{ range .Page.Params.CustomJs -}}
+    {{ with resources.Get . | js.Build | minify }}
+      {{ .Content | safeJS }}
+    {{ end }}
+  {{- end }}
+  </script>
 </footer>

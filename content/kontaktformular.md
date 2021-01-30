@@ -8,7 +8,7 @@
 ---
 
 <div id="contact_form" class="row">
-  <form id="feedbackForm" role="form" data-toggle="validator" data-disable="false">
+  <form id="feedbackForm" data-toggle="validator" data-disable="false">
     <div class="form-group">
       <label class="control-label" for="name">Name</label>
       <div class="input-group">
