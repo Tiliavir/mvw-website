@@ -1,3 +1,5 @@
+import * as lunr from "lunr";
+
 class Search {
   public static handleSearch(): void {
     const query = $("input.mvw-search-field").val();
