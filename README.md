@@ -8,7 +8,7 @@ If you are on Ubuntu, download and install from [gohugoio releases on GitHub](ht
 Take the latest `hugo_extended_*_Linux-64bit.deb` package.
 
 ## Debug / Test Build
-```powershell
+```bash
 hugo serve
 ```
 
