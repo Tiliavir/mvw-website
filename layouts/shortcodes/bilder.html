@@ -8,13 +8,16 @@
 
 {{ partial "tabs" (dict "tabs" (sort $years "value" "desc") "active" $activeYear) }}
 
+<script>
+  galleries = {{- . -}};
+</script>
+
 <div class="mvw-gallery-overview tab-content">
   {{ range $year, $galleries := . }}
     <div class="tab-pane{{ if (eq $year $activeYear) }} active{{ end }}" id="{{ $year }}">
        {{ range $title, $gallery := . }}
         <div class="mvw-gallery-container">
-          <div class="mvw-gallery"
-               onclick="Gallery.openGallery(this); return false;">
+          <div class="mvw-gallery">
             <div class="ratio-content">
               <img class="preview"
                    src="{{ printf "%s=w200-h200" (index $gallery.i 0).u }}"

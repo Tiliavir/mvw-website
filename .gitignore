@@ -11,7 +11,6 @@ node_modules
 
 ## Copied from libs
 /assets/gen/**/*
-/static/default-skin.png
-/static/default-skin.svg
-/static/preloader.gif
+/static/bilder/default-skin.*
+/static/bilder/preloader.gif
 /static/suche/index.json

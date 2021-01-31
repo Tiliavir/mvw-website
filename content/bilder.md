@@ -9,8 +9,6 @@
     - gen/css/default-skin.css
     - scss/bilder.scss
   customJs:
-    - gen/js/photoswipe.min.js
-    - gen/js/photoswipe-ui-default.min.js
     - ts/bilder.ts
 ---
 
