@@ -23,7 +23,7 @@ class Search {
   }
 
   public static initialize(): void {
-    $.getJSON("./index.json", (data) => {
+    $.getJSON("/suche/index.json", (data) => {
       Search.index = lunr.Index.load(data.index);
       Search.store = data.store;
 
