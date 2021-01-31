@@ -42,7 +42,7 @@
     "validate": "node validate.js",
     "lint": "sass-lint -c sass-lint.yml -v -q && npx eslint . --ext .ts",
     "build": "hugo --minify",
-    "index": "mvw-search-index './public/**/*.html' './static/suche/index.json' 'main'",
+    "index": "mvw-search-index './public/**/*.html' './public/suche/index.json' 'main'",
     "update:lib:jquery": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./static/js/",
     "update:lib:photoswipe": "copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./static/bilder/",
     "postinstall": "npm run update:lib:jquery && npm run update:lib:photoswipe && npm run lint"
