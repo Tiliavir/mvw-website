@@ -13,7 +13,7 @@ class Search {
       for (const item of result) {
         const ref = item.ref;
         const i = `<li>
-                     <h2><a href="${ref}.html">${Search.store[ref].title}</a></h2>
+                     <h2><a href="${ref.replace(/^public\//, "/")}">${Search.store[ref].title}</a></h2>
                      <span>${Search.store[ref].description}</span>
                    </li>`;
         resultContainer.append(i);
