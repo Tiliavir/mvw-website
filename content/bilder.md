@@ -5,8 +5,6 @@
   schemaOrg: ImageGallery
   menu: main
   customCss:
-    - gen/css/photoswipe.css
-    - gen/css/default-skin.css
     - scss/bilder.scss
   customJs:
     - ts/bilder.ts

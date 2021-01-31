@@ -42,9 +42,7 @@
     "lint": "sass-lint -c sass-lint.yml -v -q && npx eslint . --ext .ts",
     "build": "hugo --minify",
     "index": "mvw-search-index './public/**/*.html' './static/suche/index.json' 'main'",
-    "update:lib:photoswipe:css": "copyfiles -u 3 ./node_modules/photoswipe/dist/photoswipe.css ./assets/gen/css/ && copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/default-skin.css ./assets/gen/css/",
-    "update:lib:photoswipe:img": "copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./static/bilder/",
-    "update:lib:photoswipe": "npm run update:lib:photoswipe:css && npm run update:lib:photoswipe:img",
+    "update:lib:photoswipe": "copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./static/bilder/",
     "postinstall": "npm run update:lib:photoswipe && npm run lint"
   }
 }
