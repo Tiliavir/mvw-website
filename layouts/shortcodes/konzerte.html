@@ -24,7 +24,7 @@
   {{ $konzerte := . }}
   {{ range $years }}
     <div class="tab-pane{{ if (eq . $activeYear) }} active{{ end }}" id="{{ . }}">
-    {{ range sort (index $byYear (string .)) ".location.dates" }}
+    {{ range (index $byYear (string .))}}
       <div class="entry konzert">
         {{ with .category }}
           <div class="keywords hidden">
