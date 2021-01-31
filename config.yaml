@@ -2,7 +2,7 @@ title: Musikverein Wollbach
 theme: mv-wollbach
 defaultContentLanguage: de
 languageCode: de-de
-baseURL: https://mv-wollbach.de/
+baseURL: https://www.mv-wollbach.de/
 canonifyURLs: true
 
 disableKinds:
