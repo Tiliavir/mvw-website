@@ -50,6 +50,5 @@ jobs:
           protocol: ftps
           local-dir: ./public/
           server-dir: /html/
-          dangerous-clean-slate: true
           security: strict
           port: 21
