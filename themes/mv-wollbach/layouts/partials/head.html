@@ -6,7 +6,7 @@
 
   <title>{{- .Title -}}{{ cond (eq .Title "") "" " | " }}{{- .Site.Title -}}`</title>
 
-  <base href="{{- .Params.BaseUrl -}}"/>
+  <base href="{{- .Site.BaseURL -}}"/>
 
   <meta name="author" content="{{- .Site.Title -}}"/>
   <meta name="description" content="{{.Description}}"/>

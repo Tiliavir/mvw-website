@@ -5,6 +5,8 @@
   menu: footer
   CustomExternalJs:
     - https://www.google.com/recaptcha/api.js
+  customJs:
+    - ts/kontaktformular.ts
 ---
 
 <div id="contact_form" class="row">

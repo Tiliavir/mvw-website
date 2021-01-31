@@ -7,8 +7,7 @@
   customJs:
     - ts/index.ts
 ---
-
-{{< header >}}
+<header>
   <div class="mvw-brand">
     {{< figure src="slider/logo.png"
                alt="Das neue Logo des Musikvereins Wollbach"
@@ -23,7 +22,9 @@
       >}}
     </a>
   </div>
-{{< /header >}}
+</header>
+
+<h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
 {{< slider >}}
 
@@ -32,6 +33,11 @@
       image="slider/alle_4.jpg"
       title="Mitglied werden"
       text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
+  />}}
+  {{< tile file="termine"
+      image="img/jahreskonzerte/konzert_2020.jpg"
+      title="Termine"
+      text="Lust uns zu hören? Hier ist unser Terminkalender..."
   />}}
 </div>
 

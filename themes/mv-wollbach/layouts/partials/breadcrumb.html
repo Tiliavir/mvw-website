@@ -10,9 +10,13 @@
   {{ end }}
 
   <li {{ if eq .p1 .p2 }}class="active"{{ end }} itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem">
+    {{ if .p1.Permalink }}
     <a itemprop="item" href="{{ .p1.Permalink }}">
       <span itemprop="name">{{if .p1.IsHome}}Start{{else}}{{ .p1.Title }}{{end}}</span>
     </a>
+    {{ else }}
+      <span itemprop="name">{{if .p1.IsHome}}Start{{else}}{{ .p1.Title }}{{end}}</span>
+    {{ end }}
     <meta itemprop="position" content="1"/>
   </li>
 {{ end }}
