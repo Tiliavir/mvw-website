@@ -88,9 +88,9 @@ export class Gallery {
         gallery.listen("gettingData", (index: number, item: GalleryImage) => {
             // set image source & size based on real viewport width
             if (useLargeImages) {
-                item.src = item.u + "=w1200-h1200";
-                item.w = 1200;
-                item.h = 1200;
+                item.src = item.u + "=w2000-h2000";
+                item.w = 2000;
+                item.h = 2000;
             } else {
                 item.src = item.u + "=w800-h800";
                 item.w = 800;
