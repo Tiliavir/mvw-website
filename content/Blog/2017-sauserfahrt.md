@@ -40,8 +40,6 @@ Anmeldung bis spätestens 23.09.2017 ist daher notwendig.
 <b><i>- ausverkauft -</i></b>
 </p>
 
-//- Per mail: martina.reinauer@mv-wollbach.de oder auch telefonisch ab 18.00 Uhr: 07621-82375
-
 Bei Nichtteilnahme kann aus organisatorischen Gründen leider keine Rückerstattung
 des Fahrpreises vorgenommen werden.
 
