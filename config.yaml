@@ -4,6 +4,7 @@ defaultContentLanguage: de
 languageCode: de-de
 baseURL: https://www.mv-wollbach.de/
 canonifyURLs: true
+pluralizeListTitles: false
 
 disableKinds:
   - "taxonomy"
