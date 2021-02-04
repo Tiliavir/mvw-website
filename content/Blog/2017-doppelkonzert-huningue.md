@@ -33,5 +33,4 @@ Doppelkonzert mit der Stadtmusik Hüningen im Triangle.
 
 {{< figure src="/img/events/spring.jpg"
            alt="Frühling"
-           title="Frühling"
 >}}

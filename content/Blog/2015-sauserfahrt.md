@@ -57,5 +57,4 @@ des letzten Jahres.
 
 {{< figure src="/img/events/chanderli.jpg"
            alt="Das Chanderli durch das Kandertal"
-           title="Das Chanderli durch das Kandertal"
 >}}

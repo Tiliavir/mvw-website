@@ -15,7 +15,6 @@ Kandertalhalle zu finden.
 
 {{< figure src="/img/vorstufe/vorstufenorchester.jpg"
            alt="Vorstufenorchester am Konzert im Mai 2015"
-           title="Vorstufenorchester am Konzert im Mai 2015"
            caption="Das Vorstufenorchester an ihrem ersten Konzert im Mai 2015."
 >}}
 

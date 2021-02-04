@@ -66,5 +66,4 @@ Festival der Marschmusik feiern zu dürfen.
 
 {{< figure src="/img/vereine/bannwil.jpg"
            alt="Musikgesellschaft Bannwil"
-           title="Musikgesellschaft Bannwil"
 >}}

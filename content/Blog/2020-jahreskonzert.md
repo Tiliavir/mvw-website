@@ -30,12 +30,10 @@ Wir freuen uns auf Ihren Besuch.
 
 {{< figure src="/files/flyer/20_jahreskonzert.jpg"
            alt="Jahreskonzert 2020"
-           title="Jahreskonzert 2020"
 >}}
 
 {{< figure src="/files/flyer/20_jahreskonzert_back.jpg"
            alt="Jahreskonzert 2020 - Programm"
-           title="Jahreskonzert 2020 - Programm"
 >}}
 
 [Flyer des Jahreskonzertes als PDF herunterladen.](/files/flyer/20_jahreskonzert.pdf)

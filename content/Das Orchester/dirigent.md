@@ -9,7 +9,6 @@
 
 {{< figure src="/img/personen/dirigent.jpg"
            alt="Unser Dirigent - Oliver Hauser"
-           title="Oliver Hauser"
            caption="Seit 1996 können wir uns glücklich schätzen, mit Oliver Hauser einen ausgezeichneten Dirigenten bei uns in Wollbach zu haben" >}}
 
 ## Oliver Hauser ...

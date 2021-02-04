@@ -21,7 +21,6 @@ an welchen er immer wieder grosse Erfolge feiern kann.
 
 {{< figure src="/img/vereine/bannwil.jpg"
            alt="Musikgesellschaft Bannwil"
-           title="Musikgesellschaft Bannwil"
 >}}
 
 Die Freundschaft zur Musikgesellschaft in der Schweiz (Oberargau, Kanton

@@ -17,7 +17,6 @@ ab 18:30, Konzertbeginn um 20:00.
 
 {{< figure src="/files/flyer/18_jahreskonzert.jpg"
            alt="Jahreskonzert 2018"
-           title="Jahreskonzert 2018"
 >}}
 
 [Flyer des Jahreskonzertes als PDF herunterladen.](/files/flyer/18_jahreskonzert.pdf)

@@ -21,7 +21,6 @@ and Sekt und Cocktailbar.
 
 {{< figure src="/files/flyer/18_forsthof.jpg"
            alt="Forsthof Open-Air"
-           title="Forsthof Open-Air"
 >}}
 
 [Flyer des Forsthof Open-Air als PDF herunterladen.](/files/flyer/18_forsthof.pdf)

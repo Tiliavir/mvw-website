@@ -27,7 +27,6 @@ mit Werken von J.S. Bach, W.A. Mozart, J. Pachebel, L.E. Jadin und anderen.
 
 {{< figure src="/img/events/advent.jpg"
            alt="Benefiz Advents Konzert"
-           title="Benefiz Advents Konzert"
 >}}
 
 [Flyer des Benefiz Advents Konzertes als PDF herunterladen.](/files/flyer/16_adventskonzert.pdf)

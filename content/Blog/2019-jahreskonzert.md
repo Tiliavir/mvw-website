@@ -19,7 +19,6 @@ ist ab 18:30, Konzertbeginn um 20:00.
 
 {{< figure src="/files/flyer/19_jahreskonzert.jpg"
            alt="Jahreskonzert 2019"
-           title="Jahreskonzert 2019"
 >}}
 
 [Flyer des Jahreskonzertes als PDF herunterladen.](/files/flyer/19_jahreskonzert.pdf)

@@ -13,8 +13,7 @@ begleiten seither jedes Jahr den Sauserbummel und unterhalten die Gäste mit
 ihrem abwechslungsreichen Repertoire. Für jeden Anlass haben sie etwas dabei.
 
 {{< figure src="/img/vereine/dampfmusik.jpg"
-           title="Dampfmusik 2015"
-           alt="Dampfmusik im Chanderli"
+           alt="Dampfmusik im Chanderli 2015"
            caption="v.L. Dominik Heieck, Anika Greßlin, Ralf Ernst, Moritz Merkert, Michael Bierwirth, Matthias Braun, Timo Braun, Noah Goehlke, Johannes Krey, Sven Gut"
 >}}
 

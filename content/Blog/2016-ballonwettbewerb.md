@@ -13,7 +13,6 @@
 
 {{< figure src="/img/events/ballon.jpg"
            alt="Ballonwettbewerb am Herbstfest 2016"
-           title="Ballonwettbewerb am Herbstfest 2016"
 >}}
 
 ## Erster Platz: Jonathan Weiß

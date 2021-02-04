@@ -13,7 +13,6 @@
 
 {{< figure src="/img/events/cd.jpg"
            alt="Still Feelin' Good"
-           title="Still Feelin' Good"
 >}}
 
 ## Reinhören

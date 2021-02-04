@@ -20,14 +20,12 @@ Einwohner und wurde 767 erstmalig urkundlich erwähnt. Weiterlesen auf
 
 {{< figure src="/img/wappen.png"
            alt="Wollbacher Wappen"
-           title="Wollbacher Wappen"
 >}}
 
 Der Musikverein besteht aus {{< number-of-musicians >}} Musikern und dem Dirigenten Oliver Hauser.
 
 {{< figure src="/img/karte.png"
            alt="Lage Wollbachs"
-           title="Lage Wollbachs"
 >}}
 
 ## Ausschnitt aus der Chronik

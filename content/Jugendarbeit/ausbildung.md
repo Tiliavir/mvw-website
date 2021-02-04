@@ -9,7 +9,6 @@
 
 {{< figure src="/img/jugend/jugend_und_vorstufenorchester.jpg"
            alt="Das Jugendorchester und das Vorstufenorchester des Musikvereins Wollbach im Mai 2015"
-           title="Gruppenfoto: Jugendorchester und Vorstufenorchester"
            caption="Das Jugendorchester und das Vorstufenorchester des Musikvereins Wollbach im Mai 2015"
 >}}
 

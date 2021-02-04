@@ -23,7 +23,6 @@ Für das leibliche Wohl ist ebenfalls bestens gesorgt, es gibt:
 
 {{< figure src="/img/events/forsthof.jpg"
            alt="Adventskranz Verkauf 2016"
-           title="Adventskranz Verkauf 2016"
 >}}
 
 [Flyer des Adventskranz Verkaufs als PDF herunterladen.](/files/flyer/16_adventskranz.pdf)

@@ -9,7 +9,6 @@
 
 {{< figure src="/img/jugend/jugendorchester.jpg"
            alt="Das Jugendorchester im Mai 2015"
-           title="Das Jugendorchester im Mai 2015"
            caption="Das Jugendorchester im Mai 2015"
 >}}
 

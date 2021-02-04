@@ -12,7 +12,7 @@
     "> 1%",
     "last 2 versions",
     "Firefox ESR",
-    "ie 9-11"
+    "ie 11"
   ],
   "devDependencies": {
     "@types/grecaptcha": "3.0.1",

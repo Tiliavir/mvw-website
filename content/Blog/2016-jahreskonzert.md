@@ -21,7 +21,6 @@ Gesangssolisten wollen wir unser Jubiläum gebührend feiern.
 
 {{< figure src="/files/flyer/16_jahreskonzert.jpg"
            alt="Jahreskonzert 2016"
-           title="Jahreskonzert 2016"
 >}}
 
 [Flyer des Jahreskonzertes als PDF herunterladen.](/files/flyer/16_jahreskonzert.pdf)

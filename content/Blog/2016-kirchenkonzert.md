@@ -19,5 +19,4 @@ Weitere Details zum Kirchenkonzert entnehmen Sie dem [Flyer](/files/flyer/16_kir
 
 {{< figure src="/img/events/kirche_kandern.jpg"
            alt="Evangelische Stadtkirche Kandern"
-           title="Evangelische Stadtkirche Kandern"
 >}}

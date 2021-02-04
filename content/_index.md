@@ -11,14 +11,12 @@
   <div class="mvw-brand">
     {{< figure src="slider/logo.png"
                alt="Das neue Logo des Musikvereins Wollbach"
-               title="Das neue Logo des Musikvereins Wollbach"
     >}}
   </div>
   <div class="cd">
     <a href="{{< ref "2016-still-feeling-good.md" >}}">
       {{< figure src="/img/events/cd.jpg"
                  alt="Still Feelin' Good"
-                 title="Still Feelin' Good"
       >}}
     </a>
   </div>
