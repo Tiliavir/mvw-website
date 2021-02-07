@@ -1,11 +1,11 @@
 ---
-  title: Wir über uns
-  description: Ein kurzer Einblick in die Geschichte des Musikvereins Wollbach 1866 e.V.
-  keywords: Historie, Geschichte, Chronik
-  schemaOrg: AboutPage
-  menu:
-    main:
-      parent: der-verein
+title: Wir über uns
+description: Ein kurzer Einblick in die Geschichte des Musikvereins Wollbach 1866 e.V.
+keywords: Historie, Geschichte, Chronik
+schemaOrg: AboutPage
+menu:
+  main:
+    parent: der-verein
 ---
 
 Wollbach, der größte Teilort der Gemeinde Kandern, liegt im Kandertal im

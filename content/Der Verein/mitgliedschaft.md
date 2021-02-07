@@ -1,12 +1,12 @@
 ---
-  title: Mitglied werden
-  description: Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden.
-  keywords: Aktivmitglied, Passivmitglied, Mitgliedschaft, Spenden
-  menu:
-    main:
-      parent: der-verein
-  customCss:
-    - scss/mitgliedschaft.scss
+title: Mitglied werden
+description: Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden.
+keywords: Aktivmitglied, Passivmitglied, Mitgliedschaft, Spenden
+menu:
+  main:
+    parent: der-verein
+customCss:
+  - scss/mitgliedschaft.scss
 ---
 
 Gerne heißen wir Sie als Mitglied in unserem Verein willkommen. Ob als

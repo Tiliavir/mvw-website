@@ -1,15 +1,15 @@
 ---
-  title: Forsthof Open-Air 2019
-  subtitle: im historischen Forsthof in der Oberen Dorfstraße
-  description: Musikalischer und kulinarischer Genuss in exklusivem Ambiente.
-  keywords: Open-Air, Forsthof, Wollbach, Konzert
-  publishDate: 2019-01-21T00:00:00.000Z
-  ampLogoUrl: files/flyer/19_forsthof.jpg
-  ampLogoWidth: 800
-  ampLogoHeight: 378
-  menu:
-    blog:
-      parent: blog
+title: Forsthof Open-Air 2019
+subtitle: im historischen Forsthof in der Oberen Dorfstraße
+description: Musikalischer und kulinarischer Genuss in exklusivem Ambiente.
+keywords: Open-Air, Forsthof, Wollbach, Konzert
+publishDate: 2019-01-21T00:00:00.000Z
+ampLogoUrl: files/flyer/19_forsthof.jpg
+ampLogoWidth: 800
+ampLogoHeight: 378
+menu:
+  blog:
+    parent: blog
 ---
 
 Am Samstag den 22. Juni lädt der Musikverein Wollbach Sie zu einem ganz besonderen Anlass ein:

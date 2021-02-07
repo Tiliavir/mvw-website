@@ -1,10 +1,10 @@
 ---
-  title: Dampfmusik
-  description: Alles Rund um die Dampfmusik des Musikvereins Wollbach.
-  keywords: Dampfmusik, Sauserbummel, Sauserexpress
-  menu:
-    main:
-      parent: das-orchester
+title: Dampfmusik
+description: Alles Rund um die Dampfmusik des Musikvereins Wollbach.
+keywords: Dampfmusik, Sauserbummel, Sauserexpress
+menu:
+  main:
+    parent: das-orchester
 ---
 
 Die Wollbacher Dampfmusik wurde 2010 anlässlich der Sauserfahrt mit dem

@@ -1,10 +1,10 @@
 ---
-  title: Dirigent
-  description: "Der Dirigent des Musikvereins Wollbach: Oliver Hauser."
-  keywords: ["Dirigent", "musikalische Leitung", "Leitung", "Oliver Hauser"]
-  menu:
-    main:
-      parent: das-orchester
+title: Dirigent
+description: "Der Dirigent des Musikvereins Wollbach: Oliver Hauser."
+keywords: ["Dirigent", "musikalische Leitung", "Leitung", "Oliver Hauser"]
+menu:
+  main:
+    parent: das-orchester
 ---
 
 {{< figure src="/img/personen/dirigent.jpg"

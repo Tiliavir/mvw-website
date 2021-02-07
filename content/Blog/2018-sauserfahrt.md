@@ -1,16 +1,16 @@
 ---
-  title: Sauserfahrt mit dem Chanderli 2018
-  description: Der Sauserbummel 2018 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
-  keywords: Sauserbummel, Sauser-Express, Weinprobe, Kandertal, Herbstfest, Degustation, Wein, Sauser
-  publishDate: 2018-05-02T00:00:00.000Z
-  ampLogoUrl: img/events/chanderli.jpg
-  ampLogoWidth: 600
-  ampLogoHeight: 380
-  menu:
-    blog:
-      parent: blog
-  customCss:
-    - scss/blog_20xx-sauserfahrt.scss
+title: Sauserfahrt mit dem Chanderli 2018
+description: Der Sauserbummel 2018 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
+keywords: Sauserbummel, Sauser-Express, Weinprobe, Kandertal, Herbstfest, Degustation, Wein, Sauser
+publishDate: 2018-05-02T00:00:00.000Z
+ampLogoUrl: img/events/chanderli.jpg
+ampLogoWidth: 600
+ampLogoHeight: 380
+menu:
+  blog:
+    parent: blog
+customCss:
+  - scss/blog_20xx-sauserfahrt.scss
 ---
 
 ## Sauserfahrt mit dem Chanderli

@@ -1,10 +1,10 @@
 ---
-  title: Vorstufenorchester
-  description: Das Vorstufenorchester der Musikverein Wollbach unter der Leitung von Maria Krey.
-  keywords: Vorstufenorchester, Jugendarbeit, Jungmusiker, Jungmusikerin, Instrument lernen, Ausbildung
-  menu:
-    main:
-      parent: jugendarbeit
+title: Vorstufenorchester
+description: Das Vorstufenorchester der Musikverein Wollbach unter der Leitung von Maria Krey.
+keywords: Vorstufenorchester, Jugendarbeit, Jungmusiker, Jungmusikerin, Instrument lernen, Ausbildung
+menu:
+  main:
+    parent: jugendarbeit
 ---
 
 Seit Februar 2015 haben wir ein neues Vorstufenorchester. In diesem

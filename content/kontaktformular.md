@@ -1,12 +1,12 @@
 ---
-  title: Kontakt
-  description: Ideen, Wünsche, Kritik oder Anregungen? Nehmen Sie Kontakt auf mit dem Musikverein Wollbach.
-  keywords: Kontakt, Kontaktformular
-  menu: footer
-  CustomExternalJs:
-    - https://www.google.com/recaptcha/api.js
-  customJs:
-    - ts/kontaktformular.ts
+title: Kontakt
+description: Ideen, Wünsche, Kritik oder Anregungen? Nehmen Sie Kontakt auf mit dem Musikverein Wollbach.
+keywords: Kontakt, Kontaktformular
+menu: footer
+CustomExternalJs:
+  - https://www.google.com/recaptcha/api.js
+customJs:
+  - ts/kontaktformular.ts
 ---
 
 <div id="contact_form" class="row">

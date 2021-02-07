@@ -1,10 +1,10 @@
 ---
-  title: Jugendorchester
-  description: Das Jugendorchester des Musikvereins Wollbach under der Leitung von Maria Krey.
-  keywords: Jugendorchester, Jugendarbeit, Ausbildung, Jungmusiker, Jungmusikerinnen, Instrument lernen
-  menu:
-    main:
-      parent: jugendarbeit
+title: Jugendorchester
+description: Das Jugendorchester des Musikvereins Wollbach under der Leitung von Maria Krey.
+keywords: Jugendorchester, Jugendarbeit, Ausbildung, Jungmusiker, Jungmusikerinnen, Instrument lernen
+menu:
+  main:
+    parent: jugendarbeit
 ---
 
 {{< figure src="/img/jugend/jugendorchester.jpg"

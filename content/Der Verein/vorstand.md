@@ -1,12 +1,12 @@
 ---
-  title: Vorstandschaft
-  description: Hier finden Sie den richtigen Ansprechpartner des Musikvereins Wollbachs.
-  keywords: Vorstand, Vorstandschaft, Ansprechpartner, Kontakt
-  menu:
-    main:
-      parent: der-verein
-  customCss:
-    - scss/vorstand.scss
+title: Vorstandschaft
+description: Hier finden Sie den richtigen Ansprechpartner des Musikvereins Wollbachs.
+keywords: Vorstand, Vorstandschaft, Ansprechpartner, Kontakt
+menu:
+  main:
+    parent: der-verein
+customCss:
+  - scss/vorstand.scss
 ---
 
 {{< vorstand >}}

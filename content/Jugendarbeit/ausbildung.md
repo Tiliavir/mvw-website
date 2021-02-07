@@ -1,10 +1,10 @@
 ---
-  title: Ausbildung
-  description: Die Jugendarbeit des Musikvereins Wollbach bietet neben einer guten Ausbildung und Talentförderung auch eine tolle Gemeinschaft und viel Spaß am gemeinsamen Musizieren im Vorstufen- und Jugendorchester.
-  keywords: Ausbildung, Schulung, Jungmusiker, Jungmusikerin, Instrument lernen, Jugendorchester, Talentförderung, Vorstufenorchester
-  menu:
-    main:
-      parent: jugendarbeit
+title: Ausbildung
+description: Die Jugendarbeit des Musikvereins Wollbach bietet neben einer guten Ausbildung und Talentförderung auch eine tolle Gemeinschaft und viel Spaß am gemeinsamen Musizieren im Vorstufen- und Jugendorchester.
+keywords: Ausbildung, Schulung, Jungmusiker, Jungmusikerin, Instrument lernen, Jugendorchester, Talentförderung, Vorstufenorchester
+menu:
+  main:
+    parent: jugendarbeit
 ---
 
 {{< figure src="/img/jugend/jugend_und_vorstufenorchester.jpg"

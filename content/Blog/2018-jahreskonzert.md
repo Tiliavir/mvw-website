@@ -1,14 +1,14 @@
 ---
-  title: Jahreskonzert 2018
-  description: Barock Konzert - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2018.
-  keywords: Jahreskonzert, Jahreskonzert 2018, Konzert
-  publishDate: 2017-12-27T00:00:00.000Z
-  ampLogoUrl: files/flyer/18_jahreskonzert.jpg
-  ampLogoWidth: 1000
-  ampLogoHeight: 430
-  menu:
-    blog:
-      parent: blog
+title: Jahreskonzert 2018
+description: Barock Konzert - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2018.
+keywords: Jahreskonzert, Jahreskonzert 2018, Konzert
+publishDate: 2017-12-27T00:00:00.000Z
+ampLogoUrl: files/flyer/18_jahreskonzert.jpg
+ampLogoWidth: 1000
+ampLogoHeight: 430
+menu:
+  blog:
+    parent: blog
 ---
 
 Am Freitag den 26. und Samstag den 27. Januar veranstalten wir unser
