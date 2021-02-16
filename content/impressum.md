@@ -67,12 +67,12 @@ Landratsamt Lörrach
 [![Valid HTML 5][htm]][htmLink]
 [![Valid CSS!][css]][cssLink]
 
-[haftung]:  {{< ref "haftung.md" >}}
-[privacy]:  {{< ref "datenschutz.md" >}}
+[haftung]: {{< ref "haftung.md" >}}
+[privacy]: {{< ref "datenschutz.md" >}}
 [vorstand]: {{< ref "vorstand.md" >}}
-[kontakt]:  {{< ref "kontaktformular.md" >}}
-[siteOv]:   {{< ref "seiten-uebersicht.md" >}}
-[sitemap]:  /sitemap.xml
+[kontakt]: {{< ref "kontaktformular.md" >}}
+[siteOv]: {{< ref "seiten-uebersicht.md" >}}
+[sitemap]: /sitemap.xml
 
 [info]:     mailto:info@mv-wollbach.de"
 
