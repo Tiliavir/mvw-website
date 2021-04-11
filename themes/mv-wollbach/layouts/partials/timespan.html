@@ -49,39 +49,3 @@
 {{ else }}
   {{ printf "%s - %s" $startstring $endstring }} {{ $timestring }}
 {{ end }}
-
-<!--
-mixin formatTimespan(starttime, endtime, printSchemaOrgMeta)
-  -
-    var start = moment.utc(starttime);
-    var end = moment.utc(endtime || starttime);
-    var dateString;
-    var con = 0;
-
-
-    if (start.isSame(end, "d")) {
-      dateString = start.format("DD.MM.YYYY");
-      if (!isBeginningOfDay(start)) {
-        if (!start.isSame(end) && !isBeginningOfDay(end)) {
-          dateString += ` ${start.format("HH:mm")} - ${end.format("HH:mm")}`;
-        } else {
-          dateString += ` ${start.format("HH:mm")}`;
-        }
-      }
-    } else if (start.clone().add(1, "d").isSame(end, "d")) {
-      dateString = `${start.format("DD.")} & ${end.format("DD.MM.YYYY")}`;
-    } else {
-      dateString = `${start.format("DD.MM.")} - ${end.format ("DD.MM.YYYY")}`;
-    }
-
-  if printSchemaOrgMeta
-    if !isBeginningOfDay(start)
-      meta(itemprop="startDate" content=starttime)
-    else
-      meta(itemprop="startDate" content=start.format('YYYY-MM-DD'))
-    if !isBeginningOfDay(end) && !start.isSame(end)
-      meta(itemprop="endDate" content=end)
-    else
-      meta(itemprop="endDate" content=end.format('YYYY-MM-DD'))
-  = dateString
--->
