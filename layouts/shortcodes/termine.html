@@ -1,7 +1,13 @@
 {{ with $.Site.Data.termine }}
 {{ range $key, $value := . }}
   <h2>{{ $key }}</h2>
-  <table class="termine responsive banded-rows">
+  <table class="termine responsive banded-rows" aria-label="Termine">
+    <thead>
+    <tr>
+      <th scope="col">Zeitpunkt</th>
+      <th scope="col">Veranstaltung</th>
+    </tr>
+    </thead>
     <tbody>
       {{ range . }}
         <tr itemscope itemtype="http://schema.org/Event">
