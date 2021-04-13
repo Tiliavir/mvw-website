@@ -11,12 +11,12 @@
 <div class="tab-content">
   {{ range $year, $records := . }}
   <div class="tab-pane{{ if (eq $year $activeYear) }} active{{ end }}" id="{{ $year }}">
-    <table class="berichte responsive banded-rows">
+    <table aria-label="Berichte" class="berichte responsive banded-rows">
       <thead>
       <tr>
-        <th>Datum</th>
-        <th>Thema</th>
-        <th>Quelle</th>
+        <th scope="col">Datum</th>
+        <th scope="col">Thema</th>
+        <th scope="col">Quelle</th>
       </tr>
       </thead>
       <tbody>

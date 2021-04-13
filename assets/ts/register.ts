@@ -1,6 +1,6 @@
 class Register {
   public static tryReplaceImage($images: JQuery): boolean {
-    const register: { [id:string]: string[] } = {
+    const register: { [id: string]: string[] } = {
       "Altsaxophon": ["altsaxophon_1.jpg", "altsaxophon_2.jpg", "saxophon_1.jpg"],
       "Baritonsaxophon": ["baritonsaxophon_1.jpg", "baritonsaxophon_2.jpg", "saxophon_1.jpg"],
       "Euphonium": ["euphonium_1.jpg", "euphonium_2.jpg"],
@@ -39,19 +39,19 @@ class Register {
   private static isElementInViewport(el: HTMLElement): boolean {
     const rect = el.getBoundingClientRect();
     return rect.bottom >= 0
-      && rect.right >= 0
-      && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
-      && rect.left <= (window.innerWidth || document.documentElement.clientWidth);
+        && rect.right >= 0
+        && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+        && rect.left <= (window.innerWidth || document.documentElement.clientWidth);
   }
 }
 
 $(() => {
-    const $images = $(".mvw-register-table img");
-    setInterval(
+  const $images = $(".mvw-register-table img");
+  setInterval(
       (): void => {
         while (!Register.tryReplaceImage($images)) {
           // find an image to replace...
         }
       },
       8000);
-  });
+});

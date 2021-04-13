@@ -1,6 +1,12 @@
 {{ with $.Site.Data.register }}
 {{ $register := . }}
-<table class="mvw-register-table responsive">
+<table class="mvw-register-table responsive" aria-label="Register">
+  <thead>
+  <tr>
+    <th scope="col">Registerbild</th>
+    <th scope="col">Musiker</th>
+  </tr>
+  </thead>
   <tbody>
   {{ range (slice "Querflöte" "Oboe" "Klarinette" "Fagott" "Altsaxophon" "Tenorsaxophon" "Baritonsaxophon" "Trompete" "Horn" "Posaune" "Euphonium" "Tuba" "Klavier" "Gitarre" "Schlagzeug") }}
     <tr>

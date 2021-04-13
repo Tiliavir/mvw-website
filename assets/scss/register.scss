@@ -16,6 +16,10 @@
       }
     }
   }
+
+  thead {
+    display: none;
+  }
 }
 
 @include breakpoint(0, $mobile-max-width) {
