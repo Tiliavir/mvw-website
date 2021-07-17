@@ -2,17 +2,63 @@
   "2021": [
     {
       "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2021-07-24",
+      "title": "Instrumentenvorstellung"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "description": "unter Einhaltung der Corona Bedingungen",
+      "starttime": "2021-10-09",
+      "title": "Sauserbummel"
+    }
+  ],
+  "2022": [
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2022-01-28",
+      "endtime": "2022-01-29",
+      "title": "Jahreskonzert"
+    },
+    {
+      "location": {
+        "name": "Stüble der Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2022-02-10",
+      "title": "Generalversammlung"
+    },
+    {
+      "location": {
         "address": "Tannenkirch"
       },
-      "starttime": "2021-06-28T20:00:00Z",
-      "title": "Bergfest Tannenkirch"
+      "starttime": "2022-06-27T20:00:00Z",
+      "endtime": "2022-06-27T21:30:00Z",
+      "title": "Bergfest des Musikverein Tannenkirch",
+      "description": "100 jähriges Jubiläum"
     },
     {
       "location": {
         "address": "Egringen"
       },
-      "starttime": "2021-07-11T10:00:00Z",
-      "title": "Frühschoppen am Sommerfest"
+      "starttime": "2022-07-10T11:00:00Z",
+      "endtime": "2022-07-10T12:30:00Z",
+      "title": "Sommerfest des Musikverein Egringen"
+    },
+    {
+      "location": {
+        "address": "Oberrottweil"
+      },
+      "starttime": "2022-09-10T20:00:00Z",
+      "endtime": "2022-09-10T23:00:00Z",
+      "title": "Weinfest des Musikverein Oberrottweil"
     }
   ]
 }
