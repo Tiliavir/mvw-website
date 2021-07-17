@@ -1,6 +1,6 @@
 ---
 title: Jugendorchester
-description: Das Jugendorchester des Musikvereins Wollbach under der Leitung von Maria Krey.
+description: Das Jugendorchester des Musikvereins Wollbach under der Leitung von Maria Gut.
 keywords: Jugendorchester, Jugendarbeit, Ausbildung, Jungmusiker, Jungmusikerinnen, Instrument lernen
 menu:
   main:
@@ -13,12 +13,12 @@ menu:
 >}}
 
 ## Die Dirigentin
-Unsere Dirigentin ist Maria Krey. Maria spielt Klarinette, Saxophon und Klavier
+Unsere Dirigentin ist Maria Gut. Maria spielt Klarinette, Saxophon und Klavier
 und dirigiert seit 2017 unser Jugendorchester.
 
 {{< figure src="/img/personen/dirigentin_jugend.jpg"
            alt="Jugendorchester Dirigentin"
-           caption="Die Jugendorchester Dirigentin: Maria Krey"
+           caption="Die Jugendorchester Dirigentin: Maria Gut"
 >}}
 
 Du spielst bereits ein Instrument und möchtest gerne mit anderen zusammen musizieren?

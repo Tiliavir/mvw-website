@@ -1,6 +1,6 @@
 ---
 title: Vorstufenorchester
-description: Das Vorstufenorchester der Musikverein Wollbach unter der Leitung von Maria Krey.
+description: Das Vorstufenorchester der Musikverein Wollbach unter der Leitung von Maria Gut.
 keywords: Vorstufenorchester, Jugendarbeit, Jungmusiker, Jungmusikerin, Instrument lernen, Ausbildung
 menu:
   main:
@@ -9,7 +9,7 @@ menu:
 
 Seit Februar 2015 haben wir ein neues Vorstufenorchester. In diesem
 Orchester spielen 10 begeisterte Jungmusiker im Alter zwischen 9 und 14
-Jahren. Das Vorstufenorchester wird von Maria Krey geleitet. Jeden
+Jahren. Das Vorstufenorchester wird von Maria Gut geleitet. Jeden
 Donnerstag von 18 Uhr bis 19 Uhr sind sie beim Proben im Stübli der
 Kandertalhalle zu finden.
 
@@ -20,7 +20,7 @@ Kandertalhalle zu finden.
 
 ## Die Dirigentin
 {{< figure src="/img/personen/dirigentin_jugend.jpg"
-           alt="Dirigentin des Vorstufenorchesters - Maria Krey"
-           title="Dirigentin des Vorstufenorchesters - Maria Krey"
-           caption="Maria Krey"
+           alt="Dirigentin des Vorstufenorchesters - Maria Gut"
+           title="Dirigentin des Vorstufenorchesters - Maria Gut"
+           caption="Maria Gut"
 >}}

@@ -22,7 +22,7 @@ Kinobesuchen, Kegelabenden, Pizza Abenden etc. sind unsere jungen
 Musikerinnen und Musiker mit dabei.
 
 Wenn du also Interesse hast, dann wende dich doch an unsere Jugendleiter,
-Moritz Merkert und Maria Krey. _Oder komm doch einfach mal vorbei in eine
+Moritz Merkert und Maria Gut. _Oder komm doch einfach mal vorbei in eine
 Probe des Vorstufenorchesters. Immer donnerstags von 18:30 bis 19:30 Uhr
 findest du uns im Stübli der Kandertalhalle in Wollbach.
 
