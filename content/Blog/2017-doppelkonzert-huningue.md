@@ -1,7 +1,7 @@
 ---
 title: Frühlingskonzert - concert de printemps
 description: Das Doppelkonzert der Stadtmusik Hüningen mit dem Musikverein Wollbach
-keywords: Frühlingskonzert, Hüningen, Konzert, Blasmusik, Stadtmusik Hüningen, Huningue, Doppelkonzert
+keywords: [Frühlingskonzert, Hüningen, Konzert, Blasmusik, Stadtmusik Hüningen, Huningue, Doppelkonzert]
 publishDate: 2017-03-20T00:00:00.000Z
 ampLogoUrl: img/events/spring.jpg
 ampLogoWidth: 600

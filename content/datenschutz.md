@@ -1,7 +1,7 @@
 ---
 title: Datenschutz
 description: Das Impressum der Webseite des Musikvereins Wollbach.
-keywords: Impressum, Kontakt, Übersicht, Webseiteninformationen, Informationen zur Webseite, Rechtliches, Haftung, Haftungsausschluss, Datenschutz
+keywords: [Impressum, Kontakt, Übersicht, Webseiteninformationen, Informationen zur Webseite, Rechtliches, Haftung, Haftungsausschluss, Datenschutz]
 ---
 
 ## Datenschutz

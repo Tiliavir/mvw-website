@@ -1,7 +1,7 @@
 ---
 title: Wir über uns
 description: Ein kurzer Einblick in die Geschichte des Musikvereins Wollbach 1866 e.V.
-keywords: Historie, Geschichte, Chronik
+keywords: [Historie, Geschichte, Chronik]
 schemaOrg: AboutPage
 menu:
   main:

@@ -1,7 +1,7 @@
 ---
 title: Bilder
 description: Bildergalerie mit Bildern von diversen Konzerten, Festen und anderen Anlässen des Musikvereins Wollbach.
-keywords: Bilder, Bildergalerie, Fotos, Photos, Alben, Album, Fotoalbum
+keywords: [Bilder, Bildergalerie, Fotos, Photos, Alben, Album, Fotoalbum]
 schemaOrg: ImageGallery
 menu: main
 customCss:

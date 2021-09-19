@@ -2,7 +2,7 @@
 title: Marschmusikfestival
 subtitle: Marschmusik in Wollbach und Nebenorten
 description: Am Samstag den 04. Juni 2016 marschiert der Musikverein Wollbach und die Musikgesellschaft Bannwil durch Wollbach und Nebenorte.
-keywords: Marschmusik, Marschmusikfestival, Festival, Blasmusik, Wollbach, Bannwil, Freundschaft, Tradition
+keywords: [Marschmusik, Marschmusikfestival, Festival, Blasmusik, Wollbach, Bannwil, Freundschaft, Tradition]
 publishDate: 2016-06-01T00:00:00.000Z
 ampLogoUrl: img/vereine/bannwil.jpg
 ampLogoWidth: 640

@@ -1,7 +1,7 @@
 ---
 title: Impressum
 description: Das Impressum der Webseite des Musikvereins Wollbach.
-keywords: Impressum, Kontakt, Übersicht, Webseiteninformationen, Informationen zur Webseite, Rechtiliches, Haftung, Haftungsausschluss, Datenschutz
+keywords: [Impressum, Kontakt, Übersicht, Webseiteninformationen, Informationen zur Webseite, Rechtiliches, Haftung, Haftungsausschluss, Datenschutz]
 menu: footer
 customCss:
   - scss/impressum.scss

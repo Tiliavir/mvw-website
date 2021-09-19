@@ -1,7 +1,7 @@
 ---
 title: Vorstandschaft
 description: Hier finden Sie den richtigen Ansprechpartner des Musikvereins Wollbachs.
-keywords: Vorstand, Vorstandschaft, Ansprechpartner, Kontakt
+keywords: [Vorstand, Vorstandschaft, Ansprechpartner, Kontakt]
 menu:
   main:
     parent: der-verein

@@ -1,7 +1,7 @@
 ---
 title: Suche
 description: Durchsuche Inhalte der Webseite des Musikvereins Wollbach 1866 e.V.
-keywords: Suche, Seitensuche
+keywords: [Suche, Seitensuche]
 schemaOrg: SearchResultsPage
 menu: footer
 customJs:

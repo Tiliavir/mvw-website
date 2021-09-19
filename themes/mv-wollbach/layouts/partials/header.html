@@ -10,7 +10,7 @@
 
   <meta name="author" content="{{- .Site.Title -}}"/>
   <meta name="description" content="{{.Description}}"/>
-  <meta name="keywords" content={{.Keywords}}/>
+  <meta name="keywords" content="{{delimit .Keywords ", "}}"/>
 
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="{{- .Site.BaseURL -}}img/logo_color.png"/>

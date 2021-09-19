@@ -1,7 +1,7 @@
 ---
 title: Jugendorchester
 description: Das Jugendorchester des Musikvereins Wollbach under der Leitung von Maria Gut.
-keywords: Jugendorchester, Jugendarbeit, Ausbildung, Jungmusiker, Jungmusikerinnen, Instrument lernen
+keywords: [Jugendorchester, Jugendarbeit, Ausbildung, Jungmusiker, Jungmusikerinnen, Instrument lernen]
 menu:
   main:
     parent: jugendarbeit

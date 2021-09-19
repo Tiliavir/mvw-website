@@ -1,7 +1,7 @@
 ---
 title: Unsere Register
 description: Die aktuelle Besetzung des Musikvereins Wollbach nach Registern.
-keywords: Register, Besetzung, Instrumente, Musiker, Musikerinnen, Personen
+keywords: [Register, Besetzung, Instrumente, Musiker, Musikerinnen, Personen]
 menu:
   main:
     parent: das-orchester

@@ -1,7 +1,7 @@
 ---
 title: Mitglied werden
 description: Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden.
-keywords: Aktivmitglied, Passivmitglied, Mitgliedschaft, Spenden
+keywords: [Aktivmitglied, Passivmitglied, Mitgliedschaft, Spenden]
 menu:
   main:
     parent: der-verein
