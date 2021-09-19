@@ -2,17 +2,9 @@
   "2021": [
     {
       "location": {
-        "name": "Kandertalhalle",
         "address": "Wollbach"
       },
-      "starttime": "2021-07-24",
-      "title": "Instrumentenvorstellung"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "description": "unter Einhaltung der Corona Bedingungen",
+      "description": "Unter Einhaltung aktueller Corona Auflagen. Aufgrund hoher Planungsunsicherheit können Details leider erst kurzfristig kommuniziert werden!",
       "starttime": "2021-10-09",
       "title": "Sauserbummel"
     }
