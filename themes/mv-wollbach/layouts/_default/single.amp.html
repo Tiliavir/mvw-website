@@ -17,7 +17,7 @@
           "@id":"{{ $pathToOriginal }}"
         },
         "headline": "{{.Title}}",
-        "keywords": "{{.Keywords}}",
+        "keywords": "{{delimit .Keywords ", "}}",
         "description": "{{.Description}}",
         "datePublished": "{{.PublishDate}}",
         "publisher": {
