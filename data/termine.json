@@ -8,6 +8,14 @@
       "description": "Verkauf von Adventskränzen und Weihnachtsgestecken - für das leibliche Wohl ist bestens gesorgt. Musikalische Unterhaltung mit dem Vorstufen und Jugendorchester.",
       "starttime": "2021-11-26T19:00:00Z",
       "title": "Adventskranzverkauf"
+    },
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2021-12-05",
+      "title": "Weihnachtsvorspiel der Jugend"
     }
   ],
   "2022": [
@@ -30,10 +38,35 @@
     },
     {
       "location": {
+        "address": "Wollbach",
+        "name": "Buchhole beim Rebhüsli / Baselblick"
+      },
+      "description": "Bei Einbruch der Dunkelheit wird wieder das große Feuer entzündet. Für euer Wohl ist mit Grillwürsten, Glühwein, Punsch, sonstigen Getränken, sowie Kaffee und Kuchen wieder bestens gesorgt.<br/>Ebenfalls ist für Holz an den Feuerstellen gesorgt und die Scheibenböcke sind gestellt.",
+      "starttime": "2022-03-12",
+      "title": "Fastnachtsfeuer"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2022-05-21",
+      "title": "Marschmusik"
+    },
+    {
+      "location": {
+        "name": "Forsthof",
+        "address": "Wollbach"
+      },
+      "starttime": "2022-06-24",
+      "endtime": "2022-06-25",
+      "title": "Forsthof Open Air"
+    },
+    {
+      "location": {
         "address": "Tannenkirch"
       },
       "starttime": "2022-06-27T20:00:00Z",
-      "endtime": "2022-06-27T21:30:00Z",
+      "endtime": "2022-06-27T22:00:00Z",
       "title": "Bergfest des Musikverein Tannenkirch",
       "description": "100 jähriges Jubiläum"
     },
