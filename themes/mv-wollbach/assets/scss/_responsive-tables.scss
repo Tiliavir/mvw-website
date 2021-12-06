@@ -56,23 +56,6 @@ table {
         top: -9999px;
       }
 
-      tr {
-        border: 1px solid $row-border-color;
-
-        :nth-of-type(even) {
-          background-color: $row-alternation-bg-color;
-        }
-
-        // First column bold and without border bottom
-        td {
-          border-bottom-width: 0;
-
-          &:first-child {
-            font-weight: bold;
-          }
-        }
-      }
-
       td {
         // Behave  like a 'row'
         border: 0;
@@ -88,6 +71,23 @@ table {
           top: 6px;
           white-space: nowrap;
           width: 45%;
+        }
+      }
+
+      tr {
+        border: 1px solid $row-border-color;
+
+        :nth-of-type(even) {
+          background-color: $row-alternation-bg-color;
+        }
+
+        // First column bold and without border bottom
+        td {
+          border-bottom-width: 0;
+
+          &:first-child {
+            font-weight: bold;
+          }
         }
       }
 

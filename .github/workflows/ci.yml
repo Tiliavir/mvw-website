@@ -26,8 +26,6 @@ jobs:
           hugo-version: 'latest'
           extended: true
       - name: Build
-        run: hugo --minify
+        run: npm run build
       - name: Create Index
         run: npm run index
-      - name: Validate with W3C
-        run: npm run validate

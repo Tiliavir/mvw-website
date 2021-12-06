@@ -307,8 +307,6 @@ textarea {
 .checkbox-inline {
   input {
     &[type='radio'],
-    &[type='radio'],
-    &[type='checkbox'],
     &[type='checkbox'] {
       position: absolute;
       margin-left: -20px;
@@ -547,10 +545,7 @@ textarea {
       label {
         padding-left: 0;
       }
-    }
 
-    .radio,
-    .checkbox {
       input {
         [type='radio'],
         [type='checkbox'] {

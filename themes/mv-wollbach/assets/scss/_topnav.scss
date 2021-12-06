@@ -227,7 +227,7 @@ $brand-padding: 0 10px 0 5px;
   }
 
   .navigation-checkbox {
-    &:not(:checked)~.navigation-menu {
+    &:not(:checked) ~ .navigation-menu {
       display: block;
     }
   }

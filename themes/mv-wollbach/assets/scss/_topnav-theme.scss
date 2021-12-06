@@ -127,10 +127,6 @@ $brand-fill: $gray-lightest;
   }
 
   .dropdown {
-    &:hover > ul {
-      background-color: inherit;
-    }
-
     & > a {
       &::after {
         color: $color;
@@ -151,6 +147,10 @@ $brand-fill: $gray-lightest;
           color: $highlight-color;
         }
       }
+    }
+
+    &:hover > ul {
+      background-color: inherit;
     }
   }
 
