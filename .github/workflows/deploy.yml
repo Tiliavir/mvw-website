@@ -32,15 +32,14 @@ jobs:
       - name: 🏷️ Get tag name
         run: echo "TAG_NAME=$(echo ${GITHUB_REF#refs/*/} | tr / -)" >> $GITHUB_ENV
       - name: 📂 Archive
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: release-diff
-          FOLDER: public
-          CLEAN: true
-          COMMIT_MESSAGE: Release ${{ env.TAG_NAME }}
+          branch: release-diff
+          folder: public
+          clean: true
+          commit-message: Release ${{ env.TAG_NAME }}
       - name: 🎉 Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           server: mv-wollbach.de
           username: ${{ secrets.ftp_user }}
