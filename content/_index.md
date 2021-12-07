@@ -38,11 +38,6 @@ customJs:
       title="Termine"
       text="Lust uns zu hören? Hier ist unser Terminkalender..."
   />}}
-  {{< tile file="blog/2021-adventskranz"
-      image="img/events/forsthof.jpg"
-      title="Adventskranzverkauf"
-      text="Verkauf von Adventskränzen und Weihnachtsgestecken im Forsthof..."
-  />}}
 </div>
 
 ## Unterstützen Sie uns
