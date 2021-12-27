@@ -16,11 +16,11 @@
   ],
   "devDependencies": {
     "@types/grecaptcha": "3.0.3",
-    "@types/jquery": "3.5.10",
+    "@types/jquery": "3.5.11",
     "@types/lunr": "2.3.4",
     "@types/photoswipe": "4.1.2",
-    "@typescript-eslint/eslint-plugin": "5.8.0",
-    "@typescript-eslint/parser": "5.8.0",
+    "@typescript-eslint/eslint-plugin": "5.8.1",
+    "@typescript-eslint/parser": "5.8.1",
     "autoprefixer": "10.4.0",
     "copyfiles": "2.4.1",
     "eslint": "8.5.0",
@@ -28,7 +28,7 @@
     "mvw-search-index": "2.2.11",
     "postcss": "8.4.5",
     "postcss-cli": "9.1.0",
-    "stylelint": "14.1.0",
+    "stylelint": "14.2.0",
     "stylelint-config-recommended-scss": "5.0.2",
     "typescript": "4.5.4",
     "w3c-html-validator": "0.8.1"
