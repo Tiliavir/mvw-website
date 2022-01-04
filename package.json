@@ -39,7 +39,7 @@
     "photoswipe": "4.1.3"
   },
   "scripts": {
-    "validate": "node validate.js",
+    "validate": "node validate.mjs",
     "lint": "stylelint '**/*.scss' && npx eslint . --ext .ts",
     "build": "hugo --minify && npm run validate",
     "index": "mvw-search-index './public/**/*.html' './public/suche/index.json' 'main'",

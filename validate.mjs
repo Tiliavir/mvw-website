@@ -1,7 +1,7 @@
 'use strict';
 
-const glob = require('glob-all');
-const {w3cHtmlValidator} = require('w3c-html-validator');
+import glob from "glob-all";
+import {w3cHtmlValidator} from "w3c-html-validator";
 
 glob([
     'public/**/*.html',
@@ -12,7 +12,7 @@ glob([
 
     let results = await Promise.all(promises);
 
-    results.forEach(w3cHtmlValidator.reporter);
+    results.forEach(vr => w3cHtmlValidator.reporter(vr));
     if (!results.reduce((p, c) => p && c.validates, true)) {
       throw new Error('Validation failed!');
     }
