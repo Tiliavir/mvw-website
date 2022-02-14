@@ -1,49 +1,13 @@
 {
-  "2021": [
-    {
-      "location": {
-        "name": "Forsthof",
-        "address": "Wollbach"
-      },
-      "description": "ABGESAGT",
-      "starttime": "2021-11-26T19:00:00Z",
-      "title": "Adventskranzverkauf"
-    },
-    {
-      "location": {
-        "name": "Kandertalhalle",
-        "address": "Wollbach"
-      },
-      "starttime": "2021-12-05",
-      "title": "Weihnachtsvorspiel der Jugend"
-    }
-  ],
   "2022": [
     {
       "location": {
         "name": "Kandertalhalle",
         "address": "Wollbach"
       },
-      "starttime": "2022-01-28",
-      "endtime": "2022-01-29",
+      "starttime": "2022-03-11",
+      "endtime": "2022-03-12",
       "title": "Jahreskonzert"
-    },
-    {
-      "location": {
-        "name": "Stüble der Kandertalhalle",
-        "address": "Wollbach"
-      },
-      "starttime": "2022-02-10",
-      "title": "Generalversammlung"
-    },
-    {
-      "location": {
-        "address": "Wollbach",
-        "name": "Buchhole beim Rebhüsli / Baselblick"
-      },
-      "description": "Bei Einbruch der Dunkelheit wird wieder das große Feuer entzündet. Für euer Wohl ist mit Grillwürsten, Glühwein, Punsch, sonstigen Getränken, sowie Kaffee und Kuchen wieder bestens gesorgt.<br/>Ebenfalls ist für Holz an den Feuerstellen gesorgt und die Scheibenböcke sind gestellt.",
-      "starttime": "2022-03-12",
-      "title": "Fastnachtsfeuer"
     },
     {
       "location": {
