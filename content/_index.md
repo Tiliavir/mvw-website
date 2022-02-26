@@ -33,6 +33,11 @@ customJs:
       title="Mitglied werden"
       text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
   />}}
+  {{< tile file="blog/2022-jahreskonzert"
+      image="files/flyer/22_jahreskonzert_plakat.jpg"
+      title="Metropolis"
+      text="Unser Jahreskonzert 2022 als Stummfilmvorführung mit live Musik..."
+  />}}
   {{< tile file="termine"
       image="img/jahreskonzerte/konzert_2020.jpg"
       title="Termine"
