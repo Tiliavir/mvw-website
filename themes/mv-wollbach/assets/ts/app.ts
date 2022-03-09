@@ -2,7 +2,7 @@ class App {
   public static initialize(): void {
     App.registerScroll();
     App.fixAnchors();
-    // App.registerPopUp(); // inactive till fixed
+    App.registerPopUp();
     App.initializeTabs();
   }
 
