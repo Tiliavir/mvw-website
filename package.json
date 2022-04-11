@@ -19,11 +19,11 @@
     "@types/jquery": "3.5.14",
     "@types/lunr": "2.3.4",
     "@types/photoswipe": "4.1.2",
-    "@typescript-eslint/eslint-plugin": "5.18.0",
-    "@typescript-eslint/parser": "5.18.0",
+    "@typescript-eslint/eslint-plugin": "5.19.0",
+    "@typescript-eslint/parser": "5.19.0",
     "autoprefixer": "10.4.4",
     "copyfiles": "2.4.1",
-    "eslint": "8.12.0",
+    "eslint": "8.13.0",
     "glob-all": "3.3.0",
     "mvw-search-index": "2.2.11",
     "postcss": "8.4.12",
@@ -36,7 +36,7 @@
   "dependencies": {
     "jquery": "3.6.0",
     "lunr": "2.3.9",
-    "photoswipe": "5.2.2"
+    "photoswipe": "5.2.4"
   },
   "scripts": {
     "validate": "node validate.mjs",
