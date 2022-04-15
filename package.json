@@ -18,7 +18,6 @@
     "@types/grecaptcha": "3.0.4",
     "@types/jquery": "3.5.14",
     "@types/lunr": "2.3.4",
-    "@types/photoswipe": "4.1.2",
     "@typescript-eslint/eslint-plugin": "5.19.0",
     "@typescript-eslint/parser": "5.19.0",
     "autoprefixer": "10.4.4",
@@ -44,7 +43,6 @@
     "build": "hugo --minify && npm run validate",
     "index": "mvw-search-index './public/**/*.html' './public/suche/index.json' 'main'",
     "update:lib:jquery": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./static/js/",
-    "update:lib:photoswipe": "copyfiles -u 4 ./node_modules/photoswipe/dist/default-skin/*.{svg,png,gif} ./static/bilder/",
-    "postinstall": "npm run update:lib:jquery && npm run update:lib:photoswipe && npm run lint"
+    "postinstall": "npm run update:lib:jquery && npm run lint"
   }
 }
