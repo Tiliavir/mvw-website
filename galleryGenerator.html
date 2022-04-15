@@ -1,159 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Gallery JSON Generator</title>
-    <meta charset='utf-8'/>
+  <title>Gallery JSON Generator</title>
+  <meta charset='utf-8'/>
 </head>
 <body>
+<p><i>If it stops working, use https://www.publicalbum.org/blog/embed-photos-slideshow-carousel-widget</i></p>
 <p>Gallery JSON:</p>
 
 <p id="status"></p>
 <label for="result">Result</label><textarea id="result"></textarea>
 
 <script type="text/javascript">
-    const albums = [
-        {title: "2018 Neujahrsempfang", url: "hNad6YhWSAUCudj38"},
-        {title: "2018 Probewochenende", url: "t46QX9BM9jFkWhKz6"},
-        {title: "2018 Gewerbetage in Binzen", url: "ERGGFER5CKRq6LXn9"},
-        {title: "2018 Doppelkonzert mit dem Musikverein Fahrnau", url: "p3nrw3DsE9qoozdj7"},
-        {title: "2018 Marschmusikfestival", url: "UwvJKqnJWpuaACmF7"},
-        {title: "2018 Muttertagskonzert des Vorstufen- und Jugendorchester", url: "BCdSQ1iqdATRHp1W6"},
-        {title: "2018 Instrumentenvorstellung", url: "13bztE3ahVd4joPn7"},
-        {title: "2018 Forsthof Open-Air", url: "MrpHT43iFtrPqu1Y9"},
-        {title: "2018 Jugendvorspiel", url: "BgKVeKAmTs1NreSx7"},
-        {title: "2018 Minigolfen mit den Jungmusikern", url: "GrRMCxyNAXHJoykz9"},
-        {title: "2018 Waldfest in Bannwil", url: "dqt18x9NQJ7kSAJk7"},
-        {title: "2018 Sommerferienprogramm", url: "N2R9ZiT2e66WaMuQ7"},
-        {title: "2018 Auftritt in Oberrotweil", url: "eCCAjd88nxJCanZ46"},
-        {title: "2018 Jungmusikerleistungsabzeichen in Bronze", url: "hZ5TjoRoJbCu5szw8"},
-        {title: "2018 Urkundenverleihung des Alemannischen Musikverband", url: "3H6Dk6hHyNH63ftG6"},
-        {title: "2018 St. Martins Umzug", url: "PkgTDhe9FtiGdGA86"},
-        {title: "2018 Aufbau fürs Herbstfest", url: "MhyKrQK1h1TDjcB56"},
-        {title: "2018 Herbstfest", url: "DZKnfWuRrZ3VLiZf7"},
-        {title: "2018 Sauserbummel", url: "P5XvkM4Z2KqkoKUa6"},
-        {title: "2018 Basteln der Adventskränze", url: "hRwy31wfRYjKCfBi6"},
-        {title: "2018 Adventskranzverkauf", url: "P1VXMZXTfFdUKCxFA"},
-        {title: "2018 Jugendvorspiel in der Kirche", url: "4c4CrDmZyDisu5xh9"},
-        {title: "2018 Adventskonzert", url: "YF66eFS6o2N3quxn7"},
-        {title: "2018 Weihnachtsfeier der Jungmusiker", url: "XxQr4iHyFeQU1nKL6"},
+  const albums = [
+    {title: "2018 Neujahrsempfang", url: "hNad6YhWSAUCudj38"},
+    {title: "2018 Probewochenende", url: "t46QX9BM9jFkWhKz6"},
+    {title: "2018 Gewerbetage in Binzen", url: "ERGGFER5CKRq6LXn9"},
+    {title: "2018 Doppelkonzert mit dem Musikverein Fahrnau", url: "p3nrw3DsE9qoozdj7"},
+    {title: "2018 Marschmusikfestival", url: "UwvJKqnJWpuaACmF7"},
+    {title: "2018 Muttertagskonzert des Vorstufen- und Jugendorchester", url: "BCdSQ1iqdATRHp1W6"},
+    {title: "2018 Instrumentenvorstellung", url: "13bztE3ahVd4joPn7"},
+    {title: "2018 Forsthof Open-Air", url: "MrpHT43iFtrPqu1Y9"},
+    {title: "2018 Jugendvorspiel", url: "BgKVeKAmTs1NreSx7"},
+    {title: "2018 Minigolfen mit den Jungmusikern", url: "GrRMCxyNAXHJoykz9"},
+    {title: "2018 Waldfest in Bannwil", url: "dqt18x9NQJ7kSAJk7"},
+    {title: "2018 Sommerferienprogramm", url: "N2R9ZiT2e66WaMuQ7"},
+    {title: "2018 Auftritt in Oberrotweil", url: "eCCAjd88nxJCanZ46"},
+    {title: "2018 Jungmusikerleistungsabzeichen in Bronze", url: "hZ5TjoRoJbCu5szw8"},
+    {title: "2018 Urkundenverleihung des Alemannischen Musikverband", url: "3H6Dk6hHyNH63ftG6"},
+    {title: "2018 St. Martins Umzug", url: "PkgTDhe9FtiGdGA86"},
+    {title: "2018 Aufbau fürs Herbstfest", url: "MhyKrQK1h1TDjcB56"},
+    {title: "2018 Herbstfest", url: "DZKnfWuRrZ3VLiZf7"},
+    {title: "2018 Sauserbummel", url: "P5XvkM4Z2KqkoKUa6"},
+    {title: "2018 Basteln der Adventskränze", url: "hRwy31wfRYjKCfBi6"},
+    {title: "2018 Adventskranzverkauf", url: "P1VXMZXTfFdUKCxFA"},
+    {title: "2018 Jugendvorspiel in der Kirche", url: "4c4CrDmZyDisu5xh9"},
+    {title: "2018 Adventskonzert", url: "YF66eFS6o2N3quxn7"},
+    {title: "2018 Weihnachtsfeier der Jungmusiker", url: "XxQr4iHyFeQU1nKL6"},
 
-        {title: "2019 Probewochenende", url: "6FybkABvuUSMTNRx6"},
-        {title: "2019 Aufbau Jahreskonzert", url: "P4srj2K7XeSprwJT8"},
-        {title: "2019 Jahreskonzert", url: "SKnettAHhzaF9xox6"},
-        {title: "2019 Generalversammlung", url: "yYUo33a3vXWqrpSL6"},
-        {title: "2019 Pizzaessen mit der Jugend", url: "iaVGn8JtJx1SfSpc9"},
-        {title: "2019 Fastnachtsfeuer", url: "AtCPm98a9MHM9ccH9"},
-        {title: "2019 Frühlingsmarkt Binzen", url: "d6rsWhDnBaneNmvz6"},
-        {title: "2019 Muttertagskonzert des Jugend- und Vorstufenorchesters", url: "6tb43yNHDE18tPzA6"},
-        {title: "2019 Aufbau fürs Forsthof Open-Air", url: "zeh3A619guvYeh6v7"},
-        {title: "2019 Forsthof Open-Air", url: "Ma24nRMqNCCvofqh6"},
-        {title: "2019 Auftritt beim Bachfest des Musikverein Degerfelden", url: "iB4m7zRNGDwT9yVP6"},
-        {title: "2019 Instrumentenvorstellung", url: "gEPs3xCp4pwwA6Az7"},
-        {title: "2019 Minigolfen", url: "Wah9tJ4dQZw8Lkku8"},
-        {title: "2019 Konzertreise Freiberg-Dresden-Prag", url: "Qp5J6kEPgG93ktKp8"},
-        {title: "2019 Auftritt beim Musikverein Binzen", url: "PKY2MWZX9Lgsx5JVA"},
-        {title: "2019 Sauserbummel", url: "KBGYMGhC1wXk2W9z6"},
-        {title: "2019 Herbstfest", url: "KG9sSymG5qq6KCQ26"},
-        {title: "2019 Urkundenverleihung des Alemannischen Musikverband", url: "6oBJXbyqjERxs3Rw7"},
-        {title: "2019 St. Martins Umzug", url: "LkmMLbGWQd1aFrAYA"},
-        {title: "2019 Adventskranz basteln", url: "TKUqcKcpFh1kRq9H9"},
-        {title: "2019 Adventskranzverkauf", url: "Sxhm88nLnqwnK14C7"},
-        {title: "2019 Probe mit anschließender Weihnachtsfeier", url: "nVDYknLx1oeWXTR9A"},
-        {title: "2019 Jugendvorspiel in der Kirche", url: "NbzN6PJ3L9tCj7xP7"},
-        {title: "2019 Weihnachtsfeier der Jugend", url: "J1rsQwMxTF1RBxY26"},
+    {title: "2019 Probewochenende", url: "6FybkABvuUSMTNRx6"},
+    {title: "2019 Aufbau Jahreskonzert", url: "P4srj2K7XeSprwJT8"},
+    {title: "2019 Jahreskonzert", url: "SKnettAHhzaF9xox6"},
+    {title: "2019 Generalversammlung", url: "yYUo33a3vXWqrpSL6"},
+    {title: "2019 Pizzaessen mit der Jugend", url: "iaVGn8JtJx1SfSpc9"},
+    {title: "2019 Fastnachtsfeuer", url: "AtCPm98a9MHM9ccH9"},
+    {title: "2019 Frühlingsmarkt Binzen", url: "d6rsWhDnBaneNmvz6"},
+    {title: "2019 Muttertagskonzert des Jugend- und Vorstufenorchesters", url: "6tb43yNHDE18tPzA6"},
+    {title: "2019 Aufbau fürs Forsthof Open-Air", url: "zeh3A619guvYeh6v7"},
+    {title: "2019 Forsthof Open-Air", url: "Ma24nRMqNCCvofqh6"},
+    {title: "2019 Auftritt beim Bachfest des Musikverein Degerfelden", url: "iB4m7zRNGDwT9yVP6"},
+    {title: "2019 Instrumentenvorstellung", url: "gEPs3xCp4pwwA6Az7"},
+    {title: "2019 Minigolfen", url: "Wah9tJ4dQZw8Lkku8"},
+    {title: "2019 Konzertreise Freiberg-Dresden-Prag", url: "Qp5J6kEPgG93ktKp8"},
+    {title: "2019 Auftritt beim Musikverein Binzen", url: "PKY2MWZX9Lgsx5JVA"},
+    {title: "2019 Sauserbummel", url: "KBGYMGhC1wXk2W9z6"},
+    {title: "2019 Herbstfest", url: "KG9sSymG5qq6KCQ26"},
+    {title: "2019 Urkundenverleihung des Alemannischen Musikverband", url: "6oBJXbyqjERxs3Rw7"},
+    {title: "2019 St. Martins Umzug", url: "LkmMLbGWQd1aFrAYA"},
+    {title: "2019 Adventskranz basteln", url: "TKUqcKcpFh1kRq9H9"},
+    {title: "2019 Adventskranzverkauf", url: "Sxhm88nLnqwnK14C7"},
+    {title: "2019 Probe mit anschließender Weihnachtsfeier", url: "nVDYknLx1oeWXTR9A"},
+    {title: "2019 Jugendvorspiel in der Kirche", url: "NbzN6PJ3L9tCj7xP7"},
+    {title: "2019 Weihnachtsfeier der Jugend", url: "J1rsQwMxTF1RBxY26"},
 
-        {title: "2020 Probewochenende", url: "Lk1Rd8M1FVy4QW946"},
-        {title: "2020 Aufbau fürs Jahreskonzert", url: "JYrB46NmsMyvoE3w5"},
-        {title: "2020 Jahreskonzert", url: "V9d75DAqGAxsYosX9"},
-    ];
+    {title: "2020 Probewochenende", url: "Lk1Rd8M1FVy4QW946"},
+    {title: "2020 Aufbau fürs Jahreskonzert", url: "JYrB46NmsMyvoE3w5"},
+    {title: "2020 Jahreskonzert", url: "V9d75DAqGAxsYosX9"},
+  ];
 
-    var result = [];
+  var result = [];
 
-    function updateProgress(doneCount) {
-        $("#status").text("Albums done: " + doneCount + " / " + albums.length);
+  function updateProgress(doneCount) {
+    $("#status").text("Albums done: " + doneCount + " / " + albums.length);
 
-        if (doneCount === albums.length) {
-            const transformed = {};
+    if (doneCount === albums.length) {
+      const transformed = {};
 
-            for (let year in result) {
-                if (result[year] == null) {
-                    continue;
-                }
-
-                transformed[year] = {};
-                for (let album of result[year]) {
-                    if (album == null) {
-                        continue;
-                    }
-
-                    transformed[year][album.t] = {
-                        d: album.d,
-                        u: album.u,
-                        i: album.i
-                    };
-                }
-            }
-            result = null;
-
-            $("#result").text(JSON.stringify(transformed));
+      for (let year in result) {
+        if (result[year] == null) {
+          continue;
         }
+
+        transformed[year] = {};
+        for (let album of result[year]) {
+          if (album == null) {
+            continue;
+          }
+
+          transformed[year][album.t] = {
+            d: album.d,
+            u: album.u,
+            i: album.i
+          };
+        }
+      }
+      result = null;
+
+      $("#result").text(JSON.stringify(transformed));
+    }
+  }
+
+  function handle(year, index, response) {
+    let images = [];
+    for (let item of response.mediaItems) {
+      images.push({
+        t: item.description,
+        u: item.url.replace("=w1920-h1080", "").replace("=m37", "")
+      });
     }
 
-    function handle(year, index, response) {
-        let images = [];
-        for (let item of response.mediaItems) {
-            images.push({
-                t: item.description,
-                u: item.url.replace("=w1920-h1080", "").replace("=m37", "")
-            });
-        }
-
-        if (!result[year]) {
-            result[year] = [];
-        }
-        let title = response.title.replace(/^\d\d\d\d /, "");
-
-        result[year][index] = {
-            t: title,
-            d: response.description,
-            u: response.url,
-            i: images
-        };
+    if (!result[year]) {
+      result[year] = [];
     }
+    let title = response.title.replace(/^\d\d\d\d /, "");
 
-    function startGenerator() {
-        let progress = 0;
-        var index = 0;
-        for (const album of albums) {
-            let body = {
-                method: "getGooglePhotosAlbum",
-                params: {
-                    sharedLink: "https://photos.app.goo.gl/" + album.url,
-                    imageWidth: 1920,
-                    imageHeight: 1080,
-                    includeThumbnails: false,
-                    videoQuality: "1080p",
-                    attachMetadata: false
-                },
-                "id": album.title.split(" ")[0] + ":" + index++ + ":" + album.title
-            };
+    result[year][index] = {
+      t: title,
+      d: response.description,
+      u: response.url,
+      i: images
+    };
+  }
 
-            console.log("Requesting: " + album.title);
-            $.post("https://www.publicalbum.org/api/v2/webapp/embed-player/jsonrpc",
-                JSON.stringify(body),
-                (response) => {
-                    let result = response.result;
-                    console.log("Done: " + response.id);
-                    console.log("   (" + result.title + ", " + result.description + ")");
+  function startGenerator() {
+    let progress = 0;
+    var index = 0;
+    for (const album of albums) {
+      let body = {
+        method: "getGooglePhotosAlbum",
+        params: {
+          sharedLink: "https://photos.app.goo.gl/" + album.url,
+          imageWidth: 1920,
+          imageHeight: 1080,
+          includeThumbnails: false,
+          videoQuality: "1080p",
+          attachMetadata: false
+        },
+        "id": album.title.split(" ")[0] + ":" + index++ + ":" + album.title
+      };
 
-                    let idParts = response.id.split(":");
-                    handle(idParts[0], idParts[1], result);
+      console.log("Requesting: " + album.title);
+      $.post("https://www.publicalbum.org/api/v2/webapp/embed-player/jsonrpc",
+        JSON.stringify(body),
+        (response) => {
+          let result = response.result;
+          console.log("Done: " + response.id);
+          console.log("   (" + result.title + ", " + result.description + ")");
 
-                    updateProgress(++progress);
-                },
-                "json");
-        }
+          let idParts = response.id.split(":");
+          handle(idParts[0], idParts[1], result);
+
+          updateProgress(++progress);
+        },
+        "json");
     }
+  }
 </script>
 
 <script src="https://code.jquery.com/jquery-3.5.0.min.js"
