@@ -29,19 +29,19 @@ customJs:
 
 <div class="tiles">
   {{< tile file="mitgliedschaft"
-      image="slider/alle_4.jpg"
-      title="Mitglied werden"
-      text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
+           image="slider/alle_4.jpg"
+           title="Mitglied werden"
+           text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
   />}}
-  {{< tile file="blog/2022-jahreskonzert"
-      image="files/flyer/22_jahreskonzert_plakat.jpg"
-      title="Metropolis"
-      text="Unser Jahreskonzert 2022 als Stummfilmvorführung mit live Musik..."
+  {{< tile file="blog/2022-open-air"
+           image="files/flyer/22_open-air.jpg"
+           title="Open Air"
+           text="Ein besonderer Sommerabend im historischen Ortskern von Wollbach..."
   />}}
   {{< tile file="termine"
-      image="img/jahreskonzerte/konzert_2020.jpg"
-      title="Termine"
-      text="Lust uns zu hören? Hier ist unser Terminkalender..."
+           image="img/jahreskonzerte/konzert_2020.jpg"
+           title="Termine"
+           text="Lust uns zu hören? Hier ist unser Terminkalender..."
   />}}
 </div>
 
