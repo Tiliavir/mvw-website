@@ -1,5 +1,5 @@
-import PhotoSwipe from "photoswipe/dist/photoswipe.esm.js";
-import PhotoSwipeLightbox from "photoswipe/dist/photoswipe-lightbox.esm.js";
+import PhotoSwipe from "photoswipe/dist/photoswipe.esm";
+import PhotoSwipeLightbox from "photoswipe/dist/photoswipe-lightbox.esm";
 
 interface GalleryImage {
   t?: string;

@@ -14,31 +14,6 @@
     "Firefox ESR",
     "ie 11"
   ],
-  "comments": {
-    "dependencies": {
-      "jquery": "project",
-      "lunr": "project",
-      "photoswipe": "project"
-    },
-    "devDependencies": {
-      "@types/grecaptcha": "project",
-      "@types/jquery": "project",
-      "@types/lunr": "project",
-      "@typescript-eslint/eslint-plugin": "project",
-      "@typescript-eslint/parser": "project",
-      "autoprefixer": "project",
-      "copyfiles": "project",
-      "eslint": "project",
-      "glob-all": "project",
-      "mvw-search-index": "project",
-      "postcss": "project",
-      "postcss-cli": "project",
-      "stylelint": "project",
-      "stylelint-config-recommended-scss": "project",
-      "typescript": "project",
-      "w3c-html-validator": "project"
-    }
-  },
   "devDependencies": {
     "@types/grecaptcha": "3.0.4",
     "@types/jquery": "3.5.14",
