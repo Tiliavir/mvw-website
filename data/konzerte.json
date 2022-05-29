@@ -482,11 +482,15 @@
           },
           {
             "title": "Vjenne",
-            "composer": ["Frigyes Hidas"]
+            "composer": [
+              "Frigyes Hidas"
+            ]
           },
           {
             "title": "Hungarian Rhapsody",
-            "composer": ["Franz Liszt"]
+            "composer": [
+              "Franz Liszt"
+            ]
           }
         ]
       }
@@ -506,17 +510,40 @@
         "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
         "conductor": "Oliver Hauser",
         "program": [
-          {"title":  "Theatre Music"},
-          {"title":  "Fate of the gods"},
-          {"title":  "Die Fledermaus"},
-          {"title":  "Mazama"},
-          {"title":  "Pilatus", "subtitle":  "Mountain of Dragons"},
-          {"title":  "Eine kleine Yiddishe Ragmusik"},
-          {"title":  "South Ramport Street Parade"},
-          {"title":  "Funiculi, Funicula"},
-          {"title":  "In a gentle Rain"},
-          {"title":  "Yes indeed"},
-          {"title":  "Vjenne"}
+          {
+            "title": "Theatre Music"
+          },
+          {
+            "title": "Fate of the gods"
+          },
+          {
+            "title": "Die Fledermaus"
+          },
+          {
+            "title": "Mazama"
+          },
+          {
+            "title": "Pilatus",
+            "subtitle": "Mountain of Dragons"
+          },
+          {
+            "title": "Eine kleine Yiddishe Ragmusik"
+          },
+          {
+            "title": "South Ramport Street Parade"
+          },
+          {
+            "title": "Funiculi, Funicula"
+          },
+          {
+            "title": "In a gentle Rain"
+          },
+          {
+            "title": "Yes indeed"
+          },
+          {
+            "title": "Vjenne"
+          }
         ]
       }
     ]
@@ -2340,6 +2367,53 @@
             "subtitle": "Fantasy on the canon \"Freu' dich des Lebens\"",
             "composers": [
               "Philip Sparke"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "2022-03-11",
+        "2022-03-11"
+      ]
+    },
+    "title": "Metropolis",
+    "subtitle": "250 Jahre Ludwig van Beethoven",
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Metropolis",
+            "arrangers": [
+              "Theodor Burkali"
+            ],
+            "subtitle": "Bearbeitung für Großes Blasorchester",
+            "composers": [
+              "Gottfried Huppertz"
+            ],
+            "parts": [
+              {
+                "title": "Auftakt Teil 1"
+              },
+              {
+                "title": "Auftakt Teil 2"
+              },
+              {
+                "title": "Zwischenspiel"
+              },
+              {
+                "title": "Furioso Teil A"
+              },
+              {
+                "title": "Furioso Teil B"
+              }
             ]
           }
         ]

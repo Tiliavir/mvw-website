@@ -1,4 +1,17 @@
 {
+  "2022": [
+    {
+      "image": {
+        "src": "/files/flyer/22_jahreskonzert_plakat.jpg",
+        "title": "Flyer zum Jahreskonzert 2022 - Metropolis"
+      },
+      "keywords": ["Konzert", "Jahreskonzert"],
+      "title": "Jahreskonzert 'Metropolis'",
+      "starttime": "2022-03-11",
+      "endtime": "2022-03-12",
+      "content": "Die Kandertalhalle wurde zum Kinosaal und wir begleiteten musikalisch den Stummfilm Metropolis von 1927. Bedingt durch die Pandemie verschoben von 2021 und zwei Monate später als üblich."
+    }
+  ],
   "2020": [
     {
       "image": {
