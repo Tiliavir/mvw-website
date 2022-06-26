@@ -2419,5 +2419,95 @@
         ]
       }
     ]
+  },
+  {
+    "category": "Konzert",
+    "title": "Forsthof Open-Air",
+    "location": {
+      "location": "Forsthof Wollbach",
+      "dates": [
+        "2022-06-25"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Mack the Knife"
+          },
+          {
+            "title": "Trouble with my Baby"
+          },
+          {
+            "title": "Bei mir bist Du shein"
+          },
+          {
+            "title": "Can't rely on you"
+          },
+          {
+            "title": "Buona sera"
+          },
+          {
+            "title": "Just a Gigolo"
+          },
+          {
+            "title": "Blues Brothers Medley"
+          },
+          {
+            "title": "Benny Goodman Memories"
+          },
+          {
+            "title": "Sparkling Diamonds"
+          },
+          {
+            "title": "Rote Lippen soll man küssen"
+          },
+          {
+            "title": "Minnie the Moocher"
+          },
+          {
+            "title": "Mouth to Mouth"
+          },
+          {
+            "title": "Udo Jürgens - Das Beste"
+          },
+          {
+            "title": "Valerie"
+          },
+          {
+            "title": "If you don't know me"
+          },
+          {
+            "title": "Abenteuerland"
+          },
+          {
+            "title": "New York Medley"
+          },
+          {
+            "title": "At Last"
+          },
+          {
+            "title": "Upside down"
+          },
+          {
+            "title": "Deep Purple"
+          },
+          {
+            "title": "What a wonderful world"
+          },
+          {
+            "title": "Candyman"
+          },
+          {
+            "title": "Jersey Boys"
+          },
+          {
+            "title": "Hit the road Jack"
+          }
+        ]
+      }
+    ]
   }
 ]

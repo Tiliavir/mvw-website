@@ -6,7 +6,7 @@
     "properties": {
       "category": {
         "type": "string",
-        "enum": ["Jahreskonzert", "Kirchenkonzert", "Platzkonzert", "Adventskonzert", "Frühlingskonzert"]
+        "enum": ["Jahreskonzert", "Kirchenkonzert", "Platzkonzert", "Adventskonzert", "Frühlingskonzert", "Konzert"]
       },
       "title": {
         "type": "string"
