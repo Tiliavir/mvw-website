@@ -2,33 +2,6 @@
   "2022": [
     {
       "location": {
-        "name": "Forsthof",
-        "address": "Wollbach"
-      },
-      "starttime": "2022-06-25",
-      "endtime": "2022-06-25",
-      "title": "Open Air Konzert",
-      "description": "Einlass 18:30"
-    },
-    {
-      "location": {
-        "address": "Tannenkirch"
-      },
-      "starttime": "2022-06-27T20:00:00Z",
-      "endtime": "2022-06-27T22:00:00Z",
-      "title": "Bergfest des Musikverein Tannenkirch",
-      "description": "100 jähriges Jubiläum"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2022-07-01",
-      "endtime": "2022-07-01",
-      "title": "Sommervorspiel der Jugend"
-    },
-    {
-      "location": {
         "address": "Egringen"
       },
       "starttime": "2022-07-11T11:00:00Z",
@@ -37,7 +10,7 @@
     },
     {
       "location": {
-        "address": "Egringen"
+        "address": "Wollbach"
       },
       "starttime": "2022-07-21T19:00:00Z",
       "endtime": "2022-07-21T21:00:00Z",
