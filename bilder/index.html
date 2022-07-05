@@ -57,7 +57,7 @@ const $popup=$(".mail-popup");if($popup.length>0){$(window).on("scroll load resi
 static setActive(id){$(".tab-pane").removeClass("active");$(".tab").removeClass("active");$(`.tab-${id}`).addClass("active");$(`#${id}`).addClass("active");}
 static initializeTabs(){const url=window.location.href;const startIndex=url.indexOf("#")+1;if(startIndex>0){const id=url.substring(startIndex);if(id.length>0){App.setActive(id);}}
 $(".tab").on("click",(e)=>{App.setActive($(e.target).data("tab"));e.preventDefault();e.stopPropagation();});$(".tab-dropdown").on("click",(e)=>$(e.target).closest(".tab-dropdown").toggleClass("open"));$(".tab-dropdown-menu .tab").on("click",(e)=>$(e.target).closest(".tab-dropdown").removeClass("open"));}};$(()=>{App.initialize();});})();</script><script>(()=>{/*!
-* PhotoSwipe 5.2.7 - https://photoswipe.com
+* PhotoSwipe 5.2.8 - https://photoswipe.com
 * (c) 2022 Dmytro Semenov
 */function createElement(className,tagName,appendToEl){const el=document.createElement(tagName||"div");if(className){el.className=className;}
 if(appendToEl){appendToEl.appendChild(el);}
@@ -479,7 +479,7 @@ getThumbBounds(){return getThumbBounds(this.currIndex,this.currSlide?this.currSl
 canLoop(){return this.options.loop&&this.getNumItems()>2;}
 _prepareOptions(options){if(window.matchMedia("(prefers-reduced-motion), (update: slow)").matches){options.showHideAnimationType="none";options.zoomAnimationDuration=0;}
 this.options={...defaultOptions,...options};}};/*!
-* PhotoSwipe Lightbox 5.2.7 - https://photoswipe.com
+* PhotoSwipe Lightbox 5.2.8 - https://photoswipe.com
 * (c) 2022 Dmytro Semenov
 */function createElement2(className,tagName,appendToEl){const el=document.createElement(tagName||"div");if(className){el.className=className;}
 if(appendToEl){appendToEl.appendChild(el);}
