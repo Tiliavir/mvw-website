@@ -43,12 +43,12 @@ Bei Nichtteilnahme kann aus organisatorischen Gründen leider keine Rückerstatt
 des Fahrpreises vorgenommen werden.
 
 ### Bankverbindung
-| | |
-|----------|----|
-|Empfänger | *Förderverein Musikverein Wollbach* |
-|IBAN      | DE24 6835 0048 0001 0779 99 |
-|Swift BIC | SKLODE66XXX |
-|Bank      | Sparkasse Lörrach-Rheinfelden |
+|           |                                     |
+|-----------|-------------------------------------|
+| Empfänger | *Förderverein Musikverein Wollbach* |
+| IBAN      | DE24 6835 0048 0001 0779 99         |
+| Swift BIC | SKLODE66XXX                         |
+| Bank      | Sparkasse Lörrach-Rheinfelden       |
 
 ### Rückblick
 Hier, auf unserer Website finden Sie [Bilder][bilder] und Informationen wie
