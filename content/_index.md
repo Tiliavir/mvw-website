@@ -33,10 +33,10 @@ customJs:
            title="Mitglied werden"
            text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
   />}}
-  {{< tile file="blog/2022-open-air"
-           image="files/flyer/22_open-air.jpg"
-           title="Open Air"
-           text="Ein besonderer Sommerabend im historischen Ortskern von Wollbach..."
+  {{< tile file="2022-sauserfahrt"
+           image="img/events/chanderli.jpg"
+           title="Sauserfahrt"
+           text="Am Samstag, den 8.10. dampft auch in diesem Jahr wieder der Sauser-Express durch das Kandertal."
   />}}
   {{< tile file="termine"
            image="img/jahreskonzerte/konzert_2020.jpg"
