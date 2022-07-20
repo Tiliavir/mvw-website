@@ -5,11 +5,6 @@
     "register": "Querflöte"
   },
   {
-    "name": "Sonja",
-    "familyName": "Weber",
-    "register": "Querflöte"
-  },
-  {
     "name": "Julia",
     "familyName": "Cordes",
     "register": "Querflöte"
@@ -37,11 +32,6 @@
   {
     "name": "Thomas",
     "familyName": "Kuckuk",
-    "register": "Klarinette"
-  },
-  {
-    "name": "Nadine",
-    "familyName": "Brunner",
     "register": "Klarinette"
   },
   {
@@ -100,6 +90,11 @@
     "register": "Altsaxophon"
   },
   {
+    "name": "Juliane",
+    "familyName": "Rupp",
+    "register": "Altsaxophon"
+  },
+  {
     "name": "Maria",
     "familyName": "Gut",
     "register": "Altsaxophon"
@@ -107,6 +102,11 @@
   {
     "name": "Lilly",
     "familyName": "Müller",
+    "register": "Altsaxophon"
+  },
+  {
+    "name": "Prisca",
+    "familyName": "Offenwanger",
     "register": "Altsaxophon"
   },
   {
@@ -118,16 +118,6 @@
     "name": "Mechthild",
     "familyName": "Frey",
     "register": "Tenorsaxophon"
-  },
-  {
-    "name": "Bernd",
-    "familyName": "Krug",
-    "register": "Tenorsaxophon"
-  },
-  {
-    "name": "Niels",
-    "familyName": "Merkert",
-    "register": "Baritonsaxophon"
   },
   {
     "name": "Frank",
@@ -160,11 +150,6 @@
     "register": "Trompete"
   },
   {
-    "name": "Moritz",
-    "familyName": "Rathberger",
-    "register": "Trompete"
-  },
-  {
     "name": "Martina",
     "familyName": "Linder",
     "register": "Trompete"
@@ -176,7 +161,7 @@
   },
   {
     "name": "Mathias",
-    "familyName": "Oßwald",
+    "familyName": "Lindenmann",
     "register": "Horn"
   },
   {
