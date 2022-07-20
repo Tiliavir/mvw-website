@@ -5,7 +5,6 @@ var Register = (function () {
     Register.tryReplaceImage = function ($images) {
         var register = {
             Altsaxophon: ["altsaxophon_1.jpg", "altsaxophon_2.jpg", "saxophon_1.jpg"],
-            Baritonsaxophon: ["baritonsaxophon_1.jpg", "baritonsaxophon_2.jpg", "saxophon_1.jpg"],
             Euphonium: ["euphonium_1.jpg", "euphonium_2.jpg"],
             Fagott: ["fagott_1.jpg", "fagott_2.jpg"],
             Gitarre: ["gitarre_1.jpg", "gitarre_2.jpg"],
