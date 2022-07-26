@@ -22,18 +22,17 @@
     "title": "Jugendleitung"
   },
   {
-    "address": "79400 Egisholz",
-    "email": "frank.reinacher@mv-wollbach.de",
+    "address": "79400 Wollbach",
+    "email": "prisca.offenwanger@mv-wollbach.de",
     "image": "/img/personen/kassierer.jpg",
-    "persons": [ "Frank Reinacher", "Sven Gut" ],
-    "telephone": "07626 973317",
-    "title": "Kassierer"
+    "persons": [ "Prisca Offenwanger", "Sven Gut" ],
+    "title": "Kassiererin"
   },
   {
     "address": "79400 Wollbach",
     "email": "jutta.schmidt@mv-wollbach.de",
     "image": "/img/personen/schriftfuehrer.jpg",
-    "persons": [ "Stefanie Imbaumgarten", "Jutta Schmidt" ],
+    "persons": [ "Stefanie Imbaumgarten", "Jutta Schmidt" ],
     "telephone": "07626 973673",
     "title": "Schriftführerin"
   },
@@ -49,12 +48,12 @@
   },
   {
     "image": "/img/personen/aktivbeisitzer.jpg",
-    "persons": [ "Ralf Ernst", "Helen Strittmatter" ],
+    "persons": [ "Lina Müller", "Helen Strittmatter" ],
     "title": "Aktivbeisitzer"
   },
   {
     "image": "/img/personen/passivbeisitzer.jpg",
-    "persons": [ "Reinhard Greßlin", "Thomas Link" ],
+    "persons": [ "Reinhard Greßlin", "Dietmar Kutta" ],
     "title": "Passivbeisitzer"
   }
 ]
