@@ -1,5 +1,5 @@
 ---
-title: Willkommen beim Musikverein Wollbach
+title: Musikverein Wollbach 1866 e.V.
 description: Die Website des Musikvereins Wollbach 1866 e.V. Alles rund um unsere Auftritte, Jugendarbeit, Besetzung, Bilder und Einblicke in die Vereinshistorie.
 keywords: [Wollbach, Musikverein, Musikverein Wollbach 1866 e.V., Verein, Musik, Orchester, Blasmusik, Instrument, Jugendarbeit, Konzert]
 customCss:
