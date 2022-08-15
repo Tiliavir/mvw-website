@@ -17,6 +17,4 @@ ihrem abwechslungsreichen Repertoire. Für jeden Anlass haben sie etwas dabei.
            caption="v.L. Dominik Heieck, Anika Greßlin, Ralf Ernst, Moritz Merkert, Michael Bierwirth, Matthias Braun, Timo Braun, Noah Goehlke, Johannes Krey, Sven Gut"
 >}}
 
-{{< youtube 5S3V1TiFywQ >}}
-
-<!-- {{< youtube dthOc66KttU >}} -->
+{{< dampfmusik >}}

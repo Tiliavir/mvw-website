@@ -47,11 +47,3 @@ customJs:
 
 ## Unterstützen Sie uns
 Unterstützen Sie uns bei Ihren täglichen Einkäufen – ganz ohne Extrakosten. [Welche Unternehmen mitmachen sehen Sie hier](gooding).
-
-<iframe class="gooding-frame"
-        width="300"
-        height="250"
-        name="Gooding Banner-Widget"
-        title="Gooding Banner-Widget"
-        src="https://erweiterungen.gooding.de/app/widget/musikverein-wollbach-e-v-81856/medium-rectangle/tab/0/donations/1/v/1558165470.A28rag7nM2Yxt3q9VLOI%252BYV3F2Qi8uhUh37UsJLJ%252FxK3JIq4le98Cvlcd9Hb1X6gsATY9t%252BN8tdAznLUvM09hsdrcybwhxua7HIGF5Th792wkekSYWpokDgcVvNQRGkF">
-</iframe>

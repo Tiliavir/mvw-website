@@ -137,36 +137,6 @@ aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer
 Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer
 Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
 
-## Einsatz von reCAPTCHA
-Um Eingabeformulare auf unserer Seite zu schützen, setzen wir den Dienst
-„reCAPTCHA“ der Firma Google Inc., 1600 Amphitheatre Parkway, Mountain View,
-CA 94043 USA, nachfolgend „Google“, ein. Durch den Einsatz dieses Dienstes
-kann unterschieden werden, ob die entsprechende Eingabe menschlicher Herkunft
-ist oder durch automatisierte maschinelle Verarbeitung missbräuchlich erfolgt.
-
-Nach unserer Kenntnis werden die Referrer-URL, die IP-Adresse, das Verhalten
-der Webseitenbesucher, Informationen über Betriebssystem, Browser und
-Verweildauer, Cookies, Darstellungsanweisungen und Skripte, das Eingabeverhalten
-des Nutzers sowie Mausbewegungen im Bereich der „reCAPTCHA“-Checkbox an
-„Google“ übertragen.
-
-Google verwendet die so erlangten Informationen unter anderem dazu, Bücher
-und andere Druckerzeugnisse zu digitalisieren sowie Dienste wie Google Street
-View und Google Maps zu optimieren (bspw. Hausnummern- und Straßennamenerkennung).
-
-Die im Rahmen von „reCAPTCHA“ übermittelte IP-Adresse wird nicht mit anderen
-Daten von Google zusammengeführt, außer Sie sind zum Zeitpunkt der Nutzung
-des „reCAPTCHA“-Plug-ins bei Ihrem Google-Account angemeldet. Wenn Sie diese
-Übermittlung und Speicherung von Daten über Sie und Ihr Verhalten auf unserer
-Webseite durch „Google“ unterbinden wollen, müssen Sie sich bei „Google“
-ausloggen und zwar bevor Sie unsere Seite besuchen bzw. das reCAPTCHA Plug-in
-benutzen.
-
-Die Nutzung des Dienstes „reCAPTCHA“ erlangten Informationen erfolgt gemäß
-den Google-Nutzungsbedingungen: 
-
-https://www.google.com/intl/de/policies/privacy/
-
 ## Fragen an den Datenschutzbeauftragten
 Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder
 wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in

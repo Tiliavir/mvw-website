@@ -20,8 +20,9 @@
           <div class="mvw-gallery">
             <div class="ratio-content">
               <img class="preview"
-                   src="{{ printf "%s=w200-h200" (index $gallery.i 0).u }}"
                    alt="{{ $title }}"
+                   src="unknown-preset"
+                   data-src="{{ printf "%s=w200-h200" (index $gallery.i 0).u }}"
                    data-year="{{ $year }}"
                    data-gallery="{{ $title }}" />
               <span class="caption">{{ $title }}</span>

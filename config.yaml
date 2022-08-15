@@ -61,12 +61,10 @@ privacy:
   googleAnalytics:
     disable: true
   instagram:
-    simple: true
+    disable: true
   twitter:
-    enableDNT: true
-    simple: true
+    disable: true
   vimeo:
-    enableDNT: true
-    simple: false
+    disable: true
   youtube:
-    privacyEnhanced: true
+    disable: true

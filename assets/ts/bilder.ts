@@ -42,7 +42,27 @@ export class Gallery {
   }
 
   public static initialize(): void {
-    $(".mvw-gallery img").on("mouseenter", (e) => {
+    if (localStorage.getItem("bilder-consent") != "accepted"
+        && sessionStorage.getItem("bilder-consent") != "accepted") {
+      $(".mvw-gallery-overview")
+          .hide()
+          .after($("<input type='checkbox' name='gallery-consenter' style='margin-right: 10px;'><label for='gallery-consenter'>Ja, ich bin einverstanden!</label></input>")
+              .on("click", () => {
+                localStorage.setItem("bilder-consent", "accepted");
+                window.location.reload();
+              }))
+          .after($("<p>").addClass("mvw-gallery-consent")
+              .text('Sie möchten die Bilder dieser Seite sehen? Die Gallerie nutzt Dienste von google. Dabei wird Ihre IP Adresse an google übermittelt. Wenn Sie damit einverstanden sind können Sie im Folgenden akzeptieren:'));
+      return;
+    }
+
+    const imgs = $(".mvw-gallery img");
+    imgs.each((i, e) => {
+      const $elem = $(e);
+      $elem.attr("src", $elem.attr("data-src"));
+    }).removeAttr("data-src");
+
+    imgs.on("mouseenter", (e) => {
       const $e = $(e.target);
       $e.attr("src", $e.attr("src").replace("=w200-h200", "=w800-h800"));
     });
