@@ -3,8 +3,6 @@ title: Vereine und Links
 description: Vereine und Verbände mit denen der Musikverein in langjähriger freundschaftlicher Verbindung steht und eine gute Zusammenarbeit pflegt.
 keywords: [Befreundete Vereine, Befreundete Verbände, Vereine, Partnerschaften, Freundschaften, Verbindungen]
 menu: main
-customJs:
-  - ts/vereine-und-links.ts
 ---
 
 ## Befreundete Vereine
