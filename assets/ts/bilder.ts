@@ -42,16 +42,17 @@ export class Gallery {
   }
 
   public static initialize(): void {
-    if (localStorage.getItem("bilder-consent") != "accepted"
-        && sessionStorage.getItem("bilder-consent") != "accepted") {
+    const consentKey = "mvw-gallery-consent";
+    if (localStorage.getItem(consentKey) != "accepted"
+        && sessionStorage.getItem(consentKey) != "accepted") {
       $(".mvw-gallery-overview")
           .hide()
           .after($("<input type='checkbox' name='gallery-consenter' style='margin-right: 10px;'><label for='gallery-consenter'>Ja, ich bin einverstanden!</label></input>")
               .on("click", () => {
-                localStorage.setItem("bilder-consent", "accepted");
+                localStorage.setItem(consentKey, "accepted");
                 window.location.reload();
               }))
-          .after($("<p>").addClass("mvw-gallery-consent")
+          .after($("<p>")
               .text('Sie möchten die Bilder dieser Seite sehen? Die Gallerie nutzt Dienste von google. Dabei wird Ihre IP Adresse an google übermittelt. Wenn Sie damit einverstanden sind können Sie im Folgenden akzeptieren:'));
       return;
     }
