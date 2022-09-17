@@ -25,7 +25,6 @@ export class Gallery {
     {query: "=w1200-h1200", desc: "w1200"},
     {query: "=w2000-h2000", desc: "w2000"}
   ];
-  private static lightbox = new PhotoSwipeLightbox({pswpModule: PhotoSwipe});
 
   public static openGallery(e: HTMLElement): void {
     let items = (<HTMLElementWithImages>e).images;
@@ -34,11 +33,13 @@ export class Gallery {
       items = (<HTMLElementWithImages>e).images = galleries[preview.data("year")][preview.data("gallery")].i;
     }
 
-    Gallery.lightbox.loadAndOpen(0, items.map(i => ({
-      srcset: Gallery.sizes.map(s => i.u + s.query + " " + s.desc).join(", "),
-      src: i.u + "=w1200-h1200",
-      alt: i.t
-    })), null);
+    const lightbox = new PhotoSwipeLightbox({pswpModule: PhotoSwipe, dataSource: items.map(i => ({
+        srcset: Gallery.sizes.map(s => i.u + s.query + " " + s.desc).join(", "),
+        src: i.u + "=w1200-h1200",
+        alt: i.t
+      }))});
+    lightbox.init();
+    lightbox.loadAndOpen(0);
   }
 
   public static initialize(): void {
