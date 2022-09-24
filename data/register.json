@@ -15,6 +15,11 @@
     "register": "Querflöte"
   },
   {
+    "name": "Hannah",
+    "familyName": "Reinacher",
+    "register": "Querflöte"
+  },
+  {
     "name": "Rahel",
     "familyName": "Baltensperger-Mattmüller",
     "register": "Oboe"
@@ -62,6 +67,16 @@
   {
     "name": "Lina",
     "familyName": "Müller",
+    "register": "Klarinette"
+  },
+  {
+    "name": "Leonie",
+    "familyName": "Reinacher",
+    "register": "Klarinette"
+  },
+  {
+    "name": "Lara",
+    "familyName": "Kuckuk",
     "register": "Klarinette"
   },
   {
@@ -165,6 +180,21 @@
     "register": "Trompete"
   },
   {
+    "name": "Henri",
+    "familyName": "Riesterer",
+    "register": "Trompete"
+  },
+  {
+    "name": "Ben",
+    "familyName": "Schörlin",
+    "register": "Trompete"
+  },
+  {
+    "name": "Yannik",
+    "familyName": "Brunner",
+    "register": "Trompete"
+  },
+  {
     "name": "Mathias",
     "familyName": "Lindenmann",
     "register": "Horn"
@@ -192,6 +222,11 @@
   {
     "name": "Jutta",
     "familyName": "Schmidt",
+    "register": "Posaune"
+  },
+  {
+    "name": "Johanna",
+    "familyName": "Maier",
     "register": "Posaune"
   },
   {
@@ -232,6 +267,11 @@
   {
     "name": "Dietmar",
     "familyName": "Müller",
+    "register": "Tuba"
+  },
+  {
+    "name": "Simon",
+    "familyName": "Wiggers",
     "register": "Tuba"
   },
   {

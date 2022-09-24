@@ -4,32 +4,6 @@
       "location": {
         "address": "Wollbach"
       },
-      "starttime": "2022-07-21T19:00:00Z",
-      "endtime": "2022-07-21T21:00:00Z",
-      "title": "Generalversammlung",
-      "description": "19:00 Förderverein Klingendes C, 19:30 Förderverein Blasmusik Wollbach, 20:00 Musikverein Wollbach 1866 e.V."
-    },
-    {
-      "location": {
-        "name": "Kirche",
-        "address": "Wollbach"
-      },
-      "starttime": "2022-07-24T10:00:00Z",
-      "endtime": "2022-07-24T12:00:00Z",
-      "title": "Kirchhofgottesdienst"
-    },
-    {
-      "location": {
-        "address": "Oberrottweil"
-      },
-      "starttime": "2022-09-10T20:00:00Z",
-      "endtime": "2022-09-10T23:00:00Z",
-      "title": "Weinfest des Musikverein Oberrottweil"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
       "starttime": "2022-10-08",
       "endtime": "2022-10-08",
       "title": "Sauserbummel"
@@ -40,7 +14,7 @@
       },
       "starttime": "2022-10-09",
       "endtime": "2022-10-09",
-      "title": "Herbstfest 'mal anders'"
+      "title": "Herbstfest 'mal anders' - Marschmusik"
     },
     {
       "location": {
@@ -78,6 +52,14 @@
       "starttime": "2023-01-27",
       "endtime": "2023-01-28",
       "title": "Jahreskonzert"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2023-07-07",
+      "endtime": "2023-07-08",
+      "title": "Open Air"
     }
   ]
 }
