@@ -43,24 +43,24 @@
     "@types/grecaptcha": "3.0.4",
     "@types/jquery": "3.5.14",
     "@types/lunr": "2.3.4",
-    "@typescript-eslint/eslint-plugin": "5.40.1",
-    "@typescript-eslint/parser": "5.40.1",
-    "autoprefixer": "10.4.12",
+    "@typescript-eslint/eslint-plugin": "5.42.0",
+    "@typescript-eslint/parser": "5.42.0",
+    "autoprefixer": "10.4.13",
     "copyfiles": "2.4.1",
-    "eslint": "8.25.0",
+    "eslint": "8.26.0",
     "glob-all": "3.3.0",
     "mvw-search-index": "2.2.14",
     "postcss": "8.4.18",
     "postcss-cli": "10.0.0",
     "stylelint": "14.14.0",
-    "stylelint-config-recommended-scss": "7.0.0",
+    "stylelint-config-recommended-scss": "8.0.0",
     "typescript": "4.8.4",
     "w3c-html-validator": "1.2.0"
   },
   "dependencies": {
     "jquery": "3.6.1",
     "lunr": "2.3.9",
-    "photoswipe": "5.3.2"
+    "photoswipe": "5.3.3"
   },
   "scripts": {
     "validate": "node validate.mjs",
