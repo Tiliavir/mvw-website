@@ -14,13 +14,6 @@ customJs:
                alt="Das neue Logo des Musikvereins Wollbach"
     >}}
   </div>
-  <!--div class="cd">
-    <a href="{{< ref "2016-still-feeling-good.md" >}}">
-      {{< figure src="/img/events/cd.jpg"
-                 alt="Still Feelin' Good"
-      >}}
-    </a>
-  </div-->
   <div class="cd">
     <a href="{{< ref "2023-jahreskonzert.md" >}}">
       {{< figure src="/files/flyer/23_jahreskonzert_logo.jpg"

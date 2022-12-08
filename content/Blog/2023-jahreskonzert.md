@@ -79,7 +79,7 @@ Sängerensemble des Musikvereins präsentieren.
 - [Flyer des Jahreskonzertes herunterladen](/files/flyer/23_jahreskonzert_flyer.pdf)
 - [Plakat des Jahreskonzertes herunterladen](/files/flyer/23_jahreskonzert_plakat.pdf)
 
-# So sind sie dabei
+# Tickets kaufen
 
-Dieses Jahr verkaufen wir unsere Tickets zum ersten mal online auf [tickets.mv-wollbach.de](https://tickets.mv-wollbach.de).
+Dieses Jahr verkaufen wir unsere Tickets erstmalig online [in unserem Ticket-Shop](https://tickets.mv-wollbach.de).
 
