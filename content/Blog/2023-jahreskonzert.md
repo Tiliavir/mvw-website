@@ -2,7 +2,7 @@
 title: Jahreskonzert 2023
 description: Rock Symphony - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2023.
 keywords: [Jahreskonzert, Jahreskonzert 2023, Konzert, Rock, Symphony, Deep Purple, Scorpions]
-publishDate: 2023-12-05T00:00:00.000Z
+publishDate: 2022-12-05T00:00:00.000Z
 ampLogoUrl: files/flyer/23_jahreskonzert_plakat.jpg
 ampLogoWidth: 1000
 ampLogoHeight: 1433
@@ -13,7 +13,62 @@ customCss:
   - scss/blog_2023-jahreskonzert.scss
 ---
 
+# Jon Lord Concerto for group and Orchestra
 
+Am 24. September 1969 wurde die Musikwelt Zeuge eines bis dahin noch
+nicht da gewesenen Spektakels. Die Rockband „Deep Purple" führte in der
+Londoner Royal Albert Hall gemeinsam mit dem Royal Philharmonic
+Orchestra das "Concerto for Group and Orchestra" auf. Jon Lord, der
+Organist von Deep Purple, war schon immer von klassischer Musik
+begeistert und komponierte dieses besondere Werk.
+
+Der Versuch ein Musikstück für
+Rockband und Orchester zu
+realisieren war damals ganz
+neu und wurde von der Öf-
+fentlichkeit mit großer Skepsis
+beäugt. Doch Jon Lords Vision,
+dass sich Klassik und Rock
+durchaus ergänzen und zu
+einer echten, an Dramaturgie
+kaum zu überbietenden
+Einheit zusammenwachsen
+können, sollte wahr werden.
+
+Dieses „Concerto“ bringt sowohl das Orchester als
+auch die Band mit ihren charakteristischen
+Klangfarben in allen Facetten zur Geltung.
+
+Lassen auch sie sich begeistern von dieser
+besonderen Musik.
+
+Der Musikverein Wollbach präsentiert ihnen
+dieses spannende Werk in einer Bearbeitung für
+Blasorchester und Rockband im ersten Teil des
+Konzertes.
+
+# Scorpions Symphony
+
+Auch eine der bekanntesten deutschen Hardrock-Bands, die Scorpions,
+wagten die Zusammenarbeit mit einem Symphonieorchester. Für die
+Uraufführung auf der EXPO in Hannover im Jahr 2000 wurden bereits
+bekannte Titel der Scorpions und auch einige neue Songs in sinfonischer Form
+für dieses Zusammenspiel arrangiert und mit den Berliner Philharmonikern
+aufgeführt.
+
+Schon lange hegte Oliver Hauser, Dirigent des Musikvereins Wollbach, den
+Wunsch, diese Musik mit dem Musikverein Wollbach aufzuführen. Nun
+endlich gelang es, eine exklusive Bearbeitung dieser außergewöhnlichen
+Komposition für Blasorchester und Band mit Sängern in Auftrag zu geben.
+
+Seien sie dabei, wenn bekannte Songs wie „Wind of Change“ oder „Rock Me
+Like A Hurricane“ in ganz neuer Form erklingen - im Stil der konzertanten
+Bearbeitung aus dem Jahr 2000, aber zum ersten Mal in einem
+Arrangement für Blasorchester.
+
+Der Musikverein Wollbach wird ihnen im zweiten Teil des Konzertes diese
+Uraufführung zusammen mit einer Rockband und dem vertrauten
+Sängerensemble des Musikvereins präsentieren.
 
 **Wir freuen uns auf ihren Besuch!**
 
@@ -25,3 +80,6 @@ customCss:
 - [Plakat des Jahreskonzertes herunterladen](/files/flyer/23_jahreskonzert_plakat.pdf)
 
 # So sind sie dabei
+
+Dieses Jahr verkaufen wir unsere Tickets zum ersten mal online auf [tickets.mv-wollbach.de](https://tickets.mv-wollbach.de).
+
