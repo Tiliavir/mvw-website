@@ -1,39 +1,4 @@
 {
-  "2022": [
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2022-10-08",
-      "endtime": "2022-10-08",
-      "title": "Sauserbummel"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2022-10-09",
-      "endtime": "2022-10-09",
-      "title": "Herbstfest 'mal anders' - Marschmusik"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2022-11-25",
-      "endtime": "2022-11-25",
-      "title": "Adventskranzverkauf"
-    },
-    {
-      "location": {
-        "name": "Kirche",
-        "address": "Wollbach"
-      },
-      "starttime": "2022-12-04",
-      "endtime": "2022-12-04",
-      "title": "Jugendvorspiel"
-    }
-  ],
   "2023": [
     {
       "location": {
@@ -49,7 +14,7 @@
         "name": "Kandertalhalle",
         "address": "Wollbach"
       },
-      "starttime": "2023-01-27",
+      "starttime": "2023-01-26",
       "endtime": "2023-01-28",
       "title": "Jahreskonzert"
     },

@@ -14,10 +14,10 @@ customJs:
                alt="Das neue Logo des Musikvereins Wollbach"
     >}}
   </div>
-  <div class="cd">
-    <a href="{{< ref "2016-still-feeling-good.md" >}}">
-      {{< figure src="/img/events/cd.jpg"
-                 alt="Still Feelin' Good"
+  <div class="rock-symphony">
+    <a href="{{< ref "2023-jahreskonzert.md" >}}">
+      {{< figure src="/img/events/23-rock/rock.jpg"
+                 alt="Jahreskonzert: Rock Symphony"
       >}}
     </a>
   </div>
@@ -33,10 +33,10 @@ customJs:
            title="Mitglied werden"
            text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
   />}}
-  {{< tile file="2022-sauserfahrt"
-           image="img/events/chanderli.jpg"
-           title="Sauserfahrt"
-           text="Am Samstag, den 8.10. dampft auch in diesem Jahr wieder der Sauser-Express durch das Kandertal."
+  {{< tile file="2023-jahreskonzert"
+           image="files/flyer/23_jahreskonzert_logo.jpg"
+           title="Rock Symphony"
+           text="Deep Purple und die Scorpions in der Kandertalhalle in Wollbach..."
   />}}
   {{< tile file="termine"
            image="img/jahreskonzerte/konzert_2020.jpg"
