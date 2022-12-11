@@ -14,11 +14,11 @@ header {
 
   .mvw-brand {
     padding: 5px 0;
-    width: 35%;
+    width: 40%;
   }
 
   .rock-symphony {
-    width: 50%;
+    width: 55%;
 
     &:hover {
       opacity: .9;
@@ -26,13 +26,14 @@ header {
   }
 
   @include breakpoint(0, $mobile-max-width) {
-    .mvw-brand,
-    .cd {
-      width: 100%;
+    width: 100%;
+
+    .mvw-brand {
+      display: none;
     }
 
-    .cd {
-      margin-top: 20px;
+    .rock-symphony {
+      width: 100%;
     }
   }
 }

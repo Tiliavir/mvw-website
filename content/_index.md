@@ -14,9 +14,9 @@ customJs:
                alt="Das neue Logo des Musikvereins Wollbach"
     >}}
   </div>
-  <div class="cd">
+  <div class="rock-symphony">
     <a href="{{< ref "2023-jahreskonzert.md" >}}">
-      {{< figure src="/files/flyer/23_jahreskonzert_logo.jpg"
+      {{< figure src="/img/events/23-rock/rock.jpg"
                  alt="Jahreskonzert: Rock Symphony"
       >}}
     </a>

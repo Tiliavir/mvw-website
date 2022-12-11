@@ -3,3 +3,10 @@ figure {
   display: inline-block;
   margin: 0 auto;
 }
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}

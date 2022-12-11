@@ -1,11 +1,11 @@
 ---
-title: Jahreskonzert 2023
+title: "Jahreskonzert 2023: Rock Symphony"
 description: Rock Symphony - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2023.
 keywords: [Jahreskonzert, Jahreskonzert 2023, Konzert, Rock, Symphony, Deep Purple, Scorpions]
 publishDate: 2022-12-05T00:00:00.000Z
 ampLogoUrl: files/flyer/23_jahreskonzert_plakat.jpg
-ampLogoWidth: 1000
-ampLogoHeight: 1433
+ampLogoWidth: 1410
+ampLogoHeight: 2000
 menu:
   blog:
     parent: blog
@@ -13,8 +13,25 @@ customCss:
   - scss/blog_2023-jahreskonzert.scss
 ---
 
-# Jon Lord Concerto for group and Orchestra
+<div class="header">
+    <div class="header-logo">
+        {{< figure
+              src="/img/events/23-rock/rock-header.jpg"
+              alt="Jahreskonzert: Rock Symphony"
+        >}}
+    </div>
+    <div class="header-ticketshop">
+        <a href="https://tickets.mv-wollbach.de" target="_blank" class="unstyled">
+            {{< figure
+                  src="/img/events/23-rock/tickets.jpg"
+                  alt="Tickets: Rock Symphony 🎟️"
+            >}}
+        </a>
+    </div>
+</div>
 
+# Jon Lord Concerto for group and Orchestra
+``
 Am 24. September 1969 wurde die Musikwelt Zeuge eines bis dahin noch
 nicht da gewesenen Spektakels. Die Rockband „Deep Purple" führte in der
 Londoner Royal Albert Hall gemeinsam mit dem Royal Philharmonic
@@ -78,8 +95,3 @@ Sängerensemble des Musikvereins präsentieren.
 
 - [Flyer des Jahreskonzertes herunterladen](/files/flyer/23_jahreskonzert_flyer.pdf)
 - [Plakat des Jahreskonzertes herunterladen](/files/flyer/23_jahreskonzert_plakat.pdf)
-
-# Tickets kaufen
-
-Dieses Jahr verkaufen wir unsere Tickets erstmalig online [in unserem Ticket-Shop](https://tickets.mv-wollbach.de).
-
