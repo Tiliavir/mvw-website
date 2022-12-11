@@ -31,9 +31,8 @@ customCss:
 </div>
 
 # Jon Lord Concerto for group and Orchestra
-``
 Am 24. September 1969 wurde die Musikwelt Zeuge eines bis dahin noch
-nicht da gewesenen Spektakels. Die Rockband „Deep Purple" führte in der
+nicht da gewesenen Spektakels. Die Rockband „Deep Purple“ führte in der
 Londoner Royal Albert Hall gemeinsam mit dem Royal Philharmonic
 Orchestra das "Concerto for Group and Orchestra" auf. Jon Lord, der
 Organist von Deep Purple, war schon immer von klassischer Musik
@@ -42,8 +41,7 @@ begeistert und komponierte dieses besondere Werk.
 Der Versuch ein Musikstück für
 Rockband und Orchester zu
 realisieren war damals ganz
-neu und wurde von der Öf-
-fentlichkeit mit großer Skepsis
+neu und wurde von der Öffentlichkeit mit großer Skepsis
 beäugt. Doch Jon Lords Vision,
 dass sich Klassik und Rock
 durchaus ergänzen und zu
@@ -65,7 +63,6 @@ Blasorchester und Rockband im ersten Teil des
 Konzertes.
 
 # Scorpions Symphony
-
 Auch eine der bekanntesten deutschen Hardrock-Bands, die Scorpions,
 wagten die Zusammenarbeit mit einem Symphonieorchester. Für die
 Uraufführung auf der EXPO in Hannover im Jahr 2000 wurden bereits

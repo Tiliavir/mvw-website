@@ -38,22 +38,20 @@ an einem beeindruckenden Musiktag in Bannwil mit 19 Kapellen und über 800
 Musikern. Die Musikgesellschaft Bannwil besuchte uns zuletzt 2016 an unserem
 Marschmusikfestival zum 150 jährigen Jubiläum.
 
-### <a class="mvw-verein" href="https://www.ostmusik.ch/" rel="noopener" target="_blank">Musikgesellschaft Sankt Gallen Ost</a>
+### <a class="mvw-verein" href="http://www.ostmusik.ch/" rel="noopener" target="_blank">Musikgesellschaft Sankt Gallen Ost</a>
 
 <!-- todo : Text -->
 
 ## Musikvereine
 <a class="mvw-verein" href="https://www.stadtmusik-loerrach.de/" rel="noopener" target="_blank">Stadtmusik Lörrach</a>
 
-<a class="mvw-verein" href="https://www.musikverein-fahrnau.de/" rel="noopener" target="_blank">Musikverein Fahrnau</a>
-
-<a class="mvw-verein" href="https://www.stadtmusik-kandern.de" rel="noopener" target="_blank">Stadtmusik Kandern</a>
+<a class="mvw-verein" href="http://www.musikverein-fahrnau.de/" rel="noopener" target="_blank">Musikverein Fahrnau</a>
 
 <a class="mvw-verein" href="https://www.mvtannenkirch.de/" rel="noopener" target="_blank">Musikverein Tannenkirch</a>
 
 <a class="mvw-verein" href="https://www.mv-willaringen.de/" rel="noopener" target="_blank">Musikverein Willaringen</a>
 
-<a class="mvw-verein" href="https://www.musikvereinbinzen.de/" rel="noopener" target="_blank">Musikverein Binzen</a>
+Musikverein Binzen
 
 <a class="mvw-verein" href="https://www.musikverein-denkingen.de/" rel="noopener" target="_blank">Musikverein Denkingen</a>
 
@@ -68,9 +66,7 @@ Bund Deutscher Blasmusikverbände - der Dachverband
 <a class="mvw-verein" href="https://www.kandertalbahn.de/" rel="noopener" target="_blank">Kandertalbahn</a>
 Die Homepage des "Chanderlis"
 
-<a class="mvw-verein" href="https://www.musical-bruggfeld.ch/" rel="noopener" target="_blank">Musical Bruggfeld</a>
-
 <a class="mvw-verein" href="https://www.blasmusik-service.de/" rel="noopener" target="_blank">Blasmusik Service, Studio 80</a>
 
-<a class="mvw-verein" href="https://www.halleonard.com/" rel="noopener" target="_blank">Musikverlag</a>
+<a class="mvw-verein" href="https://www.halleonard.com/" rel="noopener" target="_blank">Musikverlag Hal Leonard</a>
 Von hier beziehen wir unsere Noten
