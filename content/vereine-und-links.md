@@ -10,7 +10,7 @@ Wir danken den Schweizer Musikgesellschaften ganz herzlich für die
 vergangen Jahre und hoffen auf ein noch langes, erfolgreiches Fortbestehen
 dieser Freundschaft.
 
-### <a class="mvw-verein" href="http://www.mgbannwil.ch/" target="_blank">Musikgesellschaft Bannwil</a>
+### <a class="mvw-verein" href="https://www.mgbannwil.ch/" rel="noopener" target="_blank">Musikgesellschaft Bannwil</a>
 
 Die Musikgesellschaft Bannwil wurde 1879 gegründet. Der Verein besteht aus
 30 Mitgliedern im Alter zwischen 16 und 72 Jahren, spielt in der 4.
@@ -38,39 +38,39 @@ an einem beeindruckenden Musiktag in Bannwil mit 19 Kapellen und über 800
 Musikern. Die Musikgesellschaft Bannwil besuchte uns zuletzt 2016 an unserem
 Marschmusikfestival zum 150 jährigen Jubiläum.
 
-### <a class="mvw-verein" href="http://www.ostmusik.ch/" target="_blank">Musikgesellschaft Sankt Gallen Ost</a>
+### <a class="mvw-verein" href="https://www.ostmusik.ch/" rel="noopener" target="_blank">Musikgesellschaft Sankt Gallen Ost</a>
 
 <!-- todo : Text -->
 
 ## Musikvereine
-<a class="mvw-verein" href="http://www.stadtmusik-loerrach.de/" target="_blank">Stadtmusik Lörrach</a>
+<a class="mvw-verein" href="https://www.stadtmusik-loerrach.de/" rel="noopener" target="_blank">Stadtmusik Lörrach</a>
 
-<a class="mvw-verein" href="http://www.musikverein-fahrnau.de/" target="_blank">Musikverein Fahrnau</a>
+<a class="mvw-verein" href="https://www.musikverein-fahrnau.de/" rel="noopener" target="_blank">Musikverein Fahrnau</a>
 
-<a class="mvw-verein" href="http://www.stadtmusik-kandern.de" target="_blank">Stadtmusik Kandern</a>
+<a class="mvw-verein" href="https://www.stadtmusik-kandern.de" rel="noopener" target="_blank">Stadtmusik Kandern</a>
 
-<a class="mvw-verein" href="http://www.mvtannenkirch.de/" target="_blank">Musikverein Tannenkirch</a>
+<a class="mvw-verein" href="https://www.mvtannenkirch.de/" rel="noopener" target="_blank">Musikverein Tannenkirch</a>
 
-<a class="mvw-verein" href="http://www.mv-willaringen.de/" target="_blank">Musikverein Willaringen</a>
+<a class="mvw-verein" href="https://www.mv-willaringen.de/" rel="noopener" target="_blank">Musikverein Willaringen</a>
 
-<a class="mvw-verein" href="http://www.musikvereinbinzen.de/" target="_blank">Musikverein Binzen</a>
+<a class="mvw-verein" href="https://www.musikvereinbinzen.de/" rel="noopener" target="_blank">Musikverein Binzen</a>
 
-<a class="mvw-verein" href="http://www.musikverein-denkingen.de/" target="_blank">Musikverein Denkingen</a>
+<a class="mvw-verein" href="https://www.musikverein-denkingen.de/" rel="noopener" target="_blank">Musikverein Denkingen</a>
 
 ## Verbände
-<a class="mvw-verein" href="http://www.musik-verband.de/" target="_blank">AMV</a>
+<a class="mvw-verein" href="https://www.musik-verband.de/" rel="noopener" target="_blank">AMV</a>
 Der Alemannische Musikverband, hier machen unter anderem unsere Jungmusiker Ihre Jungmusikerleistungsabzeichen
 
-<a class="mvw-verein" href="http://www.blasmusikverbaende.de/" target="_blank">BDB</a>
+<a class="mvw-verein" href="https://www.blasmusikverbaende.de/" rel="noopener" target="_blank">BDB</a>
 Bund Deutscher Blasmusikverbände - der Dachverband
 
 ## Sonstiges
-<a class="mvw-verein" href="http://www.kandertalbahn.de/" target="_blank">Kandertalbahn</a>
+<a class="mvw-verein" href="https://www.kandertalbahn.de/" rel="noopener" target="_blank">Kandertalbahn</a>
 Die Homepage des "Chanderlis"
 
-<a class="mvw-verein" href="http://www.musical-bruggfeld.ch/" target="_blank">Musical Bruggfeld</a>
+<a class="mvw-verein" href="https://www.musical-bruggfeld.ch/" rel="noopener" target="_blank">Musical Bruggfeld</a>
 
-<a class="mvw-verein" href="http://www.blasmusik-service.de/"  target="_blank">Blasmusik Service, Studio 80</a>
+<a class="mvw-verein" href="https://www.blasmusik-service.de/" rel="noopener" target="_blank">Blasmusik Service, Studio 80</a>
 
-<a class="mvw-verein" href="http://www.halleonard.com/" target="_blank">Musikverlag</a>
+<a class="mvw-verein" href="https://www.halleonard.com/" rel="noopener" target="_blank">Musikverlag</a>
 Von hier beziehen wir unsere Noten

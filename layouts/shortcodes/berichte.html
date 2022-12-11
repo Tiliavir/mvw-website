@@ -26,10 +26,10 @@
           {{ partial "timespan" (dict "start" .date) }}
         </td>
         <td>
-          <a href={{ .url }} target="_blank">{{ .title }}</a>
+          <a href={{ .url }} rel="noopener" target="_blank">{{ .title }}</a>
         </td>
         <td>
-          <a href={{ .srcUrl }} target="_blank">{{ .srcTitle }}</a>
+          <a href={{ .srcUrl }} rel="noopener" target="_blank">{{ .srcTitle }}</a>
         </td>
       </tr>
       {{ end }}
