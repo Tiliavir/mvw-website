@@ -10,7 +10,7 @@ $tile-bg-color-hover: rgba(34, 34, 34, .75);
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  height: 300px;
+  height: 200px;
 }
 
 .tiles {
@@ -20,6 +20,7 @@ $tile-bg-color-hover: rgba(34, 34, 34, .75);
 }
 
 .tile {
+  font-size: 1.1rem;
   display: inline-block;
   font-weight: lighter;
   width: calc(50% - 10px);
@@ -31,6 +32,10 @@ $tile-bg-color-hover: rgba(34, 34, 34, .75);
     &:hover {
       text-decoration: none;
     }
+  }
+
+  .title {
+    font-weight: bold;
   }
 
   .tile-content {

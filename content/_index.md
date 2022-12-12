@@ -25,6 +25,10 @@ customJs:
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
+Der Musikverein Wollbach ist ein kreatives Blasorchester mit einer über 150-jährigen Tradition. Konzertante sinfonische
+Blasmusik gehört ebenso zum Repertoire wie swingende Unterhaltungsmusik. Im Orchester spielen über 50 Musiker aller
+Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent Oliver Hauser.
+
 {{< slider >}}
 
 <div class="tiles">
@@ -43,7 +47,9 @@ customJs:
            title="Termine"
            text="Lust uns zu hören? Hier ist unser Terminkalender..."
   />}}
+  {{< tile file="gooding"
+           image="img/events/gooding.png"
+           title="Unterstützen Sie uns"
+           text="Unterstützen Sie uns bei Ihren täglichen Einkäufen – ganz nebenbei und ohne Extrakosten. Welche Unternehmen mitmachen sehen Sie hier..."
+  />}}
 </div>
-
-## Unterstützen Sie uns
-Unterstützen Sie uns bei Ihren täglichen Einkäufen – ganz ohne Extrakosten. [Welche Unternehmen mitmachen sehen Sie hier](gooding).

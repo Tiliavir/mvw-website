@@ -78,6 +78,10 @@ header {
     bottom: 0;
     height: auto;
   }
+
+  @include breakpoint(0, $mobile-max-width) {
+    height: 60vw;
+  }
 }
 
 .slider-control {
