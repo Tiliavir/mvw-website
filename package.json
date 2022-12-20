@@ -43,11 +43,11 @@
     "@types/grecaptcha": "3.0.4",
     "@types/jquery": "3.5.14",
     "@types/lunr": "2.3.4",
-    "@typescript-eslint/eslint-plugin": "5.46.1",
-    "@typescript-eslint/parser": "5.46.1",
+    "@typescript-eslint/eslint-plugin": "5.47.0",
+    "@typescript-eslint/parser": "5.47.0",
     "autoprefixer": "10.4.13",
     "copyfiles": "2.4.1",
-    "eslint": "8.29.0",
+    "eslint": "8.30.0",
     "glob-all": "3.3.1",
     "mvw-search-index": "2.2.14",
     "postcss": "8.4.20",
@@ -58,7 +58,7 @@
     "w3c-html-validator": "1.2.1"
   },
   "dependencies": {
-    "jquery": "3.6.1",
+    "jquery": "3.6.2",
     "lunr": "2.3.9",
     "photoswipe": "5.3.4"
   },
