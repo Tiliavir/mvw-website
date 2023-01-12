@@ -4,7 +4,7 @@ var Register = (function () {
     }
     Register.tryReplaceImage = function ($images) {
         var register = {
-            Altsaxophon: ["altsaxophon_1.jpg", "altsaxophon_2.jpg", "saxophon_1.jpg"],
+            Altsaxophon: ["altsaxophon_1.jpg", "altsaxophon_2.jpg", "altsaxophon_1.jpg"],
             Euphonium: ["euphonium_1.jpg", "euphonium_2.jpg"],
             Fagott: ["fagott_1.jpg", "fagott_2.jpg"],
             Gitarre: ["gitarre_1.jpg", "gitarre_2.jpg"],
@@ -15,7 +15,7 @@ var Register = (function () {
             Posaune: ["posaune_1.jpg", "posaune_2.jpg"],
             Querflöte: ["querfloete_1.jpg", "querfloete_2.jpg"],
             Schlagzeug: ["schlagzeug_1.jpg", "schlagzeug_2.jpg"],
-            Tenorsaxophon: ["tenorsaxophon_1.jpg", "tenorsaxophon_2.jpg", "saxophon_1.jpg"],
+            Tenorsaxophon: ["tenorsaxophon_1.jpg", "tenorsaxophon_2.jpg", "altsaxophon_1.jpg"],
             Trompete: ["trompete_1.jpg", "trompete_2.jpg"],
             Tuba: ["tuba_1.jpg", "tuba_2.jpg"]
         };

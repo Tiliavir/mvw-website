@@ -2,6 +2,31 @@
   "2022": [
     {
       "image": {
+        "src": "/files/flyer/22_open-air.jpg",
+        "title": "Flyer zum Wollbach OpenAir 2022"
+      },
+      "keywords": ["Konzert"],
+      "title": "Wollbach Open-Air",
+      "starttime": "2022-06-25",
+      "endtime": "2022-06-25",
+      "content": ""
+    },
+    {
+      "keywords": ["Sauserbummel"],
+      "starttime": "2022-10-08",
+      "title": "Sauserbummel",
+      "keywords": ["Sauserbummel"],
+      "content": ""
+    },
+    {
+      "keywords": ["Marschmusikfestival"],
+      "starttime": "2022-10-09",
+      "title": "Marschmusikfestival",
+      "keywords": ["Marschmusikfestival"],
+      "content": ""
+    },
+    {
+      "image": {
         "src": "/files/flyer/22_jahreskonzert_plakat.jpg",
         "title": "Flyer zum Jahreskonzert 2022 - Metropolis"
       },
@@ -124,7 +149,7 @@
       "content": "Am 16.12. veranstaltete der Lions Club Lörrach zum 2. Mal mit uns das „Lions-Benefiz-Adventskonzert“ in der Kirche in Wollbach. So haben sich einige unterschiedliche Holz- und Blechensembles aus dem Aktivorchester zusammengefunden und ein abwechslungsreiches Programm geboten. Ebenso hat unser Jugendorchester mit 3 Stücken mitgewirkt."
     },
     {
-      "keywords": ["Jungend"],
+      "keywords": ["Jugend"],
       "title": "Weihnachtsvorspiel",
       "image": {
         "src": "/img/news/2018_weihnachtsvorspiel.jpg",

@@ -10,7 +10,7 @@ customJs:
 
 <header>
   <div class="mvw-brand">
-    {{< figure src="slider/logo.png"
+    {{< figure src="img/logo.png"
                alt="Das neue Logo des Musikvereins Wollbach"
     >}}
   </div>
@@ -33,7 +33,7 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
 
 <div class="tiles">
   {{< tile file="mitgliedschaft"
-           image="slider/alle_4.jpg"
+           image="slider/alle-1.jpg"
            title="Mitglied werden"
            text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
   />}}

@@ -20,3 +20,10 @@ Be sure to have the `private.php` in the `files` directory:
 $RECAPTCHA_SECRET_KEY = "";
 
 ```
+
+## Best Practices
+### Add images
+To reduce image size, and to get rid of exif info
+```bash
+$ mogrify -strip -auto-orient -resize 2000x2000 **/*.jpg
+```

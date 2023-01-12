@@ -1,19 +1,18 @@
 class Register {
   public static tryReplaceImage($images: JQuery): boolean {
     const register: { [id: string]: string[] } = {
-      "Altsaxophon": ["altsaxophon_1.jpg", "altsaxophon_2.jpg", "saxophon_1.jpg"],
-      "Baritonsaxophon": ["baritonsaxophon_1.jpg", "baritonsaxophon_2.jpg", "saxophon_1.jpg"],
+      "Altsaxophon": ["altsaxophon_1.jpg", "altsaxophon_2.jpg", "altsaxophon_3.jpg", "altsaxophon_4.jpg", "altsaxophon_5.jpg", "saxophon_1.jpg", "saxophon_2.jpg", "saxophon_3.jpg", "saxophon_4.jpg", "saxophon_5.jpg"],
+      "Baritonsaxophon": ["baritonsaxophon_1.jpg", "baritonsaxophon_2.jpg", "saxophon_1.jpg", "saxophon_2.jpg", "saxophon_3.jpg", "saxophon_4.jpg", "saxophon_5.jpg"],
       "Euphonium": ["euphonium_1.jpg", "euphonium_2.jpg"],
       "Fagott": ["fagott_1.jpg", "fagott_2.jpg"],
       "Gitarre": ["gitarre_1.jpg", "gitarre_2.jpg"],
-      "Horn": ["horn_1.jpg", "horn_2.jpg", "horn_3.jpg", "horn_4.jpg", "horn_5.jpg", "horn_6.jpg",
-        "horn_7.jpg", "horn_8.jpg", "horn_9.jpg", "horn_10.jpg", "horn_11.jpg"],
-      "Klarinette": ["klarinette_1.jpg", "klarinette_2.jpg"],
+      "Horn": ["horn_1.jpg", "horn_2.jpg", "horn_3.jpg"],
+      "Klarinette": ["klarinette_1.jpg"],
       "Klavier": ["klavier_1.jpg", "klavier_2.jpg"],
       "Posaune": ["posaune_1.jpg", "posaune_2.jpg"],
       "Querflöte": ["querfloete_1.jpg", "querfloete_2.jpg"],
       "Schlagzeug": ["schlagzeug_1.jpg", "schlagzeug_2.jpg"],
-      "Tenorsaxophon": ["tenorsaxophon_1.jpg", "tenorsaxophon_2.jpg", "saxophon_1.jpg"],
+      "Tenorsaxophon": ["saxophon_1.jpg", "saxophon_2.jpg", "saxophon_3.jpg", "saxophon_4.jpg", "saxophon_5.jpg"],
       "Trompete": ["trompete_1.jpg", "trompete_2.jpg"],
       "Tuba": ["tuba_1.jpg", "tuba_2.jpg"]
     };
