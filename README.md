@@ -25,5 +25,5 @@ $RECAPTCHA_SECRET_KEY = "";
 ### Add images
 To reduce image size, and to get rid of exif info
 ```bash
-$ mogrify -strip -auto-orient -resize 2000x2000 **/*.jpg
+$ mogrify -strip -auto-orient -resize 2000x2000 -quality 80 **/*.jpg
 ```

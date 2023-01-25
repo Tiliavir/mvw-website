@@ -6,9 +6,14 @@
     td {
       border: 0;
       padding-left: 20px;
+      vertical-align: top;
 
       &:first-child {
         padding-left: 0;
+
+        figure {
+          max-width: 768px;
+        }
       }
 
       p {

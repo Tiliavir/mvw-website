@@ -5,18 +5,44 @@
         "name": "Kandertalhalle",
         "address": "Wollbach"
       },
-      "starttime": "2023-01-06T19:00:00Z",
-      "endtime": "2023-01-06T21:00:00Z",
-      "title": "Neujahrsempfang"
+      "starttime": "2023-01-26",
+      "endtime": "2023-01-28",
+      "title": "Jahreskonzert"
     },
     {
       "location": {
         "name": "Kandertalhalle",
         "address": "Wollbach"
       },
-      "starttime": "2023-01-26",
-      "endtime": "2023-01-28",
-      "title": "Jahreskonzert"
+      "starttime": "2023-02-09T19:00:00Z",
+      "endtime": "2023-02-09T21:00:00Z",
+      "title": "Generalversammlung"
+    },
+    {
+      "location": {
+        "name": "Rebhüsli",
+        "address": "Wollbach"
+      },
+      "starttime": "2023-03-04T18:00:00Z",
+      "endtime": "2023-03-04T23:00:00Z",
+      "title": "Fastnachtsfeuer"
+    },
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2023-05-13T19:00:00Z",
+      "title": "Jugendkonzert"
+    },
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2023-06-18T11:30:00Z",
+      "endtime": "2023-06-18T13:30:00Z",
+      "title": "Jubiläumsfest DRK Wollbach"
     },
     {
       "location": {
@@ -25,6 +51,71 @@
       "starttime": "2023-06-30",
       "endtime": "2023-07-01",
       "title": "Open Air"
+    },
+    {
+      "location": {
+        "name": "Kirche",
+        "address": "Wollbach"
+      },
+      "starttime": "2023-07-23",
+      "endtime": "2023-07-23",
+      "title": "Kirchhofgottesdienst"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2023-10-07",
+      "title": "Sauserbummel"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2023-10-08",
+      "title": "Herbstfest"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2023-12-01T18:00:00Z",
+      "title": "Adventszauber"
+    },
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2023-12-03T18:00:00Z",
+      "title": "Frühschoppen am Wartburgfest"
+    },
+    {
+      "location": {
+        "name": "Kirche",
+        "address": "Jugendvorspiel"
+      },
+      "starttime": "2023-12-10T17:00:00Z",
+      "title": "Jugendvorspiel"
+    }
+  ],
+  "2024": [
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2024-01-06",
+      "title": "Neujahrsempfang"
+    },
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2024-01-26",
+      "endtime": "2024-01-27",
+      "title": "Jahreskonzert"
     }
   ]
 }
