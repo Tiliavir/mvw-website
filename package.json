@@ -1,7 +1,7 @@
 {
   "name": "mvw-website",
   "license": "MIT",
-  "version": "23.01.12",
+  "version": "23.01.25",
   "description": "Website of Musikverein Wollbach 1866 e.V.",
   "author": "Markus Lindenmann <tiliavir@gmail.com>",
   "repository": {
@@ -43,8 +43,8 @@
     "@types/grecaptcha": "3.0.4",
     "@types/jquery": "3.5.16",
     "@types/lunr": "2.3.4",
-    "@typescript-eslint/eslint-plugin": "5.48.2",
-    "@typescript-eslint/parser": "5.48.2",
+    "@typescript-eslint/eslint-plugin": "5.49.0",
+    "@typescript-eslint/parser": "5.49.0",
     "autoprefixer": "10.4.13",
     "copyfiles": "2.4.1",
     "eslint": "8.32.0",
