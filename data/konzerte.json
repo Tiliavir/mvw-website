@@ -2383,7 +2383,6 @@
       ]
     },
     "title": "Metropolis",
-    "subtitle": "250 Jahre Ludwig van Beethoven",
     "parts": [
       {
         "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
@@ -2505,6 +2504,48 @@
           },
           {
             "title": "Hit the road Jack"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Konzert",
+    "title": "ROCK Symphony",
+    "location": {
+      "location": "Wollbach",
+      "dates": [
+        "2022-01-26",
+        "2022-01-27",
+        "2022-01-28"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Jon Lord Concerto for group and orchestra, Sinfonisches Werk für Orchester und Rockband im Stil der Rockband Deep Purple",
+            "composers": [
+              "Jon Lord"
+            ],
+            "parts": [
+              {
+                "title": "Movement One Moderato - Allegro"
+              },
+              {
+                "title": "Movement Two Andante"
+              },
+              {
+                "title": "Movement Three Vivace - Presto"
+              }
+            ]
+          },
+          {
+            "title": "Scorpions Symphony",
+            "composers": ["Christian Kolonovits"],
+            "arrangers": ["Jakob Brenner"]
           }
         ]
       }
