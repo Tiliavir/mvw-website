@@ -1,4 +1,24 @@
 {
+  "2023": [
+    {
+      "title": "Klassische Musik trifft rockigen Sound",
+      "date": "2023-01-28",
+      "hasDescription": true,
+      "hasPicture": true,
+      "srcTitle": "BZ",
+      "srcUrl": "https://www.badische-zeitung.de/",
+      "url": "https://www.badische-zeitung.de/klassische-musik-trifft-rockigen-sound--239660185.html"
+    },
+    {
+      "title": "Ein Abend der im Gedächtnis bleibt",
+      "date": "2023-01-28",
+      "hasDescription": true,
+      "hasPicture": true,
+      "srcTitle": "VHJ",
+      "srcUrl": "https://www.verlagshaus-jaumann.de/",
+      "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-ein-abend-der-im-gedaechtnis-bleibt.f0b52c8b-eedb-48c7-9b40-1e233fccceaa.html"
+    }
+  ],
   "2022": [
     {
       "title": "Großes Orchester spielt Rockmusik",
