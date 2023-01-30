@@ -18,8 +18,8 @@ class Register {
   };
 
   public static tryReplaceImage($images: JQuery): void {
-    let htmlElements = this.shuffle($images);
-    for (let image of htmlElements) {
+    const htmlElements = this.shuffle($images);
+    for (const image of htmlElements) {
       if (Register.isElementInViewport(image)) {
         const $image = $(image);
         const remainingRegImageUrls = Register.register[$image.attr("title")]
@@ -46,7 +46,7 @@ class Register {
     }
 
     return array;
-  };
+  }
 
   private static endsWith(str: string, suffix: string): boolean {
     return str.indexOf(suffix, str.length - suffix.length) !== -1;
