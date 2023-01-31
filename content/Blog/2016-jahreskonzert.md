@@ -1,5 +1,5 @@
 ---
-title: Jahreskonzert 2016
+title: "Jahreskonzert 2016: Still Feeling Good"
 description: Still Feeling Good - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2016 anlässlich des 150 jährigen Jubiläums.
 keywords: [Jahreskonzert, Jubiläum, 150 Jahre, Still Feeling Good, Jahreskonzert 2016, Konzert]
 publishDate: 2015-11-01T00:00:00.000Z

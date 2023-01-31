@@ -1,5 +1,5 @@
 ---
-title: Jahreskonzert 2020
+title: "Jahreskonzert 2020: BTHVN"
 description: BTHVN - Ludwig van Beethoven - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2020.
 keywords: [Jahreskonzert, Jahreskonzert 2020, Konzert, Beethoven, bthvn]
 publishDate: 2020-01-19T00:00:00.000Z

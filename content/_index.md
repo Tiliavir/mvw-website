@@ -8,6 +8,7 @@ customJs:
   - ts/index.ts
 ---
 
+{{< comment >}}
 <header>
   <div class="mvw-brand">
     {{< figure src="img/logo.png"
@@ -22,6 +23,7 @@ customJs:
     </a>
   </div>
 </header>
+{{< /comment >}}
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
@@ -37,13 +39,8 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
            title="Mitglied werden"
            text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
   />}}
-  {{< tile file="2023-jahreskonzert"
-           image="files/flyer/23_jahreskonzert_logo.jpg"
-           title="Rock Symphony"
-           text="Deep Purple und die Scorpions in der Kandertalhalle in Wollbach..."
-  />}}
   {{< tile file="termine"
-           image="img/jahreskonzerte/konzert_2020.jpg"
+           image="img/jahreskonzerte/konzert_2023-2.jpg"
            title="Termine"
            text="Lust uns zu hören? Hier ist unser Terminkalender..."
   />}}

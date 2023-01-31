@@ -14,7 +14,7 @@ class Register {
     "Schlagzeug": ["schlagzeug_1.jpg", "schlagzeug_2.jpg"],
     "Tenorsaxophon": ["tenorsaxophon_1.jpg", "tenorsaxophon_2.jpg", "saxophon_1.jpg", "saxophon_2.jpg", "saxophon_3.jpg", "saxophon_4.jpg", "saxophon_5.jpg"],
     "Trompete": ["trompete_1.jpg", "trompete_2.jpg"],
-    "Tuba": ["tuba_1.jpg", "tuba_2.jpg"]
+    "Tuba": ["tuba_1.jpg", "tuba_2.jpg", "tuba_3.jpg", "tuba_4.jpg"]
   };
 
   public static tryReplaceImage($images: JQuery): void {

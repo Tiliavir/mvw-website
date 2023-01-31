@@ -64,8 +64,8 @@ Landratsamt Lörrach
 - [Sitemap][sitemap]
 
 ## Validierungen unserer Seite
-[![Valid HTML 5][htm]][htmLink]
-[![Valid CSS!][css]][cssLink]
+[Valid HTML 5][htmLink]
+[Valid CSS!][cssLink]
 
 [haftung]: {{< ref "haftung.md" >}}
 [privacy]: {{< ref "datenschutz.md" >}}
@@ -76,7 +76,5 @@ Landratsamt Lörrach
 
 [info]:     mailto:info@mv-wollbach.de"
 
-[htm]:      https://www.w3basis.de/imgs/html5.png
 [htmLink]:  https://validator.w3.org/check?uri=http%3A%2F%2Fwww.mv-wollbach.de%2F
-[css]:      https://jigsaw.w3.org/css-validator/images/vcss-blue
 [cssLink]:  https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.mv-wollbach.de%2F&profile=css3svg

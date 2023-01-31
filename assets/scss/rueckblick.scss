@@ -1,1 +1,15 @@
 @import 'keywords';
+@import 'themes/mv-wollbach/assets/scss/global-variables';
+@import 'themes/mv-wollbach/assets/scss/mixins/breakpoint';
+
+.add-img {
+  height: auto;
+  max-height: calc(75vh - 50px);
+  max-width: calc(50% - 10px);
+  margin: 0 5px;
+
+  @include breakpoint(0, $mobile-max-width) {
+    max-width: 100%;
+    margin: 0;
+  }
+}

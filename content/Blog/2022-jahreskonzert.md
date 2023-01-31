@@ -1,5 +1,5 @@
 ---
-title: Jahreskonzert 2022
+title: "Jahreskonzert 2022: Metropolis"
 description: Metropolis - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2022.
 keywords: [Jahreskonzert, Jahreskonzert 2022, Konzert, Metropolis, 1927, Fritz Lang, Filmgeschichte]
 publishDate: 2022-02-26T00:00:00.000Z

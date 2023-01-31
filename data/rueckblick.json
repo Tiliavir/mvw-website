@@ -1,4 +1,17 @@
 {
+  "2023": [
+    {
+      "image": {
+        "src": "/files/flyer/23_jahreskonzert_plakat.jpg",
+        "title": "Flyer zum Jahreskonzert 2023: Rock Symphony"
+      },
+      "keywords": ["Konzert", "Jahreskonzert"],
+      "title": "Jahreskonzert: 'Rock Symphony'",
+      "starttime": "2023-01-26",
+      "endtime": "2023-01-28",
+      "content": "<br/> <img class='add-img' alt='Jahreskonzert 2023' src='/img/jahreskonzerte/konzert_2023-1.jpg' /><img class='add-img' alt='Jahreskonzert 2023' src='/img/jahreskonzerte/konzert_2023-2.jpg' />"
+    }
+  ],
   "2022": [
     {
       "image": {
@@ -13,16 +26,14 @@
     },
     {
       "keywords": ["Sauserbummel"],
-      "starttime": "2022-10-08",
       "title": "Sauserbummel",
-      "keywords": ["Sauserbummel"],
+      "starttime": "2022-10-08",
       "content": ""
     },
     {
       "keywords": ["Marschmusikfestival"],
-      "starttime": "2022-10-09",
       "title": "Marschmusikfestival",
-      "keywords": ["Marschmusikfestival"],
+      "starttime": "2022-10-09",
       "content": ""
     },
     {
@@ -76,7 +87,7 @@
     {
       "keywords": ["Konzert"],
       "starttime": "2019-08-01",
-      "starttime": "2019-08-04",
+      "endtime": "2019-08-04",
       "title": "Konzertreise: Freiburg - Dresden - Prag",
       "content": "Am Donnerstag früh fuhren wir mit zwei vollen Bussen Richtng Freiberg wo wir gleich am Donnerstag Abend bei sommerlicher Atmosphäre unser erstes Konzert gaben. Am Freitag verbrachten wir unseren Tag in Dresden und durften am Nachmittag vor der Frauenkirche unser zweites Konzert geben. Glücklicherweise haben sehr viele Zuhörer angehalten und un über längere Zeit zugehört. Weiter ging es am nächsten Tag nach Prag, wo wir wetterbedingt leider das dritte Konzert absagen mussten. Trotzdem war es ein gelungener Tag in der schönen Stadt Prag. Am Sonntag fuhren wir wieder Richtung Wollbach - wobei wir einen Stopp in Bayreuth einlegten um uns das prachtvolle Festspielhaus anzuschauen."
     },
@@ -84,7 +95,7 @@
       "keywords": ["JMLA", "Jugend"],
       "title": "Jungmusikerleistungsabzeichen in Silber",
       "starttime": "2019-07-26",
-      "starttime": "2019-07-28",
+      "endtime": "2019-07-28",
       "content": "Wir gratulieren Lilly Müller zum Jungmusiker Leistungsabzeichen in Silber!"
     },
     {
