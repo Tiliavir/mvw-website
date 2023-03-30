@@ -1,23 +1,10 @@
 {
   "2023": [
-    {
-      "location": {
-        "name": "Kandertalhalle",
-        "address": "Wollbach"
-      },
-      "starttime": "2023-02-09T19:00:00Z",
-      "endtime": "2023-02-09T21:00:00Z",
-      "title": "Generalversammlung"
-    },
-    {
-      "location": {
-        "name": "Rebhüsli",
-        "address": "Wollbach"
-      },
-      "starttime": "2023-03-04T18:00:00Z",
-      "endtime": "2023-03-04T23:00:00Z",
-      "title": "Fastnachtsfeuer"
-    },
+
+
+
+
+
     {
       "location": {
         "name": "Kandertalhalle",
@@ -39,7 +26,7 @@
       "location": {
         "address": "Wollbach"
       },
-      "starttime": "2023-06-30",
+      "starttime": "2023-07-01",
       "endtime": "2023-07-01",
       "title": "Open Air"
     },
