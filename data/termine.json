@@ -36,6 +36,14 @@
     },
     {
       "location": {
+        "address": "München und Salzburg"
+      },
+      "starttime": "2023-07-27",
+      "endtime": "2023-07-30",
+      "title": "Konzertreise München-Salzburg"
+    },
+    {
+      "location": {
         "address": "Wollbach"
       },
       "starttime": "2023-10-07",
