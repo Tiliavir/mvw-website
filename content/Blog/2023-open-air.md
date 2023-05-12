@@ -32,7 +32,7 @@ customCss:
 
 # Musikalischer und kulinarischer Genuss
 
-Der Schulhof in Wollbach wird zur Freilichtbühne. Gereicht werden edle
+Der Schulhof in Wollbach wird am 1. Juli zur Freilichtbühne. Gereicht werden edle
 Weine, exklusives Bier und erlesene Speisen, sowie Erfrischungen an
 Sekt- und Cocktailbar.
 

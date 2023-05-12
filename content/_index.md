@@ -45,7 +45,7 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
   {{< tile file="2023-open-air.md"
            image="img/events/23-open-air/open-air.jpg"
            title="Wollbach Open Air"
-           text="Der Schulhof in Wollbach wird zur Freilichtbühne. Gereicht werden edle Weine, exklusives Bier und erlesene Speisen, sowie Erfrischungen an Sekt- und Cocktailbar."
+           text="Der Schulhof in Wollbach wird am 1. Juli zur Freilichtbühne. Gereicht werden edle Weine, exklusives Bier und erlesene Speisen, sowie Erfrischungen an Sekt- und Cocktailbar."
   />}}
   {{< tile file="gooding"
            image="img/events/gooding.png"
