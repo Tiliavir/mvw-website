@@ -52,7 +52,7 @@
     "mvw-search-index": "2.2.16",
     "postcss": "8.4.24",
     "postcss-cli": "10.1.0",
-    "stylelint": "15.9.0",
+    "stylelint": "15.10.1",
     "stylelint-config-recommended-scss": "12.0.0",
     "typescript": "5.1.3",
     "w3c-html-validator": "1.4.0"
