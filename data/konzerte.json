@@ -2550,5 +2550,26 @@
         ]
       }
     ]
+  },
+  {
+    "category": "Konzert",
+    "title": "Open-Air",
+    "location": {
+      "location": "Schulhof Wollbach",
+      "dates": [
+        "2023-07-01"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": ""
+          }
+        ]
+      }
+    ]
   }
 ]
