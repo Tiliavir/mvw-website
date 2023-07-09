@@ -8,6 +8,23 @@ customJs:
   - ts/index.ts
 ---
 
+{{< comment >}}
+<header>
+  <div class="mvw-brand">
+    {{< figure src="img/logo.png"
+               alt="Das Logo des Musikvereins Wollbach 1866 e.V."
+    >}}
+  </div>
+  <div class="open-air">
+    <a href="{{< ref "2023-open-air.md" >}}">
+      {{< figure src="img/events/23-open-air/open-air.jpg"
+                 alt="Wollbach Open Air"
+      >}}
+    </a>
+  </div>
+</header>
+{{< /comment >}}
+
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
 Der Musikverein Wollbach ist ein kreatives Blasorchester mit einer über 150-jährigen Tradition. Konzertante sinfonische
