@@ -2,31 +2,6 @@
   "2023": [
     {
       "location": {
-        "name": "Kandertalhalle",
-        "address": "Wollbach"
-      },
-      "starttime": "2023-05-13T19:00:00Z",
-      "title": "Jugendkonzert"
-    },
-    {
-      "location": {
-        "name": "Kandertalhalle",
-        "address": "Wollbach"
-      },
-      "starttime": "2023-06-18T11:30:00Z",
-      "endtime": "2023-06-18T13:30:00Z",
-      "title": "Jubiläumsfest DRK Wollbach"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2023-07-01",
-      "endtime": "2023-07-01",
-      "title": "Open Air"
-    },
-    {
-      "location": {
         "name": "Kirche",
         "address": "Wollbach"
       },
