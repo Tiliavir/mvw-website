@@ -52,7 +52,7 @@ Hier, auf unserer Website finden Sie [Bilder][bilder] und Informationen wie
 des letzten Jahres.
 
 [berichte]: {{< ref berichte.md >}}
-[bilder]: {{< ref bilder.md >}}
+[bilder]: 
 [news]: {{< ref rueckblick.md >}}
 
 {{< figure src="/img/events/chanderli.jpg"

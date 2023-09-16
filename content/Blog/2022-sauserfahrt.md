@@ -56,7 +56,7 @@ Hier, auf unserer Website finden Sie [Bilder][bilder] und Informationen wie
 letzten Jahres.
 
 [berichte]: {{< ref berichte.md >}}
-[bilder]: {{< ref bilder.md >}}
+[bilder]: 
 [news]: {{< ref rueckblick.md >}}
 [flyer]: files/flyer/22_sauserbummel.pdf
 
