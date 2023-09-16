@@ -5,6 +5,7 @@ keywords: [Register, Besetzung, Instrumente, Musiker, Musikerinnen, Personen]
 menu:
   main:
     parent: das-orchester
+    weight: 100
 customCss:
   - scss/register.scss
 customJs:

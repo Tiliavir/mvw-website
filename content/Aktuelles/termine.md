@@ -5,6 +5,7 @@ keywords: [Termine, Events, Daten, Auftritte, Konzerte, Anlässe, Terminplan, Te
 menu:
   main:
     parent: aktuelles
+    weight: 100
 customCss:
   - scss/termine.scss
 customJs:

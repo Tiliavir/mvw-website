@@ -5,6 +5,7 @@ keywords: [Vorstand, Vorstandschaft, Ansprechpartner, Kontakt]
 menu:
   main:
     parent: der-verein
+    weight: 200
 customCss:
   - scss/vorstand.scss
 ---

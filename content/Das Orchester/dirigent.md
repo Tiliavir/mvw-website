@@ -5,6 +5,7 @@ keywords: [Dirigent, musikalische Leitung, Leitung, Oliver Hauser]
 menu:
   main:
     parent: das-orchester
+    weight: 200
 ---
 
 ## Oliver Hauser ...

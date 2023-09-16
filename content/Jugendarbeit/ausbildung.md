@@ -5,6 +5,7 @@ keywords: [Ausbildung, Schulung, Jungmusiker, Jungmusikerin, Instrument lernen, 
 menu:
   main:
     parent: jugendarbeit
+    weight: 100
 ---
 
 {{< figure src="/img/jugend/jugend_und_vorstufenorchester.jpg"

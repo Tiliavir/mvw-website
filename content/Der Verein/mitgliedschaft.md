@@ -5,6 +5,7 @@ keywords: [Aktivmitglied, Passivmitglied, Mitgliedschaft, Spenden]
 menu:
   main:
     parent: der-verein
+    weight: 300
 customCss:
   - scss/mitgliedschaft.scss
 ---

@@ -6,6 +6,7 @@ schemaOrg: AboutPage
 menu:
   main:
     parent: der-verein
+    weight: 100
 ---
 
 Wollbach, der größte Teilort der Gemeinde Kandern, liegt im Kandertal im

@@ -5,6 +5,7 @@ keywords: [Konzerte, Jahreskonzerte, Kirchenkonzerte, Konzertprogramme]
 menu:
   main:
     parent: das-orchester
+    weight: 300
 customJs:
   - ts/filter.ts
 customCss:

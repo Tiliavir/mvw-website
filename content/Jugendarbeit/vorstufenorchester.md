@@ -5,6 +5,7 @@ keywords: [Vorstufenorchester, Jugendarbeit, Jungmusiker, Jungmusikerin, Instrum
 menu:
   main:
     parent: jugendarbeit
+    weight: 200
 ---
 
 Seit Februar 2015 haben wir ein neues Vorstufenorchester. In diesem

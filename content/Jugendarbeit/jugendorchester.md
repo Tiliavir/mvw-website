@@ -5,6 +5,7 @@ keywords: [Jugendorchester, Jugendarbeit, Ausbildung, Jungmusiker, Jungmusikerin
 menu:
   main:
     parent: jugendarbeit
+    weight: 300
 ---
 
 {{< figure src="/img/jugend/jugendorchester.jpg"

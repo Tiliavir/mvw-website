@@ -5,6 +5,7 @@ keywords: [Dampfmusik, Sauserbummel, Sauserexpress]
 menu:
   main:
     parent: das-orchester
+    weight: 400
 ---
 
 Die Wollbacher Dampfmusik wurde 2010 anlässlich der Sauserfahrt mit dem

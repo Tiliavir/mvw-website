@@ -9,6 +9,7 @@ customJs:
 menu:
   main:
     parent: aktuelles
+    weight: 200
 ---
 
 {{< rueckblick >}}
