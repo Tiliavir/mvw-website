@@ -2,34 +2,10 @@
   "2023": [
     {
       "location": {
-        "name": "Kirche",
-        "address": "Wollbach"
-      },
-      "starttime": "2023-07-23",
-      "endtime": "2023-07-23",
-      "title": "Kirchhofgottesdienst"
-    },
-    {
-      "location": {
-        "address": "München und Salzburg"
-      },
-      "starttime": "2023-07-27",
-      "endtime": "2023-07-30",
-      "title": "Konzertreise München-Salzburg"
-    },
-    {
-      "location": {
         "address": "Wollbach"
       },
       "starttime": "2023-10-07",
       "title": "Sauserbummel"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2023-10-08",
-      "title": "Herbstfest"
     },
     {
       "location": {

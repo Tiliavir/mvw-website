@@ -30,6 +30,16 @@
     "register": "Querflöte"
   },
   {
+    "name": "Anny",
+    "familyName": "Folk",
+    "register": "Querflöte"
+  },
+  {
+    "name": "Eva",
+    "familyName": "Baldermann",
+    "register": "Querflöte"
+  },
+  {
     "name": "Rahel",
     "familyName": "Baltensperger-Mattmüller",
     "register": "Oboe"
@@ -240,6 +250,11 @@
     "register": "Posaune"
   },
   {
+    "name": "Mattis",
+    "familyName": "Riesterer",
+    "register": "Posaune"
+  },
+  {
     "name": "Ralf",
     "familyName": "Ernst",
     "register": "Euphonium"
@@ -298,11 +313,6 @@
     "name": "Markus",
     "familyName": "Winterhalter",
     "register": "Gitarre"
-  },
-  {
-    "name": "Eric",
-    "familyName": "Sieglin",
-    "register": "Schlagzeug"
   },
   {
     "name": "Beate",
