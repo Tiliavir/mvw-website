@@ -8,7 +8,6 @@ customJs:
   - ts/index.ts
 ---
 
-{{< comment >}}
 <header>
   <div class="mvw-brand">
     {{< figure src="img/logo.png"
@@ -16,14 +15,13 @@ customJs:
     >}}
   </div>
   <div class="open-air">
-    <a href="{{< ref "2023-open-air.md" >}}">
-      {{< figure src="img/events/23-open-air/open-air.jpg"
-                 alt="Wollbach Open Air"
+    <a href="{{< ref "2024-jahreskonzert.md" >}}">
+      {{< figure src="img/events/24-konzert/24_konzert_header.png"
+                 alt="Wollbach Jahreskonzert 'Hör gut zu!'"
       >}}
     </a>
   </div>
 </header>
-{{< /comment >}}
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
@@ -34,6 +32,11 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
 {{< slider >}}
 
 <div class="tiles">
+  {{< tile file="2024-jahreskonzert"
+           image="img/events/24-konzert/24_konzert_flyer_1.jpg"
+           title="Jahreskonzert 2024: Hör gut zu!"
+           text="Ob Märchen, fantasievolle Kindergeschichten oder biblische Erzählungen - lassen Sie sich verzaubern ..."
+  />}}
   {{< tile file="mitgliedschaft"
            image="slider/alle-1.jpg"
            title="Mitglied werden"
