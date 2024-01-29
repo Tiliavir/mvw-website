@@ -8,21 +8,6 @@ customJs:
   - ts/index.ts
 ---
 
-<header>
-  <div class="mvw-brand">
-    {{< figure src="img/logo.png"
-               alt="Das Logo des Musikvereins Wollbach 1866 e.V."
-    >}}
-  </div>
-  <div class="open-air">
-    <a href="{{< ref "2024-jahreskonzert.md" >}}">
-      {{< figure src="img/events/24-konzert/24_konzert_header.png"
-                 alt="Wollbach Jahreskonzert 'Hör gut zu!'"
-      >}}
-    </a>
-  </div>
-</header>
-
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
 Der Musikverein Wollbach ist ein kreatives Blasorchester mit einer über 150-jährigen Tradition. Konzertante sinfonische
@@ -32,11 +17,6 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
 {{< slider >}}
 
 <div class="tiles">
-  {{< tile file="2024-jahreskonzert"
-           image="img/events/24-konzert/24_konzert_flyer_1.jpg"
-           title="Jahreskonzert 2024: Hör gut zu!"
-           text="Ob Märchen, fantasievolle Kindergeschichten oder biblische Erzählungen - lassen Sie sich verzaubern ..."
-  />}}
   {{< tile file="mitgliedschaft"
            image="slider/alle-1.jpg"
            title="Mitglied werden"
