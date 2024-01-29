@@ -2643,5 +2643,78 @@
         ]
       }
     ]
+  },
+  {
+    "category": "Konzert",
+    "title": "Hör gut zu!",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "2024-01-26",
+        "2024-01-27"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Grimm's Fairytale Forest",
+            "subtitle": "Suite from 'Once Upon a Time ...'",
+            "composers": ["Jan van der Roost"]
+          },
+          {
+            "title": "Pinocchio",
+            "composers": ["Alex Poelman"]
+          },
+          {
+            "title": "Le Carneval des Animaux",
+            "composers": ["Camille Saint-Saens"],
+            "arrangers": ["o Goto"],
+            "parts": [
+              {
+                "title": "1: Introduction et Marche royale du Lion"
+              },
+              {
+                "title": "2: Poules et Coqs"
+              },
+              {
+                "title": "6: Kangourous"
+              },
+              {
+                "title": "9: Le coucou au fond de bois"
+              },
+              {
+                "title": "12: Fossils"
+              },
+              {
+                "title": "5: L'Éléphant"
+              },
+              {
+                "title": "13: Le Cygne"
+              },
+              {
+                "title": "14: Final"
+              }
+            ]
+          },
+          {
+            "title": "El Arca de Noé",
+            "subtitle": "Poema Sinfónico para Orquesta Sinfónica",
+            "composers": ["Óscar Navarro"]
+          },
+          {
+            "title": "Szenen aus: Max und Moritz",
+            "subtitle": "Für Blasorchester mit Pantomime und Diaprojektor",
+            "composers": ["Mario Bürki"]
+          },
+          {
+            "title": "Der Mond ist aufgegangen",
+            "arrangers": ["Peter M. Riese"]
+          }
+        ]
+      }
+    ]
   }
 ]
