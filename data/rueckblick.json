@@ -1,4 +1,17 @@
 {
+  "2024": [
+    {
+      "image": {
+        "src": "/img/events/24-konzert/24_konzert_flyer_1.jpg",
+        "title": "Flyer zum Jahreskonzert 2024: Hör gut zu!"
+      },
+      "keywords": ["Konzert", "Jahreskonzert"],
+      "title": "Jahreskonzert: 'Hör gut zu!'",
+      "starttime": "2024-01-26",
+      "endtime": "2024-01-28",
+      "content": "<br/><figure><img alt='Jahreskonzert 2024' src='/img/jahreskonzerte/konzert_2024.jpg' /></figure>"
+    }
+  ],
   "2023": [
     {
       "image": {
