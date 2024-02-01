@@ -1,53 +1,28 @@
 {
-  "2023": [
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2023-10-07",
-      "title": "Sauserbummel"
-    },
-    {
-      "location": {
-        "address": "Wollbach"
-      },
-      "starttime": "2023-12-01T18:00:00Z",
-      "title": "Adventszauber"
-    },
-    {
-      "location": {
-        "name": "Kandertalhalle",
-        "address": "Wollbach"
-      },
-      "starttime": "2023-12-03T18:00:00Z",
-      "title": "Frühschoppen am Wartburgfest"
-    },
-    {
-      "location": {
-        "name": "Kirche",
-        "address": "Jugendvorspiel"
-      },
-      "starttime": "2023-12-10T17:00:00Z",
-      "title": "Jugendvorspiel"
-    }
-  ],
   "2024": [
     {
       "location": {
-        "name": "Kandertalhalle",
-        "address": "Wollbach"
+        "address": "Freiburg im Breisgau"
       },
-      "starttime": "2024-01-06",
-      "title": "Neujahrsempfang"
+      "starttime": "2024-06-08T19:00:00Z",
+      "endtime": "2024-06-08T23:00:00Z",
+      "title": "Auftritt in Freiburg"
     },
     {
       "location": {
-        "name": "Kandertalhalle",
+        "name": "Schulhof",
         "address": "Wollbach"
       },
-      "starttime": "2024-01-26",
-      "endtime": "2024-01-27",
-      "title": "Jahreskonzert"
+      "starttime": "2024-08-06T20:00:00Z",
+      "endtime": "2024-08-06T23:00:00Z",
+      "title": "Open-Air"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2024-10-13",
+      "title": "Marschmusik"
     }
   ]
 }
