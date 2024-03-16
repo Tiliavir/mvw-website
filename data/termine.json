@@ -1,4 +1,23 @@
 {
+  "2025": [
+    {
+      "location": {
+        "name": "Schulhof",
+        "address": "Wollbach"
+      },
+      "starttime": "2025-07-05T20:00:00Z",
+      "endtime": "2025-07-05T23:00:00Z",
+      "title": "Open-Air"
+    },
+    {
+      "location": {
+        "name": "Feuerwehr",
+        "address": "Wollbach"
+      },
+      "starttime": "2025-07-20",
+      "title": "100 Jahre Feuerwehr Wollbach"
+    }
+  ],
   "2024": [
     {
       "location": {
