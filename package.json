@@ -40,22 +40,22 @@
     }
   },
   "devDependencies": {
-    "@types/grecaptcha": "3.0.8",
+    "@types/grecaptcha": "3.0.9",
     "@types/jquery": "3.5.29",
     "@types/lunr": "2.3.7",
-    "@typescript-eslint/eslint-plugin": "7.3.0",
-    "@typescript-eslint/parser": "7.3.0",
-    "autoprefixer": "10.4.18",
+    "@typescript-eslint/eslint-plugin": "7.4.0",
+    "@typescript-eslint/parser": "7.4.0",
+    "autoprefixer": "10.4.19",
     "copyfiles": "2.4.1",
     "eslint": "8.57.0",
     "glob-all": "3.3.1",
     "mvw-search-index": "2.2.17",
-    "postcss": "8.4.36",
+    "postcss": "8.4.38",
     "postcss-cli": "11.0.0",
-    "stylelint": "16.2.1",
+    "stylelint": "16.3.0",
     "stylelint-config-recommended-scss": "14.0.0",
-    "typescript": "5.4.2",
-    "w3c-html-validator": "1.6.4"
+    "typescript": "5.4.3",
+    "w3c-html-validator": "1.7.0"
   },
   "dependencies": {
     "jquery": "3.7.1",
