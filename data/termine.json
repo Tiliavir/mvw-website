@@ -2,6 +2,15 @@
   "2025": [
     {
       "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2025-01-30",
+      "endtime": "2025-02-01",
+      "title": "Jahreskonzert"
+    },
+    {
+      "location": {
         "name": "Schulhof",
         "address": "Wollbach"
       },
@@ -35,6 +44,13 @@
       "starttime": "2024-07-06T20:00:00Z",
       "endtime": "2024-07-06T23:00:00Z",
       "title": "Open-Air"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2024-10-12",
+      "title": "Sauser-Express"
     },
     {
       "location": {
