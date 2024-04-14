@@ -30,14 +30,6 @@
   "2024": [
     {
       "location": {
-        "address": "Freiburg im Breisgau"
-      },
-      "starttime": "2024-06-08T19:00:00Z",
-      "endtime": "2024-06-08T23:00:00Z",
-      "title": "Auftritt in Freiburg"
-    },
-    {
-      "location": {
         "name": "Schulhof",
         "address": "Wollbach"
       },
