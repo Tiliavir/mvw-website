@@ -37,7 +37,9 @@ der Kandertalhalle sind im Preis nicht enthalten). Die Fahrt findet bei jedem
 Wetter, aber nur bei einer Mindestteilnahme von 150 Personen statt. Eine verbindliche
 Anmeldung bis spätestens 15.09.2024 ist daher notwendig.
 
-Per mail: martina.reinauer@mv-wollbach.de oder auch telefonisch ab 18.00 Uhr: 07621-82375
+<p class="ausverkauft">
+<b><i>- ausverkauft -</i></b>
+</p>
 
 Bei Nichtteilnahme kann aus organisatorischen Gründen leider keine Rückerstattung
 des Fahrpreises vorgenommen werden.

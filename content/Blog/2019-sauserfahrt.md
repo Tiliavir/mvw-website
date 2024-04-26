@@ -28,7 +28,7 @@ gesorgt. Dort werden Sauser, andere Getränke, sowie Kaffee und Kuchen angeboten
 Eine Weinlaube lädt zum weiteren Verweilen ein. Für die Unterhaltung ist mit
 zünftiger Blasmusik gesorgt.
 
-Um 21.00 Uhr ist dann wieder Abfahrt  in  Wollbach
+Um 21.00 Uhr ist dann wieder Abfahrt in Wollbach
 mit dem "Chanderli" in Richtung Haltingen.
 
 *Fahrpreis: 55€ inkl. Weinprobe, Essen (Kesselfleisch) und Programm* (Getränke in
