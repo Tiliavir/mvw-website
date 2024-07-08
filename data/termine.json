@@ -30,15 +30,6 @@
   "2024": [
     {
       "location": {
-        "name": "Schulhof",
-        "address": "Wollbach"
-      },
-      "starttime": "2024-07-06T20:00:00Z",
-      "endtime": "2024-07-06T23:00:00Z",
-      "title": "Open-Air"
-    },
-    {
-      "location": {
         "address": "Wollbach"
       },
       "starttime": "2024-10-12",

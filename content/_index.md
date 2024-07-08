@@ -8,6 +8,7 @@ customJs:
   - ts/index.ts
 ---
 
+{{< comment >}}
 <header>
   <div class="mvw-brand">
     {{< figure src="img/logo.png"
@@ -22,6 +23,7 @@ customJs:
     </a>
   </div>
 </header>
+{{< /comment >}}
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
@@ -41,11 +43,6 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
            image="img/jahreskonzerte/konzert_2023-2.jpg"
            title="Termine"
            text="Lust uns zu hören? Hier ist unser Terminkalender..."
-  />}}
-  {{< tile file="2024-open-air.md"
-           image="img/events/24-open-air/open-air.jpg"
-           title="Wollbach Open Air"
-           text="Der Schulhof in Wollbach wird am 6. Juli zur Freilichtbühne. Gereicht werden edle Weine, exklusives Bier und erlesene Speisen, sowie Erfrischungen an Sekt- und Cocktailbar."
   />}}
   {{< tile file="2024-sauserfahrt"
            image="img/events/chanderli.jpg"
