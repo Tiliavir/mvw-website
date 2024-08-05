@@ -64,7 +64,7 @@
   },
   "scripts": {
     "validate": "node validate.mjs",
-    "lint": "stylelint '**/*.scss' && npx eslint . --ext .ts",
+    "lint": "stylelint '**/*.scss' && npx eslint --ext=.ts .",
     "build": "hugo --minify && npm run validate",
     "index": "cd ./public/ && mvw-search-index './**/*.html' './suche/index.json' 'main'",
     "update:lib:jquery": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./static/js/",
