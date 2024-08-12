@@ -53,8 +53,8 @@
     "stylelint": "16.8.1",
     "stylelint-config-recommended-scss": "14.1.0",
     "typescript": "5.5.4",
-    "typescript-eslint": "^8.0.1",
-    "w3c-html-validator": "1.8.1"
+    "typescript-eslint": "^8.1.0",
+    "w3c-html-validator": "1.8.2"
   },
   "dependencies": {
     "jquery": "3.7.1",
