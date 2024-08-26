@@ -45,16 +45,16 @@
     "@types/lunr": "2.3.7",
     "autoprefixer": "10.4.20",
     "copyfiles": "2.4.1",
-    "eslint": "9.9.0",
+    "eslint": "9.9.1",
     "glob-all": "3.3.1",
-    "mvw-search-index": "2.2.18",
+    "mvw-search-index": "2.3.0",
     "postcss": "8.4.41",
     "postcss-cli": "11.0.0",
-    "stylelint": "16.8.1",
+    "stylelint": "16.8.2",
     "stylelint-config-recommended-scss": "14.1.0",
     "typescript": "5.5.4",
-    "typescript-eslint": "^8.0.1",
-    "w3c-html-validator": "1.8.1"
+    "typescript-eslint": "^8.3.0",
+    "w3c-html-validator": "1.8.2"
   },
   "dependencies": {
     "jquery": "3.7.1",
