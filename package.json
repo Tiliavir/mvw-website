@@ -48,12 +48,12 @@
     "eslint": "9.10.0",
     "glob-all": "3.3.1",
     "mvw-search-index": "2.3.0",
-    "postcss": "8.4.45",
+    "postcss": "8.4.47",
     "postcss-cli": "11.0.0",
     "stylelint": "16.9.0",
     "stylelint-config-recommended-scss": "14.1.0",
     "typescript": "5.6.2",
-    "typescript-eslint": "^8.5.0",
+    "typescript-eslint": "^8.6.0",
     "w3c-html-validator": "1.8.2"
   },
   "dependencies": {
