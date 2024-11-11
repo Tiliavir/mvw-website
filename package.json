@@ -41,19 +41,19 @@
   },
   "devDependencies": {
     "@types/grecaptcha": "3.0.9",
-    "@types/jquery": "3.5.31",
+    "@types/jquery": "3.5.32",
     "@types/lunr": "2.3.7",
     "autoprefixer": "10.4.20",
     "copyfiles": "2.4.1",
-    "eslint": "9.12.0",
+    "eslint": "9.14.0",
     "glob-all": "3.3.1",
     "mvw-search-index": "2.3.0",
-    "postcss": "8.4.47",
+    "postcss": "8.4.48",
     "postcss-cli": "11.0.0",
     "stylelint": "16.10.0",
     "stylelint-config-recommended-scss": "14.1.0",
     "typescript": "5.6.3",
-    "typescript-eslint": "^8.9.0",
+    "typescript-eslint": "^8.14.0",
     "w3c-html-validator": "1.8.2"
   },
   "dependencies": {
