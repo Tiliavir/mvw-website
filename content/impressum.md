@@ -22,8 +22,6 @@ gerne eine E-Mail an [unsere Info][info] schicken.
 Wir freuen uns über Ihre Anregungen, Kritik und Hinweise und beantworten
 gerne Ihre Fragen!
 
-Alternativ erreichen Sie uns auch über unser [Kontaktformular][kontakt].
-
 ## Angaben gemäß §5 TMG
 
 **Musikverein Wollbach 1866 e.V.**<br />
@@ -74,7 +72,7 @@ Landratsamt Lörrach
 [siteOv]: {{< ref "seiten-uebersicht.md" >}}
 [sitemap]: /sitemap.xml
 
-[info]:     mailto:info@mv-wollbach.de"
+[info]:     mailto:info@mv-wollbach.de
 
 [htmLink]:  https://validator.w3.org/check?uri=http%3A%2F%2Fwww.mv-wollbach.de%2F
 [cssLink]:  https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.mv-wollbach.de%2F&profile=css3svg
