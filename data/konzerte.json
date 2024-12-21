@@ -2510,7 +2510,7 @@
     ]
   },
   {
-    "category": "Konzert",
+    "category": "Jahreskonzert",
     "title": "ROCK Symphony",
     "location": {
       "location": "Wollbach",
@@ -2645,7 +2645,7 @@
     ]
   },
   {
-    "category": "Konzert",
+    "category": "Jahreskonzert",
     "title": "Hör gut zu!",
     "location": {
       "location": "Kandertalhalle Wollbach",
@@ -2712,6 +2712,53 @@
           {
             "title": "Der Mond ist aufgegangen",
             "arrangers": ["Peter M. Riese"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Jahreskonzert",
+    "title": "Leinen los!",
+    "location": {
+      "location": "Kandertalhalle Wollbach",
+      "dates": [
+        "2025-01-31",
+        "2025-02-01"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "The Seafarer",
+            "subtitle": "Eine nautische Rhapsodie",
+            "composers": ["Haydn Wood"]
+          },
+          {
+            "title": "The Ghost Ship",
+            "composers": ["José Alberto Pina"]
+          },
+          {
+            "title": "Devil's Island",
+            "composers": ["Wouter Lenaerts"]
+          },
+          {
+            "title": "The Island of Light",
+            "composers": ["José Alberto Pina"]
+          },
+          {
+            "title": "Cabo Verde",
+            "subtitle": "Inseln im Wind",
+            "composers": ["Markus Götz"]
+          },
+          {
+            "title": "At World's End",
+            "subtitle": "Symphonische Suite aus 'Fluch der Karibik 3'",
+            "composers": ["Hans Zimmer"],
+            "arrangers": ["Erik Rozendom"]
           }
         ]
       }

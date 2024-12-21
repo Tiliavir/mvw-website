@@ -8,7 +8,6 @@ customJs:
   - ts/index.ts
 ---
 
-{{< comment >}}
 <header>
   <div class="mvw-brand">
     {{< figure src="img/logo.png"
@@ -16,14 +15,13 @@ customJs:
     >}}
   </div>
   <div class="open-air">
-    <a href="{{< ref "2024-open-air.md" >}}">
-      {{< figure src="img/events/24-open-air/open-air.jpg"
-                 alt="Wollbach Open Air"
+    <a href="{{< ref "2025-jahreskonzert.md" >}}">
+      {{< figure src="img/events/25-konzert/25_konzert_header.jpg"
+                 alt="Jahreskonzert 2025"
       >}}
     </a>
   </div>
 </header>
-{{< /comment >}}
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
@@ -34,6 +32,11 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
 {{< slider >}}
 
 <div class="tiles">
+  {{< tile file="2025-jahreskonzert"
+           image="img/events/25-konzert/25_konzert_flyer_1.jpg"
+           title="Leinen los!"
+           text="Wir laden Sie ein, mit uns die Segel zu setzen um die unendliche Weite der Meere und die Geheimnisse ferner Inseln zu erkunden."
+  />}}
   {{< tile file="mitgliedschaft"
            image="slider/alle-1.jpg"
            title="Mitglied werden"
@@ -43,11 +46,6 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
            image="img/jahreskonzerte/konzert_2023-2.jpg"
            title="Termine"
            text="Lust uns zu hören? Hier ist unser Terminkalender..."
-  />}}
-  {{< tile file="2024-sauserfahrt"
-           image="img/events/chanderli.jpg"
-           title="Sauserfahrt"
-           text="Am Samstag, den 12.10. dampft auch in diesem Jahr wieder der Sauser-Express durch das Kandertal."
   />}}
   {{< tile file="gooding"
            image="img/events/gooding.png"

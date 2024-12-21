@@ -4,7 +4,7 @@ description: Bildergalerie mit Bildern von diversen Konzerten, Festen und andere
 keywords: [Bilder, Bildergalerie, Fotos, Photos, Alben, Album, Fotoalbum]
 schemaOrg: ImageGallery
 menu: main
-published: false
+publishDate: 2100-12-31T00:00:00.000Z
 customCss:
   - scss/bilder.scss
 customJs:
