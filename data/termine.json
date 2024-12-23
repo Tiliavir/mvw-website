@@ -11,6 +11,24 @@
     },
     {
       "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2025-02-13",
+      "endtime": "2025-02-13",
+      "title": "Generalversammlung"
+    },
+    {
+      "location": {
+        "name": "Kandertalhalle",
+        "address": "Wollbach"
+      },
+      "starttime": "2025-05-24T19:00:00Z",
+      "endtime": "2025-05-24T21:00:00Z",
+      "title": "Jugendkonzert des Vorstufen- und Jugendorchesters"
+    },
+    {
+      "location": {
         "name": "Schulhof",
         "address": "Wollbach"
       },
@@ -23,8 +41,17 @@
         "name": "Feuerwehr",
         "address": "Wollbach"
       },
-      "starttime": "2025-07-20",
+      "starttime": "2025-07-20T10:00:00Z",
+      "endtime": "2025-07-20T13:30:00Z",
       "title": "100 Jahre Feuerwehr Wollbach"
+    },
+    {
+      "location": {
+        "address": "Wollbach"
+      },
+      "starttime": "2025-10-11T13:00:00Z",
+      "endtime": "2025-10-11T21:00:00Z",
+      "title": "Sauser-Express"
     }
   ]
 }

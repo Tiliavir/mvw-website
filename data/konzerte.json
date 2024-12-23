@@ -2544,8 +2544,12 @@
           },
           {
             "title": "Scorpions Symphony",
-            "composers": ["Christian Kolonovits"],
-            "arrangers": ["Jakob Brenner"]
+            "composers": [
+              "Christian Kolonovits"
+            ],
+            "arrangers": [
+              "Jakob Brenner"
+            ]
           }
         ]
       }
@@ -2662,16 +2666,24 @@
           {
             "title": "Grimm's Fairytale Forest",
             "subtitle": "Suite from 'Once Upon a Time ...'",
-            "composers": ["Jan van der Roost"]
+            "composers": [
+              "Jan van der Roost"
+            ]
           },
           {
             "title": "Pinocchio",
-            "composers": ["Alex Poelman"]
+            "composers": [
+              "Alex Poelman"
+            ]
           },
           {
             "title": "Le Carneval des Animaux",
-            "composers": ["Camille Saint-Saens"],
-            "arrangers": ["o Goto"],
+            "composers": [
+              "Camille Saint-Saens"
+            ],
+            "arrangers": [
+              "o Goto"
+            ],
             "parts": [
               {
                 "title": "1: Introduction et Marche royale du Lion"
@@ -2702,16 +2714,286 @@
           {
             "title": "El Arca de Noé",
             "subtitle": "Poema Sinfónico para Orquesta Sinfónica",
-            "composers": ["Óscar Navarro"]
+            "composers": [
+              "Óscar Navarro"
+            ]
           },
           {
             "title": "Szenen aus: Max und Moritz",
             "subtitle": "Für Blasorchester mit Pantomime und Diaprojektor",
-            "composers": ["Mario Bürki"]
+            "composers": [
+              "Mario Bürki"
+            ]
           },
           {
             "title": "Der Mond ist aufgegangen",
-            "arrangers": ["Peter M. Riese"]
+            "composers": [],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Konzert",
+    "title": "Wollbach Open-Air",
+    "location": {
+      "location": "Schulhof Wollbach",
+      "dates": [
+        "2024-07-06"
+      ]
+    },
+    "parts": [
+      {
+        "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+        "conductor": "Oliver Hauser",
+        "program": [
+          {
+            "title": "Candyman",
+            "composers": [],
+            "arrangers": [
+              "Sandro Blastic"
+            ]
+          },
+          {
+            "title": "Reet Petite",
+            "composers": []
+          },
+          {
+            "title": "Bei Mir Bist Du Shein",
+            "composers": [
+              "The Andrew Sisters"
+            ],
+            "arrangers": [
+              "Alessandro Hug"
+            ]
+          },
+          {
+            "title": "Buona Sera",
+            "composers": [
+              "Carl Sigman",
+              "Peter de Rose"
+            ],
+            "arrangers": [
+              "Brian Sadler"
+            ]
+          },
+          {
+            "title": "Things",
+            "subtitle": "Robbie Williams - Live at the Albert!",
+            "composers": [
+              "Bobby Darin"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          },
+          {
+            "title": "Music",
+            "composers": [
+              "John Miles"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          },
+          {
+            "title": "At Last",
+            "subtitle": "As performed by Etta James",
+            "composers": [
+              "Mack Gordon"
+            ],
+            "arrangers": [
+              "Brian Sadler"
+            ]
+          },
+          {
+            "title": "A Kind Of Magic",
+            "subtitle": "from the Musical WE WILL ROCK YOU",
+            "composers": [
+              "Roger M. Taylor"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          },
+          {
+            "title": "James Bond 007 Suite",
+            "subtitle": "From the James Bond 007 Motion Pictures",
+            "composers": [
+              "Monty Norman",
+              "Adele Laurie Adkins",
+              "Paul Richard Epworth",
+              "Bill Conti",
+              "Michael David Leeson",
+              "John Barry"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          },
+          {
+            "title": "The Wellerman",
+            "composers": [],
+            "arrangers": [
+              "Sebastian Middel"
+            ]
+          },
+          {
+            "title": "Abenteuerland",
+            "composers": [
+              "Hartmut Engler",
+              "Ingo Reidl"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          },
+          {
+            "title": "Jailhouse Rock",
+            "subtitle": "The Blues Brothers",
+            "composers": [
+              "Jerry Leiber",
+              "Mike Stoller"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          },
+          {
+            "title": "Hit The Road Jack",
+            "subtitle": "Ray Charles, Sweet Sisters",
+            "composers": [
+              "Percy Mayfield"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          },
+          {
+            "title": "1000 und 1 Nacht",
+            "composers": [
+              "Göran Walger",
+              "N. Heirel"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          },
+          {
+            "title": "This Is Me",
+            "subtitle": "The Greatest Showman",
+            "composers": [
+              "Benj Pasek",
+              "Justin Noble Paul"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          },
+          {
+            "title": "I Dont Want To Miss A Thing",
+            "subtitle": "Armageddon, Theme from the Motion Picture 'Armageddon' as performed by Aerosmith",
+            "composers": [
+              "Diane Eve Warren"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          },
+          {
+            "title": "Someone Like You",
+            "subtitle": "Aus dem Musical 'Jekyll & Hyde'",
+            "composers": [
+              "Leslie Bricusse",
+              "Frank Wildhorn"
+            ],
+            "arrangers": [
+              "Guido Rennert"
+            ],
+            "soloists": [
+              {
+                "name": "Michael Bierwirth",
+                "part": "Trompete"
+              }
+            ]
+          },
+          {
+            "title": "Nichts Von Alledem",
+            "composers": [],
+            "arrangers": [
+              "Guido Rennert"
+            ]
+          },
+          {
+            "title": "You Raise Me Up",
+            "composers": [
+              "Brendan Graham",
+              "Rolf Lovland"
+            ],
+            "arrangers": [
+              "John Wasson"
+            ]
+          },
+          {
+            "title": "ハッピーバースデートゥーユー",
+            "subtitle": "Happy Birthday To You",
+            "composers": [
+              "Mildred J. Hill",
+              "Patty S. Hill"
+            ],
+            "arrangers": [
+              "Toshio Mashima"
+            ]
+          },
+          {
+            "title": "Kids",
+            "subtitle": "Robbie Williams, Kylie Minogue, \"Sing when you're winning\"",
+            "composers": [
+              "Guy Chambers",
+              "Robert Williams"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
+          },
+          {
+            "title": "Benny Goodman Memories",
+            "composers": [],
+            "arrangers": [
+              "Naohiro Iwai"
+            ]
+          },
+          {
+            "title": "The Amazing ABBA Collection",
+            "composers": [
+              "ABBA"
+            ],
+            "arrangers": [
+              "Guido Rennert"
+            ]
+          },
+          {
+            "title": "Gimme, Gimme, Gimme",
+            "composers": [
+              "ABBA"
+            ],
+            "arrangers": [
+              "Guido Rennert"
+            ]
+          },
+          {
+            "title": "Angels",
+            "subtitle": "Robbie Williams, from the album 'Live Summer 2003'",
+            "composers": [
+              "Robbie Williams",
+              "Guy Chambers"
+            ],
+            "arrangers": [
+              "Peter M. Riese"
+            ]
           }
         ]
       }
@@ -2735,30 +3017,44 @@
           {
             "title": "The Seafarer",
             "subtitle": "Eine nautische Rhapsodie",
-            "composers": ["Haydn Wood"]
+            "composers": [
+              "Haydn Wood"
+            ]
           },
           {
             "title": "The Ghost Ship",
-            "composers": ["José Alberto Pina"]
+            "composers": [
+              "José Alberto Pina"
+            ]
           },
           {
             "title": "Devil's Island",
-            "composers": ["Wouter Lenaerts"]
+            "composers": [
+              "Wouter Lenaerts"
+            ]
           },
           {
             "title": "The Island of Light",
-            "composers": ["José Alberto Pina"]
+            "composers": [
+              "José Alberto Pina"
+            ]
           },
           {
             "title": "Cabo Verde",
             "subtitle": "Inseln im Wind",
-            "composers": ["Markus Götz"]
+            "composers": [
+              "Markus Götz"
+            ]
           },
           {
             "title": "At World's End",
             "subtitle": "Symphonische Suite aus 'Fluch der Karibik 3'",
-            "composers": ["Hans Zimmer"],
-            "arrangers": ["Erik Rozendom"]
+            "composers": [
+              "Hans Zimmer"
+            ],
+            "arrangers": [
+              "Erik Rozendom"
+            ]
           }
         ]
       }
