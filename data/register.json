@@ -25,7 +25,7 @@
     "register": "Querflöte"
   },
   {
-    "name": "Hannah",
+    "name": "Hanna",
     "familyName": "Reinacher",
     "register": "Querflöte"
   },
@@ -41,7 +41,12 @@
   },
   {
     "name": "Rahel",
-    "familyName": "Baltensperger-Mattmüller",
+    "familyName": "Baltensperger",
+    "register": "Oboe"
+  },
+  {
+    "name": "Mary",
+    "familyName": "Braun",
     "register": "Oboe"
   },
   {
@@ -92,6 +97,11 @@
   {
     "name": "Leonie",
     "familyName": "Reinacher",
+    "register": "Klarinette"
+  },
+  {
+    "name": "Luisa",
+    "familyName": "Krey",
     "register": "Klarinette"
   },
   {
@@ -247,6 +257,11 @@
   {
     "name": "Johanna",
     "familyName": "Maier",
+    "register": "Posaune"
+  },
+  {
+    "name": "Emil",
+    "familyName": "Müller",
     "register": "Posaune"
   },
   {
