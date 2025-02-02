@@ -8,6 +8,7 @@ customJs:
   - ts/index.ts
 ---
 
+{{< comment >}}
 <header>
   <div class="mvw-brand">
     {{< figure src="img/logo.png"
@@ -22,6 +23,7 @@ customJs:
     </a>
   </div>
 </header>
+{{< /comment >}}
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
@@ -32,11 +34,6 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
 {{< slider >}}
 
 <div class="tiles">
-  {{< tile file="2025-jahreskonzert"
-           image="img/events/25-konzert/25_konzert_flyer_1.jpg"
-           title="Leinen los!"
-           text="Wir laden Sie ein, mit uns die Segel zu setzen um die unendliche Weite der Meere und die Geheimnisse ferner Inseln zu erkunden."
-  />}}
   {{< tile file="mitgliedschaft"
            image="slider/alle-1.jpg"
            title="Mitglied werden"
