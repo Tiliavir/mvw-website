@@ -16,7 +16,7 @@
   },
   {
     "address": "79400 Wollbach",
-    "email": "maria.krey@mv-wollbach.de",
+    "email": "maria.gut@mv-wollbach.de",
     "image": "/img/personen/jugendleitung.jpg",
     "persons": [ "Maria Gut", "Moritz Merkert" ],
     "title": "Jugendleitung"
@@ -30,9 +30,9 @@
   },
   {
     "address": "79400 Wollbach",
-    "email": "jutta.schmidt@mv-wollbach.de",
+    "email": "janika.boehler@mv-wollbach.de",
     "image": "/img/personen/schriftfuehrer.jpg",
-    "persons": [ "Stefanie Imbaumgarten", "Jutta Schmidt" ],
+    "persons": [ "Janika Böhler", "Jutta Schmidt" ],
     "telephone": "07626 973673",
     "title": "Schriftführerin"
   },
@@ -48,7 +48,7 @@
   },
   {
     "image": "/img/personen/aktivbeisitzer.jpg",
-    "persons": [ "Lina Müller", "Helen Strittmatter" ],
+    "persons": [ "Lina Müller", "Helen Bührer" ],
     "title": "Aktivbeisitzer"
   },
   {
