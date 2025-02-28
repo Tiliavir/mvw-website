@@ -9,20 +9,20 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: ↧ Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20.x
       - name: ↧ npm ci
         run: npm ci
       - name: ⚛ Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.123.7'
+          hugo-version: '0.139.0'
           extended: true
       - name: ⚙ Build
         run: npm run build
@@ -31,14 +31,14 @@ jobs:
       - name: 🏷️ Get tag name
         run: echo "TAG_NAME=$(echo ${GITHUB_REF#refs/*/} | tr / -)" >> $GITHUB_ENV
       - name: 📂 Archive
-        uses: JamesIves/github-pages-deploy-action@4.1.7
+        uses: JamesIves/github-pages-deploy-action@4
         with:
           branch: release-diff
           folder: public
           clean: true
           commit-message: Release ${{ env.TAG_NAME }}
       - name: 🎉 Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        uses: SamKirkland/FTP-Deploy-Action@4
         with:
           server: mv-wollbach.de
           username: ${{ secrets.ftp_user }}
