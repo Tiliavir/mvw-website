@@ -8,7 +8,6 @@ customJs:
   - ts/index.ts
 ---
 
-{{< comment >}}
 <header>
   <div class="mvw-brand">
     {{< figure src="img/logo.png"
@@ -16,14 +15,13 @@ customJs:
     >}}
   </div>
   <div class="open-air">
-    <a href="{{< ref "2025-jahreskonzert.md" >}}">
-      {{< figure src="img/events/25-konzert/25_konzert_header.jpg"
-                 alt="Jahreskonzert 2025"
+    <a href="{{< ref "2025-open-air.md" >}}">
+      {{< figure src="img/events/25-open-air/open-air.jpg"
+                 alt="Open-Air 2025"
       >}}
     </a>
   </div>
 </header>
-{{< /comment >}}
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
@@ -34,6 +32,11 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
 {{< slider >}}
 
 <div class="tiles">
+  {{< tile file="2025-open-air.md"
+           image="img/events/25-open-air/open-air.jpg"
+           title="Open Air 2025"
+           text="Der Schulhof in Wollbach wird am 5. Juli zur Freilichtbühne. Gereicht werden edle Weine, exklusives Bier und erlesene Speisen, sowie Erfrischungen an Sekt- und Cocktailbar."
+  />}}
   {{< tile file="mitgliedschaft"
            image="slider/alle-1.jpg"
            title="Mitglied werden"
