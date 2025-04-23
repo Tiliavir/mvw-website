@@ -1,7 +1,7 @@
 ---
 title: Dirigent
 description: "Der Dirigent des Musikvereins Wollbach: Oliver Hauser."
-keywords: [Dirigent, musikalische Leitung, Leitung, Oliver Hauser]
+keywords: [Dirigent, musikalische Leitung, Leitung, Oliver Hauser, Oli Hauser]
 menu:
   main:
     parent: das-orchester
@@ -9,6 +9,7 @@ menu:
 ---
 
 ## Oliver Hauser ...
+
 ... ist Experte für Musikvermittlung. Er knüpft begeisternd an die Lebens-
 und Erfahrungswelten junger Menschen an und bringt sie spielerisch in
 Berührung mit den inhaltlichen Themen der Musik und den Lebenswelten der
