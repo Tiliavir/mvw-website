@@ -25,7 +25,7 @@ Speisen, sowie Erfrischungen an Sekt- und Cocktailbar.
 >}}
 
 [Flyer des Forsthof Open-Air als PDF herunterladen.](/files/flyer/22_open-air.pdf)
-[Plakat des Forsthof Open-Air als PDF herunterladen.](/files/flyer/22_open-air_plakat.pdf)
+[Plakat des Forsthof Open-Air als PDF herunterladen.](/files/flyer/22_open-air-plakat.pdf)
 
 Dazu unterhält Sie der Musikverein Wollbach mit einem abendfüllenden
 Unterhaltungsprogramm mit Musik im swingenden Big Band Stil.
