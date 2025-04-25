@@ -15,10 +15,8 @@ disableKinds:
 outputs:
   home:
     - HTML
-    - AMP
   page:
     - HTML
-    - AMP
 
 markup:
   goldmark:

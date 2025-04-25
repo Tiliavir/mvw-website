@@ -11,7 +11,7 @@ customCss:
 ---
 
 <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
-  <meta itemprop="target" content="http://www.mv-wollbach.de/search.html?q={query}" />
+  <meta itemprop="target" content="https://www.mv-wollbach.de/search.html?q={query}" />
   <input class="mvw-search-field" itemprop="query-input" placeholder="Suche..." type="search" name="query" />
 </form>
 

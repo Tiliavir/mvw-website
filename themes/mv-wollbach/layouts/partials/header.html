@@ -16,7 +16,6 @@
   <meta property="og:image" content="{{- .Site.BaseURL -}}img/logo_color.png"/>
   <meta property="og:locale" content="de_DE"/>
   <meta property="og:site_name" content="{{- .Site.Title -}}"/>
-  <meta property="fb:admins" content="100000073380067"/>
 
   <style class="critical">
     {{- $cssOpts := (dict "targetPath" "css/app.css" "outputStyle" "compressed" "enableSourceMap" false ) -}}
@@ -42,4 +41,33 @@
   <meta name="msapplication-TileColor" content="#4a4a4a"/>
   <meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
   <meta name="theme-color" content="#4a4a4a"/>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "Musikverein Wollbach 1866 e.V.",
+      "alternateName": "MV Wollbach",
+      "url": "https://www.mv-wollbach.de/",
+      "description": "Der Musikverein Wollbach ist ein kreatives Blasorchester mit einer über 150-jährigen Tradition. Konzertante sinfonische Blasmusik gehört ebenso zum Repertoire wie swingende Unterhaltungsmusik.",
+      "foundingDate": "1866",
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rathausstraße 17",
+          "addressLocality": "Kandern",
+          "postalCode": "79400",
+          "addressRegion": "Baden-Württemberg",
+          "addressCountry": "DE"
+        }
+      },
+      "sameAs": [
+        "https://www.instagram.com/musikvereinwollbach/",
+        "https://www.facebook.com/musikvereinwollbach",
+        "https://www.youtube.com/@mvwollbach"
+      ]
+    }
+  </script>
+
 </head>

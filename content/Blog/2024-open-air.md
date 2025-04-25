@@ -3,9 +3,6 @@ title: "Wollbach Open Air 2024"
 description: Wollbach Open Air - auf dem Schulhof bei der Kandertalhalle in Wollbach.
 keywords: [Open Air, Wollbach, Konzert, Swing, Schlager]
 publishDate: 2024-04-07T00:00:00.000Z
-ampLogoUrl: files/flyer/24_open-air_flyer.jpg
-ampLogoWidth: 1600
-ampLogoHeight: 771
 menu:
   blog:
     parent: blog

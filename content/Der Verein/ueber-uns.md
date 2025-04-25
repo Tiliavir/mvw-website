@@ -15,9 +15,9 @@ den vier Nebenorte Egerten, Egisholz, Hammerstein und Nebenau etwa 1300
 Einwohner und wurde 767 erstmalig urkundlich erwähnt. Weiterlesen auf
 [Wollbach.info][wollbach], [Kandern.de][kandern] oder [Wikipedia][kandern_wiki].
 
-[wollbach]: http://www.wollbach.info
-[kandern]: http://www.kandern.de/logicio/pmws/indexDOM.php?client_id=kandern&page_id=kernstadt&lang_iso639=de#wollbach
-[kandern_wiki]: http://de.wikipedia.org/wiki/Kandern-Wollbach
+[wollbach]: https://www.wollbach.info
+[kandern]: https://www.kandern.de/texte/seite.php?id=387702
+[kandern_wiki]: https://de.wikipedia.org/wiki/Kandern-Wollbach
 
 {{< figure src="/img/wappen.png"
            alt="Wollbacher Wappen"

@@ -4,9 +4,6 @@ subtitle: Doppelkonzert mit dem Verbandsjugendorchester
 description: Am Samstag den 09. Juli 2016 gibt das Jugendorchester des Musikvereins Wollbach ein Doppelkonzert mit dem Verbandsjugendorchester des AMV.
 keywords: [Jugendorchester, Konzert, Blasmusik, Verbandsjugendorchester, Verband, Wollbach, Alemannischer Musikverband, Jugendarbeit]
 publishDate: 2016-06-26T00:00:00.000Z
-ampLogoUrl: img/jugend/jugendorchester.jpg
-ampLogoWidth: 1200
-ampLogoHeight: 611
 menu:
   blog:
     parent: blog
@@ -34,7 +31,7 @@ unter Leitung von Joachim Wendland in der Kandertalhalle Wollbach.
 
 [Weiter zum Flyer...][flyer]
 
-[amv]: http://musik-verband.de/
+[amv]: https://musik-verband.de/
 [flyer]: /files/flyer/16_jugendkonzert.pdf
 
 {{< figure src="/img/jugend/jugendorchester.jpg"

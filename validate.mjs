@@ -5,8 +5,7 @@ import {w3cHtmlValidator} from "w3c-html-validator";
 
 glob([
     'public/**/*.html',
-    '!public/google*.html',
-    '!public/amp/**'],
+    '!public/google*.html'],
   async (err, files) => {
     const promises = files.map(file => w3cHtmlValidator.validate({filename: file}));
 

@@ -4,9 +4,6 @@ subtitle: im historischen Forsthof in der Oberen Dorfstraße
 description: Musikalischer und kulinarischer Genuss in exklusivem Ambiente.
 keywords: [Open-Air, Forsthof, Wollbach, Konzert]
 publishDate: 2020-02-01T00:00:00.000Z
-ampLogoUrl: files/flyer/20_forsthof.jpg
-ampLogoWidth: 800
-ampLogoHeight: 367
 menu:
   blog:
     parent: blog

@@ -4,9 +4,6 @@ subtitle: im historischen Dorfkern bei der alten Krone
 description: Musikalischer und kulinarischer Genuss in exklusivem Ambiente.
 keywords: [Open-Air, Alte Krone, Wollbach, Konzert]
 publishDate: 2022-05-27T00:00:00.000Z
-ampLogoUrl: files/flyer/22_open-air.jpg
-ampLogoWidth: 800
-ampLogoHeight: 367
 menu:
   blog:
     parent: blog

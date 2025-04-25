@@ -3,9 +3,6 @@ title: Sauserfahrt mit dem Chanderli 2022
 description: Der Sauserbummel 2022 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
 keywords: [Sauserbummel, Sauser-Express, Weinprobe, Kandertal, Herbstfest, Degustation, Wein, Sauser]
 publishDate: 2022-07-19T00:00:00.000Z
-ampLogoUrl: img/events/chanderli.jpg
-ampLogoWidth: 600
-ampLogoHeight: 380
 menu:
   blog:
     parent: blog

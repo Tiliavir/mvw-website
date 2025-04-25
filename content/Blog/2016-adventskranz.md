@@ -3,9 +3,6 @@ title: Adventskranz Verkauf
 description: Am Freitag, den 25.11.2016 ab 19 Uhr veranstaltet der Förderverein Klingendes C im Forsthof in Wollbach einen Aventskranzverkauf mit musikalischer Begleitungdes Vorstufen- und Jugendorchesters.
 keywords: [Adventskranz, Jugendorchester, Glühwein, Forsthof, Wollbach]
 publishDate: 2016-11-23T00:00:00.000Z
-ampLogoUrl: img/events/frosthof.jpg
-ampLogoWidth: 525
-ampLogoHeight: 349
 menu:
   blog:
     parent: blog

@@ -38,14 +38,14 @@ an einem beeindruckenden Musiktag in Bannwil mit 19 Kapellen und über 800
 Musikern. Die Musikgesellschaft Bannwil besuchte uns zuletzt 2016 an unserem
 Marschmusikfestival zum 150 jährigen Jubiläum.
 
-### <a class="mvw-verein" href="http://www.ostmusik.ch/" rel="noopener" target="_blank">Musikgesellschaft Sankt Gallen Ost</a>
+### <a class="mvw-verein" href="https://www.ostmusik.ch/" rel="noopener" target="_blank">Musikgesellschaft Sankt Gallen Ost</a>
 
 <!-- todo : Text -->
 
 ## Musikvereine
 <a class="mvw-verein" href="https://www.stadtmusik-loerrach.de/" rel="noopener" target="_blank">Stadtmusik Lörrach</a>
 
-<a class="mvw-verein" href="http://www.musikverein-fahrnau.de/" rel="noopener" target="_blank">Musikverein Fahrnau</a>
+<a class="mvw-verein" href="https://www.mv-fahrnau.de/" rel="noopener" target="_blank">Musikverein Fahrnau</a>
 
 <a class="mvw-verein" href="https://www.mvtannenkirch.de/" rel="noopener" target="_blank">Musikverein Tannenkirch</a>
 

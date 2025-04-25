@@ -3,9 +3,6 @@ title: Still Feelin' Good
 description: Die CD "Still Feelin' Good" anlässlich des 150 jährigen Jubiläums des Musikvereins Wollbach zu unserem Jahreskonzert 2016.
 keywords: [CD, Aufnahme, Still Feelin' Good, Still Feeling Good, Studio 80, Städele, Musikverein Wollbach, Verkauf]
 publishDate: 2016-03-06T00:00:00.000Z
-ampLogoUrl: img/events/cd.jpg
-ampLogoWidth: 600
-ampLogoHeight: 380
 menu:
   blog:
     parent: blog
@@ -38,5 +35,5 @@ Aufgenommen haben wir unsere CD in der Kandertalhalle Wollbach, welche wir
 mit dem [mobilen Tonstudio der Firma Studio 80][studio80] aus Bad
 Wörishofen kurzerhand in unser Aufnahmestudio verwandelt haben.
 
-[studio80]: http://www.studio-80.de/ueber-uns/
-[studio80cd]: http://www.blasmusik-service.de/cdproduktionen/mw-201601_musikverein_wollbach-still_feelin%60_good.html
+[studio80]: https://www.studio-80.de/ueber-uns/
+[studio80cd]: https://www.blasmusik-service.de/cdproduktionen/mw-201601_musikverein_wollbach-still_feelin%60_good.html
