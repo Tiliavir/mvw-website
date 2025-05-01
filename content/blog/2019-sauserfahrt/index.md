@@ -37,7 +37,7 @@ Anmeldung bis spätestens 01.08.2019 ist daher notwendig.
 <b><i>- ausverkauft -</i></b>
 </p>
 
-Per mail: martina.reinauer@mv-wollbach.de oder auch telefonisch ab 18.00 Uhr: 07621-82375
+Per mail: [martina.reinauer@mv-wollbach.de](mailto:martina.reinauer@mv-wollbach.de) oder auch telefonisch ab 18.00 Uhr: 07621-82375
 
 Bei Nichtteilnahme kann aus organisatorischen Gründen leider keine Rückerstattung
 des Fahrpreises vorgenommen werden.
@@ -54,10 +54,9 @@ Die Beschreibung können Sie auch hier als [Flyer herunterladen][flyer].
 
 ### Rückblick
 Hier, auf unserer Website finden Sie [Bilder][bilder] und Informationen wie
-[Presseberichte][berichte] und einen [Rückblick][news] zu der Veranstaltung des
+Presseberichte und einen [Rückblick][news] zu der Veranstaltung des
 letzten Jahres.
 
-[berichte]: {{< ref berichte.md >}}
 [bilder]: 
 [news]: {{< ref rueckblick.md >}}
 [flyer]: files/flyer/19_sauserbummel.pdf

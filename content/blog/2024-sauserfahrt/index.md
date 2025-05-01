@@ -51,10 +51,9 @@ des Fahrpreises vorgenommen werden.
 
 ### Rückblick
 Hier, auf unserer Website finden Sie Informationen wie
-[Presseberichte][berichte] und einen [Rückblick][news] zu der Veranstaltung des
+Presseberichte und einen [Rückblick][news] zu der Veranstaltung des
 letzten Jahres.
 
-[berichte]: {{< ref berichte.md >}}
 [news]: {{< ref rueckblick.md >}}
 [flyer]: files/flyer/24_sauserbummel.pdf
 

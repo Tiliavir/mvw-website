@@ -45,10 +45,9 @@ Rückerstattung des Fahrpreises vorgenommen werden.
 
 ### Rückblick
 Hier, auf unserer Website finden Sie [Bilder][bilder] und Informationen wie
-[Presseberichte][berichte] und einen [Rückblick][news] zu der Veranstaltung
+Presseberichte und einen [Rückblick][news] zu der Veranstaltung
 des letzten Jahres.
 
-[berichte]: {{< ref berichte.md >}}
 [bilder]: 
 [news]: {{< ref rueckblick.md >}}
 

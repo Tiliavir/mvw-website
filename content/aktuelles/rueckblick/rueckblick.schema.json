@@ -1,13 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Rückblick",
-  "description": "Ein Rückblick auf Veranstaltungen nach Jahr gruppiert.",
+  "description": "Veranstaltungen nach Jahr mit optional zugehörigen Presseberichten",
   "type": "object",
   "required": ["rueckblick"],
   "properties": {
     "rueckblick": {
       "type": "object",
-      "description": "Objekt mit Jahren als Schlüssel (z. B. 2024), jeweils mit einer Liste von Ereignissen",
+      "description": "Jahresweise gruppierte Rückblicke",
       "patternProperties": {
         "^[0-9]{4}$": {
           "type": "array",
@@ -17,7 +17,7 @@
             "properties": {
               "title": {
                 "type": "string",
-                "description": "Titel des Rückblick-Eintrags"
+                "description": "Titel des Ereignisses"
               },
               "starttime": {
                 "type": "string",
@@ -27,51 +27,93 @@
               "endtime": {
                 "type": "string",
                 "format": "date",
-                "description": "Ende der Veranstaltung"
+                "description": "Ende der Veranstaltung (optional)"
               },
               "content": {
                 "type": "string",
-                "description": "Inhalt des Rückblicks (Markdown erlaubt)"
+                "description": "Beschreibung im Markdown-Format"
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Stichworte zur Kategorisierung"
               },
               "image": {
                 "type": "object",
-                "description": "Optionales Bild",
                 "required": ["src", "title"],
                 "properties": {
                   "src": {
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "Pfad oder URL zum Bild"
+                    "description": "Bild-URL (relativ oder absolut)"
                   },
                   "title": {
                     "type": "string",
-                    "description": "Alternativtext oder Bildtitel"
+                    "description": "Alternativtext oder Titel"
                   },
                   "caption": {
                     "type": "string",
-                    "description": "Bildunterschrift"
+                    "description": "Bildunterschrift (optional)"
                   }
                 },
                 "additionalProperties": false
               },
               "video": {
                 "type": "object",
-                "description": "Optionales eingebettetes Video",
                 "required": ["src"],
                 "properties": {
                   "src": {
                     "type": "string",
                     "format": "uri",
-                    "description": "URL zum Video"
+                    "description": "Link zum Video"
                   }
                 },
                 "additionalProperties": false
               },
-              "keywords": {
+              "berichte": {
                 "type": "array",
-                "description": "Schlagworte für Suche oder Filter",
+                "description": "Optionale Liste externer Presseberichte",
                 "items": {
-                  "type": "string"
+                  "type": "object",
+                  "required": ["title", "date", "url", "srcTitle", "srcUrl"],
+                  "properties": {
+                    "title": {
+                      "type": "string",
+                      "description": "Titel des Presseberichts"
+                    },
+                    "date": {
+                      "type": "string",
+                      "format": "date",
+                      "description": "Erscheinungsdatum des Berichts"
+                    },
+                    "url": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "Link zum Artikel"
+                    },
+                    "srcTitle": {
+                      "type": "string",
+                      "description": "Name der Quelle (z. B. 'Badische Zeitung')"
+                    },
+                    "srcUrl": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "Startseite der Quelle"
+                    },
+                    "hasPicture": {
+                      "type": "boolean",
+                      "default": false,
+                      "description": "Gibt an, ob der Artikel ein Bild enthält"
+                    },
+                    "hasDescription": {
+                      "type": "boolean",
+                      "default": false,
+                      "description": "Gibt an, ob der Artikel eine Inhaltsbeschreibung enthält"
+                    }
+                  },
+                  "additionalProperties": false
                 }
               }
             },
