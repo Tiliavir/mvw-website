@@ -24,7 +24,9 @@
     </li>
   </ul>
 
-  <script src="{{ "/js/jquery.min.js" | urlize | relURL }}"></script>
+  {{ with resources.Get "/js/jquery.min.js" | fingerprint "sha512" }}
+    <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+  {{ end }}
 
   {{ range .Page.Params.CustomExternalJs -}}
     <script defer src="{{ . }}"></script>
