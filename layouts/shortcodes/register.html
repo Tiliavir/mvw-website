@@ -1,4 +1,4 @@
-{{ with $.Site.Data.register }}
+{{ with (.Page.Resources.GetMatch "register.json" | transform.Unmarshal).mitglieder }}
 {{ $register := . }}
 <table class="mvw-register-table responsive" aria-label="Register">
   <thead>

@@ -1,0 +1,32 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $class := .Get "class" | default "" -}}
+{{- $isAboveTheFold := .Get "isAboveTheFold" | default false -}}
+
+{{- $img := "" -}}
+{{- if .Page.Resources.GetMatch $src -}}
+    {{- $img = .Page.Resources.GetMatch $src -}}
+{{- else -}}
+    {{- $img = resources.Get $src -}}
+{{- end -}}
+
+{{- $small := $img.Resize "600x webp q85 lanczos" | fingerprint -}}
+{{- $medium := $img.Resize "1200x webp q85 lanczos" | fingerprint -}}
+{{- $original := $img | fingerprint -}}
+
+{{- if $isAboveTheFold -}}
+    <link rel="preload" as="image" href="{{ $medium.RelPermalink }}" fetchpriority="high">
+{{- end -}}
+
+<picture>
+    <source srcset="{{ $small.RelPermalink }} 600w, {{ $medium.RelPermalink }} 1200w, {{ $original.RelPermalink }} {{ $img.Width }}w"
+            sizes="(max-width: 600px) 600px, (max-width: 1024px) 1200px, {{ $img.Width }}px"
+            type="image/webp" />
+    <img src="{{ $medium.RelPermalink }}"
+         class="{{ $class }}"
+         width="{{ $img.Width }}"
+         height="{{ $img.Height }}"
+         alt="{{ $alt }}"
+         loading="{{ cond $isAboveTheFold "eager" "lazy" }}"
+         decoding="{{ cond $isAboveTheFold "sync" "async" }}" />
+</picture>

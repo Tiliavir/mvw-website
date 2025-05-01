@@ -1,4 +1,4 @@
-{{ with $.Site.Data.rueckblick }}
+{{ with (.Page.Resources.GetMatch "rueckblick.json" | transform.Unmarshal).rueckblick }}
 
 {{ $keywords := slice }}
 {{ $years := slice }}

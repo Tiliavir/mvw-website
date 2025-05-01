@@ -1,4 +1,4 @@
-{{ with $.Site.Data.berichte }}
+{{ with (.Page.Resources.GetMatch "berichte.json" | transform.Unmarshal).berichte }}
 
 {{ $years := slice }}
 {{ range $key, $v := . }}

@@ -1,4 +1,4 @@
-{{ with $.Site.Data.konzerte }}
+{{ with (.Page.Resources.GetMatch "konzerte.json" | transform.Unmarshal).konzerte }}
 
 {{ $keywords := slice }}
 {{ $years := slice }}

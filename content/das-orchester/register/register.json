@@ -1,0 +1,345 @@
+{
+  "$schema": "register.schema.json",
+  "mitglieder": [
+    {
+      "name": "Maria",
+      "familyName": "Altmann",
+      "register": "Querflöte"
+    },
+    {
+      "name": "Rahel",
+      "familyName": "Baltensperger-Mattmüller",
+      "register": "Querflöte"
+    },
+    {
+      "name": "Julia",
+      "familyName": "Cordes",
+      "register": "Querflöte"
+    },
+    {
+      "name": "Kathrin",
+      "familyName": "Koren",
+      "register": "Querflöte"
+    },
+    {
+      "name": "Rebecca",
+      "familyName": "Mack",
+      "register": "Querflöte"
+    },
+    {
+      "name": "Hanna",
+      "familyName": "Reinacher",
+      "register": "Querflöte"
+    },
+    {
+      "name": "Anny",
+      "familyName": "Folk",
+      "register": "Querflöte"
+    },
+    {
+      "name": "Eva",
+      "familyName": "Baldermann",
+      "register": "Querflöte"
+    },
+    {
+      "name": "Rahel",
+      "familyName": "Baltensperger",
+      "register": "Oboe"
+    },
+    {
+      "name": "Mary",
+      "familyName": "Braun",
+      "register": "Oboe"
+    },
+    {
+      "name": "Nicole",
+      "familyName": "Schopferer",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Stefanie",
+      "familyName": "Imbaumgarten",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Thomas",
+      "familyName": "Kuckuk",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Janika",
+      "familyName": "Böhler",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Melanie",
+      "familyName": "Hoyer",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Leonie",
+      "familyName": "Greßlin",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Christine",
+      "familyName": "Jost",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Karin",
+      "familyName": "Sieglin",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Lina",
+      "familyName": "Müller",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Leonie",
+      "familyName": "Reinacher",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Luisa",
+      "familyName": "Krey",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Lara",
+      "familyName": "Kuckuk",
+      "register": "Klarinette"
+    },
+    {
+      "name": "Luisa",
+      "familyName": "Krey",
+      "register": "Fagott"
+    },
+    {
+      "name": "Helen",
+      "familyName": "Bührer",
+      "register": "Altsaxophon"
+    },
+    {
+      "name": "Janine",
+      "familyName": "Lindenmann",
+      "register": "Altsaxophon"
+    },
+    {
+      "name": "Carole",
+      "familyName": "Enderlin",
+      "register": "Altsaxophon"
+    },
+    {
+      "name": "Heike",
+      "familyName": "Enderlin",
+      "register": "Altsaxophon"
+    },
+    {
+      "name": "Juliane",
+      "familyName": "Haas",
+      "register": "Altsaxophon"
+    },
+    {
+      "name": "Maria",
+      "familyName": "Gut",
+      "register": "Altsaxophon"
+    },
+    {
+      "name": "Lilly",
+      "familyName": "Müller",
+      "register": "Altsaxophon"
+    },
+    {
+      "name": "Prisca",
+      "familyName": "Merkert",
+      "register": "Altsaxophon"
+    },
+    {
+      "name": "Annette",
+      "familyName": "Krey",
+      "register": "Tenorsaxophon"
+    },
+    {
+      "name": "Mechthild",
+      "familyName": "Frey",
+      "register": "Tenorsaxophon"
+    },
+    {
+      "name": "Stefanie",
+      "familyName": "Imbaumgarten",
+      "register": "Baritonsaxophon"
+    },
+    {
+      "name": "Frank",
+      "familyName": "Reinacher",
+      "register": "Trompete"
+    },
+    {
+      "name": "Kai",
+      "familyName": "Bogner",
+      "register": "Trompete"
+    },
+    {
+      "name": "Manfred",
+      "familyName": "Braun",
+      "register": "Trompete"
+    },
+    {
+      "name": "Matthias",
+      "familyName": "Braun",
+      "register": "Trompete"
+    },
+    {
+      "name": "Moritz",
+      "familyName": "Merkert",
+      "register": "Trompete"
+    },
+    {
+      "name": "Michael",
+      "familyName": "Dorn",
+      "register": "Trompete"
+    },
+    {
+      "name": "Martina",
+      "familyName": "Linder",
+      "register": "Trompete"
+    },
+    {
+      "name": "Alexander",
+      "familyName": "van Linn",
+      "register": "Trompete"
+    },
+    {
+      "name": "Henri",
+      "familyName": "Riesterer",
+      "register": "Trompete"
+    },
+    {
+      "name": "Ben",
+      "familyName": "Schörlin",
+      "register": "Trompete"
+    },
+    {
+      "name": "Yannik",
+      "familyName": "Brunner",
+      "register": "Trompete"
+    },
+    {
+      "name": "Mathias",
+      "familyName": "Lindenmann",
+      "register": "Horn"
+    },
+    {
+      "name": "Martina",
+      "familyName": "Reinauer",
+      "register": "Horn"
+    },
+    {
+      "name": "Markus",
+      "familyName": "Lindenmann",
+      "register": "Horn"
+    },
+    {
+      "name": "Sven",
+      "familyName": "Gut",
+      "register": "Posaune"
+    },
+    {
+      "name": "Timo",
+      "familyName": "Braun",
+      "register": "Posaune"
+    },
+    {
+      "name": "Jutta",
+      "familyName": "Schmidt",
+      "register": "Posaune"
+    },
+    {
+      "name": "Johanna",
+      "familyName": "Maier",
+      "register": "Posaune"
+    },
+    {
+      "name": "Emil",
+      "familyName": "Müller",
+      "register": "Posaune"
+    },
+    {
+      "name": "Mattis",
+      "familyName": "Riesterer",
+      "register": "Posaune"
+    },
+    {
+      "name": "Ralf",
+      "familyName": "Ernst",
+      "register": "Euphonium"
+    },
+    {
+      "name": "Thomas",
+      "familyName": "Riesterer",
+      "register": "Euphonium"
+    },
+    {
+      "name": "Anika",
+      "familyName": "Greßlin",
+      "register": "Euphonium"
+    },
+    {
+      "name": "Frieder",
+      "familyName": "Hering",
+      "register": "Euphonium"
+    },
+    {
+      "name": "Noah",
+      "familyName": "Goehlke",
+      "register": "Tuba"
+    },
+    {
+      "name": "Karlfrieder",
+      "familyName": "Fünfschilling",
+      "register": "Tuba"
+    },
+    {
+      "name": "Gerd",
+      "familyName": "Friedel",
+      "register": "Tuba"
+    },
+    {
+      "name": "Dietmar",
+      "familyName": "Müller",
+      "register": "Tuba"
+    },
+    {
+      "name": "Simon",
+      "familyName": "Wiggers",
+      "register": "Tuba"
+    },
+    {
+      "name": "Maria",
+      "familyName": "Gut",
+      "register": "Klavier"
+    },
+    {
+      "name": "Tobias",
+      "familyName": "Bronner",
+      "register": "Gitarre"
+    },
+    {
+      "name": "Markus",
+      "familyName": "Winterhalter",
+      "register": "Gitarre"
+    },
+    {
+      "name": "Beate",
+      "familyName": "Mayer",
+      "register": "Schlagzeug"
+    },
+    {
+      "name": "Dominik",
+      "familyName": "Heieck",
+      "register": "Schlagzeug"
+    }
+  ]
+}

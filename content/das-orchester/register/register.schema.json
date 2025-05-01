@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Register",
+  "description": "Schema für Mitglieder mit Angabe des Registers.",
+  "type": "object",
+  "required": ["mitglieder"],
+  "properties": {
+    "mitglieder": {
+      "type": "array",
+      "description": "Liste der Mitglieder mit Instrument",
+      "items": {
+        "type": "object",
+        "required": ["name", "familyName", "register"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Vorname"
+          },
+          "familyName": {
+            "type": "string",
+            "description": "Nachname"
+          },
+          "register": {
+            "type": "string",
+            "description": "Instrumentengruppe",
+            "enum": [
+              "Querflöte",
+              "Oboe",
+              "Klarinette",
+              "Fagott",
+              "Altsaxophon",
+              "Tenorsaxophon",
+              "Baritonsaxophon",
+              "Trompete",
+              "Horn",
+              "Tenorhorn",
+              "Posaune",
+              "Euphonium",
+              "Tuba",
+              "Schlagzeug",
+              "Klavier",
+              "Gitarre"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

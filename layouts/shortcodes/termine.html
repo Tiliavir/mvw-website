@@ -1,4 +1,5 @@
-{{ with $.Site.Data.termine }}
+{{ with (.Page.Resources.GetMatch "termine.json" | transform.Unmarshal).termine }}
+
 {{ range $key, $value := . }}
   <h2>{{ $key }}</h2>
   <table class="termine responsive banded-rows" aria-label="Termine">

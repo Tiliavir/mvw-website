@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Berichte (Jahresweise gruppiert)",
+  "type": "object",
+  "required": ["$schema", "berichte"],
+  "properties": {
+    "berichte": {
+      "type": "object",
+      "description": "Ein Objekt mit Jahren als Schlüssel und Arrays von Berichten als Wert",
+      "patternProperties": {
+        "^[0-9]{4}$": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "date": {
+                "type": "string",
+                "format": "date",
+                "description": "Datum des Berichts"
+              },
+              "title": {
+                "type": "string",
+                "description": "Titel des Berichts"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "description": "URL zum Originalartikel"
+              },
+              "hasPicture": {
+                "type": "boolean",
+                "default": false,
+                "description": "Ob ein Bild vorhanden ist"
+              },
+              "hasDescription": {
+                "type": "boolean",
+                "default": false,
+                "description": "Ob eine Inhaltsbeschreibung vorhanden ist"
+              },
+              "srcTitle": {
+                "type": "string",
+                "description": "Name der Quelle"
+              },
+              "srcUrl": {
+                "type": "string",
+                "format": "uri",
+                "description": "URL zur Quelle"
+              }
+            },
+            "required": ["date", "title", "url", "srcTitle", "srcUrl"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "examples": [
+    {
+      "$schema": "berichte.schema.json",
+      "berichte": {
+        "2024": [
+          {
+            "title": "Auch wenn’s regnet – die Stimmung stimmt",
+            "date": "2024-07-08",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/auch-wenn-s-regnet-die-stimmung-stimmt"
+          }
+        ]
+      }
+    }
+  ]
+}

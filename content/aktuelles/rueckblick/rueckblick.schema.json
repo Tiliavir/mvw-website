@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rückblick",
+  "description": "Ein Rückblick auf Veranstaltungen nach Jahr gruppiert.",
+  "type": "object",
+  "required": ["rueckblick"],
+  "properties": {
+    "rueckblick": {
+      "type": "object",
+      "description": "Objekt mit Jahren als Schlüssel (z. B. 2024), jeweils mit einer Liste von Ereignissen",
+      "patternProperties": {
+        "^[0-9]{4}$": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title"],
+            "properties": {
+              "title": {
+                "type": "string",
+                "description": "Titel des Rückblick-Eintrags"
+              },
+              "starttime": {
+                "type": "string",
+                "format": "date",
+                "description": "Beginn der Veranstaltung"
+              },
+              "endtime": {
+                "type": "string",
+                "format": "date",
+                "description": "Ende der Veranstaltung"
+              },
+              "content": {
+                "type": "string",
+                "description": "Inhalt des Rückblicks (Markdown erlaubt)"
+              },
+              "image": {
+                "type": "object",
+                "description": "Optionales Bild",
+                "required": ["src", "title"],
+                "properties": {
+                  "src": {
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "Pfad oder URL zum Bild"
+                  },
+                  "title": {
+                    "type": "string",
+                    "description": "Alternativtext oder Bildtitel"
+                  },
+                  "caption": {
+                    "type": "string",
+                    "description": "Bildunterschrift"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "video": {
+                "type": "object",
+                "description": "Optionales eingebettetes Video",
+                "required": ["src"],
+                "properties": {
+                  "src": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "URL zum Video"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "keywords": {
+                "type": "array",
+                "description": "Schlagworte für Suche oder Filter",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

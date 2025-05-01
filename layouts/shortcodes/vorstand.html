@@ -1,4 +1,5 @@
-{{ with $.Site.Data.vorstand }}
+{{ with (.Page.Resources.GetMatch "vorstand.json" | transform.Unmarshal).vorstandschaft }}
+
 <table class="mvw-managing-committee-table responsive banded-rows" aria-label="Vorstand">
   <thead>
     <tr>

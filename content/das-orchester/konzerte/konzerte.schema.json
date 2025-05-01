@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Konzertübersicht",
+  "description": "Ein Dokument mit einer Liste von Konzerten inklusive Kategorie, Ort, Datum und Programmteilen.",
+  "type": "object",
+  "required": ["konzerte"],
+  "properties": {
+    "konzerte": {
+      "type": "array",
+      "description": "Alle Konzerte",
+      "items": {
+        "type": "object",
+        "required": ["category", "location", "parts"],
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": [
+              "Jahreskonzert",
+              "Kirchenkonzert",
+              "Platzkonzert",
+              "Adventskonzert",
+              "Frühlingskonzert",
+              "Konzert"
+            ],
+            "description": "Art des Konzerts"
+          },
+          "title": {
+            "type": "string",
+            "description": "Titel des Konzerts"
+          },
+          "subtitle": {
+            "type": "string",
+            "description": "Untertitel oder Motto des Konzerts"
+          },
+          "location": {
+            "type": "object",
+            "required": ["location", "dates"],
+            "properties": {
+              "location": {
+                "type": "string",
+                "description": "Veranstaltungsort"
+              },
+              "dates": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "format": "date",
+                  "description": "Datum (YYYY-MM-DD)"
+                }
+              }
+            }
+          },
+          "parts": {
+            "type": "array",
+            "description": "Teile des Konzerts",
+            "items": {
+              "type": "object",
+              "required": ["orchestraOrEnsemble", "program"],
+              "properties": {
+                "orchestraOrEnsemble": {
+                  "type": "string",
+                  "description": "Name des Orchesters oder Ensembles"
+                },
+                "conductor": {
+                  "type": "string",
+                  "description": "Dirigent:in"
+                },
+                "program": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["title", "composers"],
+                    "properties": {
+                      "title": {
+                        "type": "string",
+                        "description": "Titel des Musikstücks"
+                      },
+                      "subtitle": {
+                        "type": "string",
+                        "description": "Zusätzliche Beschreibung oder Satz"
+                      },
+                      "composers": {
+                        "type": "array",
+                        "items": { "type": "string" },
+                        "description": "Komponist:innen"
+                      },
+                      "arrangers": {
+                        "type": "array",
+                        "items": { "type": "string" },
+                        "description": "Bearbeiter:innen"
+                      },
+                      "soloists": {
+                        "$ref": "#/$defs/soloists"
+                      },
+                      "parts": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "required": ["title"],
+                          "properties": {
+                            "title": {
+                              "type": "string",
+                              "description": "Titel des Unterstücks"
+                            },
+                            "subtitle": {
+                              "type": "string",
+                              "description": "Optionaler Untertitel"
+                            },
+                            "soloists": {
+                              "$ref": "#/$defs/soloists"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "soloists": {
+      "type": "array",
+      "description": "Liste von Solist:innen",
+      "items": {
+        "type": "object",
+        "required": ["name", "part"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name des Solisten/der Solistin"
+          },
+          "part": {
+            "type": "string",
+            "description": "Instrument oder Rolle"
+          }
+        }
+      }
+    }
+  }
+}
