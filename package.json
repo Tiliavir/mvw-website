@@ -1,7 +1,7 @@
 {
   "name": "mvw-website",
   "license": "MIT",
-  "version": "25.04.25",
+  "version": "25.05.01",
   "description": "Website of Musikverein Wollbach 1866 e.V.",
   "author": "Markus Lindenmann <tiliavir@gmail.com>",
   "repository": {
@@ -17,11 +17,9 @@
   "comments": {
     "dependencies": {
       "jquery": "project",
-      "lunr": "project",
-      "photoswipe": "project"
+      "lunr": "project"
     },
     "devDependencies": {
-      "@types/grecaptcha": "project",
       "@types/jquery": "project",
       "@types/lunr": "project",
       "@typescript-eslint/eslint-plugin": "project",
@@ -40,7 +38,6 @@
     }
   },
   "devDependencies": {
-    "@types/grecaptcha": "3.0.9",
     "@types/jquery": "3.5.32",
     "@types/lunr": "2.3.7",
     "autoprefixer": "10.4.21",
@@ -58,15 +55,14 @@
   },
   "dependencies": {
     "jquery": "3.7.1",
-    "lunr": "2.3.9",
-    "photoswipe": "5.4.4"
+    "lunr": "2.3.9"
   },
   "scripts": {
     "validate": "node validate.mjs",
     "lint": "stylelint '**/*.scss' && npx eslint .",
     "build": "hugo --minify && npm run validate",
     "index": "cd ./public/ && mvw-search-index './**/*.html' './suche/index.json' 'main'",
-    "update:lib:jquery": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./static/js/",
+    "update:lib:jquery": "copyfiles -u 3 ./node_modules/jquery/dist/jquery.min.js ./themes/mv-wollbach/assets/js/",
     "postinstall": "npm run update:lib:jquery && npm run lint"
   }
 }
