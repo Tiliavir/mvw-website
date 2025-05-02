@@ -19,28 +19,23 @@
 
   {{- $originalWidth := $img.Width -}}
 
-  {{- $r480Webp := cond (ge $img.Width 480) ($img.Resize "480x webp q85 lanczos" | fingerprint) nil -}}
+  {{- $r480Webp := cond (ge $img.Width 480) ($img.Resize "480x webp q85 lanczos" | fingerprint) $img -}}
   {{- $r768Webp := cond (ge $img.Width 768) ($img.Resize "768x webp q85 lanczos" | fingerprint) nil -}}
   {{- $r1100Webp := cond (ge $img.Width 1100) ($img.Resize "1100x webp q85 lanczos" | fingerprint) nil -}}
   {{- $r1600Webp := cond (ge $img.Width 1600) ($img.Resize "1600x webp q85 lanczos" | fingerprint) nil -}}
 
-  {{- $r480Jpg := cond (ge $img.Width 480) ($img.Resize "480x jpg q85 lanczos" | fingerprint) nil -}}
+  {{- $r480Jpg := cond (ge $img.Width 480) ($img.Resize "480x jpg q85 lanczos" | fingerprint) $img -}}
   {{- $r768Jpg := cond (ge $img.Width 768) ($img.Resize "768x jpg q85 lanczos" | fingerprint) nil -}}
   {{- $r1100Jpg := cond (ge $img.Width 1100) ($img.Resize "1100x jpg q85 lanczos" | fingerprint) nil -}}
   {{- $r1600Jpg := cond (ge $img.Width 1600) ($img.Resize "1600x jpg q85 lanczos" | fingerprint) nil -}}
 
-  {{- /* Pick best fallback src (WebP preferred) */ -}}
-  {{- $fallback := or $r1100Webp $r768Webp $r480Webp $img -}}
-
   {{- if $isAboveTheFold -}}
-    <link rel="preload" as="image" href="{{ $fallback.RelPermalink }}" fetchpriority="high">
+    <link rel="preload" as="image" href="{{ $r480Webp.RelPermalink }}" fetchpriority="high">
   {{- end -}}
 
 {{ if eq (trim $sizes " ") "" }}
       {{- $sizesList := slice -}}
-      {{- if $r480Webp }}
-        {{- $sizesList = $sizesList | append "(max-width: 480px) 480px" -}}
-      {{- end }}
+      {{- $sizesList = $sizesList | append "(max-width: 480px) 480px" -}}
       {{- if $r768Webp }}
         {{- $sizesList = $sizesList | append "(max-width: 960px) 768px" -}}
       {{- end }}
@@ -51,28 +46,30 @@
   {{ end }}
 
   <picture>
-    {{- if or $r480Webp $r768Webp $r1100Webp $r1600Webp -}}
-      <source
-        srcset="{{ with $r480Webp }}{{ .RelPermalink }} 480w,{{ end }}
-                {{ with $r768Webp }}{{ .RelPermalink }} 768w,{{ end }}
-                {{ with $r1100Webp }}{{ .RelPermalink }} 1100w,{{ end }}
-                {{ with $r1600Webp }}{{ .RelPermalink }} 1600w{{ end }}"
-        sizes="{{ $sizes }}"
-        type="image/webp" />
-    {{- end }}
+    {{- $srcsetJpg := slice -}}
+    {{- with $r480Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 480w" .RelPermalink) }}{{ end }}
+    {{- with $r768Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 768w" .RelPermalink) }}{{ end }}
+    {{- with $r1100Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 1100w" .RelPermalink) }}{{ end }}
+    {{- with $r1600Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 1600w" .RelPermalink) }}{{ end }}
 
-    {{- if or $r480Jpg $r768Jpg $r1100Jpg $r1600Jpg -}}
-      <source
-        srcset="{{ with $r480Jpg }}{{ .RelPermalink }} 480w,{{ end }}
-                {{ with $r768Jpg }}{{ .RelPermalink }} 768w,{{ end }}
-                {{ with $r1100Jpg }}{{ .RelPermalink }} 1100w,{{ end }}
-                {{ with $r1600Jpg }}{{ .RelPermalink }} 1600w{{ end }}"
-        sizes="{{ $sizes }}"
-        type="image/jpeg" />
-    {{- end }}
+    <source
+        srcset="{{ delimit $srcsetJpg ", " }}"
+    sizes="{{ $sizes }}"
+    type="image/jpeg" />
+
+    {{- $srcsetWebp := slice -}}
+    {{- with $r480Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 480w" .RelPermalink) }}{{ end }}
+    {{- with $r768Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 768w" .RelPermalink) }}{{ end }}
+    {{- with $r1100Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 1100w" .RelPermalink) }}{{ end }}
+    {{- with $r1600Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 1600w" .RelPermalink) }}{{ end }}
+
+    <source
+        srcset="{{ delimit $srcsetWebp ", " }}"
+    sizes="{{ $sizes }}"
+    type="image/jpeg" />
 
     <img
-      src="{{ $fallback.RelPermalink }}"
+      src="{{ $r480Webp.RelPermalink }}"
       class="{{ $class }}"
       alt="{{ $alt }}"
       title="{{ $title }}"
