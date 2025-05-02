@@ -36,7 +36,7 @@
     <link rel="preload" as="image" href="{{ $fallback.RelPermalink }}" fetchpriority="high">
   {{- end -}}
 
-  {{ if not $sizes }}
+{{ if eq (trim $sizes " ") "" }}
       {{- $sizesList := slice -}}
       {{- if $r480Webp }}
         {{- $sizesList = $sizesList | append "(max-width: 480px) 480px" -}}
@@ -47,7 +47,7 @@
       {{- if $r1100Webp }}
         {{- $sizesList = $sizesList | append "(max-width: 1300px) 1100px" -}}
       {{- end }}
-      {{- $sizes := printf "%s, 1600px" (delimit $sizesList ", ") -}}
+      {{- $sizes = printf "%s, 1600px" (delimit $sizesList ", ") -}}
   {{ end }}
 
   <picture>
