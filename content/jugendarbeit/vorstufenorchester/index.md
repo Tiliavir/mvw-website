@@ -14,13 +14,13 @@ Jahren. Das Vorstufenorchester wird von Maria Gut geleitet. Jeden
 Donnerstag von 18 Uhr bis 19 Uhr sind sie beim Proben im Stübli der
 Kandertalhalle zu finden.
 
-{{< figure src="/img/vorstufe/vorstufenorchester.jpg"
+{{< figure src="img/vorstufenorchester.jpg"
            alt="Vorstufenorchester am Konzert im Mai 2015"
            caption="Das Vorstufenorchester an ihrem ersten Konzert im Mai 2015."
 >}}
 
 ## Die Dirigentin
-{{< figure src="/img/personen/dirigentin_jugend.jpg"
+{{< figure src="img/dirigentin_jugend.jpg"
            alt="Dirigentin des Vorstufenorchesters - Maria Gut"
            title="Dirigentin des Vorstufenorchesters - Maria Gut"
            caption="Maria Gut"

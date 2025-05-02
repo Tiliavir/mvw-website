@@ -8,7 +8,7 @@ menu: main
 ## Befreundete Vereine
 
 Wir danken den Schweizer Musikgesellschaften ganz herzlich für die
-vergangen Jahre und hoffen auf ein noch langes, erfolgreiches Fortbestehen
+vergangenen Jahre und hoffen auf ein noch langes, erfolgreiches Fortbestehen
 dieser Freundschaft.
 
 ### <a class="mvw-verein" href="https://www.mgbannwil.ch/" rel="noopener" target="_blank">Musikgesellschaft Bannwil</a>
@@ -18,7 +18,7 @@ Die Musikgesellschaft Bannwil wurde 1879 gegründet. Der Verein besteht aus
 Stärkeklasse Harmonie und nimmt an den verschiedenen Eidg.-, Kant.- und Amtsfesten teil,
 an welchen er immer wieder grosse Erfolge feiern kann.
 
-{{< figure src="/img/vereine/bannwil.jpg" alt="Musikgesellschaft Bannwil" >}}
+{{< figure src="img/bannwil.jpg" alt="Musikgesellschaft Bannwil" >}}
 
 Die Freundschaft zur Musikgesellschaft in der Schweiz (Oberargau, Kanton
 Bern) besteht seit dem Jahr 1966. Der Besuch der Freunde aus der Schweiz
@@ -35,7 +35,7 @@ Besuchen. So waren wir unter anderem im Jahr 1979 zum 100-jährigen Jubiläum
 der Musikgesellschaft in Bannwil zu Besuch und beteiligten uns zuletzt 2013
 an einem beeindruckenden Musiktag in Bannwil mit 19 Kapellen und über 800
 Musikern. Die Musikgesellschaft Bannwil besuchte uns zuletzt 2016 an unserem
-Marschmusikfestival zum 150 jährigen Jubiläum.
+Marschmusikfestival zum 150-jährigen Jubiläum.
 
 ### <a class="mvw-verein" href="https://www.ostmusik.ch/" rel="noopener" target="_blank">Musikgesellschaft Sankt Gallen Ost</a>
 

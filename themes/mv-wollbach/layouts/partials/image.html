@@ -1,0 +1,84 @@
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $title := .title | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $isAboveTheFold := .isAboveTheFold | default false -}}
+{{- $sizes := .sizes | default nil -}}
+
+{{- $img := "" -}}
+{{- if .Page.Resources.GetMatch $src -}}
+  {{- $img = .Page.Resources.GetMatch $src -}}
+{{- else -}}
+  {{- $img = resources.Get $src -}}
+{{- end -}}
+
+{{ $img := .Page.Resources.GetMatch $src }}
+{{ if not $img }}
+  {{ warnf "Missing image in page. Move %-50s | %-40s" $src .Page.File.Path }}
+{{ else }}
+
+  {{- $originalWidth := $img.Width -}}
+
+  {{- $r480Webp := cond (ge $img.Width 480) ($img.Resize "480x webp q85 lanczos" | fingerprint) nil -}}
+  {{- $r768Webp := cond (ge $img.Width 768) ($img.Resize "768x webp q85 lanczos" | fingerprint) nil -}}
+  {{- $r1100Webp := cond (ge $img.Width 1100) ($img.Resize "1100x webp q85 lanczos" | fingerprint) nil -}}
+  {{- $r1600Webp := cond (ge $img.Width 1600) ($img.Resize "1600x webp q85 lanczos" | fingerprint) nil -}}
+
+  {{- $r480Jpg := cond (ge $img.Width 480) ($img.Resize "480x jpg q85 lanczos" | fingerprint) nil -}}
+  {{- $r768Jpg := cond (ge $img.Width 768) ($img.Resize "768x jpg q85 lanczos" | fingerprint) nil -}}
+  {{- $r1100Jpg := cond (ge $img.Width 1100) ($img.Resize "1100x jpg q85 lanczos" | fingerprint) nil -}}
+  {{- $r1600Jpg := cond (ge $img.Width 1600) ($img.Resize "1600x jpg q85 lanczos" | fingerprint) nil -}}
+
+  {{- /* Pick best fallback src (WebP preferred) */ -}}
+  {{- $fallback := or $r1100Webp $r768Webp $r480Webp $img -}}
+
+  {{- if $isAboveTheFold -}}
+    <link rel="preload" as="image" href="{{ $fallback.RelPermalink }}" fetchpriority="high">
+  {{- end -}}
+
+  {{ if not $sizes }}
+      {{- $sizesList := slice -}}
+      {{- if $r480Webp }}
+        {{- $sizesList = $sizesList | append "(max-width: 480px) 480px" -}}
+      {{- end }}
+      {{- if $r768Webp }}
+        {{- $sizesList = $sizesList | append "(max-width: 960px) 768px" -}}
+      {{- end }}
+      {{- if $r1100Webp }}
+        {{- $sizesList = $sizesList | append "(max-width: 1300px) 1100px" -}}
+      {{- end }}
+      {{- $sizes := printf "%s, 1600px" (delimit $sizesList ", ") -}}
+  {{ end }}
+
+  <picture>
+    {{- if or $r480Webp $r768Webp $r1100Webp $r1600Webp -}}
+      <source
+        srcset="{{ with $r480Webp }}{{ .RelPermalink }} 480w,{{ end }}
+                {{ with $r768Webp }}{{ .RelPermalink }} 768w,{{ end }}
+                {{ with $r1100Webp }}{{ .RelPermalink }} 1100w,{{ end }}
+                {{ with $r1600Webp }}{{ .RelPermalink }} 1600w{{ end }}"
+        sizes="{{ $sizes }}"
+        type="image/webp" />
+    {{- end }}
+
+    {{- if or $r480Jpg $r768Jpg $r1100Jpg $r1600Jpg -}}
+      <source
+        srcset="{{ with $r480Jpg }}{{ .RelPermalink }} 480w,{{ end }}
+                {{ with $r768Jpg }}{{ .RelPermalink }} 768w,{{ end }}
+                {{ with $r1100Jpg }}{{ .RelPermalink }} 1100w,{{ end }}
+                {{ with $r1600Jpg }}{{ .RelPermalink }} 1600w{{ end }}"
+        sizes="{{ $sizes }}"
+        type="image/jpeg" />
+    {{- end }}
+
+    <img
+      src="{{ $fallback.RelPermalink }}"
+      class="{{ $class }}"
+      alt="{{ $alt }}"
+      title="{{ $title }}"
+      loading="{{ cond $isAboveTheFold "eager" "lazy" }}"
+      decoding="{{ cond $isAboveTheFold "sync" "async" }}"
+    />
+  </picture>
+
+{{ end }}

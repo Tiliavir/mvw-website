@@ -4,17 +4,17 @@
     {
       "address": "Rathausstr. 17 79400 Wollbach",
       "email": "annette.krey@mv-wollbach.de",
-      "image": "/img/personen/vorstand.jpg",
+      "image": "img/vorstand.jpg",
       "persons": [
         "Annette Krey"
       ],
-      "telephone": "07626 1764",
+      "telephone": "+4976261764",
       "title": "1. Vorsitzende"
     },
     {
       "address": "79400 Tannenkirch",
       "email": "thomas.kuckuk@mv-wollbach.de",
-      "image": "/img/personen/vorstand2.jpg",
+      "image": "img/vorstand2.jpg",
       "persons": [
         "Thomas Kuckuk"
       ],
@@ -23,7 +23,7 @@
     {
       "address": "79400 Wollbach",
       "email": "maria.gut@mv-wollbach.de",
-      "image": "/img/personen/jugendleitung.jpg",
+      "image": "img/jugendleitung.jpg",
       "persons": [
         "Maria Gut",
         "Moritz Merkert"
@@ -33,7 +33,7 @@
     {
       "address": "79400 Wollbach",
       "email": "prisca.offenwanger@mv-wollbach.de",
-      "image": "/img/personen/kassierer.jpg",
+      "image": "img/kassierer.jpg",
       "persons": [
         "Prisca Offenwanger",
         "Sven Gut"
@@ -43,7 +43,7 @@
     {
       "address": "79400 Wollbach",
       "email": "janika.boehler@mv-wollbach.de",
-      "image": "/img/personen/schriftfuehrer.jpg",
+      "image": "img/schriftfuehrer.jpg",
       "persons": [
         "Janika Böhler",
         "Stefanie Imbaumgarten"
@@ -52,21 +52,21 @@
       "title": "Schriftführerin"
     },
     {
-      "image": "/img/personen/protokollfuehrer.jpg",
+      "image": "img/protokollfuehrer.jpg",
       "persons": [
         "Beate Mayer"
       ],
       "title": "Protokollführung"
     },
     {
-      "image": "/img/personen/orchestervorstand.jpg",
+      "image": "img/orchestervorstand.jpg",
       "persons": [
         "Thomas Kuckuk"
       ],
       "title": "Orchestervorstand"
     },
     {
-      "image": "/img/personen/aktivbeisitzer.jpg",
+      "image": "img/aktivbeisitzer.jpg",
       "persons": [
         "Lina Müller",
         "Helen Bührer"
@@ -74,7 +74,7 @@
       "title": "Aktivbeisitzer"
     },
     {
-      "image": "/img/personen/passivbeisitzer.jpg",
+      "image": "img/passivbeisitzer.jpg",
       "persons": [
         "Reinhard Greßlin",
         "Dietmar Kutta"

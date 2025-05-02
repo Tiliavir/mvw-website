@@ -17,8 +17,9 @@ Der historische Dorfkern bei der Alten Krone bietet die passende
 Kulisse. Gereicht werden edle Weine, exklusives Bier und erlesene
 Speisen, sowie Erfrischungen an Sekt- und Cocktailbar.
 
-{{< figure src="/files/flyer/22_open-air.jpg"
+{{< figure src="img/22_open-air.jpg"
            alt="Open-Air"
+           isAboveTheFold=true
 >}}
 
 [Flyer des Forsthof Open-Air als PDF herunterladen.](/files/flyer/22_open-air.pdf)

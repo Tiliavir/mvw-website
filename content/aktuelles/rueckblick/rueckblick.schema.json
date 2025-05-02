@@ -40,25 +40,28 @@
                 },
                 "description": "Stichworte zur Kategorisierung"
               },
-              "image": {
-                "type": "object",
-                "required": ["src", "title"],
-                "properties": {
-                  "src": {
-                    "type": "string",
-                    "format": "uri-reference",
-                    "description": "Bild-URL (relativ oder absolut)"
+              "images": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["src", "title"],
+                  "properties": {
+                    "src": {
+                      "type": "string",
+                      "format": "uri-reference",
+                      "description": "Bild-URL (relativ oder absolut)"
+                    },
+                    "title": {
+                      "type": "string",
+                      "description": "Alternativtext oder Titel"
+                    },
+                    "caption": {
+                      "type": "string",
+                      "description": "Bildunterschrift (optional)"
+                    }
                   },
-                  "title": {
-                    "type": "string",
-                    "description": "Alternativtext oder Titel"
-                  },
-                  "caption": {
-                    "type": "string",
-                    "description": "Bildunterschrift (optional)"
-                  }
-                },
-                "additionalProperties": false
+                  "additionalProperties": false
+                }
               },
               "video": {
                 "type": "object",

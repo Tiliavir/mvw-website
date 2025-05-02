@@ -19,6 +19,6 @@ Für das leibliche Wohl ist ebenfalls bestens gesorgt, es gibt:
 - Grillwürste
 - Raclette
 
-{{< figure src="/img/events/forsthof.jpg"
+{{< figure src="forsthof.jpg"
            alt="Adventskranz Verkauf 2021"
 >}}

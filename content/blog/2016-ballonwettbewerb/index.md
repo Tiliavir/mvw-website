@@ -8,7 +8,7 @@ menu:
     parent: blog
 ---
 
-{{< figure src="/img/events/ballon.jpg"
+{{< figure src="img/ballon.jpg"
            alt="Ballonwettbewerb am Herbstfest 2016"
 >}}
 

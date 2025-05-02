@@ -51,6 +51,6 @@ des letzten Jahres.
 [bilder]: 
 [news]: {{< ref rueckblick.md >}}
 
-{{< figure src="/img/events/chanderli.jpg"
+{{< figure src="img/chanderli.jpg"
            alt="Das Chanderli durch das Kandertal"
 >}}

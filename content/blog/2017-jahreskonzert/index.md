@@ -12,7 +12,7 @@ Am Freitag den 27. und Samstag den 28. Januar veranstalten wir unser
 alljährliches Jahreskonzert in der Kandertalhalle in Wollbach. Einlass ist
 ab 18:30, Konzertbeginn um 20:00.
 
-{{< figure src="/files/flyer/17_jahreskonzert.jpg"
+{{< figure src="img/17_jahreskonzert.jpg"
            alt="Jahreskonzert 2017"
 >}}
 

@@ -12,12 +12,16 @@ customJs:
   <div class="mvw-brand">
     {{< figure src="img/logo.png"
                alt="Das Logo des Musikvereins Wollbach 1866 e.V."
+               sizes="(max-width: 480px) 480px, 768px"
+               isAboveTheFold=true
     >}}
   </div>
   <div class="open-air">
     <a href="{{< ref "2025-open-air.md" >}}">
-      {{< figure src="img/events/25-open-air/open-air.jpg"
+      {{< figure src="img/open-air.jpg"
                  alt="Open-Air 2025"
+                 sizes="(max-width: 480px) 480px, 768px"
+                 isAboveTheFold=true
       >}}
     </a>
   </div>
@@ -29,26 +33,28 @@ Der Musikverein Wollbach ist ein kreatives Blasorchester mit einer über 150-jä
 Blasmusik gehört ebenso zum Repertoire wie swingende Unterhaltungsmusik. Im Orchester spielen über 50 Musiker aller
 Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent Oliver Hauser.
 
-{{< slider >}}
+{{< slider
+    images="img/slider/alle-1.jpg,img/slider/tuba-1.jpg,img/slider/dampfmusik.jpg,img/slider/klarinette.jpg,img/slider/konzert_2020.jpg,img/slider/trompete-2.jpg,img/slider/alle-2.jpg,img/slider/guitar.jpg,img/slider/konzert_2018.jpg,img/slider/saxophon-1.jpg,img/slider/trompete-1.jpg,img/slider/alle-3.jpg,img/slider/horn.jpg,img/slider/konzert_2019.jpg,img/slider/saxophon.jpg,img/slider/konzert_2023.jpg"
+>}}
 
 <div class="tiles">
   {{< tile file="2025-open-air.md"
-           image="img/events/25-open-air/open-air.jpg"
+           image="img/open-air.jpg"
            title="Open Air 2025"
            text="Der Schulhof in Wollbach wird am 5. Juli zur Freilichtbühne. Gereicht werden edle Weine, exklusives Bier und erlesene Speisen, sowie Erfrischungen an Sekt- und Cocktailbar."
   />}}
   {{< tile file="mitgliedschaft"
-           image="slider/alle-1.jpg"
+           image="img/slider/alle-1.jpg"
            title="Mitglied werden"
            text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
   />}}
   {{< tile file="termine"
-           image="img/jahreskonzerte/konzert_2023-2.jpg"
+           image="img/termine.webp"
            title="Termine"
            text="Lust uns zu hören? Hier ist unser Terminkalender..."
   />}}
   {{< tile file="gooding"
-           image="img/events/gooding.png"
+           image="img/gooding.png"
            title="Unterstützen Sie uns"
            text="Unterstützen Sie uns bei Ihren täglichen Einkäufen – ganz nebenbei und ohne Extrakosten. Welche Unternehmen mitmachen sehen Sie hier..."
   />}}

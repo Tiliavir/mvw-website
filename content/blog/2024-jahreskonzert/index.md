@@ -13,7 +13,7 @@ customCss:
 <div class="header">
     <a href="https://tickets.mv-wollbach.de" target="_blank" class="unstyled">
         {{< figure
-              src="/img/events/24-konzert/24_konzert_header.png"
+              src="img/24_konzert_header.png"
               alt="Tickets: Hör gut zu! 🎟️"
         >}}
     </a>
@@ -24,7 +24,7 @@ Ob Märchen, fantasievolle Kindergeschichten oder biblische Erzählungen - sie a
 Wenn wir ein Buch aufklappen und Wort für Wort in die spannenden Geschichten eintauchen, werden unvergessliche
 Kindheitserinnerungen wach. Jede Generation ist neu fasziniert von den zeitlos erscheinenden Erzählungen.
 
-{{< figure src="/img/events/24-konzert/24_konzert_flyer_4.jpg"
+{{< figure src="img/24_konzert_flyer_4.jpg"
 alt="Jahreskonzert 2024 - Hör gut zu! Am Freitag den 26. und Samstag den 27. Januar um 20 Uhr in der Kandertalhalle in Wollbach. Einlass 18:30 Uhr."
 >}}
 
@@ -34,7 +34,7 @@ fallen zu lassen. Mit einem vollen Orchester, Erzählern und Schauspielern werde
 Begleiten Sie uns auf dieser fantastischen Reise, bei der wir das Bücherregal durchstöbern und die Erzählungen
 zum Klingeln bringen.
 
-{{< figure src="/img/events/24-konzert/24_konzert_flyer_5.jpg"
+{{< figure src="img/24_konzert_flyer_5.jpg"
 alt="Jahreskonzert 2024 - Hör gut zu! Am Freitag den 26. und Samstag den 27. Januar um 20 Uhr in der Kandertalhalle in Wollbach. Einlass 18:30 Uhr."
 >}}
 
@@ -47,6 +47,6 @@ Uhr (Dauer etwa eine Stunde) für unsere kleinen Zuhörer an.
 - [Flyer des Jahreskonzertes herunterladen](/files/flyer/24_jahreskonzert_flyer.pdf)
 - [Tickets](https://tickets.mv-wollbach.de)
 
-{{< figure src="/img/events/24-konzert/24_konzert_flyer_6.jpg"
+{{< figure src="img/24_konzert_flyer_6.jpg"
 alt="Jahreskonzert 2024 - Hör gut zu! Am Freitag den 26. und Samstag den 27. Januar um 20 Uhr in der Kandertalhalle in Wollbach. Einlass 18:30 Uhr."
 >}}

@@ -16,7 +16,7 @@ arrangiert und alle werden live erklingen.
 Mit einem Abend voll packendem Sound, groovenden Rhythmen und begeisternden
 Gesangssolisten wollen wir unser Jubiläum gebührend feiern.
 
-{{< figure src="/files/flyer/16_jahreskonzert.jpg"
+{{< figure src="img/16_jahreskonzert.jpg"
            alt="Jahreskonzert 2016"
 >}}
 

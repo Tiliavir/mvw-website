@@ -13,14 +13,14 @@ customCss:
 <div class="header">
     <div class="header-logo">
         {{< figure
-              src="/img/events/23-rock/rock-header.jpg"
+              src="img/rock-header.jpg"
               alt="Jahreskonzert: Rock Symphony"
         >}}
     </div>
     <div class="header-ticketshop">
         <a href="https://tickets.mv-wollbach.de" target="_blank" class="unstyled">
             {{< figure
-                  src="/img/events/23-rock/tickets.jpg"
+                  src="img/tickets.jpg"
                   alt="Tickets: Rock Symphony 🎟️"
             >}}
         </a>
@@ -83,7 +83,7 @@ Sängerensemble des Musikvereins präsentieren.
 
 **Wir freuen uns auf ihren Besuch!**
 
-{{< figure src="/files/flyer/23_jahreskonzert_plakat.jpg"
+{{< figure src="img/23_jahreskonzert_plakat.jpg"
            alt="Jahreskonzert 2023 - Rock Symphony von Donnerstag 26., Freitag 27. und Samstag 28. Januar um 20 Uhr in der Kandertalhalle in Wollbach. Einlass 18:30 Uhr."
 >}}
 

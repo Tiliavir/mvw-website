@@ -1,4 +1,5 @@
-{{ with (.Page.Resources.GetMatch "register.json" | transform.Unmarshal).mitglieder }}
+{{- with $.Site.Data.register.mitglieder -}}
+
 {{ $register := . }}
 <table class="mvw-register-table responsive" aria-label="Register">
   <thead>
@@ -8,13 +9,19 @@
   </tr>
   </thead>
   <tbody>
-  {{ range (slice "Querflöte" "Oboe" "Klarinette" "Fagott" "Altsaxophon" "Tenorsaxophon" "Baritonsaxophon" "Trompete" "Horn" "Posaune" "Euphonium" "Tuba" "Klavier" "Gitarre" "Schlagzeug") }}
+  {{ range  $i, $reg := (slice "Querflöte" "Oboe" "Klarinette" "Fagott" "Altsaxophon" "Tenorsaxophon" "Baritonsaxophon" "Trompete" "Horn" "Posaune" "Euphonium" "Tuba" "Klavier" "Gitarre" "Schlagzeug") }}
     <tr>
       <td>
         <figure>
-          <img src="/img/register/{{ replace (. | lower) "ö" "oe" }}_1.jpg"
-               alt="{{ . }}"
-               title="{{ . }}" />
+          {{ $src := printf "img/%s_1.jpg" (replace (lower $reg) "ö" "oe") }}
+          {{- if $.Page.Resources.GetMatch $src  -}}
+            {{- $isAboveTheFold := lt $i 3 -}}
+            {{ partial "image" (dict "Page" $.Page "src" $src "alt" $reg "title" $reg "isAboveTheFold" $isAboveTheFold "sizes" "(max-width: 480px) 480px, 768px") }}
+          {{- else -}}
+            {{ with $.Page.Resources.GetMatch "img/fallback.jpg"}}
+              <img src="{{ .RelPermalink }}" alt="Leider kein Bild vorhanden" title="Leider kein Bild vorhanden" />
+            {{- end -}}
+          {{- end -}}
         </figure>
       </td>
       <td>

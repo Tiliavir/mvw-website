@@ -8,7 +8,7 @@ menu:
     weight: 300
 ---
 
-{{< figure src="/img/jugend/jugendorchester.jpg"
+{{< figure src="img/jugendorchester.jpg"
            alt="Das Jugendorchester im Mai 2015"
            caption="Das Jugendorchester im Mai 2015"
 >}}
@@ -17,7 +17,7 @@ menu:
 Unsere Dirigentin ist Maria Gut. Maria spielt Klarinette, Saxophon und Klavier
 und dirigiert seit 2017 unser Jugendorchester.
 
-{{< figure src="/img/personen/dirigentin_jugend.jpg"
+{{< figure src="img/dirigentin_jugend.jpg"
            alt="Jugendorchester Dirigentin"
            caption="Die Jugendorchester Dirigentin: Maria Gut"
 >}}

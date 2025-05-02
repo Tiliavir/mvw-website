@@ -27,7 +27,12 @@ class Register {
         if (remainingRegImageUrls.length > 0) {
           $image.fadeOut("fast", (): void => {
             const nexIndex = Math.floor(Math.random() * remainingRegImageUrls.length);
-            $image.attr("src", "/img/register/" + remainingRegImageUrls[nexIndex]);
+            $image.removeAttr("width");
+            $image.removeAttr("height");
+            if($image.parent().is("picture")) {
+              $image.parent().replaceWith($image);
+            }
+            $image.attr("src", "/das-orchester/register/img/" + remainingRegImageUrls[nexIndex]);
             $image.fadeIn("slow");
           });
           break;

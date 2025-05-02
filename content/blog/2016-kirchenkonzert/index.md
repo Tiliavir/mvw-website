@@ -14,6 +14,6 @@ das Verbandsjugendorchester Hochrhein am 08. Mai ein Jubiläums-Doppelkonzert.
 
 Weitere Details zum Kirchenkonzert entnehmen Sie dem [Flyer](/files/flyer/16_kirchenkonzert.pdf).
 
-{{< figure src="/img/events/kirche_kandern.jpg"
+{{< figure src="img/kirche_kandern.jpg"
            alt="Evangelische Stadtkirche Kandern"
 >}}

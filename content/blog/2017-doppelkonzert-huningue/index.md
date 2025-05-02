@@ -28,6 +28,6 @@ Doppelkonzert mit der Stadtmusik Hüningen im Triangle.
   0. Der Hammer des Gottes Thor
 - Concerto für Klarinette und Blasorchester, Oscar Navaro, Solistin: Maria Krey
 
-{{< figure src="/img/events/spring.jpg"
+{{< figure src="img/spring.jpg"
            alt="Frühling"
 >}}

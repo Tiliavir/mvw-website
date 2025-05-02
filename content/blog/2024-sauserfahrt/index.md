@@ -57,6 +57,6 @@ letzten Jahres.
 [news]: {{< ref rueckblick.md >}}
 [flyer]: files/flyer/24_sauserbummel.pdf
 
-{{< figure src="/img/events/chanderli.jpg"
+{{< figure src="img/chanderli.jpg"
            alt="Das Chanderli durch das Kandertal"
 >}}

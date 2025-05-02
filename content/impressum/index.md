@@ -10,7 +10,7 @@ customCss:
 ## Kontakt
 
 {{< figure class="fueller"
-           src="/img/fueller.jpg"
+           src="img/fueller.jpg"
            alt="Füller">}}
 
 Wenn Sie wissen, an wen Sie sich wenden möchten, finden Sie hier die

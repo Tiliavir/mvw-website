@@ -86,7 +86,9 @@
         "content": ""
       },
       {
-        "keywords": ["Konzert"],
+        "keywords": [
+          "Konzert"
+        ],
         "title": "Wollbach Open-Air",
         "starttime": "2024-07-06",
         "content": "Gut 800 Besucher kamen zum fünften Open-Air-Konzert des Musikvereins Wollbach. Trotz Regens blieb die Stimmung ausgelassen: Bereits am Eingang wurden Regenponchos verteilt. Mit Liedern wie „Candyman“, „A Kind of Magic“, „Hit the Road Jack“ oder „The Amazing Abba Collection“ begeisterten Orchester und Gesangsensemble unter der Leitung von Oliver Hauser das Publikum. Technik, Licht und eine große Videowand sorgten für ein professionelles Konzert-Erlebnis. Höhepunkt war ein Regenbogen zur Konzertmitte – gefolgt von einem regenfreien zweiten Teil.",
@@ -112,10 +114,16 @@
         ]
       },
       {
-        "image": {
-          "src": "/img/events/24-konzert/24_konzert_flyer_1.jpg",
-          "title": "Flyer zum Jahreskonzert 2024: Hör gut zu!"
-        },
+        "images": [
+          {
+            "src": "img/24_konzert_flyer_1.jpg",
+            "title": "Flyer zum Jahreskonzert 2024: Hör gut zu!"
+          },
+          {
+            "src": "img/konzert_2024.jpg",
+            "title": "Jahreskonzert 2024"
+          }
+        ],
         "keywords": [
           "Konzert",
           "Jahreskonzert"
@@ -123,7 +131,7 @@
         "title": "Jahreskonzert: 'Hör gut zu!'",
         "starttime": "2024-01-26",
         "endtime": "2024-01-28",
-        "content": "\"Beim Jahreskonzert 2024 führte der Musikverein Wollbach durch ein musikalisches Märchenprogramm. Unter anderem erklangen Vertonungen von 'Rotkäppchen', 'Rumpelstilzchen', 'Dornröschen', 'Pinocchio', 'Karneval der Tiere', 'Arche Noah' und 'Max und Moritz'. Erzählt wurden die Geschichten von Lena und Ekkehard Bierl sowie Sängerinnen wie Anuschka LaVecchia und Christina de Groote. Dirigent Oliver Hauser forderte Höchstleistung von seinem Orchester – Lichtshow und Bühnenbild sorgten für zusätzliche Atmosphäre.\"<br/><figure><img alt='Jahreskonzert 2024' src='/img/jahreskonzerte/konzert_2024.jpg' /></figure>",
+        "content": "Beim Jahreskonzert 2024 führte der Musikverein Wollbach durch ein musikalisches Märchenprogramm. Unter anderem erklangen Vertonungen von 'Rotkäppchen', 'Rumpelstilzchen', 'Dornröschen', 'Pinocchio', 'Karneval der Tiere', 'Arche Noah' und 'Max und Moritz'. Erzählt wurden die Geschichten von Lena und Ekkehard Bierl sowie Sängerinnen wie Anuschka LaVecchia und Christina de Groote. Dirigent Oliver Hauser forderte Höchstleistung von seinem Orchester – Lichtshow und Bühnenbild sorgten für zusätzliche Atmosphäre.",
         "berichte": [
           {
             "title": "Der Saal staunt in Ehrfurcht",
@@ -179,10 +187,20 @@
         ]
       },
       {
-        "image": {
-          "src": "/files/flyer/23_jahreskonzert_plakat.jpg",
-          "title": "Flyer zum Jahreskonzert 2023: Rock Symphony"
-        },
+        "images": [
+          {
+            "src": "img/23_jahreskonzert_plakat.jpg",
+            "title": "Flyer zum Jahreskonzert 2023: Rock Symphony"
+          },
+          {
+            "src": "img/konzert_2023-1.jpg",
+            "title": "Jahreskonzert 2023"
+          },
+          {
+            "src": "img/konzert_2023-2.jpg",
+            "title": "Jahreskonzert 2023"
+          }
+        ],
         "keywords": [
           "Konzert",
           "Jahreskonzert"
@@ -190,7 +208,7 @@
         "title": "Jahreskonzert: 'Rock Symphony'",
         "starttime": "2023-01-26",
         "endtime": "2023-01-28",
-        "content": "<br/> <img class='add-img' alt='Jahreskonzert 2023' src='/img/jahreskonzerte/konzert_2023-1.jpg' /><img class='add-img' alt='Jahreskonzert 2023' src='/img/jahreskonzerte/konzert_2023-2.jpg' />",
+        "content": "",
         "berichte": [
           {
             "title": "Klassische Musik trifft rockigen Sound",
@@ -224,10 +242,12 @@
     ],
     "2022": [
       {
-        "image": {
-          "src": "/files/flyer/22_open-air.jpg",
-          "title": "Flyer zum Wollbach OpenAir 2022"
-        },
+        "images": [
+          {
+            "src": "img/22_open-air.jpg",
+            "title": "Flyer zum Wollbach OpenAir 2022"
+          }
+        ],
         "keywords": [
           "Konzert"
         ],
@@ -264,10 +284,12 @@
         "content": ""
       },
       {
-        "image": {
-          "src": "/files/flyer/22_jahreskonzert_plakat.jpg",
-          "title": "Flyer zum Jahreskonzert 2022 - Metropolis"
-        },
+        "images": [
+          {
+            "src": "img/22_jahreskonzert_plakat.jpg",
+            "title": "Flyer zum Jahreskonzert 2022 - Metropolis"
+          }
+        ],
         "keywords": [
           "Konzert",
           "Jahreskonzert"
@@ -321,7 +343,11 @@
         "title": "Generalversammlung",
         "starttime": "2020-02-13",
         "content": "In der Generalversammlung 2020 des Musikvereins Wollbach wurde auf ein ereignisreiches Jahr zurückgeblickt. Die musikalischen Leistungen, die engagierte Jugendarbeit und die Kontinuität im Vereinsleben standen im Mittelpunkt. Auch das anspruchsvolle musikalische Niveau des Orchesters wurde hervorgehoben.",
-        "keywords": ["Generalversammlung", "Jahresrückblick", "Verein"],
+        "keywords": [
+          "Generalversammlung",
+          "Jahresrückblick",
+          "Verein"
+        ],
         "berichte": [
           {
             "title": "Anspruchsvoll und auch mitreißend",
@@ -335,10 +361,12 @@
         ]
       },
       {
-        "image": {
-          "src": "/img/jahreskonzerte/konzert_2020.jpg",
-          "title": "Der Musikverein vor dem Jahreskonzert 2020"
-        },
+        "images": [
+          {
+            "src": "img/konzert_2020.jpg",
+            "title": "Der Musikverein vor dem Jahreskonzert 2020"
+          }
+        ],
         "keywords": [
           "Konzert",
           "Jahreskonzert"
@@ -471,10 +499,12 @@
         "keywords": [
           "Jugend"
         ],
-        "image": {
-          "src": "/img/news/2019_muttertagskonzert.jpg",
-          "title": "Muttertagskonzert 2019"
-        },
+        "images": [
+          {
+            "src": "img/2019_muttertagskonzert.jpg",
+            "title": "Muttertagskonzert 2019"
+          }
+        ],
         "content": "Dieses Jahr stand das Muttertagskonzert des Vorstufen- und Jugendorchester unter dem Motto „Zirkus“. So zeigten unsere jüngsten Musikerinnen und Musiker gleich mehrere Talente. Nicht nur auf ihrem Instrument, sondern auch auf dem Einrad, dem Rola Bola, beim jonglieren oder turnen, mit dem Diabolo, den Kiwidos oder Hula Hoop Reifen überzeugten die Jungmusiker das große Publikum. Nach dem Konzert konnten sich alle an dem vielseitigen Kuchenbuffet bedienen.",
         "title": "Muttertagskonzert des Vorstufen- und Jugendorchesters",
         "starttime": "2019-05-12"
@@ -483,10 +513,12 @@
         "keywords": [
           "Fastnachtsfeuer"
         ],
-        "image": {
-          "src": "/img/news/2019_fastnachtsfeuer.jpg",
-          "title": "Fastnachtsfeuer 2019"
-        },
+        "images": [
+          {
+            "src": "img/2019_fastnachtsfeuer.jpg",
+            "title": "Fastnachtsfeuer 2019"
+          }
+        ],
         "content": "Wegen den Wetterbedingungen mussten wir unser diesjähriges Fansachtsfeuer verschieben. Jedoch konnten wir es dann am 16. März 2019 unter einem leuchtenden Sternenhimmel nachholen. Auch in diesem Jahr wurden kräftig Scheiben geschlagen. Als Stärkung gab es Grill- und Rostbratwürste sowie Berliner, Kuchen und natürlich Getränke.",
         "title": "Fastnachtsfeuer",
         "starttime": "2019-03-16"
@@ -494,11 +526,13 @@
       {
         "content": "Bei der diesjährigen Generalversammlung reflektierten wir noch einmal das vergangene Jahr mit all seinen Veranstaltungen und Ereignissen. Ebenso wurde ein Teil der Vorstandschaft wiedergewählt und für das kommende Jahr aufgestellt.",
         "title": "Generalversammlung",
-        "image": {
-          "title": "Generalversammlung 2019",
-          "caption": "Die Vorstandschaft nach der Generalversammlung",
-          "src": "/img/news/2019_generalversammlung.jpg"
-        },
+        "images": [
+          {
+            "title": "Generalversammlung 2019",
+            "caption": "Die Vorstandschaft nach der Generalversammlung",
+            "src": "img/2019_generalversammlung.jpg"
+          }
+        ],
         "keywords": [
           "Generalversammlung"
         ],
@@ -525,10 +559,12 @@
         ]
       },
       {
-        "image": {
-          "src": "/img/jahreskonzerte/konzert_2019.jpg",
-          "title": "Der Musikverein vor dem Jahreskonzert 2019"
-        },
+        "images": [
+          {
+            "src": "img/konzert_2019.jpg",
+            "title": "Der Musikverein vor dem Jahreskonzert 2019"
+          }
+        ],
         "keywords": [
           "Konzert",
           "Jahreskonzert"
@@ -571,10 +607,12 @@
           "Jugend"
         ],
         "title": "Weihnachtsvorspiel",
-        "image": {
-          "src": "/img/news/2018_weihnachtsvorspiel.jpg",
-          "title": "Weihnachtsvorspiel 2018"
-        },
+        "images": [
+          {
+            "src": "img/2018_weihnachtsvorspiel.jpg",
+            "title": "Weihnachtsvorspiel 2018"
+          }
+        ],
         "starttime": "2018-12-09",
         "content": "Unsere jüngsten Musikerinnen und Musiker konnten beim Weihnachtsvorspiel in der Kirche ihr neues Können unter Beweis stellen. Auch das Vorstufenorchester begeisterte mit seinen Beiträgen zum Abschluss des Abends.",
         "berichte": [
@@ -596,10 +634,12 @@
       },
       {
         "starttime": "2018-11-30",
-        "image": {
-          "src": "/img/news/2018_adventskranzverkauf.jpg",
-          "title": "Das Jugendorchester beim Adventskranzverkauf 2018"
-        },
+        "images": [
+          {
+            "src": "img/2018_adventskranzverkauf.jpg",
+            "title": "Das Jugendorchester beim Adventskranzverkauf 2018"
+          }
+        ],
         "title": "Adventskranzverkauf",
         "content": "Unsere Jungmusiker haben auch in diesem Jahr wieder fleißig Adventskränze gebunden und dekoriert. Diese konnten wir beim Adventskranzverkauf im schönen Forsthof verkaufen. Für das leibliche wohl war mit Raclette, Grillwürsten, Glühwein und Kinderpunsch gesorgt. Das Vorstufen- und Jugendorchester stimmte unsere Gäste mit Weihnachtsliedern auf die Weihnachtszeit ein."
       },
@@ -615,10 +655,12 @@
         ],
         "title": "Jungmusikerleistungsabzeichen in Bronze",
         "starttime": "2018-10-01",
-        "image": {
-          "src": "/img/jugend/jmla/2018_jmla_bronze.jpg",
-          "title": "JMLA Bronze 2018"
-        },
+        "images": [
+          {
+            "src": "img/2018_jmla_bronze.jpg",
+            "title": "JMLA Bronze 2018"
+          }
+        ],
         "content": "Jungmusiker Leistungsabzeichen in Bronze! Wir gratulieren folgenden 7 Jungmusikerinnen und Jungmusikern ganz herzlich: Henri, Ben, Anny, Hanna, Laurina, Emil und Alban."
       },
       {
@@ -641,10 +683,12 @@
         "keywords": [
           "Sauserbummel"
         ],
-        "image": {
-          "src": "/img/news/2018_sauserbummel.jpg",
-          "title": "Sauserbummel 2018"
-        },
+        "images": [
+          {
+            "src": "img/2018_sauserbummel.jpg",
+            "title": "Sauserbummel 2018"
+          }
+        ],
         "starttime": "2018-10-13",
         "title": "Sauserbummel",
         "content": "Am 13. Oktober 2018 war es wieder soweit. Das Chanderli dampfte mit unseren 250 Gästen von Haltingen Richtung Hammerstein. Anschließend ging es bei strahlendem Sonnenschein durch die Weinberge mi 5 Weinstationen. An allen Stationen gab es unterschiedliche Weine von Weingütern aus der Region. Bei guter Stimmung konnten unsere Gäste den Abend mit unserer Dampfmusik ausklingen lassen. Fast pünktlich dampfte das Chanderli dann wieder zurück nach Haltingen.",
@@ -667,10 +711,12 @@
           "Jugend"
         ],
         "starttime": "2018-07-01",
-        "image": {
-          "src": "/img/jugend/jmla/2018_jmla_silber.jpg",
-          "title": ""
-        },
+        "images": [
+          {
+            "src": "img/2018_jmla_silber.jpg",
+            "title": ""
+          }
+        ],
         "content": "Jungmusiker Leistungsabzeichen in Silber! Zu diesem tolle Erfolg gratulieren wir ganz herzlich unserer Klarinettistin Karolin Grozinger."
       },
       {
@@ -679,10 +725,12 @@
         ],
         "starttime": "2018-05-22",
         "title": "Forsthof Open-Air",
-        "image": {
-          "src": "/img/news/2018_forsthof_openair.jpg",
-          "title": "Forsthof Open-Air 2018"
-        },
+        "images": [
+          {
+            "src": "img/2018_forsthof_openair.jpg",
+            "title": "Forsthof Open-Air 2018"
+          }
+        ],
         "content": "Am 22. Juni 2018 fand unsere Premiere des Forsthof Open Air statt. Bei ausverkauftem Forsthof und etwas Glück mit dem Wetter konnten wir unser Sommerprogramm darbieten. Mit dabei waren auch unsere Sängerinnen Anuschka Wagner, Christina De Groote, Damaris Arnold. Und Raija Kuckuk sowie unser Sänger Alex Gottstein. Kaltes Bier gab es vom Brauwerk in Tannenkirch und leckere Speisen der Engenmühle in Wintersweiler. Leckere Cocktails wurden an der Cocktailbar durch unsere Musikerfreunde aus Bannwil serviert.",
         "berichte": [
           {
@@ -718,10 +766,12 @@
           "Marschmusikfestival"
         ],
         "starttime": "2018-05-05",
-        "image": {
-          "src": "/img/news/2018_marschmusik.jpg",
-          "title": "Marschmusik 2018"
-        },
+        "images": [
+          {
+            "src": "img/2018_marschmusik.jpg",
+            "title": "Marschmusik 2018"
+          }
+        ],
         "title": "Marschmusikfestival",
         "content": "Bei Sonnenschein und strahlend blauem Himmel sind wir am 05. Mai 2018 mit unserer Marschmusik durch die Dörfer maschiert. Dieses Jahr waren wir zu Gast in Schallbach, Wollbach und Hammerstein. Unsere letzte Station war in Egisholz, wo wir beim Grillen den Abend ausklingen konnten.",
         "berichte": [
@@ -750,10 +800,12 @@
           "Konzert"
         ],
         "starttime": "2018-04-28",
-        "image": {
-          "src": "/img/news/2018_doppelkonzert_fahrnau.jpg",
-          "title": "Doppelkonzert mit dem Musikverein Fahrnau"
-        },
+        "images": [
+          {
+            "src": "img/2018_doppelkonzert_fahrnau.jpg",
+            "title": "Doppelkonzert mit dem Musikverein Fahrnau"
+          }
+        ],
         "title": "Dopelkonzert mit dem Musikverein Fahrnau",
         "content": "Ein weiteres tolles Doppelkonzert durften wir am 28.04.2018 in der Sadthalle in Schopfheim erleben. Dieses Mal waren wir zu Gast beim Musikverein Fahrnau. Auch beim Musikverein Fahrnau bedanken wir uns ganz herzlich für einen wundervollen Konzertabend.",
         "berichte": [
@@ -789,10 +841,12 @@
         ],
         "starttime": "2018-04-14",
         "title": "Doppelkonzert mit dem Musikverein Schwörstadt",
-        "image": {
-          "src": "/img/news/2018_doppelkonzert_schwoerstadt.jpg",
-          "title": "Doppelkonzert mit dem Musikverein Schwörstadt"
-        },
+        "images": [
+          {
+            "src": "img/2018_doppelkonzert_schwoerstadt.jpg",
+            "title": "Doppelkonzert mit dem Musikverein Schwörstadt"
+          }
+        ],
         "content": "Am 14. April 2018 hatten wir ein gemeinsames Doppelkonzert mit dem Musikverein Schwörstadt. Für uns war dies ein gelungener Abend und wir bedanken uns bei den Musikerinnen und Musikern aus Schwörstadt für ihre Gastfreundschaft.",
         "berichte": [
           {
@@ -852,10 +906,12 @@
         ]
       },
       {
-        "image": {
-          "src": "/img/jahreskonzerte/konzert_2018.jpg",
-          "title": "Der Musikverein vor dem Jahreskonzert 2018"
-        },
+        "images": [
+          {
+            "src": "img/konzert_2018.jpg",
+            "title": "Der Musikverein vor dem Jahreskonzert 2018"
+          }
+        ],
         "starttime": "2018-01-26",
         "endtime": "2018-01-27",
         "title": "Jahreskonzert",
@@ -1164,10 +1220,12 @@
         "starttime": "2016-11-26",
         "title": "Jungmusikerleistungsabzeichen in Bronze",
         "content": "Wir gratulieren ganz herzlich Lea Kronenberger, Lilly Müller, Anna Sieglin und Antonia Müller zum Bestehen des JMLA in Bronze.",
-        "image": {
-          "title": "v.l.n.r.: Lea Kronenberger, Lilly Müller, Anna Sieglin und Antonia Müller",
-          "src": "/img/jugend/jmla/2016_jmla_bronze.jpg"
-        },
+        "images": [
+          {
+            "title": "v.l.n.r.: Lea Kronenberger, Lilly Müller, Anna Sieglin und Antonia Müller",
+            "src": "img/2016_jmla_bronze.jpg"
+          }
+        ],
         "keywords": [
           "JMLA",
           "Jugend"
@@ -1232,10 +1290,12 @@
         "endtime": "2016-07-31",
         "title": "Jungmusikerleistungsabzeichen in Silber",
         "content": "Wir gratulieren ganz herzlich Lina Müller und Kim Strohmeier zum Bestehen des JMLA in Silber auf der Klarinette.",
-        "image": {
-          "src": "/img/jugend/jmla/2016_jmla_silber.jpg",
-          "title": "Lina Müller bei der Urkundenverleihung in Tegernau"
-        },
+        "images": [
+          {
+            "src": "img/2016_jmla_silber.jpg",
+            "title": "Lina Müller bei der Urkundenverleihung in Tegernau"
+          }
+        ],
         "keywords": [
           "JMLA",
           "Jugend"
@@ -1281,7 +1341,6 @@
           "Marschmusikfestival"
         ],
         "berichte": [
-
           {
             "date": "2016-06-08T22:47:00.000Z",
             "hasDescription": true,
@@ -1333,10 +1392,12 @@
         "starttime": "2016-05-08",
         "title": "Kirchenkonzert",
         "content": "Zusammen mit dem Verbandsjugendorchester Hochrhein gaben wir am 08. Mai unser [Jubiläums-Doppelkonzert](blog_2016-kirchenkonzert.html) in der evangelischen Stadtkirche Kandern.",
-        "image": {
-          "title": "Das Verbandsjugendorchester Hochrhein mit dem Musikverein Wollbach vor der evangelischen Stadtkirche Kandern",
-          "src": "/img/news/2016_kirchenkonzert.jpg"
-        },
+        "images": [
+          {
+            "title": "Das Verbandsjugendorchester Hochrhein mit dem Musikverein Wollbach vor der evangelischen Stadtkirche Kandern",
+            "src": "img/2016_kirchenkonzert.jpg"
+          }
+        ],
         "keywords": [
           "Konzert",
           "Kirchenkonzert"
@@ -1414,7 +1475,6 @@
           "Jahreskonzert"
         ],
         "berichte": [
-
           {
             "date": "2016-01-25T00:00:00.000Z",
             "hasDescription": true,
@@ -1509,18 +1569,22 @@
       {
         "content": "Mit Bravour hat Anfang November unsere Musikerin und Dirigentin des Vorstufenorchesters Maria Krey den C3 Kurs mit Dirigierprüfung in Staufen abgeschlossen. Wir gratulieren herzlich zu diesem tollen Erfolg!",
         "title": "C3 Prüfung",
-        "image": {
-          "title": "C3 Prüfung: Maria Krey",
-          "src": "/img/vorstufe/dirigentin_vorstufenorchester.jpg"
-        }
+        "images": [
+          {
+            "title": "C3 Prüfung: Maria Krey",
+            "src": "img/dirigentin_vorstufenorchester.jpg"
+          }
+        ]
       },
       {
         "content": "Nachdem sie bereits letztes Jahr Gold auf der Klarinette gemacht hat, hat sich unsere Musikerin Luisa Krey nochmals goldene Sporen verdient, denn im Herbst hat sie auf dem Fagott das JMLA in Gold in Staufen abgelegt. Wir gratulieren zu der doppelten tollen Leistung!",
         "title": "Jungmusikerleistungsabzeichen in Gold",
-        "image": {
-          "title": "JMLA in Gold 2015: Luisa Krey",
-          "src": "/img/jugend/jmla/2015_jmla_gold_fagott.jpg"
-        },
+        "images": [
+          {
+            "title": "JMLA in Gold 2015: Luisa Krey",
+            "src": "img/2015_jmla_gold_fagott.jpg"
+          }
+        ],
         "keywords": [
           "JMLA",
           "Jugend"
@@ -1540,10 +1604,12 @@
       {
         "title": "Jungmusikerleistungsabzeichen in Bronze",
         "content": "Madleina Muchenberger und Josepha Brehm haben erfolgreich ihre Prüfung zum Jungmusikerleistungsabzeichen in Bronze abgelegt. Hierzu gratulieren wir beiden ganz herzlich und wünschen ihnen für ihre weitere Ausbildung viel Erfolg und weiterhin viel Spaß am Musizieren.",
-        "image": {
-          "title": "JMLA in Bronze 2015: Madleina Muchenberger und Josepha Brehm",
-          "src": "/img/jugend/jmla/2015_jmla_bronze.jpg"
-        },
+        "images": [
+          {
+            "title": "JMLA in Bronze 2015: Madleina Muchenberger und Josepha Brehm",
+            "src": "img/2015_jmla_bronze.jpg"
+          }
+        ],
         "keywords": [
           "JMLA",
           "Jugend"
@@ -1617,10 +1683,12 @@
       },
       {
         "content": "In den Osterferien hat unser Posaunist Sven Gut das Jungmusiker Leistungsabzeichen in Gold absolviert. Zu dieser tollen Leistung gratulieren wir Dir ganz herzlich und wünschen Dir weiterhin viel Freude und Spaß beim Musizieren!",
-        "image": {
-          "title": "JMLA in Gold 2015: Sven Gut",
-          "src": "/img/jugend/jmla/2015_jmla_gold.jpg"
-        },
+        "images": [
+          {
+            "title": "JMLA in Gold 2015: Sven Gut",
+            "src": "img/2015_jmla_gold.jpg"
+          }
+        ],
         "title": "Jungmusikerleistungsabzeichen in Gold",
         "keywords": [
           "JMLA",
@@ -1630,11 +1698,13 @@
       {
         "starttime": "2015-05-10",
         "title": "Vorstufen- und Jugendorchesterkonzert",
-        "image": {
-          "title": "Vorstufen- und Jugendorchester",
-          "src": "/img/jugend/jugend_und_vorstufenorchester.jpg",
-          "caption": "Das Vorstufen- und Jugendorchester bei ihrem gemeinsamen Doppelkonzert"
-        },
+        "images": [
+          {
+            "title": "Vorstufen- und Jugendorchester",
+            "src": "img/jugend_und_vorstufenorchester.jpg",
+            "caption": "Das Vorstufen- und Jugendorchester bei ihrem gemeinsamen Doppelkonzert"
+          }
+        ],
         "content": "Das Jugendorchester gab am Muttertagssonntag ein tolles Konzert unter der Leitung von Michael Bierwirt. Auch feierte das Vorstufenorchester unter der Leitung von Maria Krey seine sehr erfolgreiche Bühnen-Premiere.",
         "keywords": [
           "Jugend"
@@ -1667,11 +1737,13 @@
         "starttime": "2015-01-23",
         "endtime": "2015-01-24",
         "title": "Jahreskonzert",
-        "image": {
-          "caption": "Der Musikverein Wollbach vor dem Jahreskonzert 2015",
-          "src": "/img/jahreskonzerte/konzert_2015.jpg",
-          "title": "Der Musikverein Wollbach vor dem Jahreskonzert 2015"
-        },
+        "images": [
+          {
+            "caption": "Der Musikverein Wollbach vor dem Jahreskonzert 2015",
+            "src": "img/konzert_2015.jpg",
+            "title": "Der Musikverein Wollbach vor dem Jahreskonzert 2015"
+          }
+        ],
         "content": "[Flyer des Jahreskonzertes 2015](/files/flyer/15_jahreskonzert.pdf)<br />Gleich zweimal haben wir unser Konzertprogramm aufgeführt und das mit vollem Erfolg. Beide Konzertabende waren ausverkauft und die Halle zweimal bei toller Atmosphäre bis auf den letzten Platz gefüllt. Für uns Musiker, die Sänger und die Zuhörer war es ein einmaliges (beziehungsweise eben zweimaliges) Erlebnis.",
         "keywords": [
           "Konzert",
@@ -1717,10 +1789,12 @@
       {
         "title": "Jungmusikerleistungsabzeichen in Gold",
         "content": "Im Jahr 2014 haben unsere beiden Musiker Luisa Krey auf der Klarinette und Moritz Merkert auf der Trompete das Jungmusiker Leistungsabzeichen in Gold absolviert. Zu dieser tollen Leistung gratulieren wir den beiden ganz herzlich und wünschen Ihnen weiterhin viel Freude und Spaß beim Musizieren!",
-        "image": {
-          "title": "JMLA Gold 2015",
-          "src": "/img/jugend/jmla/2014_jmla_gold.jpg"
-        },
+        "images": [
+          {
+            "title": "JMLA Gold 2015",
+            "src": "img/2014_jmla_gold.jpg"
+          }
+        ],
         "keywords": [
           "JMLA",
           "Jugend"
@@ -1729,10 +1803,12 @@
       {
         "title": "Jungmusikerleistungsabzeichen in Silber",
         "content": "Zu den tollen Leistungen gratulieren wir ganz herzlich Laura Sesiani (Klarinette), Carole Enderlin (Alt-Saxophon), Moritz Rathberger (Trompete) und Sven Gut (Posaune), welche in der ersten Sommerferienwoche das Jungmusikerleistungsabzeichen in Silber abgelegt haben. Allen wünschen wir weiterhin viel Erfolg und viel Freude beim Musizieren.",
-        "image": {
-          "title": "JMLA Silber 2015",
-          "src": "/img/jugend/jmla/2014_jmla_silber.jpg"
-        },
+        "images": [
+          {
+            "title": "JMLA Silber 2015",
+            "src": "img/2014_jmla_silber.jpg"
+          }
+        ],
         "keywords": [
           "JMLA",
           "Jugend"
@@ -1777,11 +1853,13 @@
         "starttime": "2014-01-18",
         "title": "Jahreskonzert",
         "content": "[Flyer des Jahreskonzertes 2014](/files/flyer/14_konzert.pdf)",
-        "image": {
-          "title": "Der Musikverein Wollbach vor dem Jahreskonzert 2014",
-          "src": "/img/jahreskonzerte/konzert_2014.jpg",
-          "caption": "Musikverein vor dem Jahreskonzert 2014"
-        },
+        "images": [
+          {
+            "title": "Der Musikverein Wollbach vor dem Jahreskonzert 2014",
+            "src": "img/konzert_2014.jpg",
+            "caption": "Musikverein vor dem Jahreskonzert 2014"
+          }
+        ],
         "keywords": [
           "Konzert",
           "Jahreskonzert"
@@ -1854,11 +1932,13 @@
         "starttime": "2013-01-19",
         "title": "Jahreskonzert",
         "content": "[Flyer des Jahreskonzertes 2013](/files/flyer/13_konzert.pdf)",
-        "image": {
-          "title": "Musikverein vor dem Jahreskonzert 2013",
-          "src": "/img/jahreskonzerte/konzert_2013.jpg",
-          "caption": "Musikverein vor dem Jahreskonzert 2013"
-        },
+        "images": [
+          {
+            "title": "Musikverein vor dem Jahreskonzert 2013",
+            "src": "img/konzert_2013.jpg",
+            "caption": "Musikverein vor dem Jahreskonzert 2013"
+          }
+        ],
         "keywords": [
           "Konzert",
           "Jahreskonzert"
@@ -1913,11 +1993,13 @@
       {
         "starttime": "2012-01-21",
         "content": "[Flyer des Jahreskonzertes 2012](/files/flyer/12_konzert_vor.pdf), [Programm des Jahreskonzertes 2012](/files/flyer/12_konzert_rueck.pdf)<br />Mit einem tollen Jahreskonzert konnten wir wieder die Zuhörerinnen und Zuhörer in der vollen Kandertalhalle in Wollbach begeistern. Mit einem kurzweiligen, aber für die Musiker durchaus sehr ansprechenden Programm mit Werken wie \"Slava!\", \"Global Variations\" oder \"Garisson at Goliad\" konnten wir unsere Zuhörer unterhalten.<br />Danke allen Helferinnen und Helfern, sowie unserem Dirgenten Olli Hauser, der wieder einmal ein tolles Konzertprogramm ausgesucht und mit dem Orchester einstudiert hat.",
-        "image": {
-          "src": "/img/jahreskonzerte/konzert_2012.jpg",
-          "title": "Musikverein vor dem Jahreskonzert 2012",
-          "caption": "Musikverein vor dem Jahreskonzert 2012"
-        },
+        "images": [
+          {
+            "src": "img/konzert_2012.jpg",
+            "title": "Musikverein vor dem Jahreskonzert 2012",
+            "caption": "Musikverein vor dem Jahreskonzert 2012"
+          }
+        ],
         "title": "Jahreskonzert",
         "keywords": [
           "Jahreskonzert",
@@ -1939,11 +2021,13 @@
         "starttime": "2011-08-06",
         "title": "JMLA in Silber in Staufen",
         "content": "Wir gratulieren ganz herzlich Noah Goehlke (Tuba), Lisa Fresta (Saxofon), Olivia Rathberger (Saxofon), Maria Krey (Saxofon), Elena Sieglin (Klarinette) und Luisa Krey (Klarinette) zum Bestehen des JMLA in Silber.",
-        "image": {
-          "caption": "Absolventen des JMLA in Silber 2011",
-          "title": "Absolventen des JMLA in Silber 2011",
-          "src": "/img/jugend/jmla/2011_silber.jpg"
-        },
+        "images": [
+          {
+            "caption": "Absolventen des JMLA in Silber 2011",
+            "title": "Absolventen des JMLA in Silber 2011",
+            "src": "img/2011_silber.jpg"
+          }
+        ],
         "keywords": [
           "Jugend",
           "JMLA"
@@ -1969,11 +2053,13 @@
         "starttime": "2011-01-22",
         "title": "Jahreskonzert \"Let´s face the music and dance\"",
         "content": "[Flyer des Jahreskonzertes 2011](/files/flyer/11_jahreskonzert_vor.png), [Programm des Jahreskonzertes 2011](/files/flyer/11_jahreskonzert_rueck.png)<br />Mit einem tollen Jahreskonzert konnten wir wieder die Zuhörerinnen und Zuhörer in der Kandertalhalle in Wollbach begeistern. Mit fetzigen Stücken wie \"Fellin´ good\", \"Let´s call the whole thing off\", \"The way we where\", \"Colours of the wind\" und \"Against all odds\" konnten wir unsere Zuhörer wieder restlos begeistern.<br />Wir möchten uns herzlich bei unseren Gesangs-Solisten Annuschka, Daniel, Diana, Olli, Jutta & Ralf bedanken, sowie bei unserem Altsaxofon-Solisten Klaus Fischer für ihre tollen Einlagen. Großen Dank an die tolle Begleitung unserer Streicher. Danke auch allen Helferinnen und Helfer. Erwähnen möchten wir auch Sebastian Röser und Johannes Krey, die das Konzert mit tollen Lichteffekten umrahmt haben, sowie unseren Dirgenten Olli Hauser, der wieder einmal mit einer fantastischen Idee ein tolles Konzert auf die Beine gestellt hat.",
-        "image": {
-          "src": "/img/jahreskonzerte/konzert_2011.jpg",
-          "title": "Der Musikverein vor dem Jahreskonzert 2011",
-          "caption": "Der Musikverein vor dem Jahreskonzert 2011"
-        },
+        "images": [
+          {
+            "src": "img/konzert_2011.jpg",
+            "title": "Der Musikverein vor dem Jahreskonzert 2011",
+            "caption": "Der Musikverein vor dem Jahreskonzert 2011"
+          }
+        ],
         "keywords": [
           "Jahreskonzert",
           "Konzert"
@@ -2104,11 +2190,13 @@
         "starttime": "2010-01-23",
         "title": "Jahreskonzert",
         "content": "[Flyer des Jahreskonzertes 2010](/files/flyer/10_konzert.pdf)<br />",
-        "image": {
-          "src": "/img/jahreskonzerte/konzert_2010.jpg",
-          "title": "Der Musikverein vor dem Jahreskonzert 2010",
-          "caption": "Der Musikverein vor dem Jahreskonzert 2010"
-        },
+        "images": [
+          {
+            "src": "img/konzert_2010.jpg",
+            "title": "Der Musikverein vor dem Jahreskonzert 2010",
+            "caption": "Der Musikverein vor dem Jahreskonzert 2010"
+          }
+        ],
         "keywords": [
           "Jahreskonzert",
           "Konzert"
@@ -2188,7 +2276,6 @@
         "title": "Erlebnistage im alten Forsthof",
         "content": "[Flyer zu den Erlebnistagen im alten Forsthof](/files/flyer/09_forsthoffest.pdf)<br />Die Erlebnistagen im alten Forsthof Wollbach waren ein voller Erfolg. Einen schönen Rückblick gibt auch der Bericht der Badischen Zeitung.",
         "berichte": [
-
           {
             "date": "2009-06-22T00:00:00Z",
             "url": "https://www.badische-zeitung.de/kandern/gute-musik-gutes-essen",
@@ -2244,7 +2331,6 @@
             "srcUrl": "https://www.badische-zeitung.de",
             "srcTitle": "BZ"
           },
-
           {
             "date": "2009-02-02T00:00:00Z",
             "url": "https://www.badische-zeitung.de/monika-hurst-lobt-den-musikverein",
@@ -2273,7 +2359,7 @@
           "Konzert",
           "Jahreskonzert"
         ],
-        "berichte":[
+        "berichte": [
           {
             "date": "2009-01-20T00:00:00Z",
             "url": "https://www.badische-zeitung.de/mit-spanischer-leidenschaft",
@@ -2418,11 +2504,13 @@
         "starttime": "2008-01-19",
         "title": "Jahreskonzert",
         "content": "Unser Jahreskonzert fand in der Kandertalhalle in Wollbach unter dem Motto \"Feel Blue\" statt.",
-        "image": {
-          "src": "/img/jahreskonzerte/konzert_2008.jpg",
-          "title": "Musikverein Wollbach vor dem Jahreskonzert 2008",
-          "caption": "Der Musikverein vor dem Jahreskonzert 2008"
-        },
+        "images": [
+          {
+            "src": "img/konzert_2008.jpg",
+            "title": "Musikverein Wollbach vor dem Jahreskonzert 2008",
+            "caption": "Der Musikverein vor dem Jahreskonzert 2008"
+          }
+        ],
         "keywords": [
           "Jahreskonzert",
           "Konzert"

@@ -1,9 +1,42 @@
+{{- $images := split (.Get "images") "," | shuffle -}}
+
 <div class="slider" id="slider">
   <ol class="slider-items">
-    {{ range (slice "alle-1.jpg" "tuba-1.jpg" "dampfmusik.jpg" "klarinette.jpg" "konzert_2020.jpg" "trompete-2.jpg" "alle-2.jpg" "guitar.jpg" "konzert_2018.jpg" "saxophon-1.jpg" "trompete-1.jpg" "alle-3.jpg" "horn.jpg" "konzert_2019.jpg" "saxophon.jpg" "konzert_2023.jpg") | shuffle }}
+    {{ range $i, $src := $images }}
+
+    {{- $img := "" -}}
+    {{- if $.Page.Resources.GetMatch $src -}}
+      {{- $img = $.Page.Resources.GetMatch $src -}}
+    {{- end -}}
+
+    {{- $originalWidth := $img.Width -}}
+
+    {{- $r480Webp := cond (ge $img.Width 480) ($img.Resize "480x webp q85 lanczos" | fingerprint) $img -}}
+    {{- $r768Webp := cond (ge $img.Width 768) ($img.Resize "768x webp q85 lanczos" | fingerprint) nil -}}
+    {{- $r1100Webp := cond (ge $img.Width 1100) ($img.Resize "1100x webp q85 lanczos" | fingerprint) nil -}}
+
+    {{ $class := replaceRE "[^a-zA-Z0-9]" "" $r480Webp.Data.Integrity }}
+
       <li class="slider-item">
-        <div class="fill"
-             style="background-image: url('/slider/{{ . }}');">
+        <style>
+          .slider-item .fill.{{ $class }} {
+            --background-image: url('{{ $r480Webp.RelPermalink }}');
+
+            {{ if $r768Webp }}
+              @media (min-width: 481px) {
+                --background-image: url('{{ $r768Webp.RelPermalink }}');
+              }
+            {{end}}
+
+            {{ if $r1100Webp }}
+              @media (max-width: 961px) {
+                --background-image: url('{{ $r1100Webp.RelPermalink }}');
+              }
+            {{ end }}
+          }
+        </style>
+        <div class="fill {{ $class }}"
+             style="background-image: var(--background-image);">
         </div>
       </li>
     {{ end }}

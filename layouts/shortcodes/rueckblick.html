@@ -38,20 +38,23 @@
           {{ .title }}
         </h2>
 
-        {{ with .image }}
-          <figure>
-            <img src="{{ .src }}" alt="{{ .title }}" title="{{ .title }}" />
-            <figcaption>{{ .caption }}</figcaption>
-          </figure>
+        {{ with .images }}
+          <div class="image-gallery">
+            {{ range . }}
+
+              <figure>
+                {{ partial "image" (dict "Page" $.Page "src" .src "alt" .title "title" .title) }}
+                {{ with .caption }}
+                  <figcaption>{{ . }}</figcaption>
+                {{ end }}
+              </figure>
+            {{ end }}
+          </div>
         {{ end }}
 
+
         {{ with .video }}
-          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-            <iframe src="https://www.youtube-nocookie.com/embed/{{ .src }}"
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
-                    allowfullscreen
-                    title="{{ .title }}"></iframe>
-          </div>
+          {{- partial "youtube-dsgvo" (dict "hash" .src) -}}
         {{ end }}
 
         {{ .content | markdownify }}
@@ -61,12 +64,13 @@
             <h3>Presseberichte</h3>
             <ul>
               {{ range . }}
-              <li>
-                <a href="{{ .url }}" target="_blank" rel="noopener">
-                  {{ .title }}
-                </a>
-                <small>({{ .srcTitle }}, {{ .date }})</small>
-              </li>
+                {{ $formattedDate := (time .date).Format "02.01.2006" }}
+                <li>
+                  <a href="{{ .url }}" target="_blank" rel="noopener">
+                    {{ .title }}
+                  </a>
+                  <small>({{ .srcTitle }}, {{ $formattedDate }})</small>
+                </li>
               {{ end }}
             </ul>
           </div>

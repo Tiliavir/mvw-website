@@ -2,14 +2,38 @@
 @import 'themes/mv-wollbach/assets/scss/global-variables';
 @import 'themes/mv-wollbach/assets/scss/mixins/breakpoint';
 
-.add-img {
-  height: auto;
-  max-height: calc(75vh - 50px);
-  max-width: calc(50% - 10px);
-  margin: 0 5px;
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 2rem;
 
-  @include breakpoint(0, $mobile-max-width) {
-    max-width: 100%;
+  figure {
     margin: 0;
+
+    &:first-child {
+      flex: 1 1 100%;
+      max-height: 75vh;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    &:not(:first-child) {
+      flex: 1 1 calc(50% - 10px);
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      @include breakpoint(0, $mobile-max-width) {
+        flex: 1 1 100%;
+      }
+    }
   }
 }

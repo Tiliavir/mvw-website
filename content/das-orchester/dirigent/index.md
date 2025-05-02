@@ -15,7 +15,7 @@ und Erfahrungswelten junger Menschen an und bringt sie spielerisch in
 Berührung mit den inhaltlichen Themen der Musik und den Lebenswelten der
 Komponisten.
 
-{{< figure src="/img/personen/dirigent.jpg"
+{{< figure src="/img/dirigent.jpg"
            alt="Unser Dirigent - Oliver Hauser"
            caption="Seit 1996 können wir uns glücklich schätzen, mit Oliver Hauser einen ausgezeichneten Dirigenten bei uns in Wollbach zu haben" >}}
 
@@ -38,5 +38,7 @@ dem Feldkirch Festival.
   <a href="mailto:oliver.hauser@mv-wollbach.de" target="_blank">Eine eMail an Oliver schreiben.</a>
 </p>
 
-{{< figure src="/img/personen/dirigent-1.jpg"
-alt="Oliver im Oktober 2022" >}}
+{{< figure src="/img/dirigent-1.jpg"
+           alt="Oliver im Oktober 2022"
+           sizes="(max-width: 480px) 480px, 768px"
+>}}

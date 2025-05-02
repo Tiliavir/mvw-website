@@ -8,7 +8,7 @@ menu:
     parent: blog
 ---
 
-{{< figure src="/img/events/cd.jpg"
+{{< figure src="img/cd.jpg"
            alt="Still Feelin' Good"
 >}}
 

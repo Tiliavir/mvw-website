@@ -27,7 +27,7 @@ der 20er Jahre.
 
 **Wir freuen uns auf ihren Besuch!**
 
-{{< figure src="/files/flyer/22_jahreskonzert_plakat.jpg"
+{{< figure src="img/22_jahreskonzert_plakat.jpg"
            alt="Jahreskonzert 2022 - Metropolis. Am Freitag den 11. und Samstag den 12. März um 20 Uhr in der Kandertalhalle in Wollbach. Einlass 19 Uhr."
 >}}
 

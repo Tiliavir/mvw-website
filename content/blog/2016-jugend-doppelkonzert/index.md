@@ -34,6 +34,6 @@ unter Leitung von Joachim Wendland in der Kandertalhalle Wollbach.
 [amv]: https://musik-verband.de/
 [flyer]: /files/flyer/16_jugendkonzert.pdf
 
-{{< figure src="/img/jugend/jugendorchester.jpg"
+{{< figure src="img/jugendorchester.jpg"
            alt="Das Jugendorchester des Musikvereins Wollbach"
 >}}

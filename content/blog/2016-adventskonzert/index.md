@@ -22,7 +22,7 @@ Wollbach:
 
 mit Werken von J.S. Bach, W.A. Mozart, J. Pachebel, L.E. Jadin und anderen.
 
-{{< figure src="/img/events/advent.jpg"
+{{< figure src="advent.jpg"
            alt="Benefiz Advents Konzert"
 >}}
 

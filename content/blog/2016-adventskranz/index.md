@@ -18,7 +18,7 @@ Für das leibliche Wohl ist ebenfalls bestens gesorgt, es gibt:
 - Thüringer Bratwürste
 - Grillwürste
 
-{{< figure src="/img/events/forsthof.jpg"
+{{< figure src="forsthof.jpg"
            alt="Adventskranz Verkauf 2016"
 >}}
 

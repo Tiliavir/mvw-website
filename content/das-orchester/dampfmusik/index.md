@@ -13,9 +13,11 @@ Chanderli gegründet. 9 begeisterte Blechbläser und ein Schlagzeuger
 begleiten seither jedes Jahr den Sauserbummel und unterhalten die Gäste mit
 ihrem abwechslungsreichen Repertoire. Für jeden Anlass haben sie etwas dabei.
 
-{{< figure src="/img/vereine/dampfmusik.jpg"
+{{< figure src="img/dampfmusik.jpg"
            alt="Dampfmusik im Chanderli 2015"
+           isAboveTheFold=true
            caption="v.L. Dominik Heieck, Anika Greßlin, Ralf Ernst, Moritz Merkert, Michael Bierwirth, Matthias Braun, Timo Braun, Noah Goehlke, Johannes Krey, Sven Gut"
 >}}
 
-{{< dampfmusik >}}
+{{< youtube hash="5S3V1TiFywQ" >}}
+{{< youtube hash="dthOc66KttU" >}}

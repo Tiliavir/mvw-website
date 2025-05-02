@@ -15,7 +15,7 @@ menu:
 Der Musikverein freut sich, an den Festlichkeiten mitwirken zu können und das
 Jubiläum musikalisch mitgestalten zu können.
 
-{{< figure src="/img/events/1250.png"
+{{< figure src="img/1250.png"
            alt="1250 Jahre Wollbach"
            caption="Wollbach feiert sein 1250 jähriges Bestehen"
 >}}

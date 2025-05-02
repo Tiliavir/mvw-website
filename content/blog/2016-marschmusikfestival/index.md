@@ -61,6 +61,6 @@ Es ist für uns eine besondere Ehre, in unserem Jubiläumsjahr auch
 die 50-jährige Freundschaft mit der Musikgesellschaft Bannwil an unserem
 Festival der Marschmusik feiern zu dürfen.
 
-{{< figure src="/img/vereine/bannwil.jpg"
+{{< figure src="img/bannwil.jpg"
            alt="Musikgesellschaft Bannwil"
 >}}

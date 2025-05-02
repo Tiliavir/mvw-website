@@ -1,6 +1,6 @@
 {{ $musicians := slice }}
 
-{{- with $.Site.Data.register -}}
+{{- with $.Site.Data.register.mitglieder -}}
   {{ range . }}
     {{ $musicians = $musicians | append (printf "%s %s" .name .familyName) }}
   {{ end }}

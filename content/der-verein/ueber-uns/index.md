@@ -19,14 +19,16 @@ Einwohner und wurde 767 erstmalig urkundlich erwähnt. Weiterlesen auf
 [kandern]: https://www.kandern.de/texte/seite.php?id=387702
 [kandern_wiki]: https://de.wikipedia.org/wiki/Kandern-Wollbach
 
-{{< figure src="/img/wappen.png"
+{{< figure src="img/wappen.webp"
            alt="Wollbacher Wappen"
+           isAboveTheFold=true
 >}}
 
 Der Musikverein besteht aus {{< number-of-musicians >}} Musikern und dem Dirigenten Oliver Hauser.
 
-{{< figure src="/img/karte.png"
+{{< figure src="img/karte.webp"
            alt="Lage Wollbachs"
+           isAboveTheFold=true
 >}}
 
 ## Ausschnitt aus der Chronik

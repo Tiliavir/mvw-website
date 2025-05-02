@@ -14,7 +14,7 @@ Konzert hat in diesem Jahr das Thema "Space Odyssey" - begeben Sie
 sich mit uns auf eine musikalische Reise durchs Weltall. Einlass
 ist ab 18:30, Konzertbeginn um 20:00.
 
-{{< figure src="/files/flyer/19_jahreskonzert.jpg"
+{{< figure src="img/19_jahreskonzert.jpg"
            alt="Jahreskonzert 2019"
 >}}
 

@@ -25,11 +25,11 @@ verschiedener nationaler und internationaler Wettbewerbe.
 
 Wir freuen uns auf Ihren Besuch.
 
-{{< figure src="/files/flyer/20_jahreskonzert.jpg"
+{{< figure src="img/20_jahreskonzert.jpg"
            alt="Jahreskonzert 2020"
 >}}
 
-{{< figure src="/files/flyer/20_jahreskonzert_back.jpg"
+{{< figure src="img/20_jahreskonzert_back.jpg"
            alt="Jahreskonzert 2020 - Programm"
 >}}
 

@@ -1,12 +1,12 @@
 ---
 title: Unterstützen Sie uns über Gooding
 description: Tätigen Sie wie gewohnt Ihre Einkäufe im Internet und unterstützen Sie nebenbei den Musikverein Wollbach - ganz ohne extra Kosten.
-keywords: [Senden, Gooding, Support]
+keywords: [Spenden, Gooding, Support, Shopping, Unterstützung]
 customCss:
   - scss/gooding.scss
 ---
 
-{{< figure src="/img/events/gooding.png"
+{{< figure src="img/gooding.png"
            alt="Gooding" >}}
 
 Tätigen Sie wie gewohnt Ihre Einkäufe im Internet und unterstützen Sie nebenbei den Musikverein Wollbach - ganz ohne extra Kosten.

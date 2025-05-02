@@ -13,14 +13,14 @@ customCss:
 <div class="header">
     <div class="header-logo">
         {{< figure
-              src="/img/events/23-open-air/open-air-header.jpg"
+              src="img/open-air-header.jpg"
               alt="Open Air"
         >}}
     </div>
     <div class="header-ticketshop">
         <a href="https://tickets.mv-wollbach.de" target="_blank" class="unstyled">
             {{< figure
-                  src="/img/events/23-open-air/tickets.jpg"
+                  src="img/tickets.jpg"
                   alt="Open Air 🎟️"
             >}}
         </a>

@@ -16,7 +16,7 @@ Der Innenhof des historischen Forsthauses in der Oberen Dorfstraße bietet die f
 Kulisse. Gereicht werden edle Weine, exklusives Bier und erlesene Speisen, sowie Erfrischungen
 and Sekt und Cocktailbar.
 
-{{< figure src="/files/flyer/20_forsthof.jpg"
+{{< figure src="img/20_forsthof.jpg"
            alt="Forsthof Open-Air"
 >}}
 

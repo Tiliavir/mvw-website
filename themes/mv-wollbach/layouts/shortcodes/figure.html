@@ -1,0 +1,14 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Get "caption" | default nil -}}
+{{- $title := .Get "title" | default "" -}}
+{{- $class := .Get "class" | default "" -}}
+{{- $sizes := .Get "sizes" | default "" -}}
+{{- $isAboveTheFold := .Get "isAboveTheFold" | default false -}}
+
+<figure>
+  {{- partial "image" (dict "Page" $.Page "src" $src "alt" $alt "title" $title "class" $class "sizes" $sizes "isAboveTheFold" $isAboveTheFold) -}}
+  {{ with $caption }}
+    <figcaption><p>{{ . }}</p></figcaption>
+  {{ end }}
+</figure>
