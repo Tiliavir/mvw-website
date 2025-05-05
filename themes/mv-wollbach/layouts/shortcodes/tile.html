@@ -7,23 +7,10 @@
 
 {{- $originalWidth := $img.Width -}}
 
-{{- $r480Webp := cond (ge $img.Width 480) ($img.Resize "480x webp q85 lanczos" | fingerprint) $img -}}
-{{- $r768Webp := cond (ge $img.Width 768) ($img.Resize "768x webp q85 lanczos" | fingerprint) nil -}}
+{{- $r768Webp := cond (ge $img.Width 550) ($img.Resize "550x webp q85 lanczos" | fingerprint) nil -}}
 
 <div class="tile">
-  <style >
-    {{ $class := replaceRE "[^a-zA-Z0-9]" "" $r480Webp.Data.Integrity }}
-    a.{{ $class }}  {
-      background-image: url('{{ $r480Webp.RelPermalink }}');
-
-      {{ if $r768Webp }}
-        @media (min-width: 481px) {
-          --background-image: url('{{ $r768Webp.RelPermalink }}');
-        }
-      {{end}}
-    }
-  </style>
-  <a class="{{ $class }} unstyled image-container" href="{{ ref .Page (.Get "file") }}">
+  <a class="unstyled image-container" href="{{ ref .Page (.Get "file") }}" style="background-image: url('{{ $r768Webp.RelPermalink | safeCSS }}');">
     <div class="blur">
       <div class="tile-content">
         {{ with .Get "title" }}

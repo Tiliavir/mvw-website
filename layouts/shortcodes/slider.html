@@ -1,50 +1,23 @@
-{{- $images := split (.Get "images") "," | shuffle -}}
+{{- $height := (.Get "height") -}}
+{{- $unit := (.Get "unit") -}}
+{{- $ordinal := .Ordinal -}}
+{{- $items := (.Get "items") | default 1 -}}
+{{- $images := (split (.Get "images") ",") -}}
 
-<div class="slider" id="slider">
-  <ol class="slider-items">
-    {{ range $i, $src := $images }}
-
-    {{- $img := "" -}}
-    {{- if $.Page.Resources.GetMatch $src -}}
-      {{- $img = $.Page.Resources.GetMatch $src -}}
-    {{- end -}}
-
-    {{- $originalWidth := $img.Width -}}
-
-    {{- $r480Webp := cond (ge $img.Width 480) ($img.Resize "480x webp q85 lanczos" | fingerprint) $img -}}
-    {{- $r768Webp := cond (ge $img.Width 768) ($img.Resize "768x webp q85 lanczos" | fingerprint) nil -}}
-    {{- $r1100Webp := cond (ge $img.Width 1100) ($img.Resize "1100x webp q85 lanczos" | fingerprint) nil -}}
-
-    {{ $class := replaceRE "[^a-zA-Z0-9]" "" $r480Webp.Data.Integrity }}
-
-      <li class="slider-item">
-        <style>
-          .slider-item .fill.{{ $class }} {
-            --background-image: url('{{ $r480Webp.RelPermalink }}');
-
-            {{ if $r768Webp }}
-              @media (min-width: 481px) {
-                --background-image: url('{{ $r768Webp.RelPermalink }}');
-              }
-            {{end}}
-
-            {{ if $r1100Webp }}
-              @media (max-width: 961px) {
-                --background-image: url('{{ $r1100Webp.RelPermalink }}');
-              }
-            {{ end }}
-          }
-        </style>
-        <div class="fill {{ $class }}"
-             style="background-image: var(--background-image);">
-        </div>
+<div id="carousel{{ .Ordinal }}" class="carousel" data-duration="{{ .Get `duration` }}">
+  <ul>
+    {{ range $index, $image := $images }}
+      <li id="c{{ $ordinal }}_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $items }}); padding-bottom: {{ $height }}{{ $unit }};">
+        {{ $isAboveTheFold := lt $index 1 }}
+        {{ partial "image" (dict "Page" $.Page "src" $image "alt" "" "isAboveTheFold" $isAboveTheFold) }}
       </li>
     {{ end }}
+  </ul>
+  <ol>
+    {{ range $index, $page := $images }}
+      <li><a href="#c{{ $ordinal }}_slide{{ add $index 1 }}" data-slide="#c{{ $ordinal }}_slide{{ add $index 1 }}"></a></li>
+    {{ end }}
   </ol>
-  <a class="unstyled left slider-control">
-    <span class="icon-prev">&lt;</span>
-  </a>
-  <a class="unstyled right slider-control">
-    <span class="icon-next">&gt;</span>
-  </a>
+  <div class="prev">&lsaquo;</div>
+  <div class="next">&rsaquo;</div>
 </div>

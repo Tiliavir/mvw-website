@@ -40,7 +40,7 @@
         {{- $sizesList = $sizesList | append "(max-width: 960px) 768px" -}}
       {{- end }}
       {{- if $r1100Webp }}
-        {{- $sizesList = $sizesList | append "(max-width: 1300px) 1100px" -}}
+        {{- $sizesList = $sizesList | append "(max-width: 2000px) 1100px" -}}
       {{- end }}
       {{- $sizes = printf "%s, 1600px" (delimit $sizesList ", ") -}}
   {{ end }}
@@ -54,8 +54,9 @@
 
     <source
         srcset="{{ delimit $srcsetJpg ", " }}"
-    sizes="{{ $sizes }}"
-    type="image/jpeg" />
+        sizes="{{ $sizes }}"
+        type="image/jpeg"
+    />
 
     {{- $srcsetWebp := slice -}}
     {{- with $r480Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 480w" .RelPermalink) }}{{ end }}
@@ -65,8 +66,9 @@
 
     <source
         srcset="{{ delimit $srcsetWebp ", " }}"
-    sizes="{{ $sizes }}"
-    type="image/jpeg" />
+        sizes="{{ $sizes }}"
+        type="image/webp"
+    />
 
     <img
       src="{{ $r480Webp.RelPermalink }}"

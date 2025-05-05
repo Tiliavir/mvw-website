@@ -33,8 +33,10 @@ Der Musikverein Wollbach ist ein kreatives Blasorchester mit einer über 150-jä
 Blasmusik gehört ebenso zum Repertoire wie swingende Unterhaltungsmusik. Im Orchester spielen über 50 Musiker aller
 Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent Oliver Hauser.
 
-{{< slider
-    images="img/slider/alle-1.jpg,img/slider/tuba-1.jpg,img/slider/dampfmusik.jpg,img/slider/klarinette.jpg,img/slider/konzert_2020.jpg,img/slider/trompete-2.jpg,img/slider/alle-2.jpg,img/slider/guitar.jpg,img/slider/konzert_2018.jpg,img/slider/saxophon-1.jpg,img/slider/trompete-1.jpg,img/slider/alle-3.jpg,img/slider/horn.jpg,img/slider/konzert_2019.jpg,img/slider/saxophon.jpg,img/slider/konzert_2023.jpg"
+{{< slider height="500"
+           unit="px"
+           duration="7000"
+           images="img/slider/alle-1.jpg,img/slider/tuba-1.jpg,img/slider/dampfmusik.jpg,img/slider/klarinette.jpg,img/slider/konzert_2020.jpg,img/slider/trompete-2.jpg,img/slider/alle-2.jpg,img/slider/guitar.jpg,img/slider/konzert_2018.jpg,img/slider/saxophon-1.jpg,img/slider/trompete-1.jpg,img/slider/alle-3.jpg,img/slider/horn.jpg,img/slider/konzert_2019.jpg,img/slider/saxophon.jpg,img/slider/konzert_2023.jpg"
 >}}
 
 <div class="tiles">
@@ -54,7 +56,7 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
            text="Lust uns zu hören? Hier ist unser Terminkalender..."
   />}}
   {{< tile file="gooding"
-           image="img/gooding.png"
+           image="img/gooding.webp"
            title="Unterstützen Sie uns"
            text="Unterstützen Sie uns bei Ihren täglichen Einkäufen – ganz nebenbei und ohne Extrakosten. Welche Unternehmen mitmachen sehen Sie hier..."
   />}}
