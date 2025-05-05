@@ -2,6 +2,13 @@ figure {
   width: 100%;
   display: inline-block;
   margin: 0 auto;
+
+  picture,
+  img {
+    width: inherit;
+    max-height: initial;
+    height: initial;
+  }
 }
 
 .header {

@@ -7,7 +7,7 @@ menu:
   blog:
     parent: blog
 customCss:
-  - scss/blog_20xx-open-air.scss
+  - scss/blog_2023-open-air.scss
 ---
 
 <div class="header">

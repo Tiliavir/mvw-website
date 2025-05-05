@@ -5,6 +5,7 @@ figure {
 
   picture,
   img {
+    width: inherit;
     max-height: initial;
     height: initial;
   }
@@ -14,12 +15,13 @@ figure {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  justify-content: space-between;
 
   .header-ticketshop {
-    width: calc(38/121 * 100%);
+    width: calc(36/110 * 100%);
   }
 
   .header-logo {
-    width: calc(83/121 * 100%);
+    width: calc(84/110 * 100%);
   }
 }

@@ -21,11 +21,13 @@
 
   {{- $r480Webp := cond (ge $img.Width 480) ($img.Resize "480x webp q85 lanczos" | fingerprint) $img -}}
   {{- $r768Webp := cond (ge $img.Width 768) ($img.Resize "768x webp q85 lanczos" | fingerprint) nil -}}
+  {{- $r960Webp := cond (ge $img.Width 960) ($img.Resize "960x webp q85 lanczos" | fingerprint) nil -}}
   {{- $r1100Webp := cond (ge $img.Width 1100) ($img.Resize "1100x webp q85 lanczos" | fingerprint) nil -}}
   {{- $r1600Webp := cond (ge $img.Width 1600) ($img.Resize "1600x webp q85 lanczos" | fingerprint) nil -}}
 
   {{- $r480Jpg := cond (ge $img.Width 480) ($img.Resize "480x jpg q85 lanczos" | fingerprint) $img -}}
   {{- $r768Jpg := cond (ge $img.Width 768) ($img.Resize "768x jpg q85 lanczos" | fingerprint) nil -}}
+  {{- $r960Jpg := cond (ge $img.Width 960) ($img.Resize "960x jpg q85 lanczos" | fingerprint) nil -}}
   {{- $r1100Jpg := cond (ge $img.Width 1100) ($img.Resize "1100x jpg q85 lanczos" | fingerprint) nil -}}
   {{- $r1600Jpg := cond (ge $img.Width 1600) ($img.Resize "1600x jpg q85 lanczos" | fingerprint) nil -}}
 
@@ -33,22 +35,35 @@
     <link rel="preload" as="image" href="{{ $r480Webp.RelPermalink }}" fetchpriority="high">
   {{- end -}}
 
+{{- $largest := 480 -}}
 {{ if eq (trim $sizes " ") "" }}
       {{- $sizesList := slice -}}
       {{- $sizesList = $sizesList | append "(max-width: 480px) 480px" -}}
       {{- if $r768Webp }}
+        {{- $largest = 768 -}}
         {{- $sizesList = $sizesList | append "(max-width: 960px) 768px" -}}
       {{- end }}
+      {{- if $r960Webp }}
+        {{- $largest = 960 -}}
+        {{- $sizesList = $sizesList | append "(max-width: 1200px) 960px" -}}
+      {{- end }}
       {{- if $r1100Webp }}
+        {{- $largest = 1100 -}}
         {{- $sizesList = $sizesList | append "(max-width: 2000px) 1100px" -}}
       {{- end }}
-      {{- $sizes = printf "%s, 1600px" (delimit $sizesList ", ") -}}
+      {{- if (ge $img.Width 1600) }}
+        {{- $largest = 1600 -}}
+        {{- $sizes = printf "%s, 1600px" (delimit $sizesList ", ") -}}
+      {{- else }}
+        {{- $sizes = printf "%s, %dpx" (delimit $sizesList ", ") $largest -}}
+      {{- end -}}
   {{ end }}
 
   <picture>
     {{- $srcsetJpg := slice -}}
     {{- with $r480Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 480w" .RelPermalink) }}{{ end }}
     {{- with $r768Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 768w" .RelPermalink) }}{{ end }}
+    {{- with $r960Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 960w" .RelPermalink) }}{{ end }}
     {{- with $r1100Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 1100w" .RelPermalink) }}{{ end }}
     {{- with $r1600Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 1600w" .RelPermalink) }}{{ end }}
 
@@ -61,6 +76,7 @@
     {{- $srcsetWebp := slice -}}
     {{- with $r480Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 480w" .RelPermalink) }}{{ end }}
     {{- with $r768Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 768w" .RelPermalink) }}{{ end }}
+    {{- with $r960Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 960w" .RelPermalink) }}{{ end }}
     {{- with $r1100Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 1100w" .RelPermalink) }}{{ end }}
     {{- with $r1600Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 1600w" .RelPermalink) }}{{ end }}
 
