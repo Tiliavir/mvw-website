@@ -50,7 +50,7 @@
     "stylelint": "16.18.0",
     "stylelint-config-recommended-scss": "14.1.0",
     "typescript": "5.8.3",
-    "typescript-eslint": "^8.31.0",
+    "typescript-eslint": "^8.32.0",
     "w3c-html-validator": "1.8.3"
   },
   "dependencies": {
