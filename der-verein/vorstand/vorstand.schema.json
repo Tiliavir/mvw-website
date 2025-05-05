@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vorstandschaft",
+  "description": "Struktur der Vereinsvorstandschaft mit optionalen Kontaktdaten.",
+  "type": "object",
+  "required": ["vorstandschaft"],
+  "properties": {
+    "vorstandschaft": {
+      "type": "array",
+      "description": "Liste von Vorstandsfunktionen mit Bild, Titel und Personen",
+      "items": {
+        "type": "object",
+        "required": ["title", "persons", "image"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Bezeichnung der Funktion (z. B. '1. Vorsitzende')"
+          },
+          "persons": {
+            "type": "array",
+            "description": "Namen der zugehörigen Personen",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "image": {
+            "type": "string",
+            "format": "uri-reference",
+            "description": "Pfad zum Bild (relativ oder absolut)"
+          },
+          "address": {
+            "type": "string",
+            "description": "Postadresse (optional)"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "E-Mail-Adresse (optional)"
+          },
+          "telephone": {
+            "type": "string",
+            "description": "Telefonnummer (optional, formfrei)"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

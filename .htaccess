@@ -22,9 +22,10 @@ AddCharset UTF-8 .css
 AddType 'text/css; charset=UTF-8' css
 AddCharset UTF-8 .svg
 AddType 'image/svg+xml; charset=UTF8' svg svgz
+AddType application/font-woff2 .woff2
 
 #Cookieless domain
-<FilesMatch "\.(js|css|jpg|png|jpeg|gif|xml|json|txt|pdf|mov|avi|otf|woff|ico|swf)$">
+<FilesMatch "\.(js|css|jpg|png|jpeg|webp|gif|xml|json|txt|pdf|mov|avi|ttf|otf|woff|woff2|ico|swf)$">
   RequestHeader unset Cookie
   Header unset Cookie
   Header unset Set-Cookie
@@ -33,12 +34,13 @@ AddType 'image/svg+xml; charset=UTF8' svg svgz
 # Gzip
 <ifmodule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript text/json image/svg+xml
+  SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|webp)$ no-gzip dont-vary
 </ifmodule>
 
 <ifModule mod_gzip.c>
   mod_gzip_on Yes
   mod_gzip_dechunk Yes
-  mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+  mod_gzip_item_include file .(html?|txt|css|js|php|pl|svg)$
   mod_gzip_item_include handler ^cgi-script$
   mod_gzip_item_include mime ^text/.*
   mod_gzip_item_include mime ^application/x-javascript.*
@@ -51,12 +53,20 @@ AddType 'image/svg+xml; charset=UTF8' svg svgz
   ExpiresActive On
   ExpiresDefault "access plus 1 days"
   ExpiresByType image/x-icon "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 month"
-  ExpiresByType image/png "access plus 1 month"
-  ExpiresByType image/jpg "access plus 1 month"
-  ExpiresByType image/jpeg "access plus 1 month"
-  ExpiresByType text/css "access 1 week"
-  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+  ExpiresByType application/x-font-ttf "access plus 1 year"
+  ExpiresByType application/x-font-opentype "access plus 1 year"
+  ExpiresByType application/x-font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2  "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
 </ifModule>
 
 <ifModule mod_headers.c>

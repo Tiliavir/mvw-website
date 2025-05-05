@@ -1,0 +1,2527 @@
+{
+  "$schema": "rueckblick.schema.json",
+  "rueckblick": {
+    "2025": [
+      {
+        "starttime": "2025-03-15",
+        "title": "Scheibenfeuer",
+        "content": "Zum Scheibenschlagen haben wir am 15.03. zum Fastnachtsfeuer eingeladen. Auch in diesem Jahr wieder ein schöner Anlass.",
+        "keywords": [
+          "Fastnachtsfeuer"
+        ]
+      },
+      {
+        "title": "Generalversammlung",
+        "starttime": "2025-02-13",
+        "content": "Die Generalversammlung des Musikvereins Wollbach fand am 13. Februar 2025 in der Kandertalhalle statt. Protokollführerin Beate Mayer berichtete von zahlreichen Aktivitäten seit der vorherigen Versammlung, darunter der Sauserexpress, der Marschmusiktag, der Adventszauber sowie mehrere Hochzeiten und Nachwuchs bei den Musikern. Die Jugendleiter Maria Gut und Moritz Merkert hoben die erfolgreiche Jugendarbeit hervor, insbesondere die 'Young Musician Days' im März mit rund 100 Nachwuchsmusikern. Bei den Wahlen wurden Annette Krey als Vorsitzende, Sven Gut als zweiter Kassierer, Janika Böhler als Schriftführerin und weitere Mitglieder in ihren Ämtern bestätigt.",
+        "keywords": [
+          "Generalversammlung"
+        ],
+        "berichte": [
+          {
+            "title": "Konzert ist in kaum zwei Stunden ausverkauft",
+            "date": "2025-03-05",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "Verlagshaus Jaumann",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-wollbach-konzert-ist-in-kaum-zwei-stunden-ausverkauft.86767ddd-789d-406d-a365-65a246d2991b.html"
+          }
+        ]
+      },
+      {
+        "title": "Jahreskonzert: 'Leinen los! Inselzauber und Piratenklänge'",
+        "starttime": "2025-01-31",
+        "endtime": "2025-02-01",
+        "content": "Am 31. Januar und 1. Februar 2025 präsentierte der Musikverein Wollbach sein Jahreskonzert unter dem Motto 'Leinen los! Inselzauber und Piratenklänge' in der Kandertalhalle. Die Halle war thematisch als Piratenwelt gestaltet, inklusive beleuchtetem Steg, Schatztruhen und einem Piratenchor. Das Orchester, unter der Leitung von Dirigent Oliver Hauser, nahm das Publikum mit auf eine musikalische Reise über die Weltmeere mit Stücken wie 'The Seafarer', 'Devil’s Island', 'Island of Light', 'Cabo Verde' und 'At World’s End'. Das Konzert war bereits nach zwei Stunden ausverkauft und endete mit stehenden Ovationen.",
+        "keywords": [
+          "Jahreskonzert",
+          "Konzert"
+        ],
+        "berichte": [
+          {
+            "title": "Musikverein Wollbach begeistert mit einem Konzert rund um die Seefahrt und verwunschene Inselwelten",
+            "date": "2025-02-03",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "Badische Zeitung",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/musikverein-wollbach-begeistert-mit-einem-konzert-rund-um-die-seefahrt-und-verwunschene-inselwelten"
+          },
+          {
+            "title": "Eine Reise über alle Weltmeere",
+            "date": "2025-02-02",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "Verlagshaus Jaumann",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.musikverein-wollbach-eine-reise-ueber-alle-weltmeere.a58b5f54-6d27-449f-a50a-aa37be780c6d.html"
+          }
+        ]
+      },
+      {
+        "starttime": "2025-01-06",
+        "title": "Neujahrsempfang",
+        "content": "Zusammen mit dem Jugendorchester, sowie dem Gesangverein und dem Kirchenchor gestaltete der Musikverein die musikalische Umrahmung des Neujahrsempfangs.",
+        "keywords": [
+          "Neujahrsempfang"
+        ]
+      }
+    ],
+    "2024": [
+      {
+        "keywords": [
+          "Marschmusikfestival"
+        ],
+        "title": "Marschmusik",
+        "starttime": "2024-10-13",
+        "content": ""
+      },
+      {
+        "keywords": [
+          "Sauserbummel"
+        ],
+        "title": "Sauser-Express 2024",
+        "starttime": "2024-10-12",
+        "content": ""
+      },
+      {
+        "keywords": [
+          "Konzert"
+        ],
+        "title": "Wollbach Open-Air",
+        "starttime": "2024-07-06",
+        "content": "Gut 800 Besucher kamen zum fünften Open-Air-Konzert des Musikvereins Wollbach. Trotz Regens blieb die Stimmung ausgelassen: Bereits am Eingang wurden Regenponchos verteilt. Mit Liedern wie „Candyman“, „A Kind of Magic“, „Hit the Road Jack“ oder „The Amazing Abba Collection“ begeisterten Orchester und Gesangsensemble unter der Leitung von Oliver Hauser das Publikum. Technik, Licht und eine große Videowand sorgten für ein professionelles Konzert-Erlebnis. Höhepunkt war ein Regenbogen zur Konzertmitte – gefolgt von einem regenfreien zweiten Teil.",
+        "berichte": [
+          {
+            "title": "Auch wenn’s regnet – die Stimmung stimmt",
+            "date": "2024-07-08",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/auch-wenn-s-regnet-die-stimmung-stimmt"
+          },
+          {
+            "title": "Singen und Tanzen im Regen",
+            "date": "2024-07-07",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-singen-und-tanzen-im-regen.4ca048ca-c7a4-47a5-8e6b-a5cd13a46a6c.html"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "img/24_konzert_flyer_1.jpg",
+            "title": "Flyer zum Jahreskonzert 2024: Hör gut zu!"
+          },
+          {
+            "src": "img/konzert_2024.jpg",
+            "title": "Jahreskonzert 2024"
+          }
+        ],
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "title": "Jahreskonzert: 'Hör gut zu!'",
+        "starttime": "2024-01-26",
+        "endtime": "2024-01-28",
+        "content": "Beim Jahreskonzert 2024 führte der Musikverein Wollbach durch ein musikalisches Märchenprogramm. Unter anderem erklangen Vertonungen von 'Rotkäppchen', 'Rumpelstilzchen', 'Dornröschen', 'Pinocchio', 'Karneval der Tiere', 'Arche Noah' und 'Max und Moritz'. Erzählt wurden die Geschichten von Lena und Ekkehard Bierl sowie Sängerinnen wie Anuschka LaVecchia und Christina de Groote. Dirigent Oliver Hauser forderte Höchstleistung von seinem Orchester – Lichtshow und Bühnenbild sorgten für zusätzliche Atmosphäre.",
+        "berichte": [
+          {
+            "title": "Der Saal staunt in Ehrfurcht",
+            "date": "2024-01-29",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-wollbach-der-saal-staunt-in-ehrfurcht.da2601a0-d8aa-4a83-82e6-a3647a5c6459.html"
+          }
+        ]
+      }
+    ],
+    "2023": [
+      {
+        "keywords": [
+          "Konzertreise",
+          "Konzert"
+        ],
+        "title": "Konzertreise nach Garmisch-Partenkirchen, München und Salzburg",
+        "starttime": "2023-07-23",
+        "endtime": "2023-07-30",
+        "content": "Eine mehrtägige Konzertreise nach Garmisch-Partenkirchen, München und Salzburg haben 90 Mitglieder des Musikvereins Wollbach unternommen. Höhepunkt waren aber die beiden Konzerte im Kurpark von Garmisch-Partenkirchen und auf dem Salzburger Mozartplatz.",
+        "berichte": [
+          {
+            "title": "Unterhaltung als Überraschung",
+            "date": "2023-08-03",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-wollbach-unterhaltung-als-ueberraschung.47e7527d-b788-446c-9754-b9ee9925c0a8.html"
+          }
+        ]
+      },
+      {
+        "keywords": [
+          "Konzert"
+        ],
+        "title": "Wollbach Open-Air",
+        "starttime": "2023-07-01",
+        "content": "Das Wollbach Open-Air des Musikvereins begeistert mit hervorragender Stimmung und einem vielfältigen Programm. Trotz Regen kommen etwa 800 Besucherinnen und Besucher und genießen die Festival-Atmosphäre.",
+        "berichte": [
+          {
+            "title": "Festivalstimmung auf dem Wollbacher Schulhof",
+            "date": "2023-07-02",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/festivalstimmung-auf-dem-wollbacher-schulhof"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "img/23_jahreskonzert_plakat.jpg",
+            "title": "Flyer zum Jahreskonzert 2023: Rock Symphony"
+          },
+          {
+            "src": "img/konzert_2023-1.jpg",
+            "title": "Jahreskonzert 2023"
+          },
+          {
+            "src": "img/konzert_2023-2.jpg",
+            "title": "Jahreskonzert 2023"
+          }
+        ],
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "title": "Jahreskonzert: 'Rock Symphony'",
+        "starttime": "2023-01-26",
+        "endtime": "2023-01-28",
+        "content": "",
+        "berichte": [
+          {
+            "title": "Klassische Musik trifft rockigen Sound",
+            "date": "2023-01-28",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/klassische-musik-trifft-rockigen-sound--239660185.html"
+          },
+          {
+            "title": "Ein Abend der im Gedächtnis bleibt",
+            "date": "2023-01-28",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-ein-abend-der-im-gedaechtnis-bleibt.f0b52c8b-eedb-48c7-9b40-1e233fccceaa.html"
+          },
+          {
+            "title": "Großes Orchester spielt Rockmusik",
+            "date": "2022-12-14",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-grosses-orchester-spielt-rockmusik.f0a1db10-249b-45c4-881b-b3160ef4c00f.html"
+          }
+        ]
+      }
+    ],
+    "2022": [
+      {
+        "images": [
+          {
+            "src": "img/22_open-air.jpg",
+            "title": "Flyer zum Wollbach OpenAir 2022"
+          }
+        ],
+        "keywords": [
+          "Konzert"
+        ],
+        "title": "Wollbach Open-Air",
+        "starttime": "2022-06-25",
+        "endtime": "2022-06-25",
+        "content": "",
+        "berichte": [
+          {
+            "title": "Musikverein Wollbach feiert ein Musikfestival mitten im Dorf",
+            "date": "2022-06-26",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/musikverein-wollbach-feiert-ein-musikfestival-mitten-im-dorf"
+          }
+        ]
+      },
+      {
+        "keywords": [
+          "Sauserbummel"
+        ],
+        "title": "Sauserbummel",
+        "starttime": "2022-10-08",
+        "content": ""
+      },
+      {
+        "keywords": [
+          "Marschmusikfestival"
+        ],
+        "title": "Marschmusikfestival",
+        "starttime": "2022-10-09",
+        "content": ""
+      },
+      {
+        "images": [
+          {
+            "src": "img/22_jahreskonzert_plakat.jpg",
+            "title": "Flyer zum Jahreskonzert 2022 - Metropolis"
+          }
+        ],
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "title": "Jahreskonzert 'Metropolis'",
+        "starttime": "2022-03-11",
+        "endtime": "2022-03-12",
+        "content": "Die Kandertalhalle wurde zum Kinosaal und wir begleiteten musikalisch den Stummfilm Metropolis von 1927. Bedingt durch die Pandemie verschoben von 2021 und zwei Monate später als üblich.",
+        "berichte": [
+          {
+            "title": "Kandertalhalle verwandelte sich in einen Kinosaal",
+            "date": "2022-03-14",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/kandertalhalle-verwandelte-sich-in-einen-kinosaal"
+          },
+          {
+            "title": "Kino-Flair in der Kandertalhalle",
+            "date": "2022-03-13",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-kino-flair-in-der-kandertalhalle.05759a0e-a9cd-45db-bc65-405776c4a48d.html"
+          },
+          {
+            "title": "Richtige Kinoatmosphäre der 20er Jahre",
+            "date": "2022-03-11",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/richtige-kinoatmosphaere-der-20er-jahre"
+          },
+          {
+            "title": "Ein Konzert mit Kino-Atmosphäre",
+            "date": "2022-03-01",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-ein-konzert-mit-kino-atmosphaere.bd1ded34-72aa-4f90-be88-3c5a6d5be2db.html"
+          }
+        ]
+      }
+    ],
+    "2020": [
+      {
+        "title": "Generalversammlung",
+        "starttime": "2020-02-13",
+        "content": "In der Generalversammlung 2020 des Musikvereins Wollbach wurde auf ein ereignisreiches Jahr zurückgeblickt. Die musikalischen Leistungen, die engagierte Jugendarbeit und die Kontinuität im Vereinsleben standen im Mittelpunkt. Auch das anspruchsvolle musikalische Niveau des Orchesters wurde hervorgehoben.",
+        "keywords": [
+          "Generalversammlung",
+          "Jahresrückblick",
+          "Verein"
+        ],
+        "berichte": [
+          {
+            "title": "Anspruchsvoll und auch mitreißend",
+            "date": "2020-02-17",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-anspruchsvoll-und-auch-mitreissend.c99a0454-22fe-4f95-a1d8-edc5c1dddbb5.html"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "img/konzert_2020.jpg",
+            "title": "Der Musikverein vor dem Jahreskonzert 2020"
+          }
+        ],
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "title": "Jahreskonzert 'BTHVN' - 250 Jahre Beethoven",
+        "starttime": "2020-01-31",
+        "endtime": "2020-02-01",
+        "berichte": [
+          {
+            "title": "Die Wollbacher Hommage an ein 250 Jahre altes Genie",
+            "date": "2020-02-02",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/die-wollbacher-hommage-an-ein-250-jahre-altes-genie"
+          },
+          {
+            "title": "Musikgenuss auf höchstem Niveau",
+            "date": "2020-02-02",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-musikgenuss-auf-hoechstem-niveau.4cd028eb-3a81-4cf1-b265-ac021585e513.html"
+          }
+        ]
+      }
+    ],
+    "2019": [
+      {
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ],
+        "title": "Jungmusikerleistungsabzeichen in Bronze",
+        "starttime": "2019-10-19",
+        "content": "Die diesjährige Bronzeprüfung fand in Degerfelden statt. Mit Priska Offenwanger, Yannik Brunner, Benjamin Hamm, Vincent Ernst und Mattis Riesterer besuchten und absolvierten fünf Musikerinnen und Musiker aus Wollbach die Prüfung. Allen gratulieren wir herzlich zu diesem Erfolg und wünschen weiterhin viel Freude an der Musik."
+      },
+      {
+        "starttime": "2019-10-13",
+        "title": "Herbstfest",
+        "content": "Traditionell fand auch in diesem Jahr wieder unser Herbstfest am 13.10.2019 statt. Wie jedes Jahr eröffneten wir den Tag mit einem Festgottesdienst mit Pfarrer Werner Häffner. Dieser wurde musikalisch umrahmt durch den Gesangverein und Kirchenchor Wollbach sowie unser Vorstufen- und Aktivorchester. Anschließend wurden unsere Gäste musikalisch unterhalten von der Feuerwehrmusik Mambach, dem Jugendorchester des MV Wollbach 1866 e.V., dem Musikverein „Freundschaft“ Wies und dem Musikverein Schwörstadt. Auf der Speisekarte stand dieses Jahr neu die Schlachtplatte mit Blut- und Leberwurst, Kesselfleisch, Sauerkraut und Meerrettich. Für die jüngsten gab es eine Hüpfburg, Kinderschminken und eine Gummibärenschleuder. Vielen Dank an all unsere Besucher."
+      },
+      {
+        "keywords": [
+          "Sauserbummel"
+        ],
+        "starttime": "2019-10-12",
+        "title": "Sauserbummel",
+        "content": "Am 12. Oktober 2019 war es wieder soweit. Das Chanderli dampfte mit unseren 250 Gästen von Haltingen Richtung Hammerstein. Anschließend ging es bei strahlendem Sonnenschein durch die Weinberge mi 5 Weinstationen. An allen Stationen gab es unterschiedliche Weine von Weingütern aus der Region. Bei guter Stimmung konnten unsere Gäste den Abend mit unserer Dampfmusik ausklingen lassen. Fast pünktlich dampfte das Chanderli dann wieder zurück nach Haltingen."
+      },
+      {
+        "keywords": [
+          "Konzert"
+        ],
+        "starttime": "2019-09-15",
+        "title": "Sommerabschlusskonzert beim Jubiläumsfest des Musikverein Binzen",
+        "content": "Bei wunderbarem Wetter konnten wir gegen Abend nocheinmal ein schönes Konzert unter freiem Himmel geben, bevor wir in unsere Sommerpause gingen. Auch all unsere Sängerinnen und Sänger waren nochmals dabei."
+      },
+      {
+        "keywords": [
+          "Konzertreise",
+          "Konzert"
+        ],
+        "starttime": "2019-08-01",
+        "endtime": "2019-08-04",
+        "title": "Konzertreise: Freiburg - Dresden - Prag",
+        "content": "Am Donnerstag früh fuhren wir mit zwei vollen Bussen Richtng Freiberg wo wir gleich am Donnerstag Abend bei sommerlicher Atmosphäre unser erstes Konzert gaben. Am Freitag verbrachten wir unseren Tag in Dresden und durften am Nachmittag vor der Frauenkirche unser zweites Konzert geben. Glücklicherweise haben sehr viele Zuhörer angehalten und un über längere Zeit zugehört. Weiter ging es am nächsten Tag nach Prag, wo wir wetterbedingt leider das dritte Konzert absagen mussten. Trotzdem war es ein gelungener Tag in der schönen Stadt Prag. Am Sonntag fuhren wir wieder Richtung Wollbach - wobei wir einen Stopp in Bayreuth einlegten um uns das prachtvolle Festspielhaus anzuschauen.",
+        "berichte": [
+          {
+            "title": "Musikverein auf Tournee im Osten - Wollbacher Musiker gastierten in Freiberg, Dresden und Prag – ein Reisebericht.",
+            "date": "2019-08-30",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/kandern/musikverein-auf-tournee-im-osten--176796125.html"
+          },
+          {
+            "title": "Musikverein Wollbach begeistert in Dresden",
+            "date": "2019-08-28",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-musikverein-wollbach-begeistert-in-dresden.9583fe98-415c-4643-8dc1-584b07ee6484.html"
+          }
+        ]
+      },
+      {
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ],
+        "title": "Jungmusikerleistungsabzeichen in Silber",
+        "starttime": "2019-07-26",
+        "endtime": "2019-07-28",
+        "content": "Wir gratulieren Lilly Müller zum Jungmusiker Leistungsabzeichen in Silber!"
+      },
+      {
+        "keywords": [
+          "Konzert"
+        ],
+        "starttime": "2019-06-22",
+        "title": "Forsthof Open-Air",
+        "content": "Am 22. Juni 2019 fand unsere Premiere des Forsthof Open Air statt. Auch dieses Jahr durften wir wieder ein berauschendes Open-Air Spektakel erleben. Gleichzeitig konnten wir bei glücklicher Wetterlage den 90. Geburtstag von Manfred Wampfler feiern. Vielen Dank an unsere Freunde aus Bannwil für ihre super Unterstützung an der Bar sowie allen Angehörigen für ihre Hilfe hinter den Theken. Ein weiteres Dankeschön geht an unsere tollen Sängerinnen und Sänger die diesen Abend wieder mit ihren fantastischen Stimmen bereichert haben.",
+        "berichte": [
+          {
+            "title": "Open Air Konzert mit besonderem Flair",
+            "date": "2019-06-25",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/kandern/open-air-konzert-mit-besonderem-flair"
+          },
+          {
+            "title": "Rauschendes Fest im Forsthausgarten",
+            "date": "2019-06-24",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-rauschendes-fest-im-forsthausgarten.d93c347c-cceb-420c-8b47-6b4150b6e821.html"
+          }
+        ]
+      },
+      {
+        "keywords": [
+          "Jugend"
+        ],
+        "images": [
+          {
+            "src": "img/2019_muttertagskonzert.jpg",
+            "title": "Muttertagskonzert 2019"
+          }
+        ],
+        "content": "Dieses Jahr stand das Muttertagskonzert des Vorstufen- und Jugendorchester unter dem Motto „Zirkus“. So zeigten unsere jüngsten Musikerinnen und Musiker gleich mehrere Talente. Nicht nur auf ihrem Instrument, sondern auch auf dem Einrad, dem Rola Bola, beim jonglieren oder turnen, mit dem Diabolo, den Kiwidos oder Hula Hoop Reifen überzeugten die Jungmusiker das große Publikum. Nach dem Konzert konnten sich alle an dem vielseitigen Kuchenbuffet bedienen.",
+        "title": "Muttertagskonzert des Vorstufen- und Jugendorchesters",
+        "starttime": "2019-05-12"
+      },
+      {
+        "keywords": [
+          "Fastnachtsfeuer"
+        ],
+        "images": [
+          {
+            "src": "img/2019_fastnachtsfeuer.jpg",
+            "title": "Fastnachtsfeuer 2019"
+          }
+        ],
+        "content": "Wegen den Wetterbedingungen mussten wir unser diesjähriges Fansachtsfeuer verschieben. Jedoch konnten wir es dann am 16. März 2019 unter einem leuchtenden Sternenhimmel nachholen. Auch in diesem Jahr wurden kräftig Scheiben geschlagen. Als Stärkung gab es Grill- und Rostbratwürste sowie Berliner, Kuchen und natürlich Getränke.",
+        "title": "Fastnachtsfeuer",
+        "starttime": "2019-03-16"
+      },
+      {
+        "content": "Bei der diesjährigen Generalversammlung reflektierten wir noch einmal das vergangene Jahr mit all seinen Veranstaltungen und Ereignissen. Ebenso wurde ein Teil der Vorstandschaft wiedergewählt und für das kommende Jahr aufgestellt.",
+        "title": "Generalversammlung",
+        "images": [
+          {
+            "title": "Generalversammlung 2019",
+            "caption": "Die Vorstandschaft nach der Generalversammlung",
+            "src": "img/2019_generalversammlung.jpg"
+          }
+        ],
+        "keywords": [
+          "Generalversammlung"
+        ],
+        "starttime": "2019-02-07",
+        "berichte": [
+          {
+            "title": "Wollbacher Musiker sind bestens aufgestellt",
+            "date": "2019-02-12",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/kandern/wollbacher-musiker-sind-bestens-aufgestellt--166320661.html"
+          },
+          {
+            "title": "Ein gelungenes Jahr",
+            "date": "2019-02-08",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-ein-gelungenes-jahr.66389220-f477-470b-b5a1-236d1becdc5a.html"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "img/konzert_2019.jpg",
+            "title": "Der Musikverein vor dem Jahreskonzert 2019"
+          }
+        ],
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "title": "Jahreskonzert 'Space Odyssey'",
+        "starttime": "2019-01-25",
+        "endtime": "2019-01-26",
+        "content": "Am 25. & 26. Januar 2019 luden wir unter dem Motto „Space Odyssey – Eine musikalische Reise durchs Universum“ zu unseren diesjährigen Jahreskonzerten ein. Ein Abend rund um das Universum, die Planeten und die Sterne. Wir bedanken uns ganz herzlich bei all unseren Gästen sowie Herrn Wiederhold für spannende Einblicke in die Welt der Planeten.",
+        "berichte": [
+          {
+            "title": "Der Musikverein Wollbach entführt in die Weiten des Weltalls",
+            "date": "2019-01-27",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/kandern/der-musikverein-wollbach-entfuehrt-in-die-weiten-des-weltalls"
+          }
+        ]
+      },
+      {
+        "title": "Neujahrsempfang",
+        "starttime": "2019-01-06",
+        "keywords": [
+          "Neujahrsempfang"
+        ]
+      }
+    ],
+    "2018": [
+      {
+        "keywords": [
+          "Konzert"
+        ],
+        "title": "Lions Benefiz Adventskonzert",
+        "starttime": "2018-12-16",
+        "content": "Am 16.12. veranstaltete der Lions Club Lörrach zum 2. Mal mit uns das „Lions-Benefiz-Adventskonzert“ in der Kirche in Wollbach. So haben sich einige unterschiedliche Holz- und Blechensembles aus dem Aktivorchester zusammengefunden und ein abwechslungsreiches Programm geboten. Ebenso hat unser Jugendorchester mit 3 Stücken mitgewirkt."
+      },
+      {
+        "keywords": [
+          "Jugend"
+        ],
+        "title": "Weihnachtsvorspiel",
+        "images": [
+          {
+            "src": "img/2018_weihnachtsvorspiel.jpg",
+            "title": "Weihnachtsvorspiel 2018"
+          }
+        ],
+        "starttime": "2018-12-09",
+        "content": "Unsere jüngsten Musikerinnen und Musiker konnten beim Weihnachtsvorspiel in der Kirche ihr neues Können unter Beweis stellen. Auch das Vorstufenorchester begeisterte mit seinen Beiträgen zum Abschluss des Abends.",
+        "berichte": [
+          {
+            "title": "Beobachtet & gehört",
+            "date": "2018-12-22",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/kandern/beobachtet-und-gehoert-xgx6efxyx--162381077.html#"
+          }
+        ]
+      },
+      {
+        "title": "Musik baut Brücken",
+        "content": "Durch den Vorschlag unseres Ortsvorsteher Max Sütterlin wurde die Arbeit des Musikvereins Wollbach unter dem Motto „Musik baut Brücken“ von Landrätin Frau Damman in einer Feierstunde in Lörrach gewürdigt. Einige unserer Jungmusiker umrahmten diesen Anlass musikalisch. Ebenso wurde unser 2. Vorstand Thomas Kuckuk von Matthias Zeller zu einem Interview gebeten.",
+        "starttime": "2018-12-01"
+      },
+      {
+        "starttime": "2018-11-30",
+        "images": [
+          {
+            "src": "img/2018_adventskranzverkauf.jpg",
+            "title": "Das Jugendorchester beim Adventskranzverkauf 2018"
+          }
+        ],
+        "title": "Adventskranzverkauf",
+        "content": "Unsere Jungmusiker haben auch in diesem Jahr wieder fleißig Adventskränze gebunden und dekoriert. Diese konnten wir beim Adventskranzverkauf im schönen Forsthof verkaufen. Für das leibliche wohl war mit Raclette, Grillwürsten, Glühwein und Kinderpunsch gesorgt. Das Vorstufen- und Jugendorchester stimmte unsere Gäste mit Weihnachtsliedern auf die Weihnachtszeit ein."
+      },
+      {
+        "starttime": "2018-10-28",
+        "title": "Urkundenverleihung der Jungmusikerleistungsabzeichen",
+        "content": "Alle die im Jahr 2018 ein Jungmusiker Leistungsabzeichen absolviert haben, erhielten am 28.10. ihre Urkunde in Hauingen. Überreicht wurde diese durch den Präsidenten des Alemannischen Musikverbandes - Peter Hässler."
+      },
+      {
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ],
+        "title": "Jungmusikerleistungsabzeichen in Bronze",
+        "starttime": "2018-10-01",
+        "images": [
+          {
+            "src": "img/2018_jmla_bronze.jpg",
+            "title": "JMLA Bronze 2018"
+          }
+        ],
+        "content": "Jungmusiker Leistungsabzeichen in Bronze! Wir gratulieren folgenden 7 Jungmusikerinnen und Jungmusikern ganz herzlich: Henri, Ben, Anny, Hanna, Laurina, Emil und Alban."
+      },
+      {
+        "starttime": "2018-10-14",
+        "title": "Herbstfest",
+        "content": "Traditionell fand auch in diesem Jahr wieder unser Herbstfest am 14.10.2018 statt. Wie jedes Jahr eröffneten wir den Tag mit einem Festgottesdienst mit Pfarrer Werner Häffner. Dieser wurde musikalisch umrahmt durch den Gesangverein und Kirchenchor Wollbach sowie unser Vorstufen- und Aktivorchester. Anschließend wurden unsere Gäste musikalisch unterhalten von der Feuerwehrmusik Mambach, dem Jugendorchester des MV Wollbach 1866 e.V., dem Musikverein „Freundschaft“ Wies und dem Musikverein Schwörstadt. Auf der Speisekarte stand dieses Jahr neu die Schlachtplatte mit Blut- und Leberwurst, Kesselfleisch, Sauerkraut und Meerrettich. Für die jüngsten gab es eine Hüpfburg, Kinderschminken und eine Gummibärenschleuder. Vielen Dank an all unsere Besucher.",
+        "berichte": [
+          {
+            "title": "Die Freuden des Herbstes",
+            "date": "2018-10-15",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-die-freuden-des-herbstes.0a3bd3e2-a1ae-4570-b850-1f59af645d73.html"
+          }
+        ]
+      },
+      {
+        "keywords": [
+          "Sauserbummel"
+        ],
+        "images": [
+          {
+            "src": "img/2018_sauserbummel.jpg",
+            "title": "Sauserbummel 2018"
+          }
+        ],
+        "starttime": "2018-10-13",
+        "title": "Sauserbummel",
+        "content": "Am 13. Oktober 2018 war es wieder soweit. Das Chanderli dampfte mit unseren 250 Gästen von Haltingen Richtung Hammerstein. Anschließend ging es bei strahlendem Sonnenschein durch die Weinberge mi 5 Weinstationen. An allen Stationen gab es unterschiedliche Weine von Weingütern aus der Region. Bei guter Stimmung konnten unsere Gäste den Abend mit unserer Dampfmusik ausklingen lassen. Fast pünktlich dampfte das Chanderli dann wieder zurück nach Haltingen.",
+        "berichte": [
+          {
+            "title": "Die Freuden des Herbstes",
+            "date": "2018-10-15",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-die-freuden-des-herbstes.0a3bd3e2-a1ae-4570-b850-1f59af645d73.html"
+          }
+        ]
+      },
+      {
+        "title": "Jungmusikerleistungsabzeichen in Silber",
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ],
+        "starttime": "2018-07-01",
+        "images": [
+          {
+            "src": "img/2018_jmla_silber.jpg",
+            "title": ""
+          }
+        ],
+        "content": "Jungmusiker Leistungsabzeichen in Silber! Zu diesem tolle Erfolg gratulieren wir ganz herzlich unserer Klarinettistin Karolin Grozinger."
+      },
+      {
+        "keywords": [
+          "Konzert"
+        ],
+        "starttime": "2018-05-22",
+        "title": "Forsthof Open-Air",
+        "images": [
+          {
+            "src": "img/2018_forsthof_openair.jpg",
+            "title": "Forsthof Open-Air 2018"
+          }
+        ],
+        "content": "Am 22. Juni 2018 fand unsere Premiere des Forsthof Open Air statt. Bei ausverkauftem Forsthof und etwas Glück mit dem Wetter konnten wir unser Sommerprogramm darbieten. Mit dabei waren auch unsere Sängerinnen Anuschka Wagner, Christina De Groote, Damaris Arnold. Und Raija Kuckuk sowie unser Sänger Alex Gottstein. Kaltes Bier gab es vom Brauwerk in Tannenkirch und leckere Speisen der Engenmühle in Wintersweiler. Leckere Cocktails wurden an der Cocktailbar durch unsere Musikerfreunde aus Bannwil serviert.",
+        "berichte": [
+          {
+            "title": "Legendäre Hits attraktiv aufbereitet",
+            "date": "2018-06-12",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/kandern/legendaere-hits-attraktiv-aufbereitet"
+          },
+          {
+            "title": "Präsentation fürs heimische Publikum",
+            "date": "2018-06-11T22:21:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-praesentation-fuers-heimische-publikum.275c8033-10fa-43b7-b42f-e04d3c5ef790.html"
+          }
+        ]
+      },
+      {
+        "keywords": [
+          "Jugend"
+        ],
+        "starttime": "2018-05-13",
+        "title": "Jugendkonzert",
+        "content": "Muttertag – der Tag für unser Jugendkonzert. So lud auch in diesem Jahr unser Vorstufen-und Jugendorchester zum gemeinsamen Konzert am Nachmittag ein. Unter der Leitung von Maria Krey zeigten unsere Jungmusiker ihr einstudiertes Konzertprogramm. Nach dem Konzert gab es noch Kaffee und Kuchen für alle."
+      },
+      {
+        "keywords": [
+          "Marschmusikfestival"
+        ],
+        "starttime": "2018-05-05",
+        "images": [
+          {
+            "src": "img/2018_marschmusik.jpg",
+            "title": "Marschmusik 2018"
+          }
+        ],
+        "title": "Marschmusikfestival",
+        "content": "Bei Sonnenschein und strahlend blauem Himmel sind wir am 05. Mai 2018 mit unserer Marschmusik durch die Dörfer maschiert. Dieses Jahr waren wir zu Gast in Schallbach, Wollbach und Hammerstein. Unsere letzte Station war in Egisholz, wo wir beim Grillen den Abend ausklingen konnten.",
+        "berichte": [
+          {
+            "title": "Taktfest-bewegte Hitparade",
+            "date": "2018-05-06",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-taktfest-bewegte-hitparade.a63dadea-e73d-49df-9ffd-e3c4622ff101.html"
+          },
+          {
+            "title": "Mit festem Tritt und Klang sieben Stunden durch den Ort",
+            "date": "2018-05-07",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/kandern/mit-festem-tritt-und-klang-sieben-stunden-durch-den-ort"
+          }
+        ]
+      },
+      {
+        "keywords": [
+          "Konzert"
+        ],
+        "starttime": "2018-04-28",
+        "images": [
+          {
+            "src": "img/2018_doppelkonzert_fahrnau.jpg",
+            "title": "Doppelkonzert mit dem Musikverein Fahrnau"
+          }
+        ],
+        "title": "Dopelkonzert mit dem Musikverein Fahrnau",
+        "content": "Ein weiteres tolles Doppelkonzert durften wir am 28.04.2018 in der Sadthalle in Schopfheim erleben. Dieses Mal waren wir zu Gast beim Musikverein Fahrnau. Auch beim Musikverein Fahrnau bedanken wir uns ganz herzlich für einen wundervollen Konzertabend.",
+        "berichte": [
+          {
+            "title": "Eine Kreuzfahrt expressiver Klänge",
+            "date": "2018-05-01",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.schopfheim-eine-kreuzfahrt-expressiver-klaenge.311e932e-8ea9-4c68-81f6-42fa04e204fb.html"
+          },
+          {
+            "title": "Den Saal zum Kochen gebracht",
+            "date": "2018-04-30",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/schopfheim/den-saal-zum-kochen-gebracht"
+          }
+        ]
+      },
+      {
+        "starttime": "2018-04-21",
+        "title": "Gewerbetage Binzen",
+        "endtime": "2018-04-22",
+        "content": "Auch im Jahr 2018 haben wir wieder bei den Gewerbetagen in Binzen mitgewirkt. So hatten wir am 21. Und 22. April 2018 auf dem Gelände des Autohaus Gottstein einen Stand mit Grillwürsten, Gyros mit Pommes Chips, Currywurst und kühlen Getränken."
+      },
+      {
+        "keywords": [
+          "Konzert"
+        ],
+        "starttime": "2018-04-14",
+        "title": "Doppelkonzert mit dem Musikverein Schwörstadt",
+        "images": [
+          {
+            "src": "img/2018_doppelkonzert_schwoerstadt.jpg",
+            "title": "Doppelkonzert mit dem Musikverein Schwörstadt"
+          }
+        ],
+        "content": "Am 14. April 2018 hatten wir ein gemeinsames Doppelkonzert mit dem Musikverein Schwörstadt. Für uns war dies ein gelungener Abend und wir bedanken uns bei den Musikerinnen und Musikern aus Schwörstadt für ihre Gastfreundschaft.",
+        "berichte": [
+          {
+            "title": "85 Blasmusiker bringen in Stimmung",
+            "date": "2018-04-16",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/schwoerstadt/85-blasmusiker-bringen-in-stimmung"
+          },
+          {
+            "title": "MV Schwörstadt entführt auf eine musikalische Reise um die Welt",
+            "date": "2018-04-16",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "SK",
+            "srcUrl": "https://www.suedkurier.de/",
+            "url": "https://www.suedkurier.de/region/hochrhein/schwoerstadt/MV-Schwoerstadt-entfuehrt-auf-eine-musikalische-Reise-um-die-Welt;art372618,9697001"
+          },
+          {
+            "title": "Durch Länder und Zeiten",
+            "date": "2018-04-15",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.schwoerstadt-durch-laender-und-zeiten.ca4ad158-4434-4c9c-9aaa-e306b821af37.html"
+          }
+        ]
+      },
+      {
+        "keywords": [
+          "Fastnachtsfeuer"
+        ],
+        "starttime": "2018-02-18",
+        "title": "Scheibenfeuer",
+        "content": "Das Scheibenfeuer war auch in diesem Jahr ein schöner Anlass bei bestem Wetter."
+      },
+      {
+        "starttime": "2018-02-15",
+        "title": "Generalversammlung",
+        "content": "An der Generalversammlung rekapitulierten wir das ereignisreiche Jubiläumsjahr 2017 und stellten uns, unter anderem mit Wahlen, für die kommenden Jahre neu auf.",
+        "keywords": [
+          "Generalversammlung"
+        ],
+        "berichte": [
+          {
+            "title": "Dörflicher Kulturträger von herausragendem Format",
+            "date": "2018-02-17",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/doerflicher-kulturtraeger-von-herausragendem-format"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "img/konzert_2018.jpg",
+            "title": "Der Musikverein vor dem Jahreskonzert 2018"
+          }
+        ],
+        "starttime": "2018-01-26",
+        "endtime": "2018-01-27",
+        "title": "Jahreskonzert",
+        "content": "Am freitag den 26. und Samstag den 27. Januar veranstaltete der Musikverein sein Jahreskonzert, dass diesmal im Rahmen des Barock aufgeführt wurde. Mit Stücken von Bach, Händel, Susato oder auch 'Der gestiefelten Kater' von Cesarini der zwar nicht aus dieser Zeit stammt aber von selbiger erzählt.",
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "berichte": [
+          {
+            "title": "Von Bauernhochzeit bis Prinsjesdag",
+            "date": "2018-01-30",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-von-bauernhochzeit-bis-prinsjesdag.322f528f-dd99-4f7c-9ae2-a6b1be083be3.html"
+          },
+          {
+            "title": "Von Bauernhochzeit bis Prinsjesdag",
+            "date": "2018-01-30",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/kandern/von-bauernhochzeit-bis-prinsjesdag"
+          },
+          {
+            "title": "Kandertalhalle wird zum barocken Festsaal",
+            "date": "2018-01-29",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/kandertalhalle-wird-zum-barocken-festsaal"
+          }
+        ]
+      },
+      {
+        "starttime": "2018-01-06T19:00:00Z",
+        "title": "Neujahrsempfang",
+        "content": "Zusammen mit dem Jugendorchester, sowie dem Gesangverein und dem Kirchenchor gestaltete der Musikverein die musikalische Umrahmung des Neujahrsempfangs.",
+        "keywords": [
+          "Neujahrsempfang"
+        ]
+      }
+    ],
+    "2017": [
+      {
+        "starttime": "2017-12-17T17:30:00Z",
+        "title": "Jugendvorspiel",
+        "keywords": [
+          "Jugend"
+        ]
+      },
+      {
+        "starttime": "2017-12-09T00:00:00Z",
+        "title": "Weihnachtsfeier"
+      },
+      {
+        "starttime": "2017-12-03T10:30:00Z",
+        "title": "Wartburgfest der Kirchengemeinde"
+      },
+      {
+        "starttime": "2017-12-01T19:00:00Z",
+        "title": "Adventskranzverkauf durch Klingendes C"
+      },
+      {
+        "starttime": "2017-11-11",
+        "title": "Vorstufen- und Jugendorchester begleiten den Sankt-Martins-Umzug"
+      },
+      {
+        "starttime": "2017-10-31T10:00:00Z",
+        "title": "Feiertagsgottesdienst '500 Jahre Martin Luther'"
+      },
+      {
+        "starttime": "2017-10-14T00:00:00Z",
+        "endtime": "2017-10-15T00:00:00Z",
+        "title": "Sauserexpress und Herbstfest",
+        "keywords": [
+          "Sauserbummel"
+        ],
+        "berichte": [
+          {
+            "title": "Blasmusik und Gemütlichkeit",
+            "date": "2017-10-18",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-blasmusik-und-gemuetlichkeit.54c22c55-49bb-48dd-a431-545178083172.html"
+          },
+          {
+            "title": "Festprogramm so farbig wie der Herbst",
+            "date": "2017-10-17",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/kandern/festprogramm-so-farbig-wie-der-herbst.html"
+          }
+        ]
+      },
+      {
+        "starttime": "2017-10-01T17:00:00Z",
+        "title": "Oktoberfest Wies"
+      },
+      {
+        "starttime": "2017-09-01T20:00:00Z",
+        "endtime": "2017-09-01T22:00:00Z",
+        "title": "Auftritt bei der Feuerwehrmusik Mambach",
+        "berichte": [
+          {
+            "title": "Wettsägen und heisse Rhythmen",
+            "date": "2017-09-04",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.zell-im-wiesental-wettsaegen-und-heisse-rhythmen.f57d8fd6-b47f-4c4c-b993-020e9c2f71dd.html"
+          }
+        ]
+      },
+      {
+        "starttime": "2017-07-23T14:00:00Z",
+        "endtime": "2017-07-23T15:00:00Z",
+        "title": "Auftritt am Sommerfest der Bergmannskapelle Wieden",
+        "content": "Das Sommerfest der Bergmannskapelle Wieden, bei schönstem Wetter und bester Stimmung, war unser letzter Auftritt vor der Sommerpause. Wir genossen das Musizieren vor dieser wunderbaren Schwarzwald-Kulisse."
+      },
+      {
+        "starttime": "2017-07-23T10:00:00Z",
+        "title": "Kirchhofgottesdienst"
+      },
+      {
+        "starttime": "2017-07-21T19:00:00Z",
+        "title": "Jugendvorspiel mit anschließendem Grillabend",
+        "content": "Unsere Zöglinge konnten auch bei diesem Vorspiel ihr Können unter Beweis stellen und das Auftreten vor Publikum üben. Der Abend wurde beim Grillen und geselligen Beisammensein beschlossen.",
+        "keywords": [
+          "Jugend"
+        ]
+      },
+      {
+        "starttime": "2017-06-30T00:00:00Z",
+        "title": "Bischofszeller Rosen- und Kulturwoche",
+        "content": "",
+        "keywords": [
+          "Konzert"
+        ]
+      },
+      {
+        "starttime": "2017-06-24T20:00:00Z",
+        "endtime": "2017-06-24T21:30:00Z",
+        "title": "Kastanienparkfest",
+        "content": "Bei schönem Wetter und super Ambiente konnten wir auch in diesem Jahr den Auftritt am Kastanienparkfest in Rheinfelden zusammen mit zahlreichen Zuhörern genießen.",
+        "keywords": [
+          "Konzert"
+        ]
+      },
+      {
+        "endtime": "2017-05-21T00:00:00Z",
+        "starttime": "2017-05-20T00:00:00Z",
+        "title": "1250 Jahre Wollbach mit Festakt, Festgottesdienst und Festumzug",
+        "content": "Der Musikverein konnte beim Festakt zum 1250 jährigen Bestehen gleich mehrfach mitwirken: So gab es beim Festumzug eine kleine Marschmusik durchs Dorf und der Festgottesdienst sowie die der Festabend konnte musikalisch begleitet werden.",
+        "keywords": [
+          "Marschmusikfestival",
+          "Konzert"
+        ]
+      },
+      {
+        "starttime": "2017-05-14T14:30:00Z",
+        "title": "Muttertagskonzert des Vorstufen- und Jugendorchesters",
+        "content": "Erstmals unter der Leitung von Maria Krey konnte das Jugend- und das Vorstufenorchester an diesem Konzert zeigen, was erarbeitet wurde.",
+        "keywords": [
+          "Konzert"
+        ],
+        "berichte": [
+          {
+            "title": "Neue Klangkörper kommen super an",
+            "date": "2017-05-17",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "url": "https://www.badische-zeitung.de/kandern/neue-klangkoerper-kommen-super-an"
+          }
+        ]
+      },
+      {
+        "starttime": "2017-04-02",
+        "title": "Frühlings-Doppelkonzert mit der Stadtmusik Hüningen",
+        "content": "Das Doppelkonzert mit der Stadtmusik Hüningen im Triangle in Hüngingen war ein voller Erfolg und schöner Konzertnachmittag für den wir uns auch an dieser Stelle ganz herzlich bedanken möchten.",
+        "keywords": [
+          "Konzert"
+        ]
+      },
+      {
+        "keywords": [
+          "Fastnachtsfeuer"
+        ],
+        "starttime": "2017-03-05",
+        "title": "Scheibenfeuer",
+        "content": "Das Scheibenfeuer war auch in diesem Jahr allen Wetterkapriolen zum Trotz ein schöner Anlass."
+      },
+      {
+        "starttime": "2017-02-09",
+        "title": "Generalversammlung",
+        "content": "An der Generalversammlung rekapitulierten wir das ereignisreiche Jubiläumsjahr 2016 und stellten uns, unter anderem mit Wahlen, für die kommenden Jahre neu auf.",
+        "keywords": [
+          "Generalversammlung"
+        ],
+        "berichte": [
+          {
+            "title": "Vorbildliche Blasmusiker",
+            "date": "2017-02-16",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "url": "https://www.badische-zeitung.de/kandern/vorbildliche-blasmusiker"
+          },
+          {
+            "title": "Der Musikverein Wollbach absolvierte so viele Auftritte wie nie",
+            "date": "2017-01-30",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "url": "https://www.badische-zeitung.de/kandern/der-musikverein-wollbach-absolvierte-so-viele-auftritte-wie-nie--133450707.html"
+          },
+          {
+            "title": "Große Anstrengungen, viele Erfolge",
+            "date": "2017-02-11T00:37:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-grosse-anstrengungen-viele-erfolge.71b03080-4e28-4c48-b96c-2c76767cbbc8.html"
+          }
+        ]
+      },
+      {
+        "starttime": "2017-01-27",
+        "endtime": "2017-01-28",
+        "title": "Jahreskonzert mit Solisten",
+        "content": "Am Freitag den 27. und Samstag den 28. Januar veranstalteten wir unser alljährliches Jahreskonzert in der Kandertalhalle in Wollbach. Unter dem Titel [Jahreskonzert mit Solisten](blog_2017-jahreskonzert.html) präsentierten einige junge Musiker ihr Können.",
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "berichte": [
+          {
+            "date": "2017-01-30",
+            "hasDescription": true,
+            "hasPicture": true,
+            "url": "https://www.badische-zeitung.de/kandern/interpretationsvermoegen-auf-oberstufenniveau",
+            "title": "Interpretationsvermoegen auf Oberstufenniveau",
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de"
+          }
+        ]
+      },
+      {
+        "starttime": "2017-01-06",
+        "title": "Neujahrsempfang",
+        "content": "Zusammen mit dem Jugendorchester, sowie dem Gesangverein und dem Kirchenchor gestaltete der Musikverein die musikalische Umrahmung des Neujahrsempfangs.",
+        "keywords": [
+          "Neujahrsempfang"
+        ]
+      }
+    ],
+    "2016": [
+      {
+        "starttime": "2016-12-04",
+        "title": "Benefiz Advents Konzert",
+        "content": "Mit dem Lions Club als Veranstalter spielten wir ein [Benefiz Advents Konzert](blog_2016-adventskonzert.html) in der Kirche in Wollbach bei dem das Jugendorchester und mehrere kleine Ensembles zu hören waren.",
+        "keywords": [
+          "Konzert"
+        ],
+        "berichte": [
+          {
+            "date": "2016-12-09",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "Klangvolles Finale im Jubiläumsjahr",
+            "url": "https://www.badische-zeitung.de/kandern/klangvolles-finale-des-jubilaeumsjahrs"
+          },
+          {
+            "date": "2016-12-06T00:54:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de",
+            "title": "Klangvolles Finale im Jubiläumsjahr",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-klangvolles-finale-im-jubilaeumsjahr.3f4f5966-7c6f-43b1-bac3-3422017b4ddf.html"
+          }
+        ]
+      },
+      {
+        "starttime": "2016-11-27",
+        "title": "Wartburgfest der evangelischen Kirchengemeinde Wollbach",
+        "content": "Wie jedes Jahr haben wir am Wartburgfest der Kirchengemeinde Wollbach den Gottesdienst begleitet, sowie zum Frühschoppen aufgespielt."
+      },
+      {
+        "starttime": "2016-11-26",
+        "title": "Jungmusikerleistungsabzeichen in Bronze",
+        "content": "Wir gratulieren ganz herzlich Lea Kronenberger, Lilly Müller, Anna Sieglin und Antonia Müller zum Bestehen des JMLA in Bronze.",
+        "images": [
+          {
+            "title": "v.l.n.r.: Lea Kronenberger, Lilly Müller, Anna Sieglin und Antonia Müller",
+            "src": "img/2016_jmla_bronze.jpg"
+          }
+        ],
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ]
+      },
+      {
+        "starttime": "2016-11-25",
+        "title": "Adventskranzverkauf",
+        "content": "Wunderschöne selbstgemachte Adventskränzen und Gestecken haben wir im weihnachtlichen Ambiente des Forsthofes bei Manfred Wampfler verkaufen können. Mit Glühwein, Raclette und Würsten konnte man es sich bei musikalischer Begleitung durch das Vorstufen- und Jugendorchester gut gehen lassen. [Zum Flyer des Adventskranverkaufs](blog_2016-adventskranz.html)."
+      },
+      {
+        "starttime": "2016-10-15",
+        "endtime": "2016-10-16",
+        "title": "Sauserexpress und Herbstfest mit Jubiläumsgottesdienst",
+        "content": "Der [Sauserbummel](blog_2016-sauserfahrt.html) war auch in diesem Jahr wieder eine sehr schöne Veranstaltung. Musikalisch begleitet wurde der Spaziergang durch das Kandertal von unserer Dampfmusik. Am Sonntag feierte der Musikverein sein 150 jähriges Bestehen am Herbstfest mit Festgottesdienst und musikalisch begleitet vom Musikverein Alpenblick Willaringen, dem Musikverein Whylen und dem Jugendorchester Wollbach. [Zum Flyer des Herbstfestes](/files/flyer/16_herbstfest.pdf). Die Ergebnisse des [Ballon Wettbewerbes](blog_2016-ballonwettbewerb.html) können hier eingesehen werden.",
+        "keywords": [
+          "Sauserbummel"
+        ],
+        "berichte": [
+          {
+            "date": "2016-10-17T00:00:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "Fulminantes musikalisches Fest",
+            "url": "https://www.badische-zeitung.de/kandern/fulminantes-musikalisches-fest"
+          },
+          {
+            "date": "2016-10-16T23:46:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de",
+            "title": "Aushängeschild für das Kandertal",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-aushaengeschild-fuer-das-kandertal.7367e512-b576-4888-b3eb-1c1242d2bbe6.html"
+          }
+        ]
+      },
+      {
+        "starttime": "2016-07-28",
+        "endtime": "2016-07-31",
+        "title": "Konzertreise nach Südtirol",
+        "content": "Die Konzertreise ins Vinschgau in Südtirol und nach Serfaus in Tirol bot neben drei wunderbaren Konzerten in besonderer Kulisse auch diverse Angebote Südtirol kennenzulernen.",
+        "keywords": [
+          "Konzert"
+        ],
+        "berichte": [
+          {
+            "date": "2016-08-18T00:00:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "Musik in 2500 Metern Höhe",
+            "url": "https://www.badische-zeitung.de/kandern/musik-in-2500-metern-hoehe"
+          }
+        ]
+      },
+      {
+        "starttime": "2016-07-27",
+        "endtime": "2016-07-31",
+        "title": "Jungmusikerleistungsabzeichen in Silber",
+        "content": "Wir gratulieren ganz herzlich Lina Müller und Kim Strohmeier zum Bestehen des JMLA in Silber auf der Klarinette.",
+        "images": [
+          {
+            "src": "img/2016_jmla_silber.jpg",
+            "title": "Lina Müller bei der Urkundenverleihung in Tegernau"
+          }
+        ],
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ]
+      },
+      {
+        "starttime": "2016-07-24",
+        "title": "Kirchhofgottesdienst",
+        "content": "Neben Kirchenchor und Gesangverein begleitete der Musikverein den Gottesdienst und spielte anschliessend bei den weiteren Festlichkeiten an der Wartburg."
+      },
+      {
+        "starttime": "2016-07-22",
+        "title": "Jugendvorspiel",
+        "content": "Unsere Zöglinge präsentierten Stücke die sie mit ihren Lehrern erarbeitet haben.",
+        "keywords": [
+          "Jugend"
+        ]
+      },
+      {
+        "starttime": "2016-07-09",
+        "title": "Doppelkonzert des Jugendorchesters mit dem Verbandsjugendorchester des AMV",
+        "content": "Zusammen mit dem Verbandsjugendorchester des Alemannischen Musikverbandes gab unser Jugendorchester ein Doppelkonzert in der Kandertalhalle Wollbach. [Zum Programm ...](2016-jugend-doppelkonzert.html)",
+        "keywords": [
+          "Konzert"
+        ],
+        "berichte": [
+          {
+            "date": "2016-07-11T00:00:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "Die Jugend begeistert beim Konzert",
+            "url": "https://www.badische-zeitung.de/kandern/die-jugend-begeistert-beim-konzert--124627761.html"
+          }
+        ]
+      },
+      {
+        "starttime": "2016-05-04",
+        "title": "Marschmusikfestival",
+        "content": "In Marschmusikformation sind wir zusammen mit der Musikgesellschaft Bannwil am Samstag in Wollbach und Nebenorten unterwegs gewesen und haben unseren Mitgliedern und der Dorfbevölkerung unsere schönsten Märsche präsentiert. Abschliessend haben wir uns zum großen Finale an der 'Alten Krone' getroffen und konnten den Tag mit musikalischer Begleitung durch die Dampfmusik ausklingen lassen.",
+        "keywords": [
+          "Marschmusikfestival"
+        ],
+        "berichte": [
+          {
+            "date": "2016-06-08T22:47:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de",
+            "title": "Ständchen an 20 Stationen",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-staendchen-an-20-stationen.baed3827-a60c-43e8-aca6-4a54cbd1d7d4.html"
+          },
+          {
+            "date": "2016-06-07T22:13:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "Mit Marschmusik durch Wollbach und die Weiler",
+            "url": "https://www.badische-zeitung.de/kandern/mit-marschmusik-durch-wollbach-und-die-weiler--122804177.html"
+          },
+          {
+            "date": "2016-06-02T00:00:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "Sechs Stunden schallt fröhliche Marschmusik durch Wollbach",
+            "url": "https://www.badische-zeitung.de/kandern/sechs-stunden-schallt-froehliche-marschmusik-durch-wollbach"
+          },
+          {
+            "date": "2016-06-02T22:03:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de",
+            "title": "Festival der Marschmusik in Wollbach",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-festival-der-marschmusik-in-wollbach.3580d1ba-cf9f-4c77-882a-347ffc11f4ca.html"
+          },
+          {
+            "date": "2016-04-07T00:00:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "Musikverein lädt zum Festival der Marschmusik",
+            "url": "https://www.badische-zeitung.de/kandern/musikverein-laedt-zum-festival-der-marschmusik--120480513.html"
+          }
+        ]
+      },
+      {
+        "starttime": "2016-05-08",
+        "title": "Kirchenkonzert",
+        "content": "Zusammen mit dem Verbandsjugendorchester Hochrhein gaben wir am 08. Mai unser [Jubiläums-Doppelkonzert](blog_2016-kirchenkonzert.html) in der evangelischen Stadtkirche Kandern.",
+        "images": [
+          {
+            "title": "Das Verbandsjugendorchester Hochrhein mit dem Musikverein Wollbach vor der evangelischen Stadtkirche Kandern",
+            "src": "img/2016_kirchenkonzert.jpg"
+          }
+        ],
+        "keywords": [
+          "Konzert",
+          "Kirchenkonzert"
+        ],
+        "berichte": [
+          {
+            "date": "2016-05-09T22:13:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "Hochkarätiges Gemeinschaftskonzert",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-hochkaraetiges-gemeinschaftskonzert.4a2af6c3-d411-412a-94a9-32551af29626.html"
+          },
+          {
+            "date": "2016-05-10T00:00:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "Mitreißend und voller Dynamik",
+            "url": "https://www.badische-zeitung.de/kandern/mitreissend-und-voller-dynamik"
+          },
+          {
+            "date": "2016-05-03T22:51:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de",
+            "title": "\"Wunderbares Konzertprogramm\"",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-wunderbares-konzertprogramm.d2beab60-4c07-4178-8697-1a37f1c8c990.html"
+          }
+        ]
+      },
+      {
+        "keywords": [
+          "Fastnachtsfeuer"
+        ],
+        "starttime": "2016-02-14",
+        "title": "Scheibenfeuer",
+        "content": "Trotz des durchwachsenen Wetters war das Scheibenfeuer auch in diesem Jahr wieder ein schöner Anlass."
+      },
+      {
+        "starttime": "2016-02-11",
+        "title": "Generalversammlung des Musikvereins und der Fördervereine",
+        "content": "Unsere Generalversammlung konnten wir am 11.02. im Stüble abhalten. Bei den Wahlen ergab sich eine Änderung, wobei Erwin Bürgin und Alexander Serazio ihre Posten als Fördervereins-Vorsitzender und Passiv-Beisitzer tauschten. Ausserdem haben wir drei neue Ehrenmitglieder worüber wir uns sehr freuen: Christian Argast, Susanne Schlüchter-Meier und  Sigrid Nickel. Herzlichen Glückwunsch.",
+        "berichte": [
+          {
+            "date": "2016-02-13T00:00:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "CD-Aufnahme war ein echtes Ereignis",
+            "url": "https://www.badische-zeitung.de/kandern/cd-aufnahme-war-ein-echtes-ereignis--117472900.html"
+          },
+          {
+            "date": "2016-02-12T21:56:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de",
+            "title": "Erfolgreich dank Einsatzfreude",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-erfolgreich-dank-einsatzfreude.c3acca00-33bf-454c-a70a-0bbdc10626cc.html"
+          }
+        ]
+      },
+      {
+        "starttime": "2016-01-22",
+        "endtime": "2016-01-23",
+        "content": "Unter dem Motto ['Still Feeling Good'][konzert] gaben wir unser Jubiläumskonzert am Freitag und Samstag Abend bei toller Atmosphäre und ausverkaufter Halle.\n[konzert]: blog_2016-jahreskonzert.html",
+        "title": "Jahreskonzert",
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "berichte": [
+          {
+            "date": "2016-01-25T00:00:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "Swingender Sound und groovende Rhythmen",
+            "url": "https://www.badische-zeitung.de/kandern/swingender-sound-und-groovende-rhythmen"
+          },
+          {
+            "date": "2016-01-24T00:00:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "VHJ",
+            "srcUrl": "https://www.verlagshaus-jaumann.de",
+            "title": "Professionell und aufwendig inszenierte Geburtstagsshow",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-professionell-und-aufwendig-inszenierte-geburtstagsshow.455ff5a5-caf5-4595-b0ea-93910ba75e2f.html"
+          },
+          {
+            "date": "2016-01-21T00:00:00.000Z",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "BZ",
+            "srcUrl": "https://www.badische-zeitung.de",
+            "title": "Was klein begann, lässt heute groß aufhorchen",
+            "url": "https://www.badische-zeitung.de/kandern/was-klein-begann-laesst-heute-gross-aufhorchen"
+          }
+        ]
+      },
+      {
+        "starttime": "2016-01-06",
+        "title": "Neujahrsempfang",
+        "content": "Zusammen mit dem Jugendorchester, sowie dem Gesangverein und dem Kirchenchor gestaltete der Musikverein die musikalische Umrahmung des Neujahrsempfangs.",
+        "keywords": [
+          "Neujahrsempfang"
+        ],
+        "berichte": [
+          {
+            "date": "2016-01-11T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/hochwasserschutz-auch-fuer-wollbach-thema--116049947.html",
+            "title": "Hochwasserschutz auch für Wollbach Thema",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          },
+          {
+            "date": "2016-01-09T00:00:00Z",
+            "title": "150 Jahre Musikverein Wollbach",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-150-jahre-musikverein-wollbach.01050027-6d9d-4713-a0e7-21cea19a09c8.html",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.verlagshaus-jaumann.de",
+            "srcTitle": "VHJ"
+          },
+          {
+            "date": "2016-01-08T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/geburtstagsfeiern-uebers-ganze-jahr--115972314.html",
+            "title": "Geburtstagsfeiern übers ganze Jahr",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          },
+          {
+            "date": "2016-01-07T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/landesehrennadel-fuer-vorsitzende-annette-krey--115925585.html",
+            "title": "Landesehrennadel für Vorsitzende Annette Krey",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      }
+    ],
+    "2015": [
+      {
+        "title": "Jugendvorspiel",
+        "berichte": [
+          {
+            "date": "2015-12-10T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/jugendvorspiel-beim-musikverein-wollbach--114897226.html",
+            "title": "Jugendvorspiel beim Musikverein Wollbach",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "content": "Mit Bravour hat Anfang November unsere Musikerin und Dirigentin des Vorstufenorchesters Maria Krey den C3 Kurs mit Dirigierprüfung in Staufen abgeschlossen. Wir gratulieren herzlich zu diesem tollen Erfolg!",
+        "title": "C3 Prüfung",
+        "images": [
+          {
+            "title": "C3 Prüfung: Maria Krey",
+            "src": "img/dirigentin_vorstufenorchester.jpg"
+          }
+        ]
+      },
+      {
+        "content": "Nachdem sie bereits letztes Jahr Gold auf der Klarinette gemacht hat, hat sich unsere Musikerin Luisa Krey nochmals goldene Sporen verdient, denn im Herbst hat sie auf dem Fagott das JMLA in Gold in Staufen abgelegt. Wir gratulieren zu der doppelten tollen Leistung!",
+        "title": "Jungmusikerleistungsabzeichen in Gold",
+        "images": [
+          {
+            "title": "JMLA in Gold 2015: Luisa Krey",
+            "src": "img/2015_jmla_gold_fagott.jpg"
+          }
+        ],
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ],
+        "berichte": [
+          {
+            "date": "2015-12-01T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kreis-loerrach/edelmetall-fuer-junge-blasmusiker--114534257.html",
+            "title": "Edelmetall für junge Blasmusiker",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "title": "Jungmusikerleistungsabzeichen in Bronze",
+        "content": "Madleina Muchenberger und Josepha Brehm haben erfolgreich ihre Prüfung zum Jungmusikerleistungsabzeichen in Bronze abgelegt. Hierzu gratulieren wir beiden ganz herzlich und wünschen ihnen für ihre weitere Ausbildung viel Erfolg und weiterhin viel Spaß am Musizieren.",
+        "images": [
+          {
+            "title": "JMLA in Bronze 2015: Madleina Muchenberger und Josepha Brehm",
+            "src": "img/2015_jmla_bronze.jpg"
+          }
+        ],
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ],
+        "berichte": [
+          {
+            "date": "2015-12-01T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kreis-loerrach/edelmetall-fuer-junge-blasmusiker--114534257.html",
+            "title": "Edelmetall für junge Blasmusiker",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "title": "Wartburgfest",
+        "berichte": [
+          {
+            "date": "2015-11-26T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/wartburgfest-in-der-kandertalhalle--114149352.html",
+            "title": "Wartburgfest in der Kandertalhalle",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "title": "Schopfheim: Lindenfest",
+        "berichte": [
+          {
+            "date": "2015-07-08T00:00:00.000Z",
+            "title": "Musik unter den Linden",
+            "url": "https://www.badische-zeitung.de/schopfheim/musik-unter-den-linden",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "title": "Sauserbummel und Herbstfest",
+        "content": "Der Sauserbummel war auch in diesem Jahr wieder eine sehr schöne Veranstaltung allerdings bei leider nicht ganz so schönem Wetter, dafür aber um so besserem Wein. Musikalisch begleitet wurde der Spaziergang durch das Kandertal von unserer Dampfmusik.",
+        "keywords": [
+          "Sauserbummel"
+        ],
+        "berichte": [
+          {
+            "date": "2015-10-23T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/froehliche-blasmusik-zu-herbstlicher-hausmannskost--112875733.html",
+            "title": "Fröhliche Blasmusik zu herbstlicher Hausmannskost",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          },
+          {
+            "date": "2015-07-06T00:00:00.000Z",
+            "title": "Da dampfen sogar die Gleise",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-da-dampfen-sogar-die-gleise.079bb8d7-dae0-4dc5-a2b4-78af8a133d63.html",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.verlagshaus-jaumann.de",
+            "srcTitle": "VHJ"
+          }
+        ]
+      },
+      {
+        "content": "In den Osterferien hat unser Posaunist Sven Gut das Jungmusiker Leistungsabzeichen in Gold absolviert. Zu dieser tollen Leistung gratulieren wir Dir ganz herzlich und wünschen Dir weiterhin viel Freude und Spaß beim Musizieren!",
+        "images": [
+          {
+            "title": "JMLA in Gold 2015: Sven Gut",
+            "src": "img/2015_jmla_gold.jpg"
+          }
+        ],
+        "title": "Jungmusikerleistungsabzeichen in Gold",
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ]
+      },
+      {
+        "starttime": "2015-05-10",
+        "title": "Vorstufen- und Jugendorchesterkonzert",
+        "images": [
+          {
+            "title": "Vorstufen- und Jugendorchester",
+            "src": "img/jugend_und_vorstufenorchester.jpg",
+            "caption": "Das Vorstufen- und Jugendorchester bei ihrem gemeinsamen Doppelkonzert"
+          }
+        ],
+        "content": "Das Jugendorchester gab am Muttertagssonntag ein tolles Konzert unter der Leitung von Michael Bierwirt. Auch feierte das Vorstufenorchester unter der Leitung von Maria Krey seine sehr erfolgreiche Bühnen-Premiere.",
+        "keywords": [
+          "Jugend"
+        ]
+      },
+      {
+        "keywords": [
+          "Fastnachtsfeuer"
+        ],
+        "starttime": "2015-02-22",
+        "title": "Scheibenfeuer",
+        "content": "Zum Scheibenschlagen haben wir am 22.02. zum Fastnachtsfeuer eingeladen. Auch in diesem Jahr wieder ein schöner Anlass."
+      },
+      {
+        "title": "05.02.2015 - Generalversammlung des Musikvereins und des Fördervereins",
+        "content": "Unsere Generalversammlung konnten wir am 05.02. im Stüble abhalten. Bei den Wahlen gab es keine Veränderungen, aber wir haben zwei neue Ehrenmitglieder worüber wir uns sehr freuen: Julia Cordes und Ewald Greßlin. Herzlichen Glückwunsch euch beiden. Frieder Hering wurde vom Verband für 40 Jahre aktives Musizieren bei uns im Verein geehrt. Auch ihm gilt unser Glückwunsch.",
+        "berichte": [
+          {
+            "date": "2015-05-23T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/ein-zweiter-foerderverein-fuer-wollbachs-musiker--105231944.html",
+            "title": "Ein zweiter Förderverein für Wollbachs Musiker",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "starttime": "2015-01-23",
+        "endtime": "2015-01-24",
+        "title": "Jahreskonzert",
+        "images": [
+          {
+            "caption": "Der Musikverein Wollbach vor dem Jahreskonzert 2015",
+            "src": "img/konzert_2015.jpg",
+            "title": "Der Musikverein Wollbach vor dem Jahreskonzert 2015"
+          }
+        ],
+        "content": "[Flyer des Jahreskonzertes 2015](/files/flyer/15_jahreskonzert.pdf)<br />Gleich zweimal haben wir unser Konzertprogramm aufgeführt und das mit vollem Erfolg. Beide Konzertabende waren ausverkauft und die Halle zweimal bei toller Atmosphäre bis auf den letzten Platz gefüllt. Für uns Musiker, die Sänger und die Zuhörer war es ein einmaliges (beziehungsweise eben zweimaliges) Erlebnis.",
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "berichte": [
+          {
+            "date": "2015-01-26T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/groovende-symbiose-aus-klassik-und-rock--99486554.html",
+            "title": "Groovende Symbiose aus Klassik und Rock",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          },
+          {
+            "date": "2015-01-25T00:00:00Z",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.kandern-musik-die-zum-staunen-anregt.32041209-7649-416c-9c9e-7ab9783e63f8.html",
+            "title": "Musik, die zum Staunen anregt",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.verlagshaus-jaumann.de",
+            "srcTitle": "VHJ"
+          }
+        ]
+      }
+    ],
+    "2014": [
+      {
+        "title": "Doppelkonzert mit Harpolingen",
+        "berichte": [
+          {
+            "date": "2014-10-27T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/bad-saeckingen/singende-gaeste-swingende-gastgeber--93546393.html",
+            "title": "Singende Gäste, swingende Gastgeber",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "title": "Jungmusikerleistungsabzeichen in Gold",
+        "content": "Im Jahr 2014 haben unsere beiden Musiker Luisa Krey auf der Klarinette und Moritz Merkert auf der Trompete das Jungmusiker Leistungsabzeichen in Gold absolviert. Zu dieser tollen Leistung gratulieren wir den beiden ganz herzlich und wünschen Ihnen weiterhin viel Freude und Spaß beim Musizieren!",
+        "images": [
+          {
+            "title": "JMLA Gold 2015",
+            "src": "img/2014_jmla_gold.jpg"
+          }
+        ],
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ]
+      },
+      {
+        "title": "Jungmusikerleistungsabzeichen in Silber",
+        "content": "Zu den tollen Leistungen gratulieren wir ganz herzlich Laura Sesiani (Klarinette), Carole Enderlin (Alt-Saxophon), Moritz Rathberger (Trompete) und Sven Gut (Posaune), welche in der ersten Sommerferienwoche das Jungmusikerleistungsabzeichen in Silber abgelegt haben. Allen wünschen wir weiterhin viel Erfolg und viel Freude beim Musizieren.",
+        "images": [
+          {
+            "title": "JMLA Silber 2015",
+            "src": "img/2014_jmla_silber.jpg"
+          }
+        ],
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ]
+      },
+      {
+        "starttime": "2014-07-31",
+        "title": "Teilnahme an der Cold Water Challenge",
+        "video": {
+          "src": "eJEd2L6pyAM"
+        }
+      },
+      {
+        "starttime": "2014-06-07",
+        "title": "Marschmusikfestival in Wollbach"
+      },
+      {
+        "starttime": "2014-04-12",
+        "endtime": "2014-04-13",
+        "title": "Gewerbetage Binzen"
+      },
+      {
+        "keywords": [
+          "Fastnachtsfeuer"
+        ],
+        "starttime": "2014-03-09",
+        "title": "Fastnachtsfeuer"
+      },
+      {
+        "starttime": "2014-02-08",
+        "title": "Wiederholung des Jahreskonzertes in St. Gallen",
+        "keywords": [
+          "Jahreskonzert",
+          "Konzert"
+        ]
+      },
+      {
+        "starttime": "2014-01-30",
+        "title": "Generalversammlung"
+      },
+      {
+        "starttime": "2014-01-18",
+        "title": "Jahreskonzert",
+        "content": "[Flyer des Jahreskonzertes 2014](/files/flyer/14_konzert.pdf)",
+        "images": [
+          {
+            "title": "Der Musikverein Wollbach vor dem Jahreskonzert 2014",
+            "src": "img/konzert_2014.jpg",
+            "caption": "Musikverein vor dem Jahreskonzert 2014"
+          }
+        ],
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "berichte": [
+          {
+            "date": "2014-01-20T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/lateinamerikas-bunte-klangwelt--79826974.html",
+            "title": "Latainamerikas bunte Klangwelt",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      }
+    ],
+    "2013": [
+      {
+        "starttime": "2013-10-20",
+        "title": "Herbstfest in der Kandertalhalle"
+      },
+      {
+        "starttime": "2013-10-19",
+        "title": "Sauserexpress mit dem Chanderli",
+        "keywords": [
+          "Sauserbummel"
+        ]
+      },
+      {
+        "starttime": "2013-06-09",
+        "title": "Auftritt bei unserer Partnermusik in Bannwil",
+        "berichte": [
+          {
+            "date": "2013-06-10T00:00:00Z",
+            "url": "https://www.bernerzeitung.ch/region/emmental/Beschwingter-Marsch-in-den-Musiksommer/story/21884440",
+            "title": "Beschwingter Marsch in den Musiksommer",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.bernerzeitung.ch/",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "starttime": "2013-04-20",
+        "endtime": "2013-04-21",
+        "title": "Stand bei den Gewerbetagen in Binzen"
+      },
+      {
+        "starttime": "2013-04-12",
+        "title": "Kirchenkonzert",
+        "content": "[Flyer des Kirchenkonzertes 2013](/files/flyer/13_kirchenkonzert.pdf)",
+        "keywords": [
+          "Konzert"
+        ],
+        "berichte": [
+          {
+            "date": "2013-04-16T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/wollbacher-musiker-in-topform--70919643.html",
+            "title": "Wollbacher Musiker in Topform",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "starttime": "2013-01-19",
+        "title": "Jahreskonzert",
+        "content": "[Flyer des Jahreskonzertes 2013](/files/flyer/13_konzert.pdf)",
+        "images": [
+          {
+            "title": "Musikverein vor dem Jahreskonzert 2013",
+            "src": "img/konzert_2013.jpg",
+            "caption": "Musikverein vor dem Jahreskonzert 2013"
+          }
+        ],
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "berichte": [
+          {
+            "date": "2013-01-22T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/blaesersinfonik-voller-klangpracht",
+            "title": "Bläsersinfonik voller Klangpracht",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      }
+    ],
+    "2012": [
+      {
+        "starttime": "2012-10-20",
+        "endtime": "2012-10-21",
+        "title": "Sauser-Express und Herbstfest",
+        "content": "Bei wunderschönem Wetter konnten dieses Jahr die Teilnehmer des Sauser-Express die Weinprobe in den Rebbergen oberhalb Wollbachs absolvieren. Es hat wieder großen Spaß gemacht und wir möchten uns bei allen Teilnehmerinnen und Teilnehmern, sowie bei allen Helferinnen und Helfern herzlich bedanken.<br />Auch der Herbstfestsonntag lockte viele Besucher in die Kandertalhalle. Mit gutem Essen, guter Blasmusik unserer befreundeten Vereine: Winzerkapelle Oberrotweil, Stadtmusik Schönau, Musikverein Tannenkirch sowie dem eigenen Jugendorchester konnten unsere Gäste unterhalten werden. Auch hier herzlichen Dank allen Helferinnen und Helfern die zum Gelingen des Festes beigetragen haben.",
+        "keywords": [
+          "Sauserbummel"
+        ]
+      },
+      {
+        "starttime": "2012-05-05",
+        "title": "Marschmusikfestival",
+        "content": "Wie gewohnt in Marschmusikformation sind wir am Samstag 05.05. durch und rund um Wollbach unterwegs gewesen und haben unseren Mitgliedern und der Dorfbevölkerung unsere schönsten Märsche präsentiert. Auch der Wettergott hatte ein Einsehen und so konnten wir ohne großen Regengüsse unsere Zuhörer erfreuen.<br />Es hat wieder großen Spaß gemacht und wir möchten uns bei allen Zuhörerinnen und Zuhörer bedanken sowie unserem Chauffeur Karl Reinacher.",
+        "keywords": [
+          "Marschmusikfestival"
+        ]
+      },
+      {
+        "starttime": "2012-05-04",
+        "title": "Jugend-Disco",
+        "content": "Bei cooler Mucke und Cocktails konnten unsere jungen Musikerinnen und Musiker bei unserer Jugenddisco abdancen. Für tolles Flair sorgten die Lichter und die Lounge und die Musik von Domi und Johannes und die Mädels Anika und Meli zauberten tolle Cocktails.",
+        "keywords": [
+          "Jugend"
+        ]
+      },
+      {
+        "starttime": "2012-02-02",
+        "title": "Generalversammlung Förderverein und Musikverein Wollbach",
+        "content": "Wir gratulieren unseren neuen Ehrenmitgliedern Lotte Sedlaczek und Fritz Brändlin. Ebenso gratulieren wir allen wiedergewählten Vorstandsmitgliedern.",
+        "keywords": [
+          "Generalversammlung"
+        ]
+      },
+      {
+        "starttime": "2012-01-21",
+        "content": "[Flyer des Jahreskonzertes 2012](/files/flyer/12_konzert_vor.pdf), [Programm des Jahreskonzertes 2012](/files/flyer/12_konzert_rueck.pdf)<br />Mit einem tollen Jahreskonzert konnten wir wieder die Zuhörerinnen und Zuhörer in der vollen Kandertalhalle in Wollbach begeistern. Mit einem kurzweiligen, aber für die Musiker durchaus sehr ansprechenden Programm mit Werken wie \"Slava!\", \"Global Variations\" oder \"Garisson at Goliad\" konnten wir unsere Zuhörer unterhalten.<br />Danke allen Helferinnen und Helfern, sowie unserem Dirgenten Olli Hauser, der wieder einmal ein tolles Konzertprogramm ausgesucht und mit dem Orchester einstudiert hat.",
+        "images": [
+          {
+            "src": "img/konzert_2012.jpg",
+            "title": "Musikverein vor dem Jahreskonzert 2012",
+            "caption": "Musikverein vor dem Jahreskonzert 2012"
+          }
+        ],
+        "title": "Jahreskonzert",
+        "keywords": [
+          "Jahreskonzert",
+          "Konzert"
+        ]
+      }
+    ],
+    "2011": [
+      {
+        "starttime": "2011-11-05",
+        "title": "JMLA in Gold für Maria Krey",
+        "content": "Sehr stolz sind wir über das Goldene Abzeichen von unserer Musikerin Maria Krey, die in der ersten Novemberwoche das Goldene Abzeichen in der Musikakademie in Staufen auf dem Instrument Klarinette und Saxofon abgelegt hat. Wir gratulieren ganz herzlich zu dieser tollen Leistung.",
+        "keywords": [
+          "Jugend",
+          "JMLA"
+        ]
+      },
+      {
+        "starttime": "2011-08-06",
+        "title": "JMLA in Silber in Staufen",
+        "content": "Wir gratulieren ganz herzlich Noah Goehlke (Tuba), Lisa Fresta (Saxofon), Olivia Rathberger (Saxofon), Maria Krey (Saxofon), Elena Sieglin (Klarinette) und Luisa Krey (Klarinette) zum Bestehen des JMLA in Silber.",
+        "images": [
+          {
+            "caption": "Absolventen des JMLA in Silber 2011",
+            "title": "Absolventen des JMLA in Silber 2011",
+            "src": "img/2011_silber.jpg"
+          }
+        ],
+        "keywords": [
+          "Jugend",
+          "JMLA"
+        ]
+      },
+      {
+        "starttime": "2011-05-08",
+        "title": "Muttertagskonzert Vorstufenorchester und Jugendorchester",
+        "content": "Einen tollen Auftritt haben das Vorstufenorchester und das Jugendorchester an unserem Muttertagskonzert hingelegt. Zu Beginn des Konzertes wurden alle Mütter mit einem Glas Sekt begrüßt und im Anschluß wurden alle zu Kaffee- und Kuchen eingeladen.<br />Unter der Regie von Michael Bierwirth haben beide Orchester ein tolles Programm erarbeitet und dies mit Bravour vorgetragen. Herzlichen Dank gilt unserem Jugenddirigenten Michael der beide Orchester zu tollen Leistungen inspiriert hat.<br />Unser Jungmusiker Lukas Krey hat es sich dann auch nicht nehmen lassen unserem Jugendleiter Matthias, der am Konzerttag Geburstag hatte, ein Geburtstagsständchen auf seinem Horn zu überbringen.",
+        "keywords": [
+          "Jugend"
+        ]
+      },
+      {
+        "starttime": "2011-02-03",
+        "title": "Generalversammlung des Förderverein und Musikverein Wollbach",
+        "content": "Wieder einmal konnte unsere ordentliche Generalversammlung abgehalten werden.<br />Wir gratulieren allen gewählten Vorstandsmitgliedern sowie unseren neuen Ehrenmitgliedern Ernst Merz und Xaver Heimerl.",
+        "keywords": [
+          "Generalversammlung"
+        ]
+      },
+      {
+        "starttime": "2011-01-22",
+        "title": "Jahreskonzert \"Let´s face the music and dance\"",
+        "content": "[Flyer des Jahreskonzertes 2011](/files/flyer/11_jahreskonzert_vor.png), [Programm des Jahreskonzertes 2011](/files/flyer/11_jahreskonzert_rueck.png)<br />Mit einem tollen Jahreskonzert konnten wir wieder die Zuhörerinnen und Zuhörer in der Kandertalhalle in Wollbach begeistern. Mit fetzigen Stücken wie \"Fellin´ good\", \"Let´s call the whole thing off\", \"The way we where\", \"Colours of the wind\" und \"Against all odds\" konnten wir unsere Zuhörer wieder restlos begeistern.<br />Wir möchten uns herzlich bei unseren Gesangs-Solisten Annuschka, Daniel, Diana, Olli, Jutta & Ralf bedanken, sowie bei unserem Altsaxofon-Solisten Klaus Fischer für ihre tollen Einlagen. Großen Dank an die tolle Begleitung unserer Streicher. Danke auch allen Helferinnen und Helfer. Erwähnen möchten wir auch Sebastian Röser und Johannes Krey, die das Konzert mit tollen Lichteffekten umrahmt haben, sowie unseren Dirgenten Olli Hauser, der wieder einmal mit einer fantastischen Idee ein tolles Konzert auf die Beine gestellt hat.",
+        "images": [
+          {
+            "src": "img/konzert_2011.jpg",
+            "title": "Der Musikverein vor dem Jahreskonzert 2011",
+            "caption": "Der Musikverein vor dem Jahreskonzert 2011"
+          }
+        ],
+        "keywords": [
+          "Jahreskonzert",
+          "Konzert"
+        ]
+      },
+      {
+        "starttime": "2011-01-14",
+        "endtime": "2011-01-16",
+        "title": "Probenwochenende",
+        "content": "Ein tolles Wochenende konnten wieder alle Aktiven am Probenwochenende des Musikvereins Wollbach verbringen. Nach den erfolgreichen Proben konnte mit Tanzeinlagen am Abend abgedanct werden."
+      }
+    ],
+    "2010": [
+      {
+        "starttime": "2010-12-12",
+        "title": "Jugendvorspiel",
+        "content": "Tolle Leistungen haben unsere Jungmusiker beim Vorspiel am 12.12. gezeigt.",
+        "keywords": [
+          "Jugend"
+        ]
+      },
+      {
+        "starttime": "2010-11-28",
+        "title": "JMLA Bronze, Silber & Gold",
+        "content": "Wir gratulieren unsren jungen Musikerinnen und Musiker die in diesem Jahr folgende Abzeichen abgelegt haben:<br />JMLA Gold: Timo Braun (Posaune)<br />JMLA Silber: Moritz Merkert (Trompete), Eric Sieglin (Schlagzeug)<br />JMLA Bronze: Helen Strittmatter (Saxofon), Helena Reinger (Klarinette)",
+        "keywords": [
+          "Jugend",
+          "JMLA"
+        ]
+      },
+      {
+        "starttime": "2010-11-28",
+        "title": "Wartburgfest der Ev. Kirchengemeinde Wollbach",
+        "content": "Wie jedes Jahr haben wir am Wartburgfest der Kirchengemeinde Wollbach den Gottesdienst begleitet, sowie zum Frühschoppen aufgespielt."
+      },
+      {
+        "starttime": "2010-11-26",
+        "title": "Adventskranzverkauf",
+        "content": "Wunderschöne selbstgemachte Adventskränzen und Gestecken haben wir im weihnachtlichen Ambiente des Forsthofes bei Manfred Wampfler verkaufen können. Mit Glühwein und Würsten konnte man es sich bei wunderschönem Winterwetter gut gehen lassen."
+      },
+      {
+        "starttime": "2010-10-17",
+        "title": "Herbstfest in der Kandertalhalle",
+        "content": "Mit zünftiger Unterhaltung durch unsere Gastvereine Musikgesellschaft St.Gallen-Ost, Trachtenkapelle Höchenschwand, Stadtmusik Kandern und Trachtenkapelle Steinenstadt und mit traditionellen Speisen wie Kesselfleisch mit Sauerkraut und Meerettich, sowie Zwiebelwaie und Sauser konnten wir unsere Gäste am Herbstfest bewirten.<br />Vielen Dank allen Helferinnen und Helfer die zum guten Gelingen beigetragen haben."
+      },
+      {
+        "starttime": "2010-10-16",
+        "title": "Sauser-Express mit dem Chanderli",
+        "content": "[Flyer zum Sauserbummel 2010](/files/flyer/10_sauserbummel.pdf)<br />Eine fröhliche Sauserfahrt konnten alle Teilnehmer unseres Sauser-Expresses erleben. Auch die gelegentlichen Schauer konnten die gute Stimmung der Teilnehmer nicht trüben.<br />Empfangen mit einem Sekt im Zug konnten die Teilnehmer Weine der Weingüter Dirk Brenneisen, Max Geitlinger, Markus Ernst und der WG Haltingen und der Bezirkskellerei Markgräflerland versuchen. Unterhalten wurden die Gäste durch die eigens dafür gegründete \"Dampfmusik Wollbach\" welche mit ihren Schunkelhits für gute Stimmung sorgten. Wir sagen Danke allen Teilnehmern und freuen uns schon auf die Neuauflage 2011!",
+        "keywords": [
+          "Sauserbummel"
+        ]
+      },
+      {
+        "starttime": "2010-09-26",
+        "title": "Auftritte in Hasel & Aitern",
+        "content": "Mit unseren Auftritten beim Oldtimertreffen in Hasel und am Nachmittag beim Oktoberfest in Aitern konnten wir die zahlreichen Gäste unterhalten."
+      },
+      {
+        "starttime": "2010-09-05",
+        "title": "Auftritt - Schwarzwaldkapelle Münstertal",
+        "content": "Wir konnten mit unserem Auftritt der Schwarzwaldkappel Münstertal zum 125-jährigen Jubiläum gratulieren."
+      },
+      {
+        "starttime": "2010-07-29",
+        "endtime": "2010-08-01",
+        "title": "Vereinsausflug nach Dresden und Umgebung",
+        "content": "Vier wunderschöne und ereignisreiche Tage konnten alle Teilnehmer des Musikverein und Gesangverein Wollbach erleben, die am gemeinsamen Vereinsausflug nach Dresden teilgenommen hatten.<br />Hervorragend gefahren und bewirtet von unserem Buschaffeur Robert und seiner Stewardess Wesna konnten die 72 Teilnehmer sich entspannt auf die lange Fahrt nach Dresden und Umgebung begeben. In Reinsberg wurden wir sehr herzlich vom Gemischten Chor Reinsberg und ihrem Chorleiter Jens Ulbrich empfangen und konnten unter der fachkundigen Führung von Jens Ulbrich den Heimatsort von Manfred Wampfler erkunden.<br />Auch der Besuch von Dresden und dem damit verbundenen Auftritt unseres Gesangverein Wollbach und des Gemischten Chores Reinsberg in der Dresdner Frauenkirche war ein Höhepunkt des Ausfluges. Neben dem Schloss Pilnitz, Freiberg, dem Bergwerk \"Reiche Zeche\" war das tolle Kirchenkonzert sowie die große Geburtstagsparty anläßlich des 10-jährigen Bestehens des Gemischten Chores der zweite große Höhepunkt des Ausfluges und der gemeinsamen Begegnung.<br />Wir möchten uns daher nochmals herzlich beim Gemischten Chor Reinsberg, Jens Ulbrich und seiner Familie, sowie Manfred Wampfler für die große Gastfreundschaft in Reinsberg und die tollen Konzerte in der Frauenkirche und in Reinsberg bedanken!"
+      },
+      {
+        "starttime": "2010-07-11",
+        "title": "Waldgottesdienst",
+        "content": "Wie gewohnt haben wir den Waldgottesdienst bei schönstem Wetter auf der Buchhole begleitet."
+      },
+      {
+        "starttime": "2010-07-10",
+        "title": "20-jähriges Jubiläum \"Markgräfler Dilettanten\"",
+        "content": "Zum Jubiläum der \"Markgräfler Dilettanten\" haben wir gratuliert und die Bewirtung an diesem Abend übernommen."
+      },
+      {
+        "starttime": "2010-06-19",
+        "title": "Marschmusikvestival",
+        "content": "Wieder einmal konnten wir in Marschmusikformation in und rund um Wollbach unsere schönsten Märsche präsentieren.<br />Wir möchten uns an dieser Stelle bei allen Zuhörerinnen und Zuhörer bedanken, sowie allen die uns so großartig unterwegs bewirtet haben und unserem \"Chauffeur\" Karl Reinacher. Wir freuen uns schon auf die nächste Auflage in 2012.",
+        "keywords": [
+          "Marschmusikfestival"
+        ]
+      },
+      {
+        "starttime": "2010-04-10",
+        "title": "JMLA Gold",
+        "content": "Wir gratulieren herzlich unserem jungen Posaunisten Timo Braun der am 10.04.2010 in der Akademie des BDB in Staufen das JMLA in Gold abgelegt hat!",
+        "keywords": [
+          "JMLA",
+          "Jugend"
+        ]
+      },
+      {
+        "starttime": "2010-02-26",
+        "title": "Konzertwiederholung in Bischofszell",
+        "content": "Noch einmal konnten wir unser Konzertprogramm in Bischofszell (CH) vor einem begeisterten Publikum präsentieren.<br />Die Nacht im Pfadiheim in Bischofszell war für viele sehr kurz - der interessante Besuch im Technorama konnte dann aber doch alle müden Musikerinnen und Musiker wieder munter machen.",
+        "keywords": [
+          "Jahreskonzert",
+          "Konzert"
+        ]
+      },
+      {
+        "keywords": [
+          "Fastnachtsfeuer"
+        ],
+        "starttime": "2010-02-21",
+        "title": "Fastnachtsfeuer am Rebhüsli",
+        "content": "Bei wunderschönem Wetter konnten am Rebhüsli die glühenen Scheiben ins Tal geschlagen werden. Für die Bewirtung war mit Glühwein, Punsch, Grillwürsten, Kaffee und Kuchen durch den Förderverein des Musikverein ebenfalls bestens gesorgt."
+      },
+      {
+        "starttime": "2010-02-20",
+        "title": "Seniorenfastnacht in der Alten Krone",
+        "content": "Wieder großen Spaß hatten alle bei der Seniorenfastnacht, denn die Akteure des Musik- und Gesangverein liesen kein Auge trocken. Zum Mitschunkeln lud die Fastnachtscombo des MV Wollbach ein, die mit Schunkelhits wie \"Heidi\" etc. für Stimmung sorgten. Mit Sketchen, einer Schnitzelbank, dem Auftritt der \"Jacob Sisters\" war es kunterbunter, lustiger Abend. Herzlichen Dank den Organisatoren Michi und Ralf!"
+      },
+      {
+        "starttime": "2010-02-04",
+        "title": "Generalversammlung Förderverein und Musikverein Wollbach",
+        "content": "Wir gratulieren allen neuen Ehrenmitgliedern sowie allen gewählten Vorstandsmitgliedern des Fördervereins und Musikvereins.",
+        "keywords": [
+          "Generalversammlung"
+        ]
+      },
+      {
+        "starttime": "2010-01-23",
+        "title": "Jahreskonzert",
+        "content": "[Flyer des Jahreskonzertes 2010](/files/flyer/10_konzert.pdf)<br />",
+        "images": [
+          {
+            "src": "img/konzert_2010.jpg",
+            "title": "Der Musikverein vor dem Jahreskonzert 2010",
+            "caption": "Der Musikverein vor dem Jahreskonzert 2010"
+          }
+        ],
+        "keywords": [
+          "Jahreskonzert",
+          "Konzert"
+        ],
+        "berichte": [
+          {
+            "date": "2010-01-28T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/erfolgsgaranten-geehrt",
+            "title": "Erfolgsgaranten geehrt",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "title": "Neujahrsempfang",
+        "starttime": "2010-01-06",
+        "berichte": [
+          {
+            "date": "2010-01-09T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/junge-talente-bei-der-musik",
+            "title": "Junge Talente bei der Musik",
+            "hasPicture": false,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      }
+    ],
+    "2009": [
+      {
+        "starttime": "2009-10-18",
+        "title": "Herbstfest des Fördervereins",
+        "content": "Für tolle Unterhaltung an unserem Herbstfest haben die Schwarzwaldkapelle Münstertal, unser Jugendorchester, sowie die Musikvereine Schwörstadt, Inzlingen und Märkt gesorgt. Auch möchten wir uns bei allen Helferinnen und Helfern sowie allen Kuchenspendern bedanken.",
+        "berichte": [
+          {
+            "date": "2009-10-26T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/der-herbst-in-allen-facetten-in-die-halle-geholt",
+            "title": "Der Herbst in allen Facetten in die Halle geholt",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "starttime": "2009-10-17",
+        "title": "Unser - 2. Sauser-Express",
+        "content": "[Flyer zum Sauserbummel 2009](/files/flyer/09_sauserbummel.pdf)<br />Unser zweiter Sauserbummel mit dem Chanderli war wieder ein toller Tag. Auch wenn das Wetter nicht so ganz mitgespielt hat, konnte es der guten Stimmung bei der Wanderung durch die Rebberge und der Weinprobe nichts anhaben.",
+        "keywords": [
+          "Sauserbummel"
+        ]
+      },
+      {
+        "starttime": "2009-08-01",
+        "title": "Aufritt beim Fest in Höllstein"
+      },
+      {
+        "starttime": "2009-07-18",
+        "title": "Geburtstags-Ständchen bei Manfred Braun"
+      },
+      {
+        "starttime": "2009-07-03",
+        "title": "Auftritt beim Burgfest in Badenweiler"
+      },
+      {
+        "starttime": "2009-06-26",
+        "title": "Auftritt beim Brunnenfest in Wollbach, zur feierlichen Einweihung des restaurierten Brunnen und Eichhüsli"
+      },
+      {
+        "starttime": "2009-06-20",
+        "endtime": "2009-06-23",
+        "title": "Erlebnistage im alten Forsthof",
+        "content": "[Flyer zu den Erlebnistagen im alten Forsthof](/files/flyer/09_forsthoffest.pdf)<br />Die Erlebnistagen im alten Forsthof Wollbach waren ein voller Erfolg. Einen schönen Rückblick gibt auch der Bericht der Badischen Zeitung.",
+        "berichte": [
+          {
+            "date": "2009-06-22T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/gute-musik-gutes-essen",
+            "title": "Gute Musik, gutes Essen",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "starttime": "2009-06-06",
+        "title": "Goldene Hochzeit von Günter und Vreneli Prick"
+      },
+      {
+        "starttime": "2009-04-09",
+        "title": "Kirchenkonzert",
+        "content": "[Flyer zum Kirchenkonzert 2009](/files/flyer/09_kirchenkonzert.pdf)<br />Mit einem etwas anderen Programm konnte dem begeisterten Publikum ein tolles Konzert in der tollen Akustik der Wollbacher Kirche geboten werden.",
+        "keywords": [
+          "Konzert",
+          "Kirchenkonzert"
+        ],
+        "berichte": [
+          {
+            "date": "2009-04-20T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/von-gefuehlvoll-bis-pathetisch--13717641.html",
+            "title": "Von gefühlvoll bis pathetisch",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "keywords": [
+          "Fastnachtsfeuer"
+        ],
+        "starttime": "2009-03-01",
+        "title": "Fastnachtsfeuer 2009",
+        "content": "Bei gutem Wetter konnte das Scheibenfeuer am Rebhüsli ausgerichtet werden und die vielen Besucherinnen und Besucher konnten es sich bei Glühwein, Schorle, Würsten, Kaffee und Kuchen gut gehen lassen."
+      },
+      {
+        "title": "Generalversammlung",
+        "berichte": [
+          {
+            "date": "2009-08-01T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/kandern/15-750-euro-fuer-vereine--17819718.html",
+            "title": "15750 Euro für Vereine",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          },
+          {
+            "date": "2009-02-02T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/monika-hurst-lobt-den-musikverein",
+            "title": "Monika Hurst lobt den Musikverein",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          },
+          {
+            "date": "2009-01-21T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/zwei-neue-ehrenmitglieder-x1x",
+            "title": "Zwei neue Ehrenmitglieder",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "starttime": "2009-01-17",
+        "content": "[Flyer zum Jahreskonzert 2009](/files/flyer/09_konzert.pdf)<br />Mit spanischen Originalwerken und der Uraufführung \"Don Quixote\" konnte das Aktivorchester des Musikvereins Wollbach dem Publikum wieder einmal ein anspruchsvolles und besonderes Konzertprogramm darbieten. Ein Dankeschön geht an den Sprecher Ekkehard Bierl, der die Textpassagen zum Stück \"Don Quixote\" so gekonnt übernommen hat, sowie an Sandra Schilinger, die mit ihrer Tanzeinlage das Werk \"Cordoba\" untermalt hat.",
+        "title": "Jahreskonzert 2009",
+        "keywords": [
+          "Konzert",
+          "Jahreskonzert"
+        ],
+        "berichte": [
+          {
+            "date": "2009-01-20T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/mit-spanischer-leidenschaft",
+            "title": "Mit spanischer Leidenschaft",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "starttime": "2009-01-02",
+        "endtime": "2009-01-04",
+        "title": "Probenwochenende 2009",
+        "content": "Viel Arbeit aber auch viel Spaß hatte das Aktivorchester am Probenwochenende. Es wurde viel geprobt um dem Konzertprogramm en nötigen Schliff zu geben, aber auch hinterher gab es viel zu Lachen beim Kunterbunten Abend von Michi, Diana, Ralf, Christine, Johannes, Matthias, Anika und Melanie."
+      }
+    ],
+    "2008": [
+      {
+        "starttime": "2008-12-07",
+        "title": "Jugendvorspiel",
+        "content": "Beim Jugendvorspiel und den Programmen des Vorstufen- und Jugendorchesters, konnte man Einblicke in die Jugendarbeit des Vereins erhalten und zugleich einen sehr schönen Sonntag Nachmittag mit guter Musik, Kaffee und Kuchen verbringen.",
+        "keywords": [
+          "Jugend"
+        ],
+        "berichte": [
+          {
+            "date": "2008-12-02T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/siebenmal-gold-das-gab-es-bislang-noch-nie",
+            "title": "Siebenmal Gold",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "starttime": "2008-11-30",
+        "title": "Auftritt beim Wartburgfest der Ev. Kirchengemeinde Wollbach",
+        "content": "Der Musikverein begleitete den Gottesdienst und spielte anschließend noch zum Frühschoppen am Wartburgfest"
+      },
+      {
+        "starttime": "2008-10-18",
+        "endtime": "2008-10-19",
+        "title": "Herbstfest mit Sauser-Express",
+        "content": "[Flyer zum Sauserbummel 2008](/files/flyer/08_sauser_express.pdf), [Flyer zum Herbstfest 2008](/files/flyer/08_herbstfest.pdf)<br />Sauserfahrt mit der Kandertalbahn und Herbstfest in der Kandertalhalle in Wollbach",
+        "berichte": [
+          {
+            "date": "2008-10-22T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/ein-farbtupfer-im-festkalender",
+            "title": "Herbstfest",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          },
+          {
+            "date": "2008-10-17T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/nachrichten/1,51-25606999.html",
+            "title": "Herbstfest mit musikalischem Reigen",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          },
+          {
+            "date": "2008-08-27T00:00:00Z",
+            "url": "https://www.badische-zeitung.de/lokales/lokalausgaben/weil/kandertal/34,51-24335827.html",
+            "title": "Fahrt mit dem Sauser-Express",
+            "hasPicture": true,
+            "hasDescription": true,
+            "srcUrl": "https://www.badische-zeitung.de",
+            "srcTitle": "BZ"
+          }
+        ]
+      },
+      {
+        "starttime": "2008-10-05",
+        "title": "Auftritt am \"Oktoberfest\" in Wollbach (Fest der Alten Krone und der Blume)"
+      },
+      {
+        "starttime": "2008-09-28",
+        "title": "Auftritt am Waiefest in Feldberg (bei Müllheim)"
+      },
+      {
+        "starttime": "2008-09-14",
+        "title": "Auftritt am Weinfest in Oberbergen"
+      },
+      {
+        "starttime": "2008-08-30",
+        "title": "Sommerferienprogramm",
+        "content": "Auch dieses Jahr hat sich der Musikverein Wollbach zusammen mit 11 Kindern im Alter zwischen 5 und 12 Jahren am Kinderferienprogramm beteiligt. Mit viel Freude bastelten die kleinen Musiker verschiedene Instrumente unter der Anleitung der beiden Jugendleiter Matthias Braun und Sonja Weber. Auch Vereinsvorstand Annette Krey und Chorleiterin Birte Niemann unterstützten die kleinen Instrumentenbauer bei der Herstellung von Trompeten, Oboen, Rasseln, und Regenmachern. Nachmittags studiere Birte Niemann mit den Kindern einfache Lieder auf diesen Instrumenten ein. Diese konnten die Eltern anschließend in einem kleinen aber feinen Abschlusskonzert genießen."
+      },
+      {
+        "starttime": "2008-07-14",
+        "title": "Auftritt beim Jubiläum des Musikvereins Egringen"
+      },
+      {
+        "starttime": "2008-07-13",
+        "title": "Auftritt beim Fest in Rötenbach"
+      },
+      {
+        "starttime": "2008-07-06",
+        "title": "Auftritt beim Fest in Schwörstadt und Fischerfest in Märkt"
+      },
+      {
+        "starttime": "2008-07-05",
+        "title": "Platzkonzert",
+        "content": "Platzkonzert vor der Sommerpause in Hammerstein mit anschließendem Grillfest.",
+        "keywords": [
+          "Konzert"
+        ]
+      },
+      {
+        "starttime": "2008-05-10",
+        "title": "Marschmusikfestival",
+        "content": "Unser Marschmusikfestival am 10. Mai 2008 war auch dieses Jahr wieder ein Erfolg. Dieses Mal bei schönem Wetter konnten wir das ganze Dorf mit unserer Marschmusik erfreuen und zahlreiche Stationen absolvieren.",
+        "keywords": [
+          "Marschmusikfestival"
+        ]
+      },
+      {
+        "starttime": "2008-02-29",
+        "title": "Konzert in Bischofszell",
+        "content": "Wir konnten unser Konzerprogramm von \"Feel blue\" im Wohnort von unserem Dirigenten Oliver Hauser in Bischofszell nocheinmal aufführen.",
+        "keywords": [
+          "Jahreskonzert",
+          "Konzert"
+        ]
+      },
+      {
+        "starttime": "2008-02-01",
+        "title": "Generalversammlung",
+        "content": "Wir hielten unsere alljährliche Generalversammlung.",
+        "keywords": [
+          "Generalversammlung"
+        ]
+      },
+      {
+        "starttime": "2008-01-19",
+        "title": "Jahreskonzert",
+        "content": "Unser Jahreskonzert fand in der Kandertalhalle in Wollbach unter dem Motto \"Feel Blue\" statt.",
+        "images": [
+          {
+            "src": "img/konzert_2008.jpg",
+            "title": "Musikverein Wollbach vor dem Jahreskonzert 2008",
+            "caption": "Der Musikverein vor dem Jahreskonzert 2008"
+          }
+        ],
+        "keywords": [
+          "Jahreskonzert",
+          "Konzert"
+        ]
+      },
+      {
+        "starttime": "2008-01-04",
+        "endtime": "2008-01-06",
+        "title": "Probenwochenende",
+        "content": "An unserem Probewochenende in der Kandertalhalle hatten wir neben der intensiven Probearbeit an unserem Konzertprogramm auch einige schöne Stunden zum Feiern."
+      }
+    ]
+  }
+}

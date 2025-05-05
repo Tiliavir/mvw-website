@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Termine",
+  "description": "Veranstaltungstermine nach Jahr gruppiert",
+  "type": "object",
+  "required": ["termine"],
+  "properties": {
+    "termine": {
+      "type": "object",
+      "description": "Objekt mit Jahreszahlen als Schlüssel (z. B. 2025), jede enthält eine Liste von Terminen",
+      "patternProperties": {
+        "^[0-9]{4}$": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "starttime", "location"],
+            "properties": {
+              "title": {
+                "type": "string",
+                "description": "Titel der Veranstaltung"
+              },
+              "location": {
+                "type": "object",
+                "required": ["name", "address"],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "Veranstaltungsort"
+                  },
+                  "address": {
+                    "type": "string",
+                    "description": "Adresse des Veranstaltungsorts"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "description": {
+                "type": "string",
+                "description": "Zusätzliche Beschreibung oder Hinweise"
+              },
+              "starttime": {
+                "type": "string",
+                "format": "date-time",
+                "description": "Beginn der Veranstaltung (ISO 8601)"
+              },
+              "endtime": {
+                "type": "string",
+                "format": "date-time",
+                "description": "Ende der Veranstaltung (ISO 8601)"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

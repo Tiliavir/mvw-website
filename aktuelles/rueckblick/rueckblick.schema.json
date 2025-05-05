@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rückblick",
+  "description": "Veranstaltungen nach Jahr mit optional zugehörigen Presseberichten",
+  "type": "object",
+  "required": ["rueckblick"],
+  "properties": {
+    "rueckblick": {
+      "type": "object",
+      "description": "Jahresweise gruppierte Rückblicke",
+      "patternProperties": {
+        "^[0-9]{4}$": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title"],
+            "properties": {
+              "title": {
+                "type": "string",
+                "description": "Titel des Ereignisses"
+              },
+              "starttime": {
+                "type": "string",
+                "format": "date",
+                "description": "Beginn der Veranstaltung"
+              },
+              "endtime": {
+                "type": "string",
+                "format": "date",
+                "description": "Ende der Veranstaltung (optional)"
+              },
+              "content": {
+                "type": "string",
+                "description": "Beschreibung im Markdown-Format"
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Stichworte zur Kategorisierung"
+              },
+              "images": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["src", "title"],
+                  "properties": {
+                    "src": {
+                      "type": "string",
+                      "format": "uri-reference",
+                      "description": "Bild-URL (relativ oder absolut)"
+                    },
+                    "title": {
+                      "type": "string",
+                      "description": "Alternativtext oder Titel"
+                    },
+                    "caption": {
+                      "type": "string",
+                      "description": "Bildunterschrift (optional)"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "video": {
+                "type": "object",
+                "required": ["src"],
+                "properties": {
+                  "src": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Link zum Video"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "berichte": {
+                "type": "array",
+                "description": "Optionale Liste externer Presseberichte",
+                "items": {
+                  "type": "object",
+                  "required": ["title", "date", "url", "srcTitle", "srcUrl"],
+                  "properties": {
+                    "title": {
+                      "type": "string",
+                      "description": "Titel des Presseberichts"
+                    },
+                    "date": {
+                      "type": "string",
+                      "format": "date",
+                      "description": "Erscheinungsdatum des Berichts"
+                    },
+                    "url": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "Link zum Artikel"
+                    },
+                    "srcTitle": {
+                      "type": "string",
+                      "description": "Name der Quelle (z. B. 'Badische Zeitung')"
+                    },
+                    "srcUrl": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "Startseite der Quelle"
+                    },
+                    "hasPicture": {
+                      "type": "boolean",
+                      "default": false,
+                      "description": "Gibt an, ob der Artikel ein Bild enthält"
+                    },
+                    "hasDescription": {
+                      "type": "boolean",
+                      "default": false,
+                      "description": "Gibt an, ob der Artikel eine Inhaltsbeschreibung enthält"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
