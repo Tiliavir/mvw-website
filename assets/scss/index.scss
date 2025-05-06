@@ -95,34 +95,6 @@ header {
     }
   }
 
-  ol {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    z-index: 9;
-
-    li {
-      list-style: none;
-      padding: 0 5px;
-
-      a {
-        display: block;
-        width: 8px;
-        height: 8px;
-        border: 1px solid white;
-        background: transparent;
-        border-radius: 100%;
-      }
-
-      &.selected a {
-        background: white;
-      }
-    }
-  }
-
   .prev,
   .next {
     display: none;

@@ -60,19 +60,6 @@
   {{ end }}
 
   <picture>
-    {{- $srcsetJpg := slice -}}
-    {{- with $r480Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 480w" .RelPermalink) }}{{ end }}
-    {{- with $r768Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 768w" .RelPermalink) }}{{ end }}
-    {{- with $r960Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 960w" .RelPermalink) }}{{ end }}
-    {{- with $r1100Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 1100w" .RelPermalink) }}{{ end }}
-    {{- with $r1600Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 1600w" .RelPermalink) }}{{ end }}
-
-    <source
-        srcset="{{ delimit $srcsetJpg ", " }}"
-        sizes="{{ $sizes }}"
-        type="image/jpeg"
-    />
-
     {{- $srcsetWebp := slice -}}
     {{- with $r480Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 480w" .RelPermalink) }}{{ end }}
     {{- with $r768Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 768w" .RelPermalink) }}{{ end }}
@@ -86,6 +73,19 @@
         type="image/webp"
     />
 
+    {{- $srcsetJpg := slice -}}
+    {{- with $r480Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 480w" .RelPermalink) }}{{ end }}
+    {{- with $r768Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 768w" .RelPermalink) }}{{ end }}
+    {{- with $r960Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 960w" .RelPermalink) }}{{ end }}
+    {{- with $r1100Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 1100w" .RelPermalink) }}{{ end }}
+    {{- with $r1600Jpg }}{{ $srcsetJpg = $srcsetJpg | append (printf "%s 1600w" .RelPermalink) }}{{ end }}
+
+    <source
+        srcset="{{ delimit $srcsetJpg ", " }}"
+        sizes="{{ $sizes }}"
+        type="image/jpeg"
+    />
+
     <img
       src="{{ $r480Webp.RelPermalink }}"
       class="{{ $class }}"
@@ -95,5 +95,4 @@
       decoding="{{ cond $isAboveTheFold "sync" "async" }}"
     />
   </picture>
-
 {{ end }}

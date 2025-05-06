@@ -14,9 +14,9 @@
     <div class="blur">
       <div class="tile-content">
         {{ with .Get "title" }}
-          <h3 class="title">
+          <h2 class="title">
             {{ . }}
-          </h3>
+          </h2>
         {{ end }}
         {{ if gt (len .Inner) 0 }}
           {{ .Inner }}
