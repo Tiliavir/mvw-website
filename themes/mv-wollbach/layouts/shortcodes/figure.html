@@ -1,8 +1,8 @@
 {{- $src := .Get "src" -}}
-{{- $alt := .Get "alt" | default "" -}}
+{{- $alt := .Get "alt" | default nil -}}
 {{- $caption := .Get "caption" | default nil -}}
-{{- $title := .Get "title" | default "" -}}
-{{- $class := .Get "class" | default "" -}}
+{{- $title := .Get "title" | default nil -}}
+{{- $class := .Get "class" | default nil -}}
 {{- $sizes := .Get "sizes" | default nil -}}
 {{- $isAboveTheFold := .Get "isAboveTheFold" | default false -}}
 

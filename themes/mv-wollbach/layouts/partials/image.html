@@ -1,7 +1,7 @@
 {{- $src := .src -}}
-{{- $alt := .alt | default "" -}}
-{{- $title := .title | default "" -}}
-{{- $class := .class | default "" -}}
+{{- $alt := .alt | default nil -}}
+{{- $title := .title | default nil -}}
+{{- $class := .class | default nil -}}
 {{- $isAboveTheFold := .isAboveTheFold | default false -}}
 {{- $sizes := .sizes | default nil -}}
 
@@ -16,6 +16,10 @@
 {{ if not $img }}
   {{ warnf "Missing image in page. Move %-50s | %-40s" $src .Page.File.Path }}
 {{ else }}
+
+  {{ if not $alt }}
+    {{ warnf "Missing alt on image. %-50s | %-40s" $src .Page.File.Path }}
+  {{ end }}
 
   {{- $originalWidth := $img.Width -}}
 
@@ -35,28 +39,28 @@
     <link rel="preload" as="image" href="{{ $r480Webp.RelPermalink }}" fetchpriority="high">
   {{- end -}}
 
-{{- $largest := 480 -}}
-{{ if eq (trim $sizes " ") "" }}
-      {{- $sizesList := slice -}}
-      {{- $sizesList = $sizesList | append "(max-width: 480px) 480px" -}}
-      {{- if $r768Webp }}
-        {{- $largest = 768 -}}
-        {{- $sizesList = $sizesList | append "(max-width: 960px) 768px" -}}
-      {{- end }}
-      {{- if $r960Webp }}
-        {{- $largest = 960 -}}
-        {{- $sizesList = $sizesList | append "(max-width: 1200px) 960px" -}}
-      {{- end }}
-      {{- if $r1100Webp }}
-        {{- $largest = 1100 -}}
-        {{- $sizesList = $sizesList | append "(max-width: 2000px) 1100px" -}}
-      {{- end }}
-      {{- if (ge $img.Width 1600) }}
-        {{- $largest = 1600 -}}
-        {{- $sizes = printf "%s, 1600px" (delimit $sizesList ", ") -}}
-      {{- else }}
-        {{- $sizes = printf "%s, %dpx" (delimit $sizesList ", ") $largest -}}
-      {{- end -}}
+  {{- $largest := 480 -}}
+  {{ if eq (trim $sizes " ") "" }}
+    {{- $sizesList := slice -}}
+    {{- $sizesList = $sizesList | append "(max-width: 480px) 480px" -}}
+    {{- if $r768Webp }}
+      {{- $largest = 768 -}}
+      {{- $sizesList = $sizesList | append "(max-width: 960px) 768px" -}}
+    {{- end }}
+    {{- if $r960Webp }}
+      {{- $largest = 960 -}}
+      {{- $sizesList = $sizesList | append "(max-width: 1200px) 960px" -}}
+    {{- end }}
+    {{- if $r1100Webp }}
+      {{- $largest = 1100 -}}
+      {{- $sizesList = $sizesList | append "(max-width: 2000px) 1100px" -}}
+    {{- end }}
+    {{- if (ge $img.Width 1600) }}
+      {{- $largest = 1600 -}}
+      {{- $sizes = printf "%s, 1600px" (delimit $sizesList ", ") -}}
+    {{- else }}
+      {{- $sizes = printf "%s, %dpx" (delimit $sizesList ", ") $largest -}}
+    {{- end -}}
   {{ end }}
 
   <picture>
@@ -88,9 +92,9 @@
 
     <img
       src="{{ $r480Webp.RelPermalink }}"
-      class="{{ $class }}"
-      alt="{{ $alt }}"
-      title="{{ $title }}"
+      {{- with $class -}}class="{{ . }}"{{- end -}}
+      {{- with $alt -}}alt="{{ . }}"{{- end -}}
+      {{- with $alt -}}title="{{ . }}"{{- end -}}
       loading="{{ cond $isAboveTheFold "eager" "lazy" }}"
       decoding="{{ cond $isAboveTheFold "sync" "async" }}"
     />

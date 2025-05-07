@@ -117,7 +117,8 @@
         "images": [
           {
             "src": "img/24_konzert_flyer_1.jpg",
-            "title": "Flyer zum Jahreskonzert 2024: Hör gut zu!"
+            "title": "Flyer zum Jahreskonzert 2024: Hör gut zu!",
+            "caption": "Flyer zum Jahreskonzert 2024: Hör gut zu!"
           },
           {
             "src": "img/konzert_2024.jpg",
@@ -190,7 +191,8 @@
         "images": [
           {
             "src": "img/23_jahreskonzert_plakat.jpg",
-            "title": "Flyer zum Jahreskonzert 2023: Rock Symphony"
+            "title": "Flyer zum Jahreskonzert 2023: Rock Symphony",
+            "caption": "Flyer zum Jahreskonzert 2023: Rock Symphony"
           },
           {
             "src": "img/konzert_2023-1.jpg",
@@ -714,7 +716,7 @@
         "images": [
           {
             "src": "img/2018_jmla_silber.jpg",
-            "title": ""
+            "title": "JMLA Silber 2018"
           }
         ],
         "content": "Jungmusiker Leistungsabzeichen in Silber! Zu diesem tolle Erfolg gratulieren wir ganz herzlich unserer Klarinettistin Karolin Grozinger."

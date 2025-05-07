@@ -1,7 +1,7 @@
 {{- $src := .Get "src" -}}
-{{- $alt := .Get "alt" | default "" -}}
-{{- $title := .Get "title" | default "" -}}
-{{- $class := .Get "class" | default "" -}}
+{{- $alt := .Get "alt" | default nil -}}
+{{- $title := .Get "title" | default nil -}}
+{{- $class := .Get "class" | default -}}
 {{- $isAboveTheFold := .Get "isAboveTheFold" | default false -}}
 
 {{- partial "image" (dict "Page" $.Page "src" $src "alt" $alt "title" $title "class" $class "isAboveTheFold" $isAboveTheFold) -}}

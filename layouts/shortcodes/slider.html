@@ -9,7 +9,8 @@
     {{ range $index, $image := $images }}
       <li id="c{{ $ordinal }}_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $items }}); padding-bottom: {{ $height }}{{ $unit }};">
         {{ $isAboveTheFold := lt $index 1 }}
-        {{ partial "image" (dict "Page" $.Page "src" $image "alt" "" "isAboveTheFold" $isAboveTheFold) }}
+        {{- $img := $.Page.Resources.GetMatch $image -}}
+        {{ partial "image" (dict "Page" $.Page "src" $image "alt" (strings.TrimSuffix (path.Ext $img.Name) $img.Name) "isAboveTheFold" $isAboveTheFold) }}
       </li>
     {{ end }}
   </ul>
