@@ -5,7 +5,6 @@ class Index {
         const ele = carousel.querySelector<HTMLUListElement>('ul')!;
         const firstSlide = ele.querySelector<HTMLLIElement>('li:nth-child(1)')!;
         const amountVisible = Math.round(ele.offsetWidth / firstSlide.offsetWidth);
-        const bullets = carousel.querySelectorAll<HTMLLIElement>('ol li');
         const slides = carousel.querySelectorAll<HTMLLIElement>('ul li');
         const nextArrow = carousel.querySelector<HTMLElement>('.next')!;
         const prevArrow = carousel.querySelector<HTMLElement>('.prev')!;
@@ -13,58 +12,48 @@ class Index {
         nextArrow.style.display = 'block';
         prevArrow.style.display = 'block';
         ele.scrollLeft = 0;
-        bullets[0].classList.add('selected');
         slides[0].classList.add('selected');
 
         if (amountVisible > 1) {
           const removeEls = carousel.querySelectorAll(
-              `ol li:nth-last-child(-n + ${amountVisible - 1})`
+              `ul li:nth-last-child(-n + ${amountVisible - 1})`
           );
           removeEls.forEach((el) => el.remove());
         }
 
         const setSelected = (): void => {
-          bullets.forEach((b) => b.classList.remove('selected'));
           slides.forEach((s) => s.classList.remove('selected'));
 
           const scrollLength = slides[1].offsetLeft - slides[0].offsetLeft;
           const nth = Math.round(ele.scrollLeft / scrollLength) + 1;
 
-          const bullet = carousel.querySelector(`ol li:nth-child(${nth})`);
           const slide = carousel.querySelector(`ul li:nth-child(${nth})`);
-          bullet?.classList.add('selected');
           slide?.classList.add('selected');
-
-          const dynamicTitle = carousel.closest('.carousel-wrapper')?.querySelector('.dynamictitle');
-          if (dynamicTitle) {
-            const title = slide?.querySelector('img')?.getAttribute('title');
-            if (title) dynamicTitle.innerHTML = title;
-          }
-        };
-
-        const scrollTo = function (this: HTMLAnchorElement, event: Event): void {
-          event.preventDefault();
-          const target = ele.querySelector<HTMLElement>(this.getAttribute('data-slide')!);
-          if (target) ele.scrollLeft = target.offsetLeft;
         };
 
         const nextSlide = (): void => {
-          const selected = carousel.querySelector('ol li.selected');
-          if (!carousel.querySelector('ol li:last-child')?.classList.contains('selected')) {
-            selected?.nextElementSibling?.querySelector('a')?.click();
+          const scrollLength = slides[1].offsetLeft - slides[0].offsetLeft;
+          const maxScrollLeft = ele.scrollWidth - ele.clientWidth;
+
+          if (ele.scrollLeft + scrollLength <= maxScrollLeft) {
+            ele.scrollBy({ left: scrollLength, behavior: 'smooth' });
           } else {
-            (<HTMLAnchorElement> carousel.querySelector('ol li:first-child a'))?.click();
+            // Loop to first
+            ele.scrollTo({ left: 0, behavior: 'smooth' });
           }
         };
 
         const prevSlide = (): void => {
-          const selected = carousel.querySelector('ol li.selected');
-          if (!carousel.querySelector('ol li:first-child')?.classList.contains('selected')) {
-            selected?.previousElementSibling?.querySelector('a')?.click();
+          const scrollLength = slides[1].offsetLeft - slides[0].offsetLeft;
+
+          if (ele.scrollLeft - scrollLength >= 0) {
+            ele.scrollBy({ left: -scrollLength, behavior: 'smooth' });
           } else {
-            (<HTMLAnchorElement> carousel.querySelector('ol li:last-child a'))?.click();
+            // Loop to last
+            ele.scrollTo({ left: ele.scrollWidth, behavior: 'smooth' });
           }
         };
+
 
         const setInteracted = (): void => {
           ele.classList.add('interacted');
@@ -85,12 +74,6 @@ class Index {
         prevArrow.addEventListener('click', prevSlide);
         prevArrow.addEventListener('mousedown', setInteracted);
         prevArrow.addEventListener('touchstart', setInteracted);
-
-        bullets.forEach((bullet) => {
-          bullet.querySelector('a')?.addEventListener('click', scrollTo);
-          bullet.addEventListener('mousedown', setInteracted);
-          bullet.addEventListener('touchstart', setInteracted);
-        });
 
         const duration = parseInt(carousel.getAttribute('data-duration') || '0');
         if (duration > 0) {

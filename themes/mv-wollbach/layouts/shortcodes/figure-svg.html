@@ -1,0 +1,32 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default nil -}}
+{{- $caption := .Get "caption" | default nil -}}
+{{- $title := .Get "title" | default nil -}}
+{{- $class := .Get "class" | default nil -}}
+{{- $sizes := .Get "sizes" | default nil -}}
+{{- $isAboveTheFold := .Get "isAboveTheFold" | default false -}}
+
+{{- $img := "" -}}
+{{- if .Page.Resources.GetMatch $src -}}
+  {{- $img = .Page.Resources.GetMatch $src -}}
+{{- else -}}
+  {{- $img = resources.Get $src -}}
+{{- end -}}
+
+{{- if $isAboveTheFold -}}
+  <link rel="preload" as="image" href="{{ $img.RelPermalink }}" fetchpriority="high">
+{{- end -}}
+
+<figure>
+    <img
+      src="{{ $img.RelPermalink }}"
+      {{- with $class -}}class="{{ . }}"{{- end -}}
+      {{- with $alt -}}alt="{{ . }}"{{- end -}}
+      {{- with $alt -}}title="{{ . }}"{{- end -}}
+      loading="{{ cond $isAboveTheFold "eager" "lazy" }}"
+      decoding="{{ cond $isAboveTheFold "sync" "async" }}"
+    />
+  {{ with $caption }}
+    <figcaption><p>{{ . }}</p></figcaption>
+  {{ end }}
+</figure>

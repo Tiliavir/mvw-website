@@ -7,5 +7,13 @@ figure {
     max-height: calc(75vh - #{$top-nav-height});
     max-width: 100%;
     margin: 0 auto;
+
+    &.small-200 {
+      max-height: 200px;
+    }
+
+    &.small-300 {
+      max-height: 300px;
+    }
   }
 }

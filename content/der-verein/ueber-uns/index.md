@@ -19,19 +19,22 @@ Einwohner und wurde 767 erstmalig urkundlich erwähnt. Weiterlesen auf
 [kandern]: https://www.kandern.de/texte/seite.php?id=387702
 [kandern_wiki]: https://de.wikipedia.org/wiki/Kandern-Wollbach
 
-{{< figure src="img/wappen.webp"
-           alt="Wollbacher Wappen"
-           isAboveTheFold=true
+{{< figure-svg src="img/wappen.svg"
+               class="small-200"
+               alt="Wollbacher Wappen"
+               isAboveTheFold=true
 >}}
 
 Der Musikverein besteht aus {{< number-of-musicians >}} Musikern und dem Dirigenten Oliver Hauser.
 
-{{< figure src="img/karte.webp"
-           alt="Lage Wollbachs"
-           isAboveTheFold=true
+{{< figure-svg src="img/karte.svg"
+               class="small-300"
+               alt="Lage Wollbachs"
+               isAboveTheFold=true
 >}}
 
 ## Ausschnitt aus der Chronik
+
 <a href="/files/pdf/chronik.pdf" target="_blank">Download als PDF</a>
 
 Ein noch gut erhaltenes Notenbuch für Cornu aus dem Jahre 1839 von Simon
@@ -51,19 +54,19 @@ Zimmermann, welche in Münster/Schweiz in Dienst war.
 
 >"Es sind sechs Musikanten im Dorf,
 >- der Schreiner Jakob (Jakob Grenacher)
-- der Krämer Jakob ( Jakob Merstetter, späterer Hofmüller)
-- der Martin Gentner
-- der Martin Häfele (Martin Sütterlin)
-- der Jakob Möslin
-- der Johannes Greßlin ab der Egerten,
-
+> - der Krämer Jakob ( Jakob Merstetter, späterer Hofmüller)
+> - der Martin Gentner
+> - der Martin Häfele (Martin Sütterlin)
+> - der Jakob Möslin
+> - der Johannes Greßlin ab der Egerten,
+>
 >die haben die Musik gelernt, sie spielen alle Abend und am Sonntag haben
 wir getanzt in's Funke-Möslis.
-
+>
 >Diese sechs angeführten Namen stimmen mit einem Bild überein, auf dessen
 Rückseite geschrieben steht: "1866 abgenommen am 8.ten April, wir deutschen
 Musikanten sind einig und verwand".
-
+>
 >Diese Männer waren Gründer des Musikvereins Wollbach, zu welchen sich noch
 anschlossen: 
 Jakob Würslin und Johann Jakob Sütterlin auf dem Buck
@@ -180,7 +183,7 @@ Insbesondere begrüßte er den Festpräsidenten, den Bezirksvorsitzenden des
 Alemannischen Musikverbandes Adolf Krebs, Efringen-Kirchen, die Vorstände
 und Dirigenten der Gastvereine, Pfarrer Schmitthenner, die Lehrerschaft
 sowie zahlreiche Ehrenmitglieder.
-
+>
 >In einer kurzen Ansprache dankte Albert Enderlin allen, die mitgeholfen
 hatten das große Fest vorzubereiten oder die den Verein finanziell
 unterstützt hatten. Nach einem weiteren musikalischen Vortrag würdigte
@@ -191,12 +194,12 @@ humorvollen Gedicht alles Gute für die Zukunft. Bezirksvorsitzender Krebs
 hielt in seiner Ansprache besonders den Idealismus der Volksmusiker hervor
 und legte der jungen Generation ans Herz dem Vorbild alter und treuer
 Mitglieder nachzueifern.
-
+>
 >Für besondere Verdienste um den Zeltneubau wurden Leo Geling, Hansjörg
 Sütterlin und Karl Reinacher jg. von den Vorständen des Gesang- und
 Musikvereins, unter dem Beifall der Festgäste, durch überreichen einer
 Urkunde zu Ehrenmitgliedern beider Vereine ernannt.
-
+>
 >Die weitere Programmgestaltung des Abends übernahm die Knabenmusik
 Markgräflerland. Ihre Darbietungen fanden den ungeteilten Beifall der
 Festbesucher. Mit drei sehr gut vorgetragenen Liedern des Gesangvereins
@@ -206,11 +209,11 @@ Instrument. Große Freude unter dem Publikum brachten die Darbietungen der
 Volkstanzgruppe der Wollbacher Schüler. Als Abschluss der örtlichen Vereine
 brachte der Kirchenchor ein Lied zum Vortrag und überreichte ein
 Geldgeschenk.
-
+>
 >Das offizielle Programm des Abends wurde beschlossen mit den Vorträgen der
 Feuerwehrmusik Haagen. Mit zahlreichen Zugaben der Gastvereine wurde die
 erste wohlgelungene Festnacht beschlossen.
-
+>
 >Das große Festzelt war fast vollbesetzt als Festdirigent Werner Scheuzger
 den Eröffnungsmarsch am Samstagabend dirigierte. Vorstand Enderlin und
 Festpräsident Bgm. Sütterlin hießen in ihren Ansprachen die zahlreichen
@@ -221,14 +224,14 @@ sei hier festgehalten, dass unser verdienter Dirigent Herr Scheuzger jeden
 Gastverein mit einem selbstverfassten Gedicht in alemannischer Mundart
 begrüßte, wofür ihm an dieser Stelle für seine uneigennützige Arbeit noch
 einmal herzlich Dank gesagt sei.
-
+>
 >Die weitere musikalische Gestaltung des Abends übernahmen die Musikvereine
 aus Istein, Stadtmusik Kandern, Efringen-Kirchen, Binzen und Wiechs. Zum
 Abschluss konzertierten die Stadtmusik Lörrach und die Stadtmusik
 Schopfheim, was als musikalischer Höhepunkt des Abends zu werten war. Bei
 Stimmungsmusik und Tanz war schon ziemlich vorgerückte Stunde als die
 Besucher nur zögernd das Festzelt verließen.
-
+>
 >Mit dem Festgottesdienst wurde am Sonntag der Höhepunkt der Jubiläumstage
 eingeleitet. Mit einem Musikstück bereicherten wir die erhabene Feierstunde.
 Nach dem Gottesdienst gedachte der Verein am Ehrenmal seiner aus den beiden
@@ -244,7 +247,7 @@ Gastvereins kredenzten die Wollbacher Festjungfrauen den Gästen einen edlen
 Tropfen Markgräfler, worauf sich diese mit einem mit viel Beifall
 aufgenommenen Standkonzert für den freundlichen Empfang revanchierten. Ein
 gemeinsames Mittagessen im Gasthaus zur Blume schloss sich an.
-
+>
 >Nach Aufstellung der Vereine um 13.30 Uhr auf dem Dorfplatz setzte sich
 der Zug mit Marschmusik in Richtung Festzelt in Bewegung. Nach der
 Eröffnungsmusik konnte Vorstand Enderlin u.a. den Präsidenten des
@@ -256,18 +259,18 @@ Veranstaltungen Ausdruck. Präsident Braun würdigte in seiner Rede die
 Verdienste der Musikvereine um die deutsche Volksmusik und überreichte eine
 Notenspende des Verbandes. Herr Gratz betonte die Bedeutung des Jubiläums,
 das er als ein kulturelles Ereignis ersten Ranges bezeichnete.
-
+>
 >Das Programm des Nachmittags bestritten zunächst die Gastvereine:
 Haltingen, Obereggenen, Höllstein, Maulburg und Hauingen. Ein besonderes
 Ereignis war das über einstündige Abschlusskonzert der Musikgesellschaft
 Bannwil, das in der Uraufführung des vom Dirigenten Erich P.Bader eigens
 für diesen Anlass komponierten Marsches "Gruss an Wollbach" gipfelte.
-
+>
 >Bei Wein, Bier, Güggeli und was die Festwirtschaft nebst Kaffeestube und
 Bar noch alles zu bieten hatte, bei Stimmungsmusik und Tanz stieg das
 Stimmungsbarometer an die obere Marke, ehe man sich schweren Herzens, zum
 Teil auch mit schweren Köpfen, in vorgerückter Stunde trennte.
-
+>
 >Das Kinderfest am heutigen Montagnachmittag musste wegen des
 niedergehenden Regens in das Zelt verlegt werden, was aber dem Frohsinn und
 der Ausgelassenheit der jungen Schar keinerlei Abbruch tat. Der fröhliche
