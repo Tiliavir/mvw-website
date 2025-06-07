@@ -9,10 +9,10 @@
     "url": "https://github.com/Tiliavir/mvw-website.git"
   },
   "browserslist": [
+    "last 1 version",
     "> 1%",
-    "last 2 versions",
-    "Firefox ESR",
-    "ie 11"
+    "maintained node versions",
+    "not dead"
   ],
   "comments": {
     "dependencies": {
