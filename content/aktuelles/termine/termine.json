@@ -4,21 +4,22 @@
     "2025": [
       {
         "location": {
-          "name": "Kandertalhalle",
-          "address": "Wollbach"
-        },
-        "starttime": "2025-05-24T19:00:00Z",
-        "endtime": "2025-05-24T21:00:00Z",
-        "title": "Jugendkonzert des Vorstufen- und Jugendorchesters"
-      },
-      {
-        "location": {
           "name": "Schulhof",
           "address": "Wollbach"
         },
         "starttime": "2025-07-05T20:00:00Z",
         "endtime": "2025-07-05T23:00:00Z",
         "title": "Open-Air"
+      },
+      {
+        "title": "Summerstage Freiburg",
+        "location": {
+          "name": "Theater",
+          "address": "Freiburg"
+        },
+        "starttime": "2025-07-11T19:00:00Z",
+        "endtime": "2025-07-11T22:00:00Z",
+        "description": "Auftritt Summerstage vor dem Theater Freiburg"
       },
       {
         "location": {
@@ -30,13 +31,64 @@
         "title": "100 Jahre Feuerwehr Wollbach"
       },
       {
+        "title": "Kirchhofgottesdienst",
+        "location": {
+          "name": "Kirchhof",
+          "address": "Wollbach"
+        },
+        "starttime": "2025-07-27T10:00:00Z",
+        "endtime": "2025-07-27T12:00:00Z",
+        "description": "Gottesdienst in der Kirche"
+      },
+      {
         "location": {
           "address": "Wollbach",
           "name": "Rund ums Dorf"
         },
         "starttime": "2025-10-11T13:00:00Z",
         "endtime": "2025-10-11T21:00:00Z",
-        "title": "Sauser-Express"
+        "title": "Sauser-Express",
+        "description": "Momentan laufen noch Abklärungen. Wir bitten um etwas Geduld."
+      },
+      {
+        "title": "Wartburgfest Wollbach",
+        "location": {
+          "name": "Kandertalhalle",
+          "address": "Wollbach"
+        },
+        "starttime": "2025-11-30T09:00:00Z",
+        "endtime": "2025-11-30T11:00:00Z"
+      },
+      {
+        "title": "Jugendvorspiel",
+        "location": {
+          "name": "Kandertalhalle",
+          "address": "Wollbach"
+        },
+        "starttime": "2025-12-07T18:00:00Z",
+        "endtime": "2025-12-07T19:30:00Z"
+      }
+    ],
+    "2026": [
+      {
+        "title": "Jahreskonzert",
+        "location": {
+          "name": "Kandertalhalle",
+          "address": "Wollbach"
+        },
+        "starttime": "2026-01-23T19:00:00Z",
+        "endtime": "2026-01-24T22:00:00Z",
+        "description": "Konzert 2026"
+      },
+      {
+        "title": "Jahreskonzert",
+        "location": {
+          "name": "Kandertalhalle",
+          "address": "Wollbach"
+        },
+        "starttime": "2026-01-30T19:00:00Z",
+        "endtime": "2026-01-31T22:00:00Z",
+        "description": "Konzert 2026"
       }
     ]
   }
