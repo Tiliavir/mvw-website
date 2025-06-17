@@ -45,7 +45,7 @@
     "eslint": "9.29.0",
     "glob-all": "3.3.1",
     "mvw-search-index": "2.3.0",
-    "postcss": "8.5.4",
+    "postcss": "8.5.5",
     "postcss-cli": "11.0.1",
     "stylelint": "16.20.0",
     "stylelint-config-recommended-scss": "15.0.1",
