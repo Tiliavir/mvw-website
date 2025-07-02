@@ -21,8 +21,8 @@ wird es dann an mehreren Stationen eine Weinprobe geben.
 
 Für das leibliche Wohl ist anschliessend in der Kandertalhalle in Wollbach mit einer
 Schlachtplatte, Meerettich und Sauerkraut gesorgt. Es werden dort auch Sauser und andere
-Getränke, sowie Kaffee und Kuchen angeboten. Eine Einlaube lädt zum Verweilen ein. Für
-gute Unterhaltung mit zukünftiger Blasmusik  ist ebenfalls gesorgt.
+Getränke, sowie Kaffee und Kuchen angeboten. Eine Weinlaube lädt zum Verweilen ein. Für
+gute Unterhaltung mit zukünftiger Blasmusik ist ebenfalls gesorgt.
 
 Um 21:00 Uhr ist dann Abfahrt mit dem Chanderli von Wollbach zurück nach Haltingen.
 
@@ -34,7 +34,9 @@ der Kandertalhalle sind im Preis nicht enthalten). Die Fahrt findet bei jedem
 Wetter, aber nur bei einer Mindestteilnahme von 150 Personen statt. Eine verbindliche
 Anmeldung bis spätestens 15.09.2025 ist daher notwendig.
 
-Per mail: martina.reinauer@mv-wollbach.de oder auch telefonisch ab 18.00 Uhr: 07621-82375
+<p class="ausverkauft">
+<b><i>- ausverkauft -</i></b>
+</p>
 
 Bei Nichtteilnahme kann aus organisatorischen Gründen leider keine Rückerstattung
 des Fahrpreises vorgenommen werden.

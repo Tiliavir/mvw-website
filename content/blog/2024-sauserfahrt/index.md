@@ -21,7 +21,7 @@ wird es dann an mehreren Stationen eine Weinprobe geben.
 
 Für das leibliche Wohl ist anschliessend in der Kandertalhalle in Wollbach mit einer
 Schlachtplatte, Meerettich und Sauerkraut gesorgt. Es werden dort auch Sauser und andere
-Getränke, sowie Kaffee und Kuchen angeboten. Eine Einlaube lädt zum Verweilen ein. Für
+Getränke, sowie Kaffee und Kuchen angeboten. Eine Weinlaube lädt zum Verweilen ein. Für
 gute Unterhaltung mit zukünftiger Blasmusik  ist ebenfalls gesorgt.
 
 Um 21:00 Uhr ist dann Abfahrt mit dem Chanderli von Wollbach zurück nach Haltingen.
