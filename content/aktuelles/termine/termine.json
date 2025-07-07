@@ -14,12 +14,12 @@
       {
         "title": "Summerstage Freiburg",
         "location": {
-          "name": "Theater",
+          "name": "Theatervorplatz",
           "address": "Freiburg"
         },
-        "starttime": "2025-07-11T19:00:00Z",
+        "starttime": "2025-07-11T20:30:00Z",
         "endtime": "2025-07-11T22:00:00Z",
-        "description": "Auftritt Summerstage vor dem Theater Freiburg"
+        "description": "Auftritt Summer Stage vor dem Theater Freiburg"
       },
       {
         "location": {
