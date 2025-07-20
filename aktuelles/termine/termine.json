@@ -3,34 +3,6 @@
   "termine": {
     "2025": [
       {
-        "location": {
-          "name": "Schulhof",
-          "address": "Wollbach"
-        },
-        "starttime": "2025-07-05T20:00:00Z",
-        "endtime": "2025-07-05T23:00:00Z",
-        "title": "Open-Air"
-      },
-      {
-        "title": "Summerstage Freiburg",
-        "location": {
-          "name": "Theatervorplatz",
-          "address": "Freiburg"
-        },
-        "starttime": "2025-07-11T20:30:00Z",
-        "endtime": "2025-07-11T22:00:00Z",
-        "description": "Auftritt Summer Stage vor dem Theater Freiburg"
-      },
-      {
-        "location": {
-          "name": "Feuerwehr",
-          "address": "Wollbach"
-        },
-        "starttime": "2025-07-20T10:00:00Z",
-        "endtime": "2025-07-20T13:30:00Z",
-        "title": "100 Jahre Feuerwehr Wollbach"
-      },
-      {
         "title": "Kirchhofgottesdienst",
         "location": {
           "name": "Kirchhof",
