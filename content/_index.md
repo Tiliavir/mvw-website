@@ -8,6 +8,7 @@ customJs:
   - ts/index.ts
 ---
 
+{{< comment >}}
 <header>
   <div class="mvw-brand">
     {{< figure src="img/logo.png"
@@ -26,6 +27,7 @@ customJs:
     </a>
   </div>
 </header>
+{{< /comment >}}
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
@@ -40,11 +42,6 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
 >}}
 
 <div class="tiles">
-  {{< tile file="2025-open-air.md"
-           image="img/open-air.jpg"
-           title="Open Air 2025"
-           text="Der Schulhof in Wollbach wird am 5. Juli zur Freilichtbühne. Gereicht werden edle Weine, exklusives Bier und erlesene Speisen, sowie Erfrischungen an Sekt- und Cocktailbar."
-  />}}
   {{< tile file="2025-sauserfahrt.md"
            image="img/chanderli.jpg"
            title="Sauserbummel 2025"
