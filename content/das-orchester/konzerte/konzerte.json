@@ -3061,6 +3061,216 @@
           ]
         }
       ]
+    },
+    {
+      "category": "Konzert",
+      "title": "Wollach Open-Air",
+      "subtitle": "",
+      "location": {
+        "location": "Schulhof Wollbach",
+        "dates": ["2025-07-05"]
+      },
+      "parts": [
+        {
+          "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+          "conductor": "Oliver Hauser",
+          "program": [
+            {
+              "title": "Rock-Pop Medley",
+              "composers": []
+            },
+            {
+              "title": "Cant Rely On You",
+              "composers": []
+            },
+            {
+              "title": "Jersey Boys",
+              "composers": []
+            },
+            {
+              "title": "Jailhouse Rock",
+              "composers": []
+            },
+            {
+              "title": "Things",
+              "composers": ["Robbie Williams"]
+            },
+            {
+              "title": "This Is Me",
+              "composers": []
+            },
+            {
+              "title": "This Love",
+              "composers": []
+            },
+            {
+              "title": "At this Moment",
+              "composers": []
+            },
+            {
+              "title": "25 or 6 to 4",
+              "composers": []
+            },
+            {
+              "title": "The Time of my Life",
+              "composers": []
+            },
+            {
+              "title": "Get Lucky",
+              "composers": []
+            },
+            {
+              "title": "Europa",
+              "composers": []
+            },
+            {
+              "title": "The Amazing ABBA Collection",
+              "composers": ["ABBA"]
+            },
+            {
+              "title": "Satellite",
+              "composers": []
+            },
+            {
+              "title": "Nichts Von Alledem",
+              "composers": []
+            },
+            {
+              "title": "Hard To Say I'm Sorry",
+              "composers": []
+            },
+            {
+              "title": "Music",
+              "composers": ["John Miles"]
+            },
+            {
+              "title": "All The Things You Are",
+              "composers": []
+            },
+            {
+              "title": "Kids",
+              "composers": ["Robbie Williams", "Kylie Minougue"]
+            },
+            {
+              "title": "Ain't Nobody",
+              "composers": []
+            },
+            {
+              "title": "I Dont Want To Miss A Thing",
+              "composers": ["Aerosmith"]
+            },
+            {
+              "title": "A Kind Of Magic",
+              "composers": ["Roger M. Taylor"]
+            },
+            {
+              "title": "Angels",
+              "composers": ["Robbie Williams", "Guy Chambers"]
+            },
+            {
+              "title": "Gimme, Gimme, Gimme",
+              "composers": ["ABBA"]
+            },
+            {
+              "title": "Upside Down",
+              "composers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Platzkonzert",
+      "title": "Summerstage Freiburg",
+      "subtitle": "Open-Air vor dem Theater Freiburg",
+      "location": {
+        "location": "Theaterplatz Freiburg",
+        "dates": [
+          "2025-07-11"
+        ]
+      },
+      "parts": [
+        {
+          "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+          "conductor": "Oliver Hauser",
+          "program": [
+            {
+              "title": "All The Things You Are",
+              "composers": []
+            },
+            {
+              "title": "Cant Rely On You",
+              "composers": []
+            },
+            {
+              "title": "Jersey Boys",
+              "composers": []
+            },
+            {
+              "title": "Jailhouse Rock",
+              "composers": []
+            },
+            {
+              "title": "Kids",
+              "composers": [
+                "Robbie Williams",
+                "Kylie Minougue"
+              ]
+            },
+            {
+              "title": "This Is Me",
+              "composers": []
+            },
+            {
+              "title": "This Love",
+              "composers": []
+            },
+            {
+              "title": "At this Moment",
+              "composers": []
+            },
+            {
+              "title": "25 or 6 to 4",
+              "composers": []
+            },
+            {
+              "title": "The Time of my Life",
+              "composers": []
+            },
+            {
+              "title": "Get Lucky",
+              "composers": []
+            },
+            {
+              "title": "Europa",
+              "composers": []
+            },
+            {
+              "title": "The Amazing ABBA Collection",
+              "composers": [
+                "ABBA"
+              ]
+            },
+            {
+              "title": "A Kind Of Magic",
+              "composers": [
+                "Roger M. Taylor"
+              ]
+            },
+            {
+              "title": "Angels",
+              "composers": [
+                "Robbie Williams",
+                "Guy Chambers"
+              ]
+            },
+            {
+              "title": "Upside Down",
+              "composers": []
+            }
+          ]
+        }
+      ]
     }
   ]
 }
