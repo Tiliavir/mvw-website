@@ -88,7 +88,7 @@ $brand-padding: 0 10px 0 5px;
 
 @include breakpoint(0, $mobile-max-width) {
   .navigation-menu {
-    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .dropdown {

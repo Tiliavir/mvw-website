@@ -2,6 +2,7 @@
   "extends": "stylelint-config-recommended-scss",
   "rules": {
     "scss/no-global-function-names": null,
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "nesting-selector-no-missing-scoping-root": null
   }
 }

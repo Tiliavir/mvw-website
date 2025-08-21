@@ -49,7 +49,7 @@ $breadcrumb-print-color: #000;
   tr,
   td,
   table {
-    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   .mvw-logo-print {
