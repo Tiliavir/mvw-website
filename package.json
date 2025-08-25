@@ -38,7 +38,7 @@
     }
   },
   "devDependencies": {
-    "@types/jquery": "3.5.32",
+    "@types/jquery": "3.5.33",
     "@types/lunr": "2.3.7",
     "autoprefixer": "10.4.21",
     "copyfiles": "2.4.1",
