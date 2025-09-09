@@ -47,7 +47,7 @@
     "mvw-search-index": "2.3.0",
     "postcss": "8.5.6",
     "postcss-cli": "11.0.1",
-    "stylelint": "16.23.1",
+    "stylelint": "16.24.0",
     "stylelint-config-recommended-scss": "16.0.0",
     "typescript": "5.9.2",
     "typescript-eslint": "8.41.0",
