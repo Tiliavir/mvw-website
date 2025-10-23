@@ -42,11 +42,6 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
 >}}
 
 <div class="tiles">
-  {{< tile file="2025-sauserfahrt.md"
-           image="img/chanderli.jpg"
-           title="Sauserbummel 2025"
-           text="Am Samstag, den 11. Oktober dampft auch in diesem Jahr wieder der „Sauser-Express“ durch das Kandertal."
-  />}}
   {{< tile file="mitgliedschaft"
            image="img/slider/alle-1.jpg"
            title="Mitglied werden"
