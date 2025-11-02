@@ -17,31 +17,45 @@ class Register {
     "Tuba": ["tuba_1.jpg", "tuba_2.jpg", "tuba_3.jpg", "tuba_4.jpg"]
   };
 
-  public static tryReplaceImage($images: JQuery): void {
-    const htmlElements = this.shuffle($images);
+  public static tryReplaceImage(images: HTMLElement[]): void {
+    const htmlElements = this.shuffle(images);
     for (const image of htmlElements) {
       if (Register.isElementInViewport(image)) {
-        const $image = $(image);
-        const remainingRegImageUrls = Register.register[$image.attr("title")]
-            .filter(url => !Register.endsWith("/" + $image.attr("src"), url));
-        if (remainingRegImageUrls.length > 0) {
-          $image.fadeOut("fast", (): void => {
-            const nexIndex = Math.floor(Math.random() * remainingRegImageUrls.length);
-            $image.removeAttr("width");
-            $image.removeAttr("height");
-            if($image.parent().is("picture")) {
-              $image.parent().replaceWith($image);
+        const title = image.getAttribute("title");
+        const src = image.getAttribute("src") || "";
+
+        const remainingRegImageUrls = Register.register[title]?.filter(
+            url => src.indexOf(url.replace(".jpg", "")) < 0
+        );
+
+        if (remainingRegImageUrls && remainingRegImageUrls.length > 0) {
+          image.style.transition = "opacity 0.2s";
+          image.style.opacity = "0";
+
+          setTimeout(() => {
+            const parent = image.parentElement;
+            if (parent && parent.tagName.toLowerCase() === "picture") {
+              const sources = parent.querySelectorAll("source");
+              sources.forEach(srcEl => srcEl.remove());
             }
-            $image.attr("src", "/das-orchester/register/img/" + remainingRegImageUrls[nexIndex]);
-            $image.fadeIn("slow");
-          });
+
+            image.removeAttribute("width");
+            image.removeAttribute("height");
+
+            const nextIndex = Math.floor(Math.random() * remainingRegImageUrls.length);
+            image.setAttribute("src", "/das-orchester/register/img/" + remainingRegImageUrls[nextIndex]);
+
+            image.style.transition = "opacity 0.6s";
+            image.style.opacity = "1";
+          }, 200);
+
           break;
         }
       }
     }
   }
 
-  private static shuffle(array: JQuery): JQuery {
+  private static shuffle(array: HTMLElement[]): HTMLElement[] {
     for (let m = array.length, t, i; m > 0; m--) {
       i = Math.floor(Math.random() * m);
 
@@ -53,10 +67,6 @@ class Register {
     return array;
   }
 
-  private static endsWith(str: string, suffix: string): boolean {
-    return str.indexOf(suffix, str.length - suffix.length) !== -1;
-  }
-
   private static isElementInViewport(el: HTMLElement): boolean {
     const rect = el.getBoundingClientRect();
     return rect.bottom >= 0
@@ -66,7 +76,7 @@ class Register {
   }
 }
 
-$(() => {
-  const $images = $(".mvw-register-table img");
-  setInterval(() => Register.tryReplaceImage($images), 8000);
+document.addEventListener("DOMContentLoaded", () => {
+  const images = Array.from(document.querySelectorAll<HTMLImageElement>(".mvw-register-table img"));
+  setInterval(() => Register.tryReplaceImage(images), 8000);
 });

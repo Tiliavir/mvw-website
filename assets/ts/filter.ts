@@ -1,18 +1,16 @@
 class Filter {
   private static containsAll(array: string[], find: string[]): boolean {
-    return find.every((v) => {
-      return array.indexOf(v) !== -1;
-    });
+    return find.every((v) => array.includes(v));
   }
 
   private filters: string[] = [];
 
   public initialize() {
-    $(".keyword-selector .keyword").each((i, e) => {
-      const $e = $(e);
-      $e.on("click", () => {
-        $e.toggleClass("active");
-        this.toggleFilter($e.text());
+    const keywords = document.querySelectorAll(".keyword-selector .keyword");
+    keywords.forEach((el) => {
+      el.addEventListener("click", () => {
+        el.classList.toggle("active");
+        this.toggleFilter(el.textContent?.trim() || "");
       });
     });
   }
@@ -28,24 +26,31 @@ class Filter {
   }
 
   private updateFilter(): void {
-    if (this.filters.length > 0) {
-      $(".tabs").hide();
-      $(".tab-content .tab-pane").show();
-      $(".tab-content .entry").each((i, entry) => {
-        const $entry = $(entry);
-        const itemTags: string[] = [];
-        $entry.find(".keyword").each((j, e) => {
-          itemTags.push($(e).text());
-        });
+    const tabs = document.querySelector<HTMLElement>(".tabs");
+    const tabPanes = document.querySelectorAll<HTMLElement>(".tab-content .tab-pane");
+    const entries = document.querySelectorAll<HTMLElement>(".tab-content .entry");
 
-        $entry.toggle(Filter.containsAll(itemTags, this.filters));
+    if (this.filters.length > 0) {
+      if (tabs) {
+        tabs.style.display = "none";
+      }
+      tabPanes.forEach((pane) => (pane.style.display = "block"));
+
+      entries.forEach((entry) => {
+        const keywords = Array.from(entry.querySelectorAll(".keyword")).map(
+            (k) => k.textContent?.trim() || ""
+        );
+        const visible = Filter.containsAll(keywords, this.filters);
+        entry.style.display = visible ? "block" : "none";
       });
     } else {
-      $(".tabs").show();
-      $(".tab-content .tab-pane").css("display", "");
-      $(".tab-content .entry").show();
+      if (tabs) {
+        tabs.style.display = "";
+      }
+      tabPanes.forEach((pane) => (pane.style.display = ""));
+      entries.forEach((entry) => (entry.style.display = "block"));
     }
   }
 }
 
-$(() => { new Filter().initialize(); });
+document.addEventListener("DOMContentLoaded", () => new Filter().initialize());

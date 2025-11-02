@@ -2,19 +2,27 @@ class Appointments {
   public static initialize(): void {
     const cutOffDate = Appointments.addDays(new Date(), -3);
 
-    $("meta[itemprop=\"startDate\"]").each((i, e) => {
-      let $e = $(e);
-      const $endDateString = $e.siblings("meta[itemprop=\"endDate\"]");
-      $e = $endDateString.length === 1 ? $endDateString : $e;
-      const endDate = new Date($e.attr("content"));
+    document.querySelectorAll('meta[itemprop="startDate"]').forEach((e) => {
+      let el = e as HTMLElement;
+      const endDateEl = el.parentElement?.querySelector<HTMLElement>('meta[itemprop="endDate"]');
+      el = endDateEl ?? el;
+      const content = el.getAttribute("content");
+      if (!content) {
+        return;
+      }
+      const endDate = new Date(content);
       if (endDate < cutOffDate) {
-        $e.closest("tr").css("display", "none");
+        const tr = el.closest("tr") as HTMLElement;
+        if (tr) {
+          tr.style.display = "none";
+        }
       }
     });
 
-    $("main h2").each((i, e) => {
-      if ($(e).next("table").first().height() === 0) {
-        $(e).hide();
+    document.querySelectorAll("main h2").forEach((e) => {
+      const next = e.nextElementSibling as HTMLElement | null;
+      if (next && next.tagName === "TABLE" && next.offsetHeight === 0) {
+        (e as HTMLElement).style.display = "none";
       }
     });
   }
@@ -26,4 +34,4 @@ class Appointments {
   }
 }
 
-$(() => { Appointments.initialize(); });
+document.addEventListener("DOMContentLoaded", () => Appointments.initialize());

@@ -7,58 +7,75 @@ class App {
   }
 
   private static registerScroll(): void {
-    const $nav = $(".navigation");
-    if ($nav.length > 0) {
-      $(window).on("scroll load resize", () => {
-        if ($(window).scrollTop() > $nav.height() * 2) {
-          $nav.addClass("inverse");
-        } else {
-          $nav.removeClass("inverse");
-        }
-      });
-    }
+    const nav = document.querySelector<HTMLElement>(".navigation");
+    if (!nav) return;
+
+    const onScroll = () => {
+      if (window.scrollY > nav.offsetHeight * 2) {
+        nav.classList.add("inverse");
+      } else {
+        nav.classList.remove("inverse");
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("load", onScroll);
+    window.addEventListener("resize", onScroll);
   }
 
   private static fixAnchors(): void {
     const pathname = window.location.href.split("#")[0];
-    $("a[href^='#']").each((i, e) => {
-      const $elem = $(e);
-      $elem.attr("href", pathname + $elem.attr("href"));
+    const anchors = document.querySelectorAll<HTMLAnchorElement>("a[href^='#']");
+    anchors.forEach((anchor) => {
+      anchor.href = pathname + anchor.getAttribute("href");
     });
   }
 
   private static registerPopUp(): void {
     if (localStorage.getItem("mvw-popup") === "dont-show"
-      || sessionStorage.getItem("mvw-popup") === "dont-show") {
+        || sessionStorage.getItem("mvw-popup") === "dont-show") {
       return;
     }
 
-    const $popup = $(".mail-popup");
-    if ($popup.length > 0) {
-      $(window).on("scroll load resize", () => {
-        if ($(window).scrollTop() > 200) {
-          $popup.addClass("visible");
-        }
-      });
+    const popup = document.querySelector<HTMLElement>(".mail-popup");
+    if (!popup) {
+      return;
+    }
 
-      $popup.find(".close").on("click", () => {
+    const onScroll = () => {
+      if (window.scrollY > 200) {
+        popup.classList.add("visible");
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("load", onScroll);
+    window.addEventListener("resize", onScroll);
+
+    const closeBtn = popup.querySelector<HTMLElement>(".close");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => {
         sessionStorage.setItem("mvw-popup", "dont-show");
-        $popup.remove();
+        popup.remove();
       });
+    }
 
-      $popup.find(".dont-show").on("click", () => {
+    const dontShowBtn = popup.querySelector<HTMLElement>(".dont-show");
+    if (dontShowBtn) {
+      dontShowBtn.addEventListener("click", () => {
         localStorage.setItem("mvw-popup", "dont-show");
-        $popup.remove();
+        popup.remove();
       });
     }
   }
 
-  private static setActive(id: string) {
-    $(".tab-pane").removeClass("active");
-    $(".tab").removeClass("active");
+  private static setActive(id: string): void {
+    document.querySelectorAll(".tab-pane")
+            .forEach((el) => el.classList.remove("active"));
+    document.querySelectorAll(".tab")
+            .forEach((el) => el.classList.remove("active"));
 
-    $(`.tab-${id}`).addClass("active");
-    $(`#${id}`).addClass("active");
+    document.querySelector(`.tab-${id}`)?.classList.add("active");
+    document.getElementById(id)?.classList.add("active");
   }
 
   public static initializeTabs(): void {
@@ -72,20 +89,33 @@ class App {
       }
     }
 
-    $(".tab").on("click",(e: JQuery.ClickEvent) => {
-      App.setActive($(e.target).data("tab"));
-      e.preventDefault(); // prevent auto scroll to target
-      e.stopPropagation();
+    document.querySelectorAll<HTMLElement>(".tab").forEach((tab) => {
+      tab.addEventListener("click", (e) => {
+        const target = e.target as HTMLElement;
+        const tabId = target.dataset["tab"];
+        console.log(tabId);
+        if (tabId) {
+          App.setActive(tabId);
+        }
+        e.preventDefault(); // prevent auto scroll to target
+        e.stopPropagation();
+      });
     });
 
-    $(".tab-dropdown").on("click",(e) => $(e.target)
-        .closest(".tab-dropdown")
-        .toggleClass("open"));
+    document.querySelectorAll<HTMLElement>(".tab-dropdown").forEach((dropdown) => {
+      dropdown.addEventListener("click", (e) => {
+        const target = e.currentTarget as HTMLElement;
+        target.classList.toggle("open");
+      });
+    });
 
-    $(".tab-dropdown-menu .tab").on("click",(e) => $(e.target)
-        .closest(".tab-dropdown")
-        .removeClass("open"));
+    document.querySelectorAll<HTMLElement>(".tab-dropdown-menu .tab").forEach((tab) => {
+      tab.addEventListener("click", (e) => {
+        const dropdown = (e.target as HTMLElement).closest(".tab-dropdown");
+        if (dropdown) dropdown.classList.remove("open");
+      });
+    });
   }
 }
 
-$(() => { App.initialize(); });
+document.addEventListener('DOMContentLoaded', () => App.initialize());

@@ -8,8 +8,3 @@
 
 ## NPM
 node_modules
-
-## Copied from libs
-/static/js/jquery.min.js
-/static/bilder/default-skin.*
-/static/bilder/preloader.gif

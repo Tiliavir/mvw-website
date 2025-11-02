@@ -99,6 +99,4 @@ function debounce(fn: Function): () => void {
   };
 }
 
-$(() => {
-  Index.initialize();
-});
+document.addEventListener("DOMContentLoaded", () => Index.initialize());

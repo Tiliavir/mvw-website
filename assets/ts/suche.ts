@@ -2,39 +2,62 @@ import * as lunr from "lunr";
 
 class Search {
   public static handleSearch(): void {
-    const query = $("input.mvw-search-field").val();
-    const result = Search.index.search(`*${query}*`);
-    const resultContainer = $(".results");
+    const input = document.querySelector<HTMLInputElement>("input.mvw-search-field");
+    if (!input) {
+      return;
+    }
+
+    const query = input.value.trim();
+    const resultContainer = document.querySelector<HTMLElement>(".results");
+    if (!resultContainer){
+      return;
+    }
+
+    const result = query ? Search.index.search(`*${query}*`) : [];
 
     if (!query || result.length === 0) {
-      resultContainer.hide();
+      resultContainer.style.display = "none";
     } else {
-      resultContainer.empty();
+      resultContainer.innerHTML = "";
       for (const item of result) {
         const ref = item.ref;
-        const i = `<li>
-                     <h2><a href="${ref.replace(/^public\//, "/")}">${Search.store[ref].title}</a></h2>
-                     <span>${Search.store[ref].description}</span>
-                   </li>`;
-        resultContainer.append(i);
+        const data = Search.store[ref];
+        if (!data) {
+          continue;
+        }
+
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <h2><a href="${ref.replace(/^public\//, "/")}">${data.title}</a></h2>
+          <span>${data.description}</span>
+        `;
+        resultContainer.appendChild(li);
       }
-      resultContainer.show();
+      resultContainer.style.display = "";
     }
   }
 
   public static initialize(): void {
-    $.getJSON("/suche/index.json", (data) => {
-      Search.index = lunr.Index.load(data.index);
-      Search.store = data.store;
+    fetch("/suche/index.json")
+        .then((response) => response.json())
+        .then((data) => {
+          Search.index = lunr.Index.load(data.index);
+          Search.store = data.store;
 
-      const query = Search.getParameterByName("query") || Search.getParameterByName("q");
-      const inputField = $("input.mvw-search-field");
-      if (query) {
-        inputField.val(query);
-      }
-      inputField.on("keyup", Search.handleSearch);
-      Search.handleSearch();
-    });
+          const inputField = document.querySelector<HTMLInputElement>("input.mvw-search-field");
+          if (!inputField) {
+            return;
+          }
+
+          const query = Search.getParameterByName("query") || Search.getParameterByName("q");
+
+          if (query) {
+            inputField.value = query;
+          }
+          inputField.addEventListener("keyup", () => Search.handleSearch());
+          Search.handleSearch();
+        })
+        .catch((err) => console.error("Failed to load search index:", err));
   }
 
   private static index: lunr.Index;
@@ -57,4 +80,4 @@ class Search {
   }
 }
 
-$(() => Search.initialize());
+document.addEventListener("DOMContentLoaded", () => Search.initialize());
