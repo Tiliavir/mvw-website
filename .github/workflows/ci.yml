@@ -32,7 +32,7 @@ jobs:
     name: 'Dependabot Auto Merge'
     needs: [build]
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' && github.event_name == 'pull_request'}}
+    if: ${{ github.actor == 'dependabot[bot]' && (github.event_name == 'pull_request' || github.event_name == 'push') }}
     steps:
       - name: Enable auto-merge for Dependabot PRs
         run: gh pr merge --auto --merge "$PR_URL"
