@@ -30,7 +30,9 @@ jobs:
         run: npm run index
       - name: Dependabot Auto Merge
         if: ${{ github.actor == 'dependabot[bot]' && (github.event_name == 'pull_request' || github.event_name == 'push') }}
-        run: gh pr merge --auto --merge "$PR_URL"
+        run: |
+          echo "$GITHUB_CONTEXT"
+          gh pr merge --auto --merge "$BRANCH_NAME"
         env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
+          BRANCH_NAME: ${{ github.ref_name }}
           GITHUB_TOKEN: ${{ secrets.GH_ACTION_MERGER_TOKEN }}
