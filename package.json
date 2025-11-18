@@ -26,7 +26,7 @@
     "stylelint-config-recommended-scss": "16.0.2",
     "typescript": "5.9.3",
     "typescript-eslint": "8.47.0",
-    "w3c-html-validator": "2.0.1"
+    "w3c-html-validator": "2.0.2"
   },
   "dependencies": {
     "lunr": "2.3.9"
