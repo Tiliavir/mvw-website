@@ -22,7 +22,7 @@ customCss:
 # Leinen los! Inselzauber und Piratenklänge<br><sub>Ein musikalisches Abenteuer auf hoher See</sub>
 
 {{< figure src="img/25_konzert_flyer_2.jpg"
-alt="Jahreskonzert 2025 - Leinen los! Am Freitag den 31. Januar und Samstag den 01. Februar um 20 Uhr in der Kandertalhalle in Wollbach. Einlass 18:30 Uhr."
+           alt="Jahreskonzert 2025 - Leinen los! Am Freitag den 31. Januar und Samstag den 01. Februar um 20 Uhr in der Kandertalhalle in Wollbach. Einlass 18:30 Uhr."
 >}}
 
 ## Reise Informationen
@@ -65,5 +65,5 @@ Dieses maritime Konzert wird ein Erlebnis, das Sie nicht verpassen sollten!
 - [Tickets](https://tickets.mv-wollbach.de)
 
 {{< figure src="img/25_konzert_flyer_5.jpg"
-alt="Jahreskonzert 2025 - Leinen los! Am Freitag den 31. Januar und Samstag den 01. Februar um 20 Uhr in der Kandertalhalle in Wollbach. Einlass 18:30 Uhr."
+           alt="Jahreskonzert 2025 - Leinen los! Am Freitag den 31. Januar und Samstag den 01. Februar um 20 Uhr in der Kandertalhalle in Wollbach. Einlass 18:30 Uhr."
 >}}
