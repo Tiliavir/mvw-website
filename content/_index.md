@@ -8,32 +8,23 @@ customJs:
   - ts/index.ts
 ---
 
-{{< comment >}}
 <header>
-  <div class="mvw-brand">
-    {{< figure src="img/logo.png"
-               alt="Das Logo des Musikvereins Wollbach 1866 e.V."
-               sizes="(max-width: 480px) 480px, 768px"
-               isAboveTheFold=true
-    >}}
-  </div>
   <div class="open-air">
-    <a href="{{< ref "2025-open-air.md" >}}">
-      {{< figure src="img/open-air.jpg"
-                 alt="Open-Air 2025"
+    <a href="{{< ref "2026-jahreskonzert.md" >}}">
+      {{< figure src="img/26_konzert_banner.webp"
+                 alt="Jahreskonzert 2026: Let the Good Times ROLL"
                  sizes="(max-width: 480px) 480px, 768px"
                  isAboveTheFold=true
       >}}
     </a>
   </div>
 </header>
-{{< /comment >}}
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
 Der Musikverein Wollbach ist ein kreatives Blasorchester mit einer über 150-jährigen Tradition. Konzertante sinfonische
 Blasmusik gehört ebenso zum Repertoire wie swingende Unterhaltungsmusik. Im Orchester spielen über 50 Musiker aller
-Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent Oliver Hauser.
+Altersgruppen. Die Leitung des Orchesters hat seit 30 Jahren unser Dirigent Oliver Hauser.
 
 {{< slider height="500"
            unit="px"
@@ -46,6 +37,11 @@ Altersgruppen. Die Leitung des Orchesters hat seit über 25 Jahren der Dirigent 
            image="img/slider/alle-1.jpg"
            title="Mitglied werden"
            text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
+  />}}
+  {{< tile file="2026-jahreskonzert.md"
+           image="img/26_konzert_banner.webp"
+           title="Jahreskonzert 2026: Let the Good Times ROLL"
+           text="Freuen Sie sich auf einen abwechslungsreichen Konzertabend mit zwei musikalischen Schwerpunkten: einer Hommage an Udo Jürgens und einem zweiten Teil voller bekannter Pop- und Rockklassiker."
   />}}
   {{< tile file="termine"
            image="img/termine.webp"
