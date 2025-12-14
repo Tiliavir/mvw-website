@@ -7,13 +7,13 @@ glob([
     'public/**/*.html',
     '!public/google*.html'],
   async (err, files) => {
-    const promises = files.map(file => w3cHtmlValidator.validate({filename: file}));
+    for (const file of files) {
+      const r = await w3cHtmlValidator.validate({filename: file});
+      w3cHtmlValidator.reporter(r);
 
-    let results = await Promise.all(promises);
-
-    results.forEach(vr => w3cHtmlValidator.reporter(vr));
-    if (!results.reduce((p, c) => p && c.validates, true)) {
-      throw new Error('Validation failed!');
+      if (!r.validates) {
+        throw new Error('Validation failed!');
+      }
     }
   }
 );
