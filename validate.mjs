@@ -1,19 +1,12 @@
 'use strict';
 
 import glob from "glob-all";
-import {w3cHtmlValidator} from "w3c-html-validator";
+import vnuJar from 'vnu-jar';
 
-glob([
+await glob([
     'public/**/*.html',
     '!public/google*.html'],
   async (err, files) => {
-    for (const file of files) {
-      const r = await w3cHtmlValidator.validate({filename: file});
-      w3cHtmlValidator.reporter(r);
-
-      if (!r.validates) {
-        throw new Error('Validation failed!');
-      }
-    }
+    await vnuJar.vnu.check(files, {});
   }
 );
