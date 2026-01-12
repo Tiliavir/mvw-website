@@ -32,7 +32,7 @@ jobs:
       - name: 🏷️ Get tag name
         run: echo "TAG_NAME=$(echo ${GITHUB_REF#refs/*/} | tr / -)" >> $GITHUB_ENV
       - name: 📂 Archive
-        uses: JamesIves/github-pages-deploy-action@v4.7.6
+        uses: JamesIves/github-pages-deploy-action@v4.8.0
         with:
           branch: release-diff
           folder: public
