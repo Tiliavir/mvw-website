@@ -16,7 +16,7 @@
   ],
   "devDependencies": {
     "@types/lunr": "2.3.7",
-    "autoprefixer": "10.4.23",
+    "autoprefixer": "10.4.24",
     "eslint": "9.39.2",
     "glob-all": "3.3.1",
     "mvw-search-index": "2.3.2",
