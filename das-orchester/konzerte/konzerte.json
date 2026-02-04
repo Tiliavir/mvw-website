@@ -3068,7 +3068,9 @@
       "subtitle": "",
       "location": {
         "location": "Schulhof Wollbach",
-        "dates": ["2025-07-05"]
+        "dates": [
+          "2025-07-05"
+        ]
       },
       "parts": [
         {
@@ -3093,7 +3095,9 @@
             },
             {
               "title": "Things",
-              "composers": ["Robbie Williams"]
+              "composers": [
+                "Robbie Williams"
+              ]
             },
             {
               "title": "This Is Me",
@@ -3125,7 +3129,9 @@
             },
             {
               "title": "The Amazing ABBA Collection",
-              "composers": ["ABBA"]
+              "composers": [
+                "ABBA"
+              ]
             },
             {
               "title": "Satellite",
@@ -3141,7 +3147,9 @@
             },
             {
               "title": "Music",
-              "composers": ["John Miles"]
+              "composers": [
+                "John Miles"
+              ]
             },
             {
               "title": "All The Things You Are",
@@ -3149,7 +3157,10 @@
             },
             {
               "title": "Kids",
-              "composers": ["Robbie Williams", "Kylie Minougue"]
+              "composers": [
+                "Robbie Williams",
+                "Kylie Minougue"
+              ]
             },
             {
               "title": "Ain't Nobody",
@@ -3157,19 +3168,28 @@
             },
             {
               "title": "I Dont Want To Miss A Thing",
-              "composers": ["Aerosmith"]
+              "composers": [
+                "Aerosmith"
+              ]
             },
             {
               "title": "A Kind Of Magic",
-              "composers": ["Roger M. Taylor"]
+              "composers": [
+                "Roger M. Taylor"
+              ]
             },
             {
               "title": "Angels",
-              "composers": ["Robbie Williams", "Guy Chambers"]
+              "composers": [
+                "Robbie Williams",
+                "Guy Chambers"
+              ]
             },
             {
               "title": "Gimme, Gimme, Gimme",
-              "composers": ["ABBA"]
+              "composers": [
+                "ABBA"
+              ]
             },
             {
               "title": "Upside Down",
@@ -3267,6 +3287,186 @@
             {
               "title": "Upside Down",
               "composers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Jahreskonzert",
+      "title": "Let the Good Times Roll!",
+      "location": {
+        "location": "Kandertalhalle Wollbach",
+        "dates": [
+          "2026-01-24",
+          "2026-01-25",
+          "2026-01-31",
+          "2026-02-01"
+        ]
+      },
+      "parts": [
+        {
+          "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+          "conductor": "Oliver Hauser",
+          "program": [
+            {
+              "title": "Die Welt braucht Lieder",
+              "composers": [
+                "Udo Jürgens",
+                "Friedheld Lehmann"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "Der Mann ist das Problem",
+              "composers": [
+                "Udo Jürgens",
+                "Wolfgang Hofer"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "Ich Will, Ich Kann",
+              "composers": [
+                "Udo Jürgens",
+                "N.N."
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "17 Jahr blondes Haar - Mit 66 Jahren",
+              "composers": [
+                "Udo Jürgens",
+                "Thomas Hörbiger",
+                "Wolfgang Hofer"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "Immer wieder geht die Sonne auf",
+              "composers": [
+                "Udo Jürgens",
+                "Thomas Hörbiger"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "Die Krone der Schöpfung",
+              "subtitle": "Sinfonische Dichtung",
+              "composers": [
+                "Udo Jürgens",
+                "Thomas Christen"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "Ich würde es wieder tun",
+              "composers": [
+                "Udo Jürgens",
+                "Fred Jay"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "Griechischer Wein - Ich war noch niemals in New York",
+              "composers": [
+                "Udo Jürgens",
+                "Michael Kunze"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "Der Gekaufte Drachen",
+              "composers": [
+                "Udo Jürgens",
+                "Irma Holder"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "Ein ehrenwertes Haus - Aber Bitte mit Sahne",
+              "composers": [
+                "Udo Jürgens",
+                "Michael Kunze",
+                "Eckhart Hachfeld"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "Let The Good Times Roll",
+              "arrangers": [
+                "Jakob Brenner"
+              ],
+              "parts": [
+                {
+                  "title": "I",
+                  "subtitle": "In the Stone - Conga - Africa - Jump"
+                },
+                {
+                  "title": "Ia",
+                  "subtitle": "Bohemian Rhapsody"
+                },
+                {
+                  "title": "II",
+                  "subtitle": "Highway to Hell - 99 Luftballons - Englishman in New York - All you need is Love"
+                },
+                {
+                  "title": "III",
+                  "subtitle": "Back for good - Quit Playing Games - Wanna be - Shake it off"
+                },
+                {
+                  "title": "IV",
+                  "subtitle": "Billie Jean - Radio Gaga - Eye of the Tiger - Stairway to Heaven - We will Rock You - Hold the Line - It's my Life"
+                }
+              ]
+            },
+            {
+              "title": "Let The Good Times Roll",
+              "composers": [
+                "Louis Jordan"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "Let Me Entertain You",
+              "composers": [
+                "Robbie Williams",
+                "Guy Chambers"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
+            },
+            {
+              "title": "The Final Countdown",
+              "composers": [
+                "Joey Tempest"
+              ],
+              "arrangers": [
+                "Jakob Brenner"
+              ]
             }
           ]
         }

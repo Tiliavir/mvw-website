@@ -3,6 +3,33 @@
   "termine": {
     "2026": [
       {
+        "title": "Marschmusikfestival",
+        "location": {
+          "name": "In Wollbach inkl. Nebenorte",
+          "address": "Wollbach"
+        },
+        "starttime": "2026-10-11",
+        "endtime": "2026-10-11"
+      },
+      {
+        "title": "Sauserbummel",
+        "location": {
+          "name": "In und um Wollbach",
+          "address": "Wollbach"
+        },
+        "starttime": "2026-10-10",
+        "endtime": "2026-10-10"
+      },
+      {
+        "title": "SummerStage",
+        "location": {
+          "name": "Vor dem Theater",
+          "address": "Freiburg im Breisgau"
+        },
+        "starttime": "2026-07-23T19:00:00Z",
+        "endtime": "2026-07-23T22:00:00Z"
+      },
+      {
         "title": "Open-Air 2026",
         "location": {
           "name": "Bei der Schule / Kandertalhalle",
@@ -28,35 +55,6 @@
         },
         "starttime": "2026-02-19T19:15:00Z",
         "endtime": "2026-02-19T22:00:00Z"
-      },
-      {
-        "title": "Jahreskonzert",
-        "location": {
-          "name": "Kandertalhalle",
-          "address": "Wollbach"
-        },
-        "starttime": "2026-01-23T19:00:00Z",
-        "endtime": "2026-01-24T22:00:00Z",
-        "description": "Konzert 2026"
-      },
-      {
-        "title": "Jahreskonzert",
-        "location": {
-          "name": "Kandertalhalle",
-          "address": "Wollbach"
-        },
-        "starttime": "2026-01-30T19:00:00Z",
-        "endtime": "2026-01-31T22:00:00Z",
-        "description": "Konzert 2026"
-      },
-      {
-        "title": "Neujahrsempfang",
-        "location": {
-          "name": "Kandertalhalle",
-          "address": "Wollbach"
-        },
-        "starttime": "2026-01-06T18:00:00Z",
-        "endtime": "2026-01-06T20:00:00Z"
       }
     ]
   }
