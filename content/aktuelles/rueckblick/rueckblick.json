@@ -1,7 +1,66 @@
 {
   "$schema": "rueckblick.schema.json",
   "rueckblick": {
+    "2026": [
+      {
+        "title": "Jahreskonzert: 'Let The Good Times Roll!'",
+        "starttime": "2026-01-24",
+        "endtime": "2026-02-01",
+        "content": "Am 24., 25. und 31. Januar und am 1. Februar 2026 präsentierte der Musikverein Wollbach sein Jahreskonzert unter dem Motto 'Let The Good Times Roll!' in der Kandertalhalle.",
+        "keywords": [
+          "Jahreskonzert",
+          "Konzert"
+        ],
+        "berichte": [
+          {
+            "title": "Musikverein Wollbach sprengt mit Songs von Udo Jürgens und Highlights der Rockmusik Genregrenzen",
+            "date": "2026-01-28",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "Badische Zeitung",
+            "srcUrl": "https://www.badische-zeitung.de/",
+            "url": "https://www.badische-zeitung.de/musikverein-wollbach-sprengt-mit-songs-von-udo-juergens-und-highlights-der-rockmusik-genregrenzen"
+          },
+          {
+            "title": "Musikverein zeigt eine große Show",
+            "date": "2026-01-25",
+            "hasDescription": true,
+            "hasPicture": true,
+            "srcTitle": "Verlagshaus Jaumann",
+            "srcUrl": "https://www.verlagshaus-jaumann.de/",
+            "url": "https://www.schwarzwaelder-bote.de/inhalt.musik-aus-kandern-musikverein-zeigt-eine-grosse-show-ordnungsamt-mit-neuer-struktur-ordnungsamt-mit-neuer-struktur.ebf662a0-5aca-4044-9430-eb3b44bcfa71.html"
+          }
+        ]
+      }
+    ],
     "2025": [
+      {
+        "starttime": "2025-10-11",
+        "title": "Sauserbummel",
+        "content": "Am Samstag den 11.10.2025 dampft auch in diesem Jahr wieder der “Sauser-Express” durch das Kandertal.",
+        "keywords": [
+          "Sauserbummel"
+        ]
+      },
+      {
+        "starttime": "2025-07-11",
+        "title": "Summerstage Freiburg",
+        "content": "Open-Air vor dem Theater Freiburg.",
+        "keywords": [
+          "Platzkonzert",
+          "Open-Air",
+          "Konzert"
+        ]
+      },
+      {
+        "starttime": "2025-07-05",
+        "title": "Wollbach Open-Air",
+        "content": "Auf dem Schulhof in Wollbach.",
+        "keywords": [
+          "Open-Air",
+          "Konzert"
+        ]
+      },
       {
         "starttime": "2025-03-15",
         "title": "Scheibenfeuer",
