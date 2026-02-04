@@ -8,6 +8,7 @@ customJs:
   - ts/index.ts
 ---
 
+{{< comment >}}
 <header>
   <div class="open-air">
     <a href="{{< ref "2026-jahreskonzert.md" >}}">
@@ -19,6 +20,7 @@ customJs:
     </a>
   </div>
 </header>
+{{< /comment >}}
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
@@ -37,11 +39,6 @@ Altersgruppen. Die Leitung des Orchesters hat seit 30 Jahren unser Dirigent Oliv
            image="img/slider/alle-1.jpg"
            title="Mitglied werden"
            text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
-  />}}
-  {{< tile file="2026-jahreskonzert.md"
-           image="img/26_konzert_banner.webp"
-           title="Jahreskonzert 2026: Let the Good Times ROLL"
-           text="Freuen Sie sich auf einen abwechslungsreichen Konzertabend mit zwei musikalischen Schwerpunkten: einer Hommage an Udo Jürgens und einem zweiten Teil voller bekannter Pop- und Rockklassiker."
   />}}
   {{< tile file="termine"
            image="img/termine.webp"
