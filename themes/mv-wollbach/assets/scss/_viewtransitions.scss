@@ -1,0 +1,82 @@
+@supports (view-transition-name: none) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  ::view-transition {
+    pointer-events: none;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  // Navigation bar - maintain position during transitions
+  .navigation {
+    view-transition-name: navigation;
+  }
+
+  ::view-transition-old(navigation),
+  ::view-transition-new(navigation) {
+    animation-duration: 0.25s;
+    animation-timing-function: ease;
+  }
+
+  // Breadcrumb navigation
+  .breadcrumb {
+    view-transition-name: breadcrumb;
+  }
+
+  ::view-transition-old(breadcrumb),
+  ::view-transition-new(breadcrumb) {
+    animation-duration: 0.25s;
+    animation-timing-function: ease;
+  }
+
+  // Footer - fade only
+  .footer {
+    view-transition-name: footer;
+  }
+
+  ::view-transition-old(footer),
+  ::view-transition-new(footer) {
+    animation-duration: 0.25s;
+    animation-timing-function: ease;
+  }
+
+  // Images - smooth morph
+  figure img,
+  .image-container {
+    view-transition-name: var(--image-name);
+  }
+
+  // Mail popup - special entrance
+  .mail-popup.visible {
+    view-transition-name: popup;
+  }
+
+  ::view-transition-new(popup) {
+    animation: popup-entrance 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+// Reduced motion preference - disable view transitions
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+// Mobile optimizations - faster transitions on smaller screens
+@media (max-width: 767px) {
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  ::view-transition-old(main-content),
+  ::view-transition-new(main-content) {
+    animation-duration: 0.2s;
+  }
+}
