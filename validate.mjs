@@ -9,6 +9,13 @@ await glob([
     'public/**/*.css',
     '!public/google*.html'],
   async (err, files) => {
-    await vnuJar.vnu.check(["--also-check-svg", "--also-check-css", ...files], {});
+    await vnuJar.vnu.check([
+        "--also-check-svg",
+        "--also-check-css",
+        "--filterpattern",
+        ".*view-transition.*|.*CSS: Parse Error.*",
+        ...files
+      ],
+      {});
   }
 );

@@ -32,7 +32,7 @@
     "lunr": "2.3.9"
   },
   "scripts": {
-    "validate": "node validate.mjs",
+    "validate": "node validate.mjs && echo \"\\033[33m[WARN] Validation is skipping some rules - check if still required, or if view-transitions are finally stable.\\033[0m\"",
     "lint": "stylelint '**/*.scss' && npx eslint .",
     "build": "hugo --minify && npm run validate",
     "index": "cd ./public/ && mvw-search-index './**/*.html' './suche/index.json' 'main'",
