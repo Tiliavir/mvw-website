@@ -1369,6 +1369,12 @@
             },
             {
               "title": "Your love keeps lifting me",
+              "composers": [
+                "Gary Jackson",
+                "Carl Smith",
+                "Raynard Miner"
+              ],
+              "arrangers": ["Cy Payne"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1378,6 +1384,10 @@
             },
             {
               "title": "Americanos",
+              "composers": [
+                "Holly Johnson"
+              ],
+              "arrangers": ["Sandro Blastic"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1387,6 +1397,10 @@
             },
             {
               "title": "Somethin' Stupid",
+              "composers": [
+                "C. Carson Parks"
+              ],
+              "arrangers": ["Cy Payne"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1396,6 +1410,11 @@
             },
             {
               "title": "Candyman",
+              "composers": [
+                "Christina Aguilera",
+                "Linda Perry"
+              ],
+              "arrangers": ["Sandro Blastic"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1404,10 +1423,20 @@
               ]
             },
             {
-              "title": "Diggin on James Brown"
+              "title": "Diggin on James Brown",
+              "composers": [
+                "Emilio Castillo",
+                "Stephen Kupka"
+              ],
+              "arrangers": ["Sandro Blastic"]
             },
             {
               "title": "Reet Petite",
+              "composers": [
+                "Berry Gordy",
+                "Billy Davis"
+              ],
+              "arrangers": ["Cy Payne"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1417,6 +1446,9 @@
             },
             {
               "title": "I've got you under my skin",
+              "composers": [
+                "Cole Porter"
+              ],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1426,6 +1458,10 @@
             },
             {
               "title": "Fly me to the moon",
+              "composers": [
+                "Bart Howard"
+              ],
+              "arrangers": ["Simon Blanc"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1434,7 +1470,12 @@
               ]
             },
             {
-              "title": "If you don`t know me by now",
+              "title": "If you don't know me by now",
+              "composers": [
+                "Kenneth Gamble",
+                "Leon Huff"
+              ],
+              "arrangers": ["Sandro Blastic"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1444,6 +1485,13 @@
             },
             {
               "title": "Americano",
+              "composers": [
+                "Lady Gaga",
+                "Fernando Garibay",
+                "Paul Blair",
+                "Brian Lee"
+              ],
+              "arrangers": ["François Lana"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1453,6 +1501,10 @@
             },
             {
               "title": "Cry me a river",
+              "composers": [
+                "Arthur Hamilton"
+              ],
+              "arrangers": ["Cy Payne"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1462,6 +1514,10 @@
             },
             {
               "title": "At this moment",
+              "composers": [
+                "Billy Vera"
+              ],
+              "arrangers": ["Sandro Blastic"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1471,6 +1527,11 @@
             },
             {
               "title": "Sparkling Diamonds",
+              "composers": [
+                "Jule Styne",
+                "Leo Robin"
+              ],
+              "arrangers": ["Lars Erik Gudim"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1479,7 +1540,12 @@
               ]
             },
             {
-              "title": "Feelin` good",
+              "title": "Feelin' good",
+              "composers": [
+                "Anthony Newley",
+                "Leslie Bricusse"
+              ],
+              "arrangers": ["Cy Payne"],
               "soloists": [
                 {
                   "part": "Gesang",
@@ -1489,6 +1555,10 @@
             },
             {
               "title": "Cry me a river (Cello Performance)",
+              "composers": [
+                "Arthur Hamilton"
+              ],
+              "arrangers": ["Cy Payne"],
               "soloists": [
                 {
                   "part": "Cello",
@@ -1498,6 +1568,10 @@
             },
             {
               "title": "Save the last dance for me",
+              "composers": [
+                "Doc Pomus",
+                "Mort Shuman"
+              ],
               "soloists": [
                 {
                   "part": "Gesang",
