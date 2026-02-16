@@ -7,6 +7,17 @@
         "starttime": "2026-01-24",
         "endtime": "2026-02-01",
         "content": "Am 24., 25. und 31. Januar und am 1. Februar 2026 präsentierte der Musikverein Wollbach sein Jahreskonzert unter dem Motto 'Let The Good Times Roll!' in der Kandertalhalle.",
+        "images": [
+          {
+            "src": "img/26_konzert_flyer.webp",
+            "title": "Flyer zum Jahreskonzert 2026: Let the Good Times Roll!",
+            "caption": "Flyer zum Jahreskonzert 2026: Let the Good Times Roll!"
+          },
+          {
+            "src": "img/konzert_2026.webp",
+            "title": "Jahreskonzert 2026"
+          }
+        ],
         "keywords": [
           "Jahreskonzert",
           "Konzert"
@@ -97,6 +108,13 @@
           "Jahreskonzert",
           "Konzert"
         ],
+        "images": [
+          {
+            "src": "img/25_konzert_flyer.webp",
+            "title": "Flyer zum Jahreskonzert 2025: Leinen Los!",
+            "caption": "Flyer zum Jahreskonzert 2025: Leinen Los!"
+          }
+        ],
         "berichte": [
           {
             "title": "Musikverein Wollbach begeistert mit einem Konzert rund um die Seefahrt und verwunschene Inselwelten",
@@ -175,12 +193,12 @@
       {
         "images": [
           {
-            "src": "img/24_konzert_flyer_1.jpg",
+            "src": "img/24_konzert_flyer_1.webp",
             "title": "Flyer zum Jahreskonzert 2024: Hör gut zu!",
             "caption": "Flyer zum Jahreskonzert 2024: Hör gut zu!"
           },
           {
-            "src": "img/konzert_2024.jpg",
+            "src": "img/konzert_2024.webp",
             "title": "Jahreskonzert 2024"
           }
         ],
@@ -249,16 +267,16 @@
       {
         "images": [
           {
-            "src": "img/23_jahreskonzert_plakat.jpg",
+            "src": "img/23_jahreskonzert_plakat.webp",
             "title": "Flyer zum Jahreskonzert 2023: Rock Symphony",
             "caption": "Flyer zum Jahreskonzert 2023: Rock Symphony"
           },
           {
-            "src": "img/konzert_2023-1.jpg",
+            "src": "img/konzert_2023-1.webp",
             "title": "Jahreskonzert 2023"
           },
           {
-            "src": "img/konzert_2023-2.jpg",
+            "src": "img/konzert_2023-2.webp",
             "title": "Jahreskonzert 2023"
           }
         ],
@@ -305,7 +323,7 @@
       {
         "images": [
           {
-            "src": "img/22_open-air.jpg",
+            "src": "img/22_open-air.webp",
             "title": "Flyer zum Wollbach OpenAir 2022"
           }
         ],
@@ -347,7 +365,7 @@
       {
         "images": [
           {
-            "src": "img/22_jahreskonzert_plakat.jpg",
+            "src": "img/22_jahreskonzert_plakat.webp",
             "title": "Flyer zum Jahreskonzert 2022 - Metropolis"
           }
         ],
@@ -424,7 +442,7 @@
       {
         "images": [
           {
-            "src": "img/konzert_2020.jpg",
+            "src": "img/konzert_2020.webp",
             "title": "Der Musikverein vor dem Jahreskonzert 2020"
           }
         ],
@@ -562,7 +580,7 @@
         ],
         "images": [
           {
-            "src": "img/2019_muttertagskonzert.jpg",
+            "src": "img/2019_muttertagskonzert.webp",
             "title": "Muttertagskonzert 2019"
           }
         ],
@@ -576,7 +594,7 @@
         ],
         "images": [
           {
-            "src": "img/2019_fastnachtsfeuer.jpg",
+            "src": "img/2019_fastnachtsfeuer.webp",
             "title": "Fastnachtsfeuer 2019"
           }
         ],
@@ -591,7 +609,7 @@
           {
             "title": "Generalversammlung 2019",
             "caption": "Die Vorstandschaft nach der Generalversammlung",
-            "src": "img/2019_generalversammlung.jpg"
+            "src": "img/2019_generalversammlung.webp"
           }
         ],
         "keywords": [
@@ -622,7 +640,7 @@
       {
         "images": [
           {
-            "src": "img/konzert_2019.jpg",
+            "src": "img/konzert_2019.webp",
             "title": "Der Musikverein vor dem Jahreskonzert 2019"
           }
         ],
@@ -670,7 +688,7 @@
         "title": "Weihnachtsvorspiel",
         "images": [
           {
-            "src": "img/2018_weihnachtsvorspiel.jpg",
+            "src": "img/2018_weihnachtsvorspiel.webp",
             "title": "Weihnachtsvorspiel 2018"
           }
         ],
@@ -697,7 +715,7 @@
         "starttime": "2018-11-30",
         "images": [
           {
-            "src": "img/2018_adventskranzverkauf.jpg",
+            "src": "img/2018_adventskranzverkauf.webp",
             "title": "Das Jugendorchester beim Adventskranzverkauf 2018"
           }
         ],
@@ -718,7 +736,7 @@
         "starttime": "2018-10-01",
         "images": [
           {
-            "src": "img/2018_jmla_bronze.jpg",
+            "src": "img/2018_jmla_bronze.webp",
             "title": "JMLA Bronze 2018"
           }
         ],
@@ -746,7 +764,7 @@
         ],
         "images": [
           {
-            "src": "img/2018_sauserbummel.jpg",
+            "src": "img/2018_sauserbummel.webp",
             "title": "Sauserbummel 2018"
           }
         ],
@@ -774,7 +792,7 @@
         "starttime": "2018-07-01",
         "images": [
           {
-            "src": "img/2018_jmla_silber.jpg",
+            "src": "img/2018_jmla_silber.webp",
             "title": "JMLA Silber 2018"
           }
         ],
@@ -788,7 +806,7 @@
         "title": "Forsthof Open-Air",
         "images": [
           {
-            "src": "img/2018_forsthof_openair.jpg",
+            "src": "img/2018_forsthof_openair.webp",
             "title": "Forsthof Open-Air 2018"
           }
         ],
@@ -829,7 +847,7 @@
         "starttime": "2018-05-05",
         "images": [
           {
-            "src": "img/2018_marschmusik.jpg",
+            "src": "img/2018_marschmusik.webp",
             "title": "Marschmusik 2018"
           }
         ],
@@ -863,7 +881,7 @@
         "starttime": "2018-04-28",
         "images": [
           {
-            "src": "img/2018_doppelkonzert_fahrnau.jpg",
+            "src": "img/2018_doppelkonzert_fahrnau.webp",
             "title": "Doppelkonzert mit dem Musikverein Fahrnau"
           }
         ],
@@ -904,7 +922,7 @@
         "title": "Doppelkonzert mit dem Musikverein Schwörstadt",
         "images": [
           {
-            "src": "img/2018_doppelkonzert_schwoerstadt.jpg",
+            "src": "img/2018_doppelkonzert_schwoerstadt.webp",
             "title": "Doppelkonzert mit dem Musikverein Schwörstadt"
           }
         ],
@@ -969,7 +987,7 @@
       {
         "images": [
           {
-            "src": "img/konzert_2018.jpg",
+            "src": "img/konzert_2018.webp",
             "title": "Der Musikverein vor dem Jahreskonzert 2018"
           }
         ],
@@ -1284,7 +1302,7 @@
         "images": [
           {
             "title": "v.l.n.r.: Lea Kronenberger, Lilly Müller, Anna Sieglin und Antonia Müller",
-            "src": "img/2016_jmla_bronze.jpg"
+            "src": "img/2016_jmla_bronze.webp"
           }
         ],
         "keywords": [
@@ -1353,7 +1371,7 @@
         "content": "Wir gratulieren ganz herzlich Lina Müller und Kim Strohmeier zum Bestehen des JMLA in Silber auf der Klarinette.",
         "images": [
           {
-            "src": "img/2016_jmla_silber.jpg",
+            "src": "img/2016_jmla_silber.webp",
             "title": "Lina Müller bei der Urkundenverleihung in Tegernau"
           }
         ],
@@ -1456,7 +1474,7 @@
         "images": [
           {
             "title": "Das Verbandsjugendorchester Hochrhein mit dem Musikverein Wollbach vor der evangelischen Stadtkirche Kandern",
-            "src": "img/2016_kirchenkonzert.jpg"
+            "src": "img/2016_kirchenkonzert.webp"
           }
         ],
         "keywords": [
@@ -1633,7 +1651,7 @@
         "images": [
           {
             "title": "C3 Prüfung: Maria Krey",
-            "src": "img/dirigentin_vorstufenorchester.jpg"
+            "src": "img/dirigentin_vorstufenorchester.webp"
           }
         ]
       },
@@ -1643,7 +1661,7 @@
         "images": [
           {
             "title": "JMLA in Gold 2015: Luisa Krey",
-            "src": "img/2015_jmla_gold_fagott.jpg"
+            "src": "img/2015_jmla_gold_fagott.webp"
           }
         ],
         "keywords": [
@@ -1668,7 +1686,7 @@
         "images": [
           {
             "title": "JMLA in Bronze 2015: Madleina Muchenberger und Josepha Brehm",
-            "src": "img/2015_jmla_bronze.jpg"
+            "src": "img/2015_jmla_bronze.webp"
           }
         ],
         "keywords": [
@@ -1747,7 +1765,7 @@
         "images": [
           {
             "title": "JMLA in Gold 2015: Sven Gut",
-            "src": "img/2015_jmla_gold.jpg"
+            "src": "img/2015_jmla_gold.webp"
           }
         ],
         "title": "Jungmusikerleistungsabzeichen in Gold",
@@ -1762,7 +1780,7 @@
         "images": [
           {
             "title": "Vorstufen- und Jugendorchester",
-            "src": "img/jugend_und_vorstufenorchester.jpg",
+            "src": "img/jugend_und_vorstufenorchester.webp",
             "caption": "Das Vorstufen- und Jugendorchester bei ihrem gemeinsamen Doppelkonzert"
           }
         ],
@@ -1801,7 +1819,7 @@
         "images": [
           {
             "caption": "Der Musikverein Wollbach vor dem Jahreskonzert 2015",
-            "src": "img/konzert_2015.jpg",
+            "src": "img/konzert_2015.webp",
             "title": "Der Musikverein Wollbach vor dem Jahreskonzert 2015"
           }
         ],
@@ -1853,7 +1871,7 @@
         "images": [
           {
             "title": "JMLA Gold 2015",
-            "src": "img/2014_jmla_gold.jpg"
+            "src": "img/2014_jmla_gold.webp"
           }
         ],
         "keywords": [
@@ -1867,7 +1885,7 @@
         "images": [
           {
             "title": "JMLA Silber 2015",
-            "src": "img/2014_jmla_silber.jpg"
+            "src": "img/2014_jmla_silber.webp"
           }
         ],
         "keywords": [
@@ -1917,7 +1935,7 @@
         "images": [
           {
             "title": "Der Musikverein Wollbach vor dem Jahreskonzert 2014",
-            "src": "img/konzert_2014.jpg",
+            "src": "img/konzert_2014.webp",
             "caption": "Musikverein vor dem Jahreskonzert 2014"
           }
         ],
@@ -1996,7 +2014,7 @@
         "images": [
           {
             "title": "Musikverein vor dem Jahreskonzert 2013",
-            "src": "img/konzert_2013.jpg",
+            "src": "img/konzert_2013.webp",
             "caption": "Musikverein vor dem Jahreskonzert 2013"
           }
         ],
@@ -2056,7 +2074,7 @@
         "content": "[Flyer des Jahreskonzertes 2012](/files/flyer/12_konzert_vor.pdf), [Programm des Jahreskonzertes 2012](/files/flyer/12_konzert_rueck.pdf)<br />Mit einem tollen Jahreskonzert konnten wir wieder die Zuhörerinnen und Zuhörer in der vollen Kandertalhalle in Wollbach begeistern. Mit einem kurzweiligen, aber für die Musiker durchaus sehr ansprechenden Programm mit Werken wie \"Slava!\", \"Global Variations\" oder \"Garisson at Goliad\" konnten wir unsere Zuhörer unterhalten.<br />Danke allen Helferinnen und Helfern, sowie unserem Dirgenten Olli Hauser, der wieder einmal ein tolles Konzertprogramm ausgesucht und mit dem Orchester einstudiert hat.",
         "images": [
           {
-            "src": "img/konzert_2012.jpg",
+            "src": "img/konzert_2012.webp",
             "title": "Musikverein vor dem Jahreskonzert 2012",
             "caption": "Musikverein vor dem Jahreskonzert 2012"
           }
@@ -2086,7 +2104,7 @@
           {
             "caption": "Absolventen des JMLA in Silber 2011",
             "title": "Absolventen des JMLA in Silber 2011",
-            "src": "img/2011_silber.jpg"
+            "src": "img/2011_silber.webp"
           }
         ],
         "keywords": [
@@ -2116,7 +2134,7 @@
         "content": "[Flyer des Jahreskonzertes 2011](/files/flyer/11_jahreskonzert_vor.png), [Programm des Jahreskonzertes 2011](/files/flyer/11_jahreskonzert_rueck.png)<br />Mit einem tollen Jahreskonzert konnten wir wieder die Zuhörerinnen und Zuhörer in der Kandertalhalle in Wollbach begeistern. Mit fetzigen Stücken wie \"Fellin´ good\", \"Let´s call the whole thing off\", \"The way we where\", \"Colours of the wind\" und \"Against all odds\" konnten wir unsere Zuhörer wieder restlos begeistern.<br />Wir möchten uns herzlich bei unseren Gesangs-Solisten Annuschka, Daniel, Diana, Olli, Jutta & Ralf bedanken, sowie bei unserem Altsaxofon-Solisten Klaus Fischer für ihre tollen Einlagen. Großen Dank an die tolle Begleitung unserer Streicher. Danke auch allen Helferinnen und Helfer. Erwähnen möchten wir auch Sebastian Röser und Johannes Krey, die das Konzert mit tollen Lichteffekten umrahmt haben, sowie unseren Dirgenten Olli Hauser, der wieder einmal mit einer fantastischen Idee ein tolles Konzert auf die Beine gestellt hat.",
         "images": [
           {
-            "src": "img/konzert_2011.jpg",
+            "src": "img/konzert_2011.webp",
             "title": "Der Musikverein vor dem Jahreskonzert 2011",
             "caption": "Der Musikverein vor dem Jahreskonzert 2011"
           }
@@ -2253,7 +2271,7 @@
         "content": "[Flyer des Jahreskonzertes 2010](/files/flyer/10_konzert.pdf)<br />",
         "images": [
           {
-            "src": "img/konzert_2010.jpg",
+            "src": "img/konzert_2010.webp",
             "title": "Der Musikverein vor dem Jahreskonzert 2010",
             "caption": "Der Musikverein vor dem Jahreskonzert 2010"
           }
@@ -2549,7 +2567,6 @@
         "title": "Konzert in Bischofszell",
         "content": "Wir konnten unser Konzerprogramm von \"Feel blue\" im Wohnort von unserem Dirigenten Oliver Hauser in Bischofszell nocheinmal aufführen.",
         "keywords": [
-          "Jahreskonzert",
           "Konzert"
         ]
       },
@@ -2567,7 +2584,7 @@
         "content": "Unser Jahreskonzert fand in der Kandertalhalle in Wollbach unter dem Motto \"Feel Blue\" statt.",
         "images": [
           {
-            "src": "img/konzert_2008.jpg",
+            "src": "img/konzert_2008.webp",
             "title": "Musikverein Wollbach vor dem Jahreskonzert 2008",
             "caption": "Der Musikverein vor dem Jahreskonzert 2008"
           }
