@@ -1,8 +1,8 @@
 @import 'global-variables';
 @import 'mixins/breakpoint';
 
-$row-alternation-bg-color: transparentize(#eee, 0.7);
-$row-border-color: transparentize(#ccc, 0.8);
+$row-alternation-bg-color: rgba(#eee, 0.3);
+$row-border-color: rgba(#ccc, 0.2);
 $cell-border-color: transparent;
 
 table {
@@ -21,7 +21,7 @@ table {
 .banded-rows {
   tr {
     &:nth-child(even) {
-      background-color: transparentize($gray-lightest, 0.7);
+      background-color: rgba($gray-lightest, 0.3);
     }
 
     &:nth-child(odd) {
@@ -29,7 +29,7 @@ table {
     }
 
     &:hover {
-      background-color: transparentize($gray-lightest, 0.6);
+      background-color: rgba($gray-lightest, 0.4);
     }
   }
 }

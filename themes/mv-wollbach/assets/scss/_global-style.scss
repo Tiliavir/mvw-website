@@ -57,12 +57,6 @@ img {
   vertical-align: middle;
 }
 
-svg {
-  &:not(:root) {
-    overflow: hidden;
-  }
-}
-
 button {
   overflow: visible;
   background-color: $highlight-color;

@@ -46,7 +46,6 @@ header {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     background: #ccc;
-    -ms-overflow-style: none;
     scrollbar-width: none;
     margin: 0;
     padding: 0;
@@ -64,10 +63,7 @@ header {
 
       > * {
         position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
+        inset: 0;
       }
 
       > picture {
