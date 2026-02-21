@@ -4,13 +4,14 @@ Generate an editable PDF/A-2U Beitrittserklärung (membership declaration form)
 for Musikverein Wollbach 1866 e.V.
 
 Requirements:
-    pip install fpdf2 pymupdf
+    pip install fpdf2 pypdf
 
 Usage:
     python3 generate_beitrittserklaerung.py
     python3 generate_beitrittserklaerung.py --output /path/to/output.pdf
 """
 import argparse
+import io
 import os
 import sys
 
@@ -22,17 +23,17 @@ except ImportError:
     sys.exit("fpdf2 is required. Install with: pip install fpdf2")
 
 try:
-    import fitz  # PyMuPDF
+    from pypdf import PdfReader, PdfWriter
+    from pypdf.generic import NameObject, DictionaryObject, ArrayObject, NumberObject, TextStringObject
 except ImportError:
-    sys.exit("PyMuPDF is required. Install with: pip install pymupdf")
-
+    sys.exit("pypdf is required. Install with: pip install pypdf")
 
 # sRGB ICC profile bundled with fpdf2
 import fpdf as _fpdf_pkg
+
 ICC_PROFILE_PATH = os.path.join(
     os.path.dirname(_fpdf_pkg.__file__), "data", "color_profiles", "sRGB2014.icc"
 )
-
 
 def _find_font(candidates):
     """Return the first existing font path from the candidates list."""
@@ -40,7 +41,6 @@ def _find_font(candidates):
         if os.path.exists(path):
             return path
     sys.exit(f"No suitable font found. Tried: {candidates}")
-
 
 ARIAL_CANDIDATES = [
     "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
@@ -50,6 +50,9 @@ ARIAL_BOLD_CANDIDATES = [
     "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
     "/usr/share/fonts/liberation/LiberationSans-Bold.ttf",
 ]
+ARIAL_ITALIC_CANDIDATES = [
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf",
+    "/usr/share/fonts/liberation/LiberationSans-Italic.ttf", ]
 
 
 def build_base_pdf(icc_data: bytes) -> bytes:
@@ -71,8 +74,10 @@ def build_base_pdf(icc_data: bytes) -> bytes:
 
     arial_path = _find_font(ARIAL_CANDIDATES)
     arial_bold_path = _find_font(ARIAL_BOLD_CANDIDATES)
+    arial_italic_path = _find_font(ARIAL_ITALIC_CANDIDATES)
     pdf.add_font("Arial", fname=arial_path)
     pdf.add_font("Arial", style="B", fname=arial_bold_path)
+    pdf.add_font("Arial", style="I", fname=arial_italic_path)
 
     pdf.add_page()
     pdf.set_auto_page_break(False)
@@ -94,16 +99,16 @@ def build_base_pdf(icc_data: bytes) -> bytes:
     pdf.set_xy(70.8, 80.3)
     pdf.cell(text="Mit einem freiwilligen Jahresbeitrag in Höhe von")
 
-    # Fixed amount label (checkbox widget placed at x=139)
-    pdf.set_xy(155, 105.7)
-    pdf.cell(text="15,— EURO")
-    # Custom amount suffix (text field widget placed at x=293–353)
-    pdf.set_xy(355, 105.7)
-    pdf.cell(text=",-- EURO")
+    # Fixed amount label
+    pdf.set_xy(90.8, 105.7)
+    pdf.cell(text="15,— €")
+    # Custom amount suffix
+    pdf.set_xy(220, 105.7)
+    pdf.cell(text=",— €")
 
     # Helper note below amount row
-    pdf.set_font("Arial", size=10)
-    pdf.set_xy(141.6, 124.2)
+    pdf.set_font("Arial", style="I", size=9)
+    pdf.set_xy(71.8, 124.2)
     pdf.cell(text="(Zutreffendes bitte ankreuzen oder eintragen)")
 
     # Personal data labels
@@ -138,9 +143,14 @@ def build_base_pdf(icc_data: bytes) -> bytes:
 
     # First signature row
     pdf.set_xy(70.8, 473.9)
-    pdf.cell(text="Ort, Datum")
-    pdf.set_xy(231.4, 473.9)
+    pdf.cell(text="Ort, Datum:")
+    pdf.set_xy(292.9, 473.9)
     pdf.cell(text="Unterschrift:")
+
+    # Draw signature line (non-editable visual area)
+    pdf.set_line_width(0.5)
+    pdf.set_draw_color(0, 0, 0)
+    pdf.line(360, 487, 524, 487)  # Signature line
 
     # Divider line before SEPA section
     pdf.set_line_width(0.5)
@@ -186,75 +196,185 @@ def build_base_pdf(icc_data: bytes) -> bytes:
 
     # SEPA signature row
     pdf.set_xy(70.8, 798.2)
-    pdf.cell(text="Ort, Datum")
+    pdf.cell(text="Ort, Datum:")
     pdf.set_xy(292.9, 798.2)
     pdf.cell(text="Unterschrift:")
+
+    # Draw SEPA signature line (non-editable visual area)
+    pdf.set_line_width(0.5)
+    pdf.set_draw_color(0, 0, 0)
+    pdf.line(360, 812, 524, 812)  # SEPA signature line
 
     return bytes(pdf.output())
 
 
 def add_form_fields(pdf_bytes: bytes) -> bytes:
-    """Add interactive AcroForm widgets to an existing PDF."""
-    doc = fitz.open(stream=pdf_bytes, filetype="pdf")
-    page = doc[0]
+    """Add interactive AcroForm widgets to an existing PDF while preserving PDF/A compliance."""
+    reader = PdfReader(stream=io.BytesIO(pdf_bytes))
+    writer = PdfWriter()
 
-    def text_field(name, rect, date_fmt=False):
-        w = fitz.Widget()
-        w.field_type = fitz.PDF_WIDGET_TYPE_TEXT
-        w.field_name = name
-        w.rect = fitz.Rect(*rect)
-        w.field_value = ""
-        w.text_fontsize = 11
-        w.text_font = "Helv"
-        w.text_color = (0, 0, 0)
-        w.border_color = (0.5, 0.5, 0.5)
-        w.border_width = 0.5
-        w.fill_color = (0.97, 0.97, 0.97)
+    # Copy all pages to preserve content
+    for page in reader.pages:
+        writer.add_page(page)
+
+    # Preserve critical PDF/A metadata
+    catalog = reader.root_object
+    writer_catalog = writer._root_object
+
+    # Copy Metadata stream (contains XMP with PDF/A compliance info)
+    if '/Metadata' in catalog:
+        writer_catalog[NameObject('/Metadata')] = catalog['/Metadata']
+
+    # Copy OutputIntents (color profile for PDF/A)
+    if '/OutputIntents' in catalog:
+        writer_catalog[NameObject('/OutputIntents')] = catalog['/OutputIntents']
+
+    # Preserve language
+    if '/Lang' in catalog:
+        writer_catalog[NameObject('/Lang')] = catalog['/Lang']
+
+    # Add form fields using pypdf
+    # Note: pypdf's form field API is limited, so we work with the AcroForm dictionary directly
+    page = writer.pages[0]
+    page_height = float(page.mediabox.height)
+    field_height = 12.8
+    checkbox_height = 14.0
+
+    def rect_from_top(x1, y_top, x2, height):
+        """Convert top-based coordinates to PDF user space (origin at bottom-left)."""
+        y2 = page_height - y_top
+        y1 = y2 - height
+        return (x1, y1, x2, y2)
+
+    def create_text_field(name, rect, date_fmt=False, align="left"):
+        """Create a text form field widget and annotation."""
+        # Widget dictionary
+        widget = DictionaryObject()
+        widget[NameObject('/Type')] = NameObject('/Annot')
+        widget[NameObject('/Subtype')] = NameObject('/Widget')
+        widget[NameObject('/Rect')] = ArrayObject([
+            NumberObject(rect[0]), NumberObject(rect[1]),
+            NumberObject(rect[2]), NumberObject(rect[3])
+        ])
+        widget[NameObject('/F')] = NumberObject(4)  # Print flag
+        widget[NameObject('/BS')] = DictionaryObject({
+            NameObject('/W'): NumberObject(0.5),
+            NameObject('/S'): NameObject('/S')
+        })
+        widget[NameObject('/DA')] = TextStringObject('(0,0,0) Tf')
+        widget[NameObject('/C')] = ArrayObject([NumberObject(0.97), NumberObject(0.97), NumberObject(0.97)])
+
+        # Field dictionary (references the widget)
+        field = DictionaryObject()
+        field[NameObject('/FT')] = NameObject('/Tx')
+        field[NameObject('/Ff')] = NumberObject(0)
+        field[NameObject('/T')] = TextStringObject(name)
+        field[NameObject('/V')] = TextStringObject('')
+        field[NameObject('/DV')] = TextStringObject('')
+        field[NameObject('/AP')] = DictionaryObject()
+        if align:
+            align_map = {"left": 0, "center": 1, "right": 2}
+            field[NameObject('/Q')] = NumberObject(align_map.get(align, 0))
         if date_fmt:
-            w.text_format = fitz.PDF_WIDGET_TX_FORMAT_DATE
-            w.script_format = 'AFDate_FormatEx("d.m.yyyy");'
-        page.add_widget(w)
+            field[NameObject('/AA')] = DictionaryObject({
+                NameObject('/F'): DictionaryObject({
+                    NameObject('/S'): NameObject('/JavaScript'),
+                    NameObject('/JS'): TextStringObject('AFDate_FormatEx("d.m.yyyy");')
+                })
+            })
 
-    def checkbox(name, rect):
-        w = fitz.Widget()
-        w.field_type = fitz.PDF_WIDGET_TYPE_CHECKBOX
-        w.field_name = name
-        w.rect = fitz.Rect(*rect)
-        w.field_value = "Off"
-        w.text_fontsize = 0
-        w.border_color = (0.5, 0.5, 0.5)
-        w.border_width = 0.5
-        w.fill_color = (0.97, 0.97, 0.97)
-        page.add_widget(w)
+        # Link widget to field
+        widget[NameObject('/Parent')] = field
 
-    # Amount selection
-    checkbox("betrag_15_euro", (139, 103, 153, 117))
-    checkbox("betrag_freiwillig", (279, 103, 293, 117))
-    text_field("betrag_freiwillig_wert", (293, 103, 353, 117))
+        return field, widget
 
-    # Personal data
-    text_field("vorname_name", (158, 144, 524, 157))
-    text_field("strasse", (158, 166, 524, 179))
-    text_field("plz_ort", (141, 188, 524, 201))
-    text_field("email", (158, 210, 524, 223))
-    text_field("geburtsdatum", (158, 232, 524, 245), date_fmt=True)
-    text_field("hochzeitsdatum", (158, 254, 524, 267), date_fmt=True)
-    text_field("eintritt_ab", (158, 276, 524, 289), date_fmt=True)
+    # Create AcroForm if it doesn't exist
+    if '/AcroForm' not in writer_catalog:
+        acroform = DictionaryObject()
+        acroform[NameObject('/SigFlags')] = NumberObject(0)
+        acroform[NameObject('/Fields')] = ArrayObject()
+        writer_catalog[NameObject('/AcroForm')] = acroform
+    else:
+        acroform = writer_catalog['/AcroForm']
 
-    # First signature section
-    text_field("ort_datum_1", (127, 474, 228, 487))
-    text_field("unterschrift_1", (292, 474, 524, 505))
+    fields_array = acroform['/Fields']
+    if fields_array is None:
+        fields_array = ArrayObject()
+        acroform[NameObject('/Fields')] = fields_array
 
-    # SEPA banking data
-    text_field("kontoinhaber", (141, 710, 524, 723))
-    text_field("kreditinstitut", (219, 735, 524, 748))
-    text_field("iban", (101, 760, 524, 773))
+    # Helper to add field
+    def add_field(name, rect, date_fmt=False, align="left"):
+        field, widget = create_text_field(name, rect, date_fmt, align)
+        fields_array.append(field)
+        # Add annotation to page
+        if '/Annots' not in page:
+            page[NameObject('/Annots')] = ArrayObject()
+        page['/Annots'].append(widget)
 
-    # SEPA signature section
-    text_field("ort_datum_2", (127, 798, 290, 811))
-    text_field("unterschrift_2", (354, 798, 524, 820))
+    def create_checkbox(name, rect):
+        """Create a checkbox form field."""
+        widget = DictionaryObject()
+        widget[NameObject('/Type')] = NameObject('/Annot')
+        widget[NameObject('/Subtype')] = NameObject('/Widget')
+        widget[NameObject('/Rect')] = ArrayObject([
+            NumberObject(rect[0]), NumberObject(rect[1]),
+            NumberObject(rect[2]), NumberObject(rect[3])
+        ])
+        widget[NameObject('/F')] = NumberObject(4)
+        widget[NameObject('/BS')] = DictionaryObject({
+            NameObject('/W'): NumberObject(0.5),
+            NameObject('/S'): NameObject('/S')
+        })
+        widget[NameObject('/C')] = ArrayObject([NumberObject(0.97), NumberObject(0.97), NumberObject(0.97)])
 
-    return doc.tobytes()
+        field = DictionaryObject()
+        field[NameObject('/FT')] = NameObject('/Btn')
+        field[NameObject('/T')] = TextStringObject(name)
+        field[NameObject('/V')] = NameObject('/Off')
+        field[NameObject('/AS')] = NameObject('/Off')
+
+        widget[NameObject('/Parent')] = field
+        return field, widget
+
+    def add_checkbox_field(name, rect):
+        field, widget = create_checkbox(name, rect)
+        fields_array.append(field)
+        if '/Annots' not in page:
+            page[NameObject('/Annots')] = ArrayObject()
+        page['/Annots'].append(widget)
+
+    # Amount selection (top-based coordinates)
+    add_checkbox_field("betrag_15_euro", rect_from_top(75, 103, 89, checkbox_height))
+    add_checkbox_field("betrag_freiwillig", rect_from_top(160, 103, 174, checkbox_height))
+    add_field("betrag_freiwillig_wert", rect_from_top(174, 103, 220, checkbox_height), align="right")
+
+    # Personal data (top-based coordinates, aligned under labels)
+    add_field("vorname_name", rect_from_top(180, 144.7, 520, field_height))
+    add_field("strasse", rect_from_top(180, 166.7, 520, field_height))
+    add_field("plz_ort", rect_from_top(180, 188.5, 520, field_height))
+    add_field("email", rect_from_top(180, 210.3, 520, field_height))
+    add_field("geburtsdatum", rect_from_top(180, 232.1, 520, field_height), date_fmt=True)
+    add_field("hochzeitsdatum", rect_from_top(180, 254.1, 520, field_height), date_fmt=True)
+    add_field("eintritt_ab", rect_from_top(180, 275.9, 520, field_height), date_fmt=True)
+
+    # First signature section (non-editable - signature support limited in PDF/A-2U)
+    add_field("ort_datum_1", rect_from_top(135, 471.9, 290, field_height))
+    # Note: Signature fields are not editable in PDF/A-2U for compliance
+    # Users should print and sign physically
+
+    # SEPA banking data (top-based coordinates)
+    add_field("kontoinhaber", rect_from_top(240, 709.6, 520, field_height))
+    add_field("kreditinstitut", rect_from_top(240, 735.0, 520, field_height))
+    add_field("iban", rect_from_top(240, 760.2, 520, field_height))
+
+    # SEPA signature section (non-editable for compliance)
+    add_field("ort_datum_2", rect_from_top(135, 796.2, 290, field_height))
+    # Note: Signature field not editable in PDF/A-2U
+
+    # Write to bytes
+    output = io.BytesIO()
+    writer.write(output)
+    return output.getvalue()
 
 
 def generate(output_path: str) -> None:
