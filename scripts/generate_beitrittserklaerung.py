@@ -16,16 +16,16 @@ import os
 import sys
 
 try:
-    from fpdf import FPDF
-    from fpdf.enums import DocumentCompliance, OutputIntentSubType
-    from fpdf.output import PDFICCProfile
-except ImportError:
+    from fpdf import FPDF  # noqa: F401
+    from fpdf.enums import DocumentCompliance, OutputIntentSubType  # noqa: F401
+    from fpdf.output import PDFICCProfile  # noqa: F401
+except ImportError as e:
     sys.exit("fpdf2 is required. Install with: pip install fpdf2")
 
 try:
-    from pypdf import PdfReader, PdfWriter
-    from pypdf.generic import NameObject, DictionaryObject, ArrayObject, NumberObject, TextStringObject
-except ImportError:
+    from pypdf import PdfReader, PdfWriter  # noqa: F401
+    from pypdf.generic import NameObject, DictionaryObject, ArrayObject, NumberObject, TextStringObject  # noqa: F401
+except ImportError as e:
     sys.exit("pypdf is required. Install with: pip install pypdf")
 
 # sRGB ICC profile bundled with fpdf2
@@ -85,31 +85,31 @@ def build_base_pdf(icc_data: bytes) -> bytes:
     # Title
     pdf.set_font("Arial", style="B", size=16)
     pdf.set_xy(70.8, 28.9)
-    pdf.cell(text="Beitrittserklärung")
+    pdf.cell(0, 0, "Beitrittserklärung")  # type: ignore[call-arg]
 
     # Introduction paragraph
     pdf.set_font("Arial", size=11)
     pdf.set_xy(70.8, 58.3)
-    pdf.write(text="Hiermit beantrage ich die passive Mitgliedschaft beim ")
+    pdf.write(0, "Hiermit beantrage ich die passive Mitgliedschaft beim ")  # type: ignore[call-arg]
     pdf.set_font("Arial", style="B", size=12)
-    pdf.write(text="Musikverein Wollbach 1866 e.V.")
+    pdf.write(0, "Musikverein Wollbach 1866 e.V.")  # type: ignore[call-arg]
 
     # Contribution amount section
     pdf.set_font("Arial", size=11)
     pdf.set_xy(70.8, 80.3)
-    pdf.cell(text="Mit einem freiwilligen Jahresbeitrag in Höhe von")
+    pdf.cell(0, 0, "Mit einem freiwilligen Jahresbeitrag in Höhe von")  # type: ignore[call-arg]
 
     # Fixed amount label
     pdf.set_xy(90.8, 105.7)
-    pdf.cell(text="15,— €")
+    pdf.cell(0, 0, "15,— €")  # type: ignore[call-arg]
     # Custom amount suffix
     pdf.set_xy(220, 105.7)
-    pdf.cell(text=",— €")
+    pdf.cell(0, 0, ",— €")  # type: ignore[call-arg]
 
     # Helper note below amount row
     pdf.set_font("Arial", style="I", size=9)
     pdf.set_xy(71.8, 124.2)
-    pdf.cell(text="(Zutreffendes bitte ankreuzen oder eintragen)")
+    pdf.cell(0, 0, "(Zutreffendes bitte ankreuzen oder eintragen)")  # type: ignore[call-arg]
 
     # Personal data labels
     pdf.set_font("Arial", size=11)
@@ -123,10 +123,10 @@ def build_base_pdf(icc_data: bytes) -> bytes:
         (70.8, 275.9, "Eintritt ab:"),
     ]:
         pdf.set_xy(x, y)
-        pdf.cell(text=label)
+        pdf.cell(0, 0, label)  # type: ignore[call-arg]
 
     # Declaration text
-    for y, text in [
+    for y, text_content in [
         (306.9, "Ja, ich werde Mitglied im Musikverein Wollbach und erkenne durch meine Unterschrift die"),
         (319.5, "Satzung des Musikvereins Wollbach 1866 e.V. als verbindlich an, insbesondere von den"),
         (332.3, "Datenschutzregelungen gemäß § 5 der Vereinssatzung und der dazugehörigen"),
@@ -139,13 +139,13 @@ def build_base_pdf(icc_data: bytes) -> bytes:
         (433.5, "des gültigen Bundesdatenschutzgesetzes (BDSG)."),
     ]:
         pdf.set_xy(70.8, y)
-        pdf.cell(text=text)
+        pdf.cell(0, 0, text_content)  # type: ignore[call-arg]
 
     # First signature row
     pdf.set_xy(70.8, 473.9)
-    pdf.cell(text="Ort, Datum:")
+    pdf.cell(0, 0, "Ort, Datum:")  # type: ignore[call-arg]
     pdf.set_xy(292.9, 473.9)
-    pdf.cell(text="Unterschrift:")
+    pdf.cell(0, 0, "Unterschrift:")  # type: ignore[call-arg]
 
     # Draw signature line (non-editable visual area)
     pdf.set_line_width(0.5)
@@ -160,19 +160,19 @@ def build_base_pdf(icc_data: bytes) -> bytes:
     # SEPA section header
     pdf.set_font("Arial", style="B", size=16)
     pdf.set_xy(70.8, 519.1)
-    pdf.cell(text="SEPA-Lastschriftsmandat:")
+    pdf.cell(0, 0, "SEPA-Lastschriftsmandat:")  # type: ignore[call-arg]
 
     # SEPA static info
     pdf.set_font("Arial", size=11)
-    for y, text in [
+    for y, text_content in [
         (546.4, "Unsere Gläubiger-Identifikationsnummer: DE59ZZZ00000238206"),
         (559.0, "Ihre Mandatsreferenz: - wird nachgereicht -"),
     ]:
         pdf.set_xy(70.8, y)
-        pdf.cell(text=text)
+        pdf.cell(0, 0, text_content)  # type: ignore[call-arg]
 
     # SEPA explanation text
-    for y, text in [
+    for y, text_content in [
         (581.0, "Hiermit ermächtige ich den Musikverein Wollbach 1866 e.V., den von mir angegebenen"),
         (593.6, "Jahresbeitrag von meinem Konto einzuziehen."),
         (606.2, "Zugleich weise ich mein Kreditinstitut an, die vom Musikverein Wollbach 1866 e.V. auf mein"),
@@ -183,7 +183,7 @@ def build_base_pdf(icc_data: bytes) -> bytes:
         (678.6, "am nächstmöglichen Buchungstag."),
     ]:
         pdf.set_xy(70.8, y)
-        pdf.cell(text=text)
+        pdf.cell(0, 0, text_content)  # type: ignore[call-arg]
 
     # SEPA form labels
     for x, y, label in [
@@ -192,13 +192,13 @@ def build_base_pdf(icc_data: bytes) -> bytes:
         (70.8, 760.2, "IBAN:"),
     ]:
         pdf.set_xy(x, y)
-        pdf.cell(text=label)
+        pdf.cell(0, 0, label)  # type: ignore[call-arg]
 
     # SEPA signature row
     pdf.set_xy(70.8, 798.2)
-    pdf.cell(text="Ort, Datum:")
+    pdf.cell(0, 0, "Ort, Datum:")  # type: ignore[call-arg]
     pdf.set_xy(292.9, 798.2)
-    pdf.cell(text="Unterschrift:")
+    pdf.cell(0, 0, "Unterschrift:")  # type: ignore[call-arg]
 
     # Draw SEPA signature line (non-editable visual area)
     pdf.set_line_width(0.5)
@@ -309,7 +309,9 @@ def add_form_fields(pdf_bytes: bytes) -> bytes:
         # Add annotation to page
         if '/Annots' not in page:
             page[NameObject('/Annots')] = ArrayObject()
-        page['/Annots'].append(widget)
+        annots = page['/Annots']
+        if isinstance(annots, ArrayObject):
+            annots.append(widget)
 
     def create_checkbox(name, rect):
         """Create a checkbox form field."""
@@ -341,7 +343,9 @@ def add_form_fields(pdf_bytes: bytes) -> bytes:
         fields_array.append(field)
         if '/Annots' not in page:
             page[NameObject('/Annots')] = ArrayObject()
-        page['/Annots'].append(widget)
+        annots = page['/Annots']
+        if isinstance(annots, ArrayObject):
+            annots.append(widget)
 
     # Amount selection (top-based coordinates)
     add_checkbox_field("betrag_15_euro", rect_from_top(75, 103, 89, checkbox_height))
