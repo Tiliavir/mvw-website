@@ -19,13 +19,15 @@ try:
     from fpdf import FPDF  # noqa: F401
     from fpdf.enums import DocumentCompliance, OutputIntentSubType  # noqa: F401
     from fpdf.output import PDFICCProfile  # noqa: F401
-except ImportError as e:
+except ImportError:
     sys.exit("fpdf2 is required. Install with: pip install fpdf2")
 
 try:
     from pypdf import PdfReader, PdfWriter  # noqa: F401
-    from pypdf.generic import NameObject, DictionaryObject, ArrayObject, NumberObject, TextStringObject  # noqa: F401
-except ImportError as e:
+    from pypdf.generic import (  # noqa: F401
+        NameObject, DictionaryObject, ArrayObject, NumberObject, TextStringObject
+    )
+except ImportError:
     sys.exit("pypdf is required. Install with: pip install pypdf")
 
 # sRGB ICC profile bundled with fpdf2
@@ -52,7 +54,113 @@ ARIAL_BOLD_CANDIDATES = [
 ]
 ARIAL_ITALIC_CANDIDATES = [
     "/usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf",
-    "/usr/share/fonts/liberation/LiberationSans-Italic.ttf", ]
+    "/usr/share/fonts/liberation/LiberationSans-Italic.ttf",
+]
+
+# PDF dictionary key constants (avoids duplicate string literals)
+_KEY_METADATA = "/Metadata"
+_KEY_OUTPUT_INTENTS = "/OutputIntents"
+_KEY_LANG = "/Lang"
+_KEY_ACROFORM = "/AcroForm"
+_KEY_FIELDS = "/Fields"
+_KEY_ANNOTS = "/Annots"
+
+
+def _copy_catalog_entry(src: DictionaryObject, dst: DictionaryObject, key: str) -> None:
+    """Copy a single catalog entry from src to dst if it exists."""
+    if key in src:
+        dst[NameObject(key)] = src[key]
+
+
+def _make_widget_base(rect: tuple) -> DictionaryObject:
+    """Build the common annotation/widget dictionary shared by all field types."""
+    widget = DictionaryObject()
+    widget[NameObject("/Type")] = NameObject("/Annot")
+    widget[NameObject("/Subtype")] = NameObject("/Widget")
+    widget[NameObject("/Rect")] = ArrayObject([
+        NumberObject(rect[0]), NumberObject(rect[1]),
+        NumberObject(rect[2]), NumberObject(rect[3]),
+    ])
+    widget[NameObject("/F")] = NumberObject(4)  # Print flag
+    widget[NameObject("/BS")] = DictionaryObject({
+        NameObject("/W"): NumberObject(0.5),
+        NameObject("/S"): NameObject("/S"),
+    })
+    widget[NameObject("/C")] = ArrayObject(
+        [NumberObject(0.97), NumberObject(0.97), NumberObject(0.97)]
+    )
+    return widget
+
+
+def _append_widget(page: DictionaryObject, widget: DictionaryObject) -> None:
+    """Append a widget annotation to the page's /Annots array."""
+    if _KEY_ANNOTS not in page:
+        page[NameObject(_KEY_ANNOTS)] = ArrayObject()
+    annots = page[_KEY_ANNOTS]
+    if isinstance(annots, ArrayObject):
+        annots.append(widget)
+
+
+def _create_text_field(
+    name: str, rect: tuple, date_fmt: bool = False, align: str = "left"
+) -> tuple:
+    """Return a (field, widget) pair for a text input field."""
+    widget = _make_widget_base(rect)
+    widget[NameObject("/DA")] = TextStringObject("(0,0,0) Tf")
+
+    field = DictionaryObject()
+    field[NameObject("/FT")] = NameObject("/Tx")
+    field[NameObject("/Ff")] = NumberObject(0)
+    field[NameObject("/T")] = TextStringObject(name)
+    field[NameObject("/V")] = TextStringObject("")
+    field[NameObject("/DV")] = TextStringObject("")
+    field[NameObject("/AP")] = DictionaryObject()
+    align_map = {"left": 0, "center": 1, "right": 2}
+    field[NameObject("/Q")] = NumberObject(align_map.get(align, 0))
+    if date_fmt:
+        field[NameObject("/AA")] = DictionaryObject({
+            NameObject("/F"): DictionaryObject({
+                NameObject("/S"): NameObject("/JavaScript"),
+                NameObject("/JS"): TextStringObject('AFDate_FormatEx("d.m.yyyy");'),
+            })
+        })
+    widget[NameObject("/Parent")] = field
+    return field, widget
+
+
+def _create_checkbox(name: str, rect: tuple) -> tuple:
+    """Return a (field, widget) pair for a checkbox field."""
+    widget = _make_widget_base(rect)
+    field = DictionaryObject()
+    field[NameObject("/FT")] = NameObject("/Btn")
+    field[NameObject("/T")] = TextStringObject(name)
+    field[NameObject("/V")] = NameObject("/Off")
+    field[NameObject("/AS")] = NameObject("/Off")
+    widget[NameObject("/Parent")] = field
+    return field, widget
+
+
+def _add_text_field(
+    fields_array: ArrayObject,
+    page: DictionaryObject,
+    name: str,
+    rect: tuple,
+    date_fmt: bool = False,
+    align: str = "left",
+) -> None:
+    """Create a text field and register it on the page."""
+    field, widget = _create_text_field(name, rect, date_fmt, align)
+    fields_array.append(field)
+    _append_widget(page, widget)
+
+
+def _add_checkbox_field(
+    fields_array: ArrayObject, page: DictionaryObject, name: str, rect: tuple
+) -> None:
+    """Create a checkbox field and register it on the page."""
+    field, widget = _create_checkbox(name, rect)
+    fields_array.append(field)
+    _append_widget(page, widget)
 
 
 def build_base_pdf(icc_data: bytes) -> bytes:
@@ -213,169 +321,69 @@ def add_form_fields(pdf_bytes: bytes) -> bytes:
     reader = PdfReader(stream=io.BytesIO(pdf_bytes))
     writer = PdfWriter()
 
-    # Copy all pages to preserve content
     for page in reader.pages:
         writer.add_page(page)
 
-    # Preserve critical PDF/A metadata
+    # Preserve critical PDF/A catalog entries (XMP metadata, color profile, language)
     catalog = reader.root_object
     writer_catalog = writer._root_object
+    _copy_catalog_entry(catalog, writer_catalog, _KEY_METADATA)
+    _copy_catalog_entry(catalog, writer_catalog, _KEY_OUTPUT_INTENTS)
+    _copy_catalog_entry(catalog, writer_catalog, _KEY_LANG)
 
-    # Copy Metadata stream (contains XMP with PDF/A compliance info)
-    if '/Metadata' in catalog:
-        writer_catalog[NameObject('/Metadata')] = catalog['/Metadata']
-
-    # Copy OutputIntents (color profile for PDF/A)
-    if '/OutputIntents' in catalog:
-        writer_catalog[NameObject('/OutputIntents')] = catalog['/OutputIntents']
-
-    # Preserve language
-    if '/Lang' in catalog:
-        writer_catalog[NameObject('/Lang')] = catalog['/Lang']
-
-    # Add form fields using pypdf
-    # Note: pypdf's form field API is limited, so we work with the AcroForm dictionary directly
     page = writer.pages[0]
     page_height = float(page.mediabox.height)
     field_height = 12.8
     checkbox_height = 14.0
 
-    def rect_from_top(x1, y_top, x2, height):
-        """Convert top-based coordinates to PDF user space (origin at bottom-left)."""
+    def to_rect(x1, y_top, x2, height):
+        """Convert top-based y to PDF user-space rect (origin at bottom-left)."""
         y2 = page_height - y_top
-        y1 = y2 - height
-        return (x1, y1, x2, y2)
+        return (x1, y2 - height, x2, y2)
 
-    def create_text_field(name, rect, date_fmt=False, align="left"):
-        """Create a text form field widget and annotation."""
-        # Widget dictionary
-        widget = DictionaryObject()
-        widget[NameObject('/Type')] = NameObject('/Annot')
-        widget[NameObject('/Subtype')] = NameObject('/Widget')
-        widget[NameObject('/Rect')] = ArrayObject([
-            NumberObject(rect[0]), NumberObject(rect[1]),
-            NumberObject(rect[2]), NumberObject(rect[3])
-        ])
-        widget[NameObject('/F')] = NumberObject(4)  # Print flag
-        widget[NameObject('/BS')] = DictionaryObject({
-            NameObject('/W'): NumberObject(0.5),
-            NameObject('/S'): NameObject('/S')
-        })
-        widget[NameObject('/DA')] = TextStringObject('(0,0,0) Tf')
-        widget[NameObject('/C')] = ArrayObject([NumberObject(0.97), NumberObject(0.97), NumberObject(0.97)])
-
-        # Field dictionary (references the widget)
-        field = DictionaryObject()
-        field[NameObject('/FT')] = NameObject('/Tx')
-        field[NameObject('/Ff')] = NumberObject(0)
-        field[NameObject('/T')] = TextStringObject(name)
-        field[NameObject('/V')] = TextStringObject('')
-        field[NameObject('/DV')] = TextStringObject('')
-        field[NameObject('/AP')] = DictionaryObject()
-        if align:
-            align_map = {"left": 0, "center": 1, "right": 2}
-            field[NameObject('/Q')] = NumberObject(align_map.get(align, 0))
-        if date_fmt:
-            field[NameObject('/AA')] = DictionaryObject({
-                NameObject('/F'): DictionaryObject({
-                    NameObject('/S'): NameObject('/JavaScript'),
-                    NameObject('/JS'): TextStringObject('AFDate_FormatEx("d.m.yyyy");')
-                })
-            })
-
-        # Link widget to field
-        widget[NameObject('/Parent')] = field
-
-        return field, widget
-
-    # Create AcroForm if it doesn't exist
-    if '/AcroForm' not in writer_catalog:
+    if _KEY_ACROFORM not in writer_catalog:
         acroform = DictionaryObject()
-        acroform[NameObject('/SigFlags')] = NumberObject(0)
-        acroform[NameObject('/Fields')] = ArrayObject()
-        writer_catalog[NameObject('/AcroForm')] = acroform
+        acroform[NameObject("/SigFlags")] = NumberObject(0)
+        acroform[NameObject(_KEY_FIELDS)] = ArrayObject()
+        writer_catalog[NameObject(_KEY_ACROFORM)] = acroform
     else:
-        acroform = writer_catalog['/AcroForm']
+        acroform = writer_catalog[_KEY_ACROFORM]
 
-    fields_array = acroform['/Fields']
-    if fields_array is None:
-        fields_array = ArrayObject()
-        acroform[NameObject('/Fields')] = fields_array
+    if _KEY_FIELDS not in acroform:
+        acroform[NameObject(_KEY_FIELDS)] = ArrayObject()
+    fields_array = acroform[_KEY_FIELDS]
 
-    # Helper to add field
-    def add_field(name, rect, date_fmt=False, align="left"):
-        field, widget = create_text_field(name, rect, date_fmt, align)
-        fields_array.append(field)
-        # Add annotation to page
-        if '/Annots' not in page:
-            page[NameObject('/Annots')] = ArrayObject()
-        annots = page['/Annots']
-        if isinstance(annots, ArrayObject):
-            annots.append(widget)
+    def add(name, rect, date_fmt=False, align="left"):
+        _add_text_field(fields_array, page, name, rect, date_fmt, align)
 
-    def create_checkbox(name, rect):
-        """Create a checkbox form field."""
-        widget = DictionaryObject()
-        widget[NameObject('/Type')] = NameObject('/Annot')
-        widget[NameObject('/Subtype')] = NameObject('/Widget')
-        widget[NameObject('/Rect')] = ArrayObject([
-            NumberObject(rect[0]), NumberObject(rect[1]),
-            NumberObject(rect[2]), NumberObject(rect[3])
-        ])
-        widget[NameObject('/F')] = NumberObject(4)
-        widget[NameObject('/BS')] = DictionaryObject({
-            NameObject('/W'): NumberObject(0.5),
-            NameObject('/S'): NameObject('/S')
-        })
-        widget[NameObject('/C')] = ArrayObject([NumberObject(0.97), NumberObject(0.97), NumberObject(0.97)])
+    def chk(name, rect):
+        _add_checkbox_field(fields_array, page, name, rect)
 
-        field = DictionaryObject()
-        field[NameObject('/FT')] = NameObject('/Btn')
-        field[NameObject('/T')] = TextStringObject(name)
-        field[NameObject('/V')] = NameObject('/Off')
-        field[NameObject('/AS')] = NameObject('/Off')
+    # Amount selection
+    chk("betrag_15_euro", to_rect(75, 103, 89, checkbox_height))
+    chk("betrag_freiwillig", to_rect(160, 103, 174, checkbox_height))
+    add("betrag_freiwillig_wert", to_rect(174, 103, 220, checkbox_height), align="right")
 
-        widget[NameObject('/Parent')] = field
-        return field, widget
+    # Personal data
+    add("vorname_name", to_rect(180, 144.7, 520, field_height))
+    add("strasse", to_rect(180, 166.7, 520, field_height))
+    add("plz_ort", to_rect(180, 188.5, 520, field_height))
+    add("email", to_rect(180, 210.3, 520, field_height))
+    add("geburtsdatum", to_rect(180, 232.1, 520, field_height), date_fmt=True)
+    add("hochzeitsdatum", to_rect(180, 254.1, 520, field_height), date_fmt=True)
+    add("eintritt_ab", to_rect(180, 275.9, 520, field_height), date_fmt=True)
 
-    def add_checkbox_field(name, rect):
-        field, widget = create_checkbox(name, rect)
-        fields_array.append(field)
-        if '/Annots' not in page:
-            page[NameObject('/Annots')] = ArrayObject()
-        annots = page['/Annots']
-        if isinstance(annots, ArrayObject):
-            annots.append(widget)
+    # First signature section
+    add("ort_datum_1", to_rect(135, 471.9, 290, field_height))
 
-    # Amount selection (top-based coordinates)
-    add_checkbox_field("betrag_15_euro", rect_from_top(75, 103, 89, checkbox_height))
-    add_checkbox_field("betrag_freiwillig", rect_from_top(160, 103, 174, checkbox_height))
-    add_field("betrag_freiwillig_wert", rect_from_top(174, 103, 220, checkbox_height), align="right")
+    # SEPA banking data
+    add("kontoinhaber", to_rect(240, 709.6, 520, field_height))
+    add("kreditinstitut", to_rect(240, 735.0, 520, field_height))
+    add("iban", to_rect(240, 760.2, 520, field_height))
 
-    # Personal data (top-based coordinates, aligned under labels)
-    add_field("vorname_name", rect_from_top(180, 144.7, 520, field_height))
-    add_field("strasse", rect_from_top(180, 166.7, 520, field_height))
-    add_field("plz_ort", rect_from_top(180, 188.5, 520, field_height))
-    add_field("email", rect_from_top(180, 210.3, 520, field_height))
-    add_field("geburtsdatum", rect_from_top(180, 232.1, 520, field_height), date_fmt=True)
-    add_field("hochzeitsdatum", rect_from_top(180, 254.1, 520, field_height), date_fmt=True)
-    add_field("eintritt_ab", rect_from_top(180, 275.9, 520, field_height), date_fmt=True)
+    # SEPA signature section
+    add("ort_datum_2", to_rect(135, 796.2, 290, field_height))
 
-    # First signature section (non-editable - signature support limited in PDF/A-2U)
-    add_field("ort_datum_1", rect_from_top(135, 471.9, 290, field_height))
-    # Note: Signature fields are not editable in PDF/A-2U for compliance
-    # Users should print and sign physically
-
-    # SEPA banking data (top-based coordinates)
-    add_field("kontoinhaber", rect_from_top(240, 709.6, 520, field_height))
-    add_field("kreditinstitut", rect_from_top(240, 735.0, 520, field_height))
-    add_field("iban", rect_from_top(240, 760.2, 520, field_height))
-
-    # SEPA signature section (non-editable for compliance)
-    add_field("ort_datum_2", rect_from_top(135, 796.2, 290, field_height))
-    # Note: Signature field not editable in PDF/A-2U
-
-    # Write to bytes
     output = io.BytesIO()
     writer.write(output)
     return output.getvalue()
