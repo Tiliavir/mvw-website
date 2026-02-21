@@ -13,15 +13,48 @@ form {
 .results {
   padding-left: 0;
 
+  &.hidden {
+    display: none;
+  }
+
   li {
     list-style: none;
+    opacity: 0;
+    animation: fadeInScale 0.4s ease-out forwards;
 
     &:not(:first-child) {
       margin-top: 15px;
     }
+
+    a {
+      font-size: $font-size-larger;
+    }
+
+    @for $i from 1 through 20 {
+      &:nth-child(#{$i}) {
+        animation-delay: #{$i * 0.1}s;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      opacity: 1;
+      animation: none;
+    }
   }
 
-  a {
-    font-size: $font-size-larger;
+  &.hidden li {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
   }
 }

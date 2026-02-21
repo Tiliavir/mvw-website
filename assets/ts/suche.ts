@@ -16,8 +16,9 @@ class Search {
     const result = query ? Search.index.search(`*${query}*`) : [];
 
     if (!query || result.length === 0) {
-      resultContainer.style.display = "none";
+      resultContainer.classList.add("hidden");
     } else {
+      resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = "";
       for (const item of result) {
         const ref = item.ref;
@@ -33,7 +34,6 @@ class Search {
         `;
         resultContainer.appendChild(li);
       }
-      resultContainer.style.display = "";
     }
   }
 
