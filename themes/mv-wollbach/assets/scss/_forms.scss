@@ -145,7 +145,7 @@ input {
 
   &[type='search'] {
     box-sizing: border-box;
-    -webkit-appearance: none;
+    appearance: none;
   }
 }
 
@@ -201,7 +201,7 @@ output {
   box-shadow: $shadow;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
-  $color-rgba: rgba(red($input-border-focus), green($input-border-focus), blue($input-border-focus), .6);
+  $color-rgba: rgba($input-border-focus, .6);
 
   &:focus {
     border-color: $input-border-focus;
@@ -209,18 +209,9 @@ output {
     box-shadow: $shadow, 0 0 8px $color-rgba;
   }
 
-  // Firefox
-  &::-moz-placeholder {
+  &::placeholder {
     color: $input-color-placeholder;
-    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
-  }
-
-  &:-ms-input-placeholder { color: $input-color-placeholder; } // Internet Explorer 10+
-  &::-webkit-input-placeholder  { color: $input-color-placeholder; } // Safari and Chrome
-
-  &::-ms-expand {
-    border: 0;
-    background-color: transparent;
+    opacity: 1; // Firefox applies 0.54 opacity by default; override to match other browsers
   }
 
   &[disabled],

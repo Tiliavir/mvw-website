@@ -2,7 +2,7 @@
 @import 'mixins/breakpoint';
 
 $background-color: $gray-base;
-$background-color-active: transparentize(darken($background-color, 10%), .3);
+$background-color-active: rgba(darken($background-color, 10%), .7);
 
 $color: $gray-light;
 $color-active: $gray-lightest;
@@ -34,7 +34,7 @@ $brand-fill: $gray-lightest;
 
 .inverse {
   &.navigation {
-    background-color: transparentize($body-bg, .05);
+    background-color: rgba($body-bg, .95);
     color: $color;
     transition: background-color .3s ease;
   }
@@ -44,7 +44,7 @@ $brand-fill: $gray-lightest;
   }
 
   .navigation-menu {
-    background-color: transparentize($body-bg, .05);
+    background-color: rgba($body-bg, .95);
     color: $color;
   }
 }
@@ -72,7 +72,7 @@ $brand-fill: $gray-lightest;
 
   .navigation-menu {
     box-shadow: 0 5px 10px -2px $black;
-    background-color: transparentize($background-color, .05);
+    background-color: rgba($background-color, .95);
   }
 
   .inverse {
@@ -96,11 +96,11 @@ $brand-fill: $gray-lightest;
     }
 
     &.navigation {
-      background-color: transparentize(darken($body-bg, 1%), .05);
+      background-color: rgba(darken($body-bg, 1%), .95);
     }
 
     .navigation-menu {
-      background-color: transparentize($body-bg, .05);
+      background-color: rgba($body-bg, .95);
     }
   }
 }
