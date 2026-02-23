@@ -74,5 +74,5 @@ Landratsamt Lörrach
 
 [info]:     mailto:info@mv-wollbach.de
 
-[htmLink]:  https://validator.w3.org/check?uri=http%3A%2F%2Fwww.mv-wollbach.de%2F
-[cssLink]:  https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.mv-wollbach.de%2F&profile=css3svg
+[htmLink]:  https://validator.w3.org/check?uri=https%3A%2F%2Fwww.mv-wollbach.de%2F
+[cssLink]:  https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwww.mv-wollbach.de%2F&profile=css3svg
