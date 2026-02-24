@@ -25,12 +25,13 @@ except ImportError:
 try:
     from pypdf import PdfReader, PdfWriter  # noqa: F401
     from pypdf.generic import (  # noqa: F401
-        NameObject, DictionaryObject, ArrayObject, NumberObject, TextStringObject
+        NameObject, DictionaryObject, ArrayObject, NumberObject, TextStringObject,
+        IndirectObject
     )
 except ImportError:
     sys.exit("pypdf is required. Install with: pip install pypdf")
 
-# sRGB ICC profile bundled with fpdf2
+# sRGB ICC profile bundled with fpdf2ma.ch
 import fpdf as _fpdf_pkg
 
 ICC_PROFILE_PATH = os.path.join(
@@ -72,7 +73,7 @@ def _copy_catalog_entry(src: DictionaryObject, dst: DictionaryObject, key: str) 
         dst[NameObject(key)] = src[key]
 
 
-def _make_widget_base(rect: tuple) -> DictionaryObject:
+def _make_widget_base(rect: tuple, print_fields: bool = True) -> DictionaryObject:
     """Build the common annotation/widget dictionary shared by all field types."""
     widget = DictionaryObject()
     widget[NameObject("/Type")] = NameObject("/Annot")
@@ -81,7 +82,7 @@ def _make_widget_base(rect: tuple) -> DictionaryObject:
         NumberObject(rect[0]), NumberObject(rect[1]),
         NumberObject(rect[2]), NumberObject(rect[3]),
     ])
-    widget[NameObject("/F")] = NumberObject(4)  # Print flag
+    widget[NameObject("/F")] = NumberObject(4 if print_fields else 0)  # Print flag
     widget[NameObject("/BS")] = DictionaryObject({
         NameObject("/W"): NumberObject(0.5),
         NameObject("/S"): NameObject("/S"),
@@ -102,11 +103,15 @@ def _append_widget(page: DictionaryObject, widget: DictionaryObject) -> None:
 
 
 def _create_text_field(
-    name: str, rect: tuple, date_fmt: bool = False, align: str = "left"
+    name: str,
+    rect: tuple,
+    date_fmt: bool = False,
+    align: str = "left",
+    print_fields: bool = True,
 ) -> tuple:
     """Return a (field, widget) pair for a text input field."""
-    widget = _make_widget_base(rect)
-    widget[NameObject("/DA")] = TextStringObject("(0,0,0) Tf")
+    widget = _make_widget_base(rect, print_fields=print_fields)
+    widget[NameObject("/DA")] = TextStringObject("/Helv 11 Tf 0 g")
 
     field = DictionaryObject()
     field[NameObject("/FT")] = NameObject("/Tx")
@@ -114,7 +119,7 @@ def _create_text_field(
     field[NameObject("/T")] = TextStringObject(name)
     field[NameObject("/V")] = TextStringObject("")
     field[NameObject("/DV")] = TextStringObject("")
-    field[NameObject("/AP")] = DictionaryObject()
+    field[NameObject("/DA")] = TextStringObject("/Helv 11 Tf 0 g")
     align_map = {"left": 0, "center": 1, "right": 2}
     field[NameObject("/Q")] = NumberObject(align_map.get(align, 0))
     if date_fmt:
@@ -128,9 +133,9 @@ def _create_text_field(
     return field, widget
 
 
-def _create_checkbox(name: str, rect: tuple) -> tuple:
+def _create_checkbox(name: str, rect: tuple, print_fields: bool = True) -> tuple:
     """Return a (field, widget) pair for a checkbox field."""
-    widget = _make_widget_base(rect)
+    widget = _make_widget_base(rect, print_fields=print_fields)
     field = DictionaryObject()
     field[NameObject("/FT")] = NameObject("/Btn")
     field[NameObject("/T")] = TextStringObject(name)
@@ -147,18 +152,23 @@ def _add_text_field(
     rect: tuple,
     date_fmt: bool = False,
     align: str = "left",
+    print_fields: bool = True,
 ) -> None:
     """Create a text field and register it on the page."""
-    field, widget = _create_text_field(name, rect, date_fmt, align)
+    field, widget = _create_text_field(name, rect, date_fmt, align, print_fields=print_fields)
     fields_array.append(field)
     _append_widget(page, widget)
 
 
 def _add_checkbox_field(
-    fields_array: ArrayObject, page: DictionaryObject, name: str, rect: tuple
+    fields_array: ArrayObject,
+    page: DictionaryObject,
+    name: str,
+    rect: tuple,
+    print_fields: bool = True,
 ) -> None:
     """Create a checkbox field and register it on the page."""
-    field, widget = _create_checkbox(name, rect)
+    field, widget = _create_checkbox(name, rect, print_fields=print_fields)
     fields_array.append(field)
     _append_widget(page, widget)
 
@@ -193,31 +203,31 @@ def build_base_pdf(icc_data: bytes) -> bytes:
     # Title
     pdf.set_font("Arial", style="B", size=16)
     pdf.set_xy(70.8, 28.9)
-    pdf.cell(0, 0, "Beitrittserklärung")  # type: ignore[call-arg]
+    pdf.cell(w=0, h=0, text="Beitrittserklärung")
 
     # Introduction paragraph
     pdf.set_font("Arial", size=11)
     pdf.set_xy(70.8, 58.3)
-    pdf.write(0, "Hiermit beantrage ich die passive Mitgliedschaft beim ")  # type: ignore[call-arg]
+    pdf.write(h=0, text="Hiermit beantrage ich die passive Mitgliedschaft beim ")
     pdf.set_font("Arial", style="B", size=12)
-    pdf.write(0, "Musikverein Wollbach 1866 e.V.")  # type: ignore[call-arg]
+    pdf.write(h=0, text="Musikverein Wollbach 1866 e.V.")
 
     # Contribution amount section
     pdf.set_font("Arial", size=11)
     pdf.set_xy(70.8, 80.3)
-    pdf.cell(0, 0, "Mit einem freiwilligen Jahresbeitrag in Höhe von")  # type: ignore[call-arg]
+    pdf.cell(w=0, h=0, text="Mit einem freiwilligen Jahresbeitrag in Höhe von")
 
     # Fixed amount label
     pdf.set_xy(90.8, 105.7)
-    pdf.cell(0, 0, "15,— €")  # type: ignore[call-arg]
+    pdf.cell(w=0, h=0, text="15,— €")
     # Custom amount suffix
     pdf.set_xy(220, 105.7)
-    pdf.cell(0, 0, ",— €")  # type: ignore[call-arg]
+    pdf.cell(w=0, h=0, text=",— €")
 
     # Helper note below amount row
     pdf.set_font("Arial", style="I", size=9)
     pdf.set_xy(71.8, 124.2)
-    pdf.cell(0, 0, "(Zutreffendes bitte ankreuzen oder eintragen)")  # type: ignore[call-arg]
+    pdf.cell(w=0, h=0, text="(Zutreffendes bitte ankreuzen oder eintragen)")
 
     # Personal data labels
     pdf.set_font("Arial", size=11)
@@ -231,7 +241,7 @@ def build_base_pdf(icc_data: bytes) -> bytes:
         (70.8, 275.9, "Eintritt ab:"),
     ]:
         pdf.set_xy(x, y)
-        pdf.cell(0, 0, label)  # type: ignore[call-arg]
+        pdf.cell(w=0, h=0, text=label)
 
     # Declaration text
     for y, text_content in [
@@ -247,13 +257,13 @@ def build_base_pdf(icc_data: bytes) -> bytes:
         (433.5, "des gültigen Bundesdatenschutzgesetzes (BDSG)."),
     ]:
         pdf.set_xy(70.8, y)
-        pdf.cell(0, 0, text_content)  # type: ignore[call-arg]
+        pdf.cell(w=0, h=0, text=text_content)
 
     # First signature row
     pdf.set_xy(70.8, 473.9)
-    pdf.cell(0, 0, "Ort, Datum:")  # type: ignore[call-arg]
+    pdf.cell(w=0, h=0, text="Ort, Datum:")
     pdf.set_xy(292.9, 473.9)
-    pdf.cell(0, 0, "Unterschrift:")  # type: ignore[call-arg]
+    pdf.cell(w=0, h=0, text="Unterschrift:")
 
     # Draw signature line (non-editable visual area)
     pdf.set_line_width(0.5)
@@ -268,7 +278,7 @@ def build_base_pdf(icc_data: bytes) -> bytes:
     # SEPA section header
     pdf.set_font("Arial", style="B", size=16)
     pdf.set_xy(70.8, 519.1)
-    pdf.cell(0, 0, "SEPA-Lastschriftsmandat:")  # type: ignore[call-arg]
+    pdf.cell(w=0, h=0, text="SEPA-Lastschriftsmandat:")
 
     # SEPA static info
     pdf.set_font("Arial", size=11)
@@ -277,7 +287,7 @@ def build_base_pdf(icc_data: bytes) -> bytes:
         (559.0, "Ihre Mandatsreferenz: - wird nachgereicht -"),
     ]:
         pdf.set_xy(70.8, y)
-        pdf.cell(0, 0, text_content)  # type: ignore[call-arg]
+        pdf.cell(w=0, h=0, text=text_content)
 
     # SEPA explanation text
     for y, text_content in [
@@ -291,7 +301,7 @@ def build_base_pdf(icc_data: bytes) -> bytes:
         (678.6, "am nächstmöglichen Buchungstag."),
     ]:
         pdf.set_xy(70.8, y)
-        pdf.cell(0, 0, text_content)  # type: ignore[call-arg]
+        pdf.cell(w=0, h=0, text=text_content)
 
     # SEPA form labels
     for x, y, label in [
@@ -300,13 +310,13 @@ def build_base_pdf(icc_data: bytes) -> bytes:
         (70.8, 760.2, "IBAN:"),
     ]:
         pdf.set_xy(x, y)
-        pdf.cell(0, 0, label)  # type: ignore[call-arg]
+        pdf.cell(w=0, h=0, text=label)
 
     # SEPA signature row
     pdf.set_xy(70.8, 798.2)
-    pdf.cell(0, 0, "Ort, Datum:")  # type: ignore[call-arg]
+    pdf.cell(w=0, h=0, text="Ort, Datum:")
     pdf.set_xy(292.9, 798.2)
-    pdf.cell(0, 0, "Unterschrift:")  # type: ignore[call-arg]
+    pdf.cell(w=0, h=0, text="Unterschrift:")
 
     # Draw SEPA signature line (non-editable visual area)
     pdf.set_line_width(0.5)
@@ -316,8 +326,8 @@ def build_base_pdf(icc_data: bytes) -> bytes:
     return bytes(pdf.output())
 
 
-def add_form_fields(pdf_bytes: bytes) -> bytes:
-    """Add interactive AcroForm widgets to an existing PDF while preserving PDF/A compliance."""
+def add_print_lines(pdf_bytes: bytes) -> bytes:
+    """Add underlines for manual filling instead of form fields (print version)."""
     reader = PdfReader(stream=io.BytesIO(pdf_bytes))
     writer = PdfWriter()
 
@@ -333,12 +343,181 @@ def add_form_fields(pdf_bytes: bytes) -> bytes:
 
     page = writer.pages[0]
     page_height = float(page.mediabox.height)
+
+    def _as_indirect(obj):
+        if isinstance(obj, IndirectObject):
+            return obj
+        return writer._add_object(obj)
+
+    # Create a content stream to draw lines
+    from pypdf.generic import StreamObject
+
+    lines_to_draw = []
+
+    # Helper to convert top-based y to PDF bottom-based y
+    def y_conv(y_top):
+        return page_height - y_top
+
+    # Checkboxes - draw small squares
+    checkbox_offset = 5.5
+    checkbox_rects = [
+        (75, 103 - checkbox_offset, 89, 117 - checkbox_offset),  # betrag_15_euro
+        (160, 103 - checkbox_offset, 174, 117 - checkbox_offset),  # betrag_freiwillig
+    ]
+
+    for x1, y1, x2, y2 in checkbox_rects:
+        y1_pdf = y_conv(y1)
+        y2_pdf = y_conv(y2)
+        lines_to_draw.append(f"{x1} {y2_pdf} m {x2} {y2_pdf} l {x2} {y1_pdf} l {x1} {y1_pdf} l {x1} {y2_pdf} l S")
+
+    # Text fields - draw underlines
+    text_field_lines = [
+        (174, 110, 220),  # betrag_freiwillig_wert
+        (180, 151, 520),  # vorname_name
+        (180, 173, 520),  # strasse
+        (180, 195, 520),  # plz_ort
+        (180, 217, 520),  # email
+        (180, 239, 520),  # geburtsdatum
+        (180, 261, 520),  # hochzeitsdatum
+        (180, 283, 520),  # eintritt_ab
+        (135, 479, 290),  # ort_datum_1
+        (240, 716, 520),  # kontoinhaber
+        (240, 742, 520),  # kreditinstitut
+        (240, 767, 520),  # iban
+        (135, 804, 290),  # ort_datum_2
+    ]
+
+    for x1, y_top, x2 in text_field_lines:
+        y_pdf = y_conv(y_top)
+        lines_to_draw.append(f"{x1} {y_pdf} m {x2} {y_pdf} l S")
+
+    # Combine all drawing commands
+    line_content = "q\n0.5 w\n0 0 0 RG\n" + "\n".join(lines_to_draw) + "\nQ\n"
+
+    # Append to existing page content
+    if "/Contents" in page:
+        existing_content = page["/Contents"]
+        if isinstance(existing_content, ArrayObject):
+            # Multiple content streams
+            stream = StreamObject()
+            stream._data = line_content.encode('latin-1')
+            stream_ref = writer._add_object(stream)
+            existing_content.append(stream_ref)
+        else:
+            # Single content stream - normalize to array of indirect refs
+            new_stream = StreamObject()
+            new_stream._data = line_content.encode('latin-1')
+            new_stream_ref = writer._add_object(new_stream)
+            existing_ref = _as_indirect(existing_content)
+            page[NameObject("/Contents")] = ArrayObject([existing_ref, new_stream_ref])
+
+    output = io.BytesIO()
+    writer.write(output)
+    return output.getvalue()
+
+
+def add_form_fields(pdf_bytes: bytes, page_index: int = 0, add_print_lines: bool = True) -> bytes:
+    """Add interactive AcroForm widgets to an existing PDF while preserving PDF/A compliance.
+
+    Args:
+        pdf_bytes: The PDF content as bytes
+        page_index: The page index (0-based) to add form fields to. Defaults to 0 (first page).
+        add_print_lines: If True, also adds underlines beneath form fields for print version.
+    """
+    reader = PdfReader(stream=io.BytesIO(pdf_bytes))
+    writer = PdfWriter()
+
+    for page in reader.pages:
+        writer.add_page(page)
+
+    # Preserve critical PDF/A catalog entries (XMP metadata, color profile, language)
+    catalog = reader.root_object
+    writer_catalog = writer._root_object
+    _copy_catalog_entry(catalog, writer_catalog, _KEY_METADATA)
+    _copy_catalog_entry(catalog, writer_catalog, _KEY_OUTPUT_INTENTS)
+    _copy_catalog_entry(catalog, writer_catalog, _KEY_LANG)
+
+    page = writer.pages[page_index]
+    page_height = float(page.mediabox.height)
+
+    def _as_indirect(obj):
+        if isinstance(obj, IndirectObject):
+            return obj
+        return writer._add_object(obj)
+
+    # First, add print lines if requested (they'll be behind the form fields)
+    if add_print_lines:
+        from pypdf.generic import StreamObject
+
+        lines_to_draw = []
+
+        def y_conv(y_top):
+            return page_height - y_top
+
+        # Checkboxes - draw small squares
+        checkbox_offset = 5.5
+        checkbox_rects = [
+            (75, 103 - checkbox_offset, 89, 117 - checkbox_offset),  # betrag_15_euro
+            (160, 103 - checkbox_offset, 174, 117 - checkbox_offset),  # betrag_freiwillig
+        ]
+
+        for x1, y1, x2, y2 in checkbox_rects:
+            y1_pdf = y_conv(y1)
+            y2_pdf = y_conv(y2)
+            lines_to_draw.append(f"{x1} {y2_pdf} m {x2} {y2_pdf} l {x2} {y1_pdf} l {x1} {y1_pdf} l {x1} {y2_pdf} l S")
+
+        # Text fields - draw underlines
+        text_field_lines = [
+            (174, 110, 220),  # betrag_freiwillig_wert
+            (180, 151, 520),  # vorname_name
+            (180, 173, 520),  # strasse
+            (180, 195, 520),  # plz_ort
+            (180, 217, 520),  # email
+            (180, 239, 520),  # geburtsdatum
+            (180, 261, 520),  # hochzeitsdatum
+            (180, 283, 520),  # eintritt_ab
+            (135, 479, 290),  # ort_datum_1
+            (240, 716, 520),  # kontoinhaber
+            (240, 742, 520),  # kreditinstitut
+            (240, 767, 520),  # iban
+            (135, 804, 290),  # ort_datum_2
+        ]
+
+        for x1, y_top, x2 in text_field_lines:
+            y_pdf = y_conv(y_top)
+            lines_to_draw.append(f"{x1} {y_pdf} m {x2} {y_pdf} l S")
+
+        # Combine all drawing commands
+        line_content = "q\n0.5 w\n0 0 0 RG\n" + "\n".join(lines_to_draw) + "\nQ\n"
+
+        # Prepend to existing page content (so lines are drawn first, then form fields on top)
+        if "/Contents" in page:
+            existing_content = page["/Contents"]
+            new_stream = StreamObject()
+            new_stream._data = line_content.encode('latin-1')
+            new_stream_ref = writer._add_object(new_stream)
+
+            if isinstance(existing_content, ArrayObject):
+                # Insert at beginning so lines are behind everything
+                existing_content.insert(0, new_stream_ref)
+            else:
+                # Convert to array with new stream first
+                existing_ref = _as_indirect(existing_content)
+                page[NameObject("/Contents")] = ArrayObject([new_stream_ref, existing_ref])
+
+    # Now add form fields (on top of the lines)
     field_height = 12.8
     checkbox_height = 14.0
 
     def to_rect(x1, y_top, x2, height):
-        """Convert top-based y to PDF user-space rect (origin at bottom-left)."""
-        y2 = page_height - y_top
+        """Convert top-based y to PDF user-space rect (origin at bottom-left).
+
+        Adjusts y_top upward by approximately half the field height to vertically
+        center the field with the text baseline.
+        """
+        # Offset to align field center with text baseline (11pt font ≈ 5.5pt adjustment)
+        y_adjusted = y_top - 5.5
+        y2 = page_height - y_adjusted
         return (x1, y2 - height, x2, y2)
 
     if _KEY_ACROFORM not in writer_catalog:
@@ -352,6 +531,23 @@ def add_form_fields(pdf_bytes: bytes) -> bytes:
     if _KEY_FIELDS not in acroform:
         acroform[NameObject(_KEY_FIELDS)] = ArrayObject()
     fields_array = acroform[_KEY_FIELDS]
+
+    if NameObject("/NeedAppearances") not in acroform:
+        acroform[NameObject("/NeedAppearances")] = NumberObject(1)
+    if NameObject("/DA") not in acroform:
+        acroform[NameObject("/DA")] = TextStringObject("/Helv 11 Tf 0 g")
+    if NameObject("/DR") not in acroform:
+        acroform[NameObject("/DR")] = DictionaryObject()
+    dr = acroform[NameObject("/DR")]
+    if NameObject("/Font") not in dr:
+        dr[NameObject("/Font")] = DictionaryObject()
+    font_dict = dr[NameObject("/Font")]
+    if NameObject("/Helv") not in font_dict:
+        font_dict[NameObject("/Helv")] = DictionaryObject({
+            NameObject("/Type"): NameObject("/Font"),
+            NameObject("/Subtype"): NameObject("/Type1"),
+            NameObject("/BaseFont"): NameObject("/Helvetica"),
+        })
 
     def add(name, rect, date_fmt=False, align="left"):
         _add_text_field(fields_array, page, name, rect, date_fmt, align)
@@ -389,22 +585,48 @@ def add_form_fields(pdf_bytes: bytes) -> bytes:
     return output.getvalue()
 
 
-def generate(output_path: str) -> None:
-    """Generate the complete editable PDF/A-2U and write it to output_path."""
+def generate(output_path: str, mode: str = "combined") -> None:
+    """Generate the PDF/A-2U and write it to output_path.
+
+    Args:
+        output_path: Path where the PDF should be saved
+        mode: Generation mode:
+            - "combined": Form fields + print lines (default, best for all uses)
+            - "interactive": Form fields only (digital use only)
+            - "print": Print lines only (no interactive fields)
+    """
     with open(ICC_PROFILE_PATH, "rb") as f:
         icc_data = f.read()
 
     pdf_bytes = build_base_pdf(icc_data)
-    pdf_bytes = add_form_fields(pdf_bytes)
+
+    if mode == "print":
+        # Print-only version with lines
+        pdf_bytes = add_print_lines(pdf_bytes)
+    elif mode == "interactive":
+        # Interactive-only version with form fields
+        pdf_bytes = add_form_fields(pdf_bytes, add_print_lines=False)
+    else:
+        # Combined: form fields with print lines underneath (default)
+        pdf_bytes = add_form_fields(pdf_bytes, add_print_lines=True)
 
     os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
     with open(output_path, "wb") as f:
         f.write(pdf_bytes)
-    print(f"Generated: {output_path} ({len(pdf_bytes) / 1024:.1f} KB)")
+
+    mode_desc = {
+        "combined": "combined (interactive + print lines)",
+        "interactive": "interactive-only",
+        "print": "print-only"
+    }
+    print(f"Generated {mode_desc.get(mode, mode)} version: {output_path} ({len(pdf_bytes) / 1024:.1f} KB)")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     default_output = os.path.join(
         repo_root, "static", "files", "pdf", "beitrittserklaerung.pdf"
@@ -414,5 +636,37 @@ if __name__ == "__main__":
         default=default_output,
         help=f"Output path (default: {default_output})",
     )
+
+    mode_group = parser.add_mutually_exclusive_group()
+    mode_group.add_argument(
+        "--interactive-only",
+        action="store_true",
+        help="Generate interactive form fields only (no print lines)",
+    )
+    mode_group.add_argument(
+        "--print-only",
+        action="store_true",
+        help="Generate print lines only (no interactive fields)",
+    )
+    mode_group.add_argument(
+        "--separate",
+        action="store_true",
+        help="Generate both interactive-only and print-only as separate files",
+    )
+
     args = parser.parse_args()
-    generate(args.output)
+
+    if args.print_only:
+        # Generate only print version
+        generate(args.output, mode="print")
+    elif args.interactive_only:
+        # Generate only interactive version
+        generate(args.output, mode="interactive")
+    elif args.separate:
+        # Generate both as separate files
+        generate(args.output, mode="interactive")
+        print_output = args.output.replace(".pdf", "_print.pdf")
+        generate(print_output, mode="print")
+    else:
+        # Default: Generate combined PDF with form fields AND print lines (best of both worlds!)
+        generate(args.output, mode="combined")
