@@ -12,11 +12,6 @@
       "register": "Querflöte"
     },
     {
-      "name": "Rahel",
-      "familyName": "Baltensperger",
-      "register": "Querflöte"
-    },
-    {
       "name": "Julia",
       "familyName": "Cordes",
       "register": "Querflöte"
@@ -30,13 +25,6 @@
       "name": "Hanna",
       "familyName": "Reinacher",
       "register": "Querflöte"
-    },
-
-
-    {
-      "name": "Rahel",
-      "familyName": "Baltensperger",
-      "register": "Oboe"
     },
 
 
@@ -316,11 +304,6 @@
     {
       "name": "Dietmar",
       "familyName": "Müller",
-      "register": "Tuba"
-    },
-    {
-      "name": "Simon",
-      "familyName": "Wiggers",
       "register": "Tuba"
     },
 
