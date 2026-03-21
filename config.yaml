@@ -23,7 +23,7 @@ markup:
     renderer:
       unsafe: true
 
-enableGitInfo: false
+enableGitInfo: true
 
 menu:
   main:
