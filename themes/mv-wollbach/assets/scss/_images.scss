@@ -1,12 +1,16 @@
 @import 'global-variables';
 
 figure {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+
   img {
     display: block;
     height: auto;
     max-height: calc(75vh - #{$top-nav-height});
     max-width: 100%;
     margin: 0 auto;
+    transition: transform var(--transition-base);
 
     &.small-200 {
       max-height: 200px;
@@ -15,5 +19,9 @@ figure {
     &.small-300 {
       max-height: 300px;
     }
+  }
+
+  &:hover img {
+    transform: scale(1.02);
   }
 }
