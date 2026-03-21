@@ -2,7 +2,6 @@
 
 figure {
   border-radius: var(--radius-md);
-  overflow: hidden;
 
   img {
     display: block;
@@ -10,7 +9,8 @@ figure {
     max-height: calc(75vh - #{$top-nav-height});
     max-width: 100%;
     margin: 0 auto;
-    transition: transform var(--transition-base);
+    border-radius: var(--radius-md);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
 
     &.small-200 {
       max-height: 200px;
@@ -22,6 +22,7 @@ figure {
   }
 
   &:hover img {
-    transform: scale(1.02);
+    transform: scale(1.01);
+    box-shadow: var(--shadow-md);
   }
 }

@@ -1,5 +1,5 @@
-$light-grey: #f5f5f5;
-$light-grey-hover: #eee;
+$light-grey: #eeece7;
+$light-grey-hover: #e4e1db;
 $dark-grey: #555;
 $active-bg: #a9852a;
 
@@ -13,18 +13,20 @@ $active-bg: #a9852a;
   font-weight: 400;
   margin: 0 var(--space-1) var(--space-2);
   padding: var(--space-1) var(--space-3);
-  transition: background-color var(--transition-fast), color var(--transition-fast);
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
   border: 1px solid transparent;
 
   &:hover {
     background-color: $light-grey-hover;
-    border-color: var(--color-border);
+    color: #2e2e2e;
+    border-color: rgba($active-bg, 0.2);
   }
 
   &.active {
     background-color: $active-bg;
     color: #fff;
-    border-color: darken($active-bg, 8%);
+    border-color: darken($active-bg, 6%);
+    font-weight: 600;
   }
 }
 
