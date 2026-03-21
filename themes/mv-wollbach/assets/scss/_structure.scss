@@ -5,7 +5,7 @@ $footer-shadow-gray: #0c0d0e;
 $footer-border-gray: #e7e7e7;
 
 %content-width-behavior {
-  width: 80vw;
+  width: 82vw;
   max-width: $content-max-width;
   margin: 0 auto;
 }
@@ -14,19 +14,19 @@ $footer-border-gray: #e7e7e7;
 header {
   @extend %content-width-behavior;
   min-height: 200px;
-  margin-top: $top-nav-height + 30px;
+  margin-top: $top-nav-height + 40px;
 }
 
 header {
   &~.content {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }
 
 @include breakpoint(0, $mobile-max-width) {
   %width-and-padding-reset {
     width: initial;
-    padding: 0 5px;
+    padding: 0 var(--space-4);
   }
 
   .footer {
@@ -41,45 +41,55 @@ header {
 }
 
 .page-title {
-  margin-top: 40px;
+  margin-top: var(--space-7);
+  padding-bottom: var(--space-3);
 }
 
 .footer {
   background-color: $gray-lightest;
-  height: 60px;
-  margin: 30px 0 20px;
-  border-color: $footer-border-gray;
-  box-shadow: 0 1px 0 rgba($footer-shadow-gray, .1), 0 1px 3px rgba($footer-shadow-gray, .1), 0 4px 20px rgba($footer-shadow-gray, .035), 0 1px 1px rgba($footer-shadow-gray, .025);
+  min-height: 64px;
+  margin: var(--space-7) 0 var(--space-5);
+  border-top: 1px solid $footer-border-gray;
+  box-shadow: 0 -1px 0 rgba($footer-shadow-gray, 0.04);
 
   ul {
     @extend %content-width-behavior;
     list-style: none;
     padding-left: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 var(--space-2);
+    min-height: 64px;
   }
 
   li {
-    display: inline-block;
-    padding: 0 10px;
-    line-height: 40px;
-    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-2) var(--space-3);
+    line-height: 1.5;
+    height: auto;
   }
 
   .social {
-    height: 20px;
-    text-align: right;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 
     li {
-      height: 20px;
-      line-height: 20px;
+      height: auto;
+      line-height: 1;
     }
   }
 
   a {
     text-decoration: none;
-    color: darken($gray-lightest, 35%);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+    transition: color var(--transition-fast);
 
     &:hover {
-      color: darken($gray-lightest, 50%);
+      color: var(--color-accent);
       text-decoration: none;
     }
   }
