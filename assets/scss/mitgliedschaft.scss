@@ -6,12 +6,13 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
+  gap: var(--space-5);
 }
 
 .side-by-side {
-  width: calc(50% - 20px);
+  width: calc(50% - var(--space-5) / 2);
 
   @include breakpoint(0, $mobile-max-width) {
-    width: initial;
+    width: 100%;
   }
 }

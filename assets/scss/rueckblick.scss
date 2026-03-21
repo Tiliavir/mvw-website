@@ -5,11 +5,20 @@
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 2rem;
+  gap: var(--space-3);
+  margin-bottom: var(--space-7);
 
   figure {
     margin: 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition-base), transform var(--transition-base);
+
+    &:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
 
     &:first-child {
       flex: 1 1 100%;
@@ -23,7 +32,7 @@
     }
 
     &:not(:first-child) {
-      flex: 1 1 calc(50% - 10px);
+      flex: 1 1 calc(50% - var(--space-3) / 2);
 
       img {
         width: 100%;
