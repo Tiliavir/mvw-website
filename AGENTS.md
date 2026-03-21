@@ -37,7 +37,7 @@ Runs both stylelint (SCSS) and ESLint (TypeScript/JavaScript):
 ```bash
 npm run validate
 ```
-Runs HTML validation without full build. Displays warning about view-transitions rule status.
+Runs HTML validation without full build.
 
 ### Search Index Generation
 ```bash
@@ -80,21 +80,38 @@ The project uses GitHub Actions (see `.github/workflows/ci.yml`). CI runs:
 - **Types**: Always specify types for function parameters and return types
 - **DOM Queries**: Use generic type parameter (e.g., `querySelector<HTMLElement>`)
 - **Null Safety**: Use optional chaining (`?.`) and nullish coalescing where appropriate
-- **Initialization**: Use non-null assertion (`!`) only when DOM element existence is guaranteed
+- **Non-null assertion (`!`)**: Only use when DOM element existence is guaranteed (e.g., inside a `querySelectorAll` forEach where child elements must exist)
 
 Example from codebase:
 ```typescript
-class App {
+class Index {
   public static initialize(): void {
-    const nav = document.querySelector<HTMLElement>(".navigation");
-    if (!nav) return;
-    // ...
-  }
-
-  private static registerScroll(): void {
-    // ...
+      const carousels = document.querySelectorAll<HTMLElement>('.carousel');
+      carousels.forEach((carousel) => {
+        const ele = carousel.querySelector<HTMLUListElement>('ul')!;
+        const firstSlide = ele.querySelector<HTMLLIElement>('li:nth-child(1)')!;
+        
+        const nextArrow = carousel.querySelector<HTMLElement>('.next')!;
+        nextArrow.addEventListener('click', () => { /* ... */ });
+      });
   }
 }
+```
+
+### Debounce Pattern
+
+Use debounce for scroll event handlers to improve performance:
+
+```typescript
+function debounce(fn: Function): () => void {
+  let timeout: number;
+  return function (this: any, ...args: any[]) {
+    if (timeout) window.cancelAnimationFrame(timeout);
+    timeout = window.requestAnimationFrame(() => fn.apply(this, args));
+  };
+}
+
+ele.addEventListener('scroll', debounce(setSelected));
 ```
 
 ### SCSS / CSS
@@ -125,6 +142,11 @@ Example from codebase:
   }
 }
 ```
+
+### Linting Configuration
+
+- **ESLint**: Uses flat config (`eslint.config.mjs`). Parser: `@typescript-eslint/parser`
+- **Stylelint**: Extends `stylelint-config-recommended-scss`. Custom rules in `.stylelintrc`
 
 ### Imports / Build Structure
 
@@ -166,11 +188,10 @@ Example from codebase:
 │   ├── assets/
 │   │   ├── scss/           # Theme SCSS (global styles, variables, mixins)
 │   │   └── ts/             # Theme TypeScript
-│   ├── layouts/            # Hugo templates
-│   └── postcss.config.js
-├── package.json            # npm configuration
-├── .stylelintrc           # Stylelint configuration
-└── README.md
+│   └── layouts/            # Hugo templates
+├── eslint.config.mjs       # ESLint flat config
+├── .stylelintrc            # Stylelint configuration
+└── package.json            # npm configuration
 ```
 
 ---
@@ -198,8 +219,8 @@ npm install <package>
 ## Editor Configuration
 
 The project uses:
-- **ESLint**: JavaScript/TypeScript linting
-- **Stylint**: SCSS linting
+- **ESLint**: JavaScript/TypeScript linting (flat config format)
+- **Stylelint**: SCSS linting
 - **PostCSS + Autoprefixer**: CSS processing
 
 Ensure your editor has appropriate extensions for ESLint and Stylelint support.
