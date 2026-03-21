@@ -120,27 +120,27 @@ $brand-fill: #fff;
         color: $color;
         position: relative;
 
-        & > a {
-          &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 15px;
-            right: 15px;
-            height: 2px;
-            background-color: $highlight-color;
-            transform: scaleX(0);
-            transform-origin: center;
-            transition: transform var(--transition-base);
-            border-radius: 1px;
-          }
+        // Underline indicator sits on the li itself, not the a,
+        // so it doesn't conflict with the dropdown chevron ::after on the a.
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 15px;
+          right: 15px;
+          height: 2px;
+          background-color: $highlight-color;
+          transform: scaleX(0);
+          transform-origin: center;
+          transition: transform var(--transition-base);
+          border-radius: 1px;
         }
 
         &:hover,
         &:focus {
           color: $color-hover-and-focus;
 
-          & > a::after {
+          &::after {
             transform: scaleX(1);
           }
         }
@@ -148,9 +148,8 @@ $brand-fill: #fff;
         &.active {
           color: $color-active;
 
-          & > a::after {
+          &::after {
             transform: scaleX(1);
-            background-color: $highlight-color;
           }
         }
       }
@@ -168,26 +167,25 @@ $brand-fill: #fff;
       box-shadow: var(--shadow-lg);
       border-radius: 0 0 var(--radius-md) var(--radius-md);
       overflow: hidden;
+      background-color: $background-color;
 
       li {
         a {
+          color: $color;
           transition: color var(--transition-fast), background-color var(--transition-fast);
 
           &:hover {
-            color: $highlight-color;
-            background-color: var(--color-accent-subtle);
+            color: $color-hover-and-focus;
+            background-color: rgba(255, 255, 255, 0.08);
           }
         }
 
         &.active {
-          color: $highlight-color;
-          background-color: var(--color-accent-subtle);
+          a {
+            color: $highlight-color;
+          }
         }
       }
-    }
-
-    &:hover > ul {
-      background-color: inherit;
     }
   }
 
@@ -201,10 +199,8 @@ $brand-fill: #fff;
         & > li {
           color: $gray;
 
-          & > a {
-            &::after {
-              background-color: $highlight-color;
-            }
+          &::after {
+            background-color: $highlight-color;
           }
 
           &:hover,
@@ -223,8 +219,19 @@ $brand-fill: #fff;
       & > ul {
         background-color: $body-bg;
 
-        li a:hover {
-          background-color: var(--color-accent-subtle);
+        li {
+          a {
+            color: $gray-base;
+
+            &:hover {
+              color: $highlight-color;
+              background-color: var(--color-accent-subtle);
+            }
+          }
+
+          &.active a {
+            color: $highlight-color;
+          }
         }
       }
     }
