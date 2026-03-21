@@ -1,10 +1,11 @@
 .fueller {
   float: right;
-  padding-left: 20px;
+  padding-left: var(--space-5);
 }
 
 .registereintrag {
   td {
     border: 0;
+    padding: var(--space-2) var(--space-3);
   }
 }

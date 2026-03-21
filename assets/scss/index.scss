@@ -5,17 +5,21 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: var(--space-3);
 
   .mvw-brand {
-    padding: 5px 0;
+    padding: var(--space-2) 0;
     width: 40%;
   }
 
   .open-air {
     width: 55%;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: opacity var(--transition-fast);
 
     &:hover {
-      opacity: .9;
+      opacity: 0.92;
     }
   }
 
@@ -33,11 +37,14 @@ header {
 }
 
 .tiles {
-  margin-top: 30px;
+  margin-top: var(--space-6);
 }
 
 .carousel {
   position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
 
   ul {
     overflow: auto;
@@ -45,13 +52,13 @@ header {
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    background: #ccc;
+    background: #c8c8c8;
     scrollbar-width: none;
     margin: 0;
     padding: 0;
 
     &::-webkit-scrollbar {
-      display: none; // Hide scrollbar for WebKit browsers
+      display: none;
     }
 
     li {
@@ -85,8 +92,9 @@ header {
         justify-content: center;
         align-items: center;
         color: white;
-        font-weight: bold;
-        font-size: 20px;
+        font-weight: 700;
+        font-size: var(--font-size-lg);
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
       }
     }
   }
@@ -96,14 +104,20 @@ header {
     display: none;
     user-select: none;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 44px;
     color: white;
     position: absolute;
-    padding: 15px 15px 30px;
+    padding: var(--space-4) var(--space-4) var(--space-6);
     top: 50%;
     transform: translateY(-50%);
     z-index: 9;
     line-height: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    transition: opacity var(--transition-fast);
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   .next {

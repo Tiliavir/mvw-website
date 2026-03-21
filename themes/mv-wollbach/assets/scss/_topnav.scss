@@ -2,8 +2,8 @@
 @import 'mixins/breakpoint';
 @import 'topnav-theme';
 
-$brand-width: 80px;
-$brand-padding: 0 10px 0 5px;
+$brand-width: 86px;
+$brand-padding: 0 12px 0 8px;
 
 .navigation {
   font-size: $font-size-base;
@@ -54,11 +54,12 @@ $brand-padding: 0 10px 0 5px;
     height: auto;
 
     a {
-      padding: 10px 15px;
+      padding: 11px 16px;
       display: block;
       text-decoration: none;
       color: inherit;
       cursor: pointer;
+      transition: color var(--transition-fast);
     }
   }
 }

@@ -1,13 +1,14 @@
-$warning-fg: #8a6d3b;
-$warning-bg: #fcf8e3;
-$warning-border: #faebcc;
+$warning-fg: #7a5c2a;
+$warning-bg: #fdf8ed;
+$warning-border: #e8d5a3;
 
 .ausverkauft {
   text-align: center;
   color: $warning-fg;
   background-color: $warning-bg;
-  padding: 15px;
-  margin-bottom: 20px;
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
   border: 1px solid $warning-border;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
 }

@@ -52,13 +52,15 @@ small {
 }
 
 .konzert {
-  padding: 10px;
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast);
 
   h2 {
-    margin: 0;
+    margin: 0 0 var(--space-2);
   }
 
   &:nth-of-type(2n) {
-    background-color: $gray-lightest;
+    background-color: var(--color-surface);
   }
 }
