@@ -1,13 +1,12 @@
 // colors
-// $highlight-color: #07b;
 $highlight-color: #a9852a;
 $secondary-highlight-color: #4a4a4a;
 
-$gray-base: #333;
+$gray-base: #2e2e2e;
 $gray: #555;
-$gray-light: #999;
+$gray-light: #888;
 $gray-lighter: #ddd;
-$gray-lightest: #f5f5f5;
+$gray-lightest: #f6f6f6;
 $body-bg: #fff;
 $black: #000;
 
@@ -18,18 +17,69 @@ $gray-light-border-color: $gray-lighter;
 
 // fonts
 $font-family: 'Open Sans', Arial, sans-serif;
-$font-size-larger: 18px;
-$font-size-large: 16px;
-$font-size-base: 14px;
-$font-size-small: 12px;
+$font-size-larger: 19px;
+$font-size-large: 17px;
+$font-size-base: 15px;
+$font-size-small: 13px;
 
-$line-height-base: 1.428571429;
-$line-height-extra: 1.1 * $line-height-base;
+$line-height-base: 1.6;
+$line-height-extra: 1.05 * $line-height-base;
 
 // structure
-$top-nav-height: 50px;
+$top-nav-height: 54px;
 $header-min-height: 200px;
 $header-max-width: 1200px;
 $content-max-width: 1100px;
 
 $mobile-max-width: 768px;
+
+// CSS custom properties — design token layer
+:root {
+  // Brand colors
+  --color-accent: #{$highlight-color};
+  --color-accent-light: #{lighten($highlight-color, 10%)};
+  --color-accent-subtle: #{rgba($highlight-color, 0.1)};
+  --color-text: #{$gray-base};
+  --color-text-muted: #{$gray};
+  --color-text-subtle: #{$gray-light};
+  --color-bg: #{$body-bg};
+  --color-surface: #{$gray-lightest};
+  --color-border: #{$gray-lighter};
+  --color-border-strong: #{$gray-border-color};
+
+  // Typography
+  --font-family: #{$font-family};
+  --font-size-xs: #{$font-size-small};
+  --font-size-sm: #{$font-size-base};
+  --font-size-md: #{$font-size-large};
+  --font-size-lg: #{$font-size-larger};
+  --font-size-xl: 22px;
+  --font-size-display: 26px;
+  --line-height-base: #{$line-height-base};
+
+  // Spacing scale
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  // Border radius scale
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  // Elevation / shadow scale
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 28px rgba(0, 0, 0, 0.10), 0 4px 10px rgba(0, 0, 0, 0.06);
+  --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.12), 0 8px 18px rgba(0, 0, 0, 0.07);
+
+  // Transitions
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+}
