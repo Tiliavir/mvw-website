@@ -16,26 +16,24 @@ $tile-bg-color-hover: rgba(15, 15, 15, 0.65);
 }
 
 .tiles {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-5);
 }
 
 .tile {
   font-size: 1.05rem;
-  display: inline-block;
   font-weight: 400;
-  width: calc(50% - var(--space-5) / 2);
-  margin-bottom: 0;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  border: 1px solid transparent;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 
   &:hover {
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     box-shadow: var(--shadow-xl);
+    border-color: rgba($highlight-color, 0.3);
   }
 
   a {
@@ -54,14 +52,18 @@ $tile-bg-color-hover: rgba(15, 15, 15, 0.65);
   .title {
     font-weight: 700;
     font-size: var(--font-size-md);
+    font-family: $font-family-display;
     letter-spacing: 0.01em;
     margin-bottom: var(--space-2);
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   }
 
   .tile-content {
     color: $tile-color;
     padding: var(--space-5);
     line-height: 1.55;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -73,16 +75,13 @@ $tile-bg-color-hover: rgba(15, 15, 15, 0.65);
 
   &:hover {
     background: $tile-bg-color-hover;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
   }
 }
 
 @include breakpoint(0, $mobile-max-width) {
-  .tile {
-    width: 100%;
-  }
-
   .tiles {
+    grid-template-columns: 1fr;
     gap: var(--space-4);
   }
 }

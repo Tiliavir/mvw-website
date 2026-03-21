@@ -6,8 +6,8 @@ $gray-base: #2e2e2e;
 $gray: #555;
 $gray-light: #888;
 $gray-lighter: #ddd;
-$gray-lightest: #f6f6f6;
-$body-bg: #fff;
+$gray-lightest: #f5f3f0;
+$body-bg: #faf9f6;
 $black: #000;
 
 $text-color: $gray-base;
@@ -17,6 +17,7 @@ $gray-light-border-color: $gray-lighter;
 
 // fonts
 $font-family: 'Open Sans', Arial, sans-serif;
+$font-family-display: 'Lora', Georgia, serif;
 $font-size-larger: 19px;
 $font-size-large: 17px;
 $font-size-base: 15px;
@@ -49,6 +50,7 @@ $mobile-max-width: 768px;
 
   // Typography
   --font-family: #{$font-family};
+  --font-family-display: #{$font-family-display};
   --font-size-xs: #{$font-size-small};
   --font-size-sm: #{$font-size-base};
   --font-size-md: #{$font-size-large};

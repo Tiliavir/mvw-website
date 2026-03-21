@@ -46,11 +46,11 @@ header {
 }
 
 .footer {
-  background-color: $gray-lightest;
+  background-color: #1c1c1c;
   min-height: 64px;
-  margin: var(--space-7) 0 var(--space-5);
-  border-top: 1px solid $footer-border-gray;
-  box-shadow: 0 -1px 0 rgba($footer-shadow-gray, 0.04);
+  margin: var(--space-7) 0 0;
+  padding: var(--space-5) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 
   ul {
     @extend %content-width-behavior;
@@ -60,15 +60,24 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 0 var(--space-2);
-    min-height: 64px;
+    min-height: 40px;
   }
 
   li {
     display: inline-flex;
     align-items: center;
-    padding: var(--space-2) var(--space-3);
+    padding: var(--space-1) var(--space-3);
     line-height: 1.5;
     height: auto;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
   }
 
   .social {
@@ -79,12 +88,14 @@ header {
     li {
       height: auto;
       line-height: 1;
+      border-right: none;
+      padding: var(--space-1) var(--space-3);
     }
   }
 
   a {
     text-decoration: none;
-    color: var(--color-text-muted);
+    color: rgba(255, 255, 255, 0.55);
     font-size: var(--font-size-xs);
     transition: color var(--transition-fast);
 

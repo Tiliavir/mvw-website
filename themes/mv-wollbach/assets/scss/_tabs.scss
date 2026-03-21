@@ -35,10 +35,11 @@
 
   & > .tab {
     &.active {
-      border: 1px solid var(--color-border);
-      border-bottom-color: $body-bg;
-      background-color: $body-bg;
-      color: var(--color-accent);
+      border: 1px solid transparent;
+      border-bottom: 3px solid $highlight-color;
+      background-color: transparent;
+      color: $highlight-color;
+      font-weight: 700;
     }
   }
 
@@ -117,7 +118,8 @@
 
     .tab {
       &.active {
-        background-color: var(--color-surface);
+        background-color: transparent;
+        border-bottom: 3px solid $highlight-color;
       }
     }
   }
@@ -130,12 +132,12 @@
     border-top-left-radius: var(--radius-sm);
     border-top-right-radius: var(--radius-sm);
     border: 1px solid transparent;
-    border-bottom-color: var(--color-border);
-    transition: background-color var(--transition-fast), color var(--transition-fast);
+    border-bottom: 2px solid transparent;
+    transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
 
     &:hover {
       &:not(.active) {
-        background-color: var(--color-surface);
+        background-color: rgba($highlight-color, 0.04);
         color: var(--color-accent);
       }
     }

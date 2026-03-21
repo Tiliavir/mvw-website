@@ -4,10 +4,13 @@
 @include breakpoint(0, 480px) {
   h1 {
     font-size: 24px;
+    &::after {
+      width: 36px;
+    }
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -87,12 +90,14 @@ button {
 }
 
 blockquote {
-  padding: 14px 22px;
+  padding: 16px 24px;
   margin: 0 0 24px;
-  border-left: 4px solid $highlight-color;
-  background-color: var(--color-accent-subtle);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  border-left: 3px solid $highlight-color;
+  background-color: rgba($highlight-color, 0.04);
   color: var(--color-text-muted);
+  font-style: italic;
+  font-size: 1.05em;
+  line-height: 1.7;
 }
 
 table {
@@ -133,7 +138,7 @@ h2,
 h3 {
   margin-top: 28px;
   margin-bottom: 8px;
-
+  font-family: $font-family-display;
   small {
     font-size: 65%;
   }
@@ -151,23 +156,38 @@ h6 {
 }
 
 h1 {
-  font-weight: 600;
-  font-size: 1.5 * $font-size-larger;
-  color: $highlight-color;
-  letter-spacing: -0.01em;
-  border-bottom: 2px solid var(--color-accent-subtle);
-  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.65 * $font-size-larger;
+  color: $gray-base;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  border-bottom: 2px solid rgba($highlight-color, 0.25);
+  padding-bottom: 10px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 48px;
+    height: 2px;
+    background-color: $highlight-color;
+  }
 }
 
 h2 {
-  font-size: $font-size-larger;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-size: 1.35 * $font-size-larger;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: $gray-base;
 }
 
 h3 {
   font-size: $font-size-large;
-  font-weight: 600;
+  font-weight: 700;
+  color: $gray-base;
+  letter-spacing: -0.01em;
 }
 
 h4 {
@@ -192,12 +212,24 @@ p {
   line-height: $line-height-extra;
 }
 
-figcaption > p {
+figcaption {
   font-style: italic;
   text-align: center;
   color: var(--color-text-muted);
   font-size: var(--font-size-xs);
-  margin-top: 6px;
+  margin-top: var(--space-2);
+  hyphens: auto;
+  line-height: 1.5;
+
+  p {
+    margin: 0;
+    font-size: inherit;
+    font-style: inherit;
+    text-align: inherit;
+    color: inherit;
+    hyphens: inherit;
+    line-height: inherit;
+  }
 }
 
 ul,
