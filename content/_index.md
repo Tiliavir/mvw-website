@@ -8,19 +8,17 @@ customJs:
   - ts/index.ts
 ---
 
-{{< comment >}}
 <header>
   <div class="open-air">
-    <a href="{{< ref "2026-jahreskonzert.md" >}}">
-      {{< figure src="img/26_konzert_banner.webp"
-                 alt="Jahreskonzert 2026: Let the Good Times ROLL"
+    <a href="{{< ref "2026-open-air.md" >}}">
+      {{< figure src="img/open-air.jpg"
+                 alt="Open-Air 2026"
                  sizes="(max-width: 480px) 480px, 768px"
                  isAboveTheFold=true
       >}}
     </a>
   </div>
 </header>
-{{< /comment >}}
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 

@@ -4,7 +4,7 @@
 header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: var(--space-4);
   align-items: stretch;
 
@@ -26,7 +26,6 @@ header {
   }
 
   .open-air {
-    width: 58%;
     border-radius: var(--radius-lg);
     overflow: hidden;
     transition: opacity var(--transition-fast), box-shadow var(--transition-fast);
