@@ -35,7 +35,7 @@ Bekannten!
 
 Hier können Sie den [Flyer herunterladen](/files/flyer/26_open-air_flyer.pdf) und
 direkt Ihre Plätze [in unserem Ticketshop](https://tickets.mv-wollbach.de) sichern.
-Der Vorverkauf startet am 27. April um 10:00 Uhr. Eintritt: 19€ (bis 26. Juni),
+Der Vorverkauf startet am 25. April um 10:00 Uhr. Eintritt: 19€,
 ab 27. Juni: 24€ (zzgl. Vorverkaufsgebühr).
 
 **Wir freuen uns auf Ihren Besuch.**
