@@ -3381,7 +3381,6 @@
           "conductor": "Oliver Hauser",
           "program": [
             {"title": "All the Things You Are", "composers": []},
-            {"title": "Begrüßung", "composers": []},
             {"title": "Celebration", "composers": []},
             {"title": "25 or 6 to 4", "composers": []},
             {"title": "Hard to Say I'm Sorry", "composers": []},
@@ -3390,24 +3389,24 @@
             {"title": "L'Italiano", "composers": []},
             {"title": "The Time of My Life", "composers": []},
             {"title": "Europa", "composers": []},
-            {"title": "Benny Goodman Memories", "composers": []},
+            {"title": "Benny Goodman Memories", "composers": [], "arrangers": ["Naohiro Iwai"]},
             {"title": "Surfin' USA", "composers": []},
             {"title": "We Are the World", "composers": []},
             {"title": "Bohemian Rhapsody", "composers": []},
-            {"title": "Let the Good Times Roll", "subtitle": "Satz 4", "composers": []},
-            {"title": "17 Jahr blondes Haar – Mit 66 Jahren", "composers": []},
-            {"title": "Der Mann ist das Problem", "composers": []},
-            {"title": "Griechischer Wein – Ich war noch niemals in New York", "composers": []},
-            {"title": "Ein ehrenwertes Haus – Aber Bitte mit Sahne", "composers": []},
+            {"title": "Let the Good Times Roll", "subtitle": "Satz 4", "composers": [], "arrangers": ["Jakob Brenner"]},
+            {"title": "17 Jahr blondes Haar – Mit 66 Jahren", "composers": ["Udo Jürgens", "Thomas Hörbiger", "Wolfgang Hofer"], "arrangers": ["Jakob Brenner"]},
+            {"title": "Der Mann ist das Problem", "composers": ["Udo Jürgens", "Wolfgang Hofer"], "arrangers": ["Jakob Brenner"]},
+            {"title": "Griechischer Wein – Ich war noch niemals in New York", "composers": ["Udo Jürgens", "Michael Kunze"], "arrangers": ["Jakob Brenner"]},
+            {"title": "Ein ehrenwertes Haus – Aber Bitte mit Sahne", "composers": ["Udo Jürgens", "Michael Kunze", "Eckhart Hachfeld"], "arrangers": ["Jakob Brenner"]},
             {"title": "Moliendo Café", "composers": []},
             {"title": "Moves Like Jagger", "composers": []},
             {"title": "Get Lucky", "composers": []},
             {"title": "Satellite", "composers": []},
             {"title": "This Love", "composers": []},
             {"title": "Ain't Nobody", "composers": []},
-            {"title": "Let the Good Times Roll", "subtitle": "Satz 3", "composers": []},
-            {"title": "Let Me Entertain You", "composers": []},
-            {"title": "Let the Good Times Roll", "composers": []}
+            {"title": "Let the Good Times Roll", "subtitle": "Satz 3", "composers": [], "arrangers": ["Jakob Brenner"]},
+            {"title": "Let Me Entertain You", "composers": ["Robbie Williams", "Guy Chambers"], "arrangers": ["Jakob Brenner"]},
+            {"title": "Let the Good Times Roll", "composers": ["Louis Jordan"], "arrangers": ["Jakob Brenner"]}
           ]
         }
       ]
