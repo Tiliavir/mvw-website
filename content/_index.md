@@ -8,6 +8,7 @@ customJs:
   - ts/index.ts
 ---
 
+{{< comment >}}
 <header>
   <div class="open-air">
     <a href="{{< ref "2026-open-air.md" >}}">
@@ -19,6 +20,7 @@ customJs:
     </a>
   </div>
 </header>
+{{< /comment >}}
 
 <h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
 
