@@ -3367,6 +3367,52 @@
       ]
     },
     {
+      "category": "Konzert",
+      "title": "Open-Air 2026",
+      "location": {
+        "location": "Schulhof Wollbach",
+        "dates": [
+          "2026-07-04"
+        ]
+      },
+      "parts": [
+        {
+          "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+          "conductor": "Oliver Hauser",
+          "program": [
+            {"title": "All the Things You Are", "composers": []},
+            {"title": "Begrüßung", "composers": []},
+            {"title": "Celebration", "composers": []},
+            {"title": "25 or 6 to 4", "composers": []},
+            {"title": "Hard to Say I'm Sorry", "composers": []},
+            {"title": "Best of Gypsy Kings", "composers": []},
+            {"title": "I Do, I Do, I Do", "composers": []},
+            {"title": "L'Italiano", "composers": []},
+            {"title": "The Time of My Life", "composers": []},
+            {"title": "Europa", "composers": []},
+            {"title": "Benny Goodman Memories", "composers": []},
+            {"title": "Surfin' USA", "composers": []},
+            {"title": "We Are the World", "composers": []},
+            {"title": "Bohemian Rhapsody", "composers": []},
+            {"title": "Let the Good Times Roll", "subtitle": "Satz 4", "composers": []},
+            {"title": "17 Jahr blondes Haar – Mit 66 Jahren", "composers": []},
+            {"title": "Der Mann ist das Problem", "composers": []},
+            {"title": "Griechischer Wein – Ich war noch niemals in New York", "composers": []},
+            {"title": "Ein ehrenwertes Haus – Aber Bitte mit Sahne", "composers": []},
+            {"title": "Moliendo Café", "composers": []},
+            {"title": "Moves Like Jagger", "composers": []},
+            {"title": "Get Lucky", "composers": []},
+            {"title": "Satellite", "composers": []},
+            {"title": "This Love", "composers": []},
+            {"title": "Ain't Nobody", "composers": []},
+            {"title": "Let the Good Times Roll", "subtitle": "Satz 3", "composers": []},
+            {"title": "Let Me Entertain You", "composers": []},
+            {"title": "Let the Good Times Roll", "composers": []}
+          ]
+        }
+      ]
+    },
+    {
       "category": "Jahreskonzert",
       "title": "Let the Good Times Roll!",
       "location": {
