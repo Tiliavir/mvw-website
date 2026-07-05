@@ -3,13 +3,13 @@
   "termine": {
     "2026": [
       {
-        "title": "Marschmusikfestival",
+        "title": "SummerStage",
         "location": {
-          "name": "In Wollbach inkl. Nebenorte",
-          "address": "Wollbach"
+          "name": "Vor dem Theater",
+          "address": "Freiburg im Breisgau"
         },
-        "starttime": "2026-10-11",
-        "endtime": "2026-10-11"
+        "starttime": "2026-07-23T19:00:00Z",
+        "endtime": "2026-07-23T22:00:00Z"
       },
       {
         "title": "Sauserbummel",
@@ -21,40 +21,13 @@
         "endtime": "2026-10-10"
       },
       {
-        "title": "SummerStage",
+        "title": "Marschmusikfestival",
         "location": {
-          "name": "Vor dem Theater",
-          "address": "Freiburg im Breisgau"
-        },
-        "starttime": "2026-07-23T19:00:00Z",
-        "endtime": "2026-07-23T22:00:00Z"
-      },
-      {
-        "title": "Open-Air 2026",
-        "location": {
-          "name": "Bei der Schule / Kandertalhalle",
+          "name": "In Wollbach inkl. Nebenorte",
           "address": "Wollbach"
         },
-        "starttime": "2026-07-04T18:00:00Z",
-        "endtime": "2026-07-04T22:00:00Z"
-      },
-      {
-        "title": "Fastnachtsfeuer",
-        "location": {
-          "name": "Kandertalhalle",
-          "address": "Wollbach"
-        },
-        "starttime": "2026-02-28T18:00:00Z",
-        "endtime": "2026-02-28T22:00:00Z"
-      },
-      {
-        "title": "Generalversammlung",
-        "location": {
-          "name": "Kandertalhalle",
-          "address": "Wollbach"
-        },
-        "starttime": "2026-02-19T19:15:00Z",
-        "endtime": "2026-02-19T22:00:00Z"
+        "starttime": "2026-10-11",
+        "endtime": "2026-10-11"
       }
     ]
   }
