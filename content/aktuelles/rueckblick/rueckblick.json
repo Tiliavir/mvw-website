@@ -1246,7 +1246,7 @@
         "starttime": "2017-01-27",
         "endtime": "2017-01-28",
         "title": "Jahreskonzert mit Solisten",
-        "content": "Am Freitag den 27. und Samstag den 28. Januar veranstalteten wir unser alljährliches Jahreskonzert in der Kandertalhalle in Wollbach. Unter dem Titel [Jahreskonzert mit Solisten](blog_2017-jahreskonzert.html) präsentierten einige junge Musiker ihr Können.",
+        "content": "Am Freitag den 27. und Samstag den 28. Januar veranstalteten wir unser alljährliches Jahreskonzert in der Kandertalhalle in Wollbach. Unter dem Titel [Jahreskonzert mit Solisten](/blog/2017-jahreskonzert/) präsentierten einige junge Musiker ihr Können.",
         "keywords": [
           "Konzert",
           "Jahreskonzert"
@@ -1276,7 +1276,7 @@
       {
         "starttime": "2016-12-04",
         "title": "Benefiz Advents Konzert",
-        "content": "Mit dem Lions Club als Veranstalter spielten wir ein [Benefiz Advents Konzert](blog_2016-adventskonzert.html) in der Kirche in Wollbach bei dem das Jugendorchester und mehrere kleine Ensembles zu hören waren.",
+        "content": "Mit dem Lions Club als Veranstalter spielten wir ein [Benefiz Advents Konzert](/blog/2016-adventskonzert/) in der Kirche in Wollbach bei dem das Jugendorchester und mehrere kleine Ensembles zu hören waren.",
         "keywords": [
           "Konzert"
         ],
@@ -1324,13 +1324,13 @@
       {
         "starttime": "2016-11-25",
         "title": "Adventskranzverkauf",
-        "content": "Wunderschöne selbstgemachte Adventskränzen und Gestecken haben wir im weihnachtlichen Ambiente des Forsthofes bei Manfred Wampfler verkaufen können. Mit Glühwein, Raclette und Würsten konnte man es sich bei musikalischer Begleitung durch das Vorstufen- und Jugendorchester gut gehen lassen. [Zum Flyer des Adventskranverkaufs](blog_2016-adventskranz.html)."
+        "content": "Wunderschöne selbstgemachte Adventskränzen und Gestecken haben wir im weihnachtlichen Ambiente des Forsthofes bei Manfred Wampfler verkaufen können. Mit Glühwein, Raclette und Würsten konnte man es sich bei musikalischer Begleitung durch das Vorstufen- und Jugendorchester gut gehen lassen. [Zum Flyer des Adventskranverkaufs](/blog/2016-adventskranz/)."
       },
       {
         "starttime": "2016-10-15",
         "endtime": "2016-10-16",
         "title": "Sauserexpress und Herbstfest mit Jubiläumsgottesdienst",
-        "content": "Der [Sauserbummel](blog_2016-sauserfahrt.html) war auch in diesem Jahr wieder eine sehr schöne Veranstaltung. Musikalisch begleitet wurde der Spaziergang durch das Kandertal von unserer Dampfmusik. Am Sonntag feierte der Musikverein sein 150 jähriges Bestehen am Herbstfest mit Festgottesdienst und musikalisch begleitet vom Musikverein Alpenblick Willaringen, dem Musikverein Whylen und dem Jugendorchester Wollbach. [Zum Flyer des Herbstfestes](/files/flyer/16_herbstfest.pdf). Die Ergebnisse des [Ballon Wettbewerbes](blog_2016-ballonwettbewerb.html) können hier eingesehen werden.",
+        "content": "Der [Sauserbummel](/blog/2016-sauserfahrt/) war auch in diesem Jahr wieder eine sehr schöne Veranstaltung. Musikalisch begleitet wurde der Spaziergang durch das Kandertal von unserer Dampfmusik. Am Sonntag feierte der Musikverein sein 150 jähriges Bestehen am Herbstfest mit Festgottesdienst und musikalisch begleitet vom Musikverein Alpenblick Willaringen, dem Musikverein Whylen und dem Jugendorchester Wollbach. [Zum Flyer des Herbstfestes](/files/flyer/16_herbstfest.pdf). Die Ergebnisse des [Ballon Wettbewerbes](/blog/2016-ballonwettbewerb/) können hier eingesehen werden.",
         "keywords": [
           "Sauserbummel"
         ],
@@ -1407,7 +1407,7 @@
       {
         "starttime": "2016-07-09",
         "title": "Doppelkonzert des Jugendorchesters mit dem Verbandsjugendorchester des AMV",
-        "content": "Zusammen mit dem Verbandsjugendorchester des Alemannischen Musikverbandes gab unser Jugendorchester ein Doppelkonzert in der Kandertalhalle Wollbach. [Zum Programm ...](2016-jugend-doppelkonzert.html)",
+        "content": "Zusammen mit dem Verbandsjugendorchester des Alemannischen Musikverbandes gab unser Jugendorchester ein Doppelkonzert in der Kandertalhalle Wollbach. [Zum Programm ...](/blog/2016-jugend-doppelkonzert/)",
         "keywords": [
           "Konzert"
         ],
@@ -1481,7 +1481,7 @@
       {
         "starttime": "2016-05-08",
         "title": "Kirchenkonzert",
-        "content": "Zusammen mit dem Verbandsjugendorchester Hochrhein gaben wir am 08. Mai unser [Jubiläums-Doppelkonzert](blog_2016-kirchenkonzert.html) in der evangelischen Stadtkirche Kandern.",
+        "content": "Zusammen mit dem Verbandsjugendorchester Hochrhein gaben wir am 08. Mai unser [Jubiläums-Doppelkonzert](/blog/2016-kirchenkonzert/) in der evangelischen Stadtkirche Kandern.",
         "images": [
           {
             "title": "Das Verbandsjugendorchester Hochrhein mit dem Musikverein Wollbach vor der evangelischen Stadtkirche Kandern",
@@ -1558,7 +1558,7 @@
       {
         "starttime": "2016-01-22",
         "endtime": "2016-01-23",
-        "content": "Unter dem Motto ['Still Feeling Good'][konzert] gaben wir unser Jubiläumskonzert am Freitag und Samstag Abend bei toller Atmosphäre und ausverkaufter Halle.\n[konzert]: blog_2016-jahreskonzert.html",
+        "content": "Unter dem Motto ['Still Feeling Good'](/blog/2016-jahreskonzert/) gaben wir unser Jubiläumskonzert am Freitag und Samstag Abend bei toller Atmosphäre und ausverkaufter Halle.",
         "title": "Jahreskonzert",
         "keywords": [
           "Konzert",
