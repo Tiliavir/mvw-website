@@ -23,25 +23,25 @@ alt="Flyer Jahreskonzert 2026 – Vorderseite"
 
 ## Musik, die Herzen bewegt
 
-Seit 30 Jahren dirigiert Oliver Hauser den Musikverein Wollbach mit Leidenschaft und echter Freude an der Musik. In dieser Zeit hat er unzählige musikali-sche Abenteuer geprägt – und vor allem eines geschafft: mit Musik die Herzen von Musikern und Zuhörern immer wieder neu bewegt.
+Seit 30 Jahren dirigiert Oliver Hauser den Musikverein Wollbach mit Leidenschaft und echter Freude an der Musik. In dieser Zeit hat er unzählige musikalische Abenteuer geprägt – und vor allem eines geschafft: mit Musik die Herzen von Musikern und Zuhörern immer wieder neu bewegt.
 
-Feiern Sie dieses besondere Jubiläum mit uns! Erleben Sie einen Konzert-abend voller Energie und Emotionen, an dem wir gemeinsam durch die letzten Jahrzehnte reisen.
+Feiern Sie dieses besondere Jubiläum mit uns! Erleben Sie einen Konzertabend voller Energie und Emotionen, an dem wir gemeinsam durch die letzten Jahrzehnte reisen.
 
-Freuen Sie sich auf unvergessliche Highlights aus Pop und Rock, die Erinnerungen wecken und persönliche Gänse-hautmomente schaffen. Wir freuen uns auf Sie!
+Freuen Sie sich auf unvergessliche Highlights aus Pop und Rock, die Erinnerungen wecken und persönliche Gänsehautmomente schaffen. Wir freuen uns auf Sie!
 
 ## Teil 1: Udo Jürgens
 
-In einer einstündigen Hommage an Udo Jürgens lassen wir High-lights aus seinem letzten Konzert von 2014 in Zürich aufleben.
+In einer einstündigen Hommage an Udo Jürgens lassen wir Highlights aus seinem letzten Konzert von 2014 in Zürich aufleben.
 
-Tiefgründige Texte, starke Emo-tionen und natürlich einige seiner größten Schlager – Musik, die begeistert und mitreißt!
+Tiefgründige Texte, starke Emotionen und natürlich einige seiner größten Schlager – Musik, die begeistert und mitreißt!
 
 Seine Lieder tragen Erinnerungen in sich, die auch heute noch alle Generationen berühren. Jeder Song öffnet eine Tür zu ganz besonderen Momenten.
 
 ## Teil 2: Pop & Rock
 
-Die Beatles, Queen, Nena oder doch Bon Jovi? In unserem Streif-zug durch die Pop- und Rock-geschichte mit mehr als 20 Songs tauchen garantiert auch Hits Ihrer persönlichen Lieblingsstars auf.
+Die Beatles, Queen, Nena oder doch Bon Jovi? In unserem Streifzug durch die Pop- und Rockgeschichte mit mehr als 20 Songs tauchen garantiert auch Hits Ihrer persönlichen Lieblingsstars auf.
 
-Mit einem Orchester in großer Besetzung mit Streichern, Band und Vocals. Lassen wir große Klassiker neu aufleben. Jede Nummer hat ihre eigene Ge-schichte und trifft mitten ins Herz.
+Mit einem Orchester in großer Besetzung mit Streichern, Band und Vocals. Lassen wir große Klassiker neu aufleben. Jede Nummer hat ihre eigene Geschichte und trifft mitten ins Herz.
 
 {{< figure src="img/26_konzert_flyer-inner.webp"
 alt="Flyer Jahreskonzert 2026 – Innenseite"

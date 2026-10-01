@@ -16,7 +16,7 @@ Am Samstag den 08.10.2022 dampft auch in diesem Jahr wieder der "Sauser-Express"
 durch das Kandertal.
 
 Der Zug für diesen etwas anderen Sauserbummel wird in Haltingen um 14:15 Uhr starten
-und nach Hammerstein fahren. Während eines Fussmarsches durch die Rebberge nach Wollbach
+und nach Hammerstein fahren. Während eines Fußmarsches durch die Rebberge nach Wollbach
 wird es dann an mehreren Stationen eine Weinprobe geben.
 
 Für das leibliche Wohl ist anschliessend in der Kandertalhalle in Wollbach mit einer

@@ -15,7 +15,7 @@ Doppelkonzert mit der Stadtmusik Hüningen im Triangle.
 ### Programm
 #### Hüningen
 - Norma, Vincezo Bellini, arr. Franko Cesarini
-- Le seigneur des anneux, Howard Shore, arr. Victor Lopez
+- Le seigneur des anneaux, Howard Shore, arr. Victor Lopez
 - The golden age of the xylophone selection, arr. Floyd E. Werle, Solist Guillaume Bitonti
 - Le roi lion, Hans Zimmer, arr. John Higgins
 - Whistle while you work, Frank Churchill

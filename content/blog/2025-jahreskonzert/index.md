@@ -25,15 +25,15 @@ customCss:
            alt="Jahreskonzert 2025 - Leinen los! Am Freitag den 31. Januar und Samstag den 01. Februar um 20 Uhr in der Kandertalhalle in Wollbach. Einlass 18:30 Uhr."
 >}}
 
-## Reise Informationen
+## Reiseinformationen
 
 Wir laden Sie herzlich ein, ab 18:30 Uhr in der Kandertalhalle an Bord zu gehen. Stärken Sie sich mit einer Auswahl an
-kulinarischen Köstlichkeiten oder geniessen Sie einen Aperetif, um entspannt die Reise zu beginnen.
+kulinarischen Köstlichkeiten oder genießen Sie einen Aperitif, um entspannt die Reise zu beginnen.
 
 Ab 19:30 Uhr gibt Ihnen die Reiseleitung spannende Einblicke in die Stationen unserer musikalischen Fahrt, damit Sie
 bestens vorbereitet in das Abenteuer starten können.
 
-Um 20:00 Uhr heisst es dann: 'Leinen los!' - und wir stechen gemeinsam in See.
+Um 20:00 Uhr heißt es dann: 'Leinen los!' - und wir stechen gemeinsam in See.
 
 ## Leinen los!
 
@@ -58,7 +58,7 @@ Klangreise.
 
 Dieses maritime Konzert wird ein Erlebnis, das Sie nicht verpassen sollten!
 
-**Wir freuen uns darauf, Sie bald bei uns an Bord für diese musikalischen Reise begrüßen dürfen.**
+**Wir freuen uns darauf, Sie bald bei uns an Bord für diese musikalische Reise begrüßen zu dürfen.**
 
 - [Flyer des Jahreskonzertes herunterladen](/files/flyer/25_konzert_flyer.pdf)
 - [Plakat des Jahreskonzertes herunterladen](/files/flyer/25_konzert_plakat.pdf)
