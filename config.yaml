@@ -12,9 +12,17 @@ disableKinds:
   - "RSS"
   - "section"
 
+outputFormats:
+  LLMS:
+    mediaType: text/plain
+    baseName: llms
+    isPlainText: true
+    notAlternative: true
+
 outputs:
   home:
     - HTML
+    - LLMS
   page:
     - HTML
 

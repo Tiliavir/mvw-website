@@ -1,0 +1,75 @@
+{{- $concert := .concert -}}
+{{- $dates := $concert.location.dates -}}
+{{- $performers := slice -}}
+{{- $works := slice -}}
+{{- $soloists := slice -}}
+
+{{- range $concert.parts -}}
+  {{- $group := dict "@type" "MusicGroup" "name" .orchestraOrEnsemble -}}
+  {{- with .conductor -}}
+    {{- $conductor := dict "@type" "OrganizationRole" "roleName" "Dirigent" "member" (dict "@type" "Person" "name" .) -}}
+    {{- $group = merge $group (dict "member" $conductor) -}}
+  {{- end -}}
+  {{- $performers = $performers | append $group -}}
+
+  {{- range .program -}}
+    {{- $work := dict "@type" "MusicComposition" "name" .title -}}
+    {{- with .subtitle -}}
+      {{- $work = merge $work (dict "alternateName" .) -}}
+    {{- end -}}
+    {{- with .composers -}}
+      {{- $composers := slice -}}
+      {{- range . -}}
+        {{- $composers = $composers | append (dict "@type" "Person" "name" .) -}}
+      {{- end -}}
+      {{- $work = merge $work (dict "composer" $composers) -}}
+    {{- end -}}
+    {{- with .arrangers -}}
+      {{- $arrangers := slice -}}
+      {{- range . -}}
+        {{- $arrangers = $arrangers | append (dict "@type" "Role" "roleName" "Arrangement" "contributor" (dict "@type" "Person" "name" .)) -}}
+      {{- end -}}
+      {{- $work = merge $work (dict "contributor" $arrangers) -}}
+    {{- end -}}
+    {{- with .parts -}}
+      {{- $movements := slice -}}
+      {{- range . -}}
+        {{- $movements = $movements | append (dict "@type" "MusicComposition" "name" .title) -}}
+        {{- range .soloists -}}
+          {{- $soloists = $soloists | append (dict "@type" "Role" "roleName" .part "performer" (dict "@type" "Person" "name" .name)) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $work = merge $work (dict "includedComposition" $movements) -}}
+    {{- end -}}
+    {{- range .soloists -}}
+      {{- $soloists = $soloists | append (dict "@type" "Role" "roleName" .part "performer" (dict "@type" "Person" "name" .name)) -}}
+    {{- end -}}
+    {{- $works = $works | append $work -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $description := $concert.category -}}
+{{- with $concert.subtitle -}}
+  {{- $description = printf "%s: %s" $concert.category . -}}
+{{- end -}}
+
+{{- $event := dict
+  "@type" "MusicEvent"
+  "name" (default $concert.category $concert.title)
+  "description" $description
+  "url" .url
+  "startDate" (index $dates 0)
+  "location" (dict "@type" "Place" "name" $concert.location.location)
+  "performer" ($performers | append $soloists)
+  "workPerformed" $works
+-}}
+
+{{- if gt (len $dates) 1 -}}
+  {{- $subEvents := slice -}}
+  {{- range $dates -}}
+    {{- $subEvents = $subEvents | append (dict "@type" "MusicEvent" "name" (default $concert.category $concert.title) "startDate" .) -}}
+  {{- end -}}
+  {{- $event = merge $event (dict "endDate" (index $dates (sub (len $dates) 1)) "subEvent" $subEvents) -}}
+{{- end -}}
+
+{{- return $event -}}
