@@ -1,7 +1,7 @@
 ---
 title: Forsthof Open-Air
 subtitle: im historischen Forsthof in der Oberen Dorfstraße
-description: Musikalischer und kulinarischer Genuß in exklusivem Ambiente.
+description: Musikalischer und kulinarischer Genuss in exklusivem Ambiente.
 keywords: [Open-Air, Forsthof, Wollbach, Konzert]
 publishDate: 2018-05-18T00:00:00.000Z
 menu:
@@ -10,7 +10,7 @@ menu:
 ---
 
 Am Samstag den 9. Juni lädt der Musikverein Wollbach Sie zu einer ganz besonderen Premiere ein:
-**Musikalischer und kulinarischer Genuß in exklusivem Ambiente!**
+**Musikalischer und kulinarischer Genuss in exklusivem Ambiente!**
 
 Der Innenhof des historischen Forsthauses in der Oberen Dorfstraße bietet die fürstliche
 Kulisse. Gereicht werden edle Weine, exklusives Bier und erlesene Speisen, sowie Erfrischungen
