@@ -41,9 +41,9 @@ Wir freuen uns auf Ihren Besuch.
 
 **Das besondere Erlebnis**
 
-Geniessen Sie die Gemütlichkeit der für Sie reservierten Sitzplätze in der Gartenwirtschaft des Restaurants "Alte Krone".
+Genießen Sie die Gemütlichkeit der für Sie reservierten Sitzplätze in der Gartenwirtschaft des Restaurants "Alte Krone".
 
-Sie werden am Platz bedient, geniessen eine exklusive Getränkeauswahl und werden mit Speisen vom Team der Alten Krone verwöhnt.
+Sie werden am Platz bedient, genießen eine exklusive Getränkeauswahl und werden mit Speisen vom Team der Alten Krone verwöhnt.
 
 - Vorverkauf: 25€
 - Abendkasse: 27€

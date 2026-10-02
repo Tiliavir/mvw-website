@@ -1,6 +1,6 @@
 ---
 title: Still Feelin' Good
-description: Die CD "Still Feelin' Good" anlässlich des 150 jährigen Jubiläums des Musikvereins Wollbach zu unserem Jahreskonzert 2016.
+description: Die CD "Still Feelin' Good" anlässlich des 150-jährigen Jubiläums des Musikvereins Wollbach zu unserem Jahreskonzert 2016.
 keywords: [CD, Aufnahme, Still Feelin' Good, Still Feeling Good, Studio 80, Städele, Musikverein Wollbach, Verkauf]
 publishDate: 2016-03-06T00:00:00.000Z
 menu:

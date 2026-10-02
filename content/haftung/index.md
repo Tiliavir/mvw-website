@@ -1,7 +1,7 @@
 ---
 title: Haftungsausschluss
-description: Das Impressum der Webseite des Musikvereins Wollbach.
-keywords: [Impressum, Kontakt, Übersicht, Webseiteninformationen, Informationen zur Webseite, Rechtiliches, Haftung, Haftungsausschluss, Datenschutz]
+description: Der Haftungsausschluss der Webseite des Musikvereins Wollbach.
+keywords: [Impressum, Kontakt, Übersicht, Webseiteninformationen, Informationen zur Webseite, Rechtliches, Haftung, Haftungsausschluss, Datenschutz]
 ---
 
 ## Inhalt des Onlineangebotes

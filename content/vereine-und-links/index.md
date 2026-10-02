@@ -16,7 +16,7 @@ dieser Freundschaft.
 Die Musikgesellschaft Bannwil wurde 1879 gegründet. Der Verein besteht aus
 30 Mitgliedern im Alter zwischen 16 und 72 Jahren, spielt in der 4.
 Stärkeklasse Harmonie und nimmt an den verschiedenen Eidg.-, Kant.- und Amtsfesten teil,
-an welchen er immer wieder grosse Erfolge feiern kann.
+an welchen er immer wieder große Erfolge feiern kann.
 
 {{< figure src="img/bannwil.jpg" alt="Musikgesellschaft Bannwil" >}}
 

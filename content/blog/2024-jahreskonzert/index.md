@@ -28,7 +28,7 @@ Kindheitserinnerungen wach. Jede Generation ist neu fasziniert von den zeitlos e
 alt="Jahreskonzert 2024 - Hör gut zu! Am Freitag den 26. und Samstag den 27. Januar um 20 Uhr in der Kandertalhalle in Wollbach. Einlass 18:30 Uhr."
 >}}
 
-Wir laden Sie herzlich ein, sich bei einem besonderen Konzert für Gross und Klein ganz in diese Welt der Geschichten
+Wir laden Sie herzlich ein, sich bei einem besonderen Konzert für Groß und Klein ganz in diese Welt der Geschichten
 fallen zu lassen. Mit einem vollen Orchester, Erzählern und Schauspielern werden sie lebendig.
 
 Begleiten Sie uns auf dieser fantastischen Reise, bei der wir das Bücherregal durchstöbern und die Erzählungen
@@ -42,7 +42,7 @@ Natürlich sind Kinder mit ihren Familien ganz besonders zu diesem Konzert einge
 Kinderbereich mit Plätzen direkt beim Orchester, bieten wir auch eine verkürzte Nachmittagsvorstellung um 14:00
 Uhr (Dauer etwa eine Stunde) für unsere kleinen Zuhörer an.
 
-**Wir begrüssen Sie in der Kandertalhalle Wollbach**
+**Wir begrüßen Sie in der Kandertalhalle Wollbach**
 
 - [Flyer des Jahreskonzertes herunterladen](/files/flyer/24_jahreskonzert_flyer.pdf)
 - [Tickets](https://tickets.mv-wollbach.de)

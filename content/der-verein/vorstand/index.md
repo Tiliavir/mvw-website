@@ -1,6 +1,6 @@
 ---
 title: Vorstandschaft
-description: Hier finden Sie den richtigen Ansprechpartner des Musikvereins Wollbachs.
+description: Hier finden Sie den richtigen Ansprechpartner des Musikvereins Wollbach.
 keywords: [Vorstand, Vorstandschaft, Ansprechpartner, Kontakt]
 menu:
   main:
@@ -17,7 +17,7 @@ customCss:
 "Im Februar 2005 übernahm ich das Amt der 1. Vorsitzenden von Werner van
 Linn. Die Liebe zur Musik, die Pflege eines Kulturguts, die Neugier auf
 musikalisch hohe Ansprüche und nicht zuletzt die Gemeinschaft und der
-Zusammenhalt von 'jung' und 'alt' motivieren mich dieses Amt auszufügen."
+Zusammenhalt von 'jung' und 'alt' motivieren mich dieses Amt auszuüben."
 
 ### … über die Vorstandschaft:
 "Ohne die ganze Vorstandschaft, wäre diese Arbeit nicht möglich; sie

@@ -1,6 +1,6 @@
 ---
 title: 1250 Jahre Wollbach
-description: Wollbach feiert sein 1250 jähriges Bestehen mit einem großen Festwochenende.
+description: Wollbach feiert sein 1250-jähriges Bestehen mit einem großen Festwochenende.
 keywords: [Wollbach, Jubiläum, 1250 Jahre, Kandern, Lörrach]
 publishDate: 2017-04-20T00:00:00.000Z
 menu:
@@ -17,5 +17,5 @@ Jubiläum musikalisch mitgestalten zu können.
 
 {{< figure src="img/1250.png"
            alt="1250 Jahre Wollbach"
-           caption="Wollbach feiert sein 1250 jähriges Bestehen"
+           caption="Wollbach feiert sein 1250-jähriges Bestehen"
 >}}

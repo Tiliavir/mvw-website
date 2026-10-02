@@ -38,13 +38,13 @@ mehr an den Häusern und Höfen musikalisch zu unterhalten.
 
 Wir freuen uns, wenn viele Zuhörer an den Marschrouten die Kapellen
 willkommen heißen. Kommen Sie auch zum **Zusammentreffen der beiden Vereine
-bei der "Alten Krone" um 18:00 Uhr zum abschliessenden Finale mit Bewirtung.**
+bei der "Alten Krone" um 18:00 Uhr zum abschließenden Finale mit Bewirtung.**
 
 ## Musikgesellschaft Bannwil 1879
 Die Freundschaft zur Musikgesellschaft in der Schweiz (Oberargau, Kanton
 Bern) besteht seit dem Jahr 1966. Der Besuch der Freunde aus der Schweiz
 zum damaligen 100-jährigen Jubiläum des Musikvereins Wollbach wurde für
-alle Beteiligten zu einem unvergeßlichen Erlebnis.
+alle Beteiligten zu einem unvergesslichen Erlebnis.
 
 Die Musikgesellschaft Bannwil marschierte durch Wollbach und begeisterte
 die Zuhörer im Festzelt. Der Vortrag des eigens zu diesem Anlaß vom

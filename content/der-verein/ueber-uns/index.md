@@ -188,7 +188,7 @@ sowie zahlreiche Ehrenmitglieder.
 hatten das große Fest vorzubereiten oder die den Verein finanziell
 unterstützt hatten. Nach einem weiteren musikalischen Vortrag würdigte
 Festpräsident Bgm. Sütterlin die Verdienste des Jubiläumsvereins und
-überreichte eine Geldspende der Gemeindeverwaltung. Mit der ?berreichung
+überreichte eine Geldspende der Gemeindeverwaltung. Mit der Überreichung
 einer neuen Trompete gratulierten die Festjungfrauen und wünschten in einem
 humorvollen Gedicht alles Gute für die Zukunft. Bezirksvorsitzender Krebs
 hielt in seiner Ansprache besonders den Idealismus der Volksmusiker hervor

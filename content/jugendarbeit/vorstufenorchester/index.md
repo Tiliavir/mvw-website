@@ -1,6 +1,6 @@
 ---
 title: Vorstufenorchester
-description: Das Vorstufenorchester der Musikverein Wollbach unter der Leitung von Maria Gut.
+description: Das Vorstufenorchester des Musikvereins Wollbach unter der Leitung von Maria Gut.
 keywords: [Vorstufenorchester, Jugendarbeit, Jungmusiker, Jungmusikerin, Instrument lernen, Ausbildung]
 menu:
   main:
