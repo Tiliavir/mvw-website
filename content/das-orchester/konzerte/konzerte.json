@@ -106,7 +106,7 @@
               "subtitle": "The Battle of Jericho"
             },
             {
-              "title": "Im Schönen Schwabenland"
+              "title": "Im schönen Schwabenland"
             },
             {
               "title": "Irving Berlin Showstoppers"
@@ -172,7 +172,7 @@
               "title": "Wave"
             },
             {
-              "title": "In a gentle rain",
+              "title": "In a Gentle Rain",
               "composers": [
                 "Robert W. Smith"
               ]
@@ -249,10 +249,10 @@
               "title": "My fair lady"
             },
             {
-              "title": "Macky Messer"
+              "title": "Mackie Messer"
             },
             {
-              "title": "Radezky-Marsch"
+              "title": "Radetzky-Marsch"
             }
           ]
         }
@@ -305,7 +305,7 @@
             {
               "title": "Marcia Milano",
               "composers": [
-                "Almicare Ponchielli"
+                "Amilcare Ponchielli"
               ]
             },
             {
@@ -327,7 +327,7 @@
               ]
             },
             {
-              "title": "Funiculi Funicula",
+              "title": "Funiculì, Funiculà",
               "composers": [
                 "Luigi Denza"
               ]
@@ -366,7 +366,7 @@
           "conductor": "Oliver Hauser",
           "program": [
             {
-              "title": "Manhatten Beach March",
+              "title": "Manhattan Beach March",
               "composers": [
                 "John Philip Sousa"
               ]
@@ -383,7 +383,7 @@
                 "Antonín Dvořák"
               ],
               "arrangers": [
-                "Johann de Meij"
+                "Johan de Meij"
               ],
               "parts": [
                 {
@@ -404,7 +404,7 @@
               ]
             },
             {
-              "title": "Eine kleine yiddishe Ragmusik",
+              "title": "Eine kleine Yiddishe Ragmusik",
               "composers": [
                 "Adam Gorb"
               ]
@@ -424,7 +424,7 @@
             {
               "title": "America, the Brave",
               "composers": [
-                "Steven Melillo"
+                "Stephen Melillo"
               ]
             },
             {
@@ -516,7 +516,7 @@
               "title": "Theatre Music"
             },
             {
-              "title": "Fate of the gods"
+              "title": "Fate of the Gods"
             },
             {
               "title": "Die Fledermaus"
@@ -534,16 +534,16 @@
               "title": "Eine kleine Yiddishe Ragmusik"
             },
             {
-              "title": "South Ramport Street Parade"
+              "title": "South Rampart Street Parade"
             },
             {
-              "title": "Funiculi, Funicula"
+              "title": "Funiculì, Funiculà"
             },
             {
-              "title": "In a gentle Rain"
+              "title": "In a Gentle Rain"
             },
             {
-              "title": "Yes indeed"
+              "title": "Yes Indeed"
             },
             {
               "title": "Vjenne"
@@ -576,7 +576,7 @@
             {
               "title": "Rhapsody in Blue",
               "composers": [
-                "Georg Gershwin"
+                "George Gershwin"
               ]
             },
             {
@@ -656,7 +656,7 @@
             {
               "title": "Adagio für Bläserensemble",
               "composers": [
-                "Joaquin Rodrigo"
+                "Joaquín Rodrigo"
               ]
             },
             {
@@ -668,7 +668,7 @@
             {
               "title": "Cordoba",
               "composers": [
-                "Isaac Albeniz"
+                "Isaac Albéniz"
               ],
               "soloists": [
                 {
@@ -712,7 +712,7 @@
             {
               "title": "Sonatina Op. 27",
               "composers": [
-                "Zedenek Fibich"
+                "Zdeněk Fibich"
               ],
               "soloists": [
                 {
@@ -1002,9 +1002,9 @@
               ]
             },
             {
-              "title": "Garisson at Goliad",
+              "title": "Garrison at Goliad",
               "composers": [
-                "Steven Melillo"
+                "Stephen Melillo"
               ]
             },
             {
@@ -1016,7 +1016,7 @@
             {
               "title": "Heart of the Hero",
               "composers": [
-                "Steven Melillo"
+                "Stephen Melillo"
               ]
             },
             {
@@ -1072,7 +1072,7 @@
             {
               "title": "Danzón no. 2",
               "composers": [
-                "Arturo Marquez"
+                "Arturo Márquez"
               ],
               "arrangers": [
                 "Oliver Nickel"
@@ -1081,7 +1081,7 @@
             {
               "title": "Deux Danses für Klarinettenchor",
               "composers": [
-                "Masamic Amano"
+                "Masamichi Amano"
               ],
               "parts": [
                 {
@@ -1190,7 +1190,7 @@
         },
         {
           "orchestraOrEnsemble": "Klarinettenchor des Musikvereins",
-          "conductor": "Thomas Kuckuck und Klaus Fischer",
+          "conductor": "Thomas Kuckuk und Klaus Fischer",
           "program": [
             {
               "title": "Toccata und Fuge",
@@ -1252,7 +1252,7 @@
             {
               "title": "Il gurany",
               "composers": [
-                "Antõnio Carlos Gomes"
+                "Antônio Carlos Gomes"
               ]
             },
             {
@@ -1282,7 +1282,7 @@
             {
               "title": "Oblivion",
               "composers": [
-                "Astor Pantaleón Piazolla"
+                "Astor Pantaleón Piazzolla"
               ],
               "soloists": [
                 {
@@ -1294,7 +1294,7 @@
             {
               "title": "Braseijo",
               "composers": [
-                "Edmundo Villani-Córtes"
+                "Edmundo Villani-Côrtes"
               ]
             },
             {
@@ -1425,7 +1425,7 @@
               ]
             },
             {
-              "title": "Diggin on James Brown",
+              "title": "Diggin' on James Brown",
               "composers": [
                 "Emilio Castillo",
                 "Stephen Kupka"
@@ -1502,7 +1502,7 @@
               ]
             },
             {
-              "title": "Cry me a river",
+              "title": "Cry Me a River",
               "composers": [
                 "Arthur Hamilton"
               ],
@@ -1515,7 +1515,7 @@
               ]
             },
             {
-              "title": "At this moment",
+              "title": "At This Moment",
               "composers": [
                 "Billy Vera"
               ],
@@ -1600,7 +1600,7 @@
           "conductor": "Julian Gibbons",
           "program": [
             {
-              "title": "Festliche Overtüre op. 96",
+              "title": "Festliche Ouvertüre op. 96",
               "composers": [
                 "Dmitri Shostakovich"
               ]
@@ -1625,7 +1625,7 @@
           "conductor": "Oliver Hauser",
           "program": [
             {
-              "title": "Tsar Boris - Overtüre",
+              "title": "Tsar Boris - Ouvertüre",
               "composers": [
                 "Vasily Kalinnikov"
               ]
@@ -1676,7 +1676,7 @@
             {
               "title": "Beautiful Savior",
               "composers": [
-                "James Swearing"
+                "James Swearingen"
               ]
             },
             {
@@ -1727,7 +1727,7 @@
             {
               "title": "Nocturne No.3 in g-moll",
               "composers": [
-                "Louis Emmanuell Jadin"
+                "Louis Emmanuel Jadin"
               ]
             }
           ]
@@ -1800,7 +1800,7 @@
               "title": "Tintin",
               "subtitle": "Suite aus dem Musical 'Tim und Struppi - Der Sonnentempel'",
               "composers": [
-                "Dirk Bosse"
+                "Dirk Brossé"
               ],
               "arrangers": [
                 "Johan de Meij"
@@ -1858,7 +1858,7 @@
               "title": "Concerto",
               "subtitle": "für Klarinette und Blasorchester",
               "composers": [
-                "Oscar Navaro"
+                "Óscar Navarro"
               ],
               "soloists": [
                 {
@@ -1934,14 +1934,14 @@
             {
               "title": "Norma",
               "composers": [
-                "Vincezo Bellini"
+                "Vincenzo Bellini"
               ],
               "arrangers": [
-                "Franko Cesarini"
+                "Franco Cesarini"
               ]
             },
             {
-              "title": "Le seigneur des anneux",
+              "title": "Le seigneur des anneaux",
               "composers": [
                 "Howard Shore"
               ],
@@ -1986,7 +1986,7 @@
               "title": "Tintin",
               "subtitle": "Suite aus dem Musical 'Tim und Struppi - Der Sonnentempel'",
               "composers": [
-                "Dirk Bosse"
+                "Dirk Brossé"
               ],
               "arrangers": [
                 "Johan de Meij"
@@ -2036,7 +2036,7 @@
               "title": "Concerto",
               "subtitle": "für Klarinette und Blasorchester",
               "composers": [
-                "Oscar Navaro"
+                "Óscar Navarro"
               ],
               "soloists": [
                 {
@@ -2114,7 +2114,7 @@
             {
               "title": "Dutch Masters Suite",
               "composers": [
-                "Johann de Meij"
+                "Johan de Meij"
               ],
               "parts": [
                 {
@@ -2123,10 +2123,10 @@
                 },
                 {
                   "title": "De Liefdesbrief",
-                  "subtitle": "Jahannes Vermeer"
+                  "subtitle": "Johannes Vermeer"
                 },
                 {
-                  "title": "Prinsjedag",
+                  "title": "Prinsjesdag",
                   "subtitle": "Jan Steen"
                 }
               ]
@@ -2193,7 +2193,7 @@
               ]
             },
             {
-              "title": "Star Wars Triologie",
+              "title": "Star Wars Trilogie",
               "composers": [
                 "John Williams"
               ],
@@ -2295,10 +2295,10 @@
               "title": "Mouth to Mouth"
             },
             {
-              "title": "Digging on James Brown"
+              "title": "Diggin' on James Brown"
             },
             {
-              "title": "Cry me a River"
+              "title": "Cry Me a River"
             },
             {
               "title": "Conga"
@@ -2307,10 +2307,10 @@
               "title": "Dear future Husband"
             },
             {
-              "title": "Can't rely on you"
+              "title": "Can't Rely on You"
             },
             {
-              "title": "Udo Jürgens Das Beste"
+              "title": "Udo Jürgens - Das Beste"
             },
             {
               "title": "Candyman"
@@ -2337,7 +2337,7 @@
               "title": "Deep Purple"
             },
             {
-              "title": "Upside down"
+              "title": "Upside Down"
             },
             {
               "title": "If you don't know me"
@@ -2366,7 +2366,7 @@
           "conductor": "Oliver Hauser",
           "program": [
             {
-              "title": "Overtüre zu 'Fidelio'",
+              "title": "Ouvertüre zu 'Fidelio'",
               "arrangers": [
                 "Simon Scheiwiller"
               ],
@@ -2403,7 +2403,7 @@
               ]
             },
             {
-              "title": "Overtüre zu 'Egmont'",
+              "title": "Ouvertüre zu 'Egmont'",
               "subtitle": "op. 84",
               "composers": [
                 "Ludwig van Beethoven"
@@ -2457,7 +2457,7 @@
         "location": "Kandertalhalle Wollbach",
         "dates": [
           "2022-03-11",
-          "2022-03-11"
+          "2022-03-12"
         ]
       },
       "title": "Metropolis",
@@ -2521,10 +2521,10 @@
               "title": "Bei mir bist Du shein"
             },
             {
-              "title": "Can't rely on you"
+              "title": "Can't Rely on You"
             },
             {
-              "title": "Buona sera"
+              "title": "Buona Sera"
             },
             {
               "title": "Just a Gigolo"
@@ -2566,7 +2566,7 @@
               "title": "At Last"
             },
             {
-              "title": "Upside down"
+              "title": "Upside Down"
             },
             {
               "title": "Deep Purple"
@@ -2581,7 +2581,7 @@
               "title": "Jersey Boys"
             },
             {
-              "title": "Hit the road Jack"
+              "title": "Hit the Road Jack"
             }
           ]
         }
@@ -2666,7 +2666,7 @@
               "title": "Americano"
             },
             {
-              "title": "Buena Sera"
+              "title": "Buona Sera"
             },
             {
               "title": "Just a Gigolo"
@@ -2693,16 +2693,16 @@
               "title": "Minnie the Moocher"
             },
             {
-              "title": "Upside down"
+              "title": "Upside Down"
             },
             {
               "title": "At Last"
             },
             {
-              "title": "You raise me up"
+              "title": "You Raise Me Up"
             },
             {
-              "title": "Someone like you"
+              "title": "Someone Like You"
             },
             {
               "title": "What a wonderful world"
@@ -2714,10 +2714,10 @@
               "title": "New York Medley"
             },
             {
-              "title": "This is me"
+              "title": "This Is Me"
             },
             {
-              "title": "Deep purple"
+              "title": "Deep Purple"
             },
             {
               "title": "Hit the Road Jack"
@@ -2755,9 +2755,9 @@
               ]
             },
             {
-              "title": "Le Carneval des Animaux",
+              "title": "Le Carnaval des Animaux",
               "composers": [
-                "Camille Saint-Saens"
+                "Camille Saint-Saëns"
               ],
               "arrangers": [
                 "o Goto"
@@ -2840,9 +2840,9 @@
               "composers": []
             },
             {
-              "title": "Bei Mir Bist Du Shein",
+              "title": "Bei mir bist Du shein",
               "composers": [
-                "The Andrew Sisters"
+                "The Andrews Sisters"
               ],
               "arrangers": [
                 "Alessandro Hug"
@@ -2941,7 +2941,7 @@
               ]
             },
             {
-              "title": "Hit The Road Jack",
+              "title": "Hit the Road Jack",
               "subtitle": "Ray Charles, Sweet Sisters",
               "composers": [
                 "Percy Mayfield"
@@ -3140,7 +3140,7 @@
     },
     {
       "category": "Konzert",
-      "title": "Wollach Open-Air",
+      "title": "Wollbach Open-Air",
       "subtitle": "",
       "location": {
         "location": "Schulhof Wollbach",
@@ -3158,7 +3158,7 @@
               "composers": []
             },
             {
-              "title": "Cant Rely On You",
+              "title": "Can't Rely on You",
               "composers": []
             },
             {
@@ -3184,7 +3184,7 @@
               "composers": []
             },
             {
-              "title": "At this Moment",
+              "title": "At This Moment",
               "composers": []
             },
             {
@@ -3192,7 +3192,7 @@
               "composers": []
             },
             {
-              "title": "The Time of my Life",
+              "title": "The Time of My Life",
               "composers": []
             },
             {
@@ -3218,7 +3218,7 @@
               "composers": []
             },
             {
-              "title": "Hard To Say I'm Sorry",
+              "title": "Hard to Say I'm Sorry",
               "composers": []
             },
             {
@@ -3228,14 +3228,14 @@
               ]
             },
             {
-              "title": "All The Things You Are",
+              "title": "All the Things You Are",
               "composers": []
             },
             {
               "title": "Kids",
               "composers": [
                 "Robbie Williams",
-                "Kylie Minougue"
+                "Kylie Minogue"
               ]
             },
             {
@@ -3291,11 +3291,11 @@
           "conductor": "Oliver Hauser",
           "program": [
             {
-              "title": "All The Things You Are",
+              "title": "All the Things You Are",
               "composers": []
             },
             {
-              "title": "Cant Rely On You",
+              "title": "Can't Rely on You",
               "composers": []
             },
             {
@@ -3310,7 +3310,7 @@
               "title": "Kids",
               "composers": [
                 "Robbie Williams",
-                "Kylie Minougue"
+                "Kylie Minogue"
               ]
             },
             {
@@ -3322,7 +3322,7 @@
               "composers": []
             },
             {
-              "title": "At this Moment",
+              "title": "At This Moment",
               "composers": []
             },
             {
@@ -3330,7 +3330,7 @@
               "composers": []
             },
             {
-              "title": "The Time of my Life",
+              "title": "The Time of My Life",
               "composers": []
             },
             {
@@ -3364,51 +3364,6 @@
               "title": "Upside Down",
               "composers": []
             }
-          ]
-        }
-      ]
-    },
-    {
-      "category": "Konzert",
-      "title": "Open-Air 2026",
-      "location": {
-        "location": "Schulhof Wollbach",
-        "dates": [
-          "2026-07-04"
-        ]
-      },
-      "parts": [
-        {
-          "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
-          "conductor": "Oliver Hauser",
-          "program": [
-            {"title": "All the Things You Are", "composers": []},
-            {"title": "Celebration", "composers": []},
-            {"title": "25 or 6 to 4", "composers": []},
-            {"title": "Hard to Say I'm Sorry", "composers": []},
-            {"title": "Best of Gypsy Kings", "composers": []},
-            {"title": "I Do, I Do, I Do", "composers": []},
-            {"title": "L'Italiano", "composers": []},
-            {"title": "The Time of My Life", "composers": []},
-            {"title": "Europa", "composers": []},
-            {"title": "Benny Goodman Memories", "composers": [], "arrangers": ["Naohiro Iwai"]},
-            {"title": "Surfin' USA", "composers": []},
-            {"title": "We Are the World", "composers": []},
-            {"title": "Bohemian Rhapsody", "composers": []},
-            {"title": "Let the Good Times Roll", "subtitle": "Satz 4", "composers": [], "arrangers": ["Jakob Brenner"]},
-            {"title": "17 Jahr blondes Haar – Mit 66 Jahren", "composers": ["Udo Jürgens", "Thomas Hörbiger", "Wolfgang Hofer"], "arrangers": ["Jakob Brenner"]},
-            {"title": "Der Mann ist das Problem", "composers": ["Udo Jürgens", "Wolfgang Hofer"], "arrangers": ["Jakob Brenner"]},
-            {"title": "Griechischer Wein – Ich war noch niemals in New York", "composers": ["Udo Jürgens", "Michael Kunze"], "arrangers": ["Jakob Brenner"]},
-            {"title": "Ein ehrenwertes Haus – Aber Bitte mit Sahne", "composers": ["Udo Jürgens", "Michael Kunze", "Eckhart Hachfeld"], "arrangers": ["Jakob Brenner"]},
-            {"title": "Moliendo Café", "composers": []},
-            {"title": "Moves Like Jagger", "composers": []},
-            {"title": "Get Lucky", "composers": []},
-            {"title": "Satellite", "composers": []},
-            {"title": "This Love", "composers": []},
-            {"title": "Ain't Nobody", "composers": []},
-            {"title": "Let the Good Times Roll", "subtitle": "Satz 3", "composers": [], "arrangers": ["Jakob Brenner"]},
-            {"title": "Let Me Entertain You", "composers": ["Robbie Williams", "Guy Chambers"], "arrangers": ["Jakob Brenner"]},
-            {"title": "Let the Good Times Roll", "composers": ["Louis Jordan"], "arrangers": ["Jakob Brenner"]}
           ]
         }
       ]
@@ -3513,7 +3468,7 @@
               ]
             },
             {
-              "title": "Der Gekaufte Drachen",
+              "title": "Der gekaufte Drachen",
               "composers": [
                 "Udo Jürgens",
                 "Irma Holder"
@@ -3523,7 +3478,7 @@
               ]
             },
             {
-              "title": "Ein ehrenwertes Haus - Aber Bitte mit Sahne",
+              "title": "Ein ehrenwertes Haus - Aber bitte mit Sahne",
               "composers": [
                 "Udo Jürgens",
                 "Michael Kunze",
@@ -3534,7 +3489,7 @@
               ]
             },
             {
-              "title": "Let The Good Times Roll",
+              "title": "Let the Good Times Roll",
               "arrangers": [
                 "Jakob Brenner"
               ],
@@ -3562,7 +3517,7 @@
               ]
             },
             {
-              "title": "Let The Good Times Roll",
+              "title": "Let the Good Times Roll",
               "composers": [
                 "Louis Jordan"
               ],
@@ -3589,6 +3544,51 @@
                 "Jakob Brenner"
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Konzert",
+      "title": "Open-Air 2026",
+      "location": {
+        "location": "Schulhof Wollbach",
+        "dates": [
+          "2026-07-04"
+        ]
+      },
+      "parts": [
+        {
+          "orchestraOrEnsemble": "Musikverein Wollbach 1866 e.V.",
+          "conductor": "Oliver Hauser",
+          "program": [
+            {"title": "All the Things You Are", "composers": []},
+            {"title": "Celebration", "composers": []},
+            {"title": "25 or 6 to 4", "composers": []},
+            {"title": "Hard to Say I'm Sorry", "composers": []},
+            {"title": "Best of Gypsy Kings", "composers": []},
+            {"title": "I Do, I Do, I Do", "composers": []},
+            {"title": "L'Italiano", "composers": []},
+            {"title": "The Time of My Life", "composers": []},
+            {"title": "Europa", "composers": []},
+            {"title": "Benny Goodman Memories", "composers": [], "arrangers": ["Naohiro Iwai"]},
+            {"title": "Surfin' USA", "composers": []},
+            {"title": "We Are the World", "composers": []},
+            {"title": "Bohemian Rhapsody", "composers": []},
+            {"title": "Let the Good Times Roll", "subtitle": "Satz 4", "composers": [], "arrangers": ["Jakob Brenner"]},
+            {"title": "17 Jahr blondes Haar - Mit 66 Jahren", "composers": ["Udo Jürgens", "Thomas Hörbiger", "Wolfgang Hofer"], "arrangers": ["Jakob Brenner"]},
+            {"title": "Der Mann ist das Problem", "composers": ["Udo Jürgens", "Wolfgang Hofer"], "arrangers": ["Jakob Brenner"]},
+            {"title": "Griechischer Wein - Ich war noch niemals in New York", "composers": ["Udo Jürgens", "Michael Kunze"], "arrangers": ["Jakob Brenner"]},
+            {"title": "Ein ehrenwertes Haus - Aber bitte mit Sahne", "composers": ["Udo Jürgens", "Michael Kunze", "Eckhart Hachfeld"], "arrangers": ["Jakob Brenner"]},
+            {"title": "Moliendo Café", "composers": []},
+            {"title": "Moves Like Jagger", "composers": []},
+            {"title": "Get Lucky", "composers": []},
+            {"title": "Satellite", "composers": []},
+            {"title": "This Love", "composers": []},
+            {"title": "Ain't Nobody", "composers": []},
+            {"title": "Let the Good Times Roll", "subtitle": "Satz 3", "composers": [], "arrangers": ["Jakob Brenner"]},
+            {"title": "Let Me Entertain You", "composers": ["Robbie Williams", "Guy Chambers"], "arrangers": ["Jakob Brenner"]},
+            {"title": "Let the Good Times Roll", "composers": ["Louis Jordan"], "arrangers": ["Jakob Brenner"]}
           ]
         }
       ]
