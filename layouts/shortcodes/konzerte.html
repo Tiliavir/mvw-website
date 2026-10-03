@@ -127,4 +127,11 @@
   {{ end }}
 </div>
 
+{{ $events := slice }}
+{{ range . }}
+  {{ $year := (time (index .location.dates 0)).Year }}
+  {{ $events = $events | append (partial "concert-jsonld.html" (dict "concert" . "url" (printf "%s#%d" $.Page.Permalink $year))) }}
+{{ end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $events | jsonify | safeJS }}</script>
+
 {{ end }}

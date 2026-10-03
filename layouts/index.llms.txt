@@ -1,0 +1,32 @@
+# {{ site.Title }} 1866 e.V.
+
+> {{ site.Home.Description }}
+
+Blasorchester aus Wollbach (Kandern, Baden-Württemberg) unter der Leitung von Oliver Hauser. Alle Seiten sind statisches HTML; die Konzert-, Termin-, Rückblick- und Vorstandsdaten gibt es zusätzlich als JSON.
+
+## Daten (JSON)
+
+{{ range slice
+  (dict "path" "das-orchester/konzerte" "file" "konzerte.json" "label" "Alle Konzerte seit 1999 mit Datum, Ort, Programm, Komponisten und Solisten")
+  (dict "path" "aktuelles/termine" "file" "termine.json" "label" "Kommende Termine")
+  (dict "path" "aktuelles/rueckblick" "file" "rueckblick.json" "label" "Rückblick auf vergangene Veranstaltungen")
+  (dict "path" "der-verein/vorstand" "file" "vorstand.json" "label" "Vorstandschaft") -}}
+{{- $item := . -}}
+{{- with site.GetPage $item.path -}}
+{{- with .Resources.GetMatch $item.file -}}
+- [{{ .Name }}]({{ .Permalink }}): {{ $item.label }}
+{{ end -}}
+{{- end -}}
+{{- end }}
+## Seiten
+
+{{ range where site.RegularPages "Section" "ne" "blog" -}}
+{{- if not (in (slice "401" "404") .File.ContentBaseName) -}}
+- [{{ .Title }}]({{ .Permalink }}){{ with .Description }}: {{ . }}{{ end }}
+{{ end -}}
+{{- end }}
+## Ankündigungen und Berichte
+
+{{ range (where site.RegularPages "Section" "blog").ByPublishDate.Reverse -}}
+- [{{ .Title }}]({{ .Permalink }}){{ with .Description }}: {{ . }}{{ end }}
+{{ end -}}

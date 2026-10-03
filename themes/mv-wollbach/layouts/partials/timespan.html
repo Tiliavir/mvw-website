@@ -1,5 +1,6 @@
-{{ $starttime := time .start }}
-{{ $endtime := time (default .start .end) }}
+{{ $zone := `(Z|[+-]\d{2}:\d{2})$` }}
+{{ $starttime := time.AsTime (replaceRE $zone "" .start) "Europe/Berlin" }}
+{{ $endtime := time.AsTime (replaceRE $zone "" (default .start .end)) "Europe/Berlin" }}
 {{ $schema := .schema }}
 
 {{ if gt $starttime $endtime }}
@@ -8,12 +9,12 @@
 
 {{ if $schema }}
   {{ if ne $starttime.Hour 0 }}
-    <meta itemprop="startDate" content={{ .start }} />
+    <meta itemprop="startDate" content="{{ $starttime.Format "2006-01-02T15:04:05-07:00" }}" />
   {{ else }}
     <meta itemprop="startDate" content="{{ printf "%d-%0#2d-%0#2d" $starttime.Year $starttime.Month $starttime.Day }}" />
   {{ end }}
   {{ if and (ne $starttime.Hour 0) (ne $starttime $endtime) }}
-    <meta itemprop="endDate" content={{ .end }} />
+    <meta itemprop="endDate" content="{{ $endtime.Format "2006-01-02T15:04:05-07:00" }}" />
   {{ else }}
     <meta itemprop="endDate" content="{{ printf "%d-%0#2d-%0#2d" $endtime.Year $endtime.Month $endtime.Day }}" />
   {{ end }}
