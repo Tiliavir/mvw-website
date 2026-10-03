@@ -2,6 +2,7 @@
 title: "Jahreskonzert 2025: Leinen los!"
 description: Leinen los! Inselzauber und Piratenklänge - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2025.
 keywords: [ Jahreskonzert, Jahreskonzert 2025, Konzert, Fluch der Karibik, Pirates of the Caribbean, Seefahrt, Schiff, Meer ]
+image: img/25_konzert_header.jpg
 publishDate: 2024-12-21T00:00:00.000Z
 menu:
   blog:

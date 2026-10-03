@@ -2,6 +2,7 @@
 title: "Jahreskonzert 2026 – Let the Good Times Roll"
 description: "Jahreskonzert 2026 des Musikvereins Wollbach – „Let the Good Times Roll“. Zwei Konzertteile: Udo-Jürgens-Hommage und Pop/Rock-Hits aus mehreren Jahrzehnten."
 keywords: [ Jahreskonzert, Konzert, Musikverein Wollbach, Let the Good Times Roll, Udo Jürgens, Pop, Rock ]
+image: img/26_konzert_banner.webp
 publishDate: 2025-12-07T00:00:00.000Z
 menu:
   blog:

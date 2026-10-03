@@ -2,6 +2,7 @@
 title: "Wollbach Open Air 2026"
 description: Wollbach Open Air - auf dem Schulhof bei der Kandertalhalle in Wollbach.
 keywords: [Open Air, Wollbach, Konzert, Swing, Big Band, 2026]
+image: img/open-air-header.webp
 publishDate: 2026-04-24T00:00:00.000Z
 menu:
   blog:

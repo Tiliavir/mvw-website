@@ -2,6 +2,7 @@
 title: "Jahreskonzert 2024: Hör gut zu!"
 description: Hör gut zu! Ein magisches Konzerterlebnis - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2024.
 keywords: [Jahreskonzert, Jahreskonzert 2024, Konzert, Rock, Symphony, Deep Purple, Scorpions]
+image: img/24_konzert_flyer_1.jpg
 publishDate: 2023-12-12T00:00:00.000Z
 menu:
   blog:
