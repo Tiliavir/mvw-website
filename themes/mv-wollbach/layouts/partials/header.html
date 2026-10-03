@@ -1,4 +1,5 @@
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+{{- $isArticle := and .IsPage (eq .Section "blog") -}}
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# {{ if $isArticle }}article: http://ogp.me/ns/article#{{ else }}website: http://ogp.me/ns/website#{{ end }}">
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -12,7 +13,14 @@
   <meta name="description" content="{{.Description}}"/>
   <meta name="keywords" content="{{delimit .Keywords ", "}}"/>
 
+  {{- if $isArticle }}
+  <meta property="og:type" content="article"/>
+  {{- if not .PublishDate.IsZero }}
+  <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}"/>
+  {{- end }}
+  {{- else }}
   <meta property="og:type" content="website"/>
+  {{- end }}
   <meta property="og:title" content="{{- default .Site.Title .Title -}}"/>
   {{- with .Description }}
   <meta property="og:description" content="{{ . }}"/>
@@ -21,7 +29,23 @@
   <meta property="og:url" content="{{ .Permalink }}"/>
   <link rel="canonical" href="{{ .Permalink }}"/>
   {{- end }}
+  {{- /* Optional front matter "image": page resource (e.g. img/banner.webp) or asset path; falls back to the logo. */ -}}
+  {{- $ogImage := "" -}}
+  {{- with and $isArticle .Params.image -}}
+    {{- $img := or ($.Resources.GetMatch .) (resources.Get .) -}}
+    {{- if and $img (eq $img.MediaType.MainType "image") (ne $img.MediaType.SubType "svg") -}}
+      {{- $ogImage = cond (gt $img.Width 1200) ($img.Resize "1200x jpg q85") ($img.Process "jpg q85") -}}
+    {{- else -}}
+      {{- warnf "og:image %q not found or not a raster image | %s" . $.File.Path -}}
+    {{- end -}}
+  {{- end }}
+  {{- with $ogImage }}
+  <meta property="og:image" content="{{ .Permalink }}"/>
+  <meta property="og:image:width" content="{{ .Width }}"/>
+  <meta property="og:image:height" content="{{ .Height }}"/>
+  {{- else }}
   <meta property="og:image" content="{{- .Site.BaseURL -}}img/logo_color.png"/>
+  {{- end }}
   <meta property="og:locale" content="de_DE"/>
   <meta property="og:site_name" content="{{- .Site.Title -}}"/>
 
