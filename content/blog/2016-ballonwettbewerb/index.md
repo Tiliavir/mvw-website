@@ -2,6 +2,7 @@
 title: Ergebnisse des Ballonwettbewerbes
 description: Die Ergebnisse und Preise des Ballonwettbewerbes am Herbstfest mit Gewinnern, Zielort und Preisen.
 keywords: [Ballon, Ballonwettbewerb, Wettbewerb, Herbstfest, Wollbach]
+image: img/ballon.jpg
 publishDate: 2016-11-30T00:00:00.000Z
 menu:
   blog:

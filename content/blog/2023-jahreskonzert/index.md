@@ -2,6 +2,7 @@
 title: "Jahreskonzert 2023: Rock Symphony"
 description: Rock Symphony - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2023.
 keywords: [Jahreskonzert, Jahreskonzert 2023, Konzert, Rock, Symphony, Deep Purple, Scorpions]
+image: img/rock-header.jpg
 publishDate: 2022-12-05T00:00:00.000Z
 menu:
   blog:

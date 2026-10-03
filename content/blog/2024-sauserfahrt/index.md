@@ -2,6 +2,7 @@
 title: Sauserfahrt mit dem Chanderli 2024
 description: Der Sauserbummel 2024 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
 keywords: [Sauserbummel, Sauser-Express, Weinprobe, Kandertal, Herbstfest, Degustation, Wein, Sauser]
+image: img/chanderli.jpg
 publishDate: 2024-04-07T00:00:00.000Z
 menu:
   blog:

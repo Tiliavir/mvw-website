@@ -2,6 +2,7 @@
 title: "Jahreskonzert 2017: Konzert mit Solisten"
 description: Konzert mit Solisten - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2017.
 keywords: [Jahreskonzert, Jahreskonzert 2017, Konzert]
+image: img/17_jahreskonzert.jpg
 publishDate: 2017-01-07T00:00:00.000Z
 menu:
   blog:

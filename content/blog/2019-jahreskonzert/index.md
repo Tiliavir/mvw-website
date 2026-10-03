@@ -2,6 +2,7 @@
 title: "Jahreskonzert 2019: Space Odyssey"
 description: Space Odyssey - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2019.
 keywords: [Jahreskonzert, Jahreskonzert 2019, Konzert]
+image: img/19_jahreskonzert.jpg
 publishDate: 2019-01-13T00:00:00.000Z
 menu:
   blog:

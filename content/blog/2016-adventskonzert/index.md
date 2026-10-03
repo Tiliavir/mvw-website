@@ -2,6 +2,7 @@
 title: Benefiz-Adventskonzert
 description: Der Lions Club Lörrach veranstaltet am Sonntag den 4. Dezember in der Kirche Wollbach ein Benefiz-Adventskonzert mit dem Musikverein Wollbach
 keywords: [Advent, Adventskonzert, Weihnacht, Musik, Kirche, Lions Club]
+image: advent.jpg
 publishDate: 2016-11-23T00:00:00.000Z
 menu:
   blog:

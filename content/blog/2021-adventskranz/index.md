@@ -2,6 +2,7 @@
 title: Adventskranz Verkauf 2021
 description: Am Freitag, den 26.11.2021 ab 19 Uhr veranstaltet der Förderverein Klingendes C im Forsthof in Wollbach einen Adventskranzverkauf mit musikalischer Begleitung des Vorstufen- und Jugendorchesters.
 keywords: [Adventskranz, Jugendorchester, Glühwein, Forsthof, Wollbach]
+image: forsthof.jpg
 publishDate: 2021-11-12T00:00:00.000Z
 menu:
   blog:

@@ -2,6 +2,7 @@
 title: "Jahreskonzert 2018: Barock Konzert"
 description: Barock Konzert - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2018.
 keywords: [Jahreskonzert, Jahreskonzert 2018, Konzert]
+image: img/18_jahreskonzert.jpg
 publishDate: 2017-12-27T00:00:00.000Z
 menu:
   blog:
