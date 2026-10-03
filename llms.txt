@@ -1,0 +1,74 @@
+# Musikverein Wollbach 1866 e.V.
+
+> Die Website des Musikvereins Wollbach 1866 e.V. Alles rund um unsere Auftritte, Jugendarbeit, Besetzung, Bilder und Einblicke in die Vereinshistorie.
+
+Blasorchester aus Wollbach (Kandern, Baden-Württemberg) unter der Leitung von Oliver Hauser. Alle Seiten sind statisches HTML; die Konzert-, Termin-, Rückblick- und Vorstandsdaten gibt es zusätzlich als JSON.
+
+## Daten (JSON)
+
+- [konzerte.json](https://www.mv-wollbach.de/das-orchester/konzerte/konzerte.json): Alle Konzerte seit 1999 mit Datum, Ort, Programm, Komponisten und Solisten
+- [termine.json](https://www.mv-wollbach.de/aktuelles/termine/termine.json): Kommende Termine
+- [rueckblick.json](https://www.mv-wollbach.de/aktuelles/rueckblick/rueckblick.json): Rückblick auf vergangene Veranstaltungen
+- [vorstand.json](https://www.mv-wollbach.de/der-verein/vorstand/vorstand.json): Vorstandschaft
+
+## Seiten
+
+- [Ausbildung](https://www.mv-wollbach.de/jugendarbeit/ausbildung/): Die Jugendarbeit des Musikvereins Wollbach bietet neben einer guten Ausbildung und Talentförderung auch eine tolle Gemeinschaft und viel Spaß am gemeinsamen Musizieren im Vorstufen- und Jugendorchester.
+- [Dampfmusik](https://www.mv-wollbach.de/das-orchester/dampfmusik/): Alles rund um die Dampfmusik des Musikvereins Wollbach.
+- [Datenschutz](https://www.mv-wollbach.de/datenschutz/): Die Datenschutzerklärung der Webseite des Musikvereins Wollbach.
+- [Dirigent](https://www.mv-wollbach.de/das-orchester/dirigent/): Der Dirigent des Musikvereins Wollbach: Oliver Hauser.
+- [Haftungsausschluss](https://www.mv-wollbach.de/haftung/): Der Haftungsausschluss der Webseite des Musikvereins Wollbach.
+- [Impressum](https://www.mv-wollbach.de/impressum/): Das Impressum der Webseite des Musikvereins Wollbach.
+- [Jugendorchester](https://www.mv-wollbach.de/jugendarbeit/jugendorchester/): Das Jugendorchester des Musikvereins Wollbach unter der Leitung von Maria Gut.
+- [Kontakt](https://www.mv-wollbach.de/kontaktformular/): Ideen, Wünsche, Kritik oder Anregungen? Nehmen Sie Kontakt auf mit dem Musikverein Wollbach.
+- [Konzerte](https://www.mv-wollbach.de/das-orchester/konzerte/): Übersicht über Konzerte des Musikvereins Wollbach mit detaillierter Übersicht über Programme und Solisten.
+- [Mitglied werden](https://www.mv-wollbach.de/der-verein/mitgliedschaft/): Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden.
+- [Rückblick](https://www.mv-wollbach.de/aktuelles/rueckblick/): Vergangene Konzerte, Feste und sonstige Anlässe des Musikvereins Wollbach werden hier kurz zusammengefasst.
+- [Seiten-Übersicht](https://www.mv-wollbach.de/seiten-uebersicht/): Eine Übersicht der Inhalte der Webseite des Musikvereins Wollbach.
+- [Suche](https://www.mv-wollbach.de/suche/): Durchsuche Inhalte der Webseite des Musikvereins Wollbach 1866 e.V.
+- [Termine](https://www.mv-wollbach.de/aktuelles/termine/): Eine Übersicht über Termine von Auftritten und Anlässen des Musikvereins Wollbach 1866 e.V.
+- [Unsere Register](https://www.mv-wollbach.de/das-orchester/register/): Die aktuelle Besetzung des Musikvereins Wollbach nach Registern.
+- [Unterstützen Sie uns über Gooding](https://www.mv-wollbach.de/gooding/): Tätigen Sie wie gewohnt Ihre Einkäufe im Internet und unterstützen Sie nebenbei den Musikverein Wollbach - ganz ohne extra Kosten.
+- [Vereine und Links](https://www.mv-wollbach.de/vereine-und-links/): Vereine und Verbände mit denen der Musikverein in langjähriger freundschaftlicher Verbindung steht und eine gute Zusammenarbeit pflegt.
+- [Vorstandschaft](https://www.mv-wollbach.de/der-verein/vorstand/): Hier finden Sie den richtigen Ansprechpartner des Musikvereins Wollbach.
+- [Vorstufenorchester](https://www.mv-wollbach.de/jugendarbeit/vorstufenorchester/): Das Vorstufenorchester des Musikvereins Wollbach unter der Leitung von Maria Gut.
+- [Wir über uns](https://www.mv-wollbach.de/der-verein/ueber-uns/): Ein kurzer Einblick in die Geschichte des Musikvereins Wollbach 1866 e.V.
+
+## Ankündigungen und Berichte
+
+- [Wollbach Open Air 2026](https://www.mv-wollbach.de/blog/2026-open-air/): Wollbach Open Air - auf dem Schulhof bei der Kandertalhalle in Wollbach.
+- [Jahreskonzert 2026 – Let the Good Times Roll](https://www.mv-wollbach.de/blog/2026-jahreskonzert/): Jahreskonzert 2026 des Musikvereins Wollbach – „Let the Good Times Roll“. Zwei Konzertteile: Udo-Jürgens-Hommage und Pop/Rock-Hits aus mehreren Jahrzehnten.
+- [Sauserfahrt mit dem Chanderli 2025](https://www.mv-wollbach.de/blog/2025-sauserfahrt/): Der Sauserbummel 2025 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
+- [Wollbach Open Air 2025](https://www.mv-wollbach.de/blog/2025-open-air/): Wollbach Open Air - auf dem Schulhof bei der Kandertalhalle in Wollbach.
+- [Jahreskonzert 2025: Leinen los!](https://www.mv-wollbach.de/blog/2025-jahreskonzert/): Leinen los! Inselzauber und Piratenklänge - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2025.
+- [Wollbach Open Air 2024](https://www.mv-wollbach.de/blog/2024-open-air/): Wollbach Open Air - auf dem Schulhof bei der Kandertalhalle in Wollbach.
+- [Sauserfahrt mit dem Chanderli 2024](https://www.mv-wollbach.de/blog/2024-sauserfahrt/): Der Sauserbummel 2024 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
+- [Jahreskonzert 2024: Hör gut zu!](https://www.mv-wollbach.de/blog/2024-jahreskonzert/): Hör gut zu! Ein magisches Konzerterlebnis - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2024.
+- [Wollbach Open Air 2023](https://www.mv-wollbach.de/blog/2023-open-air/): Wollbach Open Air - auf dem Schulhof bei der Kandertalhalle in Wollbach.
+- [Jahreskonzert 2023: Rock Symphony](https://www.mv-wollbach.de/blog/2023-jahreskonzert/): Rock Symphony - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2023.
+- [Sauserfahrt mit dem Chanderli 2022](https://www.mv-wollbach.de/blog/2022-sauserfahrt/): Der Sauserbummel 2022 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
+- [Wollbach Open-Air 2022](https://www.mv-wollbach.de/blog/2022-open-air/): Musikalischer und kulinarischer Genuss in exklusivem Ambiente.
+- [Jahreskonzert 2022: Metropolis](https://www.mv-wollbach.de/blog/2022-jahreskonzert/): Metropolis - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2022.
+- [Adventskranz Verkauf 2021](https://www.mv-wollbach.de/blog/2021-adventskranz/): Am Freitag, den 26.11.2021 ab 19 Uhr veranstaltet der Förderverein Klingendes C im Forsthof in Wollbach einen Adventskranzverkauf mit musikalischer Begleitung des Vorstufen- und Jugendorchesters.
+- [Forsthof Open-Air 2020](https://www.mv-wollbach.de/blog/2020-forsthof/): Musikalischer und kulinarischer Genuss in exklusivem Ambiente.
+- [Jahreskonzert 2020: BTHVN](https://www.mv-wollbach.de/blog/2020-jahreskonzert/): BTHVN - Ludwig van Beethoven - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2020.
+- [Sauserfahrt mit dem Chanderli 2019](https://www.mv-wollbach.de/blog/2019-sauserfahrt/): Der Sauserbummel 2019 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
+- [Forsthof Open-Air 2019](https://www.mv-wollbach.de/blog/2019-forsthof/): Musikalischer und kulinarischer Genuss in exklusivem Ambiente.
+- [Jahreskonzert 2019: Space Odyssey](https://www.mv-wollbach.de/blog/2019-jahreskonzert/): Space Odyssey - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2019.
+- [Forsthof Open-Air](https://www.mv-wollbach.de/blog/2018-forsthof/): Musikalischer und kulinarischer Genuss in exklusivem Ambiente.
+- [Sauserfahrt mit dem Chanderli 2018](https://www.mv-wollbach.de/blog/2018-sauserfahrt/): Der Sauserbummel 2018 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
+- [Jahreskonzert 2018: Barock Konzert](https://www.mv-wollbach.de/blog/2018-jahreskonzert/): Barock Konzert - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2018.
+- [Sauserfahrt mit dem Chanderli 2017](https://www.mv-wollbach.de/blog/2017-sauserfahrt/): Der Sauserbummel 2017 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
+- [1250 Jahre Wollbach](https://www.mv-wollbach.de/blog/2017-1250-wollbach/): Wollbach feiert sein 1250-jähriges Bestehen mit einem großen Festwochenende.
+- [Frühlingskonzert - concert de printemps](https://www.mv-wollbach.de/blog/2017-doppelkonzert-huningue/): Das Doppelkonzert der Stadtmusik Hüningen mit dem Musikverein Wollbach
+- [Jahreskonzert 2017: Konzert mit Solisten](https://www.mv-wollbach.de/blog/2017-jahreskonzert/): Konzert mit Solisten - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2017.
+- [Ergebnisse des Ballonwettbewerbes](https://www.mv-wollbach.de/blog/2016-ballonwettbewerb/): Die Ergebnisse und Preise des Ballonwettbewerbes am Herbstfest mit Gewinnern, Zielort und Preisen.
+- [Benefiz-Adventskonzert](https://www.mv-wollbach.de/blog/2016-adventskonzert/): Der Lions Club Lörrach veranstaltet am Sonntag den 4. Dezember in der Kirche Wollbach ein Benefiz-Adventskonzert mit dem Musikverein Wollbach
+- [Adventskranz Verkauf](https://www.mv-wollbach.de/blog/2016-adventskranz/): Am Freitag, den 25.11.2016 ab 19 Uhr veranstaltet der Förderverein Klingendes C im Forsthof in Wollbach einen Adventskranzverkauf mit musikalischer Begleitung des Vorstufen- und Jugendorchesters.
+- [Konzert des Jugendorchesters](https://www.mv-wollbach.de/blog/2016-jugend-doppelkonzert/): Am Samstag den 09. Juli 2016 gibt das Jugendorchester des Musikvereins Wollbach ein Doppelkonzert mit dem Verbandsjugendorchester des AMV.
+- [Marschmusikfestival](https://www.mv-wollbach.de/blog/2016-marschmusikfestival/): Am Samstag den 04. Juni 2016 marschiert der Musikverein Wollbach und die Musikgesellschaft Bannwil durch Wollbach und Nebenorte.
+- [Sauserfahrt mit dem Chanderli 2016](https://www.mv-wollbach.de/blog/2016-sauserfahrt/): Der Sauserbummel 2016 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
+- [Kirchenkonzert 2016](https://www.mv-wollbach.de/blog/2016-kirchenkonzert/): Das Kirchenkonzert mit dem Musikverein Wollbach und dem Verbandsjugendorchester Hochrhein in der ev. Kirche in Kandern.
+- [Still Feelin' Good](https://www.mv-wollbach.de/blog/2016-still-feeling-good/): Die CD "Still Feelin' Good" anlässlich des 150-jährigen Jubiläums des Musikvereins Wollbach zu unserem Jahreskonzert 2016.
+- [Jahreskonzert 2016: Still Feeling Good](https://www.mv-wollbach.de/blog/2016-jahreskonzert/): Still Feeling Good - Das Jahreskonzert des Musikvereins Wollbach im Jahr 2016 anlässlich des 150-jährigen Jubiläums.
+- [Sauserfahrt mit dem Chanderli 2015](https://www.mv-wollbach.de/blog/2015-sauserfahrt/): Der Sauserbummel 2015 durch das Kandertal mit dem Sauser-Express und der Dampfmusik.
