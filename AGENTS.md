@@ -43,7 +43,12 @@ Runs HTML validation without full build.
 ```bash
 npm run index
 ```
-Generates the Lunr search index for the site search functionality.
+Generates the Lunr search index (`public/suche/index.json`) for the site search, using
+[mvw-search-index](https://github.com/Tiliavir/mvw-search-index). Run it after `npm run build`.
+- Indexes the `<main>` element of every page, stemmed for German (`--language de`)
+- Pages with `<meta name="robots" content="noindex">` are skipped
+- The search page (`assets/ts/suche.ts`) must register the same lunr-languages plugin
+  (`lunr.stemmer.support` + `lunr.de`) before `lunr.Index.load()`
 
 ### Single File Linting
 ```bash
