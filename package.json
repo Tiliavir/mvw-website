@@ -15,11 +15,13 @@
     "not dead"
   ],
   "devDependencies": {
+    "@eslint/js": "10.0.1",
     "@types/lunr": "2.3.7",
     "autoprefixer": "10.6.1",
     "eslint": "10.12.0",
     "glob-all": "3.3.1",
-    "mvw-search-index": "2.3.7",
+    "globals": "17.13.0",
+    "mvw-search-index": "3.0.0",
     "postcss": "8.5.29",
     "postcss-cli": "12.0.0",
     "stylelint": "17.16.0",
@@ -29,13 +31,14 @@
     "vnu-jar": "26.10.2"
   },
   "dependencies": {
-    "lunr": "2.3.9"
+    "lunr": "2.3.9",
+    "lunr-languages": "1.22.0"
   },
   "scripts": {
     "validate": "node validate.mjs && echo \"\\033[33m[WARN] Validation is skipping some rules - check if still required, or if view-transitions are finally stable.\\033[0m\"",
     "lint": "stylelint '**/*.scss' && npx eslint .",
     "build": "hugo --minify && npm run validate",
-    "index": "cd ./public/ && mvw-search-index './**/*.html' './suche/index.json' 'main'",
+    "index": "mvw-search-index '**/*.html' public/suche/index.json main --cwd public --language de --base-url / --strip-index-html",
     "postinstall": "npm run lint"
   }
 }

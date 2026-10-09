@@ -12,6 +12,9 @@
   <meta name="author" content="{{- .Site.Title -}}"/>
   <meta name="description" content="{{.Description}}"/>
   <meta name="keywords" content="{{delimit .Keywords ", "}}"/>
+  {{- if in (slice "/401/" "/404/") .RelPermalink }}
+  <meta name="robots" content="noindex"/>
+  {{- end }}
 
   {{- if $isArticle }}
   <meta property="og:type" content="article"/>
