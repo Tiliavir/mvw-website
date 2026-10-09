@@ -21,7 +21,7 @@
     "eslint": "10.12.0",
     "glob-all": "3.3.1",
     "globals": "17.13.0",
-    "mvw-search-index": "github:Tiliavir/mvw-search-index#3f3a236946b0f273382eaef7e14b871b1888b60d",
+    "mvw-search-index": "3.0.0",
     "postcss": "8.5.28",
     "postcss-cli": "12.0.0",
     "stylelint": "17.16.0",
