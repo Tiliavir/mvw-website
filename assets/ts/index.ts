@@ -75,7 +75,7 @@ class Index {
         prevArrow.addEventListener('mousedown', setInteracted);
         prevArrow.addEventListener('touchstart', setInteracted);
 
-        const duration = parseInt(carousel.getAttribute('data-duration') || '0');
+        const duration = Number.parseInt(carousel.dataset.duration ?? '0', 10);
         if (duration > 0) {
           setInterval(() => {
             if (

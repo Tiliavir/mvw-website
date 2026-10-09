@@ -38,8 +38,8 @@
       <p><small>Nähere Informationen können Sie der Datenschutzerklärung von YouTube unter <a
           href="https://www.google.de/intl/de/policies/privacy/" target="_blank" rel="noopener">www.google.de/intl/de/policies/privacy/</a>
         entnehmen.</small></p>
-      <span style="display: block; margin: 1em auto; padding: .25em; background: #AAE6AA; width: 25%; cursor: pointer;"
-            onclick="loadAllIframes();">Video laden</span>
+      <button type="button" style="display: block; margin: 1em auto; padding: .25em; background: #AAE6AA; width: 25%; cursor: pointer; border: 0; font: inherit; color: inherit;"
+              onclick="loadAllIframes();">Video laden</button>
     </div>
     <div id="image-{{ safeJS (md5 (index $hash)) }}"
          style="background-repeat: no-repeat; background-size: cover; filter:blur(5px); height: 100%; width: 100%; background-position: center; position: relative; top: 0;">

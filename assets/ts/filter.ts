@@ -3,7 +3,7 @@ class Filter {
     return find.every((v) => array.includes(v));
   }
 
-  private filters: string[] = [];
+  private readonly filters: string[] = [];
 
   public initialize() {
     const keywords = document.querySelectorAll(".keyword-selector .keyword");

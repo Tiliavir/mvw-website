@@ -61,9 +61,10 @@ npx eslint path/to/file.ts
 
 ### CI/CD
 The project uses GitHub Actions (see `.github/workflows/ci.yml`). CI runs:
-1. `npm ci` - Install dependencies
-2. `npm run build` - Full production build
-3. `npm run index` - Generate search index
+1. `npm ci --ignore-scripts` - Install dependencies without running lifecycle scripts
+2. `npm run lint` - Lint SCSS and TypeScript
+3. `npm run build` - Full production build
+4. `npm run index` - Generate search index
 
 **Note**: There are no automated tests in this project. The CI pipeline only validates linting and build.
 
@@ -150,7 +151,7 @@ Example from codebase:
 
 ### Linting Configuration
 
-- **ESLint**: Flat config (`eslint.config.mjs`) with `@eslint/js` and `typescript-eslint` recommended rules; build output, `static/` and the outdated `assets/ts/*.js` files are ignored
+- **ESLint**: Flat config (`eslint.config.mjs`) with `@eslint/js` and `typescript-eslint` recommended rules; build output and `static/` are ignored
 - **Stylelint**: Extends `stylelint-config-recommended-scss`. Custom rules in `.stylelintrc`
 
 ### Imports / Build Structure
