@@ -121,7 +121,7 @@ $brand-padding: 0 12px 0 8px;
 
       & ~ .navigation-header {
         .navigation-hamburger {
-          span {
+          .navigation-hamburger-icon {
             background-color: transparent;
 
             &::before,
@@ -139,7 +139,7 @@ $brand-padding: 0 12px 0 8px;
           }
 
           &:hover {
-            span {
+            .navigation-hamburger-icon {
               transform: rotate(90deg);
             }
           }
@@ -164,7 +164,16 @@ $brand-padding: 0 12px 0 8px;
       z-index: 1;
     }
 
-    span {
+    .navigation-hamburger-text {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+
+    .navigation-hamburger-icon {
       @extend %burger-slice-style;
       position: relative;
       flex: none;

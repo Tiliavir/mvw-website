@@ -93,7 +93,7 @@
     <img
       src="{{ $r480Webp.RelPermalink }}"
       {{- with $class -}}class="{{ . }}"{{- end -}}
-      {{- with $alt -}}alt="{{ . }}"{{- end -}}
+      alt="{{ $alt | default "" }}"
       {{- with $alt -}}title="{{ . }}"{{- end -}}
       loading="{{ cond $isAboveTheFold "eager" "lazy" }}"
       decoding="{{ cond $isAboveTheFold "sync" "async" }}"

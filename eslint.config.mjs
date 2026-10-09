@@ -8,8 +8,6 @@ export default defineConfig(
     "public/",
     "resources/",
     "static/",
-    // outdated compile output of the .ts files next to them, not used by the site
-    "assets/ts/*.js",
   ]),
   js.configs.recommended,
   tseslint.configs.recommended,

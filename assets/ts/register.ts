@@ -1,5 +1,5 @@
 class Register {
-  private static register: { [id: string]: string[] } = {
+  private static readonly register: { [id: string]: string[] } = {
     "Altsaxophon": ["altsaxophon_1.jpg", "altsaxophon_2.jpg", "altsaxophon_3.jpg", "altsaxophon_4.jpg", "altsaxophon_5.jpg", "saxophon_1.jpg", "saxophon_2.jpg", "saxophon_3.jpg", "saxophon_4.jpg", "saxophon_5.jpg"],
     "Baritonsaxophon": ["baritonsaxophon_1.jpg", "saxophon_1.jpg", "saxophon_2.jpg", "saxophon_3.jpg", "saxophon_4.jpg", "saxophon_5.jpg"],
     "Euphonium": ["euphonium_1.jpg", "euphonium_2.jpg"],
@@ -25,7 +25,7 @@ class Register {
         const src = image.getAttribute("src") || "";
 
         const remainingRegImageUrls = Register.register[title]?.filter(
-            url => src.indexOf(url.replace(".jpg", "")) < 0
+            url => !src.includes(url.replace(".jpg", ""))
         );
 
         if (remainingRegImageUrls && remainingRegImageUrls.length > 0) {
@@ -34,7 +34,7 @@ class Register {
 
           setTimeout(() => {
             const parent = image.parentElement;
-            if (parent && parent.tagName.toLowerCase() === "picture") {
+            if (parent?.tagName.toLowerCase() === "picture") {
               const sources = parent.querySelectorAll("source");
               sources.forEach(srcEl => srcEl.remove());
             }

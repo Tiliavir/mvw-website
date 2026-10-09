@@ -24,7 +24,9 @@ jobs:
         with:
           node-version: 24.x
       - name: npm ci
-        run: npm ci
+        run: npm ci --ignore-scripts
+      - name: Lint
+        run: npm run lint
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:

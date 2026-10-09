@@ -21,14 +21,14 @@ class Appointments {
 
     document.querySelectorAll("main h2").forEach((e) => {
       const next = e.nextElementSibling as HTMLElement | null;
-      if (next && next.tagName === "TABLE" && next.offsetHeight === 0) {
+      if (next?.tagName === "TABLE" && next.offsetHeight === 0) {
         (e as HTMLElement).style.display = "none";
       }
     });
   }
 
   private static addDays(date: Date, days: number): Date {
-    const result = new Date(date.getTime());
+    const result = new Date(date);
     result.setDate(result.getDate() + days);
     return result;
   }
