@@ -1,15 +1,28 @@
-import tsEsLint from "@typescript-eslint/eslint-plugin";
-import tsParser from "@typescript-eslint/parser";
+import js from "@eslint/js";
+import { defineConfig, globalIgnores } from "eslint/config";
+import globals from "globals";
+import tseslint from "typescript-eslint";
 
-export default [
+export default defineConfig(
+  globalIgnores([
+    "public/",
+    "resources/",
+    "static/",
+    // outdated compile output of the .ts files next to them, not used by the site
+    "assets/ts/*.js",
+  ]),
+  js.configs.recommended,
+  tseslint.configs.recommended,
   {
     files: ["**/*.ts"],
-    plugins: {
-      "@typescript-eslint": tsEsLint,
-    },
-
-    languageOptions: {
-      parser: tsParser,
-    }
+    languageOptions: { globals: globals.browser },
   },
-];
+  {
+    files: ["**/*.js", "**/*.mjs"],
+    languageOptions: { globals: globals.node },
+  },
+  {
+    files: ["**/postcss.config.js"],
+    languageOptions: { sourceType: "commonjs" },
+  },
+);

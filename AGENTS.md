@@ -108,11 +108,11 @@ class Index {
 Use debounce for scroll event handlers to improve performance:
 
 ```typescript
-function debounce(fn: Function): () => void {
+function debounce<T extends unknown[]>(fn: (...args: T) => void): (...args: T) => void {
   let timeout: number;
-  return function (this: any, ...args: any[]) {
+  return (...args: T): void => {
     if (timeout) window.cancelAnimationFrame(timeout);
-    timeout = window.requestAnimationFrame(() => fn.apply(this, args));
+    timeout = window.requestAnimationFrame(() => fn(...args));
   };
 }
 
@@ -150,7 +150,7 @@ Example from codebase:
 
 ### Linting Configuration
 
-- **ESLint**: Uses flat config (`eslint.config.mjs`). Parser: `@typescript-eslint/parser`
+- **ESLint**: Flat config (`eslint.config.mjs`) with `@eslint/js` and `typescript-eslint` recommended rules; build output, `static/` and the outdated `assets/ts/*.js` files are ignored
 - **Stylelint**: Extends `stylelint-config-recommended-scss`. Custom rules in `.stylelintrc`
 
 ### Imports / Build Structure
