@@ -91,11 +91,11 @@ class Index {
 }
 
 // Debounce helper
-function debounce(fn: Function): () => void {
+function debounce<T extends unknown[]>(fn: (...args: T) => void): (...args: T) => void {
   let timeout: number;
-  return function (this: any, ...args: any[]) {
+  return (...args: T): void => {
     if (timeout) window.cancelAnimationFrame(timeout);
-    timeout = window.requestAnimationFrame(() => fn.apply(this, args));
+    timeout = window.requestAnimationFrame(() => fn(...args));
   };
 }
 
