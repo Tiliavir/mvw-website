@@ -54,10 +54,10 @@
 
   // Mail popup - special entrance
   .mail-popup.visible {
-    view-transition-name: popup;
+    view-transition-name: mail-popup;
   }
 
-  ::view-transition-new(popup) {
+  ::view-transition-new(mail-popup) {
     animation: popup-entrance 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
