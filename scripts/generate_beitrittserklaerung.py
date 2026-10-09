@@ -6,9 +6,12 @@ for Musikverein Wollbach 1866 e.V.
 Requirements:
     pip install fpdf2 pypdf
 
+The PDF is always written to static/files/pdf/beitrittserklaerung.pdf
+(with --separate, the print version goes to beitrittserklaerung_print.pdf).
+
 Usage:
     python3 generate_beitrittserklaerung.py
-    python3 generate_beitrittserklaerung.py --output /path/to/output.pdf
+    python3 generate_beitrittserklaerung.py --print-only
 """
 import argparse
 import io
@@ -35,6 +38,10 @@ except ImportError:
 import fpdf as _fpdf_pkg
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+OUTPUT_DIR = os.path.join(REPO_ROOT, "static", "files", "pdf")
+OUTPUT_PATH = os.path.join(OUTPUT_DIR, "beitrittserklaerung.pdf")
+PRINT_OUTPUT_PATH = os.path.join(OUTPUT_DIR, "beitrittserklaerung_print.pdf")
 
 ICC_PROFILE_PATH = os.path.join(
     os.path.dirname(_fpdf_pkg.__file__), "data", "color_profiles", "sRGB2014.icc"
@@ -530,17 +537,6 @@ def add_form_fields(pdf_bytes: bytes, page_index: int = 0, with_print_lines: boo
     return _to_bytes(writer)
 
 
-def _safe_output_path(output_path: str) -> str:
-    """Resolve output_path and make sure it is a .pdf file inside the repository."""
-    resolved = os.path.realpath(output_path)
-    repo_root = os.path.realpath(REPO_ROOT)
-    if os.path.commonpath([repo_root, resolved]) != repo_root:
-        sys.exit(f"Output path must be inside {repo_root}: {output_path}")
-    if not resolved.lower().endswith(".pdf"):
-        sys.exit(f"Output must be a .pdf file: {output_path}")
-    return resolved
-
-
 def generate(output_path: str, mode: str = "combined") -> None:
     """Generate the PDF/A-2U and write it to output_path.
 
@@ -551,8 +547,6 @@ def generate(output_path: str, mode: str = "combined") -> None:
             - "interactive": Form fields only (digital use only)
             - "print": Print lines only (no interactive fields)
     """
-    output_path = _safe_output_path(output_path)
-
     with open(ICC_PROFILE_PATH, "rb") as f:
         icc_data = f.read()
 
@@ -568,7 +562,7 @@ def generate(output_path: str, mode: str = "combined") -> None:
         # Combined: form fields with print lines underneath (default)
         pdf_bytes = add_form_fields(pdf_bytes, with_print_lines=True)
 
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     with open(output_path, "wb") as f:
         f.write(pdf_bytes)
 
@@ -585,15 +579,6 @@ if __name__ == "__main__":
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    default_output = os.path.join(
-        REPO_ROOT, "static", "files", "pdf", "beitrittserklaerung.pdf"
-    )
-    parser.add_argument(
-        "--output",
-        default=default_output,
-        help=f"Output path (default: {default_output})",
-    )
-
     mode_group = parser.add_mutually_exclusive_group()
     mode_group.add_argument(
         "--interactive-only",
@@ -614,16 +599,12 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.print_only:
-        # Generate only print version
-        generate(args.output, mode="print")
+        generate(OUTPUT_PATH, mode="print")
     elif args.interactive_only:
-        # Generate only interactive version
-        generate(args.output, mode="interactive")
+        generate(OUTPUT_PATH, mode="interactive")
     elif args.separate:
-        # Generate both as separate files
-        generate(args.output, mode="interactive")
-        print_output = os.path.splitext(args.output)[0] + "_print.pdf"
-        generate(print_output, mode="print")
+        generate(OUTPUT_PATH, mode="interactive")
+        generate(PRINT_OUTPUT_PATH, mode="print")
     else:
-        # Default: Generate combined PDF with form fields AND print lines (best of both worlds!)
-        generate(args.output, mode="combined")
+        # Default: combined PDF with form fields AND print lines
+        generate(OUTPUT_PATH, mode="combined")
