@@ -17,8 +17,8 @@
           "name": "In und um Wollbach",
           "address": "Wollbach"
         },
-        "starttime": "2026-10-10",
-        "endtime": "2026-10-10"
+        "starttime": "2026-10-10T13:00:00Z",
+        "endtime": "2026-10-10T23:00:00Z"
       },
       {
         "title": "Marschmusikfestival",
@@ -26,8 +26,46 @@
           "name": "In Wollbach inkl. Nebenorte",
           "address": "Wollbach"
         },
-        "starttime": "2026-10-11",
-        "endtime": "2026-10-11"
+        "starttime": "2026-10-11T09:00:00Z",
+        "endtime": "2026-10-11T17:00:00Z"
+      },
+      {
+        "title": "Spiel & Spaß Abend",
+        "location": {
+          "name": "Kandertalhalle",
+          "address": "Wollbach"
+        },
+        "starttime": "2026-10-23T19:00:00Z",
+        "endtime": "2026-10-23T22:00:00Z"
+      },
+      {
+        "title": "Volkstrauertag",
+        "location": {
+          "name": "Kirche",
+          "address": "Wollbach"
+        },
+        "starttime": "2026-11-15T10:00:00Z",
+        "endtime": "2026-11-15T12:00:00Z"
+      },
+      {
+        "title": "Wartburgfest Wollbach",
+        "location": {
+          "name": "Kandertalhalle",
+          "address": "Wollbach"
+        },
+        "starttime": "2026-11-29T10:00:00Z",
+        "endtime": "2026-11-29T12:00:00Z"
+      }
+    ],
+    "2027": [
+      {
+        "title": "Konzert 2027",
+        "location": {
+          "name": "Kandertalhalle Wollbach",
+          "address": "Schulstraße 12, 79400 Kandern, Deutschland"
+        },
+        "starttime": "2027-01-22T20:00:00Z",
+        "endtime": "2027-01-23T23:00:00Z"
       }
     ]
   }
