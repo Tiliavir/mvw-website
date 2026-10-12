@@ -4,6 +4,39 @@ class App {
     App.fixAnchors();
     App.registerPopUp();
     App.initializeTabs();
+    App.initializeYouTube();
+  }
+
+  private static loadYouTube(container: HTMLElement): void {
+    const id = container.dataset["youtubeId"];
+    if (!id) return;
+
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}`;
+    iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    iframe.style.cssText = "position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;";
+    container.replaceChildren(iframe);
+  }
+
+  private static initializeYouTube(): void {
+    const containers = document.querySelectorAll<HTMLElement>(".youtube-dsgvo-container");
+    if (!containers.length) return;
+
+    const loadAll = () => containers.forEach((container) => App.loadYouTube(container));
+
+    if (localStorage.getItem("mvw-youtube-consent") === "granted") {
+      loadAll();
+      return;
+    }
+
+    document.querySelectorAll<HTMLElement>(".youtube-dsgvo-load").forEach((button) => {
+      button.addEventListener("click", () => {
+        localStorage.setItem("mvw-youtube-consent", "granted");
+        loadAll();
+      });
+    });
   }
 
   private static registerScroll(): void {
