@@ -1,2 +1,2 @@
 {{- $hash := .Get "hash" -}}
-{{- partial "youtube-dsgvo" (dict "hash" $hash) -}}
+{{- partial "youtube-dsgvo" (dict "hash" $hash "page" .Page) -}}

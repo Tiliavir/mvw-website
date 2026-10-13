@@ -54,7 +54,7 @@
 
 
         {{ with .video }}
-          {{- partial "youtube-dsgvo" (dict "hash" .src) -}}
+          {{- partial "youtube-dsgvo" (dict "hash" .src "page" $.Page) -}}
         {{ end }}
 
         {{ .content | markdownify }}
