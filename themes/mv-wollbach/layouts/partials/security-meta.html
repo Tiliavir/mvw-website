@@ -1,0 +1,20 @@
+{{- /*
+  Security policy as <meta> because the hosting proxy does not pass custom response headers.
+  Must stay directly after <meta charset>: a meta CSP only applies to content that follows it.
+  __CSP_SCRIPT_HASHES__ is replaced per page by csp-hashes.mjs during "npm run build".
+  Not possible via <meta>: frame-ancestors/X-Frame-Options, HSTS, X-Content-Type-Options, Permissions-Policy.
+*/ -}}
+{{- $u := urls.Parse site.BaseURL -}}
+{{- $self := printf "'self' %s://%s" $u.Scheme $u.Host -}}
+{{- $csp := slice
+  (printf "default-src %s" $self)
+  (printf "script-src %s __CSP_SCRIPT_HASHES__" $self)
+  (printf "style-src %s 'unsafe-inline'" $self)
+  "frame-src https://www.youtube-nocookie.com"
+  "object-src 'none'"
+  (printf "base-uri %s" $self)
+  (printf "form-action %s" $self)
+  "upgrade-insecure-requests"
+-}}
+{{ printf "<meta http-equiv=\"Content-Security-Policy\" content=\"%s\"/>" (delimit $csp "; ") | safeHTML }}
+  <meta name="referrer" content="no-referrer"/>

@@ -1,6 +1,7 @@
 {{- $isArticle := and .IsPage (eq .Section "blog") -}}
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# {{ if $isArticle }}article: http://ogp.me/ns/article#{{ else }}website: http://ogp.me/ns/website#{{ end }}">
   <meta charset="utf-8"/>
+  {{ partial "security-meta.html" . }}
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
