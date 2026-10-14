@@ -28,7 +28,7 @@
     "stylelint-config-recommended-scss": "17.0.1",
     "typescript": "6.0.3",
     "typescript-eslint": "8.71.1",
-    "vnu-jar": "26.10.9"
+    "vnu-jar": "26.10.11"
   },
   "dependencies": {
     "lunr": "2.3.9",
