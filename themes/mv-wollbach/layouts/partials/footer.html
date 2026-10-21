@@ -29,13 +29,11 @@
     <script>{{ .Content | safeJS }}</script>
   {{ end }}
 
-  {{ with .Page.Params.CustomJs -}}
   <script>
-  {{ range . -}}
+  {{ range .Page.Params.CustomJs -}}
     {{ with resources.Get . | js.Build | minify }}
       {{ .Content | safeJS }}
     {{ end }}
   {{- end }}
   </script>
-  {{- end }}
 </footer>

@@ -37,7 +37,7 @@
   "scripts": {
     "validate": "node validate.mjs && echo \"\\033[33m[WARN] Validation is skipping some rules - check if still required, or if view-transitions are finally stable.\\033[0m\"",
     "lint": "stylelint '**/*.scss' && npx eslint .",
-    "build": "hugo --minify && node csp-hashes.mjs public && npm run validate",
+    "build": "hugo --minify && npm run validate",
     "index": "mvw-search-index '**/*.html' public/suche/index.json main --cwd public --language de --base-url / --strip-index-html",
     "postinstall": "npm run lint"
   }
