@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "lunr": "2.3.9",
-    "lunr-languages": "1.22.0"
+    "lunr-languages": "1.23.0"
   },
   "scripts": {
     "validate": "node validate.mjs && echo \"\\033[33m[WARN] Validation is skipping some rules - check if still required, or if view-transitions are finally stable.\\033[0m\"",
