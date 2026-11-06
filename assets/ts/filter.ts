@@ -37,9 +37,7 @@ class Filter {
       tabPanes.forEach((pane) => (pane.style.display = "block"));
 
       entries.forEach((entry) => {
-        const keywords = Array.from(entry.querySelectorAll(".keyword")).map(
-            (k) => k.textContent?.trim() || ""
-        );
+        const keywords = Array.from(entry.querySelectorAll(".keyword")).map((k) => k.textContent?.trim() || "");
         const visible = Filter.containsAll(keywords, this.filters);
         entry.style.display = visible ? "block" : "none";
       });

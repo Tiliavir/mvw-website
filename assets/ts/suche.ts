@@ -1,3 +1,4 @@
+// biome-ignore assist/source/organizeImports: keep lunr-languages in load order (stemmer support first)
 import lunr from "lunr";
 import stemmerSupport from "lunr-languages/lunr.stemmer.support";
 import german from "lunr-languages/lunr.de";
@@ -21,25 +22,25 @@ class Search {
 
   public static initialize(): void {
     fetch("/suche/index.json")
-        .then((response) => response.json())
-        .then((data: SearchData) => {
-          Search.index = lunr.Index.load(data.index);
-          Search.store = data.store;
+      .then((response) => response.json())
+      .then((data: SearchData) => {
+        Search.index = lunr.Index.load(data.index);
+        Search.store = data.store;
 
-          const inputField = document.querySelector<HTMLInputElement>("input.mvw-search-field");
-          if (!inputField) {
-            return;
-          }
+        const inputField = document.querySelector<HTMLInputElement>("input.mvw-search-field");
+        if (!inputField) {
+          return;
+        }
 
-          const params = new URLSearchParams(window.location.search);
-          const query = params.get("query") || params.get("q");
-          if (query) {
-            inputField.value = query;
-          }
-          inputField.addEventListener("input", () => Search.handleSearch());
-          Search.handleSearch();
-        })
-        .catch((err) => console.error("Failed to load search index:", err));
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get("query") || params.get("q");
+        if (query) {
+          inputField.value = query;
+        }
+        inputField.addEventListener("input", () => Search.handleSearch());
+        Search.handleSearch();
+      })
+      .catch((err) => console.error("Failed to load search index:", err));
   }
 
   private static handleSearch(): void {
@@ -64,9 +65,10 @@ class Search {
   private static search(input: string): lunr.Index.Result[] {
     const trimmer = lunr.de.trimmer ?? lunr.trimmer;
     const stemmer = lunr.de.stemmer ?? lunr.stemmer;
-    const tokens: lunr.Token[] = lunr.tokenizer(input)
-        .map((token) => trimmer(token))
-        .filter((token): token is lunr.Token => Boolean(token) && token.toString().length > 0);
+    const tokens: lunr.Token[] = lunr
+      .tokenizer(input)
+      .map((token) => trimmer(token))
+      .filter((token): token is lunr.Token => Boolean(token) && token.toString().length > 0);
     if (tokens.length === 0) {
       return [];
     }
@@ -74,8 +76,8 @@ class Search {
     return Search.index.query((query) => {
       for (const token of tokens) {
         const term = token.toString();
-        query.term(term, {boost: 10});
-        query.term(term, {usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 2});
+        query.term(term, { boost: 10 });
+        query.term(term, { usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 2 });
 
         const stem = String(stemmer(token.clone()) ?? "");
         if (stem.length >= 3) {

@@ -29,9 +29,16 @@ Runs `hugo --minify` followed by HTML validation via `npm run validate`.
 ```bash
 npm run lint
 ```
-Runs both stylelint (SCSS) and ESLint (TypeScript/JavaScript):
+Runs stylelint (SCSS), Biome (lint + format check for TypeScript/JavaScript) and the TypeScript type check:
 - `stylelint '**/*.scss'`
-- `npx eslint .`
+- `biome check .`
+- `tsc -p tsconfig.typecheck.json` (type check only, Hugo's `js.Build` compiles the TypeScript)
+
+### Formatting
+```bash
+npm run format
+```
+Applies Biome's lint fixes and formatting.
 
 ### Validation Only
 ```bash
@@ -56,7 +63,7 @@ Generates the Lunr search index (`public/suche/index.json`) for the site search,
 npx stylelint path/to/file.scss
 
 # Lint a single JS/TS file
-npx eslint path/to/file.ts
+npx biome check path/to/file.ts
 ```
 
 ### CI/CD
@@ -151,7 +158,8 @@ Example from codebase:
 
 ### Linting Configuration
 
-- **ESLint**: Flat config (`eslint.config.mjs`) with `@eslint/js` and `typescript-eslint` recommended rules; build output and `static/` are ignored
+- **Biome**: `biome.jsonc` with the recommended rules, minus `noStaticOnlyClass` and `noNonNullAssertion` (see the style guide above); only scripts are checked, build output and `static/` are ignored
+- **TypeScript**: `tsconfig.typecheck.json` is for type checking only (`noEmit`, strict). It is deliberately not named `tsconfig.json`: esbuild would pick that up and prepend `"use strict"` to every bundle
 - **Stylelint**: Extends `stylelint-config-recommended-scss`. Custom rules in `.stylelintrc`
 
 ### Imports / Build Structure
@@ -195,7 +203,8 @@ Example from codebase:
 │   │   ├── scss/           # Theme SCSS (global styles, variables, mixins)
 │   │   └── ts/             # Theme TypeScript
 │   └── layouts/            # Hugo templates
-├── eslint.config.mjs       # ESLint flat config
+├── biome.jsonc             # Biome lint + format config
+├── tsconfig.typecheck.json # TypeScript type checking
 ├── .stylelintrc            # Stylelint configuration
 └── package.json            # npm configuration
 ```
@@ -225,8 +234,8 @@ npm install <package>
 ## Editor Configuration
 
 The project uses:
-- **ESLint**: JavaScript/TypeScript linting (flat config format)
+- **Biome**: JavaScript/TypeScript linting and formatting
 - **Stylelint**: SCSS linting
 - **PostCSS + Autoprefixer**: CSS processing
 
-Ensure your editor has appropriate extensions for ESLint and Stylelint support.
+Ensure your editor has appropriate extensions for Biome and Stylelint support.
