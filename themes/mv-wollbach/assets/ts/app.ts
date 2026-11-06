@@ -92,7 +92,7 @@ class App {
     document.querySelectorAll<HTMLElement>(".tab").forEach((tab) => {
       tab.addEventListener("click", (e) => {
         const target = e.target as HTMLElement;
-        const tabId = target.dataset["tab"];
+        const tabId = target.dataset.tab;
         console.log(tabId);
         if (tabId) {
           App.setActive(tabId);

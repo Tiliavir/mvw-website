@@ -21,7 +21,7 @@ class YouTube {
   }
 
   private static load(container: HTMLElement): void {
-    const id = container.dataset["youtubeId"];
+    const id = container.dataset.youtubeId;
     if (!id) return;
 
     const iframe = document.createElement("iframe");

@@ -1,4 +1,5 @@
 class Register {
+  // biome-ignore format: one instrument per line
   private static readonly register: { [id: string]: string[] } = {
     "Altsaxophon": ["altsaxophon_1.jpg", "altsaxophon_2.jpg", "altsaxophon_3.jpg", "altsaxophon_4.jpg", "altsaxophon_5.jpg", "saxophon_1.jpg", "saxophon_2.jpg", "saxophon_3.jpg", "saxophon_4.jpg", "saxophon_5.jpg"],
     "Baritonsaxophon": ["baritonsaxophon_1.jpg", "saxophon_1.jpg", "saxophon_2.jpg", "saxophon_3.jpg", "saxophon_4.jpg", "saxophon_5.jpg"],
@@ -18,10 +19,10 @@ class Register {
   };
 
   public static tryReplaceImage(images: HTMLElement[]): void {
-    const htmlElements = this.shuffle(images);
+    const htmlElements = Register.shuffle(images);
     for (const image of htmlElements) {
       if (Register.isElementInViewport(image)) {
-        const title = image.getAttribute("title");
+        const title = image.getAttribute("title") ?? "";
         const src = image.getAttribute("src") || "";
 
         const remainingRegImageUrls = Register.register[title]?.filter(
@@ -43,7 +44,7 @@ class Register {
             image.removeAttribute("height");
 
             const nextIndex = Math.floor(Math.random() * remainingRegImageUrls.length);
-            image.setAttribute("src", "/das-orchester/register/img/" + remainingRegImageUrls[nextIndex]);
+            image.setAttribute("src", `/das-orchester/register/img/${remainingRegImageUrls[nextIndex]}`);
 
             image.style.transition = "opacity 0.6s";
             image.style.opacity = "1";
@@ -56,12 +57,9 @@ class Register {
   }
 
   private static shuffle(array: HTMLElement[]): HTMLElement[] {
-    for (let m = array.length, t, i; m > 0; m--) {
-      i = Math.floor(Math.random() * m);
-
-      t = array[m - 1];
-      array[m - 1] = array[i];
-      array[i] = t;
+    for (let m = array.length; m > 0; m--) {
+      const i = Math.floor(Math.random() * m);
+      [array[m - 1], array[i]] = [array[i], array[m - 1]];
     }
 
     return array;

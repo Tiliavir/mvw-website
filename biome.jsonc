@@ -1,0 +1,43 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.5/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    // Only scripts - Hugo templates, content and generated output are not Biome's business
+    "includes": ["**/*.ts", "**/*.js", "**/*.mjs", "*.json", "!public", "!resources", "!static"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 120
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      // AGENTS.md prescribes static-only classes and allows `!` for guaranteed DOM elements
+      "complexity": { "noStaticOnlyClass": "off" },
+      "style": { "noNonNullAssertion": "off" },
+      // flags `forEach((el) => el.remove())` - harmless, and ESLint never complained
+      "suspicious": { "useIterableCallbackReturn": "off" }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
+}

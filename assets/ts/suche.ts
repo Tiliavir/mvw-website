@@ -1,3 +1,4 @@
+// biome-ignore assist/source/organizeImports: keep lunr-languages in load order (stemmer support first)
 import lunr from "lunr";
 import stemmerSupport from "lunr-languages/lunr.stemmer.support";
 import german from "lunr-languages/lunr.de";

@@ -1,4 +1,4 @@
-'use strict';
+
 
 import glob from "glob-all";
 import vnuJar from 'vnu-jar';
@@ -8,7 +8,7 @@ await glob([
     'public/**/*.svg',
     'public/**/*.css',
     '!public/google*.html'],
-  async (err, files) => {
+  async (_err, files) => {
     await vnuJar.vnu.check([
         "--also-check-svg",
         "--also-check-css",
