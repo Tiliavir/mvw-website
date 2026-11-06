@@ -32,8 +32,7 @@ class App {
   }
 
   private static registerPopUp(): void {
-    if (localStorage.getItem("mvw-popup") === "dont-show"
-        || sessionStorage.getItem("mvw-popup") === "dont-show") {
+    if (localStorage.getItem("mvw-popup") === "dont-show" || sessionStorage.getItem("mvw-popup") === "dont-show") {
       return;
     }
 
@@ -69,10 +68,8 @@ class App {
   }
 
   private static setActive(id: string): void {
-    document.querySelectorAll(".tab-pane")
-            .forEach((el) => el.classList.remove("active"));
-    document.querySelectorAll(".tab")
-            .forEach((el) => el.classList.remove("active"));
+    document.querySelectorAll(".tab-pane").forEach((el) => el.classList.remove("active"));
+    document.querySelectorAll(".tab").forEach((el) => el.classList.remove("active"));
 
     document.querySelector(`.tab-${id}`)?.classList.add("active");
     document.getElementById(id)?.classList.add("active");
@@ -118,4 +115,4 @@ class App {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => App.initialize());
+document.addEventListener("DOMContentLoaded", () => App.initialize());

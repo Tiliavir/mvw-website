@@ -25,9 +25,7 @@ class Register {
         const title = image.getAttribute("title") ?? "";
         const src = image.getAttribute("src") || "";
 
-        const remainingRegImageUrls = Register.register[title]?.filter(
-            url => !src.includes(url.replace(".jpg", ""))
-        );
+        const remainingRegImageUrls = Register.register[title]?.filter((url) => !src.includes(url.replace(".jpg", "")));
 
         if (remainingRegImageUrls && remainingRegImageUrls.length > 0) {
           image.style.transition = "opacity 0.2s";
@@ -37,7 +35,7 @@ class Register {
             const parent = image.parentElement;
             if (parent?.tagName.toLowerCase() === "picture") {
               const sources = parent.querySelectorAll("source");
-              sources.forEach(srcEl => srcEl.remove());
+              sources.forEach((srcEl) => srcEl.remove());
             }
 
             image.removeAttribute("width");
@@ -67,10 +65,12 @@ class Register {
 
   private static isElementInViewport(el: HTMLElement): boolean {
     const rect = el.getBoundingClientRect();
-    return rect.bottom >= 0
-        && rect.right >= 0
-        && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
-        && rect.left <= (window.innerWidth || document.documentElement.clientWidth);
+    return (
+      rect.bottom >= 0 &&
+      rect.right >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+    );
   }
 }
 
