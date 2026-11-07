@@ -22,4 +22,4 @@
 {{- with .description }}
   <div class="description" itemprop="description">{{ . | markdownify }}</div>
 {{- end }}
-<a class="ics" href="{{ .ics.RelPermalink }}" download aria-label="{{ .title }} in den Kalender eintragen">In Kalender eintragen</a>
+<a class="ics" href="{{ .ics.RelPermalink }}" download aria-label="In Kalender eintragen: {{ .title }}">In Kalender eintragen</a>

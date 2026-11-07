@@ -1,5 +1,7 @@
 class Carousel {
   public static initialize(): void {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const behavior: ScrollBehavior = reducedMotion ? "auto" : "smooth";
     const carousels = document.querySelectorAll<HTMLElement>(".carousel");
     carousels.forEach((carousel) => {
       const ele = carousel.querySelector<HTMLUListElement>("ul")!;
@@ -34,10 +36,10 @@ class Carousel {
         const maxScrollLeft = ele.scrollWidth - ele.clientWidth;
 
         if (ele.scrollLeft + scrollLength <= maxScrollLeft) {
-          ele.scrollBy({ left: scrollLength, behavior: "smooth" });
+          ele.scrollBy({ left: scrollLength, behavior });
         } else {
           // Loop to first
-          ele.scrollTo({ left: 0, behavior: "smooth" });
+          ele.scrollTo({ left: 0, behavior });
         }
       };
 
@@ -45,10 +47,10 @@ class Carousel {
         const scrollLength = slides[1].offsetLeft - slides[0].offsetLeft;
 
         if (ele.scrollLeft - scrollLength >= 0) {
-          ele.scrollBy({ left: -scrollLength, behavior: "smooth" });
+          ele.scrollBy({ left: -scrollLength, behavior });
         } else {
           // Loop to last
-          ele.scrollTo({ left: ele.scrollWidth, behavior: "smooth" });
+          ele.scrollTo({ left: ele.scrollWidth, behavior });
         }
       };
 
@@ -73,7 +75,7 @@ class Carousel {
       prevArrow.addEventListener("touchstart", setInteracted);
 
       const duration = Number.parseInt(carousel.dataset.duration ?? "0", 10);
-      if (duration > 0) {
+      if (duration > 0 && !reducedMotion) {
         setInterval(() => {
           if (ele !== document.querySelector(".carousel:hover ul") && !ele.classList.contains("interacted")) {
             nextArrow.click();

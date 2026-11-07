@@ -7,7 +7,7 @@
   {{- errorf "slider: data file %q not found | %s" (.Get "data") .Position -}}
 {{- end -}}
 
-<div id="carousel{{ $ordinal }}" class="carousel" data-duration="{{ .Get `duration` }}" role="region" aria-roledescription="Karussell" aria-label="Bilder aus dem Vereinsleben">
+<section id="carousel{{ $ordinal }}" class="carousel" data-duration="{{ .Get `duration` }}" aria-roledescription="Karussell" aria-label="Bilder aus dem Vereinsleben">
   <ul>
     {{ range $index, $image := $images }}
       {{- if not $image.alt -}}
@@ -20,4 +20,4 @@
   </ul>
   <button type="button" class="prev" aria-label="Vorheriges Bild" aria-controls="carousel{{ $ordinal }}">&lsaquo;</button>
   <button type="button" class="next" aria-label="Nächstes Bild" aria-controls="carousel{{ $ordinal }}">&rsaquo;</button>
-</div>
+</section>

@@ -12,7 +12,6 @@
     display: flex;
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
     background: #c0b9ae;
     scrollbar-width: none;
     margin: 0;
@@ -91,5 +90,11 @@
   .next {
     left: auto;
     right: 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .carousel ul {
+    scroll-behavior: smooth;
   }
 }

@@ -28,11 +28,12 @@
         </h2>
 
         {{ with .keywords }}
-          <div class="keywords" role="group" aria-label="Schlagworte">
+          <fieldset class="keywords">
+            <legend class="visually-hidden">Schlagworte</legend>
             {{ range . }}
               <button type="button" class="keyword" aria-pressed="false">{{ . }}</button>
             {{ end }}
-          </div>
+          </fieldset>
         {{ end }}
 
         {{ with .images }}

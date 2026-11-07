@@ -167,6 +167,11 @@ header {
   li {
     display: flex;
     gap: var(--space-4);
+
+    &[hidden] {
+      display: none;
+    }
+
     align-items: flex-start;
     padding: var(--space-4);
     border-radius: var(--radius-md);

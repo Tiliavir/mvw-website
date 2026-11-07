@@ -60,6 +60,10 @@ table {
         display: block;
       }
 
+      tr[hidden] {
+        display: none;
+      }
+
       th {
         left: -9999px;
         position: absolute;

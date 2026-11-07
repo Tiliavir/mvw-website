@@ -29,8 +29,15 @@
   }
 }
 
+.keyword-selector,
+.keywords {
+  border: 0;
+  padding: 0;
+  min-width: 0;
+}
+
 .keyword-selector {
-  margin-bottom: var(--space-4);
+  margin: 0 0 var(--space-4);
 }
 
 .keywords {
