@@ -1,6 +1,8 @@
 @supports (view-transition-name: none) {
-  @view-transition {
-    navigation: auto;
+  @media (prefers-reduced-motion: no-preference) {
+    @view-transition {
+      navigation: auto;
+    }
   }
 
   ::view-transition {
@@ -70,15 +72,6 @@
       opacity: 1;
       transform: scale(1);
     }
-  }
-}
-
-// Reduced motion preference - disable view transitions
-@media (prefers-reduced-motion: reduce) {
-  ::view-transition-old(*),
-  ::view-transition-new(*) {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
   }
 }
 
