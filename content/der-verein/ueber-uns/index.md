@@ -18,6 +18,8 @@ customJs:
            isAboveTheFold=true
 >}}
 
+Der Musikverein besteht aus {{< number-of-musicians >}} Musikern und dem Dirigenten Oliver Hauser.
+
 Wollbach, der größte Teilort der Gemeinde Kandern, liegt im Kandertal im
 Markgräflerland an der L134, etwa 6km südlich von Kandern. Wollbach hat mit
 den vier Nebenorte Egerten, Egisholz, Hammerstein und Nebenau etwa 1300
@@ -32,8 +34,6 @@ Einwohner und wurde 767 erstmalig urkundlich erwähnt. Weiterlesen auf
                class="small-200"
                alt="Wollbacher Wappen"
 >}}
-
-Der Musikverein besteht aus {{< number-of-musicians >}} Musikern und dem Dirigenten Oliver Hauser.
 
 {{< figure-svg src="img/karte.svg"
                class="small-300"
