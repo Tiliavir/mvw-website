@@ -6,7 +6,11 @@
         "title": "SummerStage",
         "location": {
           "name": "Vor dem Theater",
-          "address": "Freiburg im Breisgau"
+          "address": "Freiburg im Breisgau",
+          "geo": {
+            "lat": 47.99511,
+            "lon": 7.845403
+          }
         },
         "starttime": "2026-07-23T19:00:00Z",
         "endtime": "2026-07-23T22:00:00Z"
@@ -33,7 +37,11 @@
         "title": "Spiel & Spaß Abend",
         "location": {
           "name": "Kandertalhalle",
-          "address": "Wollbach"
+          "address": "Wollbach",
+          "geo": {
+            "lat": 47.670389,
+            "lon": 7.650747
+          }
         },
         "starttime": "2026-10-23T19:00:00Z",
         "endtime": "2026-10-23T22:00:00Z"
@@ -42,7 +50,11 @@
         "title": "Volkstrauertag",
         "location": {
           "name": "Kirche",
-          "address": "Wollbach"
+          "address": "Wollbach",
+          "geo": {
+            "lat": 47.6704,
+            "lon": 7.653107
+          }
         },
         "starttime": "2026-11-15T10:00:00Z",
         "endtime": "2026-11-15T12:00:00Z"
@@ -51,7 +63,11 @@
         "title": "Wartburgfest Wollbach",
         "location": {
           "name": "Kandertalhalle",
-          "address": "Wollbach"
+          "address": "Wollbach",
+          "geo": {
+            "lat": 47.670389,
+            "lon": 7.650747
+          }
         },
         "starttime": "2026-11-29T10:00:00Z",
         "endtime": "2026-11-29T12:00:00Z"
@@ -62,7 +78,11 @@
         "title": "Neujahrsempfang",
         "location": {
           "name": "Kandertalhalle",
-          "address": "Wollbach"
+          "address": "Wollbach",
+          "geo": {
+            "lat": 47.670389,
+            "lon": 7.650747
+          }
         },
         "starttime": "2027-01-06T00:00:00Z"
       },
@@ -70,7 +90,11 @@
         "title": "Probenwochenende",
         "location": {
           "name": "Kandertalhalle",
-          "address": "Wollbach"
+          "address": "Wollbach",
+          "geo": {
+            "lat": 47.670389,
+            "lon": 7.650747
+          }
         },
         "starttime": "2027-01-15T00:00:00Z",
         "endtime": "2027-01-17T00:00:00Z"
@@ -79,7 +103,11 @@
         "title": "Konzert 2027",
         "location": {
           "name": "Kandertalhalle Wollbach",
-          "address": "Schulstraße 12, 79400 Kandern, Deutschland"
+          "address": "Schulstraße 12, 79400 Kandern, Deutschland",
+          "geo": {
+            "lat": 47.670389,
+            "lon": 7.650747
+          }
         },
         "starttime": "2027-01-22T20:00:00Z",
         "endtime": "2027-01-23T23:00:00Z"
@@ -88,7 +116,11 @@
         "title": "Open Air",
         "location": {
           "name": "Schulhof",
-          "address": "Wollbach"
+          "address": "Wollbach",
+          "geo": {
+            "lat": 47.669847,
+            "lon": 7.650784
+          }
         },
         "starttime": "2027-07-03T00:00:00Z"
       },
@@ -96,7 +128,11 @@
         "title": "Kirchhofgottesdienst",
         "location": {
           "name": "Kirchhof",
-          "address": "Wollbach"
+          "address": "Wollbach",
+          "geo": {
+            "lat": 47.6704,
+            "lon": 7.653107
+          }
         },
         "starttime": "2027-07-25T00:00:00Z"
       },
@@ -112,7 +148,11 @@
         "title": "Wartburgfest Wollbach",
         "location": {
           "name": "Kandertalhalle",
-          "address": "Wollbach"
+          "address": "Wollbach",
+          "geo": {
+            "lat": 47.670389,
+            "lon": 7.650747
+          }
         },
         "starttime": "2027-11-28T00:00:00Z"
       }
