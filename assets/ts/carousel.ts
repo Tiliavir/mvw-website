@@ -1,4 +1,4 @@
-class Index {
+class Carousel {
   public static initialize(): void {
     const carousels = document.querySelectorAll<HTMLElement>(".carousel");
     carousels.forEach((carousel) => {
@@ -93,4 +93,4 @@ function debounce<T extends unknown[]>(fn: (...args: T) => void): (...args: T) =
   };
 }
 
-document.addEventListener("DOMContentLoaded", () => Index.initialize());
+document.addEventListener("DOMContentLoaded", () => Carousel.initialize());

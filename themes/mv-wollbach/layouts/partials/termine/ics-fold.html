@@ -1,0 +1,12 @@
+{{- /* Folds a content line to at most 75 octets per line, never splitting a UTF-8 character (RFC 5545, 3.1). */ -}}
+{{- $parts := slice -}}
+{{- $current := "" -}}
+{{- $limit := 75 -}}
+{{- range split . "" -}}
+  {{- if gt (add (len $current) (len .)) $limit -}}
+    {{- $parts = $parts | append $current -}}
+    {{- $current = " " -}}
+  {{- end -}}
+  {{- $current = printf "%s%s" $current . -}}
+{{- end -}}
+{{- return delimit ($parts | append $current) "\r\n" -}}

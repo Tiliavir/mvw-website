@@ -1,0 +1,24 @@
+{{- $limit := int (.Get "limit" | default 3) -}}
+{{- $events := partialCached "termine/events.html" . "termine" -}}
+{{- $cutoff := now.AddDate 0 0 -3 -}}
+{{- $months := site.Data.monate -}}
+{{- $termine := site.GetPage "/aktuelles/termine" -}}
+
+<section class="upcoming" aria-labelledby="upcoming-title">
+  <h2 id="upcoming-title">Nächste Termine</h2>
+  <ol class="upcoming-list" data-limit="{{ $limit }}">
+    {{- range first (mul $limit 3) (where $events "end" "ge" $cutoff) }}
+      <li itemscope itemtype="http://schema.org/Event">
+        <span class="date-badge" aria-hidden="true">
+          <span class="day">{{ .start.Day }}</span>
+          <span class="month">{{ substr (index $months (printf "%d" .start.Month)) 0 3 }}</span>
+        </span>
+        <div class="details">
+          <span class="when">{{ partial "timespan" (dict "start" .starttime "end" .endtime "schema" true) }}</span>
+          {{ partial "termine/event-details.html" . }}
+        </div>
+      </li>
+    {{- end }}
+  </ol>
+  <p class="all"><a href="{{ $termine.RelPermalink }}">Alle Termine</a></p>
+</section>

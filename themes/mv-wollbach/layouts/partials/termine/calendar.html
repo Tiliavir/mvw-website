@@ -1,0 +1,31 @@
+{{- /* iCalendar (RFC 5545) for a slice of events from termine/events.html. Times in the data are local time (Europe/Berlin). */ -}}
+{{- $lines := slice "BEGIN:VCALENDAR" "VERSION:2.0" "PRODID:-//Musikverein Wollbach 1866 e.V.//Termine//DE" "CALSCALE:GREGORIAN" "METHOD:PUBLISH" "X-WR-CALNAME:Musikverein Wollbach" "X-WR-TIMEZONE:Europe/Berlin" -}}
+{{- $stamp := now.UTC.Format "20060102T150405Z" -}}
+{{- $termine := site.GetPage "/aktuelles/termine" -}}
+{{- range . -}}
+  {{- $lines = $lines | append "BEGIN:VEVENT" (printf "UID:%s@mv-wollbach.de" .slug) (printf "DTSTAMP:%s" $stamp) -}}
+  {{- if .allDay -}}
+    {{- $lines = $lines | append (printf "DTSTART;VALUE=DATE:%s" (.start.Format "20060102")) (printf "DTEND;VALUE=DATE:%s" ((.end.AddDate 0 0 1).Format "20060102")) -}}
+  {{- else -}}
+    {{- $lines = $lines | append (printf "DTSTART:%s" (.start.UTC.Format "20060102T150405Z")) -}}
+    {{- if gt .end .start -}}
+      {{- $lines = $lines | append (printf "DTEND:%s" (.end.UTC.Format "20060102T150405Z")) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $lines = $lines | append (printf "SUMMARY:%s" (partial "termine/ics-text.html" .title)) -}}
+  {{- $lines = $lines | append (printf "LOCATION:%s" (partial "termine/ics-text.html" (printf "%s, %s" .location.name .location.address))) -}}
+  {{- with .description -}}
+    {{- $lines = $lines | append (printf "DESCRIPTION:%s" (partial "termine/ics-text.html" (. | markdownify | plainify | htmlUnescape))) -}}
+  {{- end -}}
+  {{- $url := $termine.Permalink -}}
+  {{- with .page -}}
+    {{- $url = .Permalink -}}
+  {{- end -}}
+  {{- $lines = $lines | append (printf "URL:%s" $url) "END:VEVENT" -}}
+{{- end -}}
+{{- $lines = $lines | append "END:VCALENDAR" -}}
+{{- $folded := slice -}}
+{{- range $lines -}}
+  {{- $folded = $folded | append (partial "termine/ics-fold.html" .) -}}
+{{- end -}}
+{{- return printf "%s\r\n" (delimit $folded "\r\n") -}}

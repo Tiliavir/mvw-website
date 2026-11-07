@@ -1,8 +1,12 @@
 {{- $src := .Get "image" -}}
 
-{{- $img := "" -}}
-  {{- if $.Page.Resources.GetMatch $src -}}
-  {{- $img = $.Page.Resources.GetMatch $src -}}
+{{- $img := or ($.Page.Resources.GetMatch $src) (resources.Get $src) -}}
+{{- if not $img -}}
+  {{- errorf "tile: image %q not found | %s" $src .Position -}}
+{{- end -}}
+{{- $href := ref .Page (.Get "file") -}}
+{{- with .Get "anchor" -}}
+  {{- $href = printf "%s#%s" $href . -}}
 {{- end -}}
 
 {{- $originalWidth := $img.Width -}}
@@ -10,7 +14,7 @@
 {{- $r768Webp := cond (ge $img.Width 550) ($img.Resize "550x webp q85 lanczos" | fingerprint) nil -}}
 
 <div class="tile">
-  <a class="unstyled image-container" href="{{ ref .Page (.Get "file") }}" style="background-image: url('{{ $r768Webp.RelPermalink | safeCSS }}');">
+  <a class="unstyled image-container" href="{{ $href }}" style="background-image: url('{{ $r768Webp.RelPermalink | safeCSS }}');">
     <div class="blur">
       <div class="tile-content">
         {{ with .Get "title" }}

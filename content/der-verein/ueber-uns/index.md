@@ -7,6 +7,10 @@ menu:
   main:
     parent: der-verein
     weight: 100
+customCss:
+  - scss/carousel.scss
+customJs:
+  - ts/carousel.ts
 ---
 
 Wollbach, der größte Teilort der Gemeinde Kandern, liegt im Kandertal im
@@ -26,6 +30,12 @@ Einwohner und wurde 767 erstmalig urkundlich erwähnt. Weiterlesen auf
 >}}
 
 Der Musikverein besteht aus {{< number-of-musicians >}} Musikern und dem Dirigenten Oliver Hauser.
+
+{{< slider data="galerie"
+           height="500"
+           unit="px"
+           duration="7000"
+>}}
 
 {{< figure-svg src="img/karte.svg"
                class="small-300"

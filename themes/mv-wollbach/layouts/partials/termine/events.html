@@ -1,0 +1,50 @@
+{{- /* Flat, chronologically sorted list of all Termine with parsed times, slug, links and calendar file. */ -}}
+{{- $termine := site.GetPage "/aktuelles/termine" -}}
+{{- $data := ($termine.Resources.GetMatch "termine.json" | transform.Unmarshal).termine -}}
+{{- $zone := `(Z|[+-]\d{2}:\d{2})$` -}}
+{{- $events := slice -}}
+{{- $slugs := slice -}}
+{{- range $year, $records := $data -}}
+  {{- range $records -}}
+    {{- $title := .title -}}
+    {{- $start := time.AsTime (replaceRE $zone "" .starttime) "Europe/Berlin" -}}
+    {{- $end := time.AsTime (replaceRE $zone "" (default .starttime .endtime)) "Europe/Berlin" -}}
+    {{- if gt $start $end -}}
+      {{- errorf "Termin %q: start (%s) is supposed to be before end (%s)!" .title $start $end -}}
+    {{- end -}}
+    {{- if ne (string $start.Year) $year -}}
+      {{- errorf "Termin %q starts in %d but is listed under %s" .title $start.Year $year -}}
+    {{- end -}}
+    {{- $name := lower .title | replaceRE "ä" "ae" | replaceRE "ö" "oe" | replaceRE "ü" "ue" | replaceRE "ß" "ss" -}}
+    {{- $slug := printf "%s-%s" ($start.Format "2006-01-02") (urlize $name) -}}
+    {{- if in $slugs $slug -}}
+      {{- errorf "Termin %q on %s is listed twice" .title ($start.Format "2006-01-02") -}}
+    {{- end -}}
+    {{- $slugs = $slugs | append $slug -}}
+    {{- $page := "" -}}
+    {{- with .page -}}
+      {{- $page = site.GetPage . -}}
+      {{- if not $page -}}
+        {{- errorf "Termin %q: page %q not found" $title . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $event := dict
+      "title" .title
+      "year" $year
+      "location" .location
+      "description" .description
+      "starttime" .starttime
+      "endtime" .endtime
+      "start" $start
+      "end" $end
+      "allDay" (and (eq $start.Hour 0) (eq $start.Minute 0))
+      "slug" $slug
+      "page" $page
+      "map" (printf "https://www.openstreetmap.org/search?query=%s" (printf "%s, %s" .location.name .location.address | urlquery))
+    -}}
+    {{- $ics := resources.FromString (printf "aktuelles/termine/kalender/%s.ics" $slug) (partial "termine/calendar.html" (slice $event)) -}}
+    {{- $events = $events | append (merge $event (dict "ics" $ics)) -}}
+  {{- end -}}
+{{- end -}}
+{{- $events = sort $events "start" -}}
+{{- return $events -}}

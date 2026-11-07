@@ -5,14 +5,7 @@
 {{- $isAboveTheFold := .isAboveTheFold | default false -}}
 {{- $sizes := .sizes | default nil -}}
 
-{{- $img := "" -}}
-{{- if .Page.Resources.GetMatch $src -}}
-  {{- $img = .Page.Resources.GetMatch $src -}}
-{{- else -}}
-  {{- $img = resources.Get $src -}}
-{{- end -}}
-
-{{ $img := .Page.Resources.GetMatch $src }}
+{{- $img := or (.Page.Resources.GetMatch $src) (resources.Get $src) -}}
 {{ if not $img }}
   {{ warnf "Missing image in page. Move %-50s | %-40s" $src .Page.File.Path }}
 {{ else }}
@@ -65,11 +58,11 @@
 
   <picture>
     {{- $srcsetWebp := slice -}}
-    {{- with $r480Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 480w" .RelPermalink) }}{{ end }}
-    {{- with $r768Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 768w" .RelPermalink) }}{{ end }}
-    {{- with $r960Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 960w" .RelPermalink) }}{{ end }}
-    {{- with $r1100Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 1100w" .RelPermalink) }}{{ end }}
-    {{- with $r1600Jpg }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 1600w" .RelPermalink) }}{{ end }}
+    {{- with $r480Webp }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 480w" .RelPermalink) }}{{ end }}
+    {{- with $r768Webp }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 768w" .RelPermalink) }}{{ end }}
+    {{- with $r960Webp }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 960w" .RelPermalink) }}{{ end }}
+    {{- with $r1100Webp }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 1100w" .RelPermalink) }}{{ end }}
+    {{- with $r1600Webp }}{{ $srcsetWebp = $srcsetWebp | append (printf "%s 1600w" .RelPermalink) }}{{ end }}
 
     <source
         srcset="{{ delimit $srcsetWebp ", " }}"

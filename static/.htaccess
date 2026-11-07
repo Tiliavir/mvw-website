@@ -23,6 +23,8 @@ AddType 'text/css; charset=UTF-8' css
 AddCharset UTF-8 .svg
 AddType 'image/svg+xml; charset=UTF8' svg svgz
 AddType application/font-woff2 .woff2
+AddCharset UTF-8 .ics
+AddType 'text/calendar; charset=UTF-8' ics
 
 #Cookieless domain
 <FilesMatch "\.(js|css|jpg|png|jpeg|webp|gif|xml|json|txt|pdf|mov|avi|ttf|otf|woff|woff2|ico|swf)$">
