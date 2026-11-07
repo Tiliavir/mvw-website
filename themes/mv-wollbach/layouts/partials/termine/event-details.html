@@ -10,6 +10,12 @@
   <a class="unstyled" href="{{ .map }}" target="_blank" rel="noopener" title="Ort auf OpenStreetMap anzeigen">
     <span itemprop="name">{{ .location.name }}</span>, <span itemprop="address">{{ .location.address }}</span>
   </a>
+  {{- with .location.geo }}
+    <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+      <meta itemprop="latitude" content="{{ .lat }}"/>
+      <meta itemprop="longitude" content="{{ .lon }}"/>
+    </span>
+  {{- end }}
 </span>
 {{- with .description }}
   <div class="description" itemprop="description">{{ . | markdownify }}</div>
