@@ -59,6 +59,23 @@
     ],
     "2027": [
       {
+        "title": "Neujahrsempfang",
+        "location": {
+          "name": "Kandertalhalle",
+          "address": "Wollbach"
+        },
+        "starttime": "2027-01-06T00:00:00Z"
+      },
+      {
+        "title": "Probenwochenende",
+        "location": {
+          "name": "Kandertalhalle",
+          "address": "Wollbach"
+        },
+        "starttime": "2027-01-15T00:00:00Z",
+        "endtime": "2027-01-17T00:00:00Z"
+      },
+      {
         "title": "Konzert 2027",
         "location": {
           "name": "Kandertalhalle Wollbach",
@@ -66,6 +83,38 @@
         },
         "starttime": "2027-01-22T20:00:00Z",
         "endtime": "2027-01-23T23:00:00Z"
+      },
+      {
+        "title": "Open Air",
+        "location": {
+          "name": "Schulhof",
+          "address": "Wollbach"
+        },
+        "starttime": "2027-07-03T00:00:00Z"
+      },
+      {
+        "title": "Kirchhofgottesdienst",
+        "location": {
+          "name": "Kirchhof",
+          "address": "Wollbach"
+        },
+        "starttime": "2027-07-25T00:00:00Z"
+      },
+      {
+        "title": "Sauserbummel",
+        "location": {
+          "name": "In und um Wollbach",
+          "address": "Wollbach"
+        },
+        "starttime": "2027-10-09T00:00:00Z"
+      },
+      {
+        "title": "Wartburgfest Wollbach",
+        "location": {
+          "name": "Kandertalhalle",
+          "address": "Wollbach"
+        },
+        "starttime": "2027-11-28T00:00:00Z"
       }
     ]
   }
