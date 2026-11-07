@@ -10,7 +10,7 @@
   {{ warnf "Missing image in page. Move %-50s | %-40s" $src .Page.File.Path }}
 {{ else }}
 
-  {{ if not $alt }}
+  {{ if and (not $alt) (not .decorative) }}
     {{ warnf "Missing alt on image. %-50s | %-40s" $src .Page.File.Path }}
   {{ end }}
 
