@@ -1,18 +1,16 @@
 @import 'global-variables';
 @import 'mixins/breakpoint';
 
-$background-color: #1e1e1e;
-$background-color-active: rgba(darken($background-color, 10%), 0.85);
-
-$color: rgba(255, 255, 255, 0.7);
-$color-active: #fff;
-$color-hover-and-focus: #fff;
-$brand-fill: #fff;
+$background-color: var(--color-nav-bg);
+$color: var(--color-nav-text);
+$color-active: var(--color-nav-text-strong);
+$color-hover-and-focus: var(--color-nav-text-strong);
+$brand-fill: var(--color-nav-text-strong);
 
 .navigation {
   transition: background-color var(--transition-base), box-shadow var(--transition-base);
   background-color: $background-color;
-  color: $text-color;
+  color: var(--color-text);
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
 }
 
@@ -24,7 +22,7 @@ $brand-fill: #fff;
       &:nth-child(3) {
         & > use {
           &:nth-child(-n+4) {
-            fill: $highlight-color;
+            fill: var(--color-accent);
           }
         }
       }
@@ -34,19 +32,19 @@ $brand-fill: #fff;
 
 .inverse {
   &.navigation {
-    background-color: rgba($body-bg, 0.97);
-    color: $gray-base;
+    background-color: color-mix(in srgb, var(--color-bg) 97%, transparent);
+    color: var(--color-text);
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
     transition: background-color var(--transition-base), box-shadow var(--transition-base);
   }
 
   .navbar-brand {
-    fill: $gray-base;
+    fill: var(--color-text);
   }
 
   .navigation-menu {
-    background-color: rgba($body-bg, 0.97);
-    color: $gray-base;
+    background-color: color-mix(in srgb, var(--color-bg) 97%, transparent);
+    color: var(--color-text);
   }
 }
 
@@ -61,15 +59,15 @@ $brand-fill: #fff;
         &:hover,
         &:focus {
           color: $color-hover-and-focus;
-          background-color: rgba(255, 255, 255, 0.06);
+          background-color: color-mix(in srgb, var(--color-nav-text-strong) 6%, transparent);
         }
 
         &.active {
           color: $color-active;
-          background-color: rgba($highlight-color, 0.2);
+          background-color: color-mix(in srgb, var(--color-accent) 20%, transparent);
 
           & > a {
-            color: $highlight-color;
+            color: var(--color-accent);
           }
         }
       }
@@ -78,7 +76,7 @@ $brand-fill: #fff;
 
   .navigation-menu {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    background-color: rgba($background-color, 0.97);
+    background-color: color-mix(in srgb, var(--color-nav-bg) 97%, transparent);
   }
 
   .inverse {
@@ -86,16 +84,16 @@ $brand-fill: #fff;
     .dropdown {
       & > ul {
         & > li {
-          color: $gray;
+          color: var(--color-text-muted);
 
           &:hover,
           &:focus {
-            color: $highlight-color;
+            color: var(--color-accent);
             background-color: var(--color-accent-subtle);
           }
 
           &.active {
-            color: $highlight-color;
+            color: var(--color-accent);
             background-color: var(--color-accent-subtle);
           }
         }
@@ -103,11 +101,11 @@ $brand-fill: #fff;
     }
 
     &.navigation {
-      background-color: rgba($body-bg, 0.97);
+      background-color: color-mix(in srgb, var(--color-bg) 97%, transparent);
     }
 
     .navigation-menu {
-      background-color: rgba($body-bg, 0.97);
+      background-color: color-mix(in srgb, var(--color-bg) 97%, transparent);
     }
   }
 }
@@ -129,7 +127,7 @@ $brand-fill: #fff;
           left: 15px;
           right: 15px;
           height: 2px;
-          background-color: $highlight-color;
+          background-color: var(--color-accent);
           transform: scaleX(0);
           transform-origin: center;
           transition: transform var(--transition-base);
@@ -157,7 +155,7 @@ $brand-fill: #fff;
   }
 
   .dropdown {
-    & > a {
+    & > .dropdown-toggle {
       &::after {
         color: $color;
       }
@@ -176,13 +174,13 @@ $brand-fill: #fff;
 
           &:hover {
             color: $color-hover-and-focus;
-            background-color: rgba(255, 255, 255, 0.08);
+            background-color: color-mix(in srgb, var(--color-nav-text-strong) 8%, transparent);
           }
         }
 
         &.active {
           a {
-            color: $highlight-color;
+            color: var(--color-accent);
           }
         }
       }
@@ -197,19 +195,19 @@ $brand-fill: #fff;
     .navigation-menu {
       & > ul {
         & > li {
-          color: $gray;
+          color: var(--color-text-muted);
 
           &::after {
-            background-color: $highlight-color;
+            background-color: var(--color-accent);
           }
 
           &:hover,
           &:focus {
-            color: $gray-base;
+            color: var(--color-text);
           }
 
           &.active {
-            color: $gray-base;
+            color: var(--color-text);
           }
         }
       }
@@ -217,20 +215,20 @@ $brand-fill: #fff;
 
     .dropdown {
       & > ul {
-        background-color: $body-bg;
+        background-color: var(--color-bg);
 
         li {
           a {
-            color: $gray-base;
+            color: var(--color-text);
 
             &:hover {
-              color: $highlight-color;
+              color: var(--color-accent);
               background-color: var(--color-accent-subtle);
             }
           }
 
           &.active a {
-            color: $highlight-color;
+            color: var(--color-accent);
           }
         }
       }

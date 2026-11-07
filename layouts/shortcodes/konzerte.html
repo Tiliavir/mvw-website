@@ -28,7 +28,7 @@
       <div class="entry konzert">
         {{ with .category }}
           <div class="keywords hidden">
-            <span class="keyword">{{ . }}</span>
+            <button type="button" class="keyword" aria-pressed="false">{{ . }}</button>
           </div>
         {{ end }}
 

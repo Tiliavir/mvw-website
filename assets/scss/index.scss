@@ -1,6 +1,6 @@
 @import 'themes/mv-wollbach/assets/scss/global-variables';
 @import 'themes/mv-wollbach/assets/scss/mixins/breakpoint';
-@import 'termine';
+@import 'termin';
 
 header {
   display: flex;
@@ -20,7 +20,7 @@ header {
       font-family: $font-family-display;
       font-size: var(--font-size-sm);
       font-style: italic;
-      color: $gray-light;
+      color: var(--color-text-subtle);
       margin-top: var(--space-2);
       line-height: 1.4;
     }
@@ -77,4 +77,136 @@ header {
 
 .tiles {
   margin-top: var(--space-6);
+}
+
+.hero {
+  display: grid;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background-color: var(--color-surface);
+
+  picture {
+    grid-area: 1 / 1;
+
+    img {
+      display: block;
+      width: 100%;
+      height: clamp(260px, 56vh, 560px);
+      object-fit: cover;
+    }
+  }
+
+  .hero-text {
+    display: contents;
+  }
+
+  h1 {
+    grid-area: 1 / 1;
+    align-self: end;
+    margin: 0;
+    padding: var(--space-8) var(--space-6) var(--space-5);
+    color: #fff;
+    border: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.72));
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    font-size: clamp(28px, 4.5vw, 46px);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: var(--space-5) var(--space-6);
+    font-size: var(--font-size-md);
+  }
+
+  @include breakpoint(0, $mobile-max-width) {
+    h1 {
+      padding: var(--space-7) var(--space-4) var(--space-4);
+    }
+
+    p {
+      padding: var(--space-4);
+      font-size: var(--font-size-sm);
+    }
+  }
+}
+
+.upcoming {
+  margin-top: var(--space-7);
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .upcoming-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-4) 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-4);
+  }
+
+  li {
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+  }
+
+  .date-badge {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 60px;
+    border-radius: var(--radius-md);
+    background-color: var(--color-accent);
+    color: var(--color-on-accent);
+    line-height: 1;
+
+    .day {
+      font-family: $font-family-display;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .month {
+      font-size: var(--font-size-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: var(--space-1);
+    }
+  }
+
+  .details {
+    min-width: 0;
+  }
+
+  .when {
+    display: block;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+  }
+
+  .event-name {
+    display: block;
+    font-weight: 700;
+    font-size: var(--font-size-md);
+    line-height: 1.3;
+  }
+
+  .all {
+    margin-top: var(--space-4);
+    font-weight: 600;
+  }
 }

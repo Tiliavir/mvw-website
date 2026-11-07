@@ -35,8 +35,8 @@ body {
   overflow-x: hidden;
   font-family: $font-family;
   font-size: $font-size-base;
-  background-color: $body-bg;
-  color: $text-color;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   line-height: $line-height-base;
   min-height: 100vh;
 }
@@ -67,8 +67,8 @@ img {
 
 button {
   overflow: visible;
-  background-color: $highlight-color;
-  color: #fff;
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
   border: 0;
   padding: 10px 20px;
   border-radius: var(--radius-sm);
@@ -78,7 +78,7 @@ button {
   transition: background-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
 
   &:hover {
-    background-color: darken($highlight-color, 8%);
+    background-color: var(--color-accent-strong);
     box-shadow: var(--shadow-md);
     transform: translateY(-1px);
   }
@@ -92,8 +92,8 @@ button {
 blockquote {
   padding: 16px 24px;
   margin: 0 0 24px;
-  border-left: 3px solid $highlight-color;
-  background-color: rgba($highlight-color, 0.04);
+  border-left: 3px solid var(--color-accent);
+  background-color: color-mix(in srgb, var(--color-accent) 4%, transparent);
   color: var(--color-text-muted);
   font-style: italic;
   font-size: 1.05em;
@@ -129,7 +129,7 @@ h6 {
   small {
     font-weight: normal;
     line-height: 1;
-    color: $gray-light;
+    color: var(--color-text-subtle);
   }
 }
 
@@ -158,10 +158,10 @@ h6 {
 h1 {
   font-weight: 700;
   font-size: 1.65 * $font-size-larger;
-  color: $gray-base;
+  color: var(--color-text);
   letter-spacing: -0.02em;
   line-height: 1.15;
-  border-bottom: 2px solid rgba($highlight-color, 0.25);
+  border-bottom: 2px solid color-mix(in srgb, var(--color-accent) 25%, transparent);
   padding-bottom: 10px;
   position: relative;
 
@@ -172,7 +172,7 @@ h1 {
     left: 0;
     width: 48px;
     height: 2px;
-    background-color: $highlight-color;
+    background-color: var(--color-accent);
   }
 }
 
@@ -180,13 +180,13 @@ h2 {
   font-size: 1.35 * $font-size-larger;
   font-weight: 700;
   letter-spacing: -0.015em;
-  color: $gray-base;
+  color: var(--color-text);
 }
 
 h3 {
   font-size: $font-size-large;
   font-weight: 700;
-  color: $gray-base;
+  color: var(--color-text);
   letter-spacing: -0.01em;
 }
 
@@ -207,7 +207,6 @@ h6 {
 
 p {
   margin: 12px 0;
-  text-align: justify;
   hyphens: auto;
   line-height: $line-height-extra;
 }
@@ -243,11 +242,10 @@ ol {
   }
 }
 
-.content,
-.footer {
+.content {
   a {
     &:not(.unstyled) {
-      color: $highlight-color;
+      color: var(--color-accent-text);
       text-decoration: none;
       position: relative;
 
@@ -258,7 +256,7 @@ ol {
         left: 0;
         width: 100%;
         height: 1px;
-        background-color: $highlight-color;
+        background-color: var(--color-accent);
         transform: scaleX(0);
         transform-origin: left;
         transition: transform var(--transition-base);
@@ -266,7 +264,7 @@ ol {
 
       &:hover,
       &:focus {
-        color: darken($highlight-color, 10%);
+        color: var(--color-accent-strong);
         text-decoration: none;
 
         &::after {
@@ -277,8 +275,9 @@ ol {
   }
 }
 
-.hidden {
-  display: none;
+.hidden,
+[hidden] {
+  display: none !important;
 }
 
 iframe {

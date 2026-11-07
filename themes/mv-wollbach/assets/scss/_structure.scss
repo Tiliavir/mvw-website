@@ -1,9 +1,6 @@
 @import 'mixins/breakpoint';
 @import 'global-variables';
 
-$footer-shadow-gray: #0c0d0e;
-$footer-border-gray: #e7e7e7;
-
 %content-width-behavior {
   width: 82vw;
   max-width: $content-max-width;
@@ -30,7 +27,7 @@ header {
   }
 
   .footer {
-    ul {
+    .footer-columns {
       @extend %width-and-padding-reset;
     }
   }
@@ -46,62 +43,72 @@ header {
 }
 
 .footer {
-  background-color: #1c1c1c;
-  min-height: 64px;
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
   margin: var(--space-7) 0 0;
-  padding: var(--space-5) 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: var(--space-6) 0 var(--space-5);
+  font-size: var(--font-size-xs);
+  line-height: 1.7;
+
+  .footer-columns {
+    @extend %content-width-behavior;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-5);
+  }
+
+  h2 {
+    font-family: $font-family;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-nav-text-strong);
+    margin: 0 0 var(--space-2);
+  }
+
+  address,
+  p {
+    font-style: normal;
+    margin: 0;
+  }
 
   ul {
-    @extend %content-width-behavior;
     list-style: none;
-    padding-left: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0 var(--space-2);
-    min-height: 40px;
+    margin: 0;
+    padding: 0;
   }
 
-  li {
+  .footer-links,
+  .social {
+    li + li {
+      margin-top: var(--space-1);
+    }
+  }
+
+  .social a {
     display: inline-flex;
     align-items: center;
-    padding: var(--space-1) var(--space-3);
-    line-height: 1.5;
-    height: auto;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-
-    &:first-child {
-      padding-left: 0;
-    }
-
-    &:last-child {
-      border-right: none;
-    }
+    gap: var(--space-2);
   }
 
-  .social {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-
-    li {
-      height: auto;
-      line-height: 1;
-      border-right: none;
-      padding: var(--space-1) var(--space-3);
-    }
+  svg {
+    fill: none;
+    stroke: currentcolor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 
-  a {
+  a,
+  a:not(.unstyled) {
+    color: var(--color-footer-text);
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.55);
-    font-size: var(--font-size-xs);
     transition: color var(--transition-fast);
 
-    &:hover {
-      color: var(--color-accent);
-      text-decoration: none;
+    &:hover,
+    &:focus {
+      color: var(--color-nav-text-strong);
     }
   }
 }

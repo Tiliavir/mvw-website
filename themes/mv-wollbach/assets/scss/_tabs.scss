@@ -36,9 +36,9 @@
   & > .tab {
     &.active {
       border: 1px solid transparent;
-      border-bottom: 3px solid $highlight-color;
+      border-bottom: 3px solid var(--color-accent);
       background-color: transparent;
-      color: $highlight-color;
+      color: var(--color-accent);
       font-weight: 700;
     }
   }
@@ -47,7 +47,7 @@
     position: relative;
 
     & > ul {
-      color: $text-color;
+      color: var(--color-text);
       font-size: $font-size-base;
       font-weight: 400;
       list-style: none;
@@ -89,7 +89,7 @@
         min-width: 100%;
 
         a {
-          color: $gray-base;
+          color: var(--color-text);
           text-decoration: none;
         }
       }
@@ -100,7 +100,7 @@
         left: 0;
         top: $top-nav-height;
         padding: 0;
-        background-color: $body-bg;
+        background-color: var(--color-bg);
       }
     }
 
@@ -112,14 +112,14 @@
         right: 4px;
         top: $top-nav-height / 2 - $expand-arrow-height + 1px;
         border: $expand-arrow-height solid transparent;
-        border-top-color: $text-color;
+        border-top-color: var(--color-text);
       }
     }
 
     .tab {
       &.active {
         background-color: transparent;
-        border-bottom: 3px solid $highlight-color;
+        border-bottom: 3px solid var(--color-accent);
       }
     }
   }
@@ -137,14 +137,14 @@
 
     &:hover {
       &:not(.active) {
-        background-color: rgba($highlight-color, 0.04);
+        background-color: color-mix(in srgb, var(--color-accent) 4%, transparent);
         color: var(--color-accent);
       }
     }
 
     & > span,
     & > a {
-      color: $gray-base;
+      color: var(--color-text);
       text-decoration: none;
       display: block;
       padding: var(--space-3) var(--space-5);

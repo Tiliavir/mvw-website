@@ -1,5 +1,5 @@
 {{- /* Name, location (map link), description and actions of one event from termine/events.html. */ -}}
-<span itemprop="name">
+<span class="event-name" itemprop="name">
   {{- with .page -}}
     <a itemprop="url" href="{{ .RelPermalink }}">{{ $.title }}</a>
   {{- else -}}
@@ -8,8 +8,7 @@
 </span>
 <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
   <a class="unstyled" href="{{ .map }}" target="_blank" rel="noopener" title="Ort auf OpenStreetMap anzeigen">
-    <span itemprop="name">{{ .location.name }}</span>,
-    <span itemprop="address">{{ .location.address }}</span>
+    <span itemprop="name">{{ .location.name }}</span>, <span itemprop="address">{{ .location.address }}</span>
   </a>
 </span>
 {{- with .description }}

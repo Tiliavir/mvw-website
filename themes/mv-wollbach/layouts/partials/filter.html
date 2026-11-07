@@ -1,7 +1,7 @@
 {{ with .keywords }}
-<div class="keyword-selector">
+<div class="keyword-selector" role="group" aria-label="Filter">
 {{ range . }}
-  <span class="keyword">{{ . }}</span>
+  <button type="button" class="keyword" aria-pressed="false">{{ . }}</button>
 {{ end }}
 </div>
 {{ end }}

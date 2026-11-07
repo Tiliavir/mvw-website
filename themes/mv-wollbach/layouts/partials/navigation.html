@@ -15,10 +15,10 @@
       {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
           <li class="dropdown">
-            <a href="#">
+            <button type="button" class="dropdown-toggle" aria-haspopup="true">
               {{ .Pre }}
               <span>{{ .Name }}</span>
-            </a>
+            </button>
             <ul class="sub-menu">
               {{ range .Children }}
               <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">

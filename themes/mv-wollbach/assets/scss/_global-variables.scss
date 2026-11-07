@@ -36,10 +36,15 @@ $mobile-max-width: 768px;
 
 // CSS custom properties — design token layer
 :root {
+  color-scheme: light dark;
+
   // Brand colors
   --color-accent: #{$highlight-color};
+  --color-accent-strong: #{darken($highlight-color, 10%)};
+  --color-accent-text: #{darken($highlight-color, 12%)};
   --color-accent-light: #{lighten($highlight-color, 10%)};
   --color-accent-subtle: #{rgba($highlight-color, 0.1)};
+  --color-on-accent: #fff;
   --color-text: #{$gray-base};
   --color-text-muted: #{$gray};
   --color-text-subtle: #{$gray-light};
@@ -47,7 +52,11 @@ $mobile-max-width: 768px;
   --color-surface: #{$gray-lightest};
   --color-border: #{$gray-lighter};
   --color-border-strong: #{$gray-border-color};
-
+  --color-nav-bg: #1e1e1e;
+  --color-nav-text: rgba(255, 255, 255, 0.7);
+  --color-nav-text-strong: #fff;
+  --color-footer-bg: #1c1c1c;
+  --color-footer-text: rgba(255, 255, 255, 0.6);
   // Typography
   --font-family: #{$font-family};
   --font-family-display: #{$font-family-display};
@@ -84,4 +93,28 @@ $mobile-max-width: 768px;
   // Transitions
   --transition-fast: 0.15s ease;
   --transition-base: 0.25s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent: #c9a14a;
+    --color-accent-strong: #ddb965;
+    --color-accent-text: #d4ae5c;
+    --color-accent-light: #ddb965;
+    --color-accent-subtle: rgba(201, 161, 74, 0.14);
+    --color-on-accent: #161514;
+    --color-text: #ebe7e0;
+    --color-text-muted: #bdb7ad;
+    --color-text-subtle: #8f897f;
+    --color-bg: #161514;
+    --color-surface: #22201d;
+    --color-border: #34312c;
+    --color-border-strong: #4a463f;
+    --color-nav-bg: #0e0e0d;
+    --color-footer-bg: #0e0e0d;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 10px 28px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.55);
+  }
 }

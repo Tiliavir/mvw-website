@@ -7,7 +7,7 @@
   padding: 0;
   font-size: var(--font-size-xs);
   color: var(--color-text-subtle);
-  border-left: 2px solid rgba($highlight-color, 0.4);
+  border-left: 2px solid color-mix(in srgb, var(--color-accent) 40%, transparent);
   padding-left: var(--space-4);
 
   & > li {
