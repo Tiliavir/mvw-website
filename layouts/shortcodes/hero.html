@@ -1,0 +1,6 @@
+<div class="hero">
+  {{ partial "image" (dict "Page" .Page "src" (.Get "src") "alt" (.Get "alt") "isAboveTheFold" true "sizes" "100vw") }}
+  <div class="hero-text">
+    {{ .Inner | .Page.RenderString (dict "display" "block") }}
+  </div>
+</div>

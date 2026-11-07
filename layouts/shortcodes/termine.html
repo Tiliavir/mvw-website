@@ -1,8 +1,22 @@
-{{ with (.Page.Resources.GetMatch "termine.json" | transform.Unmarshal).termine }}
+{{- $events := partialCached "termine/events.html" . "termine" -}}
+{{- $feed := resources.FromString "aktuelles/termine/termine.ics" (partial "termine/calendar.html" $events) -}}
 
-{{ range $key, $value := . }}
-  <h2>{{ $key }}</h2>
-  <table class="termine responsive banded-rows" aria-label="Termine">
+<p class="subscribe">
+  Alle Termine im eigenen Kalender:
+  <a href="{{ replaceRE `^https?://` `webcal://` $feed.Permalink | safeURL }}">abonnieren</a>
+  oder
+  <a href="{{ $feed.RelPermalink }}" download>herunterladen</a>.
+</p>
+
+{{- $years := slice -}}
+{{- range $events -}}
+  {{- $years = $years | append .year -}}
+{{- end -}}
+
+{{ range uniq $years }}
+  {{- $year := . }}
+  <h2>{{ $year }}</h2>
+  <table class="termine responsive banded-rows" aria-label="Termine {{ $year }}">
     <thead>
     <tr>
       <th scope="col">Zeitpunkt</th>
@@ -10,32 +24,16 @@
     </tr>
     </thead>
     <tbody>
-      {{ range . }}
+      {{ range where $events "year" $year }}
         <tr itemscope itemtype="http://schema.org/Event">
           <td>
             {{ partial "timespan" (dict "start" .starttime "end" .endtime "schema" true) }}
           </td>
           <td>
-            <span itemprop="name">{{.title}}</span>
-            {{- with .location -}}
-              &nbsp;(<span itemprop="location" itemscope itemtype="http://schema.org/Place">
-                {{- if .name -}}<span itemprop="name">{{ .name }}</span>{{- end -}}
-                {{- if .address -}}
-                  {{- if .name -}}&nbsp;{{- end -}}
-                  <span itemprop="address">{{ .address }}</span>
-                {{- end -}}
-              </span>)
-            {{- end -}}
-
-            {{ with .description -}}
-              <div class=description itemprop="description">
-                {{ . | markdownify }}
-              </div>
-            {{- end }}
+            {{ partial "termine/event-details.html" . }}
           </td>
         </tr>
       {{ end }}
     </tbody>
   </table>
-{{ end }}
 {{ end }}

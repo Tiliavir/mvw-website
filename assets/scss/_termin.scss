@@ -1,0 +1,27 @@
+.location {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+
+  a {
+    color: inherit;
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
+
+.description {
+  font-size: 0.9em;
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+.ics {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  margin-top: var(--space-1);
+}

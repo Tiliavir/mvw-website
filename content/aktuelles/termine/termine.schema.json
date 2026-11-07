@@ -30,6 +30,17 @@
                   "address": {
                     "type": "string",
                     "description": "Adresse des Veranstaltungsorts"
+                  },
+                  "geo": {
+                    "type": "object",
+                    "description": "Optionale Koordinaten (WGS 84) für einen genauen Kartenlink mit Markierung. Mit zoom wird nur der Kartenausschnitt ohne Markierung geöffnet (für Gebiete wie ganz Wollbach). Ohne geo wird auf OpenStreetMap nach Name und Adresse gesucht.",
+                    "required": ["lat", "lon"],
+                    "properties": {
+                      "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+                      "lon": { "type": "number", "minimum": -180, "maximum": 180 },
+                      "zoom": { "type": "integer", "minimum": 1, "maximum": 19 }
+                    },
+                    "additionalProperties": false
                   }
                 },
                 "additionalProperties": false
@@ -47,6 +58,10 @@
                 "type": "string",
                 "format": "date-time",
                 "description": "Ende der Veranstaltung (ISO 8601)"
+              },
+              "page": {
+                "type": "string",
+                "description": "Optionaler Pfad einer Seite zur Veranstaltung, z. B. /blog/2026-jahreskonzert"
               }
             },
             "additionalProperties": false

@@ -1,0 +1,3 @@
+{{- $text := replaceRE `\\` `\\` . -}}
+{{- $text = replaceRE `([;,])` `\$1` $text -}}
+{{- return replaceRE `\r?\n` `\n` $text -}}

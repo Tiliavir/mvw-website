@@ -1,7 +1,8 @@
 {{ with .keywords }}
-<div class="keyword-selector">
+<fieldset class="keyword-selector">
+<legend class="visually-hidden">Filter</legend>
 {{ range . }}
-  <span class="keyword">{{ . }}</span>
+  <button type="button" class="keyword" aria-pressed="false">{{ . }}</button>
 {{ end }}
-</div>
+</fieldset>
 {{ end }}

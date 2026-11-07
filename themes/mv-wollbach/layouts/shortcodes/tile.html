@@ -1,31 +1,23 @@
 {{- $src := .Get "image" -}}
-
-{{- $img := "" -}}
-  {{- if $.Page.Resources.GetMatch $src -}}
-  {{- $img = $.Page.Resources.GetMatch $src -}}
+{{- $img := or ($.Page.Resources.GetMatch $src) (resources.Get $src) -}}
+{{- if not $img -}}
+  {{- errorf "tile: image %q not found | %s" $src .Position -}}
+{{- end -}}
+{{- $href := ref .Page (.Get "file") -}}
+{{- with .Get "anchor" -}}
+  {{- $href = printf "%s#%s" $href . -}}
 {{- end -}}
 
-{{- $originalWidth := $img.Width -}}
-
-{{- $r768Webp := cond (ge $img.Width 550) ($img.Resize "550x webp q85 lanczos" | fingerprint) nil -}}
-
-<div class="tile">
-  <a class="unstyled image-container" href="{{ ref .Page (.Get "file") }}" style="background-image: url('{{ $r768Webp.RelPermalink | safeCSS }}');">
-    <div class="blur">
-      <div class="tile-content">
-        {{ with .Get "title" }}
-          <h2 class="title">
-            {{ . }}
-          </h2>
-        {{ end }}
-        {{ if gt (len .Inner) 0 }}
-          {{ .Inner }}
-        {{ else if .Get "text" }}
-          <div class="text">
-            {{ .Get "text" }}
-          </div>
-        {{end}}
-      </div>
-    </div>
-  </a>
-</div>
+<a class="tile unstyled" href="{{ $href }}">
+  {{ partial "image" (dict "Page" .Page "src" $src "decorative" true "sizes" "(max-width: 768px) 100vw, 360px") }}
+  <span class="tile-content">
+    {{ with .Get "title" }}
+      <span class="title">{{ . }}</span>
+    {{ end }}
+    {{ if gt (len .Inner) 0 }}
+      {{ .Inner }}
+    {{ else }}
+      {{ with .Get "text" }}<span class="text">{{ . }}</span>{{ end }}
+    {{ end }}
+  </span>
+</a>

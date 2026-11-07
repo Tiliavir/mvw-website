@@ -23,7 +23,7 @@
           background-color: var(--color-surface);
 
           &:first-child {
-            background-color: $body-bg;
+            background-color: var(--color-bg);
           }
         }
       }

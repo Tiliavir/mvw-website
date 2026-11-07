@@ -1,0 +1,25 @@
+{{- /* Name, location (map link), description and actions of one event from termine/events.html. */ -}}
+<span class="event-name" itemprop="name">
+  {{- with .page -}}
+    <a itemprop="url" href="{{ .RelPermalink }}">{{ $.title }}</a>
+  {{- else -}}
+    {{ .title }}
+  {{- end -}}
+</span>
+<span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
+  <a class="unstyled" href="{{ .map }}" target="_blank" rel="noopener" title="Ort auf OpenStreetMap anzeigen">
+    <span itemprop="name">{{ .location.name }}</span>, <span itemprop="address">{{ .location.address }}</span>
+  </a>
+  {{- if .point }}
+    {{- with .location.geo }}
+    <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+      <meta itemprop="latitude" content="{{ .lat }}"/>
+      <meta itemprop="longitude" content="{{ .lon }}"/>
+    </span>
+    {{- end }}
+  {{- end }}
+</span>
+{{- with .description }}
+  <div class="description" itemprop="description">{{ . | markdownify }}</div>
+{{- end }}
+<a class="ics" href="{{ .ics.RelPermalink }}" download aria-label="In Kalender eintragen: {{ .title }}">In Kalender eintragen</a>
