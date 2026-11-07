@@ -74,3 +74,6 @@ privacy:
     disable: true
   youtube:
     disable: true
+
+params:
+  repository: https://github.com/Tiliavir/mvw-website.git
