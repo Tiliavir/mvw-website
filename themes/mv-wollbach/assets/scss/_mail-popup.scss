@@ -3,11 +3,11 @@
 .mail-popup {
   display: none;
   box-shadow: var(--shadow-xl);
-  background: #fff;
+  background: var(--color-bg);
   clear: left;
   padding: var(--space-7) var(--space-5);
   border-radius: var(--radius-lg);
-  border: 1px solid rgba($highlight-color, 0.2);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 20%, transparent);
 
   &.visible {
     z-index: 1000;
@@ -58,7 +58,7 @@
       content: ' ';
       height: 33px;
       width: 2px;
-      background-color: $gray-base;
+      background-color: var(--color-text);
       border-radius: 1px;
     }
 

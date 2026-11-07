@@ -1,19 +1,23 @@
-{{- $height := (.Get "height") -}}
-{{- $unit := (.Get "unit") -}}
+{{- $height := .Get "height" -}}
+{{- $unit := .Get "unit" -}}
 {{- $ordinal := .Ordinal -}}
-{{- $items := (.Get "items") | default 1 -}}
-{{- $images := (split (.Get "images") ",") -}}
+{{- $items := .Get "items" | default 1 -}}
+{{- $images := index hugo.Data (.Get "data") -}}
+{{- if not $images -}}
+  {{- errorf "slider: data file %q not found | %s" (.Get "data") .Position -}}
+{{- end -}}
 
-<div id="carousel{{ .Ordinal }}" class="carousel" data-duration="{{ .Get `duration` }}">
+<div id="carousel{{ $ordinal }}" class="carousel" data-duration="{{ .Get `duration` }}" role="region" aria-roledescription="Karussell" aria-label="Bilder aus dem Vereinsleben">
   <ul>
     {{ range $index, $image := $images }}
-      <li id="c{{ $ordinal }}_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $items }}); padding-bottom: {{ $height }}{{ $unit }};">
-        {{ $isAboveTheFold := lt $index 1 }}
-        {{- $img := $.Page.Resources.GetMatch $image -}}
-        {{ partial "image" (dict "Page" $.Page "src" $image "alt" (strings.TrimSuffix (path.Ext $img.Name) $img.Name) "isAboveTheFold" $isAboveTheFold) }}
+      {{- if not $image.alt -}}
+        {{- errorf "slider: missing alt for %q" $image.src -}}
+      {{- end -}}
+      <li id="c{{ $ordinal }}_slide{{ add $index 1 }}" style="min-width: calc(100%/{{ $items }}); padding-bottom: {{ $height }}{{ $unit }};">
+        {{ partial "image" (dict "Page" $.Page "src" $image.src "alt" $image.alt "isAboveTheFold" false) }}
       </li>
     {{ end }}
   </ul>
-  <div class="prev">&lsaquo;</div>
-  <div class="next">&rsaquo;</div>
+  <button type="button" class="prev" aria-label="Vorheriges Bild" aria-controls="carousel{{ $ordinal }}">&lsaquo;</button>
+  <button type="button" class="next" aria-label="Nächstes Bild" aria-controls="carousel{{ $ordinal }}">&rsaquo;</button>
 </div>

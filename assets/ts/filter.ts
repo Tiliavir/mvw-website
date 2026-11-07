@@ -3,15 +3,20 @@ class Filter {
     return find.every((v) => array.includes(v));
   }
 
+  private static text(el: Element): string {
+    return el.textContent?.trim() ?? "";
+  }
+
   private readonly filters: string[] = [];
 
-  public initialize() {
-    const keywords = document.querySelectorAll(".keyword-selector .keyword");
-    keywords.forEach((el) => {
-      el.addEventListener("click", () => {
-        el.classList.toggle("active");
-        this.toggleFilter(el.textContent?.trim() || "");
-      });
+  public initialize(): void {
+    document.querySelectorAll<HTMLButtonElement>(".keyword").forEach((el) => {
+      el.addEventListener("click", () => this.toggleFilter(Filter.text(el)));
+    });
+
+    document.querySelector<HTMLButtonElement>(".filter-reset")?.addEventListener("click", () => {
+      this.filters.splice(0, this.filters.length);
+      this.updateFilter();
     });
   }
 
@@ -29,25 +34,33 @@ class Filter {
     const tabs = document.querySelector<HTMLElement>(".tabs");
     const tabPanes = document.querySelectorAll<HTMLElement>(".tab-content .tab-pane");
     const entries = document.querySelectorAll<HTMLElement>(".tab-content .entry");
+    const active = this.filters.length > 0;
 
-    if (this.filters.length > 0) {
-      if (tabs) {
-        tabs.style.display = "none";
-      }
-      tabPanes.forEach((pane) => (pane.style.display = "block"));
+    document.querySelectorAll<HTMLButtonElement>(".keyword").forEach((el) => {
+      const selected = this.filters.includes(Filter.text(el));
+      el.classList.toggle("active", selected);
+      el.setAttribute("aria-pressed", String(selected));
+    });
 
-      entries.forEach((entry) => {
-        const keywords = Array.from(entry.querySelectorAll(".keyword")).map((k) => k.textContent?.trim() || "");
-        const visible = Filter.containsAll(keywords, this.filters);
-        entry.style.display = visible ? "block" : "none";
-      });
-    } else {
-      if (tabs) {
-        tabs.style.display = "";
+    const status = document.querySelector<HTMLElement>(".filter-status");
+    if (status) {
+      status.hidden = !active;
+      const label = status.querySelector<HTMLElement>(".filter-active");
+      if (label) {
+        label.textContent = this.filters.join(", ");
       }
-      tabPanes.forEach((pane) => (pane.style.display = ""));
-      entries.forEach((entry) => (entry.style.display = "block"));
     }
+
+    if (tabs) {
+      tabs.style.display = active ? "none" : "";
+    }
+    tabPanes.forEach((pane) => {
+      pane.style.display = active ? "block" : "";
+    });
+    entries.forEach((entry) => {
+      const keywords = Array.from(entry.querySelectorAll(".keyword")).map(Filter.text);
+      entry.hidden = active && !Filter.containsAll(keywords, this.filters);
+    });
   }
 }
 

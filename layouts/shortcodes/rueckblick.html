@@ -1,20 +1,17 @@
 {{ with (.Page.Resources.GetMatch "rueckblick.json" | transform.Unmarshal).rueckblick }}
 
-{{ $keywords := slice }}
 {{ $years := slice }}
 
 {{ range $year, $records := . }}
   {{ $years = $years | append $year }}
-  {{ range $records }}
-    {{ with .keywords }}
-      {{ $keywords = $keywords | append . | uniq }}
-    {{ end }}
-  {{ end }}
 {{ end }}
 
 {{ $activeYear := (index (last 1 $years) 0) }}
 
-{{ partial "filter" (dict "keywords" (sort $keywords "value" "asc")) }}
+<p class="filter-status" hidden>
+  Gefiltert nach: <span class="filter-active"></span>
+  <button type="button" class="filter-reset">Filter zurücksetzen</button>
+</p>
 {{ partial "tabs" (dict "tabs" (sort $years "value" "desc") "active" $activeYear) }}
 
 <div class="tab-content">
@@ -22,14 +19,6 @@
   <div class="tab-pane{{ if (eq $year $activeYear) }} active{{ end }}" id="{{ $year }}">
     {{ range $records }}
       <div class="entry">
-        {{ with .keywords }}
-          <div class="keywords hidden">
-            {{ range . }}
-              <span class="keyword">{{ . }}</span>
-            {{ end }}
-          </div>
-        {{ end }}
-
         <h2>
           {{ if .starttime }}
             {{ partial "timespan" (dict "start" .starttime "end" .endtime "schema" false) }}
@@ -37,6 +26,14 @@
           {{ end }}
           {{ .title }}
         </h2>
+
+        {{ with .keywords }}
+          <div class="keywords" role="group" aria-label="Schlagworte">
+            {{ range . }}
+              <button type="button" class="keyword" aria-pressed="false">{{ . }}</button>
+            {{ end }}
+          </div>
+        {{ end }}
 
         {{ with .images }}
           <div class="image-gallery">

@@ -53,7 +53,8 @@ $brand-padding: 0 12px 0 8px;
   li {
     height: auto;
 
-    a {
+    a,
+    .dropdown-toggle {
       padding: 11px 16px;
       display: block;
       text-decoration: none;
@@ -61,11 +62,38 @@ $brand-padding: 0 12px 0 8px;
       cursor: pointer;
       transition: color var(--transition-fast);
     }
+
+    .dropdown-toggle {
+      width: 100%;
+      text-align: left;
+      font: inherit;
+      letter-spacing: inherit;
+      background: none;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+
+      &:hover,
+      &:active {
+        background: none;
+        box-shadow: none;
+        transform: none;
+      }
+    }
   }
 }
 
 .navigation-checkbox {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+
+  &:focus-visible ~ .navigation-header .navigation-hamburger {
+    outline: 2px solid var(--color-accent);
+    outline-offset: -4px;
+  }
 }
 
 .dropdown {
@@ -93,6 +121,10 @@ $brand-padding: 0 12px 0 8px;
   }
 
   .dropdown {
+    .dropdown-toggle {
+      cursor: default;
+    }
+
     &:hover > ul {
       position: relative;
       display: block;
@@ -224,19 +256,24 @@ $brand-padding: 0 12px 0 8px;
       & > li {
         display: inline-block;
 
-        a {
+        a,
+        .dropdown-toggle {
           position: relative;
           padding: 0 15px;
           display: block;
           height: $top-nav-height;
           line-height: $top-nav-height;
-          font-variant: small-caps;
+          font-size: 12px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
         }
       }
     }
   }
 
   .navigation-checkbox {
+    display: none;
+
     &:not(:checked) ~ .navigation-menu {
       display: block;
     }
@@ -245,7 +282,8 @@ $brand-padding: 0 12px 0 8px;
   .dropdown {
     height: $top-nav-height;
 
-    &:hover > ul {
+    &:hover > ul,
+    &:focus-within > ul {
       position: absolute;
       display: block;
       left: 0;
@@ -253,7 +291,7 @@ $brand-padding: 0 12px 0 8px;
       padding: 0;
     }
 
-    & > a {
+    & > .dropdown-toggle {
       &::after {
         $expand-arrow-height: 3px;
         position: absolute;

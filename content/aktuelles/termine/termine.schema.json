@@ -47,6 +47,10 @@
                 "type": "string",
                 "format": "date-time",
                 "description": "Ende der Veranstaltung (ISO 8601)"
+              },
+              "page": {
+                "type": "string",
+                "description": "Optionaler Pfad einer Seite zur Veranstaltung, z. B. /blog/2026-jahreskonzert"
               }
             },
             "additionalProperties": false

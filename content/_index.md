@@ -5,7 +5,7 @@ keywords: [Musikverein, Wollbach, Blasmusik, Instrument, Orchester, Verein, Musi
 customCss:
   - scss/index.scss
 customJs:
-  - ts/index.ts
+  - ts/termine.ts
 ---
 
 {{< comment >}}
@@ -22,32 +22,34 @@ customJs:
 </header>
 {{< /comment >}}
 
-<h1 class="page-header">Willkommen beim Musikverein Wollbach</h1>
+{{< hero src="img/slider/alle-3.jpg"
+          alt="Das ganze Orchester mit Instrumenten vor einem historischen Gebäude"
+>}}
+<h1>Willkommen beim Musikverein Wollbach</h1>
 
 Der Musikverein Wollbach ist ein kreatives Blasorchester mit einer über 150-jährigen Tradition. Konzertante sinfonische
 Blasmusik gehört ebenso zum Repertoire wie swingende Unterhaltungsmusik. Im Orchester spielen über 50 Musiker aller
 Altersgruppen. Die Leitung des Orchesters hat seit 30 Jahren unser Dirigent Oliver Hauser.
+{{< /hero >}}
 
-{{< slider height="500"
-           unit="px"
-           duration="7000"
-           images="img/slider/alle-1.jpg,img/slider/tuba-1.jpg,img/slider/dampfmusik.jpg,img/slider/klarinette.jpg,img/slider/konzert_2020.jpg,img/slider/trompete-2.jpg,img/slider/alle-2.jpg,img/slider/guitar.jpg,img/slider/konzert_2018.jpg,img/slider/saxophon-1.jpg,img/slider/trompete-1.jpg,img/slider/alle-3.jpg,img/slider/horn.jpg,img/slider/konzert_2019.jpg,img/slider/saxophon.jpg,img/slider/konzert_2023.jpg"
->}}
+{{< naechste-termine limit="3" >}}
 
 <div class="tiles">
   {{< tile file="mitgliedschaft"
-           image="img/slider/alle-1.jpg"
-           title="Mitglied werden"
-           text="Wir konnten Ihr Interesse an unserem Verein wecken und Sie wollen uns unterstützen? Hier können Sie Mitglied werden."
+           anchor="aktive-mitgliedschaft"
+           image="img/slider/saxophon.jpg"
+           title="Mitspielen"
+           text="Sie spielen ein Instrument oder möchten eines lernen? Proben sind donnerstags von 20 bis 22 Uhr in der Kandertalhalle – kommen Sie einfach vorbei."
   />}}
-  {{< tile file="termine"
-           image="img/termine.webp"
-           title="Termine"
-           text="Lust uns zu hören? Hier ist unser Terminkalender..."
+  {{< tile file="mitgliedschaft"
+           anchor="passivmitglied-werden"
+           image="img/slider/alle-1.jpg"
+           title="Passivmitglied werden"
+           text="Sie mögen unsere Musik und möchten den Verein unterstützen? Als Passivmitglied helfen Sie uns, Instrumente, Noten und Jugendarbeit zu finanzieren."
   />}}
   {{< tile file="gooding"
            image="img/gooding.webp"
-           title="Unterstützen Sie uns"
-           text="Unterstützen Sie uns bei Ihren täglichen Einkäufen – ganz nebenbei und ohne Extrakosten. Welche Unternehmen mitmachen sehen Sie hier..."
+           title="Einkaufen und unterstützen"
+           text="Unterstützen Sie uns bei Ihren täglichen Online-Einkäufen – ganz nebenbei und ohne Extrakosten."
   />}}
 </div>
