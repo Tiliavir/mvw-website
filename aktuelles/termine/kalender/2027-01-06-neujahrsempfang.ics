@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Musikverein Wollbach 1866 e.V.//Termine//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Musikverein Wollbach
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:2027-01-06-neujahrsempfang@mv-wollbach.de
+DTSTAMP:20261107T205747Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:Neujahrsempfang
+LOCATION:Kandertalhalle\, Wollbach
+GEO:47.670389;7.650747
+URL:https://www.mv-wollbach.de/aktuelles/termine/
+END:VEVENT
+END:VCALENDAR

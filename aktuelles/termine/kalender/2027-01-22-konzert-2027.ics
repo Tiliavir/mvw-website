@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Musikverein Wollbach 1866 e.V.//Termine//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Musikverein Wollbach
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:2027-01-22-konzert-2027@mv-wollbach.de
+DTSTAMP:20261107T205747Z
+DTSTART:20270122T190000Z
+DTEND:20270123T220000Z
+SUMMARY:Konzert 2027
+LOCATION:Kandertalhalle Wollbach\, Schulstraße 12\, 79400 Kandern\, Deutsc
+ hland
+GEO:47.670389;7.650747
+URL:https://www.mv-wollbach.de/aktuelles/termine/
+END:VEVENT
+END:VCALENDAR

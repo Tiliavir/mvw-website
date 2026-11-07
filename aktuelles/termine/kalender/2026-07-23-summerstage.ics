@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Musikverein Wollbach 1866 e.V.//Termine//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Musikverein Wollbach
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:2026-07-23-summerstage@mv-wollbach.de
+DTSTAMP:20261107T205747Z
+DTSTART:20260723T170000Z
+DTEND:20260723T200000Z
+SUMMARY:SummerStage
+LOCATION:Vor dem Theater\, Freiburg im Breisgau
+GEO:47.99511;7.845403
+URL:https://www.mv-wollbach.de/aktuelles/termine/
+END:VEVENT
+END:VCALENDAR

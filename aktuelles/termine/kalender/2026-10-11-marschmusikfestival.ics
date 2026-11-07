@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Musikverein Wollbach 1866 e.V.//Termine//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Musikverein Wollbach
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:2026-10-11-marschmusikfestival@mv-wollbach.de
+DTSTAMP:20261107T205747Z
+DTSTART:20261011T070000Z
+DTEND:20261011T150000Z
+SUMMARY:Marschmusikfestival
+LOCATION:In Wollbach inkl. Nebenorte\, Wollbach
+URL:https://www.mv-wollbach.de/aktuelles/termine/
+END:VEVENT
+END:VCALENDAR

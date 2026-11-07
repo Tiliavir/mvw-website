@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Musikverein Wollbach 1866 e.V.//Termine//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Musikverein Wollbach
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:2026-10-10-sauserbummel@mv-wollbach.de
+DTSTAMP:20261107T205747Z
+DTSTART:20261010T110000Z
+DTEND:20261010T210000Z
+SUMMARY:Sauserbummel
+LOCATION:In und um Wollbach\, Wollbach
+URL:https://www.mv-wollbach.de/aktuelles/termine/
+END:VEVENT
+END:VCALENDAR
