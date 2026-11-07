@@ -1,7 +1,4 @@
 {
-  // Type checking only (npm run lint) - Hugo's js.Build (esbuild) compiles the TypeScript.
-  // Deliberately not named tsconfig.json: esbuild would pick that up and, because of
-  // "strict", prepend "use strict" to every bundle, including the bundled lunr libraries.
   "compilerOptions": {
     "target": "es2022",
     "lib": ["es2022", "dom", "dom.iterable"],
