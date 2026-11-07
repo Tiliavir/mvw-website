@@ -1,7 +1,5 @@
-{{- $height := .Get "height" -}}
-{{- $unit := .Get "unit" -}}
 {{- $ordinal := .Ordinal -}}
-{{- $items := .Get "items" | default 1 -}}
+{{- $isAboveTheFold := .Get "isAboveTheFold" | default false -}}
 {{- $images := index hugo.Data (.Get "data") -}}
 {{- if not $images -}}
   {{- errorf "slider: data file %q not found | %s" (.Get "data") .Position -}}
@@ -13,8 +11,8 @@
       {{- if not $image.alt -}}
         {{- errorf "slider: missing alt for %q" $image.src -}}
       {{- end -}}
-      <li id="c{{ $ordinal }}_slide{{ add $index 1 }}" style="min-width: calc(100%/{{ $items }}); padding-bottom: {{ $height }}{{ $unit }};">
-        {{ partial "image" (dict "Page" $.Page "src" $image.src "alt" $image.alt "isAboveTheFold" false) }}
+      <li id="c{{ $ordinal }}_slide{{ add $index 1 }}">
+        {{ partial "image" (dict "Page" $.Page "src" $image.src "alt" $image.alt "isAboveTheFold" (and $isAboveTheFold (eq $index 0))) }}
       </li>
     {{ end }}
   </ul>
