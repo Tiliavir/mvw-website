@@ -17,7 +17,7 @@ $gray-light-border-color: $gray-lighter;
 
 // fonts
 $font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-$font-family-display: 'Lora', Georgia, serif;
+$font-family-display: $font-family;
 $font-size-larger: 19px;
 $font-size-large: 17px;
 $font-size-base: 15px;
@@ -41,21 +41,21 @@ $mobile-max-width: 768px;
   // Brand colors
   --color-accent: #{$highlight-color};
   --color-accent-strong: #{darken($highlight-color, 10%)};
-  --color-accent-text: #{darken($highlight-color, 12%)};
+  --color-accent-text: #1d4a8a;
   --color-accent-light: #{lighten($highlight-color, 10%)};
   --color-accent-subtle: #{rgba($highlight-color, 0.1)};
   --color-on-accent: #fff;
   --color-text: #{$gray-base};
   --color-text-muted: #{$gray};
   --color-text-subtle: #{$gray-light};
-  --color-bg: #{$body-bg};
-  --color-surface: #{$gray-lightest};
-  --color-border: #{$gray-lighter};
+  --color-bg: #f8f9fb;
+  --color-surface: #eef1f6;
+  --color-border: #d9dfe9;
   --color-border-strong: #{$gray-border-color};
-  --color-nav-bg: #1e1e1e;
-  --color-nav-text: rgba(255, 255, 255, 0.7);
+  --color-nav-bg: #15233f;
+  --color-nav-text: rgba(255, 255, 255, 0.72);
   --color-nav-text-strong: #fff;
-  --color-footer-bg: #1c1c1c;
+  --color-footer-bg: #15233f;
   --color-footer-text: rgba(255, 255, 255, 0.6);
   // Typography
   --font-family: #{$font-family};
@@ -80,9 +80,9 @@ $mobile-max-width: 768px;
 
   // Border radius scale
   --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 14px;
-  --radius-xl: 20px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-xl: 8px;
 
   // Elevation / shadow scale
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -99,19 +99,19 @@ $mobile-max-width: 768px;
   :root {
     --color-accent: #c9a14a;
     --color-accent-strong: #ddb965;
-    --color-accent-text: #d4ae5c;
+    --color-accent-text: #93b7ee;
     --color-accent-light: #ddb965;
     --color-accent-subtle: rgba(201, 161, 74, 0.14);
-    --color-on-accent: #161514;
-    --color-text: #ebe7e0;
-    --color-text-muted: #bdb7ad;
-    --color-text-subtle: #8f897f;
-    --color-bg: #161514;
-    --color-surface: #22201d;
-    --color-border: #34312c;
-    --color-border-strong: #4a463f;
-    --color-nav-bg: #0e0e0d;
-    --color-footer-bg: #0e0e0d;
+    --color-on-accent: #0f1522;
+    --color-text: #e6e9ef;
+    --color-text-muted: #b3bacb;
+    --color-text-subtle: #8a93a8;
+    --color-bg: #0f1522;
+    --color-surface: #18202f;
+    --color-border: #263045;
+    --color-border-strong: #36425c;
+    --color-nav-bg: #0a101b;
+    --color-footer-bg: #0a101b;
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
     --shadow-lg: 0 10px 28px rgba(0, 0, 0, 0.5);

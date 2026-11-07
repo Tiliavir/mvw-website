@@ -43,7 +43,7 @@
         <ul class="dates">
           {{- range .location.dates -}}
             {{- $date := (time .) -}}
-            <li>{{ $date.Day }}. {{ index $.Site.Data.monate (printf "%d" $date.Month) }} {{ $date.Year }}</li>
+            <li>{{ $date.Day }}. {{ index hugo.Data.monate (printf "%d" $date.Month) }} {{ $date.Year }}</li>
           {{- end -}}
         </ul>
 

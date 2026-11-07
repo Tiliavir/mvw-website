@@ -2,7 +2,7 @@
 {{- $unit := .Get "unit" -}}
 {{- $ordinal := .Ordinal -}}
 {{- $items := .Get "items" | default 1 -}}
-{{- $images := index site.Data (.Get "data") -}}
+{{- $images := index hugo.Data (.Get "data") -}}
 {{- if not $images -}}
   {{- errorf "slider: data file %q not found | %s" (.Get "data") .Position -}}
 {{- end -}}

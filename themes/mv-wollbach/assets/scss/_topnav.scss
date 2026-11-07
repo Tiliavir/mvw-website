@@ -263,7 +263,9 @@ $brand-padding: 0 12px 0 8px;
           display: block;
           height: $top-nav-height;
           line-height: $top-nav-height;
-          font-variant: small-caps;
+          font-size: 12px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
         }
       }
     }

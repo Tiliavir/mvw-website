@@ -139,6 +139,8 @@ h3 {
   margin-top: 28px;
   margin-bottom: 8px;
   font-family: $font-family-display;
+  font-weight: 800;
+  letter-spacing: -0.025em;
   small {
     font-size: 65%;
   }
@@ -156,22 +158,21 @@ h6 {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.65 * $font-size-larger;
   color: var(--color-text);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   line-height: 1.15;
-  border-bottom: 2px solid color-mix(in srgb, var(--color-accent) 25%, transparent);
-  padding-bottom: 10px;
+  padding-bottom: 14px;
   position: relative;
 
   &::after {
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: 0;
     left: 0;
-    width: 48px;
-    height: 2px;
+    width: 56px;
+    height: 4px;
     background-color: var(--color-accent);
   }
 }

@@ -1,7 +1,7 @@
 {{- $limit := int (.Get "limit" | default 3) -}}
 {{- $events := partialCached "termine/events.html" . "termine" -}}
 {{- $cutoff := now.AddDate 0 0 -3 -}}
-{{- $months := site.Data.monate -}}
+{{- $months := hugo.Data.monate -}}
 {{- $termine := site.GetPage "/aktuelles/termine" -}}
 
 <section class="upcoming" aria-labelledby="upcoming-title">
