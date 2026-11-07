@@ -19,7 +19,12 @@
         "title": "Sauserbummel",
         "location": {
           "name": "In und um Wollbach",
-          "address": "Wollbach"
+          "address": "Wollbach",
+          "geo": {
+            "lat": 47.68093,
+            "lon": 7.6734,
+            "zoom": 13
+          }
         },
         "starttime": "2026-10-10T13:00:00Z",
         "endtime": "2026-10-10T23:00:00Z"
@@ -28,7 +33,12 @@
         "title": "Marschmusikfestival",
         "location": {
           "name": "In Wollbach inkl. Nebenorte",
-          "address": "Wollbach"
+          "address": "Wollbach",
+          "geo": {
+            "lat": 47.68093,
+            "lon": 7.6734,
+            "zoom": 13
+          }
         },
         "starttime": "2026-10-11T09:00:00Z",
         "endtime": "2026-10-11T17:00:00Z"
@@ -140,7 +150,12 @@
         "title": "Sauserbummel",
         "location": {
           "name": "In und um Wollbach",
-          "address": "Wollbach"
+          "address": "Wollbach",
+          "geo": {
+            "lat": 47.68093,
+            "lon": 7.6734,
+            "zoom": 13
+          }
         },
         "starttime": "2027-10-09T00:00:00Z"
       },

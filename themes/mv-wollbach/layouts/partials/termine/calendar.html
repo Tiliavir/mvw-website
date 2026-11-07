@@ -14,8 +14,8 @@
   {{- end -}}
   {{- $lines = $lines | append (printf "SUMMARY:%s" (partial "termine/ics-text.html" .title)) -}}
   {{- $lines = $lines | append (printf "LOCATION:%s" (partial "termine/ics-text.html" (printf "%s, %s" .location.name .location.address))) -}}
-  {{- with .location.geo -}}
-    {{- $lines = $lines | append (printf "GEO:%v;%v" .lat .lon) -}}
+  {{- if .point -}}
+    {{- $lines = $lines | append (printf "GEO:%v;%v" .location.geo.lat .location.geo.lon) -}}
   {{- end -}}
   {{- with .description -}}
     {{- $lines = $lines | append (printf "DESCRIPTION:%s" (partial "termine/ics-text.html" (. | markdownify | plainify | htmlUnescape))) -}}
