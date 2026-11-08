@@ -7,7 +7,7 @@ This is a static website built with Hugo, SCSS, and TypeScript. It uses npm for 
 - **Framework**: Hugo (static site generator)
 - **Package Manager**: npm
 - **Languages**: TypeScript, SCSS, HTML/Markdown (Hugo templates)
-- **Prerequisites**: [Hugo extended version](https://gohugo.io/getting-started/installing/) (supports SCSS)
+- **Prerequisites**: [Hugo extended version](https://gohugo.io/getting-started/installing/) and [Dart Sass](https://gohugo.io/functions/css/sass/#dart-sass) on the `PATH` (`toCSS` uses `transpiler: dartsass`; CI pins the Dart Sass version in the workflows)
 
 ---
 

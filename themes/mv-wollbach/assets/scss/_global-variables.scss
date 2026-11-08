@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 // colors
 $highlight-color: #a9852a;
 $secondary-highlight-color: #4a4a4a;
@@ -40,9 +42,9 @@ $mobile-max-width: 768px;
 
   // Brand colors
   --color-accent: #{$highlight-color};
-  --color-accent-strong: #{darken($highlight-color, 10%)};
+  --color-accent-strong: #{color.adjust($highlight-color, $lightness: -10%)};
   --color-accent-text: #1d4a8a;
-  --color-accent-light: #{lighten($highlight-color, 10%)};
+  --color-accent-light: #{color.adjust($highlight-color, $lightness: 10%)};
   --color-accent-subtle: #{rgba($highlight-color, 0.1)};
   --color-on-accent: #fff;
   --color-text: #{$gray-base};

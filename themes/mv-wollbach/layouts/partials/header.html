@@ -62,12 +62,12 @@
   {{- end }}
 
   <style class="critical">
-    {{- $cssOpts := (dict "targetPath" "css/app.css" "outputStyle" "compressed" "enableSourceMap" false ) -}}
+    {{- $cssOpts := (dict "transpiler" "dartsass" "includePaths" (slice ".") "targetPath" "css/app.css" "outputStyle" "compressed" "enableSourceMap" false ) -}}
     {{- with resources.Get "scss/app.scss" | resources.ExecuteAsTemplate "style.app.css" . | toCSS $cssOpts | postCSS | minify -}}
       {{ .Content | safeCSS }}
     {{- end -}}
 
-    {{- $cssOpts := (dict "targetPath" (printf "css/%s.css" .File.ContentBaseName) "outputStyle" "compressed" "enableSourceMap" false) -}}
+    {{- $cssOpts := (dict "transpiler" "dartsass" "includePaths" (slice ".") "targetPath" (printf "css/%s.css" .File.ContentBaseName) "outputStyle" "compressed" "enableSourceMap" false) -}}
     {{- range .Page.Params.CustomCss -}}
       {{- with resources.Get . | toCSS $cssOpts | postCSS | minify -}}
         {{ .Content | safeCSS }}

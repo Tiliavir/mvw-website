@@ -7,6 +7,9 @@
 If you are on Ubuntu, download and install from [gohugoio releases on GitHub](https://github.com/gohugoio/hugo/releases/).
 Take the latest `hugo_extended_*_Linux-64bit.deb` package.
 
+The SCSS is compiled with [Dart Sass](https://gohugo.io/functions/css/sass/#dart-sass), which must be on your `PATH`
+(e.g. `sudo snap install dart-sass`, or the standalone release from [sass/dart-sass](https://github.com/sass/dart-sass/releases)).
+
 ## Debug / Test Build
 ```bash
 hugo serve

@@ -80,7 +80,7 @@ header {
 }
 
 .hero {
-  $inset: unquote('max(5vw, calc(50vw - #{$content-max-width / 2}))');
+  $inset: max(5vw, calc(50vw - #{$content-max-width * 0.5}));
 
   display: grid;
   width: 100vw;
@@ -94,7 +94,7 @@ header {
     img {
       display: block;
       width: 100%;
-      height: unquote('min(72vh, 640px)');
+      height: min(72vh, 640px);
       object-fit: cover;
     }
   }
