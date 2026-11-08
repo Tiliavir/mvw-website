@@ -1,20 +1,20 @@
 @use 'sass:list';
-@import 'global-variables';
-@import 'mixins/breakpoint';
-@import 'topnav-theme';
+@use 'global-variables';
+@use 'mixins/breakpoint';
+@use 'topnav-theme';
 
 $brand-width: 86px;
 $brand-padding: 0 12px 0 8px;
 
 .navigation {
-  font-size: $font-size-base;
+  font-size: global-variables.$font-size-base;
   font-weight: 700;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1000;
   margin: 0 auto;
-  height: $top-nav-height;
+  height: global-variables.$top-nav-height;
   user-select: none;
 }
 
@@ -22,7 +22,7 @@ $brand-padding: 0 12px 0 8px;
   display: block;
   max-width: $brand-width;
   padding: $brand-padding;
-  height: $top-nav-height;
+  height: global-variables.$top-nav-height;
   border: 0;
 
   > * {
@@ -41,7 +41,7 @@ $brand-padding: 0 12px 0 8px;
   overflow-x: hidden;
   text-align: left;
   position: relative;
-  height: $top-nav-height;
+  height: global-variables.$top-nav-height;
 }
 
 .navigation-menu > ul {
@@ -102,7 +102,7 @@ $brand-padding: 0 12px 0 8px;
   height: auto;
 
   & > ul {
-    font-size: $font-size-base;
+    font-size: global-variables.$font-size-base;
     font-weight: 400;
     display: block;
     list-style: none;
@@ -116,7 +116,7 @@ $brand-padding: 0 12px 0 8px;
   }
 }
 
-@include breakpoint(0, $mobile-max-width) {
+@include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
   .navigation-menu {
     overflow-wrap: break-word;
   }
@@ -145,11 +145,11 @@ $brand-padding: 0 12px 0 8px;
         $padding-top-bot: 7px;
 
         padding: $padding-top-bot 0;
-        max-height: calc(100vh - #{2 * $padding-top-bot + $top-nav-height});
+        max-height: calc(100vh - #{2 * $padding-top-bot + global-variables.$top-nav-height});
         height: initial;
         overflow-y: auto;
         transition: max-height .8s ease;
-        box-shadow: 0 10px 15px -10px $black;
+        box-shadow: 0 10px 15px -10px global-variables.$black;
       }
 
       & ~ .navigation-header {
@@ -193,7 +193,7 @@ $brand-padding: 0 12px 0 8px;
       height: 2px;
       width: 22px;
       transition: transform .4s ease;
-      background-color: $color;
+      background-color: topnav-theme.$color;
       z-index: 1;
     }
 
@@ -233,7 +233,7 @@ $brand-padding: 0 12px 0 8px;
   }
 }
 
-@include breakpoint($mobile-max-width) {
+@include breakpoint.breakpoint(global-variables.$mobile-max-width) {
   .navigation-header {
     .navigation-hamburger {
       display: none;
@@ -262,8 +262,8 @@ $brand-padding: 0 12px 0 8px;
           position: relative;
           padding: 0 15px;
           display: block;
-          height: $top-nav-height;
-          line-height: $top-nav-height;
+          height: global-variables.$top-nav-height;
+          line-height: global-variables.$top-nav-height;
           font-size: 12px;
           letter-spacing: 0.08em;
           text-transform: uppercase;
@@ -281,14 +281,14 @@ $brand-padding: 0 12px 0 8px;
   }
 
   .dropdown {
-    height: $top-nav-height;
+    height: global-variables.$top-nav-height;
 
     &:hover > ul,
     &:focus-within > ul {
       position: absolute;
       display: block;
       left: 0;
-      top: $top-nav-height;
+      top: global-variables.$top-nav-height;
       padding: 0;
     }
 
@@ -298,7 +298,7 @@ $brand-padding: 0 12px 0 8px;
         position: absolute;
         content: '';
         right: 4px;
-        top: $top-nav-height * 0.5 - $expand-arrow-height + 1px;
+        top: global-variables.$top-nav-height * 0.5 - $expand-arrow-height + 1px;
         border: $expand-arrow-height solid transparent;
         border-top: $expand-arrow-height solid;
       }

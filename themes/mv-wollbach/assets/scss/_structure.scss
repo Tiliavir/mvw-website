@@ -1,9 +1,9 @@
-@import 'mixins/breakpoint';
-@import 'global-variables';
+@use 'mixins/breakpoint';
+@use 'global-variables';
 
 %content-width-behavior {
   width: 82vw;
-  max-width: $content-max-width;
+  max-width: global-variables.$content-max-width;
   margin: 0 auto;
 }
 
@@ -11,7 +11,7 @@
 header {
   @extend %content-width-behavior;
   min-height: 200px;
-  margin-top: $top-nav-height + 40px;
+  margin-top: global-variables.$top-nav-height + 40px;
 }
 
 header {
@@ -20,7 +20,7 @@ header {
   }
 }
 
-@include breakpoint(0, $mobile-max-width) {
+@include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
   %width-and-padding-reset {
     width: initial;
     padding: 0 var(--space-4);
@@ -58,7 +58,7 @@ header {
   }
 
   h2 {
-    font-family: $font-family;
+    font-family: global-variables.$font-family;
     font-size: var(--font-size-xs);
     font-weight: 700;
     letter-spacing: 0.08em;

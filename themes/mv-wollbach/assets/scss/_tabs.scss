@@ -1,5 +1,5 @@
-@import 'global-variables';
-@import 'mixins/breakpoint';
+@use 'global-variables';
+@use 'mixins/breakpoint';
 
 .tab-pane {
   &:not(.active) {
@@ -48,7 +48,7 @@
 
     & > ul {
       color: var(--color-text);
-      font-size: $font-size-base;
+      font-size: global-variables.$font-size-base;
       font-weight: 400;
       list-style: none;
       padding: 0;
@@ -98,7 +98,7 @@
         position: absolute;
         display: block;
         left: 0;
-        top: $top-nav-height;
+        top: global-variables.$top-nav-height;
         padding: 0;
         background-color: var(--color-bg);
       }
@@ -110,7 +110,7 @@
         position: absolute;
         content: '';
         right: 4px;
-        top: $top-nav-height * 0.5 - $expand-arrow-height + 1px;
+        top: global-variables.$top-nav-height * 0.5 - $expand-arrow-height + 1px;
         border: $expand-arrow-height solid transparent;
         border-top-color: var(--color-text);
       }
@@ -156,13 +156,13 @@
 .tab-dropdown-menu,
 .tabs {
   & > .hidden-mobile {
-    @include breakpoint(0, $mobile-max-width) {
+    @include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
       display: none;
     }
   }
 
   & > .visible-mobile {
-    @include breakpoint($mobile-max-width) {
+    @include breakpoint.breakpoint(global-variables.$mobile-max-width) {
       display: none;
     }
   }

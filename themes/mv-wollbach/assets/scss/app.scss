@@ -1,14 +1,14 @@
-@import 'structure';
-@import 'global-style';
-@import 'viewtransitions';
+@use 'structure';
+@use 'global-style';
+@use 'viewtransitions';
 
-@import 'topnav';
-@import 'breadcrumb';
+@use 'topnav';
+@use 'breadcrumb';
 
-@import 'images';
-@import 'tile';
-@import 'tabs';
-@import 'mail-popup';
-@import 'responsive-tables';
+@use 'images';
+@use 'tile';
+@use 'tabs';
+@use 'mail-popup';
+@use 'responsive-tables';
 
-@import 'print';
+@use 'print';

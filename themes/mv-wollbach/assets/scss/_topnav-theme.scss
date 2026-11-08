@@ -1,5 +1,5 @@
-@import 'global-variables';
-@import 'mixins/breakpoint';
+@use 'global-variables';
+@use 'mixins/breakpoint';
 
 $background-color: var(--color-nav-bg);
 $color: var(--color-nav-text);
@@ -49,7 +49,7 @@ $brand-fill: var(--color-nav-text-strong);
 }
 
 // MOBILE
-@include breakpoint(0, $mobile-max-width) {
+@include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
   .navigation-menu,
   .dropdown {
     & > ul {
@@ -111,7 +111,7 @@ $brand-fill: var(--color-nav-text-strong);
 }
 
 // DESKTOP
-@include breakpoint($mobile-max-width) {
+@include breakpoint.breakpoint(global-variables.$mobile-max-width) {
   .navigation-menu {
     & > ul {
       & > li {

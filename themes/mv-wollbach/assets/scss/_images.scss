@@ -1,4 +1,4 @@
-@import 'global-variables';
+@use 'global-variables';
 
 figure {
   border-radius: var(--radius-md);
@@ -6,7 +6,7 @@ figure {
   img {
     display: block;
     height: auto;
-    max-height: calc(75vh - #{$top-nav-height});
+    max-height: calc(75vh - #{global-variables.$top-nav-height});
     max-width: 100%;
     margin: 0 auto;
     border-radius: var(--radius-md);
