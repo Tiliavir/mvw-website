@@ -1,4 +1,5 @@
-@import 'global-variables';
+@use 'global-variables';
+@use 'mixins/breakpoint';
 
 .mail-popup {
   display: none;
@@ -18,10 +19,10 @@
     left: 25%;
   }
 
-  @include breakpoint(0, $mobile-max-width) {
+  @include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
     &.visible {
       width: calc(100vw - var(--space-8));
-      top: $top-nav-height;
+      top: global-variables.$top-nav-height;
       left: 0;
       position: fixed;
       z-index: 2;

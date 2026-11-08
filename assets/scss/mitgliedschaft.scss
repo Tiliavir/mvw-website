@@ -1,5 +1,5 @@
-@import 'themes/mv-wollbach/assets/scss/global-variables';
-@import 'themes/mv-wollbach/assets/scss/mixins/breakpoint';
+@use 'themes/mv-wollbach/assets/scss/global-variables';
+@use 'themes/mv-wollbach/assets/scss/mixins/breakpoint';
 
 .row {
   display: flex;
@@ -12,7 +12,7 @@
 .side-by-side {
   width: calc(50% - var(--space-5) / 2);
 
-  @include breakpoint(0, $mobile-max-width) {
+  @include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
     width: 100%;
   }
 }

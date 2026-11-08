@@ -1,5 +1,5 @@
-@import 'global-variables';
-@import 'mixins/breakpoint';
+@use 'global-variables';
+@use 'mixins/breakpoint';
 
 $row-alternation-bg-color: rgba(#eee, 0.3);
 $row-border-color: rgba(#ccc, 0.2);
@@ -45,7 +45,7 @@ table {
   }
 }
 
-@include breakpoint(0, $mobile-max-width) {
+@include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
   table {
     &.responsive {
       min-width: 200px;

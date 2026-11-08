@@ -1,6 +1,6 @@
-@import 'keywords';
-@import 'themes/mv-wollbach/assets/scss/global-variables';
-@import 'themes/mv-wollbach/assets/scss/mixins/breakpoint';
+@use 'keywords';
+@use 'themes/mv-wollbach/assets/scss/global-variables';
+@use 'themes/mv-wollbach/assets/scss/mixins/breakpoint';
 
 .image-gallery {
   display: flex;
@@ -38,7 +38,7 @@
         border-radius: var(--radius-md);
       }
 
-      @include breakpoint(0, $mobile-max-width) {
+      @include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
         flex: 1 1 100%;
       }
     }

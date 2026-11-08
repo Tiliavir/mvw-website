@@ -1,5 +1,5 @@
-@import 'themes/mv-wollbach/assets/scss/mixins/breakpoint';
-@import 'themes/mv-wollbach/assets/scss/global-variables';
+@use 'themes/mv-wollbach/assets/scss/mixins/breakpoint';
+@use 'themes/mv-wollbach/assets/scss/global-variables';
 
 .mvw-register-table {
   &.responsive {
@@ -27,7 +27,7 @@
   }
 }
 
-@include breakpoint(0, $mobile-max-width) {
+@include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
   .mvw-register-table {
     td {
       border: initial;

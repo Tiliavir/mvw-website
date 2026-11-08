@@ -1,5 +1,5 @@
-@import 'mixins/breakpoint';
-@import 'global-variables';
+@use 'mixins/breakpoint';
+@use 'global-variables';
 
 .tiles {
   display: grid;
@@ -56,7 +56,7 @@
     padding: var(--space-8) var(--space-5) var(--space-4);
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75));
     color: #fff;
-    font-family: $font-family-display;
+    font-family: global-variables.$font-family-display;
     font-weight: 800;
     font-size: var(--font-size-xl);
     letter-spacing: -0.02em;
@@ -76,7 +76,7 @@
   }
 }
 
-@include breakpoint(0, $mobile-max-width) {
+@include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
   .tiles {
     gap: var(--space-4);
   }

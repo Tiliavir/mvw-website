@@ -1,6 +1,6 @@
-@import 'themes/mv-wollbach/assets/scss/global-variables';
-@import 'themes/mv-wollbach/assets/scss/mixins/breakpoint';
-@import 'termin';
+@use 'themes/mv-wollbach/assets/scss/global-variables';
+@use 'themes/mv-wollbach/assets/scss/mixins/breakpoint';
+@use 'termin';
 
 header {
   display: flex;
@@ -17,7 +17,7 @@ header {
     justify-content: center;
 
     .mvw-tagline {
-      font-family: $font-family-display;
+      font-family: global-variables.$font-family-display;
       font-size: var(--font-size-sm);
       font-style: italic;
       color: var(--color-text-subtle);
@@ -57,7 +57,7 @@ header {
     }
   }
 
-  @include breakpoint(0, $mobile-max-width) {
+  @include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
     width: 100%;
     gap: var(--space-3);
 
@@ -80,7 +80,7 @@ header {
 }
 
 .hero {
-  $inset: max(5vw, calc(50vw - #{$content-max-width * 0.5}));
+  $inset: max(5vw, calc(50vw - #{global-variables.$content-max-width * 0.5}));
 
   display: grid;
   width: 100vw;
@@ -130,7 +130,7 @@ header {
     font-size: 18px;
   }
 
-  @include breakpoint(0, $mobile-max-width) {
+  @include breakpoint.breakpoint(0, global-variables.$mobile-max-width) {
     margin-top: -40px;
 
     picture img {
@@ -193,7 +193,7 @@ header {
     line-height: 1;
 
     .day {
-      font-family: $font-family-display;
+      font-family: global-variables.$font-family-display;
       font-size: 24px;
       font-weight: 700;
     }

@@ -164,7 +164,7 @@ Example from codebase:
 
 ### Imports / Build Structure
 
-- **SCSS imports**: Use tilde-free paths relative to project root
+- **SCSS imports**: Use `@use` (not `@import`, deprecated in Dart Sass) with tilde-free paths relative to the project root; members are namespaced (`global-variables.$font-size-base`, `@include breakpoint.breakpoint(…)`)
 - **Theme assets**: Stored in `themes/mv-wollbach/assets/`
 - **Page-specific assets**: Stored in `assets/scss/` and `assets/ts/`
 - **Hugo templates**: Stored in `themes/mv-wollbach/layouts/`
