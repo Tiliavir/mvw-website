@@ -1,3 +1,4 @@
+@use 'sass:list';
 @import 'global-variables';
 @import 'mixins/breakpoint';
 @import 'topnav-theme';
@@ -244,7 +245,7 @@ $brand-padding: 0 12px 0 8px;
     position: absolute;
     top: 0;
     right: 0;
-    width: calc(100% - #{$brand-width + nth($brand-padding, 2) + nth($brand-padding, 4)});
+    width: calc(100% - #{$brand-width + list.nth($brand-padding, 2) + list.nth($brand-padding, 4)});
     overflow-x: visible;
     margin: 0;
 
@@ -297,7 +298,7 @@ $brand-padding: 0 12px 0 8px;
         position: absolute;
         content: '';
         right: 4px;
-        top: $top-nav-height / 2 - $expand-arrow-height + 1px;
+        top: $top-nav-height * 0.5 - $expand-arrow-height + 1px;
         border: $expand-arrow-height solid transparent;
         border-top: $expand-arrow-height solid;
       }

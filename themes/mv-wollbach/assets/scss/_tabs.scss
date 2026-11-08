@@ -110,7 +110,7 @@
         position: absolute;
         content: '';
         right: 4px;
-        top: $top-nav-height / 2 - $expand-arrow-height + 1px;
+        top: $top-nav-height * 0.5 - $expand-arrow-height + 1px;
         border: $expand-arrow-height solid transparent;
         border-top-color: var(--color-text);
       }
