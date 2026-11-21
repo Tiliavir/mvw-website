@@ -81,6 +81,19 @@ optional. Die von Ihnen gemachten Angaben werden zum Zwecke der Bearbeitung der 
 sowie für mögliche Anschlussfragen gespeichert. Nach Erledigung der von Ihnen gestellten
 Anfrage werden personenbezogene Daten automatisch gelöscht.
 
+## Feedback-Formular
+Über das [Feedback-Formular](/feedback/) können Sie uns freiwillig und ohne Angabe
+Ihres Namens oder Ihrer E-Mail-Adresse eine Rückmeldung zur Webseite geben. Ihre
+Antworten werden als Eintrag („Issue“) im öffentlich einsehbaren Quellcode-Projekt
+dieser Webseite bei GitHub (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco,
+CA 94107, USA) gespeichert und sind dort für jeden lesbar. Bitte schreiben Sie deshalb
+keine personenbezogenen Daten in die Textfelder. Ihre IP-Adresse wird nicht an GitHub
+übermittelt. Zum Schutz vor Missbrauch speichern wir auf unserem Server nur einen mit
+geheimem Schlüssel gebildeten Hashwert Ihrer IP-Adresse, aus dem sich die Adresse nicht
+zurückrechnen lässt, und löschen ihn nach spätestens 24 Stunden. Rechtsgrundlage ist
+unser berechtigtes Interesse an einer gut nutzbaren und vor Missbrauch geschützten
+Webseite (Art. 6 Abs. 1 lit. f DSGVO).
+
 ## Verwendung von Scriptbibliotheken (Google Webfonts)
 Um unsere Inhalte browserübergreifend korrekt und grafisch ansprechend darzustellen,
 verwenden wir auf dieser Website Scriptbibliotheken und Schriftbibliotheken wie z. B.
