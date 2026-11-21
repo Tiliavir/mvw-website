@@ -1,0 +1,36 @@
+{{- $php := resources.Get "php/feedback.php" | resources.ExecuteAsTemplate "feedback.php" . -}}
+{{- $php.Publish -}}
+<form class="feedback" method="post" action="{{ "feedback.php" | absURL }}">
+  {{- range site.Data.feedback.questions }}
+  {{- $id := printf "fb-%s" .id }}
+  {{- if eq .type "choice" }}
+  <fieldset class="feedback-question">
+    <legend>{{ .question }}{{ if not .required }} <small>(freiwillig)</small>{{ end }}</legend>
+    <div class="feedback-options">
+      {{- $q := . }}
+      {{- range $i, $o := .options }}
+      <label class="feedback-option" for="{{ $id }}-{{ $o.value }}">
+        <input type="radio" id="{{ $id }}-{{ $o.value }}" name="{{ $q.id }}" value="{{ $o.value }}"{{ if and $q.required (eq $i 0) }} required{{ end }}/>
+        <span>{{ $o.label }}</span>
+      </label>
+      {{- end }}
+    </div>
+  </fieldset>
+  {{- else }}
+  <div class="feedback-question">
+    <label for="{{ $id }}">{{ .question }} <small>(freiwillig)</small></label>
+    <textarea id="{{ $id }}" name="{{ .id }}" rows="4" maxlength="{{ .maxLength }}"></textarea>
+  </div>
+  {{- end }}
+  {{- end }}
+  <div class="feedback-hp" aria-hidden="true">
+    <label for="fb-website">Bitte leer lassen</label>
+    <input type="text" id="fb-website" name="website" tabindex="-1" autocomplete="off"/>
+  </div>
+  <p class="feedback-note">
+    Ihre Antworten sind anonym und werden öffentlich gespeichert. Bitte schreiben Sie
+    keine Namen, Telefonnummern oder E-Mail-Adressen hinein. Mehr dazu im
+    <a href="{{ "datenschutz/#feedback-formular" | absURL }}">Datenschutz</a>.
+  </p>
+  <button type="submit">Feedback senden</button>
+</form>

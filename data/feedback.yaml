@@ -1,0 +1,61 @@
+questions:
+  - id: anliegen
+    question: Was haben Sie zuletzt auf unserer Seite gesucht?
+    type: choice
+    required: true
+    options:
+      - value: termine
+        label: Termine
+      - value: konzerte
+        label: Konzerte und Veranstaltungen
+      - value: mitmachen
+        label: Proben, Mitspielen, Mitglied werden
+      - value: jugend
+        label: Ausbildung und Jugend
+      - value: rueckblick
+        label: Rückblicke und Fotos
+      - value: kontakt
+        label: Kontakt
+      - value: anderes
+        label: Etwas anderes
+  - id: gefunden
+    question: Haben Sie es gefunden?
+    type: choice
+    required: true
+    options:
+      - value: schnell
+        label: Ja, schnell
+      - value: umstaendlich
+        label: Ja, aber umständlich
+      - value: nein
+        label: Nein
+  - id: umstaendlich
+    question: Was war dabei umständlich oder hat gefehlt?
+    type: text
+    maxLength: 1000
+  - id: geraet
+    question: Womit besuchen Sie unsere Seite meistens?
+    type: choice
+    options:
+      - value: handy
+        label: Handy
+      - value: computer
+        label: Computer
+      - value: tablet
+        label: Tablet
+  - id: bezug
+    question: Wie sind Sie mit dem Verein verbunden?
+    type: choice
+    options:
+      - value: mitglied
+        label: Mitglied oder Musiker/in
+      - value: besucher
+        label: Ich besuche Konzerte und Feste
+      - value: interessiert
+        label: Ich interessiere mich für den Verein
+      - value: anderes
+        label: Anders
+  - id: stoert
+    question: Was stört Sie an unserer Seite?
+    type: text
+    maxLength: 1000
