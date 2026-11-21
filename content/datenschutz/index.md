@@ -84,9 +84,9 @@ Anfrage werden personenbezogene Daten automatisch gelöscht.
 ## Feedback-Formular
 Über das [Feedback-Formular](/feedback/) können Sie uns freiwillig und ohne Angabe
 Ihres Namens oder Ihrer E-Mail-Adresse eine Rückmeldung zur Webseite geben. Ihre
-Antworten werden als Eintrag („Issue“) im öffentlich einsehbaren Quellcode-Projekt
-dieser Webseite bei GitHub (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco,
-CA 94107, USA) gespeichert und sind dort für jeden lesbar. Bitte schreiben Sie deshalb
+Antworten werden als Eintrag („Issue“) in einem nicht öffentlichen Projekt bei GitHub
+(GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA) gespeichert,
+auf das nur die Administration dieser Webseite Zugriff hat. Bitte schreiben Sie trotzdem
 keine personenbezogenen Daten in die Textfelder. Ihre IP-Adresse wird nicht an GitHub
 übermittelt. Zum Schutz vor Missbrauch speichern wir auf unserem Server nur einen mit
 geheimem Schlüssel gebildeten Hashwert Ihrer IP-Adresse, aus dem sich die Adresse nicht
