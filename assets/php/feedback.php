@@ -7,6 +7,9 @@ const LABELS = ['feedback', 'ungeprüft'];
 const MAX_PER_ADDRESS_PER_HOUR = 3;
 const MAX_PER_DAY = 30;
 const MAX_LINKS = 2;
+const PAGE_FORM = '/feedback/';
+const PAGE_THANKS = '/feedback-danke/';
+const PAGE_ERROR = '/feedback-fehler/';
 
 date_default_timezone_set('Europe/Berlin');
 
@@ -24,7 +27,7 @@ function finish(string $path): never
 function fail(string $reason): never
 {
     error_log('feedback: ' . $reason);
-    finish('/feedback-fehler/');
+    finish(PAGE_ERROR);
 }
 
 function loadConfig(): array
@@ -32,7 +35,7 @@ function loadConfig(): array
     if (!is_file(CONFIG_FILE)) {
         fail('config file missing');
     }
-    $config = require CONFIG_FILE;
+    $config = require_once CONFIG_FILE;
     foreach (['token', 'repository', 'salt'] as $key) {
         if (!is_array($config) || !is_string($config[$key] ?? null) || $config[$key] === '') {
             fail('config key missing: ' . $key);
@@ -53,6 +56,21 @@ function normalize(string $raw): string
     return trim($text);
 }
 
+function answerFor(array $q, string $value): string
+{
+    if ($q['type'] === 'choice') {
+        $labels = array_column($q['options'], 'label', 'value');
+        if (!array_key_exists($value, $labels)) {
+            fail('unknown option for ' . $q['id']);
+        }
+        return $labels[$value];
+    }
+    if (mb_strlen($value) > $q['maxLength']) {
+        fail('text too long: ' . $q['id']);
+    }
+    return $value;
+}
+
 function collectAnswers(array $questions): array
 {
     $answers = [];
@@ -62,23 +80,10 @@ function collectAnswers(array $questions): array
             fail('field is not a string: ' . $q['id']);
         }
         $value = normalize($raw);
-        if ($value === '') {
-            if ($q['required'] ?? false) {
-                fail('required field empty: ' . $q['id']);
-            }
-            continue;
-        }
-        if ($q['type'] === 'choice') {
-            $labels = array_column($q['options'], 'label', 'value');
-            if (!array_key_exists($value, $labels)) {
-                fail('unknown option for ' . $q['id']);
-            }
-            $answers[] = ['question' => $q, 'value' => $labels[$value]];
-        } else {
-            if (mb_strlen($value) > $q['maxLength']) {
-                fail('text too long: ' . $q['id']);
-            }
-            $answers[] = ['question' => $q, 'value' => $value];
+        if ($value !== '') {
+            $answers[] = ['question' => $q, 'value' => answerFor($q, $value)];
+        } elseif ($q['required'] ?? false) {
+            fail('required field empty: ' . $q['id']);
         }
     }
     return $answers;
@@ -185,18 +190,18 @@ function createIssue(array $config, array $issue): void
 }
 
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
-    finish('/feedback/');
+    finish(PAGE_FORM);
 }
 
 if (($_POST['website'] ?? '') !== '') {
-    finish('/feedback-danke/');
+    finish(PAGE_THANKS);
 }
 
 $config = loadConfig();
 $answers = collectAnswers($questions);
 
 if (looksLikeSpam($answers)) {
-    finish('/feedback-danke/');
+    finish(PAGE_THANKS);
 }
 
 $addressKey = hash_hmac('sha256', $_SERVER['REMOTE_ADDR'] ?? '', $config['salt']);
@@ -205,4 +210,4 @@ if (!withinRateLimit($config['data_dir'] ?? dirname(__DIR__) . '/feedback-data',
 }
 
 createIssue($config, buildIssue($answers));
-finish('/feedback-danke/');
+finish(PAGE_THANKS);
