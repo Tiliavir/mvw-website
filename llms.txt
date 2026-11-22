@@ -17,6 +17,8 @@ Blasorchester aus Wollbach (Kandern, Baden-Württemberg) unter der Leitung von O
 - [Dampfmusik](https://www.mv-wollbach.de/das-orchester/dampfmusik/): Alles rund um die Dampfmusik des Musikvereins Wollbach.
 - [Datenschutz](https://www.mv-wollbach.de/datenschutz/): Die Datenschutzerklärung der Webseite des Musikvereins Wollbach.
 - [Dirigent](https://www.mv-wollbach.de/das-orchester/dirigent/): Der Dirigent des Musikvereins Wollbach: Oliver Hauser.
+- [Feedback](https://www.mv-wollbach.de/feedback/): Wie gut finden Sie sich auf der Webseite des Musikvereins Wollbach zurecht? Ein paar kurze Fragen.
+- [Feedback nicht gesendet](https://www.mv-wollbach.de/feedback-fehler/): Ihr Feedback zur Webseite des Musikvereins Wollbach konnte nicht gesendet werden.
 - [Haftungsausschluss](https://www.mv-wollbach.de/haftung/): Der Haftungsausschluss der Webseite des Musikvereins Wollbach.
 - [Impressum](https://www.mv-wollbach.de/impressum/): Das Impressum der Webseite des Musikvereins Wollbach.
 - [Jugendorchester](https://www.mv-wollbach.de/jugendarbeit/jugendorchester/): Das Jugendorchester des Musikvereins Wollbach unter der Leitung von Maria Gut.
@@ -30,6 +32,7 @@ Blasorchester aus Wollbach (Kandern, Baden-Württemberg) unter der Leitung von O
 - [Unsere Register](https://www.mv-wollbach.de/das-orchester/register/): Die aktuelle Besetzung des Musikvereins Wollbach nach Registern.
 - [Unterstützen Sie uns über Gooding](https://www.mv-wollbach.de/gooding/): Tätigen Sie wie gewohnt Ihre Einkäufe im Internet und unterstützen Sie nebenbei den Musikverein Wollbach - ganz ohne extra Kosten.
 - [Vereine und Links](https://www.mv-wollbach.de/vereine-und-links/): Vereine und Verbände mit denen der Musikverein in langjähriger freundschaftlicher Verbindung steht und eine gute Zusammenarbeit pflegt.
+- [Vielen Dank!](https://www.mv-wollbach.de/feedback-danke/): Ihr Feedback zur Webseite des Musikvereins Wollbach ist angekommen.
 - [Vorstandschaft](https://www.mv-wollbach.de/der-verein/vorstand/): Hier finden Sie den richtigen Ansprechpartner des Musikvereins Wollbach.
 - [Vorstufenorchester](https://www.mv-wollbach.de/jugendarbeit/vorstufenorchester/): Das Vorstufenorchester des Musikvereins Wollbach unter der Leitung von Maria Gut.
 - [Wir über uns](https://www.mv-wollbach.de/der-verein/ueber-uns/): Ein kurzer Einblick in die Geschichte des Musikvereins Wollbach 1866 e.V.
