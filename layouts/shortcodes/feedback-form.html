@@ -1,8 +1,9 @@
-{{- $php := resources.Get "php/feedback.php" | resources.ExecuteAsTemplate "feedback.php" . -}}
-{{- $php.Publish -}}
+{{- /* Posts to the shared feedback endpoint of Tiliavir/public-feedback, uploaded by hand as /feedback.php. */ -}}
 <form class="feedback" method="post" action="{{ "feedback.php" | absURL }}">
+  <input type="hidden" name="source" value="mv-wollbach.de"/>
   {{- range site.Data.feedback.questions }}
   {{- $id := printf "fb-%s" .id }}
+  <input type="hidden" name="questions[{{ .id }}]" value="{{ .question }}"/>
   {{- if eq .type "choice" }}
   <fieldset class="feedback-question">
     <legend>{{ .question }}{{ if not .required }} <small>(freiwillig)</small>{{ end }}</legend>
@@ -10,7 +11,7 @@
       {{- $q := . }}
       {{- range $i, $o := .options }}
       <label class="feedback-option" for="{{ $id }}-{{ $o.value }}">
-        <input type="radio" id="{{ $id }}-{{ $o.value }}" name="{{ $q.id }}" value="{{ $o.value }}"{{ if and $q.required (eq $i 0) }} required{{ end }}/>
+        <input type="radio" id="{{ $id }}-{{ $o.value }}" name="answers[{{ $q.id }}]" value="{{ $o.label }}"{{ if and $q.required (eq $i 0) }} required{{ end }}/>
         <span>{{ $o.label }}</span>
       </label>
       {{- end }}
@@ -19,7 +20,7 @@
   {{- else }}
   <div class="feedback-question">
     <label for="{{ $id }}">{{ .question }} <small>(freiwillig)</small></label>
-    <textarea id="{{ $id }}" name="{{ .id }}" rows="4" maxlength="{{ .maxLength }}"></textarea>
+    <textarea id="{{ $id }}" name="answers[{{ .id }}]" rows="4" maxlength="{{ .maxLength }}"></textarea>
   </div>
   {{- end }}
   {{- end }}

@@ -40,8 +40,6 @@ jobs:
           echo "$RUNNER_TEMP/dart-sass" >> "$GITHUB_PATH"
       - name: Build
         run: npm run build
-      - name: PHP syntax check
-        run: php -l public/feedback.php
       - name: Create Index
         run: npm run index
       - name: Dependabot Auto Merge
