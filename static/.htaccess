@@ -100,7 +100,15 @@ AddType 'text/calendar; charset=UTF-8' ics
     Deny from all
   </IfModule>
 </FilesMatch>
-# This site needs no PHP, so nothing is allowed.
+<Files "feedback.php">
+  <IfModule mod_authz_core.c>
+    Require all granted
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order Deny,Allow
+    Allow from all
+  </IfModule>
+</Files>
 
 # Error Pages
 ErrorDocument 404 /404/

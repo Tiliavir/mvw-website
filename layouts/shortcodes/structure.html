@@ -1,5 +1,5 @@
 <!-- Groups content according to content section.-->
-{{ range .Site.Pages.GroupBy "Section" }}
+{{ range (where .Site.Pages "Params.noindex" "!=" true).GroupBy "Section" }}
   <!-- Checks for existence of _index.md for a section; if available, pulls from "title" in front matter -->
   {{ with $.Site.GetPage "section" .Key }}
     <h2>{{.Title}}</h2>
