@@ -17,7 +17,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.6.8",
     "@types/lunr": "2.3.7",
-    "autoprefixer": "10.6.2",
+    "autoprefixer": "10.7.0",
     "glob-all": "3.3.1",
     "mvw-search-index": "3.0.3",
     "postcss": "8.5.33",
@@ -25,7 +25,7 @@
     "stylelint": "18.0.0",
     "stylelint-config-recommended-scss": "18.0.0",
     "typescript": "7.0.2",
-    "vnu-jar": "26.11.17"
+    "vnu-jar": "26.11.20"
   },
   "dependencies": {
     "lunr": "2.3.9",
