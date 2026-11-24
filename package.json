@@ -22,7 +22,7 @@
     "mvw-search-index": "3.0.3",
     "postcss": "8.5.33",
     "postcss-cli": "12.0.0",
-    "stylelint": "18.0.0",
+    "stylelint": "18.1.0",
     "stylelint-config-recommended-scss": "18.0.0",
     "typescript": "7.0.2",
     "vnu-jar": "26.11.20"
